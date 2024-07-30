@@ -3,7 +3,6 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 import os
-
 import pandas as pd
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
@@ -16,19 +15,15 @@ class StockDataScraperPipeline:
 
     def process_item(self, item, spider):
         ticker = item['ticker']
-        file_path = os.path.join('raw_data', f'financial_statements_{ticker}.xlsx')
-
-        # Check if file exists, and write accordingly
-        if os.path.exists(file_path):
-            writer = pd.ExcelWriter(file_path, engine='openpyxl', mode='a')
-        else:
-            writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
+        file_path = os.path.join('raw_data', f'financial_statements_{ticker}.md')
 
         df = item['data']
         df = self.clean_data(df)  # Clean the data before saving
-        df.to_excel(writer, sheet_name=item['sheet_name'], index=False)  # Write data to the appropriate sheet
-        writer._save()
-        writer.close()
+
+        with open(file_path, 'a') as f:
+            f.write(f"## {item['sheet_name']}\n")
+            f.write(df.to_markdown(index=False))
+            f.write("\n\n")
 
         return item
 
