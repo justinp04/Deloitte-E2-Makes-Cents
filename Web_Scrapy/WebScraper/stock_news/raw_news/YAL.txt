@@ -1,0 +1,148 @@
+Returns on Capital Paint A Bright Future For Yancoal Australia (ASX:YAL)
+
+If we want to find a stock that could multiply over the long term, what are the underlying trends we should look for? Amongst other things, we'll want to see two things; firstly, a growing 
+ on capital employed (ROCE) and secondly, an expansion in the company's 
+ of capital employed. Basically this means that a company has profitable initiatives that it can continue to reinvest in, which is a trait of a compounding machine. With that in mind, the ROCE of 
+ (
+) looks great, so lets see what the trend can tell us.
+Just to clarify if you're unsure, ROCE is a metric for evaluating how much pre-tax income (in percentage terms) a company earns on the capital invested in its business. To calculate this metric for Yancoal Australia, this is the formula:
+0.26 = AU$2.6b ÷ (AU$11b - AU$1.0b) 
+.
+Thus, 
+ That's a fantastic return and not only that, it outpaces the average of 6.9% earned by companies in a similar industry.
+Above you can see how the current ROCE for Yancoal Australia compares to its prior returns on capital, but there's only so much you can tell from the past. If you're interested, you can view the analysts predictions in our 
+ 
+.
+Yancoal Australia has not disappointed with their ROCE growth. Looking at the data, we can see that even though capital employed in the business has remained relatively flat, the ROCE generated has risen by 104% over the last five years. So it's likely that the business is now reaping the full benefits of its past investments, since the capital employed hasn't changed considerably. The company is doing well in that sense, and it's worth investigating what the management team has planned for long term growth prospects.
+In summary, we're delighted to see that Yancoal Australia has been able to increase efficiencies and earn higher rates of return on the same amount of capital. Since the stock has returned a staggering 271% to shareholders over the last five years, it looks like investors are recognizing these changes. In light of that, we think it's worth looking further into this stock because if Yancoal Australia can keep these trends up, it could have a bright future ahead.
+If you'd like to know about the risks facing Yancoal Australia, we've discovered 
+ that you should be aware of.
+High returns are a key ingredient to strong performance, so check out our 
+ list of
+ 
+================================================================================
+
+Basic Materials Roundup: Market Talk
+
+2229 ET – BHP may have had to walk away from its takeover bid for Anglo American, but the world’s No. 1 miner could still seek to acquire its rival’s metallurgical coal “crown jewels,” the Moranbah North and Grosvenor mines, according to Jefferies analyst Christopher LaFemina. “Now looks an opportune time to position in your discounted coal exposure of choice as an upside option over the next coal price upswing,” Sartor says.
+================================================================================
+
+Yancoal Australia Ltd (ASX:YAL) Shares Could Be 30% Below Their Intrinsic Value Estimate
+
+Today we'll do a simple run through of a valuation method used to estimate the attractiveness of Yancoal Australia Ltd (
+) as an investment opportunity by taking the expected future cash flows and discounting them to their present value. One way to achieve this is by employing the Discounted Cash Flow (DCF) model. Believe it or not, it's not too difficult to follow, as you'll see from our example!
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. Anyone interested in learning a bit more about intrinsic value should have a read of the 
+.
+We are going to use a two-stage DCF model, which, as the name states, takes into account two stages of growth. The first stage is generally a higher growth period which levels off heading towards the terminal value, captured in the second 'steady growth' period. In the first stage we need to estimate the cash flows to the business over the next ten years. Seeing as no analyst estimates of free cash flow are available to us, we have extrapolate the previous free cash flow (FCF) from the company's last reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+A DCF is all about the idea that a dollar in the future is less valuable than a dollar today, so we discount the value of these future cash flows to their estimated value in today's dollars:
+ = AU$4.6b
+We now need to calculate the Terminal Value, which accounts for all the future cash flows after this ten year period. The Gordon Growth formula is used to calculate Terminal Value at a future annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.3%. We discount the terminal cash flows to today's value at a cost of equity of 7.3%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$674m× (1 + 2.3%) ÷ (7.3%– 2.3%) = AU$14b
+= TV / (1 + r)
+= AU$14b÷ ( 1 + 7.3%)
+= AU$6.8b
+The total value, or equity value, is then the sum of the present value of the future cash flows, which in this case is AU$11b. The last step is to then divide the equity value by the number of shares outstanding. Compared to the current share price of AU$6.0, the company appears quite undervalued at a 30% discount to where the stock price trades currently. Remember though, that this is just an approximate valuation, and like any complex formula - garbage in, garbage out.
+Now the most important inputs to a discounted cash flow are the discount rate, and of course, the actual cash flows. Part of investing is coming up with your own evaluation of a company's future performance, so try the calculation yourself and check your own assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Yancoal Australia as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 7.3%, which is based on a levered beta of 1.089. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Although the valuation of a company is important, it is only one of many factors that you need to assess for a company. It's not possible to obtain a foolproof valuation with a DCF model. Rather it should be seen as a guide to "what assumptions need to be true for this stock to be under/overvalued?" If a company grows at a different rate, or if its cost of equity or risk free rate changes sharply, the output can look very different. What is the reason for the share price sitting below the intrinsic value? For Yancoal Australia, we've compiled three relevant elements you should consider:
+PS. The Simply Wall St app conducts a discounted cash flow valuation for every stock on the ASX every day. If you want to find the calculation for other stocks just 
+.
+ 
+================================================================================
+
+Yancoal Australia (ASX:YAL) shareholders have earned a 74% CAGR over the last three years
+
+It might seem bad, but the worst that can happen when you buy a stock (without leverage) is that its share price goes to zero. But when you pick a company that is really flourishing, you can 
+ more than 100%. For instance the 
+ (
+) share price is 229% higher than it was three years ago. Most would be happy with that. Also pleasing for shareholders was the 24% gain in the last three months.
+Let's take a look at the underlying fundamentals over the longer term, and see if they've been consistent with shareholders returns.
+To quote Buffett, 'Ships will sail around the world but the Flat Earth Society will flourish. There will continue to be wide discrepancies between price and value in the marketplace...' By comparing earnings per share (EPS) and share price changes over time, we can get a feel for how investor attitudes to a company have morphed over time.
+Yancoal Australia became profitable within the last three years. Given the importance of this milestone, it's not overly surprising that the share price has increased strongly.
+You can see below how EPS has changed over time (discover the exact values by clicking on the image).
+It is of course excellent to see how Yancoal Australia has grown profits over the years, but the future is more important for shareholders. This 
+ interactive report on Yancoal Australia's 
+ is a great place to start, if you want to investigate the stock further.
+It is important to consider the total shareholder return, as well as the share price return, for any given stock. Whereas the share price return only reflects the change in the share price, the TSR includes the value of dividends (assuming they were reinvested) and the benefit of any discounted capital raising or spin-off. Arguably, the TSR gives a more comprehensive picture of the return generated by a stock. In the case of Yancoal Australia, it has a TSR of 424% for the last 3 years. That exceeds its share price return that we previously mentioned. This is largely a result of its dividend payments!
+It's nice to see that Yancoal Australia shareholders have received a total shareholder return of 69% over the last year. That's including the dividend. That gain is better than the annual TSR over five years, which is 31%. Therefore it seems like sentiment around the company has been positive lately. Someone with an optimistic perspective could view the recent improvement in TSR as indicating that the business itself is getting better with time. I find it very interesting to look at share price over the long term as a proxy for business performance. But to truly gain insight, we need to consider other information, too. Case in point: We've spotted 
+ you should be aware of.
+Of course 
+. So you may wish to see this 
+ 
+ 
+================================================================================
+
+Returns on Capital Paint A Bright Future For Yancoal Australia (ASX:YAL)
+
+If we want to find a stock that could multiply over the long term, what are the underlying trends we should look for? Amongst other things, we'll want to see two things; firstly, a growing 
+ on capital employed (ROCE) and secondly, an expansion in the company's 
+ of capital employed. Basically this means that a company has profitable initiatives that it can continue to reinvest in, which is a trait of a compounding machine. With that in mind, the ROCE of 
+ (
+) looks great, so lets see what the trend can tell us.
+Just to clarify if you're unsure, ROCE is a metric for evaluating how much pre-tax income (in percentage terms) a company earns on the capital invested in its business. To calculate this metric for Yancoal Australia, this is the formula:
+0.26 = AU$2.6b ÷ (AU$11b - AU$1.0b) 
+.
+Thus, 
+ That's a fantastic return and not only that, it outpaces the average of 6.9% earned by companies in a similar industry.
+Above you can see how the current ROCE for Yancoal Australia compares to its prior returns on capital, but there's only so much you can tell from the past. If you're interested, you can view the analysts predictions in our 
+ 
+.
+Yancoal Australia has not disappointed with their ROCE growth. Looking at the data, we can see that even though capital employed in the business has remained relatively flat, the ROCE generated has risen by 104% over the last five years. So it's likely that the business is now reaping the full benefits of its past investments, since the capital employed hasn't changed considerably. The company is doing well in that sense, and it's worth investigating what the management team has planned for long term growth prospects.
+In summary, we're delighted to see that Yancoal Australia has been able to increase efficiencies and earn higher rates of return on the same amount of capital. Since the stock has returned a staggering 271% to shareholders over the last five years, it looks like investors are recognizing these changes. In light of that, we think it's worth looking further into this stock because if Yancoal Australia can keep these trends up, it could have a bright future ahead.
+If you'd like to know about the risks facing Yancoal Australia, we've discovered 
+ that you should be aware of.
+High returns are a key ingredient to strong performance, so check out our 
+ list of
+ 
+================================================================================
+
+Basic Materials Roundup: Market Talk
+
+2229 ET – BHP may have had to walk away from its takeover bid for Anglo American, but the world’s No. 1 miner could still seek to acquire its rival’s metallurgical coal “crown jewels,” the Moranbah North and Grosvenor mines, according to Jefferies analyst Christopher LaFemina. “Now looks an opportune time to position in your discounted coal exposure of choice as an upside option over the next coal price upswing,” Sartor says.
+================================================================================
+
+Yancoal Australia Ltd (ASX:YAL) Shares Could Be 30% Below Their Intrinsic Value Estimate
+
+Today we'll do a simple run through of a valuation method used to estimate the attractiveness of Yancoal Australia Ltd (
+) as an investment opportunity by taking the expected future cash flows and discounting them to their present value. One way to achieve this is by employing the Discounted Cash Flow (DCF) model. Believe it or not, it's not too difficult to follow, as you'll see from our example!
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. Anyone interested in learning a bit more about intrinsic value should have a read of the 
+.
+We are going to use a two-stage DCF model, which, as the name states, takes into account two stages of growth. The first stage is generally a higher growth period which levels off heading towards the terminal value, captured in the second 'steady growth' period. In the first stage we need to estimate the cash flows to the business over the next ten years. Seeing as no analyst estimates of free cash flow are available to us, we have extrapolate the previous free cash flow (FCF) from the company's last reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+A DCF is all about the idea that a dollar in the future is less valuable than a dollar today, so we discount the value of these future cash flows to their estimated value in today's dollars:
+ = AU$4.6b
+We now need to calculate the Terminal Value, which accounts for all the future cash flows after this ten year period. The Gordon Growth formula is used to calculate Terminal Value at a future annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.3%. We discount the terminal cash flows to today's value at a cost of equity of 7.3%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$674m× (1 + 2.3%) ÷ (7.3%– 2.3%) = AU$14b
+= TV / (1 + r)
+= AU$14b÷ ( 1 + 7.3%)
+= AU$6.8b
+The total value, or equity value, is then the sum of the present value of the future cash flows, which in this case is AU$11b. The last step is to then divide the equity value by the number of shares outstanding. Compared to the current share price of AU$6.0, the company appears quite undervalued at a 30% discount to where the stock price trades currently. Remember though, that this is just an approximate valuation, and like any complex formula - garbage in, garbage out.
+Now the most important inputs to a discounted cash flow are the discount rate, and of course, the actual cash flows. Part of investing is coming up with your own evaluation of a company's future performance, so try the calculation yourself and check your own assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Yancoal Australia as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 7.3%, which is based on a levered beta of 1.089. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Although the valuation of a company is important, it is only one of many factors that you need to assess for a company. It's not possible to obtain a foolproof valuation with a DCF model. Rather it should be seen as a guide to "what assumptions need to be true for this stock to be under/overvalued?" If a company grows at a different rate, or if its cost of equity or risk free rate changes sharply, the output can look very different. What is the reason for the share price sitting below the intrinsic value? For Yancoal Australia, we've compiled three relevant elements you should consider:
+PS. The Simply Wall St app conducts a discounted cash flow valuation for every stock on the ASX every day. If you want to find the calculation for other stocks just 
+.
+ 
+================================================================================
+
+Yancoal Australia (ASX:YAL) shareholders have earned a 74% CAGR over the last three years
+
+It might seem bad, but the worst that can happen when you buy a stock (without leverage) is that its share price goes to zero. But when you pick a company that is really flourishing, you can 
+ more than 100%. For instance the 
+ (
+) share price is 229% higher than it was three years ago. Most would be happy with that. Also pleasing for shareholders was the 24% gain in the last three months.
+Let's take a look at the underlying fundamentals over the longer term, and see if they've been consistent with shareholders returns.
+To quote Buffett, 'Ships will sail around the world but the Flat Earth Society will flourish. There will continue to be wide discrepancies between price and value in the marketplace...' By comparing earnings per share (EPS) and share price changes over time, we can get a feel for how investor attitudes to a company have morphed over time.
+Yancoal Australia became profitable within the last three years. Given the importance of this milestone, it's not overly surprising that the share price has increased strongly.
+You can see below how EPS has changed over time (discover the exact values by clicking on the image).
+It is of course excellent to see how Yancoal Australia has grown profits over the years, but the future is more important for shareholders. This 
+ interactive report on Yancoal Australia's 
+ is a great place to start, if you want to investigate the stock further.
+It is important to consider the total shareholder return, as well as the share price return, for any given stock. Whereas the share price return only reflects the change in the share price, the TSR includes the value of dividends (assuming they were reinvested) and the benefit of any discounted capital raising or spin-off. Arguably, the TSR gives a more comprehensive picture of the return generated by a stock. In the case of Yancoal Australia, it has a TSR of 424% for the last 3 years. That exceeds its share price return that we previously mentioned. This is largely a result of its dividend payments!
+It's nice to see that Yancoal Australia shareholders have received a total shareholder return of 69% over the last year. That's including the dividend. That gain is better than the annual TSR over five years, which is 31%. Therefore it seems like sentiment around the company has been positive lately. Someone with an optimistic perspective could view the recent improvement in TSR as indicating that the business itself is getting better with time. I find it very interesting to look at share price over the long term as a proxy for business performance. But to truly gain insight, we need to consider other information, too. Case in point: We've spotted 
+ you should be aware of.
+Of course 
+. So you may wish to see this 
+ 
+ 
+================================================================================
+

@@ -1,0 +1,121 @@
+Calculating The Fair Value Of The Lottery Corporation Limited (ASX:TLC)
+
+Does the July share price for The Lottery Corporation Limited (
+) reflect what it's really worth? Today, we will estimate the stock's intrinsic value by projecting its future cash flows and then discounting them to today's value. The Discounted Cash Flow (DCF) model is the tool we will apply to do this. Believe it or not, it's not too difficult to follow, as you'll see from our example!
+We would caution that there are many ways of valuing a company and, like the DCF, each technique has advantages and disadvantages in certain scenarios. Anyone interested in learning a bit more about intrinsic value should have a read of the 
+.
+We are going to use a two-stage DCF model, which, as the name states, takes into account two stages of growth. The first stage is generally a higher growth period which levels off heading towards the terminal value, captured in the second 'steady growth' period. To start off with, we need to estimate the next ten years of cash flows. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+Generally we assume that a dollar today is more valuable than a dollar in the future, and so the sum of these future cash flows is then discounted to today's value:
+ = AU$3.8b
+After calculating the present value of future cash flows in the initial 10-year period, we need to calculate the Terminal Value, which accounts for all future cash flows beyond the first stage. For a number of reasons a very conservative growth rate is used that cannot exceed that of a country's GDP growth. In this case we have used the 5-year average of the 10-year government bond yield (2.3%) to estimate future growth. In the same way as with the 10-year 'growth' period, we discount future cash flows to today's value, using a cost of equity of 7.8%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$650m× (1 + 2.3%) ÷ (7.8%– 2.3%) = AU$12b
+= TV / (1 + r)
+= AU$12b÷ ( 1 + 7.8%)
+= AU$5.6b
+The total value, or equity value, is then the sum of the present value of the future cash flows, which in this case is AU$9.4b. To get the intrinsic value per share, we divide this by the total number of shares outstanding. Relative to the current share price of AU$4.9, the company appears around fair value at the time of writing. The assumptions in any calculation have a big impact on the valuation, so it is better to view this as a rough estimate, not precise down to the last cent.
+Now the most important inputs to a discounted cash flow are the discount rate, and of course, the actual cash flows. You don't have to agree with these inputs, I recommend redoing the calculations yourself and playing with them. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Lottery as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 7.8%, which is based on a levered beta of 1.210. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Whilst important, the DCF calculation ideally won't be the sole piece of analysis you scrutinize for a company. The DCF model is not a perfect stock valuation tool. Instead the best use for a DCF model is to test certain assumptions and theories to see if they would lead to the company being undervalued or overvalued. For instance, if the terminal value growth rate is adjusted slightly, it can dramatically alter the overall result. For Lottery, there are three pertinent items you should consider:
+PS. Simply Wall St updates its DCF calculation for every Australian stock every day, so if you want to find the intrinsic value of any other stock just 
+.
+ 
+================================================================================
+
+We Wouldn't Be Too Quick To Buy The Lottery Corporation Limited (ASX:TLC) Before It Goes Ex-Dividend
+
+It looks like 
+ (
+) is about to go ex-dividend in the next 3 days. The ex-dividend date occurs one day before the record date which is the day on which shareholders need to be on the company's books in order to receive a dividend. The ex-dividend date is important as the process of settlement involves two full business days. So if you miss that date, you would not show up on the company's books on the record date. This means that investors who purchase Lottery's shares on or after the 29th of August will not receive the dividend, which will be paid on the 20th of September.
+The company's next dividend payment will be AU$0.06 per share. Dividends are an important source of income to many shareholders, but the health of the business is crucial to maintaining those dividends. As a result, readers should always check whether Lottery has been able to grow its dividends, or if the dividend might be cut.
+Dividends are typically paid from company earnings. If a company pays more in dividends than it earned in profit, then the dividend could be unsustainable. Lottery paid out 118% of profit in the past year, which we think is typically not sustainable unless there are mitigating characteristics such as unusually strong cash flow or a large cash balance.
+Click 
+Companies with falling earnings are riskier for dividend shareholders. If earnings decline and the company is forced to cut its dividend, investors could watch the value of their investment go up in smoke. From this perspective, we're disturbed to see earnings per share plunged 24% over the last 12 months, and we'd wonder if the company has had some kind of major event that has skewed the calculation.
+This is Lottery's first year of paying a dividend, so it doesn't have much of a history yet to compare to.
+Should investors buy Lottery for the upcoming dividend? Not only are earnings per share shrinking, but Lottery is paying out a disconcertingly high percentage of its profit as dividends. Generally we think dividend investors should avoid businesses in this situation, as high payout ratios and declining earnings can lead to the dividend being cut. This is not an overtly appealing combination of characteristics, and we're just not that interested in this company's dividend.
+With that in mind though, if the poor dividend characteristics of Lottery don't faze you, it's worth being mindful of the risks involved with this business. To help with this, we've discovered 
+ that you should be aware of before investing in their shares.
+A common investing mistake is buying the first interesting stock you see. Here you can find 
+ 
+================================================================================
+
+Investors Met With Slowing Returns on Capital At Lottery (ASX:TLC)
+
+There are a few key trends to look for if we want to identify the next multi-bagger. Firstly, we'll want to see a proven 
+ on capital employed (ROCE) that is increasing, and secondly, an expanding 
+ of capital employed. Ultimately, this demonstrates that it's a business that is reinvesting profits at increasing rates of return. In light of that, when we looked at 
+ (
+) and its ROCE trend, we weren't exactly thrilled.
+For those that aren't sure what ROCE is, it measures the amount of pre-tax profits a company can generate from the capital employed in its business. To calculate this metric for Lottery, this is the formula:
+0.17 = AU$601m ÷ (AU$4.7b - AU$1.2b) 
+.
+So, 
+ On its own, that's a standard return, however it's much better than the 7.3% generated by the Hospitality industry.
+Above you can see how the current ROCE for Lottery compares to its prior returns on capital, but there's only so much you can tell from the past. If you're interested, you can view the analysts predictions in our 
+ 
+.
+Things have been pretty stable at Lottery, with its capital employed and returns on that capital staying somewhat the same for the last two years. This tells us the company isn't reinvesting in itself, so it's plausible that it's past the growth phase. With that in mind, unless investment picks up again in the future, we wouldn't expect Lottery to be a multi-bagger going forward. That being the case, it makes sense that Lottery has been paying out 96% of its earnings to its shareholders. These mature businesses typically have reliable earnings and not many places to reinvest them, so the next best option is to put the earnings into shareholders pockets.
+In a nutshell, Lottery has been trudging along with the same returns from the same amount of capital over the last two years. Since the stock has gained an impressive 9.1% over the last year, investors must think there's better things to come. Ultimately, if the underlying trends persist, we wouldn't hold our breath on it being a multi-bagger going forward.
+One more thing to note, we've identified 
+and understanding it should be part of your investment process.
+While Lottery may not currently earn the highest returns, we've compiled a list of companies that currently earn more than 25% return on equity. Check out this 
+ 
+ 
+================================================================================
+
+While institutions own 42% of The Lottery Corporation Limited (ASX:TLC), retail investors are its largest shareholders with 56% ownership
+
+If you want to know who really controls The Lottery Corporation Limited (
+), then you'll have to look at the makeup of its share registry. The group holding the most number of shares in the company, around 56% to be precise, is retail investors. That is, the group stands to benefit the most if the stock rises (or lose the most if there is a downturn).
+Meanwhile, institutions make up 42% of the company’s shareholders. Insiders often own a large chunk of younger, smaller, companies while huge companies tend to have institutions as shareholders.
+In the chart below, we zoom in on the different ownership groups of Lottery.
+Institutions typically measure themselves against a benchmark when reporting to their own investors, so they often become more enthusiastic about a stock once it's included in a major index. We would expect most companies to have some institutions on the register, especially if they are growing.
+Lottery already has institutions on the share registry. Indeed, they own a respectable stake in the company. This can indicate that the company has a certain degree of credibility in the investment community. However, it is best to be wary of relying on the supposed validation that comes with institutional investors. They too, get it wrong sometimes. If multiple institutions change their view on a stock at the same time, you could see the share price drop fast. It's therefore worth looking at Lottery's earnings history below. Of course, the future is what really matters.
+We note that hedge funds don't have a meaningful investment in Lottery. Our data shows that Australian Super Pty Ltd is the largest shareholder with 12% of shares outstanding. Meanwhile, the second and third largest shareholders, hold 6.1% and 5.6%, of the shares outstanding, respectively.
+A deeper look at our ownership data shows that the top 25 shareholders collectively hold less than half of the register, suggesting a large group of small holders where no single shareholder has a majority.
+While studying institutional ownership for a company can add value to your research, it is also a good practice to research analyst recommendations to get a deeper understand of a stock's expected performance. There are a reasonable number of analysts covering the stock, so it might be useful to find out their aggregate view on the future.
+The definition of an insider can differ slightly between different countries, but members of the board of directors always count. Management ultimately answers to the board. However, it is not uncommon for managers to be executive board members, especially if they are a founder or the CEO.
+Most consider insider ownership a positive because it can indicate the board is well aligned with other shareholders. However, on some occasions too much power is concentrated within this group.
+Our most recent data indicates that insiders own less than 1% of The Lottery Corporation Limited. We do note, however, it is possible insiders have an indirect interest through a private company or other corporate structure. It is a pretty big company, so it would be possible for board members to own a meaningful interest in the company, without owning much of a proportional interest. In this case, they own around AU$6.9m worth of shares (at current prices). Arguably, recent buying and selling is just as important to consider. You can 
+The general public, mostly comprising of individual investors, collectively holds 56% of Lottery shares. With this amount of ownership, retail investors can collectively play a role in decisions that affect shareholder returns, such as dividend policies and the appointment of directors. They can also exercise the power to vote on acquisitions or mergers that may not improve profitability.
+I find it very interesting to look at who exactly owns a company. But to truly gain insight, we need to consider other information, too. Take risks for example - Lottery has 
+ we think you should be aware of.
+If you are like me, you may want to think about whether this company will grow or shrink. Luckily, you can check 
+.
+ 
+================================================================================
+
+Insider Stock Buying Reaches AU$891.7k On Lottery
+
+It is usually uneventful when a single insider buys stock. However, When quite a few insiders buy shares, as it happened in 
+ (
+) case, it's fantastic news for shareholders.
+Although we don't think shareholders should simply follow insider transactions, logic dictates you should pay some attention to whether insiders are buying or selling shares.
+The MD, CEO & Director Sue van der Merwe made the biggest insider purchase in the last 12 months. That single transaction was for AU$750k worth of shares at a price of AU$5.15 each. That means that an insider was happy to buy shares at above the current price of AU$5.12. Their view may have changed since then, but at least it shows they felt optimistic at the time. We always take careful note of the price insiders pay when purchasing shares. Generally speaking, it catches our eye when insiders have purchased shares at above current prices, as it suggests they believed the shares were worth buying, even at a higher price.
+Lottery insiders may have bought shares in the last year, but they didn't sell any. You can see the insider transactions (by companies and individuals) over the last year depicted in the chart below. If you click on the chart, you can see all the individual transactions, including the share price, individual, and the date!
+There are plenty of other companies that have insiders buying up shares. You probably do 
+ want to miss this 
+ 
+For a common shareholder, it is worth checking how many shares are held by company insiders. A high insider ownership often makes company leadership more mindful of shareholder interests. Based on our data, Lottery insiders have about 0.06% of the stock, worth approximately AU$7.2m. We prefer to see high levels of insider ownership.
+It doesn't really mean much that no insider has traded Lottery shares in the last quarter. However, our analysis of transactions over the last year is heartening. The transactions are fine but it'd be more encouraging if Lottery insiders bought more shares in the company. While it's good to be aware of what's going on with the insider's ownership and transactions, we make sure to also consider what risks are facing a stock before making any investment decision. To assist with this, we've discovered 
+ that you should run your eye over to get a better picture of Lottery.
+If you would prefer to check out another company -- one with potentially superior financials -- then do not miss this 
+ 
+ 
+================================================================================
+
+Exploring ASX Dividend Stocks: Avoiding Lottery And Highlighting One Superior Option
+
+In the pursuit of reliable dividend income from ASX-listed companies, investors should be cautious about high payout ratios. While a generous dividend can be appealing, it's essential to verify if these payouts are supported by the company's earnings. A high payout ratio may indicate that dividends are not sustainable over time, potentially leading to financial difficulties for the company, as seen with some firms like Lottery.
+Here's a peek at one of the choices from the screener and one that may be safer to dodge.
+ ★★★★☆☆
+ New Hope Corporation Limited, with a market cap of A$4.37 billion, is engaged in the exploration, development, production, and processing of coal and oil and gas properties.
+ The company generates revenue primarily from its coal mining operations in New South Wales and Queensland, totaling A$1.93 billion.
+ 8.3%
+New Hope's dividend yield of 8.32% ranks in the top quartile of Australian dividend payers, offering an attractive return compared to the market average of 6.59%. However, its dividends are not well supported by cash flows, with a high cash payout ratio of 90.2%, indicating potential sustainability issues despite a more moderate earnings payout ratio at 48.4%. Recent board changes could influence future financial strategies, but historically, dividend payments have been volatile and unreliable over the past decade.
+ ★☆☆☆☆☆
+ The Lottery Corporation Limited operates in the lottery and keno sectors within Australia, with a market capitalization of approximately A$11.11 billion.
+ The company generates revenue primarily through its lotteries and keno segments, totaling approximately A$3.20 billion and A$279.70 million respectively.
+ 2.8%
+Lottery's recent initiation of dividends, with a yield of 2.81%, falls below the top quartile benchmark of 6.59% in the Australian market, making it less attractive for those seeking high dividend returns. The company's dividend sustainability is questionable as both earnings and cash flows do not adequately cover its payouts, evidenced by payout ratios exceeding 100%. This financial strain is exacerbated by inadequate coverage from operating cash flow to debt, posing risks to future dividend reliability and growth.
+================================================================================
+

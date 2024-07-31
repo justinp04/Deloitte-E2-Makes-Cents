@@ -1,0 +1,898 @@
+Exploring ASX Growth Companies With High Insider Ownership: Emerald Resources Leads The Pack
+
+Amidst a mixed performance in the Australian market, with sectors like IT and materials showing gains while communications and healthcare face declines, investors continue to navigate through these varied sectoral movements. In this context, understanding the importance of high insider ownership can offer valuable insights into growth companies on the ASX, potentially providing a layer of investor confidence during uncertain times.
+Let's dive into some prime choices out of from the screener.
+ ★★★★☆☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.54 billion.
+ The company generates revenue primarily from mine operations, totaling A$339.32 million.
+ 18.5%
+Emerald Resources, with substantial insider ownership, reported a significant increase in sales and net income for the half year ended December 31, 2023. Despite trading at a considerable discount to its estimated fair value, concerns include shareholder dilution over the past year. The company's revenue is expected to grow faster than the Australian market average, yet its forecasted Return on Equity is considered low for the coming years. Overall earnings are projected to grow significantly.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company based in Australia, with operations extending to Asia and globally, boasting a market cap of approximately A$15.46 billion.
+ The company generates revenue primarily from three segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources, characterized by high insider ownership, is trading at 28.2% below its estimated fair value, signaling potential undervaluation. The company's earnings are expected to grow significantly at 29.19% annually, outpacing the Australian market forecast of 13.7%. However, challenges include a profit margin drop to 7.9% from last year's 16.3%, and earnings not sufficiently covering interest payments, indicating financial strain despite robust revenue and earnings growth forecasts.
+ ★★★★☆☆
+ Technology One Limited is a company that develops, markets, sells, implements, and supports integrated enterprise business software solutions both in Australia and internationally, with a market capitalization of approximately A$5.45 billion.
+ The company generates its revenue from the development, marketing, sale, implementation, and support of integrated enterprise business software solutions across both domestic and international markets.
+ 12.3%
+Technology One Limited, with high insider ownership, reported a revenue increase to A$240.83 million and net income to A$48 million for the first half of 2024. Earnings per share also rose from A$0.1273 to A$0.1475. The company's earnings are expected to grow by 13.94% annually, outperforming the Australian market forecast of 13.7%. Despite these positives, Technology One's revenue growth forecast of 11.2% yearly is robust but not exceptional, and its price-to-earnings ratio stands at 49.8x, below the industry average of 60.7x.
+================================================================================
+
+Exploring ASX Growth Companies With High Insider Ownership: Emerald Resources And Two More
+
+The Australian market has shown robust performance, rising 1.5% over the last week and achieving an 8.7% increase over the past year with earnings expected to grow by 14% annually. In this thriving environment, stocks like Emerald Resources that combine growth potential with high insider ownership may offer appealing opportunities for investors looking to align with the interests of company leadership.
+Let's explore several standout options from the results in the screener.
+ ★★★★☆☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.57 billion.
+ The company generates its revenue primarily from mine operations, totaling approximately A$339.32 million.
+ 18.5%
+ 22.8% p.a.
+Emerald Resources, an Australian growth company with high insider ownership, reported a substantial increase in sales and net income for the half-year ending December 2023, with sales rising to A$176.75 million and net income to A$46.87 million. The company's earnings are expected to grow by 22.76% annually over the next three years, outpacing the Australian market's forecast growth. Despite this strong performance and significant undervaluation at 71.9% below fair value, shareholder dilution has occurred over the past year, and its forecasted Return on Equity is considered low at 17.9%.
+ ★★★★★☆
+ Mineral Resources Limited is a diversified mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$15.30 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 29.2% p.a.
+Mineral Resources, an Australian growth company with high insider ownership, faces mixed financial indicators. While its revenue is set to outpace the market with a 10.7% annual increase, its profit margins have declined from last year's 16.3% to 7.9%. However, earnings are expected to surge by 29.2% annually over the next three years, significantly above the market average of 13.7%. The stock is currently undervalued by 28.8%, despite concerns about its ability to cover interest payments with earnings.
+ ★★★★☆☆
+ Technology One Limited is a company that develops, markets, sells, implements, and supports integrated enterprise business software solutions both in Australia and internationally, with a market capitalization of approximately A$5.81 billion.
+ The company generates revenue through three primary segments: software sales contributing A$317.24 million, corporate services adding A$83.83 million, and consulting services at A$68.13 million.
+ 12.3%
+ 13.8% p.a.
+Technology One, an Australian software company, demonstrates solid growth with a price-to-earnings ratio below the industry average at 53.1x. Its earnings have expanded by 13.1% over the past year and are projected to grow by 13.77% annually, slightly above the national market forecast of 13.7%. Recent financial results show a robust half-year performance with revenue up to A$240.83 million from A$201.01 million, and net income increasing to A$48 million from A$41.28 million previously.
+================================================================================
+
+Are Investors Undervaluing Mineral Resources Limited (ASX:MIN) By 35%?
+
+Today we will run through one way of estimating the intrinsic value of Mineral Resources Limited (
+) by estimating the company's future cash flows and discounting them to their present value. We will take advantage of the Discounted Cash Flow (DCF) model for this purpose. Models like these may appear beyond the comprehension of a lay person, but they're fairly easy to follow.
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. For those who are keen learners of equity analysis, the 
+ may be something of interest to you.
+We are going to use a two-stage DCF model, which, as the name states, takes into account two stages of growth. The first stage is generally a higher growth period which levels off heading towards the terminal value, captured in the second 'steady growth' period. In the first stage we need to estimate the cash flows to the business over the next ten years. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+A DCF is all about the idea that a dollar in the future is less valuable than a dollar today, so we need to discount the sum of these future cash flows to arrive at a present value estimate:
+ = AU$5.6b
+The second stage is also known as Terminal Value, this is the business's cash flow after the first stage. The Gordon Growth formula is used to calculate Terminal Value at a future annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.3%. We discount the terminal cash flows to today's value at a cost of equity of 8.3%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$1.9b× (1 + 2.3%) ÷ (8.3%– 2.3%) = AU$32b
+= TV / (1 + r)
+= AU$32b÷ ( 1 + 8.3%)
+= AU$14b
+The total value is the sum of cash flows for the next ten years plus the discounted terminal value, which results in the Total Equity Value, which in this case is AU$20b. To get the intrinsic value per share, we divide this by the total number of shares outstanding. Relative to the current share price of AU$66.5, the company appears quite undervalued at a 35% discount to where the stock price trades currently. Valuations are imprecise instruments though, rather like a telescope - move a few degrees and end up in a different galaxy. Do keep this in mind.
+We would point out that the most important inputs to a discounted cash flow are the discount rate and of course the actual cash flows. You don't have to agree with these inputs, I recommend redoing the calculations yourself and playing with them. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Mineral Resources as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 8.3%, which is based on a levered beta of 1.317. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Although the valuation of a company is important, it is only one of many factors that you need to assess for a company. DCF models are not the be-all and end-all of investment valuation. Rather it should be seen as a guide to "what assumptions need to be true for this stock to be under/overvalued?" If a company grows at a different rate, or if its cost of equity or risk free rate changes sharply, the output can look very different. What is the reason for the share price sitting below the intrinsic value? For Mineral Resources, we've put together three fundamental factors you should explore:
+PS. Simply Wall St updates its DCF calculation for every Australian stock every day, so if you want to find the intrinsic value of any other stock just 
+.
+ 
+================================================================================
+
+Capricorn Metals Leads Three ASX Growth Companies With Strong Insider Ties
+
+As the Australian market shows signs of activity with the ASX200 expected to rise, and amidst varied global economic signals, investors are keenly watching local developments. In this context, understanding the importance of insider ownership in growth companies can be particularly relevant, as it often reflects a deep commitment by those who know the company best to its long-term success.
+Here's a peek at a few of the choices from the screener.
+ ★★★★★☆
+ Capricorn Metals Ltd is an Australian company focused on the evaluation, exploration, development, and production of gold properties, with a market capitalization of approximately A$1.83 billion.
+ The company generates its revenue primarily from the Karlawinda segment, totaling approximately A$356.94 million.
+ 12.3%
+ 26.5% p.a.
+Capricorn Metals, despite significant insider selling over the past three months, shows promising growth prospects. Its return on equity is expected to reach 30.6% in three years, outpacing forecasts for the broader Australian market. Revenue and earnings are also set to grow robustly at annual rates of 14.1% and 26.5%, respectively, both well above market averages of 5.5% and 13.8%. However, recent financial results have been impacted by large one-off items, tempering some of the positive outlook.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market cap of approximately A$4.36 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, with A$1.28 billion from leisure and A$1.06 billion from corporate sectors.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group, with its substantial insider ownership, is trading at 20.9% below its estimated fair value, suggesting potential undervaluation. The company recently became profitable and is experiencing robust financial growth with earnings forecasted to expand by 18.8% annually, outstripping the Australian market's expectation of 13.8%. Additionally, Flight Centre's projected revenue growth rate stands at 9.7% per year, surpassing the national average of 5.5%. Its return on equity is also expected to be impressively high at 21.7% in three years.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$11.70 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 25.4% p.a.
+Mineral Resources, while trading at 16.9% below its estimated fair value, shows a promising growth trajectory with earnings projected to increase by 25.4% annually, outpacing the Australian market's average of 13.8%. Despite lower profit margins this year compared to last, the company's revenue is expected to grow by 12.5% per year, also above the national average of 5.5%. However, its financial position is challenged by earnings not covering interest payments adequately.
+================================================================================
+
+ASX Growth Companies With High Insider Ownership: Spotlight On Three Stocks
+
+The Australian Securities Exchange (ASX) recently experienced a robust performance, closing up nearly 1.2% with notable gains in the materials sector. Amidst these market movements, understanding the significance of high insider ownership can be particularly relevant as it often reflects leadership's confidence in their company's growth trajectory and long-term prospects.
+Below we spotlight a couple of our favorites from our exclusive screener.
+ ★★★★★☆
+ Emerald Resources NL, headquartered in Australia, is focused on the exploration and development of mineral reserves primarily in Cambodia, with a market capitalization of approximately A$2.39 billion.
+ The company generates A$339.32 million from its mine operations.
+ 18.5%
+ 21% (2026 estimate)
+Emerald Resources, an Australian growth company, exhibits high insider ownership with robust financial prospects. Despite some shareholder dilution over the past year, Emerald's earnings have surged by 53.4% and are projected to expand at a significant annual rate of 23.2%, outpacing the broader Australian market's expected growth. Revenue forecasts also show strong performance, growing faster than market averages at 18.6% per year, though slightly below the 20% high-growth benchmark.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market capitalization of approximately A$4.62 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, with A$1.28 billion from leisure and A$1.06 billion from corporate segments.
+ 13.3%
+ 22% (2026 estimate)
+Flight Centre Travel Group, while not a standout in high insider ownership growth categories in Australia, shows promising financial trends. The company is trading at 19.7% below its estimated fair value and has recently turned profitable. Forecasted earnings growth of 18.8% per year surpasses the Australian market average of 13%, with revenue also expected to grow faster at 9.7% annually compared to the market's 5.2%. However, its revenue growth does not meet the high-growth benchmark of 20%.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market cap of approximately A$11.34 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 26% (2026 estimate)
+Mineral Resources, despite not excelling in high insider ownership growth categories in Australia, demonstrates robust financial prospects. The company's earnings are expected to grow by 27.4% annually, outpacing the Australian market projection of 13.1%. However, its profit margins have declined from last year's 16.3% to 7.9%. Revenue growth forecasts at 12.1% annually also exceed market expectations but fall short of the high-growth threshold of 20%. Additionally, the stock is trading at a significant discount to its fair value.
+================================================================================
+
+Emerald Resources And Two More ASX Growth Companies With High Insider Ownership
+
+Amidst a fluctuating Australian market where the ASX200 has seen minor declines and sectors like Healthcare show resilience, investors continue to navigate through mixed signals. In such a landscape, growth companies with high insider ownership can offer a unique appeal, as these insiders often have a vested interest in the company's success, aligning their goals closely with those of shareholders.
+We're going to check out a few of the best picks from our screener tool.
+ ★★★★★☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.39 billion.
+ The primary revenue stream, totaling A$339.32 million, is derived from mine operations.
+ 18.5%
+ 23.2% p.a.
+Emerald Resources is positioned for robust growth with earnings expected to increase by 23.2% annually, outpacing the Australian market's average of 13.1%. Despite a past year's earnings surge of 53.4%, shareholder dilution has occurred. Looking ahead, Emerald's revenue growth forecast at 18.6% yearly also exceeds the market expectation of 5.2%. Additionally, its Return on Equity is projected to reach an impressive 20.7% in three years, indicating strong profitability and management efficiency.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia, with a market capitalization of approximately A$4.62 billion.
+ The company generates A$1.28 billion from its leisure segment and A$1.06 billion from corporate travel services.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group has shown promising financial trends, with earnings expected to grow by 18.81% annually, surpassing the Australian market forecast of 13% per year. Additionally, its revenue growth at 9.7% yearly also exceeds the market's average of 5.2%. The company recently became profitable and is trading at a 19.7% discount to its estimated fair value. However, its insider ownership dynamics remain undisclosed in recent months, presenting a mixed scenario for investors focusing on high insider ownership metrics.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market capitalization of A$11.34 billion.
+ The company generates revenue from three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 27.4% p.a.
+Mineral Resources is trading at a significant discount, priced 40.9% below its estimated fair value, signaling potential undervaluation. The company's earnings are expected to grow by 27.4% annually over the next three years, outpacing the Australian market projection of 13.1%. Despite a high forecasted return on equity of 25.8%, concerns arise from its declining profit margins and inadequate coverage of interest payments by earnings, reflecting some financial strains despite robust growth projections.
+================================================================================
+
+ASX Stocks Estimated To Be Below Intrinsic Value In June 2024
+
+As the Australian market shows modest gains with the ASX200 closing up 0.1% this week, investor focus may shift towards sectors that have underperformed or outperformed, such as Materials and IT respectively. In such a mixed economic landscape, identifying stocks that are potentially undervalued becomes crucial, especially when considering long-term growth prospects in fluctuating markets.
+Let's uncover some gems from our specialized screener
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$10.52 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 19%
+Mineral Resources Limited, priced at A$53.92, is currently trading 19% below our calculated fair value of A$66.53. This discrepancy suggests the stock might be undervalued based on discounted cash flows. The company's earnings are expected to increase by 27.42% annually, outpacing the Australian market projection of 13.8%. Despite this growth potential and a forecasted high return on equity of 25.8%, concerns arise from its profit margins dropping to 7.9% from last year’s 16.3%, coupled with inadequate coverage of interest payments by earnings.
+ Strike Energy Limited is an Australian company engaged in the exploration and development of oil and gas resources, with a market capitalization of approximately A$801.02 million.
+ The company primarily focuses on the exploration and development of oil and gas resources in Australia.
+ 29.9%
+Strike Energy, with a current price of A$0.28, appears undervalued by over 20% according to discounted cash flow analysis, suggesting potential for investors seeking value based on financial metrics. The company's revenue and earnings are expected to grow at 37.8% and 36.69% per year respectively, significantly outperforming the Australian market averages of 5.4% and 13.8%. However, investor caution may be warranted due to recent significant insider selling and shareholder dilution over the past year.
+ Viva Energy Group Limited is an energy company operating in Australia, Singapore, and Papua New Guinea with a market capitalization of approximately A$5.00 billion.
+ The company generates revenue through three primary segments: Convenience & Mobility at A$10.10 billion, Commercial & Industrial at A$16.64 billion, and Energy & Infrastructure at A$7.32 billion.
+ 17.1%
+Viva Energy Group, priced at A$3.15, is considered undervalued by 17.1%, with a fair value estimated at A$3.8 based on discounted cash flow analysis. Despite recent index changes and not being covered well by earnings or cash flows, its dividend stands at 4.51%. Expected to outperform with an earnings growth forecast of 29.76% annually, it contrasts with slower revenue growth projections of 3.2% per year against the market's 5.4%.
+================================================================================
+
+ASX Growth Companies With High Insider Ownership To Watch
+
+Amidst a backdrop of fluctuating commodity prices and mixed global market performances, the Australian Securities Exchange (ASX) is experiencing varied dynamics, notably influenced by a recent slump in iron ore prices. In such an environment, growth companies with high insider ownership on the ASX offer a unique proposition, potentially aligning closely with shareholder interests and demonstrating confidence in their business models during uncertain times.
+Here's a peek at a few of the choices from the screener.
+ ★★★★☆☆
+ Aussie Broadband Limited offers telecommunications services to both residential and business customers across Australia, with a market capitalization of approximately A$1.03 billion.
+ The company generates revenue through its telecommunications services, with segments including Residential at A$549.59 million, Business at A$94.21 million, Wholesale at A$125.25 million, and Enterprise and Government at A$85.85 million.
+ 10.8%
+ 26.4% p.a.
+Aussie Broadband, a company with high insider ownership, is navigating a growth trajectory with its earnings expected to increase by 26.4% annually. Despite recent insider selling and shareholder dilution over the past year, the firm is actively pursuing acquisitions to enhance its fibre assets and maintain dominance in residential revenues. Trading at a substantial discount to fair value, Aussie Broadband's revenue is also set to outpace the Australian market average significantly.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market capitalization of approximately A$4.73 billion.
+ The company generates revenue primarily through its leisure and corporate travel segments, with A$1.28 billion from leisure and A$1.06 billion from corporate services.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group, with high insider ownership, is currently trading at 16.6% below its estimated fair value. The company's revenue growth at 9.7% per year is expected to outperform the Australian market's 5.3%. Although its earnings growth of 18.8% per year isn't considered very large, it remains above the market average of 13.1%. Recently becoming profitable, Flight Centre also anticipates a strong return on equity of 21.8% in three years.
+ ★★★★★☆
+ Mineral Resources Limited, with its subsidiaries, serves as a mining services company operating in Australia, Asia, and internationally, boasting a market capitalization of A$11.38 billion.
+ The company generates revenue from several key segments: Lithium (A$1.60 billion), Iron Ore (A$2.50 billion), and Mining Services (A$2.82 billion).
+ 11.6%
+ 27.5% p.a.
+Mineral Resources, characterized by high insider ownership, is trading at a significant discount of 39.1% below its estimated fair value. While its profit margins have declined from 16.3% to 7.9%, earnings are projected to grow robustly at 27.5% annually, outpacing the Australian market forecast of 13.1%. Revenue growth is also strong at 12.1% per year, exceeding the market's expectation of 5.3%. The company's return on equity is expected to be high at 25.8% in three years.
+================================================================================
+
+ASX Growth Leaders With High Insider Stakes In July 2024
+
+Amidst a generally positive trend in the Australian market with all sectors showing gains, and despite some challenges in consumer sentiment due to inflation concerns, investors continue to seek robust growth opportunities. Companies with high insider ownership often attract attention as they can signal strong confidence from those closest to the business, aligning well with current market dynamics where informed decision-making is key.
+We'll examine a selection from our screener results.
+ ★★★★★☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.51 billion.
+ The company generates revenue primarily from mine operations, which totaled A$339.32 million.
+ 18.5%
+ 21% (2026 estimate)
+Emerald Resources, with significant insider ownership, shows promising growth prospects in the Australian market. Its earnings are expected to grow by 23.2% annually, outpacing the market's 13.1%, while revenue forecasts also exceed market averages at an 18.6% increase per year. Despite some shareholder dilution last year, Emerald's robust projected Return on Equity of 20.7% underscores its potential for strong financial performance and stakeholder value creation in the coming years.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market capitalization of A$4.70 billion.
+ The company generates A$1.28 billion from its leisure segment and A$1.06 billion from its corporate travel services.
+ 13.3%
+ 22% (2026 estimate)
+Flight Centre Travel Group, with substantial insider ownership, is poised for notable growth. The company recently became profitable and is trading 17.1% below its estimated fair value. Forecasted earnings growth stands at 18.8% annually, surpassing the Australian market's average of 13.1%. While its revenue growth forecast of 9.7% per year also exceeds the market expectation of 5.3%, it does not reach the high-growth threshold of over 20%.
+ ★★★★★☆
+ Mineral Resources Limited, a mining services company with operations in Australia, Asia, and internationally, has a market capitalization of approximately A$11.02 billion.
+ The company's revenue is derived from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 26% (2026 estimate)
+Mineral Resources, characterized by high insider ownership, is set to expand with a revenue growth forecast of 12.1% annually, outpacing the Australian market's average of 5.3%. Despite not meeting the high-growth benchmark of 20%, its earnings are expected to surge by 27.5% per year. However, challenges persist as profit margins have declined from last year and interest payments are poorly covered by earnings. The stock is currently valued at 40.7% below its fair value estimate.
+================================================================================
+
+ASX Growth Companies With High Insider Ownership In May 2024
+
+As the ASX200 navigates a challenging session with a notable dip, sectors like IT and healthcare are showing resilience with positive movements. This mixed market backdrop sets an interesting stage for investors looking at growth companies with high insider ownership in Australia. In such fluctuating market conditions, companies with substantial insider ownership can be appealing as they often demonstrate alignment between management's interests and those of shareholders, potentially offering stability amidst market volatility.
+Underneath we present a selection of stocks filtered out by our screen.
+ ★★★★☆☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.57 billion.
+ The primary revenue segment for the company, generating A$339.32 million, comes from mine operations.
+ 18.5%
+Emerald Resources is trading at a significant discount, valued 71.9% below its estimated fair value, suggesting potential for growth-oriented investors. The company's revenue and earnings are forecasted to grow by 19.4% and 22.76% per year respectively, outpacing the Australian market averages of 5% and 13.7%. Despite this promising outlook, concerns include shareholder dilution over the past year and a low projected return on equity of 17.9%. Recent financials showed strong performance with substantial increases in sales and net income compared to the previous year.
+ ★★★★★☆
+ Mineral Resources Limited, along with its subsidiaries, functions as a mining services company across Australia, Asia, and other international markets, boasting a market capitalization of approximately A$15.30 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources Limited is poised for robust growth with revenue and earnings forecasted to expand by 10.7% and 29.2% per year, respectively, outstripping the Australian market averages. Despite trading at a substantial 28.8% below its estimated fair value, concerns linger over its profit margins which have declined from last year and interest payments that are not well covered by earnings. The high forecast return on equity of 21.7% in three years underscores potential upside amidst these challenges.
+ ★★★★☆☆
+ Technology One Limited is a company that develops, markets, sells, implements, and supports integrated enterprise business software solutions both in Australia and internationally, with a market capitalization of approximately A$5.81 billion.
+ The company generates revenue through three primary segments: software sales contributing A$317.24 million, corporate services at A$83.83 million, and consulting services totaling A$68.13 million.
+ 12.3%
+Technology One Limited, an Australian software company, exhibits solid growth prospects with revenue and earnings increasing by 11.3% and 13.77% per year respectively, outpacing the broader Australian market. Despite its high price-to-earnings ratio of A$53.1x compared to the industry average of A$61.1x, it maintains a robust forecast return on equity of 32.8%. Recent financial results showed a significant rise in half-year revenue to A$240.83 million and net income to A$48 million, reflecting ongoing operational success.
+================================================================================
+
+Emerald Resources And Two ASX Growth Stocks With High Insider Ownership
+
+The Australian market recently experienced a mixed day, with the ASX200 closing down by 0.75% primarily due to declines in the mining sector, while discretionary and IT sectors showed resilience with modest gains. In such a fluctuating environment, stocks with high insider ownership can often be appealing as they suggest that those who know the company best are confident in its future prospects.
+Let's explore several standout options from the results in the screener.
+ ★★★★★☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.51 billion.
+ The primary revenue segment for the company is derived from mine operations, generating A$339.32 million.
+ 18.5%
+ 23.2% p.a.
+Emerald Resources has demonstrated robust growth with a 53.4% increase in earnings over the past year. Despite some shareholder dilution, EMR is poised for significant expansion, with earnings expected to rise by 23.2% annually and revenue forecasted to grow at 18.6% per year, outpacing the Australian market average significantly. Additionally, its Return on Equity is projected to be high at 20.7%, indicating efficient management and potentially lucrative returns for investors prioritizing insider ownership and growth metrics.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market cap of A$4.70 billion.
+ The company generates A$1.28 billion from its leisure segment and A$1.06 billion from corporate travel services.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group has recently transitioned to profitability and is poised for continued growth, with earnings expected to rise by 18.81% annually. This rate outstrips the Australian market's average, pegged at 13.1% per year. Additionally, its revenue growth forecast at 9.7% annually also exceeds the national market average of 5.3%. The company's Return on Equity is predicted to be robust at 21.8% in three years, underscoring efficient capital management despite not having significant insider trading activity recently.
+ ★★★★★☆
+ Mineral Resources Limited is a diversified mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$11.02 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 27.5% p.a.
+Mineral Resources, trading at a substantial discount to its estimated fair value, shows promise with its high-quality earnings and absence of recent insider selling. While its revenue growth forecast of 12.1% per year is below the high-growth benchmark of 20%, it still surpasses the Australian market average. The company's earnings are expected to increase by 27.5% annually over the next three years, outperforming the market projection of 13.1%. However, concerns include lower profit margins compared to last year and poor coverage of interest payments by earnings.
+================================================================================
+
+Three ASX Growth Companies With High Insider Ownership And Earnings Growth Up To 27%
+
+The Australian market has shown robust performance, climbing 11% over the past year with earnings projected to increase by 13% annually. In this context, stocks like those of growth companies with high insider ownership can be particularly compelling, as they often signal strong confidence from those most familiar with the company's prospects.
+Here we highlight a subset of our preferred stocks from the screener.
+ ★★★★★☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.51 billion.
+ The company generates revenue primarily from mine operations, totaling approximately A$339.32 million.
+ 18.5%
+ 23.2% p.a.
+Emerald Resources, an Australian growth company with significant insider ownership, shows promising financial forecasts despite some concerns. The company's earnings are expected to grow by 23.2% annually, outpacing the broader Australian market's 13% growth rate. Similarly, revenue is projected to increase by 18.6% per year, which also exceeds the national average of 5.3%. However, shareholder dilution over the past year and revenue growth not reaching the high benchmark of 20% per year temper these positives.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market cap of approximately A$4.70 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, with the leisure segment bringing in A$1.28 billion and the corporate segment contributing A$1.06 billion.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group, an Australian growth company with high insider ownership, is trading at 17.1% below its estimated fair value, indicating potential undervaluation. The company recently became profitable and is expected to see its earnings grow by 18.81% annually, outperforming the Australian market forecast of 13%. Additionally, revenue growth is anticipated at 9.7% per year, surpassing the national average of 5.3%. However, this revenue growth rate falls short of the high benchmark of 20% per year.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally with a market capitalization of A$11.02 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 27.2% p.a.
+Mineral Resources, an Australian growth company with high insider ownership, is currently undervalued by 40.8%, suggesting a potential investment opportunity. Despite a decrease in net profit margin from last year, the company's earnings are expected to grow by 27.2% annually over the next three years, significantly outpacing the Australian market forecast of 13%. Revenue growth is also strong at 12.1% per year, exceeding the national average of 5.3%. However, interest payments are not well-covered by earnings, indicating some financial risk.
+================================================================================
+
+Three ASX Growth Companies With High Insider Ownership And Up To 30% Earnings Growth
+
+The Australian market has shown robust performance, climbing 1.7% in the last week and 9.2% over the past year, with earnings projected to grow by 13% annually. In such a thriving environment, growth companies with high insider ownership can be particularly compelling, as this often signals confidence from those who know the company best.
+We'll examine a selection from our screener results.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market cap of approximately A$4.96 billion.
+ The company generates A$1.28 billion from its leisure segment and A$1.06 billion from corporate travel services.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group, a notable entity in the Australian travel sector, recently turned profitable and is trading at A$27.6% below its estimated fair value. While its revenue growth of 9.7% per year is modest compared to high-growth benchmarks, it outpaces the broader Australian market's 5.3%. Earnings are expected to increase by 18.8% annually, surpassing the market forecast of 12.9%. Additionally, Flight Centre's return on equity is projected to reach an impressive 21.9% in three years.
+ ★★★★★☆
+ Mineral Resources Limited is a diversified mining services company operating across Australia, Asia, and globally, with a market capitalization of approximately A$11.28 billion.
+ The company generates revenue from three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 30.9% p.a.
+Mineral Resources Limited is positioned for robust growth with expected earnings increasing at a rate of 30.89% annually, significantly outpacing the Australian market's forecast of 12.9%. Despite a dip in profit margins from 16.3% to 7.9%, the company's revenue growth remains strong at 12.1% per year, and it trades at A$40.5% below its estimated fair value. Challenges include poor coverage of interest payments by earnings, but high non-cash earnings and a projected return on equity of 25.5% suggest potential resilience.
+ ★★★★☆☆
+ Technology One Limited is an enterprise software solutions provider operating both in Australia and internationally, with a market cap of approximately A$6.19 billion.
+ The company generates revenue through three primary segments: software sales contributing A$317.24 million, corporate services at A$83.83 million, and consulting services totaling A$68.13 million.
+ 12.3%
+ 14.4% p.a.
+Technology One, an Australian software company, demonstrates a solid growth trajectory with its earnings expected to grow by 14.4% annually, surpassing the broader Australian market's forecast of 12.9%. This growth is supported by revenue projections increasing at 11.1% per year, also outpacing the national average of 5.3%. Despite a high price-to-earnings ratio of 56.4x compared to the industry average of 61.7x, the firm benefits from robust insider ownership and strategic board appointments aimed at enhancing its SaaS capabilities globally.
+================================================================================
+
+DroneShield Leads Three ASX Stocks Considered Below Estimated Value
+
+The Australian market has shown robust growth, rising 1.7% in the past week and achieving a 9.2% increase over the last year, with earnings projected to grow by 13% annually. In such a thriving environment, stocks like DroneShield that are considered undervalued present potential opportunities for informed investors looking for assets that may be poised for growth.
+We're going to check out a few of the best picks from our screener tool.
+ DroneShield Limited is a company that focuses on the development, commercialization, and sale of drone detection and security technology in Australia and the United States, with a market capitalization of approximately A$1.98 billion.
+ DroneShield's revenue primarily stems from the aerospace and defense sector, totaling A$55.08 million.
+ 47.4%
+DroneShield, trading at A$2.60, significantly below our fair value estimate of A$4.95, appears undervalued based on discounted cash flows. Recent equity offerings raised over A$190 million, potentially diluting shareholders but also fueling growth. Despite a low forecasted return on equity of 16.9% in three years, earnings and revenue are expected to grow robustly by 43.25% and 33% per year respectively—outpacing the Australian market significantly.
+ Mineral Resources Limited is a mining services company operating across Australia, Asia, and internationally, with a market capitalization of approximately A$11.28 billion.
+ The company generates revenue from three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 40.5%
+Mineral Resources, priced at A$57.65, is valued well below our fair value estimate of A$96.97, indicating significant undervaluation based on discounted cash flows. While the company's profit margins have dipped from 16.3% to 7.9%, its earnings are expected to surge by 30.89% annually, outperforming the Australian market projection of 12.9%. However, its ability to cover interest payments with earnings is weak, suggesting some financial strain despite robust growth forecasts and a strong projected return on equity of 25.5%.
+ Viva Energy Group Limited is an energy company operating in Australia, Singapore, and Papua New Guinea, with a market capitalization of approximately A$5.05 billion.
+ The company generates revenue through three primary segments: Convenience & Mobility (A$10.10 billion), Commercial & Industrial (A$16.64 billion), and Energy & Infrastructure (A$7.32 billion).
+ 23.4%
+Viva Energy Group, valued at A$3.18, trades below our fair value estimate of A$4.15, highlighting its undervaluation based on discounted cash flows. Expected to grow earnings by 30.74% annually, it surpasses the market forecast of 12.9%. However, its revenue growth projection of 3.3% lags behind the market's 5.3%. Recent index changes saw VEA added to the S&P/ASX 100 but dropped from the S&P/ASX Small Ordinaries Index, reflecting shifting market perceptions.
+================================================================================
+
+ASX Growth Companies With Up To 27% Insider Ownership
+
+Amidst a mixed performance in the Australian market, with the ASX slightly down and most sectors seeing declines, investor focus may benefit from considering growth companies with significant insider ownership. Such firms often demonstrate a commitment to long-term success, which could be particularly appealing in the current environment where strategic stability is valued.
+Underneath we present a selection of stocks filtered out by our screen.
+ ★★★★★☆
+ Develop Global Limited, operating in Australia, focuses on the exploration and development of mineral resources with a market capitalization of approximately A$557.40 million.
+ The company generates revenue primarily through its Mining Services segment, which produced A$109.75 million.
+ 22.6%
+Develop Global, an Australian company, is anticipated to see significant growth with earnings expected to increase and revenue projected to grow at 54.2% annually, outpacing the market's 5.3%. Despite these prospects, there are concerns: shareholder dilution occurred last year and the company has less than a year of cash runway. Additionally, while it's set to become profitable within three years, its forecasted Return on Equity is relatively low at 12.5%.
+ ★★★★★☆
+ Mineral Resources Limited is a diversified mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$11.02 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources, trading 40.8% below its fair value, shows promise with expected significant earnings growth of 27.16% annually over the next three years and revenue forecast to increase by 12.1% each year, surpassing Australia's market growth rate of 5.3%. However, challenges include lower profit margins compared to last year and earnings that barely cover interest payments. Insider ownership remains high but without recent buying or selling activity reported in the past three months.
+ ★★★★☆☆
+ Qualitas operates as a real estate investment firm, engaging in direct investments across various real estate classes and locations, acquisitions and restructuring of distressed debt, capital raising for third parties, and consulting services, with a market capitalization of approximately A$679.19 million.
+ The company generates revenue through two primary segments: Direct Lending, which brought in A$27.58 million, and Funds Management, contributing A$19.32 million.
+ 27.1%
+Qualitas Limited, with high insider ownership, is poised for robust growth, forecasting a 25.12% annual increase in earnings and a 15.4% rise in revenue, outpacing the Australian market's average. Despite this promising outlook, its dividend sustainability is questionable due to poor earnings coverage and an expected low return on equity of 9.3% in three years. Recent developments include the departure of director Michael Schoenfeld on June 30, 2024, which could impact governance dynamics.
+================================================================================
+
+ASX Growth Companies With High Insider Ownership Featuring Flight Centre Travel Group And Two More
+
+Amidst a mixed performance in the Australian market, with sectors like financials showing strength while materials face declines, investors continue to navigate through varying economic signals. In such a landscape, growth companies with high insider ownership can be particularly appealing as they often indicate confidence from those closest to the company's operations and future prospects.
+Let's review some notable picks from our screened stocks.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market capitalization of approximately A$4.96 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, totaling A$1.28 billion and A$1.06 billion respectively.
+ 13.3%
+Flight Centre Travel Group, a notable entity in the travel sector, showcases promising financial prospects with insider ownership that aligns interests with shareholders. While its earnings are set to increase by 18.84% annually, this growth is robust but not exceptional. Revenue is expected to rise at 9.7% per year, outpacing the Australian market's 5.3%. Additionally, Flight Centre's Return on Equity is anticipated to be high at 21.9% in three years, reflecting efficient equity use and potential for sustained profitability.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market capitalization of A$11.28 billion.
+ The company generates revenue through three primary streams: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources, while trading at 40.5% below its estimated fair value, shows robust prospects with earnings expected to grow by 30.9% annually, outpacing the Australian market's average of 12.9%. However, it faces challenges as interest payments are not well covered by earnings and profit margins have declined from last year. Insider ownership aligns interests with shareholders, supporting potential growth despite financial pressure points.
+ ★★★★☆☆
+ Technology One Limited is an Australian company that develops, markets, sells, implements, and supports integrated enterprise business software solutions both domestically and internationally, with a market capitalization of approximately A$6.19 billion.
+ The company generates revenue through three primary segments: software sales contributing A$317.24 million, corporate services adding A$83.83 million, and consulting services at A$68.13 million.
+ 12.3%
+Technology One, with high insider ownership, is positioned for continued growth, though its pace may not be as rapid as some peers. The company's recent financials show a solid increase in revenue to A$240.83 million and net income to A$48 million. The appointment of Paul Robson to the board could further enhance strategic initiatives, given his background in SaaS and operational efficiency. While the P/E ratio stands below industry average at 56.4x, earnings are expected to grow by 14.35% annually, slightly above the Australian market forecast of 12.9%.
+================================================================================
+
+ASX Growth Stocks With High Insider Ownership And Up To 96% Earnings Growth
+
+The Australian market has shown robust performance, rising 3.1% over the last week and achieving a 10% increase over the past year with earnings expected to grow by 13% annually. In this context, stocks with high insider ownership can be particularly appealing as they often indicate that company leaders have a vested interest in the success of their businesses, aligning well with current market trends and growth projections.
+Let's explore several standout options from the results in the screener.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$11.27 billion.
+ The company generates revenue through three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 30.9% p.a.
+Mineral Resources, an Australian growth company with high insider ownership, is poised for substantial earnings growth, forecasted at 30.89% annually over the next three years. Despite this, its current profit margins are lower compared to last year and it faces challenges in covering interest payments with earnings. However, the company's revenue is expected to outpace the Australian market average significantly. Trading at a considerable discount to its estimated fair value suggests potential undervaluation.
+ ★★★★★★
+ Ora Banda Mining Limited is an Australian company focused on the exploration, operation, and development of mineral properties, with a market capitalization of approximately A$835.94 million.
+ The company generates revenue primarily from its gold mining activities, totaling approximately A$166.66 million.
+ 10.2%
+ 96.2% p.a.
+Ora Banda Mining, an Australian company, is trading at a significant discount to its fair value and is expected to become profitable within the next three years. Its revenue growth forecast of 45.2% annually outstrips the market average significantly. Despite past shareholder dilution, no recent insider selling has been reported, and the appointment of Kathryn Cutler as a Non-executive Director could bolster its strategic direction. The company's return on equity is also projected to be very high in three years.
+ ★★★★☆☆
+ Technology One Limited is an enterprise software solutions provider operating both in Australia and internationally, with a market capitalization of approximately A$6.18 billion.
+ The company generates revenue through three primary segments: software sales contributing A$317.24 million, corporate services at A$83.83 million, and consulting services amounting to A$68.13 million.
+ 12.3%
+ 14.4% p.a.
+Technology One, a prominent Australian software firm, shows promising growth with earnings expected to rise by 14.4% annually, outpacing the local market's 13.3%. Despite a high price-to-earnings ratio of 56.4x—below the industry average—its revenue growth at 11.1% annually also exceeds the national rate of 5.3%. The recent appointment of Paul Robson as Non-Executive Director could further enhance strategic and operational capabilities, aligning with its robust half-year financial performance where net income rose to A$48 million from A$41.28 million year-on-year.
+================================================================================
+
+ASX Growth Leaders With High Insider Ownership To Watch
+
+The Australian market has shown robust performance, with a 2.1% increase over the last week and a 10% rise over the past year, alongside expectations of a 13% annual earnings growth in the coming years. In this environment, growth companies with high insider ownership can be particularly compelling as they often indicate confidence from those who know the company best.
+Let's review some notable picks from our screened stocks.
+ ★★★★★★
+ Catalyst Metals Limited, operating in Australia, is engaged in the exploration and evaluation of mineral properties with a market capitalization of approximately A$393.02 million.
+ The company generates revenue primarily from its operations in Tasmania, totaling A$57.87 million.
+ 17.1%
+Catalyst Metals, with substantial insider buying over the past three months and no significant selling, shows strong insider confidence. The company is trading at 94.5% below its estimated fair value and is forecasted to grow earnings by 77.08% annually. Although it has less than a year of cash runway, its Return on Equity is expected to be high at 37.6%. Recent drilling results have shown high grades, supporting the potential for operational success and profitability within three years.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market capitalization of approximately A$4.89 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, with A$1.28 billion from leisure and A$1.06 billion from corporate segments.
+ 13.3%
+Flight Centre Travel Group, recently profitable, is trading at A$28% below its estimated fair value, indicating potential undervaluation. While its earnings growth forecast of 18.84% per year outpaces the Australian market's 13.4%, revenue growth is more moderate at 9.7% annually but still above the market average of 5.3%. The company's Return on Equity is expected to be strong at 21.9% in three years, reflecting efficient use of shareholder funds without recent insider buying or selling activity to report.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market cap of approximately A$11.25 billion.
+ The company's revenue is derived from three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources is poised for robust growth with earnings expected to increase by 30.9% annually, outperforming the Australian market's 13.4%. Despite a slowdown in revenue growth at 12.1% per year, it still surpasses the market average of 5.3%. However, challenges include a decline in profit margins from 16.3% to 7.9% and insufficient coverage of interest payments by earnings. The company's Return on Equity is anticipated to rise significantly to 25.5% in three years, reflecting strong potential for shareholder value creation despite no recent insider trading activity reported.
+================================================================================
+
+ASX Growth Companies With Up To 13% Insider Ownership
+
+Amidst a fluctuating Australian market, with the ASX200 showing a slight downturn and sectors like Information Technology experiencing significant sell-offs, investors are closely monitoring economic indicators such as the recent unemployment data. In such an environment, growth companies with high insider ownership can be particularly appealing, as they often indicate confidence from those who know the company best.
+We'll examine a selection from our screener results.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions globally, with a market capitalization of approximately A$4.89 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, with the leisure segment bringing in A$1.28 billion and the corporate segment contributing A$1.06 billion.
+ 13.3%
+Flight Centre Travel Group, with high insider ownership, shows promising financial dynamics despite not being the top growth company in Australia. The firm recently turned profitable and is trading at 28% below its estimated fair value. Expected to outpace the Australian market, FLT's revenue and earnings are forecasted to grow annually by 9.7% and 18.8%, respectively, surpassing the market's average of 5.3% for revenue and 13.4% for earnings growth. Return on Equity is also expected to be robust at 21.9% in three years.
+ ★★★★★☆
+ Mineral Resources Limited is a diversified mining services company operating in Australia, Asia, and internationally, with a market capitalization of A$11.25 billion.
+ The company generates revenue from several key segments, including lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources, characterized by high insider ownership, is positioned below the top growth companies in Australia but still presents potential. Its earnings are projected to increase significantly at 30.9% annually, outpacing the Australian market's 13.4%. However, its revenue growth at 12.1% yearly is modest compared to some peers and profit margins have declined from last year's 16.3% to 7.9%. The stock is currently valued at A$40.8% under its estimated fair value, suggesting undervaluation despite financial strains indicated by poorly covered interest payments.
+ ★★★★★★
+ Ora Banda Mining Limited is an Australian company focused on the exploration, operation, and development of mineral properties, with a market capitalization of approximately A$835.94 million.
+ The company generates revenue primarily from its gold mining activities, totaling A$166.66 million.
+ 10.2%
+Ora Banda Mining, despite recent insider dilution, shows promise with its expected revenue growth at 45.2% annually and a forecast to turn profitable within three years. The company's return on equity is anticipated to be very high at 43.1%. However, it trades at 92.9% below its estimated fair value, highlighting potential undervaluation. The recent appointment of Kathryn Cutler as Non-executive Director could enhance exploration and resource development expertise.
+================================================================================
+
+ASX Growth Companies With High Insider Ownership And Up To 96% Earnings Growth
+
+The Australian stock market continues to show robust performance, with the ASX200 maintaining its position above the 8000 mark, buoyed by positive international cues and expectations of monetary easing. In such a thriving market environment, growth companies with high insider ownership can be particularly compelling, as they often signal strong confidence from those closest to the company's operations and future prospects.
+Let's uncover some gems from our specialized screener.
+ ★★★★★☆
+ Mineral Resources Limited, along with its subsidiaries, operates as a mining services company in Australia, Asia, and globally, with a market capitalization of A$11.27 billion.
+ The company generates revenue from three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 30.9% p.a.
+Mineral Resources is positioned intriguingly within the Australian market, with a forecasted earnings growth of 30.9% annually, outpacing the broader market's 13.3%. Despite trading at 40.5% below its estimated fair value and expecting robust revenue growth of 12.1% per year against a market average of 5.3%, challenges persist, notably a decline in profit margins from 16.3% to 7.9%, and insufficient coverage of interest payments by earnings, which raises concerns about financial health in the short term.
+ ★★★★★★
+ Ora Banda Mining Limited is an Australian company focused on the exploration, operation, and development of mineral properties, with a market capitalization of approximately A$835.94 million.
+ The company generates revenue primarily from gold mining, totaling A$166.66 million.
+ 10.2%
+ 96.2% p.a.
+Ora Banda Mining, while trading at a significant 92.9% below its estimated fair value, is poised for substantial growth with expected revenue increases of 45.2% annually, outstripping the Australian market's average of 5.3%. The company anticipates becoming profitable within three years and forecasts an exceptionally high Return on Equity of 43.1%. However, shareholder dilution over the past year and a lack of recent insider trading activity temper these prospects.
+ ★★★★☆☆
+ Technology One Limited is a company that develops, markets, sells, implements, and supports integrated enterprise business software solutions both in Australia and internationally, with a market capitalization of approximately A$6.18 billion.
+ The company generates revenue through three primary segments: software, which brings in A$317.24 million, corporate services at A$83.83 million, and consulting services accounting for A$68.13 million.
+ 12.3%
+ 14.4% p.a.
+Technology One, an Australian software company, shows moderate growth prospects with earnings expected to increase by 14.4% annually, slightly outpacing the market's 13.3%. Despite a high Price-to-Earnings ratio of 56.4x—below the industry average—its forecasted Return on Equity is strong at 32.6%. Recent strategic moves include appointing Paul Robson as Non-Executive Director to bolster its SaaS platform's global expansion and operational efficiency. However, insider trading activity remains undisclosed, presenting a potential concern for investors looking for high insider ownership signals.
+================================================================================
+
+Exploring ASX Growth Companies With High Insider Ownership: Emerald Resources Leads The Pack
+
+Amidst a mixed performance in the Australian market, with sectors like IT and materials showing gains while communications and healthcare face declines, investors continue to navigate through these varied sectoral movements. In this context, understanding the importance of high insider ownership can offer valuable insights into growth companies on the ASX, potentially providing a layer of investor confidence during uncertain times.
+Let's dive into some prime choices out of from the screener.
+ ★★★★☆☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.54 billion.
+ The company generates revenue primarily from mine operations, totaling A$339.32 million.
+ 18.5%
+Emerald Resources, with substantial insider ownership, reported a significant increase in sales and net income for the half year ended December 31, 2023. Despite trading at a considerable discount to its estimated fair value, concerns include shareholder dilution over the past year. The company's revenue is expected to grow faster than the Australian market average, yet its forecasted Return on Equity is considered low for the coming years. Overall earnings are projected to grow significantly.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company based in Australia, with operations extending to Asia and globally, boasting a market cap of approximately A$15.46 billion.
+ The company generates revenue primarily from three segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources, characterized by high insider ownership, is trading at 28.2% below its estimated fair value, signaling potential undervaluation. The company's earnings are expected to grow significantly at 29.19% annually, outpacing the Australian market forecast of 13.7%. However, challenges include a profit margin drop to 7.9% from last year's 16.3%, and earnings not sufficiently covering interest payments, indicating financial strain despite robust revenue and earnings growth forecasts.
+ ★★★★☆☆
+ Technology One Limited is a company that develops, markets, sells, implements, and supports integrated enterprise business software solutions both in Australia and internationally, with a market capitalization of approximately A$5.45 billion.
+ The company generates its revenue from the development, marketing, sale, implementation, and support of integrated enterprise business software solutions across both domestic and international markets.
+ 12.3%
+Technology One Limited, with high insider ownership, reported a revenue increase to A$240.83 million and net income to A$48 million for the first half of 2024. Earnings per share also rose from A$0.1273 to A$0.1475. The company's earnings are expected to grow by 13.94% annually, outperforming the Australian market forecast of 13.7%. Despite these positives, Technology One's revenue growth forecast of 11.2% yearly is robust but not exceptional, and its price-to-earnings ratio stands at 49.8x, below the industry average of 60.7x.
+================================================================================
+
+Exploring ASX Growth Companies With High Insider Ownership: Emerald Resources And Two More
+
+The Australian market has shown robust performance, rising 1.5% over the last week and achieving an 8.7% increase over the past year with earnings expected to grow by 14% annually. In this thriving environment, stocks like Emerald Resources that combine growth potential with high insider ownership may offer appealing opportunities for investors looking to align with the interests of company leadership.
+Let's explore several standout options from the results in the screener.
+ ★★★★☆☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.57 billion.
+ The company generates its revenue primarily from mine operations, totaling approximately A$339.32 million.
+ 18.5%
+ 22.8% p.a.
+Emerald Resources, an Australian growth company with high insider ownership, reported a substantial increase in sales and net income for the half-year ending December 2023, with sales rising to A$176.75 million and net income to A$46.87 million. The company's earnings are expected to grow by 22.76% annually over the next three years, outpacing the Australian market's forecast growth. Despite this strong performance and significant undervaluation at 71.9% below fair value, shareholder dilution has occurred over the past year, and its forecasted Return on Equity is considered low at 17.9%.
+ ★★★★★☆
+ Mineral Resources Limited is a diversified mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$15.30 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 29.2% p.a.
+Mineral Resources, an Australian growth company with high insider ownership, faces mixed financial indicators. While its revenue is set to outpace the market with a 10.7% annual increase, its profit margins have declined from last year's 16.3% to 7.9%. However, earnings are expected to surge by 29.2% annually over the next three years, significantly above the market average of 13.7%. The stock is currently undervalued by 28.8%, despite concerns about its ability to cover interest payments with earnings.
+ ★★★★☆☆
+ Technology One Limited is a company that develops, markets, sells, implements, and supports integrated enterprise business software solutions both in Australia and internationally, with a market capitalization of approximately A$5.81 billion.
+ The company generates revenue through three primary segments: software sales contributing A$317.24 million, corporate services adding A$83.83 million, and consulting services at A$68.13 million.
+ 12.3%
+ 13.8% p.a.
+Technology One, an Australian software company, demonstrates solid growth with a price-to-earnings ratio below the industry average at 53.1x. Its earnings have expanded by 13.1% over the past year and are projected to grow by 13.77% annually, slightly above the national market forecast of 13.7%. Recent financial results show a robust half-year performance with revenue up to A$240.83 million from A$201.01 million, and net income increasing to A$48 million from A$41.28 million previously.
+================================================================================
+
+ASX Growth Companies With High Insider Ownership In May 2024
+
+As the ASX200 navigates a challenging session with a notable dip, sectors like IT and healthcare are showing resilience with positive movements. This mixed market backdrop sets an interesting stage for investors looking at growth companies with high insider ownership in Australia. In such fluctuating market conditions, companies with substantial insider ownership can be appealing as they often demonstrate alignment between management's interests and those of shareholders, potentially offering stability amidst market volatility.
+Underneath we present a selection of stocks filtered out by our screen.
+ ★★★★☆☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.57 billion.
+ The primary revenue segment for the company, generating A$339.32 million, comes from mine operations.
+ 18.5%
+Emerald Resources is trading at a significant discount, valued 71.9% below its estimated fair value, suggesting potential for growth-oriented investors. The company's revenue and earnings are forecasted to grow by 19.4% and 22.76% per year respectively, outpacing the Australian market averages of 5% and 13.7%. Despite this promising outlook, concerns include shareholder dilution over the past year and a low projected return on equity of 17.9%. Recent financials showed strong performance with substantial increases in sales and net income compared to the previous year.
+ ★★★★★☆
+ Mineral Resources Limited, along with its subsidiaries, functions as a mining services company across Australia, Asia, and other international markets, boasting a market capitalization of approximately A$15.30 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources Limited is poised for robust growth with revenue and earnings forecasted to expand by 10.7% and 29.2% per year, respectively, outstripping the Australian market averages. Despite trading at a substantial 28.8% below its estimated fair value, concerns linger over its profit margins which have declined from last year and interest payments that are not well covered by earnings. The high forecast return on equity of 21.7% in three years underscores potential upside amidst these challenges.
+ ★★★★☆☆
+ Technology One Limited is a company that develops, markets, sells, implements, and supports integrated enterprise business software solutions both in Australia and internationally, with a market capitalization of approximately A$5.81 billion.
+ The company generates revenue through three primary segments: software sales contributing A$317.24 million, corporate services at A$83.83 million, and consulting services totaling A$68.13 million.
+ 12.3%
+Technology One Limited, an Australian software company, exhibits solid growth prospects with revenue and earnings increasing by 11.3% and 13.77% per year respectively, outpacing the broader Australian market. Despite its high price-to-earnings ratio of A$53.1x compared to the industry average of A$61.1x, it maintains a robust forecast return on equity of 32.8%. Recent financial results showed a significant rise in half-year revenue to A$240.83 million and net income to A$48 million, reflecting ongoing operational success.
+================================================================================
+
+Are Investors Undervaluing Mineral Resources Limited (ASX:MIN) By 35%?
+
+Today we will run through one way of estimating the intrinsic value of Mineral Resources Limited (
+) by estimating the company's future cash flows and discounting them to their present value. We will take advantage of the Discounted Cash Flow (DCF) model for this purpose. Models like these may appear beyond the comprehension of a lay person, but they're fairly easy to follow.
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. For those who are keen learners of equity analysis, the 
+ may be something of interest to you.
+We are going to use a two-stage DCF model, which, as the name states, takes into account two stages of growth. The first stage is generally a higher growth period which levels off heading towards the terminal value, captured in the second 'steady growth' period. In the first stage we need to estimate the cash flows to the business over the next ten years. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+A DCF is all about the idea that a dollar in the future is less valuable than a dollar today, so we need to discount the sum of these future cash flows to arrive at a present value estimate:
+ = AU$5.6b
+The second stage is also known as Terminal Value, this is the business's cash flow after the first stage. The Gordon Growth formula is used to calculate Terminal Value at a future annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.3%. We discount the terminal cash flows to today's value at a cost of equity of 8.3%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$1.9b× (1 + 2.3%) ÷ (8.3%– 2.3%) = AU$32b
+= TV / (1 + r)
+= AU$32b÷ ( 1 + 8.3%)
+= AU$14b
+The total value is the sum of cash flows for the next ten years plus the discounted terminal value, which results in the Total Equity Value, which in this case is AU$20b. To get the intrinsic value per share, we divide this by the total number of shares outstanding. Relative to the current share price of AU$66.5, the company appears quite undervalued at a 35% discount to where the stock price trades currently. Valuations are imprecise instruments though, rather like a telescope - move a few degrees and end up in a different galaxy. Do keep this in mind.
+We would point out that the most important inputs to a discounted cash flow are the discount rate and of course the actual cash flows. You don't have to agree with these inputs, I recommend redoing the calculations yourself and playing with them. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Mineral Resources as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 8.3%, which is based on a levered beta of 1.317. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Although the valuation of a company is important, it is only one of many factors that you need to assess for a company. DCF models are not the be-all and end-all of investment valuation. Rather it should be seen as a guide to "what assumptions need to be true for this stock to be under/overvalued?" If a company grows at a different rate, or if its cost of equity or risk free rate changes sharply, the output can look very different. What is the reason for the share price sitting below the intrinsic value? For Mineral Resources, we've put together three fundamental factors you should explore:
+PS. Simply Wall St updates its DCF calculation for every Australian stock every day, so if you want to find the intrinsic value of any other stock just 
+.
+ 
+================================================================================
+
+ASX Stocks Estimated To Be Below Intrinsic Value In June 2024
+
+As the Australian market shows modest gains with the ASX200 closing up 0.1% this week, investor focus may shift towards sectors that have underperformed or outperformed, such as Materials and IT respectively. In such a mixed economic landscape, identifying stocks that are potentially undervalued becomes crucial, especially when considering long-term growth prospects in fluctuating markets.
+Let's uncover some gems from our specialized screener
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$10.52 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 19%
+Mineral Resources Limited, priced at A$53.92, is currently trading 19% below our calculated fair value of A$66.53. This discrepancy suggests the stock might be undervalued based on discounted cash flows. The company's earnings are expected to increase by 27.42% annually, outpacing the Australian market projection of 13.8%. Despite this growth potential and a forecasted high return on equity of 25.8%, concerns arise from its profit margins dropping to 7.9% from last year’s 16.3%, coupled with inadequate coverage of interest payments by earnings.
+ Strike Energy Limited is an Australian company engaged in the exploration and development of oil and gas resources, with a market capitalization of approximately A$801.02 million.
+ The company primarily focuses on the exploration and development of oil and gas resources in Australia.
+ 29.9%
+Strike Energy, with a current price of A$0.28, appears undervalued by over 20% according to discounted cash flow analysis, suggesting potential for investors seeking value based on financial metrics. The company's revenue and earnings are expected to grow at 37.8% and 36.69% per year respectively, significantly outperforming the Australian market averages of 5.4% and 13.8%. However, investor caution may be warranted due to recent significant insider selling and shareholder dilution over the past year.
+ Viva Energy Group Limited is an energy company operating in Australia, Singapore, and Papua New Guinea with a market capitalization of approximately A$5.00 billion.
+ The company generates revenue through three primary segments: Convenience & Mobility at A$10.10 billion, Commercial & Industrial at A$16.64 billion, and Energy & Infrastructure at A$7.32 billion.
+ 17.1%
+Viva Energy Group, priced at A$3.15, is considered undervalued by 17.1%, with a fair value estimated at A$3.8 based on discounted cash flow analysis. Despite recent index changes and not being covered well by earnings or cash flows, its dividend stands at 4.51%. Expected to outperform with an earnings growth forecast of 29.76% annually, it contrasts with slower revenue growth projections of 3.2% per year against the market's 5.4%.
+================================================================================
+
+Capricorn Metals Leads Three ASX Growth Companies With Strong Insider Ties
+
+As the Australian market shows signs of activity with the ASX200 expected to rise, and amidst varied global economic signals, investors are keenly watching local developments. In this context, understanding the importance of insider ownership in growth companies can be particularly relevant, as it often reflects a deep commitment by those who know the company best to its long-term success.
+Here's a peek at a few of the choices from the screener.
+ ★★★★★☆
+ Capricorn Metals Ltd is an Australian company focused on the evaluation, exploration, development, and production of gold properties, with a market capitalization of approximately A$1.83 billion.
+ The company generates its revenue primarily from the Karlawinda segment, totaling approximately A$356.94 million.
+ 12.3%
+ 26.5% p.a.
+Capricorn Metals, despite significant insider selling over the past three months, shows promising growth prospects. Its return on equity is expected to reach 30.6% in three years, outpacing forecasts for the broader Australian market. Revenue and earnings are also set to grow robustly at annual rates of 14.1% and 26.5%, respectively, both well above market averages of 5.5% and 13.8%. However, recent financial results have been impacted by large one-off items, tempering some of the positive outlook.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market cap of approximately A$4.36 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, with A$1.28 billion from leisure and A$1.06 billion from corporate sectors.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group, with its substantial insider ownership, is trading at 20.9% below its estimated fair value, suggesting potential undervaluation. The company recently became profitable and is experiencing robust financial growth with earnings forecasted to expand by 18.8% annually, outstripping the Australian market's expectation of 13.8%. Additionally, Flight Centre's projected revenue growth rate stands at 9.7% per year, surpassing the national average of 5.5%. Its return on equity is also expected to be impressively high at 21.7% in three years.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$11.70 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 25.4% p.a.
+Mineral Resources, while trading at 16.9% below its estimated fair value, shows a promising growth trajectory with earnings projected to increase by 25.4% annually, outpacing the Australian market's average of 13.8%. Despite lower profit margins this year compared to last, the company's revenue is expected to grow by 12.5% per year, also above the national average of 5.5%. However, its financial position is challenged by earnings not covering interest payments adequately.
+================================================================================
+
+ASX Growth Companies With High Insider Ownership: Spotlight On Three Stocks
+
+The Australian Securities Exchange (ASX) recently experienced a robust performance, closing up nearly 1.2% with notable gains in the materials sector. Amidst these market movements, understanding the significance of high insider ownership can be particularly relevant as it often reflects leadership's confidence in their company's growth trajectory and long-term prospects.
+Below we spotlight a couple of our favorites from our exclusive screener.
+ ★★★★★☆
+ Emerald Resources NL, headquartered in Australia, is focused on the exploration and development of mineral reserves primarily in Cambodia, with a market capitalization of approximately A$2.39 billion.
+ The company generates A$339.32 million from its mine operations.
+ 18.5%
+ 21% (2026 estimate)
+Emerald Resources, an Australian growth company, exhibits high insider ownership with robust financial prospects. Despite some shareholder dilution over the past year, Emerald's earnings have surged by 53.4% and are projected to expand at a significant annual rate of 23.2%, outpacing the broader Australian market's expected growth. Revenue forecasts also show strong performance, growing faster than market averages at 18.6% per year, though slightly below the 20% high-growth benchmark.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market capitalization of approximately A$4.62 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, with A$1.28 billion from leisure and A$1.06 billion from corporate segments.
+ 13.3%
+ 22% (2026 estimate)
+Flight Centre Travel Group, while not a standout in high insider ownership growth categories in Australia, shows promising financial trends. The company is trading at 19.7% below its estimated fair value and has recently turned profitable. Forecasted earnings growth of 18.8% per year surpasses the Australian market average of 13%, with revenue also expected to grow faster at 9.7% annually compared to the market's 5.2%. However, its revenue growth does not meet the high-growth benchmark of 20%.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market cap of approximately A$11.34 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 26% (2026 estimate)
+Mineral Resources, despite not excelling in high insider ownership growth categories in Australia, demonstrates robust financial prospects. The company's earnings are expected to grow by 27.4% annually, outpacing the Australian market projection of 13.1%. However, its profit margins have declined from last year's 16.3% to 7.9%. Revenue growth forecasts at 12.1% annually also exceed market expectations but fall short of the high-growth threshold of 20%. Additionally, the stock is trading at a significant discount to its fair value.
+================================================================================
+
+ASX Growth Companies With High Insider Ownership To Watch
+
+Amidst a backdrop of fluctuating commodity prices and mixed global market performances, the Australian Securities Exchange (ASX) is experiencing varied dynamics, notably influenced by a recent slump in iron ore prices. In such an environment, growth companies with high insider ownership on the ASX offer a unique proposition, potentially aligning closely with shareholder interests and demonstrating confidence in their business models during uncertain times.
+Here's a peek at a few of the choices from the screener.
+ ★★★★☆☆
+ Aussie Broadband Limited offers telecommunications services to both residential and business customers across Australia, with a market capitalization of approximately A$1.03 billion.
+ The company generates revenue through its telecommunications services, with segments including Residential at A$549.59 million, Business at A$94.21 million, Wholesale at A$125.25 million, and Enterprise and Government at A$85.85 million.
+ 10.8%
+ 26.4% p.a.
+Aussie Broadband, a company with high insider ownership, is navigating a growth trajectory with its earnings expected to increase by 26.4% annually. Despite recent insider selling and shareholder dilution over the past year, the firm is actively pursuing acquisitions to enhance its fibre assets and maintain dominance in residential revenues. Trading at a substantial discount to fair value, Aussie Broadband's revenue is also set to outpace the Australian market average significantly.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market capitalization of approximately A$4.73 billion.
+ The company generates revenue primarily through its leisure and corporate travel segments, with A$1.28 billion from leisure and A$1.06 billion from corporate services.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group, with high insider ownership, is currently trading at 16.6% below its estimated fair value. The company's revenue growth at 9.7% per year is expected to outperform the Australian market's 5.3%. Although its earnings growth of 18.8% per year isn't considered very large, it remains above the market average of 13.1%. Recently becoming profitable, Flight Centre also anticipates a strong return on equity of 21.8% in three years.
+ ★★★★★☆
+ Mineral Resources Limited, with its subsidiaries, serves as a mining services company operating in Australia, Asia, and internationally, boasting a market capitalization of A$11.38 billion.
+ The company generates revenue from several key segments: Lithium (A$1.60 billion), Iron Ore (A$2.50 billion), and Mining Services (A$2.82 billion).
+ 11.6%
+ 27.5% p.a.
+Mineral Resources, characterized by high insider ownership, is trading at a significant discount of 39.1% below its estimated fair value. While its profit margins have declined from 16.3% to 7.9%, earnings are projected to grow robustly at 27.5% annually, outpacing the Australian market forecast of 13.1%. Revenue growth is also strong at 12.1% per year, exceeding the market's expectation of 5.3%. The company's return on equity is expected to be high at 25.8% in three years.
+================================================================================
+
+Emerald Resources And Two More ASX Growth Companies With High Insider Ownership
+
+Amidst a fluctuating Australian market where the ASX200 has seen minor declines and sectors like Healthcare show resilience, investors continue to navigate through mixed signals. In such a landscape, growth companies with high insider ownership can offer a unique appeal, as these insiders often have a vested interest in the company's success, aligning their goals closely with those of shareholders.
+We're going to check out a few of the best picks from our screener tool.
+ ★★★★★☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.39 billion.
+ The primary revenue stream, totaling A$339.32 million, is derived from mine operations.
+ 18.5%
+ 23.2% p.a.
+Emerald Resources is positioned for robust growth with earnings expected to increase by 23.2% annually, outpacing the Australian market's average of 13.1%. Despite a past year's earnings surge of 53.4%, shareholder dilution has occurred. Looking ahead, Emerald's revenue growth forecast at 18.6% yearly also exceeds the market expectation of 5.2%. Additionally, its Return on Equity is projected to reach an impressive 20.7% in three years, indicating strong profitability and management efficiency.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia, with a market capitalization of approximately A$4.62 billion.
+ The company generates A$1.28 billion from its leisure segment and A$1.06 billion from corporate travel services.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group has shown promising financial trends, with earnings expected to grow by 18.81% annually, surpassing the Australian market forecast of 13% per year. Additionally, its revenue growth at 9.7% yearly also exceeds the market's average of 5.2%. The company recently became profitable and is trading at a 19.7% discount to its estimated fair value. However, its insider ownership dynamics remain undisclosed in recent months, presenting a mixed scenario for investors focusing on high insider ownership metrics.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market capitalization of A$11.34 billion.
+ The company generates revenue from three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 27.4% p.a.
+Mineral Resources is trading at a significant discount, priced 40.9% below its estimated fair value, signaling potential undervaluation. The company's earnings are expected to grow by 27.4% annually over the next three years, outpacing the Australian market projection of 13.1%. Despite a high forecasted return on equity of 25.8%, concerns arise from its declining profit margins and inadequate coverage of interest payments by earnings, reflecting some financial strains despite robust growth projections.
+================================================================================
+
+Emerald Resources And Two ASX Growth Stocks With High Insider Ownership
+
+The Australian market recently experienced a mixed day, with the ASX200 closing down by 0.75% primarily due to declines in the mining sector, while discretionary and IT sectors showed resilience with modest gains. In such a fluctuating environment, stocks with high insider ownership can often be appealing as they suggest that those who know the company best are confident in its future prospects.
+Let's explore several standout options from the results in the screener.
+ ★★★★★☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.51 billion.
+ The primary revenue segment for the company is derived from mine operations, generating A$339.32 million.
+ 18.5%
+ 23.2% p.a.
+Emerald Resources has demonstrated robust growth with a 53.4% increase in earnings over the past year. Despite some shareholder dilution, EMR is poised for significant expansion, with earnings expected to rise by 23.2% annually and revenue forecasted to grow at 18.6% per year, outpacing the Australian market average significantly. Additionally, its Return on Equity is projected to be high at 20.7%, indicating efficient management and potentially lucrative returns for investors prioritizing insider ownership and growth metrics.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market cap of A$4.70 billion.
+ The company generates A$1.28 billion from its leisure segment and A$1.06 billion from corporate travel services.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group has recently transitioned to profitability and is poised for continued growth, with earnings expected to rise by 18.81% annually. This rate outstrips the Australian market's average, pegged at 13.1% per year. Additionally, its revenue growth forecast at 9.7% annually also exceeds the national market average of 5.3%. The company's Return on Equity is predicted to be robust at 21.8% in three years, underscoring efficient capital management despite not having significant insider trading activity recently.
+ ★★★★★☆
+ Mineral Resources Limited is a diversified mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$11.02 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 27.5% p.a.
+Mineral Resources, trading at a substantial discount to its estimated fair value, shows promise with its high-quality earnings and absence of recent insider selling. While its revenue growth forecast of 12.1% per year is below the high-growth benchmark of 20%, it still surpasses the Australian market average. The company's earnings are expected to increase by 27.5% annually over the next three years, outperforming the market projection of 13.1%. However, concerns include lower profit margins compared to last year and poor coverage of interest payments by earnings.
+================================================================================
+
+ASX Growth Leaders With High Insider Stakes In July 2024
+
+Amidst a generally positive trend in the Australian market with all sectors showing gains, and despite some challenges in consumer sentiment due to inflation concerns, investors continue to seek robust growth opportunities. Companies with high insider ownership often attract attention as they can signal strong confidence from those closest to the business, aligning well with current market dynamics where informed decision-making is key.
+We'll examine a selection from our screener results.
+ ★★★★★☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.51 billion.
+ The company generates revenue primarily from mine operations, which totaled A$339.32 million.
+ 18.5%
+ 21% (2026 estimate)
+Emerald Resources, with significant insider ownership, shows promising growth prospects in the Australian market. Its earnings are expected to grow by 23.2% annually, outpacing the market's 13.1%, while revenue forecasts also exceed market averages at an 18.6% increase per year. Despite some shareholder dilution last year, Emerald's robust projected Return on Equity of 20.7% underscores its potential for strong financial performance and stakeholder value creation in the coming years.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market capitalization of A$4.70 billion.
+ The company generates A$1.28 billion from its leisure segment and A$1.06 billion from its corporate travel services.
+ 13.3%
+ 22% (2026 estimate)
+Flight Centre Travel Group, with substantial insider ownership, is poised for notable growth. The company recently became profitable and is trading 17.1% below its estimated fair value. Forecasted earnings growth stands at 18.8% annually, surpassing the Australian market's average of 13.1%. While its revenue growth forecast of 9.7% per year also exceeds the market expectation of 5.3%, it does not reach the high-growth threshold of over 20%.
+ ★★★★★☆
+ Mineral Resources Limited, a mining services company with operations in Australia, Asia, and internationally, has a market capitalization of approximately A$11.02 billion.
+ The company's revenue is derived from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 26% (2026 estimate)
+Mineral Resources, characterized by high insider ownership, is set to expand with a revenue growth forecast of 12.1% annually, outpacing the Australian market's average of 5.3%. Despite not meeting the high-growth benchmark of 20%, its earnings are expected to surge by 27.5% per year. However, challenges persist as profit margins have declined from last year and interest payments are poorly covered by earnings. The stock is currently valued at 40.7% below its fair value estimate.
+================================================================================
+
+Three ASX Growth Companies With High Insider Ownership And Earnings Growth Up To 27%
+
+The Australian market has shown robust performance, climbing 11% over the past year with earnings projected to increase by 13% annually. In this context, stocks like those of growth companies with high insider ownership can be particularly compelling, as they often signal strong confidence from those most familiar with the company's prospects.
+Here we highlight a subset of our preferred stocks from the screener.
+ ★★★★★☆
+ Emerald Resources NL is a company focused on the exploration and development of mineral reserves in Cambodia and Australia, with a market capitalization of approximately A$2.51 billion.
+ The company generates revenue primarily from mine operations, totaling approximately A$339.32 million.
+ 18.5%
+ 23.2% p.a.
+Emerald Resources, an Australian growth company with significant insider ownership, shows promising financial forecasts despite some concerns. The company's earnings are expected to grow by 23.2% annually, outpacing the broader Australian market's 13% growth rate. Similarly, revenue is projected to increase by 18.6% per year, which also exceeds the national average of 5.3%. However, shareholder dilution over the past year and revenue growth not reaching the high benchmark of 20% per year temper these positives.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market cap of approximately A$4.70 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, with the leisure segment bringing in A$1.28 billion and the corporate segment contributing A$1.06 billion.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group, an Australian growth company with high insider ownership, is trading at 17.1% below its estimated fair value, indicating potential undervaluation. The company recently became profitable and is expected to see its earnings grow by 18.81% annually, outperforming the Australian market forecast of 13%. Additionally, revenue growth is anticipated at 9.7% per year, surpassing the national average of 5.3%. However, this revenue growth rate falls short of the high benchmark of 20% per year.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally with a market capitalization of A$11.02 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 27.2% p.a.
+Mineral Resources, an Australian growth company with high insider ownership, is currently undervalued by 40.8%, suggesting a potential investment opportunity. Despite a decrease in net profit margin from last year, the company's earnings are expected to grow by 27.2% annually over the next three years, significantly outpacing the Australian market forecast of 13%. Revenue growth is also strong at 12.1% per year, exceeding the national average of 5.3%. However, interest payments are not well-covered by earnings, indicating some financial risk.
+================================================================================
+
+DroneShield Leads Three ASX Stocks Considered Below Estimated Value
+
+The Australian market has shown robust growth, rising 1.7% in the past week and achieving a 9.2% increase over the last year, with earnings projected to grow by 13% annually. In such a thriving environment, stocks like DroneShield that are considered undervalued present potential opportunities for informed investors looking for assets that may be poised for growth.
+We're going to check out a few of the best picks from our screener tool.
+ DroneShield Limited is a company that focuses on the development, commercialization, and sale of drone detection and security technology in Australia and the United States, with a market capitalization of approximately A$1.98 billion.
+ DroneShield's revenue primarily stems from the aerospace and defense sector, totaling A$55.08 million.
+ 47.4%
+DroneShield, trading at A$2.60, significantly below our fair value estimate of A$4.95, appears undervalued based on discounted cash flows. Recent equity offerings raised over A$190 million, potentially diluting shareholders but also fueling growth. Despite a low forecasted return on equity of 16.9% in three years, earnings and revenue are expected to grow robustly by 43.25% and 33% per year respectively—outpacing the Australian market significantly.
+ Mineral Resources Limited is a mining services company operating across Australia, Asia, and internationally, with a market capitalization of approximately A$11.28 billion.
+ The company generates revenue from three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 40.5%
+Mineral Resources, priced at A$57.65, is valued well below our fair value estimate of A$96.97, indicating significant undervaluation based on discounted cash flows. While the company's profit margins have dipped from 16.3% to 7.9%, its earnings are expected to surge by 30.89% annually, outperforming the Australian market projection of 12.9%. However, its ability to cover interest payments with earnings is weak, suggesting some financial strain despite robust growth forecasts and a strong projected return on equity of 25.5%.
+ Viva Energy Group Limited is an energy company operating in Australia, Singapore, and Papua New Guinea, with a market capitalization of approximately A$5.05 billion.
+ The company generates revenue through three primary segments: Convenience & Mobility (A$10.10 billion), Commercial & Industrial (A$16.64 billion), and Energy & Infrastructure (A$7.32 billion).
+ 23.4%
+Viva Energy Group, valued at A$3.18, trades below our fair value estimate of A$4.15, highlighting its undervaluation based on discounted cash flows. Expected to grow earnings by 30.74% annually, it surpasses the market forecast of 12.9%. However, its revenue growth projection of 3.3% lags behind the market's 5.3%. Recent index changes saw VEA added to the S&P/ASX 100 but dropped from the S&P/ASX Small Ordinaries Index, reflecting shifting market perceptions.
+================================================================================
+
+ASX Growth Companies With High Insider Ownership Featuring Flight Centre Travel Group And Two More
+
+Amidst a mixed performance in the Australian market, with sectors like financials showing strength while materials face declines, investors continue to navigate through varying economic signals. In such a landscape, growth companies with high insider ownership can be particularly appealing as they often indicate confidence from those closest to the company's operations and future prospects.
+Let's review some notable picks from our screened stocks.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market capitalization of approximately A$4.96 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, totaling A$1.28 billion and A$1.06 billion respectively.
+ 13.3%
+Flight Centre Travel Group, a notable entity in the travel sector, showcases promising financial prospects with insider ownership that aligns interests with shareholders. While its earnings are set to increase by 18.84% annually, this growth is robust but not exceptional. Revenue is expected to rise at 9.7% per year, outpacing the Australian market's 5.3%. Additionally, Flight Centre's Return on Equity is anticipated to be high at 21.9% in three years, reflecting efficient equity use and potential for sustained profitability.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market capitalization of A$11.28 billion.
+ The company generates revenue through three primary streams: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources, while trading at 40.5% below its estimated fair value, shows robust prospects with earnings expected to grow by 30.9% annually, outpacing the Australian market's average of 12.9%. However, it faces challenges as interest payments are not well covered by earnings and profit margins have declined from last year. Insider ownership aligns interests with shareholders, supporting potential growth despite financial pressure points.
+ ★★★★☆☆
+ Technology One Limited is an Australian company that develops, markets, sells, implements, and supports integrated enterprise business software solutions both domestically and internationally, with a market capitalization of approximately A$6.19 billion.
+ The company generates revenue through three primary segments: software sales contributing A$317.24 million, corporate services adding A$83.83 million, and consulting services at A$68.13 million.
+ 12.3%
+Technology One, with high insider ownership, is positioned for continued growth, though its pace may not be as rapid as some peers. The company's recent financials show a solid increase in revenue to A$240.83 million and net income to A$48 million. The appointment of Paul Robson to the board could further enhance strategic initiatives, given his background in SaaS and operational efficiency. While the P/E ratio stands below industry average at 56.4x, earnings are expected to grow by 14.35% annually, slightly above the Australian market forecast of 12.9%.
+================================================================================
+
+Three ASX Growth Companies With High Insider Ownership And Up To 30% Earnings Growth
+
+The Australian market has shown robust performance, climbing 1.7% in the last week and 9.2% over the past year, with earnings projected to grow by 13% annually. In such a thriving environment, growth companies with high insider ownership can be particularly compelling, as this often signals confidence from those who know the company best.
+We'll examine a selection from our screener results.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market cap of approximately A$4.96 billion.
+ The company generates A$1.28 billion from its leisure segment and A$1.06 billion from corporate travel services.
+ 13.3%
+ 18.8% p.a.
+Flight Centre Travel Group, a notable entity in the Australian travel sector, recently turned profitable and is trading at A$27.6% below its estimated fair value. While its revenue growth of 9.7% per year is modest compared to high-growth benchmarks, it outpaces the broader Australian market's 5.3%. Earnings are expected to increase by 18.8% annually, surpassing the market forecast of 12.9%. Additionally, Flight Centre's return on equity is projected to reach an impressive 21.9% in three years.
+ ★★★★★☆
+ Mineral Resources Limited is a diversified mining services company operating across Australia, Asia, and globally, with a market capitalization of approximately A$11.28 billion.
+ The company generates revenue from three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 30.9% p.a.
+Mineral Resources Limited is positioned for robust growth with expected earnings increasing at a rate of 30.89% annually, significantly outpacing the Australian market's forecast of 12.9%. Despite a dip in profit margins from 16.3% to 7.9%, the company's revenue growth remains strong at 12.1% per year, and it trades at A$40.5% below its estimated fair value. Challenges include poor coverage of interest payments by earnings, but high non-cash earnings and a projected return on equity of 25.5% suggest potential resilience.
+ ★★★★☆☆
+ Technology One Limited is an enterprise software solutions provider operating both in Australia and internationally, with a market cap of approximately A$6.19 billion.
+ The company generates revenue through three primary segments: software sales contributing A$317.24 million, corporate services at A$83.83 million, and consulting services totaling A$68.13 million.
+ 12.3%
+ 14.4% p.a.
+Technology One, an Australian software company, demonstrates a solid growth trajectory with its earnings expected to grow by 14.4% annually, surpassing the broader Australian market's forecast of 12.9%. This growth is supported by revenue projections increasing at 11.1% per year, also outpacing the national average of 5.3%. Despite a high price-to-earnings ratio of 56.4x compared to the industry average of 61.7x, the firm benefits from robust insider ownership and strategic board appointments aimed at enhancing its SaaS capabilities globally.
+================================================================================
+
+ASX Growth Companies With Up To 27% Insider Ownership
+
+Amidst a mixed performance in the Australian market, with the ASX slightly down and most sectors seeing declines, investor focus may benefit from considering growth companies with significant insider ownership. Such firms often demonstrate a commitment to long-term success, which could be particularly appealing in the current environment where strategic stability is valued.
+Underneath we present a selection of stocks filtered out by our screen.
+ ★★★★★☆
+ Develop Global Limited, operating in Australia, focuses on the exploration and development of mineral resources with a market capitalization of approximately A$557.40 million.
+ The company generates revenue primarily through its Mining Services segment, which produced A$109.75 million.
+ 22.6%
+Develop Global, an Australian company, is anticipated to see significant growth with earnings expected to increase and revenue projected to grow at 54.2% annually, outpacing the market's 5.3%. Despite these prospects, there are concerns: shareholder dilution occurred last year and the company has less than a year of cash runway. Additionally, while it's set to become profitable within three years, its forecasted Return on Equity is relatively low at 12.5%.
+ ★★★★★☆
+ Mineral Resources Limited is a diversified mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$11.02 billion.
+ The company generates revenue from lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources, trading 40.8% below its fair value, shows promise with expected significant earnings growth of 27.16% annually over the next three years and revenue forecast to increase by 12.1% each year, surpassing Australia's market growth rate of 5.3%. However, challenges include lower profit margins compared to last year and earnings that barely cover interest payments. Insider ownership remains high but without recent buying or selling activity reported in the past three months.
+ ★★★★☆☆
+ Qualitas operates as a real estate investment firm, engaging in direct investments across various real estate classes and locations, acquisitions and restructuring of distressed debt, capital raising for third parties, and consulting services, with a market capitalization of approximately A$679.19 million.
+ The company generates revenue through two primary segments: Direct Lending, which brought in A$27.58 million, and Funds Management, contributing A$19.32 million.
+ 27.1%
+Qualitas Limited, with high insider ownership, is poised for robust growth, forecasting a 25.12% annual increase in earnings and a 15.4% rise in revenue, outpacing the Australian market's average. Despite this promising outlook, its dividend sustainability is questionable due to poor earnings coverage and an expected low return on equity of 9.3% in three years. Recent developments include the departure of director Michael Schoenfeld on June 30, 2024, which could impact governance dynamics.
+================================================================================
+
+ASX Growth Companies With High Insider Ownership And Up To 96% Earnings Growth
+
+The Australian stock market continues to show robust performance, with the ASX200 maintaining its position above the 8000 mark, buoyed by positive international cues and expectations of monetary easing. In such a thriving market environment, growth companies with high insider ownership can be particularly compelling, as they often signal strong confidence from those closest to the company's operations and future prospects.
+Let's uncover some gems from our specialized screener.
+ ★★★★★☆
+ Mineral Resources Limited, along with its subsidiaries, operates as a mining services company in Australia, Asia, and globally, with a market capitalization of A$11.27 billion.
+ The company generates revenue from three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 30.9% p.a.
+Mineral Resources is positioned intriguingly within the Australian market, with a forecasted earnings growth of 30.9% annually, outpacing the broader market's 13.3%. Despite trading at 40.5% below its estimated fair value and expecting robust revenue growth of 12.1% per year against a market average of 5.3%, challenges persist, notably a decline in profit margins from 16.3% to 7.9%, and insufficient coverage of interest payments by earnings, which raises concerns about financial health in the short term.
+ ★★★★★★
+ Ora Banda Mining Limited is an Australian company focused on the exploration, operation, and development of mineral properties, with a market capitalization of approximately A$835.94 million.
+ The company generates revenue primarily from gold mining, totaling A$166.66 million.
+ 10.2%
+ 96.2% p.a.
+Ora Banda Mining, while trading at a significant 92.9% below its estimated fair value, is poised for substantial growth with expected revenue increases of 45.2% annually, outstripping the Australian market's average of 5.3%. The company anticipates becoming profitable within three years and forecasts an exceptionally high Return on Equity of 43.1%. However, shareholder dilution over the past year and a lack of recent insider trading activity temper these prospects.
+ ★★★★☆☆
+ Technology One Limited is a company that develops, markets, sells, implements, and supports integrated enterprise business software solutions both in Australia and internationally, with a market capitalization of approximately A$6.18 billion.
+ The company generates revenue through three primary segments: software, which brings in A$317.24 million, corporate services at A$83.83 million, and consulting services accounting for A$68.13 million.
+ 12.3%
+ 14.4% p.a.
+Technology One, an Australian software company, shows moderate growth prospects with earnings expected to increase by 14.4% annually, slightly outpacing the market's 13.3%. Despite a high Price-to-Earnings ratio of 56.4x—below the industry average—its forecasted Return on Equity is strong at 32.6%. Recent strategic moves include appointing Paul Robson as Non-Executive Director to bolster its SaaS platform's global expansion and operational efficiency. However, insider trading activity remains undisclosed, presenting a potential concern for investors looking for high insider ownership signals.
+================================================================================
+
+ASX Growth Stocks With High Insider Ownership And Up To 96% Earnings Growth
+
+The Australian market has shown robust performance, rising 3.1% over the last week and achieving a 10% increase over the past year with earnings expected to grow by 13% annually. In this context, stocks with high insider ownership can be particularly appealing as they often indicate that company leaders have a vested interest in the success of their businesses, aligning well with current market trends and growth projections.
+Let's explore several standout options from the results in the screener.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market capitalization of approximately A$11.27 billion.
+ The company generates revenue through three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+ 30.9% p.a.
+Mineral Resources, an Australian growth company with high insider ownership, is poised for substantial earnings growth, forecasted at 30.89% annually over the next three years. Despite this, its current profit margins are lower compared to last year and it faces challenges in covering interest payments with earnings. However, the company's revenue is expected to outpace the Australian market average significantly. Trading at a considerable discount to its estimated fair value suggests potential undervaluation.
+ ★★★★★★
+ Ora Banda Mining Limited is an Australian company focused on the exploration, operation, and development of mineral properties, with a market capitalization of approximately A$835.94 million.
+ The company generates revenue primarily from its gold mining activities, totaling approximately A$166.66 million.
+ 10.2%
+ 96.2% p.a.
+Ora Banda Mining, an Australian company, is trading at a significant discount to its fair value and is expected to become profitable within the next three years. Its revenue growth forecast of 45.2% annually outstrips the market average significantly. Despite past shareholder dilution, no recent insider selling has been reported, and the appointment of Kathryn Cutler as a Non-executive Director could bolster its strategic direction. The company's return on equity is also projected to be very high in three years.
+ ★★★★☆☆
+ Technology One Limited is an enterprise software solutions provider operating both in Australia and internationally, with a market capitalization of approximately A$6.18 billion.
+ The company generates revenue through three primary segments: software sales contributing A$317.24 million, corporate services at A$83.83 million, and consulting services amounting to A$68.13 million.
+ 12.3%
+ 14.4% p.a.
+Technology One, a prominent Australian software firm, shows promising growth with earnings expected to rise by 14.4% annually, outpacing the local market's 13.3%. Despite a high price-to-earnings ratio of 56.4x—below the industry average—its revenue growth at 11.1% annually also exceeds the national rate of 5.3%. The recent appointment of Paul Robson as Non-Executive Director could further enhance strategic and operational capabilities, aligning with its robust half-year financial performance where net income rose to A$48 million from A$41.28 million year-on-year.
+================================================================================
+
+ASX Growth Leaders With High Insider Ownership To Watch
+
+The Australian market has shown robust performance, with a 2.1% increase over the last week and a 10% rise over the past year, alongside expectations of a 13% annual earnings growth in the coming years. In this environment, growth companies with high insider ownership can be particularly compelling as they often indicate confidence from those who know the company best.
+Let's review some notable picks from our screened stocks.
+ ★★★★★★
+ Catalyst Metals Limited, operating in Australia, is engaged in the exploration and evaluation of mineral properties with a market capitalization of approximately A$393.02 million.
+ The company generates revenue primarily from its operations in Tasmania, totaling A$57.87 million.
+ 17.1%
+Catalyst Metals, with substantial insider buying over the past three months and no significant selling, shows strong insider confidence. The company is trading at 94.5% below its estimated fair value and is forecasted to grow earnings by 77.08% annually. Although it has less than a year of cash runway, its Return on Equity is expected to be high at 37.6%. Recent drilling results have shown high grades, supporting the potential for operational success and profitability within three years.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions including Australia, New Zealand, the Americas, Europe, the Middle East, Africa, and Asia with a market capitalization of approximately A$4.89 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, with A$1.28 billion from leisure and A$1.06 billion from corporate segments.
+ 13.3%
+Flight Centre Travel Group, recently profitable, is trading at A$28% below its estimated fair value, indicating potential undervaluation. While its earnings growth forecast of 18.84% per year outpaces the Australian market's 13.4%, revenue growth is more moderate at 9.7% annually but still above the market average of 5.3%. The company's Return on Equity is expected to be strong at 21.9% in three years, reflecting efficient use of shareholder funds without recent insider buying or selling activity to report.
+ ★★★★★☆
+ Mineral Resources Limited is a mining services company operating in Australia, Asia, and internationally, with a market cap of approximately A$11.25 billion.
+ The company's revenue is derived from three primary segments: lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources is poised for robust growth with earnings expected to increase by 30.9% annually, outperforming the Australian market's 13.4%. Despite a slowdown in revenue growth at 12.1% per year, it still surpasses the market average of 5.3%. However, challenges include a decline in profit margins from 16.3% to 7.9% and insufficient coverage of interest payments by earnings. The company's Return on Equity is anticipated to rise significantly to 25.5% in three years, reflecting strong potential for shareholder value creation despite no recent insider trading activity reported.
+================================================================================
+
+ASX Growth Companies With Up To 13% Insider Ownership
+
+Amidst a fluctuating Australian market, with the ASX200 showing a slight downturn and sectors like Information Technology experiencing significant sell-offs, investors are closely monitoring economic indicators such as the recent unemployment data. In such an environment, growth companies with high insider ownership can be particularly appealing, as they often indicate confidence from those who know the company best.
+We'll examine a selection from our screener results.
+ ★★★★☆☆
+ Flight Centre Travel Group Limited operates as a travel retailer serving both leisure and corporate sectors across various regions globally, with a market capitalization of approximately A$4.89 billion.
+ The company generates revenue primarily through its leisure and corporate travel services, with the leisure segment bringing in A$1.28 billion and the corporate segment contributing A$1.06 billion.
+ 13.3%
+Flight Centre Travel Group, with high insider ownership, shows promising financial dynamics despite not being the top growth company in Australia. The firm recently turned profitable and is trading at 28% below its estimated fair value. Expected to outpace the Australian market, FLT's revenue and earnings are forecasted to grow annually by 9.7% and 18.8%, respectively, surpassing the market's average of 5.3% for revenue and 13.4% for earnings growth. Return on Equity is also expected to be robust at 21.9% in three years.
+ ★★★★★☆
+ Mineral Resources Limited is a diversified mining services company operating in Australia, Asia, and internationally, with a market capitalization of A$11.25 billion.
+ The company generates revenue from several key segments, including lithium (A$1.60 billion), iron ore (A$2.50 billion), and mining services (A$2.82 billion).
+ 11.6%
+Mineral Resources, characterized by high insider ownership, is positioned below the top growth companies in Australia but still presents potential. Its earnings are projected to increase significantly at 30.9% annually, outpacing the Australian market's 13.4%. However, its revenue growth at 12.1% yearly is modest compared to some peers and profit margins have declined from last year's 16.3% to 7.9%. The stock is currently valued at A$40.8% under its estimated fair value, suggesting undervaluation despite financial strains indicated by poorly covered interest payments.
+ ★★★★★★
+ Ora Banda Mining Limited is an Australian company focused on the exploration, operation, and development of mineral properties, with a market capitalization of approximately A$835.94 million.
+ The company generates revenue primarily from its gold mining activities, totaling A$166.66 million.
+ 10.2%
+Ora Banda Mining, despite recent insider dilution, shows promise with its expected revenue growth at 45.2% annually and a forecast to turn profitable within three years. The company's return on equity is anticipated to be very high at 43.1%. However, it trades at 92.9% below its estimated fair value, highlighting potential undervaluation. The recent appointment of Kathryn Cutler as Non-executive Director could enhance exploration and resource development expertise.
+================================================================================
+
