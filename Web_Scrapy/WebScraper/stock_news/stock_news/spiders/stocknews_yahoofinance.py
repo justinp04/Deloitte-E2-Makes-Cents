@@ -2,7 +2,7 @@ import scrapy
 import pandas as pd
 import os
 class StockSpider(scrapy.Spider):
-    name = 'stock_spider'
+    name = 'stocknews_yahoofinance'
     allowed_domains = ['stockanalysis.com', "finance.yahoo.com"]
     start_urls = ['https://stockanalysis.com/list/australian-securities-exchange/']
     custom_settings = {
@@ -12,11 +12,16 @@ class StockSpider(scrapy.Spider):
     def parse(self, response):
         # Extract links to individual stock pages using XPath
         stock_links = response.xpath('//*[@id="main-table"]/tbody/tr/td[2]/a/@href').getall()
+        i = 0
         for link in stock_links:
+            i += 1
+            if i < 30 or i > 60:
+                continue
+
             stock_url = response.urljoin(link + 'financials/')
             # yield scrapy.Request(stock_url, callback=self.parse_stock)
             ticker = link.split('/')[3]
-            news_url = f'https://finance.yahoo.com/quote/' + ticker + '.AX/news';
+            news_url = f'https://finance.yahoo.com/quote/' + ticker + '.AX/news/';
             yield scrapy.Request(news_url, callback=self.parse_news, meta={'company_name': ticker})
 
 
@@ -29,11 +34,11 @@ class StockSpider(scrapy.Spider):
     def parse_news_content(self, response):
         title = response.xpath('//h1[@id="caas-lead-header-undefined" and @data-test-locator="headline"]/text()').get()
         paragraphs = response.xpath('/html/body/div[2]/div/div/div/main/div/div[1]/div/div/div/div/div/article/div/div/div/div/div/div/div[2]/div[2]/p/text()').extract()
-        if not os.path.exists('news'):
-            os.makedirs('news')
+        if not os.path.exists('raw_news'):
+            os.makedirs('raw_news')
         content = title + '\n\n' + '\n'.join(paragraphs)
         company_name = response.meta['company_name']
-        file_path = f'news/{company_name}.txt'
+        file_path = f'raw_news/{company_name}.txt'
         with open(file_path, 'a', encoding='utf-8') as f:
             f.write(content)
             f.write('\n' + '='*80 + '\n\n')
