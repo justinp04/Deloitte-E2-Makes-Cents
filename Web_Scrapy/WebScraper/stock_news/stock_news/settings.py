@@ -50,9 +50,9 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-   "stock_news.middlewares.StockNewsDownloaderMiddleware": 600,
-}
+# DOWNLOADER_MIDDLEWARES = {
+#    "stock_news.middlewares.StockNewsDownloaderMiddleware": 600,
+# }
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html

@@ -253,3 +253,237 @@
 | Tangible Book Value                          |   3748    |        3748    |        4065    |        3773    |        3979    |        4547    |           nan |
 | Tangible Book Value Per Share                |      1.37 |           1.37 |           1.34 |           1.16 |           1.16 |           1.33 |           nan |
 
+## ratio quarterly
+| Period Ending            |   Current |   Dec 31, 2023 |   Sep 30, 2023 |   Jun 30, 2023 |   Mar 31, 2023 |   Dec 31, 2022 |   Sep 30, 2022 |   Jun 30, 2022 |   Mar 31, 2022 |   Dec 31, 2021 |   Sep 30, 2021 |   +24 Quarters |
+|:-------------------------|----------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|
+| Market Capitalization    |   3076    |        2559    |        3469    |        3085    |        3111    |        3999    |        3452    |        3117    |        3150    |        3297    |        3231    |            nan |
+| Market Cap Growth        |    -25.86 |         -36.01 |           0.48 |          -1.03 |          -1.22 |          21.3  |           6.82 |         -15.11 |         -27.5  |         -38.47 |         -27.9  |            nan |
+| Enterprise Value         |  30554    |       30686    |       31596    |       30800    |       30826    |       30439    |       29892    |       26456    |       26489    |       25862    |       25796    |            nan |
+| PE Ratio                 |    197.5  |         nan    |         nan    |          12.5  |           8.82 |         nan    |         nan    |          44.59 |         -30.32 |         -11.87 |         -40.78 |            nan |
+| PS Ratio                 |      1.14 |         nan    |         nan    |           2.17 |           2.48 |         nan    |         nan    |           1.38 |           1.33 |           1.34 |           1.19 |            nan |
+| PB Ratio                 |      0.84 |           0.66 |           0.9  |           0.77 |           0.77 |           0.96 |           0.83 |           0.68 |           0.69 |           0.83 |           0.81 |            nan |
+| P/FCF Ratio              |    -18.68 |         nan    |         nan    |         -26.14 |          11.99 |         nan    |         nan    |           1.1  |           1.41 |           2.02 |          13.66 |            nan |
+| P/OCF Ratio              |    -24.37 |         nan    |         nan    |         -33.17 |          11.15 |         nan    |         nan    |           1.08 |           1.38 |           1.96 |          10.29 |            nan |
+| EV/Sales Ratio           |     10.27 |         nan    |         nan    |          21.63 |          24.58 |         nan    |         nan    |          11.72 |          11.21 |          10.47 |           9.49 |            nan |
+| EV/EBITDA Ratio          |     22.82 |         nan    |         nan    |          56.83 |          75.74 |         nan    |         nan    |         678.36 |         588.64 |         507.09 |         101.36 |            nan |
+| EV/EBIT Ratio            |     23.98 |         nan    |         nan    |         nan    |         nan    |         nan    |         nan    |         nan    |         nan    |         nan    |         nan    |            nan |
+| EV/FCF Ratio             |   -223.02 |         nan    |         nan    |        -261.02 |         118.79 |         nan    |         nan    |           9.33 |          11.87 |          15.88 |         109.08 |            nan |
+| Debt / Equity Ratio      |      7.46 |           7.46 |           7.46 |           7.41 |           7.41 |           7.08 |           7.08 |           6.18 |           6.18 |           6.59 |           6.59 |            nan |
+| Debt / EBITDA Ratio      |     21.6  |         nan    |         nan    |          26.55 |          26.55 |         nan    |         nan    |          52.01 |          52.01 |         nan    |         nan    |            nan |
+| Debt / FCF Ratio         |   -211.08 |         nan    |         nan    |        -252.47 |         114.8  |         nan    |         nan    |           9.98 |          12.68 |          16.12 |         111    |            nan |
+| Quick Ratio              |      0.09 |           0.09 |           0.09 |           0.11 |           0.11 |           0.11 |           0.11 |           0.17 |           0.17 |           0.21 |           0.21 |            nan |
+| Current Ratio            |      0.11 |           0.11 |           0.11 |           0.14 |           0.14 |           0.17 |           0.17 |           0.23 |           0.23 |           0.26 |           0.26 |            nan |
+| Asset Turnover           |    nan    |         nan    |           0.08 |           0.08 |         nan    |         nan    |           0.06 |           0.06 |           0.07 |           0.07 |         nan    |            nan |
+| Return on Equity (ROE)   |    nan    |         nan    |           2.59 |           2.54 |         nan    |         nan    |           4.11 |           4.39 |         -19.43 |         -18.67 |         nan    |            nan |
+| Return on Assets (ROA)   |    nan    |         nan    |           1.93 |           1.93 |         nan    |         nan    |           0.97 |           1.01 |          -1    |          -1.01 |         nan    |            nan |
+| Return on Capital (ROIC) |    nan    |         nan    |           2    |           2    |         nan    |         nan    |           1.03 |           1.07 |          -1.06 |          -1.08 |         nan    |            nan |
+| Earnings Yield           |      7.66 |         nan    |         nan    |           8.46 |          11.73 |         nan    |         nan    |           2.28 |          -2.87 |          -7.64 |          -2.04 |            nan |
+| FCF Yield                |     -4.45 |         nan    |         nan    |          -3.83 |           8.34 |         nan    |         nan    |          90.95 |          70.86 |          49.41 |           7.32 |            nan |
+| Dividend Yield           |      3.51 |         nan    |         nan    |           2.3  |           1.24 |         nan    |         nan    |         nan    |         nan    |         nan    |         nan    |            nan |
+| Payout Ratio             |     54.72 |         nan    |         nan    |          28.74 |          28.74 |         nan    |         nan    |         nan    |         nan    |         nan    |         nan    |            nan |
+| Buyback Yield / Dilution |     10.31 |         nan    |         nan    |           9.17 |           9.17 |         nan    |         nan    |           4.99 |           4.99 |           4.12 |           4.12 |            nan |
+| Total Shareholder Return |     13.82 |         nan    |         nan    |          11.47 |          10.41 |         nan    |         nan    |           4.99 |           4.99 |           4.12 |           4.12 |            nan |
+
+## ratio annually
+| Year Ending              |   Current |   Dec 31, 2023 |   Dec 31, 2022 |   Dec 31, 2021 |   Dec 31, 2020 |   Dec 31, 2019 |   2018 - 2013 |
+|:-------------------------|----------:|---------------:|---------------:|---------------:|---------------:|---------------:|--------------:|
+| Market Capitalization    |   3076    |        2559    |        3999    |        3297    |        5358    |        6545    |           nan |
+| Market Cap Growth        |    -25.86 |         -36.01 |          21.3  |         -38.47 |         -18.14 |          -8.22 |           nan |
+| Enterprise Value         |  30554    |       30686    |       30439    |       25862    |       27855    |       25411    |           nan |
+| PE Ratio                 |    197.5  |          10.06 |          10.25 |         -12.5  |          28.96 |          -2.12 |           nan |
+| PS Ratio                 |      1.14 |           0.86 |           1.71 |           1.34 |           1.58 |           1.63 |           nan |
+| PB Ratio                 |      0.84 |           0.66 |           0.96 |           0.83 |           1.25 |           1.31 |           nan |
+| P/FCF Ratio              |    -18.68 |         -18.68 |           4.29 |           2.02 |          -1.9  |          -0.84 |           nan |
+| P/OCF Ratio              |    -24.37 |         -24.37 |           4.15 |           1.96 |          -1.95 |          -0.84 |           nan |
+| EV/Sales Ratio           |     10.27 |          10.31 |          13.02 |          10.47 |           8.2  |           6.32 |           nan |
+| EV/EBITDA Ratio          |     22.82 |          23.6  |          49.1  |         507.09 |          52.76 |          62.74 |           nan |
+| EV/EBIT Ratio            |     23.98 |         nan    |         nan    |         nan    |         nan    |         nan    |           nan |
+| EV/FCF Ratio             |   -223.02 |        -223.99 |          32.62 |          15.88 |          -9.86 |          -3.25 |           nan |
+| Debt / Equity Ratio      |      7.46 |           7.46 |           7.08 |           6.59 |           5.88 |           4.64 |           nan |
+| Debt / EBITDA Ratio      |     21.6  |          21.6  |          44.27 |         273.46 |          43.4  |          50.81 |           nan |
+| Debt / FCF Ratio         |   -211.08 |        -211.08 |          31.65 |          16.12 |          -8.89 |          -2.95 |           nan |
+| Quick Ratio              |      0.09 |           0.09 |           0.11 |           0.21 |           0.2  |           6.07 |           nan |
+| Current Ratio            |      0.11 |           0.11 |           0.17 |           0.26 |           0.23 |           6.32 |           nan |
+| Asset Turnover           |      0.09 |           0.09 |           0.07 |           0.08 |           0.04 |           0.03 |           nan |
+| Return on Equity (ROE)   |      0.47 |           0.47 |           0.02 |          -6.81 |           1.51 |         -31.12 |           nan |
+| Return on Assets (ROA)   |      2.31 |           2.31 |           1.06 |           0.03 |           0.33 |           0.13 |           nan |
+| Return on Capital (ROIC) |      2.39 |           2.39 |           1.12 |           0.03 |           1.04 |           0.7  |           nan |
+| Earnings Yield           |      7.66 |          10.36 |           9.68 |          -7.64 |           3.3  |         -37.69 |           nan |
+| FCF Yield                |     -4.45 |          -5.35 |          23.33 |          49.41 |         -52.73 |        -119.57 |           nan |
+| Dividend Yield           |      3.51 |           4.93 |           2.02 |         nan    |         nan    |         nan    |           nan |
+| Payout Ratio             |     54.72 |          54.72 |         nan    |         nan    |         nan    |         nan    |           nan |
+| Buyback Yield / Dilution |     10.31 |          11.09 |           2.13 |           4.28 |         -12.21 |          -6.52 |           nan |
+| Total Shareholder Return |     13.82 |          16.02 |           4.15 |           4.28 |         -12.21 |          -6.52 |           nan |
+
+## cash flow quarterly
+| Period Ending                        |   Dec 31, 2023 |   Sep 30, 2023 |   Jun 30, 2023 |   Mar 31, 2023 |   Dec 31, 2022 |   Sep 30, 2022 |   Jun 30, 2022 |   Mar 31, 2022 |   Dec 31, 2021 |   Sep 30, 2021 |   +24 Quarters |
+|:-------------------------------------|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|
+| Net Income                           |            nan |            nan |         130.5  |         130.5  |            nan |            nan |         234.5  |         234.5  |        -199    |        -199    |            nan |
+| Gain (Loss) on Sale of Investments   |            nan |            nan |         nan    |         nan    |            nan |            nan |         nan    |         nan    |         -93.5  |         -93.5  |            nan |
+| Change in Accounts Receivable        |            nan |            nan |         nan    |         nan    |            nan |            nan |         nan    |         nan    |          87    |          87    |            nan |
+| Change in Income Taxes               |            nan |            nan |         nan    |         nan    |            nan |            nan |         nan    |         nan    |          -9    |          -9    |            nan |
+| Change in Other Net Operating Assets |            nan |            nan |         nan    |         nan    |            nan |            nan |         nan    |         nan    |         769.5  |         769.5  |            nan |
+| Other Operating Activities           |            nan |            nan |        -194    |        -194    |            nan |            nan |          90    |          90    |         411.5  |         411.5  |            nan |
+| Operating Cash Flow                  |            nan |            nan |         -46.5  |         -46.5  |            nan |            nan |         325.5  |         325.5  |        1112    |        1112    |            nan |
+| Capital Expenditures                 |            nan |            nan |         -12.5  |         -12.5  |            nan |            nan |          -7    |          -7    |         -13    |         -13    |            nan |
+| Investing Cash Flow                  |            nan |            nan |         245.5  |         245.5  |            nan |            nan |        -627    |        -627    |        -455.5  |        -455.5  |            nan |
+| Total Debt Issued                    |            nan |            nan |         nan    |         nan    |            nan |            nan |         nan    |         nan    |         -23.5  |         -23.5  |            nan |
+| Total Debt Repaid                    |            nan |            nan |        -147    |        -147    |            nan |            nan |        -153.5  |        -153.5  |        -345.5  |        -345.5  |            nan |
+| Net Debt Issued (Repaid)             |            nan |            nan |        -147    |        -147    |            nan |            nan |        -153.5  |        -153.5  |        -369    |        -369    |            nan |
+| Repurchases of Common Stock          |            nan |            nan |        -136    |        -136    |            nan |            nan |         nan    |         nan    |         nan    |         nan    |            nan |
+| Common Dividends Paid                |            nan |            nan |         -37.5  |         -37.5  |            nan |            nan |         nan    |         nan    |         nan    |         nan    |            nan |
+| Financing Cash Flow                  |            nan |            nan |        -320.5  |        -320.5  |            nan |            nan |        -153.5  |        -153.5  |        -369    |        -369    |            nan |
+| Miscellaneous Cash Flow Adjustments  |            nan |            nan |         -57    |         -57    |            nan |            nan |          -3.5  |          -3.5  |         nan    |         nan    |            nan |
+| Net Cash Flow                        |            nan |            nan |        -178.5  |        -178.5  |            nan |            nan |        -458.5  |        -458.5  |         287.5  |         287.5  |            nan |
+| Free Cash Flow                       |            nan |            nan |         -59    |         -59    |            nan |            nan |         318.5  |         318.5  |        1099    |        1099    |            nan |
+| Free Cash Flow Margin                |            nan |            nan |          -8.29 |          -8.29 |            nan |            nan |          58.76 |          58.76 |         187.22 |         187.22 |            nan |
+| Free Cash Flow Per Share             |            nan |            nan |          -0.02 |          -0.02 |            nan |            nan |           0.1  |           0.1  |           0.34 |           0.34 |            nan |
+| Levered Free Cash Flow               |            nan |            nan |           8.56 |          84.56 |            nan |            nan |          19.94 |       -1061.06 |         -10.87 |         258.13 |            nan |
+| Unlevered Free Cash Flow             |            nan |            nan |         173.25 |         249.25 |            nan |            nan |          78.38 |       -1002.63 |          42.57 |         311.57 |            nan |
+| Change in Net Working Capital        |            nan |           -481 |         nan    |         -76    |            nan |          -1118 |         nan    |        1081    |         nan    |        -269    |            nan |
+
+## cash flow annually
+| Year Ending                                |      TTM |   Dec 31, 2023 |   Dec 31, 2022 |   Dec 31, 2021 |   Dec 31, 2020 |   Dec 31, 2019 |   2018 - 2013 |
+|:-------------------------------------------|---------:|---------------:|---------------:|---------------:|---------------:|---------------:|--------------:|
+| Net Income                                 |   265    |         265    |         387    |        -252    |         177    |       -2467    |           nan |
+| Gain (Loss) on Sale of Investments         |  -193    |        -193    |        -474    |        -187    |        7846    |       -7472    |           nan |
+| Change in Accounts Receivable              |   nan    |         nan    |         nan    |         174    |         281    |        -567    |           nan |
+| Change in Income Taxes                     |   -41    |         -41    |          88    |         -18    |       -1136    |         279    |           nan |
+| Change in Insurance Reserves / Liabilities |   nan    |         nan    |         nan    |         nan    |      -10506    |        3315    |           nan |
+| Change in Other Net Operating Assets       |  -248    |        -248    |         771    |        1539    |        1575    |         664    |           nan |
+| Other Operating Activities                 |    31    |          31    |          71    |         119    |       -1206    |       -4147    |           nan |
+| Operating Cash Flow                        |  -105    |        -105    |         963    |        1678    |       -2742    |       -7771    |           nan |
+| Operating Cash Flow Growth                 |   nan    |         nan    |         -42.61 |         nan    |         nan    |         nan    |           nan |
+| Capital Expenditures                       |   -32    |         -32    |         -30    |         -49    |         -83    |         -55    |           nan |
+| Investing Cash Flow                        |  1251    |        1251    |       -1325    |        -565    |        3214    |        8148    |           nan |
+| Long-Term Debt Issued                      |   nan    |         nan    |         243    |         188    |         265    |        1142    |           nan |
+| Total Debt Repaid                          | -1249    |       -1249    |        -477    |        -714    |       -1893    |       -1462    |           nan |
+| Net Debt Issued (Repaid)                   | -1249    |       -1249    |        -234    |        -526    |       -1628    |        -320    |           nan |
+| Issuance of Common Stock                   |   nan    |         nan    |         nan    |         nan    |         nan    |         771    |           nan |
+| Repurchases of Common Stock                |  -343    |        -343    |        -277    |        -196    |         nan    |          -5    |           nan |
+| Common Dividends Paid                      |  -145    |        -145    |         nan    |         nan    |         nan    |        -117    |           nan |
+| Other Financing Activities                 |   nan    |         nan    |         nan    |         nan    |         -17    |         -21    |           nan |
+| Financing Cash Flow                        | -1737    |       -1737    |        -511    |        -722    |       -1988    |         308    |           nan |
+| Foreign Exchange Rate Adjustments          |   nan    |         nan    |         nan    |         nan    |          -4    |           2    |           nan |
+| Miscellaneous Cash Flow Adjustments        |   nan    |         nan    |          -7    |         nan    |       -3896    |         nan    |           nan |
+| Net Cash Flow                              |  -591    |        -591    |        -880    |         391    |       -5416    |         687    |           nan |
+| Free Cash Flow                             |  -137    |        -137    |         933    |        1629    |       -2825    |       -7826    |           nan |
+| Free Cash Flow Growth                      |   nan    |         nan    |         -42.73 |         nan    |         nan    |         nan    |           nan |
+| Free Cash Flow Margin                      |    -4.6  |          -4.6  |          39.91 |          65.98 |         -83.16 |        -194.58 |           nan |
+| Free Cash Flow Per Share                   |    -0.05 |          -0.05 |           0.29 |           0.49 |          -0.81 |          -2.52 |           nan |
+| Levered Free Cash Flow                     |   787.84 |         787.84 |         101.52 |          -1.49 |      112171    |       -4843.05 |           nan |
+| Unlevered Free Cash Flow                   |  1531    |        1531    |         470.9  |         209.13 |      112436    |       -4488.68 |           nan |
+| Change in Net Working Capital              |  -693    |        -693    |         -37    |          35    |     -111984    |        4974    |           nan |
+
+## balance sheet quarterly
+| Period Ending                                |   Dec 31, 2023 |   Sep 30, 2023 |   Jun 30, 2023 |   Mar 31, 2023 |   Dec 31, 2022 |   Sep 30, 2022 |   Jun 30, 2022 |   Mar 31, 2022 |   Dec 31, 2021 |   Sep 30, 2021 |   +24 Quarters |
+|:---------------------------------------------|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|
+| Investments in Debt Securities               |        4498    |        4498    |        4951    |        4951    |        4749    |        4749    |        4454    |        4454    |        2272    |        2272    |            nan |
+| Investments in Equity & Preferred Securities |         803    |         803    |         780    |         780    |         771    |         771    |         757    |         757    |        1090    |        1090    |            nan |
+| Other Investments                            |          12    |          12    |         nan    |         nan    |           8    |           8    |         nan    |         nan    |         nan    |         nan    |            nan |
+| Total Investments                            |        5848    |        5848    |        6410    |        6410    |        6021    |        6021    |        6415    |        6415    |        4440    |        4440    |            nan |
+| Cash & Equivalents                           |        1440    |        1440    |        1664    |        1664    |        1816    |        1816    |        1856    |        1856    |        2916    |        2916    |            nan |
+| Other Receivables                            |       24996    |       24996    |       25057    |       25057    |       24453    |       24453    |       23372    |       23372    |       22793    |       22793    |            nan |
+| Property, Plant & Equipment                  |         346    |         346    |         362    |         362    |         422    |         422    |         509    |         509    |         169    |         169    |            nan |
+| Goodwill                                     |          88    |          88    |          85    |          85    |          70    |          70    |          70    |          70    |         149    |         149    |            nan |
+| Other Intangible Assets                      |          38    |          38    |          40    |          40    |          36    |          36    |          38    |          38    |          58    |          58    |            nan |
+| Other Current Assets                         |         397    |         397    |         549    |         549    |        1468    |        1468    |        1454    |        1454    |        1033    |        1033    |            nan |
+| Long-Term Deferred Tax Assets                |         640    |         640    |         604    |         604    |         556    |         556    |         856    |         856    |         520    |         520    |            nan |
+| Other Long-Term Assets                       |         nan    |         nan    |          58    |          58    |          12    |          12    |         128    |         128    |           3    |           3    |            nan |
+| Total Assets                                 |       33876    |       33876    |       34908    |       34908    |       34946    |       34946    |       34806    |       34806    |       32204    |       32204    |            nan |
+| Accounts Payable                             |         116    |         116    |         nan    |         nan    |         110    |         110    |         nan    |         nan    |         172    |         172    |            nan |
+| Current Portion of Leases                    |          69    |          69    |         nan    |         nan    |          68    |          68    |         nan    |         nan    |          33    |          33    |            nan |
+| Current Income Taxes Payable                 |          23    |          23    |          25    |          25    |          57    |          57    |          67    |          67    |          67    |          67    |            nan |
+| Long-Term Leases                             |         467    |         467    |         553    |         553    |         501    |         501    |         600    |         600    |         102    |         102    |            nan |
+| Long-Term Deferred Tax Liabilities           |          16    |          16    |          17    |          17    |           5    |           5    |         317    |         317    |           1    |           1    |            nan |
+| Other Current Liabilities                    |         116    |         116    |         124    |         124    |         301    |         301    |         354    |         354    |         637    |         637    |            nan |
+| Other Long-Term Liabilities                  |         603    |         603    |         808    |         808    |         494    |         494    |        1009    |        1009    |         503    |         503    |            nan |
+| Total Liabilities                            |       30002    |       30002    |       30890    |       30890    |       30775    |       30775    |       30228    |       30228    |       28221    |       28221    |            nan |
+| Common Stock                                 |        4670    |        4670    |        4740    |        4740    |        5008    |        5008    |       10159    |       10159    |       10206    |       10206    |            nan |
+| Retained Earnings                            |       -1007    |       -1007    |        -944    |        -944    |       -1128    |       -1128    |       -3361    |       -3361    |       -3893    |       -3893    |            nan |
+| Treasury Stock                               |          -6    |          -6    |          -6    |          -6    |          -6    |          -6    |          -6    |          -6    |          -6    |          -6    |            nan |
+| Total Common Equity                          |        3874    |        3874    |        4018    |        4018    |        4171    |        4171    |        4578    |        4578    |        3980    |        3980    |            nan |
+| Minority Interest                            |         nan    |         nan    |         nan    |         nan    |         nan    |         nan    |         nan    |         nan    |           3    |           3    |            nan |
+| Shareholders' Equity                         |        3874    |        3874    |        4018    |        4018    |        4171    |        4171    |        4578    |        4578    |        3983    |        3983    |            nan |
+| Total Liabilities & Equity                   |       33876    |       33876    |       34908    |       34908    |       34946    |       34946    |       34806    |       34806    |       32204    |       32204    |            nan |
+| Total Debt                                   |       28918    |       28918    |       29791    |       29791    |       29531    |       29531    |       28296    |       28296    |       26252    |       26252    |            nan |
+| Net Cash (Debt)                              |      -27478    |      -27478    |      -28127    |      -28127    |      -27715    |      -27715    |      -26440    |      -26440    |      -23336    |      -23336    |            nan |
+| Net Cash Per Share                           |         nan    |         nan    |          -9.38 |          -9.38 |         nan    |         nan    |          -8.01 |          -8.01 |          -7.13 |          -7.13 |            nan |
+| Book Value Per Share                         |           1.41 |           1.41 |           1.44 |           1.44 |           1.37 |           1.37 |           1.4  |           1.4  |           1.22 |           1.22 |            nan |
+| Tangible Book Value                          |        3748    |        3748    |        3893    |        3893    |        4065    |        4065    |        4470    |        4470    |        3773    |        3773    |            nan |
+| Tangible Book Value Per Share                |           1.37 |           1.37 |           1.39 |           1.39 |           1.34 |           1.34 |           1.37 |           1.37 |           1.16 |           1.16 |            nan |
+
+## balance sheet annually
+| Year Ending                                  |       TTM |   Dec 31, 2023 |   Dec 31, 2022 |   Dec 31, 2021 |   Dec 31, 2020 |   Dec 31, 2019 |   2018 - 2013 |
+|:---------------------------------------------|----------:|---------------:|---------------:|---------------:|---------------:|---------------:|--------------:|
+| Investments in Debt Securities               |   4498    |        4498    |        4749    |        2272    |        3350    |        2005    |           nan |
+| Investments in Equity & Preferred Securities |    803    |         803    |         771    |        1090    |        1501    |         914    |           nan |
+| Other Investments                            |     12    |          12    |           8    |         nan    |         nan    |         nan    |           nan |
+| Total Investments                            |   5848    |        5848    |        6021    |        4440    |        6160    |      113957    |           nan |
+| Cash & Equivalents                           |   1440    |        1440    |        1816    |        2916    |        2428    |        4426    |           nan |
+| Reinsurance Recoverable                      |    nan    |         nan    |         nan    |         nan    |         nan    |        1442    |           nan |
+| Other Receivables                            |  24996    |       24996    |       24453    |       22793    |       21185    |       23399    |           nan |
+| Property, Plant & Equipment                  |    346    |         346    |         422    |         169    |         264    |         343    |           nan |
+| Goodwill                                     |     88    |          88    |          70    |         149    |         157    |         172    |           nan |
+| Other Intangible Assets                      |     38    |          38    |          36    |          58    |         130    |         141    |           nan |
+| Other Current Assets                         |    397    |         397    |        1468    |        1033    |         659    |        1979    |           nan |
+| Long-Term Deferred Tax Assets                |    640    |         640    |         556    |         520    |         828    |        1261    |           nan |
+| Other Long-Term Assets                       |    nan    |         nan    |          12    |           3    |         114    |         341    |           nan |
+| Total Assets                                 |  33876    |       33876    |       34946    |       32204    |       32153    |      147684    |           nan |
+| Accounts Payable                             |    116    |         116    |         110    |         172    |         133    |        1108    |           nan |
+| Insurance & Annuity Liabilities              |    nan    |         nan    |         nan    |         nan    |         nan    |       25361    |           nan |
+| Reinsurance Payable                          |    nan    |         nan    |         nan    |         nan    |         nan    |          39    |           nan |
+| Current Portion of Leases                    |     69    |          69    |          68    |          33    |          58    |          58    |           nan |
+| Current Income Taxes Payable                 |     23    |          23    |          57    |          67    |          70    |         123    |           nan |
+| Long-Term Leases                             |    467    |         467    |         501    |         102    |         153    |         208    |           nan |
+| Long-Term Deferred Tax Liabilities           |     16    |          16    |           5    |           1    |         226    |        2492    |           nan |
+| Other Current Liabilities                    |    116    |         116    |         301    |         637    |         497    |        1037    |           nan |
+| Other Long-Term Liabilities                  |    603    |         603    |         494    |         503    |        1213    |       87955    |           nan |
+| Total Liabilities                            |  30002    |       30002    |       30775    |       28221    |       27879    |      142706    |           nan |
+| Common Stock                                 |   4670    |        4670    |        5008    |       10206    |       10355    |       10402    |           nan |
+| Retained Earnings                            |  -1007    |       -1007    |       -1128    |       -3893    |       -3679    |       -3509    |           nan |
+| Treasury Stock                               |     -6    |          -6    |          -6    |          -6    |          -6    |        -103    |           nan |
+| Total Common Equity                          |   3874    |        3874    |        4171    |        3980    |        4266    |        4860    |           nan |
+| Minority Interest                            |    nan    |         nan    |         nan    |           3    |           8    |         118    |           nan |
+| Shareholders' Equity                         |   3874    |        3874    |        4171    |        3983    |        4274    |        4978    |           nan |
+| Total Liabilities & Equity                   |  33876    |       33876    |       34946    |       32204    |       32153    |      147684    |           nan |
+| Total Debt                                   |  28918    |       28918    |       29531    |       26252    |       25127    |       23118    |           nan |
+| Net Cash (Debt)                              | -27478    |      -27478    |      -27715    |      -23336    |      -22699    |      -18692    |           nan |
+| Net Cash Per Share                           |     -9.47 |          -9.47 |          -8.49 |          -7    |          -6.52 |          -6.02 |           nan |
+| Book Value Per Share                         |      1.41 |           1.41 |           1.37 |           1.22 |           1.24 |           1.43 |           nan |
+| Tangible Book Value                          |   3748    |        3748    |        4065    |        3773    |        3979    |        4547    |           nan |
+| Tangible Book Value Per Share                |      1.37 |           1.37 |           1.34 |           1.16 |           1.16 |           1.33 |           nan |
+
+## income quarterly
+| Period Ending                     |   Dec 31, 2023 |   Sep 30, 2023 |   Jun 30, 2023 |   Mar 31, 2023 |   Dec 31, 2022 |   Sep 30, 2022 |   Jun 30, 2022 |   Mar 31, 2022 |   Dec 31, 2021 |   Sep 30, 2021 |   +24 Quarters |
+|:----------------------------------|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|---------------:|
+| Total Interest & Dividend Income  |            nan |            nan |        331.5   |        331.5   |            nan |            nan |         149.5  |         149.5  |         170.5  |         170.5  |            nan |
+| Other Revenue                     |            nan |            nan |        380.5   |        380.5   |            nan |            nan |         392.5  |         392.5  |         416.5  |         416.5  |            nan |
+| Total Revenue                     |            nan |            nan |        712     |        712     |            nan |            nan |         542    |         542    |         587    |         587    |            nan |
+| Revenue Growth (YoY)              |            nan |            nan |         31.37  |         31.37  |            nan |            nan |         -16.29 |         -16.29 |         -29.83 |         -29.83 |            nan |
+| Selling, General & Administrative |            nan |            nan |        170.5   |        170.5   |            nan |            nan |         186    |         186    |         181.5  |         181.5  |            nan |
+| Other Operating Expenses          |            nan |            nan |        131     |        131     |            nan |            nan |          82.5  |          82.5  |         369.5  |         369.5  |            nan |
+| Total Operating Expenses          |            nan |            nan |        442     |        442     |            nan |            nan |         407    |         407    |         715.5  |         715.5  |            nan |
+| Operating Income                  |            nan |            nan |        270     |        270     |            nan |            nan |         135    |         135    |        -128.5  |        -128.5  |            nan |
+| Pretax Income                     |            nan |            nan |          6.5   |          6.5   |            nan |            nan |          41.5  |          41.5  |        -226.5  |        -226.5  |            nan |
+| Income Tax Expense                |            nan |            nan |        -19.5   |        -19.5   |            nan |            nan |          -5.5  |          -5.5  |         -33    |         -33    |            nan |
+| Earnings From Continuing Ops.     |            nan |            nan |         26     |         26     |            nan |            nan |          47    |          47    |        -193.5  |        -193.5  |            nan |
+| Earnings From Discontinued Ops.   |            nan |            nan |        104.5   |        104.5   |            nan |            nan |         187.5  |         187.5  |          -6    |          -6    |            nan |
+| Net Income to Company             |            nan |            nan |        130.5   |        130.5   |            nan |            nan |         234.5  |         234.5  |        -199.5  |        -199.5  |            nan |
+| Minority Interest in Earnings     |            nan |            nan |        nan     |        nan     |            nan |            nan |         nan    |         nan    |           0.5  |           0.5  |            nan |
+| Net Income                        |            nan |            nan |        130.5   |        130.5   |            nan |            nan |         234.5  |         234.5  |        -199    |        -199    |            nan |
+| Net Income to Common              |            nan |            nan |        130.5   |        130.5   |            nan |            nan |         234.5  |         234.5  |        -199    |        -199    |            nan |
+| Net Income Growth                 |            nan |            nan |        -44.35  |        -44.35  |            nan |            nan |         221.23 |         221.23 |         nan    |         nan    |            nan |
+| Shares Outstanding (Basic)        |            nan |            nan |       2966     |       2966     |            nan |            nan |        3257    |        3257    |        3275    |        3275    |            nan |
+| Shares Outstanding (Diluted)      |            nan |            nan |       3000     |       3000     |            nan |            nan |        3303    |        3303    |        3275    |        3275    |            nan |
+| Shares Change (YoY)               |            nan |            nan |         -9.17  |         -9.17  |            nan |            nan |          -4.99 |          -4.99 |          -4.12 |          -4.12 |            nan |
+| EPS (Basic)                       |            nan |            nan |          0.04  |          0.04  |            nan |            nan |           0.07 |           0.07 |          -0.06 |          -0.06 |            nan |
+| EPS (Diluted)                     |            nan |            nan |          0.04  |          0.04  |            nan |            nan |           0.07 |           0.07 |          -0.06 |          -0.06 |            nan |
+| EPS Growth                        |            nan |            nan |        -38.73  |        -38.73  |            nan |            nan |         238.1  |         238.1  |         nan    |         nan    |            nan |
+| Free Cash Flow                    |            nan |            nan |        -59     |        -59     |            nan |            nan |         318.5  |         318.5  |        1099    |        1099    |            nan |
+| Free Cash Flow Per Share          |            nan |            nan |         -0.02  |         -0.02  |            nan |            nan |           0.1  |           0.1  |           0.34 |           0.34 |            nan |
+| Dividend Per Share                |            nan |            nan |          0.013 |          0.013 |            nan |            nan |         nan    |         nan    |         nan    |         nan    |            nan |
+| Free Cash Flow Margin             |            nan |            nan |         -8.29  |         -8.29  |            nan |            nan |          58.76 |          58.76 |         187.22 |         187.22 |            nan |
+| EBITDA                            |            nan |            nan |        271     |        271     |            nan |            nan |         136    |         136    |        -116.5  |        -116.5  |            nan |
+| Revenue as Reported               |            nan |            nan |        712     |        712     |            nan |            nan |         542    |         542    |         584.5  |         584.5  |            nan |
+

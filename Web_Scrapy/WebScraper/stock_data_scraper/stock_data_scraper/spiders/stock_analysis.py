@@ -18,6 +18,7 @@ class StockSpider(scrapy.Spider):
 
     def parse_stock(self, response):
         ticker = response.url.split('/')[5]
+        print(f'Processing ticker: {ticker}')
         urls = {
             'income annually': response.url,
             'income quarterly': response.url + '?p=quarterly',
