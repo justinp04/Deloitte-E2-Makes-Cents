@@ -1,0 +1,1 @@
+[{'exchange': 'NMS', 'quoteType': 'ECNQUOTE', 'symbol': 'FMG', 'underlyingSymbol': 'FMG', 'firstTradeDateEpochUtc': 1290609000, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': '7d16a82b-8fcf-3df4-a42d-eacec80f858d', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

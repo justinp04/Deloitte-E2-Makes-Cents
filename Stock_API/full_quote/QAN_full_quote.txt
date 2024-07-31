@@ -1,0 +1,1 @@
+[{'exchange': 'NMS', 'quoteType': 'ECNQUOTE', 'symbol': 'QAN', 'underlyingSymbol': 'QAN', 'firstTradeDateEpochUtc': 946909800, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': 'dba39e51-3831-3071-a7a7-484e90479af6', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

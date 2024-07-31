@@ -1,0 +1,1 @@
+[{'exchange': 'NMS', 'quoteType': 'ECNQUOTE', 'symbol': 'IFL', 'underlyingSymbol': 'IFL', 'shortName': 'IOOF Holdings Ltd', 'firstTradeDateEpochUtc': 1128087000, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': 'cb2da60e-40eb-363d-8b87-a0cd9d98dc2c', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

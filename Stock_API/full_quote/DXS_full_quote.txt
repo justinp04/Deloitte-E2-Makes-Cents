@@ -1,0 +1,1 @@
+[{'exchange': 'YHD', 'quoteType': 'MUTUALFUND', 'symbol': 'DXS', 'underlyingSymbol': 'DXS', 'firstTradeDateEpochUtc': 1068820200, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': '01148c38-dbbf-3674-9c8b-d754acc4c7f3', 'messageBoardId': 'finmb_INDEXDXS', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

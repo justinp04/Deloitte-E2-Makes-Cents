@@ -1,0 +1,1 @@
+[{'exchange': 'YHD', 'quoteType': 'MUTUALFUND', 'symbol': 'AWC', 'underlyingSymbol': 'AWC', 'shortName': '51501', 'firstTradeDateEpochUtc': 1208957400, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': '8b7a78a8-20ad-3082-83ca-9e0f8f4d60d9', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

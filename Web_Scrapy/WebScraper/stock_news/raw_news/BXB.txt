@@ -1,0 +1,408 @@
+Brambles Full Year 2023 Earnings: EPS Beats Expectations, Revenues Lag
+
+Revenue missed analyst estimates by 1.9%. Earnings per share (EPS) exceeded analyst estimates by 6.9%.
+Looking ahead, revenue is forecast to grow 5.4% p.a. on average during the next 3 years, compared to a 6.0% growth forecast for the Commercial Services industry in Australia.
+The company's shares are up 5.7% from a week ago.
+Don't forget that there may still be risks. For instance, we've identified 
+ that you should be aware of.
+ 
+================================================================================
+
+Brambles (ASX:BXB) Is Increasing Its Dividend To $0.2183
+
+ (
+) has announced that it will be increasing its dividend from last year's comparable payment on the 12th of October to $0.2183. The payment will take the dividend yield to 2.9%, which is in line with the average for the industry.
+We like a dividend to be consistent over the long term, so checking whether it is sustainable is important. The last payment was quite easily covered by earnings, but it made up 127% of cash flows. This signals that the company is more focused on returning cash flow to shareholders, but it could mean that the dividend is exposed to cuts in the future.
+Looking forward, earnings per share is forecast to rise by 36.8% over the next year. Assuming the dividend continues along recent trends, we think the payout ratio could be 61% by next year, which is in a pretty sustainable range.
+Although the company has a long dividend history, it has been cut at least once in the last 10 years. The annual payment during the last 10 years was $0.24 in 2013, and the most recent fiscal year payment was $0.28. This implies that the company grew its distributions at a yearly rate of about 1.5% over that duration. Modest growth in the dividend is good to see, but we think this is offset by historical cuts to the payments. It is hard to live on a dividend income if the company's earnings are not consistent.
+Growing earnings per share could be a mitigating factor when considering the past fluctuations in the dividend. Brambles has impressed us by growing EPS at 6.0% per year over the past five years. The lack of cash flows does make us a bit cautious though, especially when it comes to the future of the dividend.
+Overall, we always like to see the dividend being raised, but we don't think Brambles will make a great income stock. While Brambles is earning enough to cover the payments, the cash flows are lacking. We would probably look elsewhere for an income investment.
+Market movements attest to how highly valued a consistent dividend policy is compared to one which is more unpredictable. Still, investors need to consider a host of other factors, apart from dividend payments, when analysing a company. As an example, we've identified 
+ that you should be aware of before investing. If you are a dividend investor, you might also want to look at our 
+ 
+================================================================================
+
+Unraveling the Dividend Story of Brambles Ltd (BXBLY)
+
+Brambles Ltd(
+) recently announced a 
+ of $0.28 per share, payable on 2023-10-19, with the ex-dividend date set for 2023-09-13. As investors look forward to this upcoming payment, the spotlight also shines on the company's dividend history, yield, and growth rates. Using the data from GuruFocus, let's deep dive into Brambles Ltd's dividend performance and assess its sustainability.
+Brambles is the world's largest supplier of reusable wooden pallets for the fast-moving consumer goods, fresh produce, beverage, retail, and general manufacturing industries. Bramble's services primarily operate under the Chep brand. Operations span approximately 60 countries with three geographical segments: Chep Americas, Chep EMEA, and Chep Asia-Pacific.
+Brambles Ltd has maintained a consistent 
+ record since 2010. Dividends are currently distributed on a bi-annually basis. Below is a chart showing annual 
+ for tracking historical trends.
+As of today, Brambles Ltd currently has a 12-month 
+ of 2.34% and a 12-month 
+ of 2.65%. This suggests an expectation of increased dividend payments over the next 12 months.
+Over the past three years, Brambles Ltd's annual 
+ was 10.40%. Extended to a five-year horizon, this rate decreased to 2.30% per year. And over the past decade, Brambles Ltd's annual dividends per share growth rate stands at 0.90%.
+Based on Brambles Ltd's dividend yield and five-year growth rate, the 
+ of Brambles Ltd stock as of today is approximately 2.62%.
+To assess the sustainability of the dividend, one needs to evaluate the company's payout ratio. The 
+ provides insights into the portion of earnings the company distributes as dividends. A lower ratio suggests that the company retains a significant part of its earnings, thereby ensuring the availability of funds for future growth and unexpected downturns. As of 2023-06-30, Brambles Ltd's dividend payout ratio is 0.49.
+Brambles Ltd's 
+, offers an understanding of the company's earnings prowess relative to its peers. GuruFocus ranks Brambles Ltd's profitability 8 out of 10 as of 2023-06-30, suggesting good profitability prospects. The company has reported positive 
+ for each of year over the past decade, further solidifying its high profitability.
+To ensure the sustainability of dividends, a company must have robust growth metrics. Brambles Ltd's 
+ of 8 out of 10 suggests that the company's growth trajectory is good relative to its competitors.
+Revenue is the lifeblood of any company, and Brambles Ltd's 
+, combined with the 
+, indicates a strong revenue model. Brambles Ltd's revenue has increased by approximately 13.70% per year on average, a rate that outperforms approximately 74.67% of global competitors.
+The company's 
+ showcases its capability to grow its earnings, a critical component for sustaining dividends in the long run. During the past three years, Brambles Ltd's earnings increased by approximately 15.80% per year on average, a rate that outperforms approximately 56.3% of global competitors.
+Lastly, the company's 
+ of 4.10%, which outperforms approximately 39.4% of global competitors.
+Given Brambles Ltd's consistent dividend payments, solid growth rate, and strong profitability, it appears well-positioned to sustain its dividends in the foreseeable future. However, investors should continue to monitor the company's performance and industry trends to make informed decisions. Remember, the best investment is an informed one.
+GuruFocus Premium users can screen for high-dividend yield stocks using the 
+.
+This article first appeared on 
+.
+================================================================================
+
+A Look At The Fair Value Of Brambles Limited (ASX:BXB)
+
+Today we will run through one way of estimating the intrinsic value of Brambles Limited (
+) by taking the forecast future cash flows of the company and discounting them back to today's value. This will be done using the Discounted Cash Flow (DCF) model. Before you think you won't be able to understand it, just read on! It's actually much less complex than you'd imagine.
+We generally believe that a company's value is the present value of all of the cash it will generate in the future. However, a DCF is just one valuation metric among many, and it is not without flaws. Anyone interested in learning a bit more about intrinsic value should have a read of the 
+.
+We're using the 2-stage growth model, which simply means we take in account two stages of company's growth. In the initial period the company may have a higher growth rate and the second stage is usually assumed to have a stable growth rate. To start off with, we need to estimate the next ten years of cash flows. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+A DCF is all about the idea that a dollar in the future is less valuable than a dollar today, so we discount the value of these future cash flows to their estimated value in today's dollars:
+ = US$5.1b
+The second stage is also known as Terminal Value, this is the business's cash flow after the first stage. For a number of reasons a very conservative growth rate is used that cannot exceed that of a country's GDP growth. In this case we have used the 5-year average of the 10-year government bond yield (2.0%) to estimate future growth. In the same way as with the 10-year 'growth' period, we discount future cash flows to today's value, using a cost of equity of 6.9%.
+= FCF
+ × (1 + g) ÷ (r – g) = US$868m× (1 + 2.0%) ÷ (6.9%– 2.0%) = US$18b
+= TV / (1 + r)
+= US$18b÷ ( 1 + 6.9%)
+= US$9.4b
+The total value, or equity value, is then the sum of the present value of the future cash flows, which in this case is US$14b. To get the intrinsic value per share, we divide this by the total number of shares outstanding. Compared to the current share price of AU$14.7, the company appears about fair value at a 8.5% discount to where the stock price trades currently. Remember though, that this is just an approximate valuation, and like any complex formula - garbage in, garbage out.
+Now the most important inputs to a discounted cash flow are the discount rate, and of course, the actual cash flows. If you don't agree with these result, have a go at the calculation yourself and play with the assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Brambles as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 6.9%, which is based on a levered beta of 0.973. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Whilst important, the DCF calculation is only one of many factors that you need to assess for a company. DCF models are not the be-all and end-all of investment valuation. Instead the best use for a DCF model is to test certain assumptions and theories to see if they would lead to the company being undervalued or overvalued. For example, changes in the company's cost of equity or the risk free rate can significantly impact the valuation. For Brambles, we've put together three pertinent items you should further research:
+PS. The Simply Wall St app conducts a discounted cash flow valuation for every stock on the ASX every day. If you want to find the calculation for other stocks just 
+.
+ 
+================================================================================
+
+Brambles’ 2023 Sustainability Review: Pathway to Regeneration
+
+Supply chain group and operator of CHEP brand on track to meet 2025 Sustainability Targets
+--(
+)--Brambles today released its 
+, reporting on material environmental, social and governance (ESG) issues and achievements across its global operations for the year ending June 30, 2023.
+The 2023 Sustainability Review highlights the material progress Brambles has made toward its ambitious regenerative vision. The broad range of achievements already delivered demonstrates both Brambles’ global leadership position in sustainability and the power of collaboration in a circular economy to building sustainable and resilient supply chains of the future.
+Showcasing regeneration in action, highlights of the report include:
+Graham Chipchase, Brambles’ Chief Executive Officer, said, "The major strides we’ve taken toward our sustainability goals speak to the unbroken focus and shared commitment across all parts of our business. For Brambles, our global leadership in sustainability is both a great source of pride and a strategic advantage as the world transitions to a low-carbon economy, ensuring we can continue to deliver value for all stakeholders."
+Juan Jose Freijo, Brambles’ Chief Sustainability Officer, said, "Beyond our own impact, we also recognize Brambles’ central role in supply chains uniquely positions us to influence change and help bring others into the circular system.
+"Our achievements in 2023 underscore the importance of collaboration in this mission, and it is deeply rewarding to see our call to build regenerative supply chains taken up by so many CHEP customers and suppliers in the network and partners across the industry," said Dr. Freijo.
+Increasing recognition of Brambles’ sustainability efforts saw the company boost its position across major ESG assessments in FY23:
+Learn more about Brambles’ 
+Learn more about Brambles’ 
+Learn more about Brambles’ 
+In 2023, Brambles will release its first Diversity, Equity & Inclusion Report, as part of our commitment to ongoing transparency in reporting.
+ (ASX: BXB) Under the CHEP brand, Brambles helps move more goods to more people, in more places than any other organization on earth. Its pallets, crates and containers form the invisible backbone of the global supply chain and the world’s biggest brands trust Brambles to help them transport their goods more efficiently, sustainably and safely. As pioneers of the sharing economy, Brambles created one of the world's most sustainable logistics businesses through the share and reuse of its platforms under a model known as ‘pooling’. Brambles primarily serves the fast-moving consumer goods (e.g. dry food, grocery, and health and personal care), fresh produce, beverage, retail and general manufacturing industries. The Group employs more than 12,000 people and owns approximately 353 million pallets, crates and containers through a network of more than 750 service centers. Brambles operates in approximately 60 countries with its largest operations in North America and Western Europe. For further information, please visit 
+.
+ 100% renewable energy mix in FY23 comprised renewable contracts 39%, on-site generation 3% and Energy Attribute Certificates 58%
+Director, Investor Relations
++61 433 343 888
+Group External Communications Lead
++61 404 066 107
+================================================================================
+
+Brambles' (ASX:BXB) investors will be pleased with their decent 55% return over the last five years
+
+Generally speaking the aim of active stock picking is to find companies that provide returns that are superior to the market average. Buying under-rated businesses is one path to excess returns. For example, the 
+ (
+) share price is up 33% in the last 5 years, clearly besting the market return of around 18% (ignoring dividends). On the other hand, the more recent gains haven't been so impressive, with shareholders gaining just 24% , including dividends .
+Let's take a look at the underlying fundamentals over the longer term, and see if they've been consistent with shareholders returns.
+There is no denying that markets are sometimes efficient, but prices do not always reflect underlying business performance. One imperfect but simple way to consider how the market perception of a company has shifted is to compare the change in the earnings per share (EPS) with the share price movement.
+During five years of share price growth, Brambles achieved compound earnings per share (EPS) growth of 6.0% per year. This EPS growth is remarkably close to the 6% average annual increase in the share price. This indicates that investor sentiment towards the company has not changed a great deal. Indeed, it would appear the share price is reacting to the EPS.
+The company's earnings per share (over time) is depicted in the image below (click to see the exact numbers).
+It's good to see that there was some significant insider buying in the last three months. That's a positive. That said, we think earnings and revenue growth trends are even more important factors to consider. Dive deeper into the earnings by checking this interactive graph of Brambles' 
+.
+As well as measuring the share price return, investors should also consider the total shareholder return (TSR). The TSR incorporates the value of any spin-offs or discounted capital raisings, along with any dividends, based on the assumption that the dividends are reinvested. So for companies that pay a generous dividend, the TSR is often a lot higher than the share price return. We note that for Brambles the TSR over the last 5 years was 55%, which is better than the share price return mentioned above. The dividends paid by the company have thusly boosted the 
+ shareholder return.
+It's good to see that Brambles has rewarded shareholders with a total shareholder return of 24% in the last twelve months. That's including the dividend. That's better than the annualised return of 9% over half a decade, implying that the company is doing better recently. Given the share price momentum remains strong, it might be worth taking a closer look at the stock, lest you miss an opportunity. I find it very interesting to look at share price over the long term as a proxy for business performance. But to truly gain insight, we need to consider other information, too. Even so, be aware that 
+, you should know about...
+There are plenty of other companies that have insiders buying up shares. You probably do 
+ want to miss this 
+ 
+ 
+================================================================================
+
+While institutions own 42% of Brambles Limited (ASX:BXB), retail investors are its largest shareholders with 58% ownership
+
+A look at the shareholders of Brambles Limited (
+) can tell us which group is most powerful. With 58% stake, retail investors possess the maximum shares in the company. That is, the group stands to benefit the most if the stock rises (or lose the most if there is a downturn).
+And institutions on the other hand have a 42% ownership in the company. Insiders often own a large chunk of younger, smaller, companies while huge companies tend to have institutions as shareholders.
+In the chart below, we zoom in on the different ownership groups of Brambles.
+Institutional investors commonly compare their own returns to the returns of a commonly followed index. So they generally do consider buying larger companies that are included in the relevant benchmark index.
+We can see that Brambles does have institutional investors; and they hold a good portion of the company's stock. This can indicate that the company has a certain degree of credibility in the investment community. However, it is best to be wary of relying on the supposed validation that comes with institutional investors. They too, get it wrong sometimes. It is not uncommon to see a big share price drop if two large institutional investors try to sell out of a stock at the same time. So it is worth checking the past earnings trajectory of Brambles, (below). Of course, keep in mind that there are other factors to consider, too.
+Hedge funds don't have many shares in Brambles. BlackRock, Inc. is currently the largest shareholder, with 8.5% of shares outstanding. For context, the second largest shareholder holds about 6.1% of the shares outstanding, followed by an ownership of 5.0% by the third-largest shareholder.
+Our studies suggest that the top 25 shareholders collectively control less than half of the company's shares, meaning that the company's shares are widely disseminated and there is no dominant shareholder.
+While it makes sense to study institutional ownership data for a company, it also makes sense to study analyst sentiments to know which way the wind is blowing. There are plenty of analysts covering the stock, so it might be worth seeing what they are forecasting, too.
+The definition of an insider can differ slightly between different countries, but members of the board of directors always count. Company management run the business, but the CEO will answer to the board, even if he or she is a member of it.
+I generally consider insider ownership to be a good thing. However, on some occasions it makes it more difficult for other shareholders to hold the board accountable for decisions.
+Our data suggests that insiders own under 1% of Brambles Limited in their own names. It is a very large company, so it would be surprising to see insiders own a large proportion of the company. Though their holding amounts to less than 1%, we can see that board members collectively own AU$5.4m worth of shares (at current prices). It is always good to see at least some insider ownership, but it might be worth checking 
+The general public -- including retail investors -- own 58% of Brambles. This size of ownership gives investors from the general public some collective power. They can and probably do influence decisions on executive compensation, dividend policies and proposed business acquisitions.
+While it is well worth considering the different groups that own a company, there are other factors that are even more important. Consider for instance, the ever-present spectre of investment risk. 
+, and understanding them should be part of your investment process.
+Ultimately 
+. You can access this 
+ 
+.
+ 
+================================================================================
+
+Here's Why We Think Brambles (ASX:BXB) Is Well Worth Watching
+
+For beginners, it can seem like a good idea (and an exciting prospect) to buy a company that tells a good story to investors, even if it currently lacks a track record of revenue and profit. But as Peter Lynch said in 
+, 'Long shots almost never pay off.' While a well funded company may sustain losses for years, it will need to generate a profit eventually, or else investors will move on and the company will wither away.
+So if this idea of high risk and high reward doesn't suit, you might be more interested in profitable, growing companies, like 
+ (
+). While profit isn't the sole metric that should be considered when investing, it's worth recognising businesses that can consistently produce it.
+If a company can keep growing earnings per share (EPS) long enough, its share price should eventually follow. Therefore, there are plenty of investors who like to buy shares in companies that are growing EPS. We can see that in the last three years Brambles grew its EPS by 12% per year. That's a pretty good rate, if the company can sustain it.
+It's often helpful to take a look at earnings before interest and tax (EBIT) margins, as well as revenue growth, to get another take on the quality of the company's growth. It's noted that Brambles' revenue 
+ was lower than its revenue in the last twelve months, so that could distort our analysis of its margins. EBIT margins for Brambles remained fairly unchanged over the last year, however the company should be pleased to report its revenue growth for the period of 9.4% to US$6.3b. That's a real positive.
+The chart below shows how the company's bottom and top lines have progressed over time. To see the actual numbers, click on the chart.
+While we live in the present moment, there's little doubt that the future matters most in the investment decision process. So why not check 
+?
+It's said that there's no smoke without fire. For investors, insider buying is often the smoke that indicates which stocks could set the market alight. Because often, the purchase of stock is a sign that the buyer views it as undervalued. Of course, we can never be sure what insiders are thinking, we can only judge their actions.
+Not only did Brambles insiders refrain from selling stock during the year, but they also spent US$279k buying it. That's nice to see, because it suggests insiders are optimistic. We also note that it was the Independent Non-Executive Chairman, John Mullen, who made the biggest single acquisition, paying AU$150k for shares at about AU$13.14 each.
+One positive for Brambles is that it is growing EPS. That's nice to see. Not every business can grow its EPS, but Brambles certainly can. The cherry on top is the insider share purchases, which provide an extra impetus to keep and eye on this stock, at the very least. Before you take the next step you should know about the 
+ that we have uncovered.
+There are plenty of other companies that have insiders buying up shares. So if you like the sound of Brambles, you'll probably love this 
+ 
+ 
+================================================================================
+
+Brambles Limited (ASX:BXB) Stock Has Shown Weakness Lately But Financials Look Strong: Should Prospective Shareholders Make The Leap?
+
+With its stock down 4.2% over the past month, it is easy to disregard Brambles (ASX:BXB). However, a closer look at its sound financials might cause you to think again. Given that fundamentals usually drive long-term market outcomes, the company is worth looking at. Particularly, we will be paying attention to 
+ ROE today.
+Return on equity or ROE is a key measure used to assess how efficiently a company's management is utilizing the company's capital. Simply put, it is used to assess the profitability of a company in relation to its equity capital.
+The 
+ is:
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Brambles is:
+23% = US$647m ÷ US$2.9b (Based on the trailing twelve months to June 2023).
+The 'return' is the yearly profit. So, this means that for every A$1 of its shareholder's investments, the company generates a profit of A$0.23.
+So far, we've learned that ROE is a measure of a company's profitability. Based on how much of its profits the company chooses to reinvest or "retain", we are then able to evaluate a company's future ability to generate profits. Generally speaking, other things being equal, firms with a high return on equity and profit retention, have a higher growth rate than firms that don’t share these attributes.
+First thing first, we like that Brambles has an impressive ROE. Second, a comparison with the average ROE reported by the industry of 8.6% also doesn't go unnoticed by us. This likely paved the way for the modest 6.5% net income growth seen by Brambles over the past five years.
+We then compared Brambles' net income growth with the industry and we're pleased to see that the company's growth figure is higher when compared with the industry which has a growth rate of 4.2% in the same 5-year period.
+Earnings growth is a huge factor in stock valuation. It’s important for an investor to know whether the market has priced in the company's expected earnings growth (or decline). By doing so, they will have an idea if the stock is headed into clear blue waters or if swampy waters await. Has the market priced in the future outlook for BXB? You can find out in
+Brambles has a significant three-year median payout ratio of 56%, meaning that it is left with only 44% to reinvest into its business. This implies that the company has been able to achieve decent earnings growth despite returning most of its profits to shareholders.
+Additionally, Brambles has paid dividends over a period of at least ten years which means that the company is pretty serious about sharing its profits with shareholders. Upon studying the latest analysts' consensus data, we found that the company is expected to keep paying out approximately 56% of its profits over the next three years. As a result, Brambles' ROE is not expected to change by much either, which we inferred from the analyst estimate of 24% for future ROE.
+On the whole, we feel that Brambles' performance has been quite good. We are particularly impressed by the considerable earnings growth posted by the company, which was likely backed by its high ROE. While the company is paying out most of its earnings as dividends, it has been able to grow its earnings in spite of it, so that's probably a good sign. That being so, the latest analyst forecasts show that the company will continue to see an expansion in its earnings. To know more about the latest analysts predictions for the company, check out this 
+ 
+================================================================================
+
+A Look At The Intrinsic Value Of Brambles Limited (ASX:BXB)
+
+Today we will run through one way of estimating the intrinsic value of Brambles Limited (
+) by projecting its future cash flows and then discounting them to today's value. We will take advantage of the Discounted Cash Flow (DCF) model for this purpose. Models like these may appear beyond the comprehension of a lay person, but they're fairly easy to follow.
+Remember though, that there are many ways to estimate a company's value, and a DCF is just one method. If you want to learn more about discounted cash flow, the rationale behind this calculation can be read in detail in the 
+.
+We're using the 2-stage growth model, which simply means we take in account two stages of company's growth. In the initial period the company may have a higher growth rate and the second stage is usually assumed to have a stable growth rate. In the first stage we need to estimate the cash flows to the business over the next ten years. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+A DCF is all about the idea that a dollar in the future is less valuable than a dollar today, so we discount the value of these future cash flows to their estimated value in today's dollars:
+ = US$5.0b
+The second stage is also known as Terminal Value, this is the business's cash flow after the first stage. For a number of reasons a very conservative growth rate is used that cannot exceed that of a country's GDP growth. In this case we have used the 5-year average of the 10-year government bond yield (2.2%) to estimate future growth. In the same way as with the 10-year 'growth' period, we discount future cash flows to today's value, using a cost of equity of 6.6%.
+= FCF
+ × (1 + g) ÷ (r – g) = US$850m× (1 + 2.2%) ÷ (6.6%– 2.2%) = US$20b
+= TV / (1 + r)
+= US$20b÷ ( 1 + 6.6%)
+= US$10b
+The total value is the sum of cash flows for the next ten years plus the discounted terminal value, which results in the Total Equity Value, which in this case is US$15b. The last step is to then divide the equity value by the number of shares outstanding. Relative to the current share price of AU$15.2, the company appears about fair value at a 9.8% discount to where the stock price trades currently. Valuations are imprecise instruments though, rather like a telescope - move a few degrees and end up in a different galaxy. Do keep this in mind.
+Now the most important inputs to a discounted cash flow are the discount rate, and of course, the actual cash flows. Part of investing is coming up with your own evaluation of a company's future performance, so try the calculation yourself and check your own assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Brambles as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 6.6%, which is based on a levered beta of 0.957. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Although the valuation of a company is important, it shouldn't be the only metric you look at when researching a company. The DCF model is not a perfect stock valuation tool. Instead the best use for a DCF model is to test certain assumptions and theories to see if they would lead to the company being undervalued or overvalued. For instance, if the terminal value growth rate is adjusted slightly, it can dramatically alter the overall result. For Brambles, there are three further elements you should explore:
+PS. The Simply Wall St app conducts a discounted cash flow valuation for every stock on the ASX every day. If you want to find the calculation for other stocks just 
+.
+ 
+================================================================================
+
+Brambles Ltd's Dividend Analysis
+
+Brambles Ltd (
+) recently announced a 
+ of $0.3 per share, payable on 2024-04-18, with the ex-dividend date set for 2024-03-13. As investors look forward to this upcoming payment, the spotlight also shines on the company's dividend history, yield, and growth rates. Using the data from GuruFocus, let's look into Brambles Ltd's dividend performance and assess its sustainability.
+Brambles is the world's largest supplier of reusable wooden pallets for the fast-moving consumer goods, fresh produce, beverage, retail, and general manufacturing industries. Brambles' services primarily operate under the Chep brand. The operation spans approximately 60 countries with three geographical segments: Chep Americas, Chep EMEA, and Chep Asia-Pacific.
+Brambles Ltd has maintained a consistent 
+ record since 2010. Dividends are currently distributed on a bi-annually basis. Below is a chart showing annual 
+ for tracking historical trends.
+As of today, Brambles Ltd currently has a 12-month 
+ of 2.56% and a 12-month 
+ of 2.88%. This suggests an expectation of increased dividend payments over the next 12 months.
+Over the past three years, Brambles Ltd's annual 
+ was 10.40%. Extended to a five-year horizon, this rate decreased to 2.30% per year. And over the past decade, Brambles Ltd's annual dividends per share growth rate stands at 0.90%.
+Based on Brambles Ltd's dividend yield and five-year growth rate, the 
+ of Brambles Ltd stock as of today is approximately 2.87%.
+To assess the sustainability of the dividend, one needs to evaluate the company's payout ratio. The 
+ provides insights into the portion of earnings the company distributes as dividends. A lower ratio suggests that the company retains a significant part of its earnings, thereby ensuring the availability of funds for future growth and unexpected downturns. As of 2023-12-31, Brambles Ltd's dividend payout ratio is 0.51.
+Brambles Ltd's 
+, offers an understanding of the company's earnings prowess relative to its peers. GuruFocus ranks Brambles Ltd's profitability 8 out of 10 as of 2023-12-31, suggesting good profitability prospects. The company has reported positive 
+ for each of year over the past decade, further solidifying its high profitability.
+To ensure the sustainability of dividends, a company must have robust growth metrics. Brambles Ltd's 
+ of 8 out of 10 suggests that the company's growth trajectory is good relative to its competitors.
+Revenue is the lifeblood of any company, and Brambles Ltd's 
+, combined with the 
+, indicates a strong revenue model. Brambles Ltd's revenue has increased by approximately 13.70% per year on average, a rate that outperforms approximately 73.06% of global competitors.
+The company's 
+ showcases its capability to grow its earnings, a critical component for sustaining dividends in the long run. During the past three years, Brambles Ltd's earnings increased by approximately 14.90% per year on average, a rate that outperforms approximately 56.4% of global competitors.
+Lastly, the company's 
+ of 4.20%, which outperforms approximately 38.53% of global competitors.
+In conclusion, Brambles Ltd's upcoming dividend, consistent history of payments, and promising dividend growth rate speak to its commitment to shareholder returns. The company's moderate payout ratio, coupled with high profitability and solid growth metrics, suggest that its dividends are sustainable. These financial health indicators, when considered alongside the company's strategic position as a leading supplier in its industry, paint a reassuring picture for value investors focused on dividend income. With the prospects of Brambles Ltd looking favorable, investors may find it to be a compelling addition to their income-generating portfolio. Will Brambles Ltd continue to deliver shareholder value through its dividend policy in the years to come?
+GuruFocus Premium users can screen for high-dividend yield stocks using the 
+.
+This article first appeared on 
+.
+================================================================================
+
+Brambles (ASX:BXB) Has Announced That It Will Be Increasing Its Dividend To $0.2309
+
+ (
+) dividend will be increasing from last year's payment of the same period to $0.2309 on 11th of April. Based on this payment, the dividend yield for the company will be 3.0%, which is fairly typical for the industry.
+We like to see a healthy dividend yield, but that is only helpful to us if the payment can continue. The last dividend was quite easily covered by Brambles' earnings. This means that a large portion of its earnings are being retained to grow the business.
+The next year is set to see EPS grow by 32.6%. Assuming the dividend continues along recent trends, we think the payout ratio could be 67% by next year, which is in a pretty sustainable range.
+The company has a long dividend track record, but it doesn't look great with cuts in the past. Since 2014, the dividend has gone from $0.24 total annually to $0.30. This works out to be a compound annual growth rate (CAGR) of approximately 2.2% a year over that time. The dividend has seen some fluctuations in the past, so even though the dividend was raised this year, we should remember that it has been cut in the past.
+Growing earnings per share could be a mitigating factor when considering the past fluctuations in the dividend. Brambles has impressed us by growing EPS at 16% per year over the past five years. Shareholders are getting plenty of the earnings returned to them, which combined with strong growth makes this quite appealing.
+Overall, a dividend increase is always good, and we think that Brambles is a strong income stock thanks to its track record and growing earnings. Earnings are easily covering distributions, and the company is generating plenty of cash. All in all, this checks a lot of the boxes we look for when choosing an income stock.
+It's important to note that companies having a consistent dividend policy will generate greater investor confidence than those having an erratic one. Still, investors need to consider a host of other factors, apart from dividend payments, when analysing a company. Taking the debate a bit further, we've identified 
+ that investors need to be conscious of moving forward. If you are a dividend investor, you might also want to look at our 
+ 
+================================================================================
+
+Brambles (ASX:BXB) shareholders have earned a 17% CAGR over the last three years
+
+By buying an index fund, you can roughly match the market return with ease. But if you pick the right individual stocks, you could make more than that. For example, the 
+ (
+) share price is up 48% in the last three years, clearly besting the market return of around 3.8% (not including dividends). However, more recent returns haven't been as impressive as that, with the stock returning just 13% in the last year , including dividends .
+Now it's worth having a look at the company's fundamentals too, because that will help us determine if the long term shareholder return has matched the performance of the underlying business.
+While the efficient markets hypothesis continues to be taught by some, it has been proven that markets are over-reactive dynamic systems, and investors are not always rational. One way to examine how market sentiment has changed over time is to look at the interaction between a company's share price and its earnings per share (EPS).
+During three years of share price growth, Brambles achieved compound earnings per share growth of 13% per year. Notably, the 14% average annual share price gain matches up nicely with the EPS growth rate. This suggests that sentiment and expectations have not changed drastically. Quite to the contrary, the share price has arguably reflected the EPS growth.
+The company's earnings per share (over time) is depicted in the image below (click to see the exact numbers).
+We like that insiders have been buying shares in the last twelve months. Even so, future earnings will be far more important to whether current shareholders make money. Before buying or selling a stock, we always recommend a close examination of 
+.
+It is important to consider the total shareholder return, as well as the share price return, for any given stock. The TSR is a return calculation that accounts for the value of cash dividends (assuming that any dividend received was reinvested) and the calculated value of any discounted capital raisings and spin-offs. It's fair to say that the TSR gives a more complete picture for stocks that pay a dividend. In the case of Brambles, it has a TSR of 61% for the last 3 years. That exceeds its share price return that we previously mentioned. The dividends paid by the company have thusly boosted the 
+ shareholder return.
+We're pleased to report that Brambles shareholders have received a total shareholder return of 13% over one year. Of course, that includes the dividend. That's better than the annualised return of 8% over half a decade, implying that the company is doing better recently. Given the share price momentum remains strong, it might be worth taking a closer look at the stock, lest you miss an opportunity. I find it very interesting to look at share price over the long term as a proxy for business performance. But to truly gain insight, we need to consider other information, too. Consider for instance, the ever-present spectre of investment risk. 
+, and understanding them should be part of your investment process.
+There are plenty of other companies that have insiders buying up shares. You probably do 
+ want to miss this 
+ 
+ 
+================================================================================
+
+Here's Why We Think Brambles (ASX:BXB) Might Deserve Your Attention Today
+
+Investors are often guided by the idea of discovering 'the next big thing', even if that means buying 'story stocks' without any revenue, let alone profit. But as Peter Lynch said in 
+, 'Long shots almost never pay off.' A loss-making company is yet to prove itself with profit, and eventually the inflow of external capital may dry up.
+Despite being in the age of tech-stock blue-sky investing, many investors still adopt a more traditional strategy; buying shares in profitable companies like 
+ (
+). While profit isn't the sole metric that should be considered when investing, it's worth recognising businesses that can consistently produce it.
+The market is a voting machine in the short term, but a weighing machine in the long term, so you'd expect share price to follow earnings per share (EPS) outcomes eventually. That makes EPS growth an attractive quality for any company. We can see that in the last three years Brambles grew its EPS by 13% per year. That's a good rate of growth, if it can be sustained.
+Careful consideration of revenue growth and earnings before interest and taxation (EBIT) margins can help inform a view on the sustainability of the recent profit growth. Our analysis has highlighted that Brambles' revenue 
+ did not account for all of their revenue in the previous 12 months, so our analysis of its margins might not accurately reflect the underlying business. While we note Brambles achieved similar EBIT margins to last year, revenue grew by a solid 10% to US$6.7b. That's a real positive.
+The chart below shows how the company's bottom and top lines have progressed over time. To see the actual numbers, click on the chart.
+The trick, as an investor, is to find companies that are 
+ perform well in the future, not just in the past. While crystal balls don't exist, you can check 
+ 100% free.
+Insider interest in a company always sparks a bit of intrigue and many investors are on the lookout for companies where insiders are putting their money where their mouth is. That's because insider buying often indicates that those closest to the company have confidence that the share price will perform well. However, insiders are sometimes wrong, and we don't know the exact thinking behind their acquisitions.
+Shareholders in Brambles will be more than happy to see insiders committing themselves to the company, spending US$322k on shares in just twelve months. When you contrast that with the complete lack of sales, it's easy for shareholders to be brimming with joyful expectancy. It is also worth noting that it was Independent Non-Executive Chairman John Mullen who made the biggest single purchase, worth AU$150k, paying AU$13.14 per share.
+One positive for Brambles is that it is growing EPS. That's nice to see. Not every business can grow its EPS, but Brambles certainly can. The eye-catcher here is the reecnt insider share acquisitions which are undoubtedly enough to entice some investors to keep watch for the future. You still need to take note of risks, for example - Brambles has 
+ we think you should be aware of.
+There are plenty of other companies that have insiders buying up shares. So if you like the sound of Brambles, you'll probably love this 
+ 
+================================================================================
+
+Brambles Limited (ASX:BXB) most popular amongst individual investors who own 56% of the shares, institutions hold 43%
+
+A look at the shareholders of Brambles Limited (
+) can tell us which group is most powerful. The group holding the most number of shares in the company, around 56% to be precise, is individual investors. In other words, the group stands to gain the most (or lose the most) from their investment into the company.
+Institutions, on the other hand, account for 43% of the company's stockholders. Generally speaking, as a company grows, institutions will increase their ownership. Conversely, insiders often decrease their ownership over time.
+Let's delve deeper into each type of owner of Brambles, beginning with the chart below.
+Institutional investors commonly compare their own returns to the returns of a commonly followed index. So they generally do consider buying larger companies that are included in the relevant benchmark index.
+As you can see, institutional investors have a fair amount of stake in Brambles. This can indicate that the company has a certain degree of credibility in the investment community. However, it is best to be wary of relying on the supposed validation that comes with institutional investors. They too, get it wrong sometimes. It is not uncommon to see a big share price drop if two large institutional investors try to sell out of a stock at the same time. So it is worth checking the past earnings trajectory of Brambles, (below). Of course, keep in mind that there are other factors to consider, too.
+Brambles is not owned by hedge funds. BlackRock, Inc. is currently the largest shareholder, with 8.5% of shares outstanding. State Street Global Advisors, Inc. is the second largest shareholder owning 7.2% of common stock, and The Vanguard Group, Inc. holds about 5.0% of the company stock.
+On studying our ownership data, we found that 25 of the top shareholders collectively own less than 50% of the share register, implying that no single individual has a majority interest.
+While studying institutional ownership for a company can add value to your research, it is also a good practice to research analyst recommendations to get a deeper understand of a stock's expected performance. Quite a few analysts cover the stock, so you could look into forecast growth quite easily.
+The definition of an insider can differ slightly between different countries, but members of the board of directors always count. The company management answer to the board and the latter should represent the interests of shareholders. Notably, sometimes top-level managers are on the board themselves.
+I generally consider insider ownership to be a good thing. However, on some occasions it makes it more difficult for other shareholders to hold the board accountable for decisions.
+Our information suggests that Brambles Limited insiders own under 1% of the company. As it is a large company, we'd only expect insiders to own a small percentage of it. But it's worth noting that they own AU$16m worth of shares. It is always good to see at least some insider ownership, but it might be worth checking 
+The general public -- including retail investors -- own 56% of Brambles. This level of ownership gives investors from the wider public some power to sway key policy decisions such as board composition, executive compensation, and the dividend payout ratio.
+While it is well worth considering the different groups that own a company, there are other factors that are even more important. For example, we've discovered 
+ that you should be aware of before investing here.
+If you would prefer discover what analysts are predicting in terms of future growth, do not miss this 
+ 
+.
+ 
+================================================================================
+
+Investors Will Want Brambles' (ASX:BXB) Growth In ROCE To Persist
+
+What are the early trends we should look for to identify a stock that could multiply in value over the long term? In a perfect world, we'd like to see a company investing more capital into its business and ideally the returns earned from that capital are also increasing. Basically this means that a company has profitable initiatives that it can continue to reinvest in, which is a trait of a compounding machine. Speaking of which, we noticed some great changes in 
+ (
+) returns on capital, so let's have a look.
+For those that aren't sure what ROCE is, it measures the amount of pre-tax profits a company can generate from the capital employed in its business. To calculate this metric for Brambles, this is the formula:
+0.19 = US$1.2b ÷ (US$8.8b - US$2.7b) 
+.
+Therefore, 
+ On its own, that's a standard return, however it's much better than the 11% generated by the Commercial Services industry.
+In the above chart we have measured Brambles' prior ROCE against its prior performance, but the future is arguably more important. If you're interested, you can view the analysts predictions in our 
+ 
+.
+Brambles has not disappointed with their ROCE growth. Looking at the data, we can see that even though capital employed in the business has remained relatively flat, the ROCE generated has risen by 55% over the last five years. So it's likely that the business is now reaping the full benefits of its past investments, since the capital employed hasn't changed considerably. It's worth looking deeper into this though because while it's great that the business is more efficient, it might also mean that going forward the areas to invest internally for the organic growth are lacking.
+To bring it all together, Brambles has done well to increase the returns it's generating from its capital employed. Considering the stock has delivered 32% to its stockholders over the last five years, it may be fair to think that investors aren't fully aware of the promising trends yet. So exploring more about this stock could uncover a good opportunity, if the valuation and other metrics stack up.
+On a final note, we've found 
+ that we think you should be aware of.
+If you want to search for solid companies with great earnings, check out this 
+ 
+ 
+================================================================================
+
+Brambles' (ASX:BXB) Returns On Capital Are Heading Higher
+
+Did you know there are some financial metrics that can provide clues of a potential multi-bagger? Firstly, we'd want to identify a growing 
+ on capital employed (ROCE) and then alongside that, an ever-increasing 
+ of capital employed. This shows us that it's a compounding machine, able to continually reinvest its earnings back into the business and generate higher returns. So on that note, 
+ (ASX:BXB) looks quite promising in regards to its trends of return on capital.
+For those that aren't sure what ROCE is, it measures the amount of pre-tax profits a company can generate from the capital employed in its business. The formula for this calculation on Brambles is:
+0.18 = US$1.0b ÷ (US$8.7b - US$3.0b) 
+.
+Thus, 
+ In absolute terms, that's a satisfactory return, but compared to the Commercial Services industry average of 7.8% it's much better.
+In the above chart we have measured Brambles' prior ROCE against its prior performance, but the future is arguably more important. If you're interested, you can view the analysts predictions in our 
+ report on analyst forecasts for the company.
+Brambles has not disappointed with their ROCE growth. Looking at the data, we can see that even though capital employed in the business has remained relatively flat, the ROCE generated has risen by 25% over the last five years. So our take on this is that the business has increased efficiencies to generate these higher returns, all the while not needing to make any additional investments. On that front, things are looking good so it's worth exploring what management has said about growth plans going forward.
+In summary, we're delighted to see that Brambles has been able to increase efficiencies and earn higher rates of return on the same amount of capital. And investors seem to expect more of this going forward, since the stock has rewarded shareholders with a 56% return over the last five years. With that being said, we still think the promising fundamentals mean the company deserves some further due diligence.
+On a final note, we've found 
+ that we think you should be aware of.
+For those who like to invest in 
+ check out this 
+ 
+ 
+================================================================================
+
+When This Supply-Chain Essential Goes Missing, It’s Time to Bring in the ‘Pallet Detectives’
+
+Millions of the wooden pallets go missing every month, creating headaches for suppliers and hiccups in the supply chain. Finding them takes some serious shoe leather.
+================================================================================
+
+Brambles Limited's (ASX:BXB) Stock Has Seen Strong Momentum: Does That Call For Deeper Study Of Its Financial Prospects?
+
+Brambles' (ASX:BXB) stock is up by a considerable 19% over the past three months. Given that stock prices are usually aligned with a company's financial performance in the long-term, we decided to study its financial indicators more closely to see if they had a hand to play in the recent price move. In this article, we decided to focus on 
+ ROE.
+Return on equity or ROE is an important factor to be considered by a shareholder because it tells them how effectively their capital is being reinvested. In other words, it is a profitability ratio which measures the rate of return on the capital provided by the company's shareholders.
+The 
+ is:
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Brambles is:
+23% = US$705m ÷ US$3.1b (Based on the trailing twelve months to December 2023).
+The 'return' is the profit over the last twelve months. One way to conceptualize this is that for each A$1 of shareholders' capital it has, the company made A$0.23 in profit.
+So far, we've learned that ROE is a measure of a company's profitability. Depending on how much of these profits the company reinvests or "retains", and how effectively it does so, we are then able to assess a company’s earnings growth potential. Assuming everything else remains unchanged, the higher the ROE and profit retention, the higher the growth rate of a company compared to companies that don't necessarily bear these characteristics.
+To begin with, Brambles has a pretty high ROE which is interesting. Additionally, the company's ROE is higher compared to the industry average of 14% which is quite remarkable. Probably as a result of this, Brambles was able to see a decent net income growth of 9.7% over the last five years.
+As a next step, we compared Brambles' net income growth with the industry and were disappointed to see that the company's growth is lower than the industry average growth of 25% in the same period.
+The basis for attaching value to a company is, to a great extent, tied to its earnings growth. It’s important for an investor to know whether the market has priced in the company's expected earnings growth (or decline). By doing so, they will have an idea if the stock is headed into clear blue waters or if swampy waters await. Has the market priced in the future outlook for BXB? You can find out in
+Brambles has a significant three-year median payout ratio of 56%, meaning that it is left with only 44% to reinvest into its business. This implies that the company has been able to achieve decent earnings growth despite returning most of its profits to shareholders.
+Additionally, Brambles has paid dividends over a period of at least ten years which means that the company is pretty serious about sharing its profits with shareholders. Upon studying the latest analysts' consensus data, we found that the company is expected to keep paying out approximately 59% of its profits over the next three years. Therefore, the company's future ROE is also not expected to change by much with analysts predicting an ROE of 23%.
+In total, it does look like Brambles has some positive aspects to its business. Its earnings have grown respectably as we saw earlier, which was likely due to the company reinvesting its earnings at a pretty high rate of return. However, given the high ROE, we do think that the company is reinvesting a small portion of its profits. This could likely be preventing the company from growing to its full extent. The latest industry analyst forecasts show that the company is expected to maintain its current growth rate. Are these analysts expectations based on the broad expectations for the industry, or on the company's fundamentals?
+ 
+================================================================================
+

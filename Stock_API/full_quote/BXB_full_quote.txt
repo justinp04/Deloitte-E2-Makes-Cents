@@ -1,0 +1,1 @@
+[{'exchange': 'YHD', 'quoteType': 'MUTUALFUND', 'symbol': 'BXB', 'underlyingSymbol': 'BXB', 'shortName': '1114', 'firstTradeDateEpochUtc': 1453905000, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': 'cd04a50d-8136-33e0-90d1-70f4185f6ae8', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]
