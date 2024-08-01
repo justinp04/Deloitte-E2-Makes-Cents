@@ -1,0 +1,92 @@
+Are Deterra Royalties Limited (ASX:DRR) Investors Paying Above The Intrinsic Value? 2023-08-14T22:57:36.000Z
+
+Today we will run through one way of estimating the intrinsic value of Deterra Royalties Limited (
+) by taking the expected future cash flows and discounting them to today's value. We will take advantage of the Discounted Cash Flow (DCF) model for this purpose. Before you think you won't be able to understand it, just read on! It's actually much less complex than you'd imagine.
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. Anyone interested in learning a bit more about intrinsic value should have a read of the 
+.
+We're using the 2-stage growth model, which simply means we take in account two stages of company's growth. In the initial period the company may have a higher growth rate and the second stage is usually assumed to have a stable growth rate. To start off with, we need to estimate the next ten years of cash flows. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+Generally we assume that a dollar today is more valuable than a dollar in the future, so we discount the value of these future cash flows to their estimated value in today's dollars:
+ = AU$835m
+After calculating the present value of future cash flows in the initial 10-year period, we need to calculate the Terminal Value, which accounts for all future cash flows beyond the first stage. The Gordon Growth formula is used to calculate Terminal Value at a future annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.0%. We discount the terminal cash flows to today's value at a cost of equity of 7.6%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$104m× (1 + 2.0%) ÷ (7.6%– 2.0%) = AU$1.9b
+= TV / (1 + r)
+= AU$1.9b÷ ( 1 + 7.6%)
+= AU$918m
+The total value is the sum of cash flows for the next ten years plus the discounted terminal value, which results in the Total Equity Value, which in this case is AU$1.8b. In the final step we divide the equity value by the number of shares outstanding. Relative to the current share price of AU$4.5, the company appears potentially overvalued at the time of writing. The assumptions in any calculation have a big impact on the valuation, so it is better to view this as a rough estimate, not precise down to the last cent.
+We would point out that the most important inputs to a discounted cash flow are the discount rate and of course the actual cash flows. If you don't agree with these result, have a go at the calculation yourself and play with the assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Deterra Royalties as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 7.6%, which is based on a levered beta of 1.111. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Whilst important, the DCF calculation ideally won't be the sole piece of analysis you scrutinize for a company. DCF models are not the be-all and end-all of investment valuation. Instead the best use for a DCF model is to test certain assumptions and theories to see if they would lead to the company being undervalued or overvalued. If a company grows at a different rate, or if its cost of equity or risk free rate changes sharply, the output can look very different. Can we work out why the company is trading at a premium to intrinsic value? For Deterra Royalties, we've compiled three important factors you should further research:
+PS. Simply Wall St updates its DCF calculation for every Australian stock every day, so if you want to find the intrinsic value of any other stock just 
+.
+ 
+================================================================================
+
+Is Deterra Royalties Limited (ASX:DRR) Worth AU$4.8 Based On Its Intrinsic Value? 2024-05-22T23:33:18.000Z
+
+In this article we are going to estimate the intrinsic value of Deterra Royalties Limited (
+) by estimating the company's future cash flows and discounting them to their present value. We will take advantage of the Discounted Cash Flow (DCF) model for this purpose. Believe it or not, it's not too difficult to follow, as you'll see from our example!
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. If you still have some burning questions about this type of valuation, take a look at the 
+.
+We use what is known as a 2-stage model, which simply means we have two different periods of growth rates for the company's cash flows. Generally the first stage is higher growth, and the second stage is a lower growth phase. In the first stage we need to estimate the cash flows to the business over the next ten years. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+Generally we assume that a dollar today is more valuable than a dollar in the future, so we need to discount the sum of these future cash flows to arrive at a present value estimate:
+ = AU$905m
+The second stage is also known as Terminal Value, this is the business's cash flow after the first stage. The Gordon Growth formula is used to calculate Terminal Value at a future annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.3%. We discount the terminal cash flows to today's value at a cost of equity of 7.5%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$104m× (1 + 2.3%) ÷ (7.5%– 2.3%) = AU$2.0b
+= TV / (1 + r)
+= AU$2.0b÷ ( 1 + 7.5%)
+= AU$988m
+The total value, or equity value, is then the sum of the present value of the future cash flows, which in this case is AU$1.9b. The last step is to then divide the equity value by the number of shares outstanding. Compared to the current share price of AU$4.8, the company appears reasonably expensive at the time of writing. The assumptions in any calculation have a big impact on the valuation, so it is better to view this as a rough estimate, not precise down to the last cent.
+The calculation above is very dependent on two assumptions. The first is the discount rate and the other is the cash flows. Part of investing is coming up with your own evaluation of a company's future performance, so try the calculation yourself and check your own assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Deterra Royalties as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 7.5%, which is based on a levered beta of 1.134. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Valuation is only one side of the coin in terms of building your investment thesis, and it is only one of many factors that you need to assess for a company. It's not possible to obtain a foolproof valuation with a DCF model. Preferably you'd apply different cases and assumptions and see how they would impact the company's valuation. If a company grows at a different rate, or if its cost of equity or risk free rate changes sharply, the output can look very different. Can we work out why the company is trading at a premium to intrinsic value? For Deterra Royalties, we've compiled three further elements you should further examine:
+PS. The Simply Wall St app conducts a discounted cash flow valuation for every stock on the ASX every day. If you want to find the calculation for other stocks just 
+.
+ 
+================================================================================
+
+Are Deterra Royalties Limited (ASX:DRR) Investors Paying Above The Intrinsic Value? 2023-08-14T22:57:36.000Z
+
+Today we will run through one way of estimating the intrinsic value of Deterra Royalties Limited (
+) by taking the expected future cash flows and discounting them to today's value. We will take advantage of the Discounted Cash Flow (DCF) model for this purpose. Before you think you won't be able to understand it, just read on! It's actually much less complex than you'd imagine.
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. Anyone interested in learning a bit more about intrinsic value should have a read of the 
+.
+We're using the 2-stage growth model, which simply means we take in account two stages of company's growth. In the initial period the company may have a higher growth rate and the second stage is usually assumed to have a stable growth rate. To start off with, we need to estimate the next ten years of cash flows. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+Generally we assume that a dollar today is more valuable than a dollar in the future, so we discount the value of these future cash flows to their estimated value in today's dollars:
+ = AU$835m
+After calculating the present value of future cash flows in the initial 10-year period, we need to calculate the Terminal Value, which accounts for all future cash flows beyond the first stage. The Gordon Growth formula is used to calculate Terminal Value at a future annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.0%. We discount the terminal cash flows to today's value at a cost of equity of 7.6%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$104m× (1 + 2.0%) ÷ (7.6%– 2.0%) = AU$1.9b
+= TV / (1 + r)
+= AU$1.9b÷ ( 1 + 7.6%)
+= AU$918m
+The total value is the sum of cash flows for the next ten years plus the discounted terminal value, which results in the Total Equity Value, which in this case is AU$1.8b. In the final step we divide the equity value by the number of shares outstanding. Relative to the current share price of AU$4.5, the company appears potentially overvalued at the time of writing. The assumptions in any calculation have a big impact on the valuation, so it is better to view this as a rough estimate, not precise down to the last cent.
+We would point out that the most important inputs to a discounted cash flow are the discount rate and of course the actual cash flows. If you don't agree with these result, have a go at the calculation yourself and play with the assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Deterra Royalties as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 7.6%, which is based on a levered beta of 1.111. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Whilst important, the DCF calculation ideally won't be the sole piece of analysis you scrutinize for a company. DCF models are not the be-all and end-all of investment valuation. Instead the best use for a DCF model is to test certain assumptions and theories to see if they would lead to the company being undervalued or overvalued. If a company grows at a different rate, or if its cost of equity or risk free rate changes sharply, the output can look very different. Can we work out why the company is trading at a premium to intrinsic value? For Deterra Royalties, we've compiled three important factors you should further research:
+PS. Simply Wall St updates its DCF calculation for every Australian stock every day, so if you want to find the intrinsic value of any other stock just 
+.
+ 
+================================================================================
+
+Is Deterra Royalties Limited (ASX:DRR) Worth AU$4.8 Based On Its Intrinsic Value? 2024-05-22T23:33:18.000Z
+
+In this article we are going to estimate the intrinsic value of Deterra Royalties Limited (
+) by estimating the company's future cash flows and discounting them to their present value. We will take advantage of the Discounted Cash Flow (DCF) model for this purpose. Believe it or not, it's not too difficult to follow, as you'll see from our example!
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. If you still have some burning questions about this type of valuation, take a look at the 
+.
+We use what is known as a 2-stage model, which simply means we have two different periods of growth rates for the company's cash flows. Generally the first stage is higher growth, and the second stage is a lower growth phase. In the first stage we need to estimate the cash flows to the business over the next ten years. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+Generally we assume that a dollar today is more valuable than a dollar in the future, so we need to discount the sum of these future cash flows to arrive at a present value estimate:
+ = AU$905m
+The second stage is also known as Terminal Value, this is the business's cash flow after the first stage. The Gordon Growth formula is used to calculate Terminal Value at a future annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.3%. We discount the terminal cash flows to today's value at a cost of equity of 7.5%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$104m× (1 + 2.3%) ÷ (7.5%– 2.3%) = AU$2.0b
+= TV / (1 + r)
+= AU$2.0b÷ ( 1 + 7.5%)
+= AU$988m
+The total value, or equity value, is then the sum of the present value of the future cash flows, which in this case is AU$1.9b. The last step is to then divide the equity value by the number of shares outstanding. Compared to the current share price of AU$4.8, the company appears reasonably expensive at the time of writing. The assumptions in any calculation have a big impact on the valuation, so it is better to view this as a rough estimate, not precise down to the last cent.
+The calculation above is very dependent on two assumptions. The first is the discount rate and the other is the cash flows. Part of investing is coming up with your own evaluation of a company's future performance, so try the calculation yourself and check your own assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Deterra Royalties as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 7.5%, which is based on a levered beta of 1.134. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Valuation is only one side of the coin in terms of building your investment thesis, and it is only one of many factors that you need to assess for a company. It's not possible to obtain a foolproof valuation with a DCF model. Preferably you'd apply different cases and assumptions and see how they would impact the company's valuation. If a company grows at a different rate, or if its cost of equity or risk free rate changes sharply, the output can look very different. Can we work out why the company is trading at a premium to intrinsic value? For Deterra Royalties, we've compiled three further elements you should further examine:
+PS. The Simply Wall St app conducts a discounted cash flow valuation for every stock on the ASX every day. If you want to find the calculation for other stocks just 
+.
+ 
+================================================================================
+

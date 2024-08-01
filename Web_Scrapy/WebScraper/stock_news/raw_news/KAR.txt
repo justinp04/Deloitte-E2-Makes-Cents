@@ -1,0 +1,231 @@
+Is Karoon Energy Ltd's (ASX:KAR) Stock's Recent Performance Being Led By Its Attractive Financial Prospects? 2023-08-03T21:55:50.000Z
+
+Karoon Energy's (ASX:KAR) stock is up by a considerable 5.4% over the past month. Given that the market rewards strong financials in the long-term, we wonder if that is the case in this instance. Particularly, we will be paying attention to 
+ ROE today.
+ROE or return on equity is a useful tool to assess how effectively a company can generate returns on the investment it received from its shareholders. Put another way, it reveals the company's success at turning shareholder investments into profits.
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Karoon Energy is:
+29% = US$111m ÷ US$379m (Based on the trailing twelve months to December 2022).
+The 'return' is the profit over the last twelve months. One way to conceptualize this is that for each A$1 of shareholders' capital it has, the company made A$0.29 in profit.
+We have already established that ROE serves as an efficient profit-generating gauge for a company's future earnings. Based on how much of its profits the company chooses to reinvest or "retain", we are then able to evaluate a company's future ability to generate profits. Assuming everything else remains unchanged, the higher the ROE and profit retention, the higher the growth rate of a company compared to companies that don't necessarily bear these characteristics.
+Firstly, we acknowledge that Karoon Energy has a significantly high ROE. Secondly, even when compared to the industry average of 21% the company's ROE is quite impressive. Under the circumstances, Karoon Energy's considerable five year net income growth of 32% was to be expected.
+As a next step, we compared Karoon Energy's net income growth with the industry, and pleasingly, we found that the growth seen by the company is higher than the average industry growth of 23%.
+The basis for attaching value to a company is, to a great extent, tied to its earnings growth. What investors need to determine next is if the expected earnings growth, or the lack of it, is already built into the share price. Doing so will help them establish if the stock's future looks promising or ominous. Is Karoon Energy fairly valued compared to other companies? These 
+ might help you decide.
+Karoon Energy doesn't pay any dividend to its shareholders, meaning that the company has been reinvesting all of its profits into the business. This is likely what's driving the high earnings growth number discussed above.
+On the whole, we feel that Karoon Energy's performance has been quite good. Specifically, we like that the company is reinvesting a huge chunk of its profits at a high rate of return. This of course has caused the company to see substantial growth in its earnings. That being so, a study of the latest analyst forecasts show that the company is expected to see a slowdown in its future earnings growth. Are these analysts expectations based on the broad expectations for the industry, or on the company's fundamentals?
+ 
+================================================================================
+
+Karoon Energy Full Year 2023 Earnings: EPS Beats Expectations 2023-08-25T20:04:03.000Z
+
+Oil reserves
+Combined production
+Revenue was in line with analyst estimates. Earnings per share (EPS) surpassed analyst estimates by 2.2%.
+Looking ahead, revenue is expected to fall by 4.9% p.a. on average during the next 6 years compared to a 1.9% decline forecast for the Oil and Gas industry in Australia.
+The company's shares are up 1.8% from a week ago.
+You should always think about risks. Case in point, we've spotted 
+ you should be aware of.
+ 
+================================================================================
+
+Karoon Energy Ltd's (ASX:KAR) Intrinsic Value Is Potentially 96% Above Its Share Price 2023-09-28T20:44:00.000Z
+
+Does the September share price for Karoon Energy Ltd (
+) reflect what it's really worth? Today, we will estimate the stock's intrinsic value by taking the forecast future cash flows of the company and discounting them back to today's value. The Discounted Cash Flow (DCF) model is the tool we will apply to do this. It may sound complicated, but actually it is quite simple!
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. If you still have some burning questions about this type of valuation, take a look at the 
+.
+We're using the 2-stage growth model, which simply means we take in account two stages of company's growth. In the initial period the company may have a higher growth rate and the second stage is usually assumed to have a stable growth rate. In the first stage we need to estimate the cash flows to the business over the next ten years. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+A DCF is all about the idea that a dollar in the future is less valuable than a dollar today, so we need to discount the sum of these future cash flows to arrive at a present value estimate:
+ = US$1.2b
+After calculating the present value of future cash flows in the initial 10-year period, we need to calculate the Terminal Value, which accounts for all future cash flows beyond the first stage. For a number of reasons a very conservative growth rate is used that cannot exceed that of a country's GDP growth. In this case we have used the 5-year average of the 10-year government bond yield (2.0%) to estimate future growth. In the same way as with the 10-year 'growth' period, we discount future cash flows to today's value, using a cost of equity of 8.6%.
+= FCF
+ × (1 + g) ÷ (r – g) = US$104m× (1 + 2.0%) ÷ (8.6%– 2.0%) = US$1.6b
+= TV / (1 + r)
+= US$1.6b÷ ( 1 + 8.6%)
+= US$709m
+The total value is the sum of cash flows for the next ten years plus the discounted terminal value, which results in the Total Equity Value, which in this case is US$1.9b. The last step is to then divide the equity value by the number of shares outstanding. Compared to the current share price of AU$2.7, the company appears quite undervalued at a 49% discount to where the stock price trades currently. Valuations are imprecise instruments though, rather like a telescope - move a few degrees and end up in a different galaxy. Do keep this in mind.
+The calculation above is very dependent on two assumptions. The first is the discount rate and the other is the cash flows. You don't have to agree with these inputs, I recommend redoing the calculations yourself and playing with them. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Karoon Energy as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 8.6%, which is based on a levered beta of 1.317. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Although the valuation of a company is important, it is only one of many factors that you need to assess for a company. The DCF model is not a perfect stock valuation tool. Rather it should be seen as a guide to "what assumptions need to be true for this stock to be under/overvalued?" For example, changes in the company's cost of equity or the risk free rate can significantly impact the valuation. What is the reason for the share price sitting below the intrinsic value? For Karoon Energy, we've compiled three further items you should assess:
+PS. Simply Wall St updates its DCF calculation for every Australian stock every day, so if you want to find the intrinsic value of any other stock just 
+.
+ 
+================================================================================
+
+Investing in Karoon Energy (ASX:KAR) three years ago would have delivered you a 189% gain 2023-10-19T04:11:41.000Z
+
+The most you can lose on any stock (assuming you don't use leverage) is 100% of your money. But in contrast you can make much 
+ than 100% if the company does well. For example, the 
+ (
+) share price has soared 189% in the last three years. That sort of return is as solid as granite. Also pleasing for shareholders was the 24% gain in the last three months.
+With that in mind, it's worth seeing if the company's underlying fundamentals have been the driver of long term performance, or if there are some discrepancies.
+While the efficient markets hypothesis continues to be taught by some, it has been proven that markets are over-reactive dynamic systems, and investors are not always rational. One way to examine how market sentiment has changed over time is to look at the interaction between a company's share price and its earnings per share (EPS).
+During three years of share price growth, Karoon Energy moved from a loss to profitability. Given the importance of this milestone, it's not overly surprising that the share price has increased strongly.
+You can see how EPS has changed over time in the image below (click on the chart to see the exact values).
+It is of course excellent to see how Karoon Energy has grown profits over the years, but the future is more important for shareholders. You can see how its balance sheet has strengthened (or weakened) over time in this 
+ 
+.
+It's nice to see that Karoon Energy shareholders have received a total shareholder return of 32% over the last year. That's better than the annualised return of 22% over half a decade, implying that the company is doing better recently. Someone with an optimistic perspective could view the recent improvement in TSR as indicating that the business itself is getting better with time. It's always interesting to track share price performance over the longer term. But to understand Karoon Energy better, we need to consider many other factors. For example, we've discovered 
+ that you should be aware of before investing here.
+Of course, 
+ So take a peek at this 
+ 
+ 
+================================================================================
+
+Karoon Energy (ASX:KAR) Is Achieving High Returns On Its Capital 2023-11-08T20:24:41.000Z
+
+Finding a business that has the potential to grow substantially is not easy, but it is possible if we look at a few key financial metrics. Ideally, a business will show two trends; firstly a growing 
+ on capital employed (ROCE) and secondly, an increasing 
+ of capital employed. This shows us that it's a compounding machine, able to continually reinvest its earnings back into the business and generate higher returns. And in light of that, the trends we're seeing at 
+ (
+) look very promising so lets take a look.
+Just to clarify if you're unsure, ROCE is a metric for evaluating how much pre-tax income (in percentage terms) a company earns on the capital invested in its business. To calculate this metric for Karoon Energy, this is the formula:
+0.24 = US$239m ÷ (US$1.2b - US$196m) 
+.
+Therefore, 
+ That's a fantastic return and not only that, it outpaces the average of 16% earned by companies in a similar industry.
+In the above chart we have measured Karoon Energy's prior ROCE against its prior performance, but the future is arguably more important. If you're interested, you can view the analysts predictions in our 
+ 
+.
+The fact that Karoon Energy is now generating some pre-tax profits from its prior investments is very encouraging. Shareholders would no doubt be pleased with this because the business was loss-making five years ago but is is now generating 24% on its capital. And unsurprisingly, like most companies trying to break into the black, Karoon Energy is utilizing 128% more capital than it was five years ago. This can tell us that the company has plenty of reinvestment opportunities that are able to generate higher returns.
+On a side note, we noticed that the improvement in ROCE appears to be partly fueled by an increase in current liabilities. The current liabilities has increased to 16% of total assets, so the business is now more funded by the likes of its suppliers or short-term creditors. It's worth keeping an eye on this because as the percentage of current liabilities to total assets increases, some aspects of risk also increase.
+Long story short, we're delighted to see that Karoon Energy's reinvestment activities have paid off and the company is now profitable. And with the stock having performed exceptionally well over the last five years, these patterns are being accounted for by investors. So given the stock has proven it has promising trends, it's worth researching the company further to see if these trends are likely to persist.
+Like most companies, Karoon Energy does come with some risks, and we've found
+ that you should be aware of.
+If you'd like to see other companies earning high returns, check out our 
+ 
+ 
+================================================================================
+
+UPDATE 2-Australia's Karoon Energy to buy stakes in US offshore assets for $720 mln 2023-11-15T23:30:07.000Z
+
+(Recasts first paragraph, adds details on Karoon's September-quarter production and equity raising)
+Nov 16 (Reuters) - Karoon Energy announced deals worth $720 million on Thursday to buy stakes in certain offshore oil and gas fields in the Gulf of Mexico from U.S.-based LLOG Exploration, in a move to diversify operations beyond Brazil and Australia.
+The oil and gas explorer said it would raise around A$480 million ($312.43 million) to fund a 30% stake purchase in the Who Dat and Dome Patrol fields in offshore Louisiana and a near 16% stake buy in the Abilene field.
+Karoon Energy will issue shares under the equity-raising at A$2.05 apiece, a 14.6% discount to the stock's Tuesday close. Shares of the company were on a trading halt on Wednesday.
+Macquarie Capital is acting as sole lead manager and underwriting the capital raise.
+Deepwater oil and gas operation field Who Dat is expected to add around 4.0 million-4.5 million barrels of oil equivalent to Karoon Energy's 2024 total output on a net revenue interest.
+LLOG, whose operations are backed by buyout giant Blackstone and which is one of the largest privately owned oil and gas companies in the United States, has been for long looking to sell its Gulf of Mexico oil exploration joint venture.
+Karoon Energy said the Who Dat field addition would help offset a natural production decline from its Bauna offshore operations, which it had acquired from Brazil's state-controlled Petrobras in 2020.
+Its oil sales jumped 66% in the September quarter to $203.9 million, while production stood around 2.85 million barrels.
+The company will drawdown $274 million from a new $340 million debt facility that it has signed with a syndicate of banks including Macquarie and Deutsche Bank to partially fund the stake buys. ($1 = 1.5363 Australian dollars) (Reporting by Rishav Chatterjee in Bengaluru; Editing by Shilpi Majumdar and Subhranshu Sahu)
+================================================================================
+
+Increases to Karoon Energy Ltd's (ASX:KAR) CEO Compensation Might Cool off for now 2023-11-16T20:47:11.000Z
+
+Performance at 
+ (
+) has been reasonably good and CEO Julian Fowles has done a decent job of steering the company in the right direction. In light of this performance, CEO compensation will probably not be the main focus for shareholders as they go into the AGM on 22nd of November. However, some shareholders may still be hesitant of being overly generous with CEO compensation.
+According to our data, Karoon Energy Ltd has a market capitalization of AU$1.2b, and paid its CEO total annual compensation worth US$1.5m over the year to June 2023. That's a notable increase of 17% on last year. While we always look at total compensation first, our analysis shows that the salary component is less, at US$568k.
+On examining similar-sized companies in the 
+ with market capitalizations between AU$618m and AU$2.5b, we discovered that the median CEO total compensation of that group was US$936k. Accordingly, our analysis reveals that Karoon Energy Ltd pays Julian Fowles north of the industry median.
+On an industry level, around 62% of total compensation represents salary and 38% is other remuneration. Karoon Energy sets aside a smaller share of compensation for salary, in comparison to the overall industry. If non-salary compensation dominates total pay, it's an indicator that the executive's salary is tied to company performance.
+Karoon Energy Ltd's earnings per share (EPS) grew 97% per year over the last three years. In the last year, its revenue is up 47%.
+Overall this is a positive result for shareholders, showing that the company has improved in recent years. It's great to see that revenue growth is strong, too. These metrics suggest the business is growing strongly. Historical performance can sometimes be a good indicator on what's coming up next but if you want to peer into the company's future you might be interested in 
+We think that the total shareholder return of 142%, over three years, would leave most Karoon Energy Ltd shareholders smiling. So they may not be at all concerned if the CEO were to be paid more than is normal for companies around the same size.
+Seeing that the company has put up a decent performance, only a few shareholders, if any at all, might have questions about the CEO pay in the upcoming AGM. Still, not all shareholders might be in favor of a pay raise to the CEO, seeing that they are already being paid higher than the industry.
+CEO compensation is a crucial aspect to keep your eyes on but investors also need to keep their eyes open for other issues related to business performance. We've identified 
+ that investors should be aware of in a dynamic business environment.
+Of course, 
+ So take a peek at this 
+ 
+ 
+================================================================================
+
+Will Weakness in Karoon Energy Ltd's (ASX:KAR) Stock Prove Temporary Given Strong Fundamentals? 2024-01-10T23:45:29.000Z
+
+With its stock down 25% over the past three months, it is easy to disregard Karoon Energy (ASX:KAR). However, stock prices are usually driven by a company’s financial performance over the long term, which in this case looks quite promising. Specifically, we decided to study Karoon Energy's ROE in this article.
+Return on Equity or ROE is a test of how effectively a company is growing its value and managing investors’ money. Simply put, it is used to assess the profitability of a company in relation to its equity capital.
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Karoon Energy is:
+34% = US$163m ÷ US$474m (Based on the trailing twelve months to June 2023).
+The 'return' is the amount earned after tax over the last twelve months. So, this means that for every A$1 of its shareholder's investments, the company generates a profit of A$0.34.
+Thus far, we have learned that ROE measures how efficiently a company is generating its profits. We now need to evaluate how much profit the company reinvests or "retains" for future growth which then gives us an idea about the growth potential of the company. Generally speaking, other things being equal, firms with a high return on equity and profit retention, have a higher growth rate than firms that don’t share these attributes.
+To begin with, Karoon Energy has a pretty high ROE which is interesting. Second, a comparison with the average ROE reported by the industry of 18% also doesn't go unnoticed by us. So, the substantial 51% net income growth seen by Karoon Energy over the past five years isn't overly surprising.
+As a next step, we compared Karoon Energy's net income growth with the industry, and pleasingly, we found that the growth seen by the company is higher than the average industry growth of 33%.
+Earnings growth is an important metric to consider when valuing a stock. What investors need to determine next is if the expected earnings growth, or the lack of it, is already built into the share price. By doing so, they will have an idea if the stock is headed into clear blue waters or if swampy waters await. One good indicator of expected earnings growth is the P/E ratio which determines the price the market is willing to pay for a stock based on its earnings prospects. So, you may want to check if Karoon Energy is trading on a high P/E or a low P/E, relative to its industry.
+Given that Karoon Energy doesn't pay any dividend to its shareholders, we infer that the company has been reinvesting all of its profits to grow its business.
+Overall, we are quite pleased with Karoon Energy's performance. In particular, it's great to see that the company is investing heavily into its business and along with a high rate of return, that has resulted in a sizeable growth in its earnings. That being so, according to the latest industry analyst forecasts, the company's earnings are expected to shrink in the future. Are these analysts expectations based on the broad expectations for the industry, or on the company's fundamentals? Click here to be taken to our analyst's forecasts page for the company.
+ 
+================================================================================
+
+Should You Be Adding Karoon Energy (ASX:KAR) To Your Watchlist Today? 2024-03-04T20:00:31.000Z
+
+It's common for many investors, especially those who are inexperienced, to buy shares in companies with a good story even if these companies are loss-making. But the reality is that when a company loses money each year, for long enough, its investors will usually take their share of those losses. While a well funded company may sustain losses for years, it will need to generate a profit eventually, or else investors will move on and the company will wither away.
+Despite being in the age of tech-stock blue-sky investing, many investors still adopt a more traditional strategy; buying shares in profitable companies like 
+ (
+). Now this is not to say that the company presents the best investment opportunity around, but profitability is a key component to success in business.
+Karoon Energy has undergone a massive growth in earnings per share over the last three years. So much so that this three year growth rate wouldn't be a fair assessment of the company's future. Thus, it makes sense to focus on more recent growth rates, instead. Karoon Energy's EPS shot up from US$0.20 to US$0.31; a result that's bound to keep shareholders happy. That's a commendable gain of 54%.
+Top-line growth is a great indicator that growth is sustainable, and combined with a high earnings before interest and taxation (EBIT) margin, it's a great way for a company to maintain a competitive advantage in the market. The good news is that Karoon Energy is growing revenues, and EBIT margins improved by 9.3 percentage points to 51%, over the last year. Both of which are great metrics to check off for potential growth.
+In the chart below, you can see how the company has grown earnings and revenue, over time. To see the actual numbers, click on the chart.
+The trick, as an investor, is to find companies that are 
+ perform well in the future, not just in the past. While crystal balls don't exist, you can check 
+ 100% free.
+It's said that there's no smoke without fire. For investors, insider buying is often the smoke that indicates which stocks could set the market alight. Because often, the purchase of stock is a sign that the buyer views it as undervalued. However, small purchases are not always indicative of conviction, and insiders don't always get it right.
+Shareholders in Karoon Energy will be more than happy to see insiders committing themselves to the company, spending US$611k on shares in just twelve months. This, combined with the lack of sales from insiders, should be a great signal for shareholders in what's to come. Zooming in, we can see that the biggest insider purchase was by MD, CEO & Director Julian Fowles for AU$368k worth of shares, at about AU$2.05 per share.
+For growth investors, Karoon Energy's raw rate of earnings growth is a beacon in the night. Not only is that growth rate rather juicy, but the insider buying adds fuel to the fire. So on this analysis, Karoon Energy is probably worth spending some time on. We should say that we've discovered 
+ (2 are concerning!) that you should be aware of before investing here.
+Keen growth investors love to see insider buying. Thankfully, Karoon Energy isn't the only one. You can see a 
+.
+ 
+================================================================================
+
+Karoon Energy's (ASX:KAR) investors will be pleased with their stellar 134% return over the last five years 2024-04-02T22:57:06.000Z
+
+The worst result, after buying shares in a company (assuming no leverage), would be if you lose all the money you put in. But on the bright side, if you buy shares in a high quality company at the right price, you can gain well over 100%. Long term 
+ (
+) shareholders would be well aware of this, since the stock is up 113% in five years. It's also up 10% in about a month.
+With that in mind, it's worth seeing if the company's underlying fundamentals have been the driver of long term performance, or if there are some discrepancies.
+To quote Buffett, 'Ships will sail around the world but the Flat Earth Society will flourish. There will continue to be wide discrepancies between price and value in the marketplace...' One imperfect but simple way to consider how the market perception of a company has shifted is to compare the change in the earnings per share (EPS) with the share price movement.
+During the five years of share price growth, Karoon Energy moved from a loss to profitability. Sometimes, the start of profitability is a major inflection point that can signal fast earnings growth to come, which in turn justifies very strong share price gains.
+The company's earnings per share (over time) is depicted in the image below (click to see the exact numbers).
+We consider it positive that insiders have made significant purchases in the last year. Having said that, most people consider earnings and revenue growth trends to be a more meaningful guide to the business. Before buying or selling a stock, we always recommend a close examination of 
+.
+Investors should note that there's a difference between Karoon Energy's total shareholder return (TSR) and its share price change, which we've covered above. The TSR is a return calculation that accounts for the value of cash dividends (assuming that any dividend received was reinvested) and the calculated value of any discounted capital raisings and spin-offs. Karoon Energy hasn't been paying dividends, but its TSR of 134% exceeds its share price return of 113%, implying it has either spun-off a business, or raised capital at a discount; thereby providing additional value to shareholders.
+Investors in Karoon Energy had a tough year, with a total loss of 5.5%, against a market gain of about 15%. Even the share prices of good stocks drop sometimes, but we want to see improvements in the fundamental metrics of a business, before getting too interested. On the bright side, long term shareholders have made money, with a gain of 18% per year over half a decade. It could be that the recent sell-off is an opportunity, so it may be worth checking the fundamental data for signs of a long term growth trend. While it is well worth considering the different impacts that market conditions can have on the share price, there are other factors that are even more important. To that end, you should learn about the 
+ .
+If you like to buy stocks alongside management, then you might just love this 
+ 
+ 
+================================================================================
+
+Karoon Energy Ltd (ASX:KAR) Stock Has Shown Weakness Lately But Financials Look Strong: Should Prospective Shareholders Make The Leap? 2024-06-19T01:12:22.000Z
+
+Karoon Energy (ASX:KAR) has had a rough three months with its share price down 18%. But if you pay close attention, you might gather that its strong financials could mean that the stock could potentially see an increase in value in the long-term, given how markets usually reward companies with good financial health. Specifically, we decided to study 
+ ROE in this article.
+Return on Equity or ROE is a test of how effectively a company is growing its value and managing investors’ money. Put another way, it reveals the company's success at turning shareholder investments into profits.
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Karoon Energy is:
+27% = US$245m ÷ US$914m (Based on the trailing twelve months to December 2023).
+The 'return' is the profit over the last twelve months. That means that for every A$1 worth of shareholders' equity, the company generated A$0.27 in profit.
+We have already established that ROE serves as an efficient profit-generating gauge for a company's future earnings. We now need to evaluate how much profit the company reinvests or "retains" for future growth which then gives us an idea about the growth potential of the company. Generally speaking, other things being equal, firms with a high return on equity and profit retention, have a higher growth rate than firms that don’t share these attributes.
+Firstly, we acknowledge that Karoon Energy has a significantly high ROE. Secondly, even when compared to the industry average of 15% the company's ROE is quite impressive. As a result, Karoon Energy's exceptional 60% net income growth seen over the past five years, doesn't come as a surprise.
+As a next step, we compared Karoon Energy's net income growth with the industry, and pleasingly, we found that the growth seen by the company is higher than the average industry growth of 33%.
+The basis for attaching value to a company is, to a great extent, tied to its earnings growth. The investor should try to establish if the expected growth or decline in earnings, whichever the case may be, is priced in. Doing so will help them establish if the stock's future looks promising or ominous. Is Karoon Energy fairly valued compared to other companies? These 
+ might help you decide.
+Given that Karoon Energy doesn't pay any regular dividends to its shareholders, we infer that the company has been reinvesting all of its profits to grow its business.
+In total, we are pretty happy with Karoon Energy's performance. Specifically, we like that the company is reinvesting a huge chunk of its profits at a high rate of return. This of course has caused the company to see substantial growth in its earnings. That being so, according to the latest industry analyst forecasts, the company's earnings are expected to shrink in the future. To know more about the company's future earnings growth forecasts take a look at this 
+ 
+ 
+================================================================================
+
+Is Karoon Energy Ltd's (ASX:KAR) Stock's Recent Performance Being Led By Its Attractive Financial Prospects? 2023-08-03T21:55:50.000Z
+
+Karoon Energy's (ASX:KAR) stock is up by a considerable 5.4% over the past month. Given that the market rewards strong financials in the long-term, we wonder if that is the case in this instance. Particularly, we will be paying attention to 
+ ROE today.
+ROE or return on equity is a useful tool to assess how effectively a company can generate returns on the investment it received from its shareholders. Put another way, it reveals the company's success at turning shareholder investments into profits.
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Karoon Energy is:
+29% = US$111m ÷ US$379m (Based on the trailing twelve months to December 2022).
+The 'return' is the profit over the last twelve months. One way to conceptualize this is that for each A$1 of shareholders' capital it has, the company made A$0.29 in profit.
+We have already established that ROE serves as an efficient profit-generating gauge for a company's future earnings. Based on how much of its profits the company chooses to reinvest or "retain", we are then able to evaluate a company's future ability to generate profits. Assuming everything else remains unchanged, the higher the ROE and profit retention, the higher the growth rate of a company compared to companies that don't necessarily bear these characteristics.
+Firstly, we acknowledge that Karoon Energy has a significantly high ROE. Secondly, even when compared to the industry average of 21% the company's ROE is quite impressive. Under the circumstances, Karoon Energy's considerable five year net income growth of 32% was to be expected.
+As a next step, we compared Karoon Energy's net income growth with the industry, and pleasingly, we found that the growth seen by the company is higher than the average industry growth of 23%.
+The basis for attaching value to a company is, to a great extent, tied to its earnings growth. What investors need to determine next is if the expected earnings growth, or the lack of it, is already built into the share price. Doing so will help them establish if the stock's future looks promising or ominous. Is Karoon Energy fairly valued compared to other companies? These 
+ might help you decide.
+Karoon Energy doesn't pay any dividend to its shareholders, meaning that the company has been reinvesting all of its profits into the business. This is likely what's driving the high earnings growth number discussed above.
+On the whole, we feel that Karoon Energy's performance has been quite good. Specifically, we like that the company is reinvesting a huge chunk of its profits at a high rate of return. This of course has caused the company to see substantial growth in its earnings. That being so, a study of the latest analyst forecasts show that the company is expected to see a slowdown in its future earnings growth. Are these analysts expectations based on the broad expectations for the industry, or on the company's fundamentals?
+ 
+================================================================================
+

@@ -1,4 +1,4 @@
-Calculating The Fair Value Of Coles Group Limited (ASX:COL)
+Calculating The Fair Value Of Coles Group Limited (ASX:COL) 2023-09-24T23:40:45.000Z
 
 How far off is Coles Group Limited (
 ) from its intrinsic value? Using the most recent financial data, we'll take a look at whether the stock is fairly priced by taking the expected future cash flows and discounting them to today's value. We will use the Discounted Cash Flow (DCF) model on this occasion. There's really not all that much to it, even though it might appear quite complex.
@@ -21,47 +21,7 @@ PS. The Simply Wall St app conducts a discounted cash flow valuation for every s
  
 ================================================================================
 
-Coles Group Limited's (ASX:COL) Stock Has Shown Weakness Lately But Financial Prospects Look Decent: Is The Market Wrong?
-
-It is hard to get excited after looking at Coles Group's (ASX:COL) recent performance, when its stock has declined 15% over the past three months. However, stock prices are usually driven by a company’s financials over the long term, which in this case look pretty respectable. In this article, we decided to focus on 
- ROE.
-Return on Equity or ROE is a test of how effectively a company is growing its value and managing investors’ money. In other words, it is a profitability ratio which measures the rate of return on the capital provided by the company's shareholders.
-The 
- is:
-Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
-So, based on the above formula, the ROE for Coles Group is:
-31% = AU$1.0b ÷ AU$3.4b (Based on the trailing twelve months to June 2023).
-The 'return' is the amount earned after tax over the last twelve months. Another way to think of that is that for every A$1 worth of equity, the company was able to earn A$0.31 in profit.
-Thus far, we have learned that ROE measures how efficiently a company is generating its profits. Based on how much of its profits the company chooses to reinvest or "retain", we are then able to evaluate a company's future ability to generate profits. Assuming all else is equal, companies that have both a higher return on equity and higher profit retention are usually the ones that have a higher growth rate when compared to companies that don't have the same features.
-Firstly, we acknowledge that Coles Group has a significantly high ROE. Second, a comparison with the average ROE reported by the industry of 24% also doesn't go unnoticed by us. Despite this, Coles Group's five year net income growth was quite flat over the past five years. Based on this, we feel that there might be other reasons which haven't been discussed so far in this article that could be hampering the company's growth. Such as, the company pays out a huge portion of its earnings as dividends, or is faced with competitive pressures.
-As a next step, we compared Coles Group's net income growth with the industry and were disappointed to see that the company's growth is lower than the industry average growth of 19% in the same period.
-The basis for attaching value to a company is, to a great extent, tied to its earnings growth. The investor should try to establish if the expected growth or decline in earnings, whichever the case may be, is priced in. Doing so will help them establish if the stock's future looks promising or ominous. Has the market priced in the future outlook for COL? You can find out in
-With a high three-year median payout ratio of 80% (implying that the company keeps only 20% of its income) of its business to reinvest into its business), most of Coles Group's profits are being paid to shareholders, which explains the absence of growth in earnings.
-Additionally, Coles Group has paid dividends over a period of four years, which means that the company's management is determined to pay dividends even if it means little to no earnings growth. Based on the latest analysts' estimates, we found that the company's future payout ratio over the next three years is expected to hold steady at 82%. Accordingly, forecasts suggest that Coles Group's future ROE will be 32% which is again, similar to the current ROE.
-Overall, we feel that Coles Group certainly does have some positive factors to consider. However, while the company does have a high ROE, its earnings growth number is quite disappointing. This can be blamed on the fact that it reinvests only a small portion of its profits and pays out the rest as dividends. With that said, the latest industry analyst forecasts reveal that the company's earnings are expected to accelerate. To know more about the latest analysts predictions for the company, check out this 
- 
-================================================================================
-
-Investing in Coles Group (ASX:COL) five years ago would have delivered you a 43% gain
-
-If you buy and hold a stock for many years, you'd hope to be making a profit. But more than that, you probably want to see it rise more than the market average. Unfortunately for shareholders, while the 
- (
-) share price is up 20% in the last five years, that's less than the market return. Unfortunately the share price is down 11% in the last year.
-Let's take a look at the underlying fundamentals over the longer term, and see if they've been consistent with shareholders returns.
-While the efficient markets hypothesis continues to be taught by some, it has been proven that markets are over-reactive dynamic systems, and investors are not always rational. One way to examine how market sentiment has changed over time is to look at the interaction between a company's share price and its earnings per share (EPS).
-During five years of share price growth, Coles Group achieved compound earnings per share (EPS) growth of 0.4% per year. This EPS growth is lower than the 4% average annual increase in the share price. This suggests that market participants hold the company in higher regard, these days. That's not necessarily surprising considering the five-year track record of earnings growth.
-The company's earnings per share (over time) is depicted in the image below (click to see the exact numbers).
-It's good to see that there was some significant insider buying in the last three months. That's a positive. That said, we think earnings and revenue growth trends are even more important factors to consider. Before buying or selling a stock, we always recommend a close examination of 
-.
-It is important to consider the total shareholder return, as well as the share price return, for any given stock. The TSR incorporates the value of any spin-offs or discounted capital raisings, along with any dividends, based on the assumption that the dividends are reinvested. It's fair to say that the TSR gives a more complete picture for stocks that pay a dividend. As it happens, Coles Group's TSR for the last 5 years was 43%, which exceeds the share price return mentioned earlier. And there's no prize for guessing that the dividend payments largely explain the divergence!
-While the broader market gained around 2.7% in the last year, Coles Group shareholders lost 7.9% (even including dividends). However, keep in mind that even the best stocks will sometimes underperform the market over a twelve month period. On the bright side, long term shareholders have made money, with a gain of 7% per year over half a decade. If the fundamental data continues to indicate long term sustainable growth, the current sell-off could be an opportunity worth considering. It's always interesting to track share price performance over the longer term. But to understand Coles Group better, we need to consider many other factors. Case in point: We've spotted 
- you should be aware of.
-Coles Group is not the only stock insiders are buying. So take a peek at this 
- 
- 
-================================================================================
-
-Coles Group (ASX:COL) Could Be Struggling To Allocate Capital
+Coles Group (ASX:COL) Could Be Struggling To Allocate Capital 2023-10-15T22:46:42.000Z
 
 If we want to find a stock that could multiply over the long term, what are the underlying trends we should look for? Firstly, we'd want to identify a growing 
  on capital employed (ROCE) and then alongside that, an ever-increasing 
@@ -86,7 +46,28 @@ For those who like to invest in
  
 ================================================================================
 
-Palantir Partners with One of Australia’s Leading Retailers
+Coles Group Limited's (ASX:COL) Stock Has Shown Weakness Lately But Financial Prospects Look Decent: Is The Market Wrong? 2023-11-06T01:07:16.000Z
+
+It is hard to get excited after looking at Coles Group's (ASX:COL) recent performance, when its stock has declined 15% over the past three months. However, stock prices are usually driven by a company’s financials over the long term, which in this case look pretty respectable. In this article, we decided to focus on 
+ ROE.
+Return on Equity or ROE is a test of how effectively a company is growing its value and managing investors’ money. In other words, it is a profitability ratio which measures the rate of return on the capital provided by the company's shareholders.
+The 
+ is:
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Coles Group is:
+31% = AU$1.0b ÷ AU$3.4b (Based on the trailing twelve months to June 2023).
+The 'return' is the amount earned after tax over the last twelve months. Another way to think of that is that for every A$1 worth of equity, the company was able to earn A$0.31 in profit.
+Thus far, we have learned that ROE measures how efficiently a company is generating its profits. Based on how much of its profits the company chooses to reinvest or "retain", we are then able to evaluate a company's future ability to generate profits. Assuming all else is equal, companies that have both a higher return on equity and higher profit retention are usually the ones that have a higher growth rate when compared to companies that don't have the same features.
+Firstly, we acknowledge that Coles Group has a significantly high ROE. Second, a comparison with the average ROE reported by the industry of 24% also doesn't go unnoticed by us. Despite this, Coles Group's five year net income growth was quite flat over the past five years. Based on this, we feel that there might be other reasons which haven't been discussed so far in this article that could be hampering the company's growth. Such as, the company pays out a huge portion of its earnings as dividends, or is faced with competitive pressures.
+As a next step, we compared Coles Group's net income growth with the industry and were disappointed to see that the company's growth is lower than the industry average growth of 19% in the same period.
+The basis for attaching value to a company is, to a great extent, tied to its earnings growth. The investor should try to establish if the expected growth or decline in earnings, whichever the case may be, is priced in. Doing so will help them establish if the stock's future looks promising or ominous. Has the market priced in the future outlook for COL? You can find out in
+With a high three-year median payout ratio of 80% (implying that the company keeps only 20% of its income) of its business to reinvest into its business), most of Coles Group's profits are being paid to shareholders, which explains the absence of growth in earnings.
+Additionally, Coles Group has paid dividends over a period of four years, which means that the company's management is determined to pay dividends even if it means little to no earnings growth. Based on the latest analysts' estimates, we found that the company's future payout ratio over the next three years is expected to hold steady at 82%. Accordingly, forecasts suggest that Coles Group's future ROE will be 32% which is again, similar to the current ROE.
+Overall, we feel that Coles Group certainly does have some positive factors to consider. However, while the company does have a high ROE, its earnings growth number is quite disappointing. This can be blamed on the fact that it reinvests only a small portion of its profits and pays out the rest as dividends. With that said, the latest industry analyst forecasts reveal that the company's earnings are expected to accelerate. To know more about the latest analysts predictions for the company, check out this 
+ 
+================================================================================
+
+Palantir Partners with One of Australia’s Leading Retailers 2024-02-01T21:30:00.000Z
 
 --(
 )--Palantir Technologies Inc. (NYSE: PLTR) ("Palantir"), a leading provider of AI systems, and Coles Supermarkets Australia Pty Ltd (ASX: COL) ("Coles"), one of the leading Australian supermarket, retail and consumer services chains, announced today a 3-year partnership to deliver a suite of workforce strategy and analytics tools. Palantir’s platforms will bring an innovative approach to driving operational excellence and improving the way Coles designs, executes and continually enhances its end-to-end workforce strategy and integrated supply chain functions.
@@ -104,7 +85,45 @@ This press release contains forward-looking statements within the meaning of Sec
 Lisa Gordon
 ================================================================================
 
-Coles Group First Half 2024 Earnings: EPS: AU$0.45 (vs AU$0.46 in 1H 2023)
+Australia's Coles denies price gouging, says food inflation is a global problem 2024-02-27T01:30:40.000Z
+
+By Byron Kaye and Echha Jain
+SYDNEY (Reuters) - Australia's No. 2 supermarket operator Coles Group on Tuesday rejected accusations of price gouging as its first-half profit beat analyst forecasts, saying food inflation was a global problem and its margins were steady.
+Coles and larger rival Woolworths Group, which together account for two-thirds of Australian grocery sales, have been accused by lawmakers of using their market dominance to put up shelf prices more than needed at a time when 13 interest rate hikes have left more people struggling to pay their mortgages.
+The companies now face Senate and competition regulator inquiries into how they set prices, with some politicians calling for more aggressive anti-cartel regulation and even for them to be broken up.
+Coles posted an underlying profit of A$589 million ($385 million) for the six months to Dec. 31, down 8.4% on the same period a year earlier but 5% above the average analyst forecast.
+Coles CEO Leah Weckert said the company's earnings margins had remained flat for years and it needed profit to pay employees, suppliers and shareholders.
+For at least five years the company had made less than 3 cents of profit for every dollar spent by shoppers, and "it has not gone up as we have seen inflation come through", she told reporters.
+"Food inflation has been faced everywhere in the world," Weckert said. "It is a global issue. It is not unique to Australia."
+The Melbourne-based company said the pre-tax earnings margin of its supermarket division shrunk to 5.1% in the half, from 5.3% a year earlier. Supermarket price inflation slowed to 3%, from 7.4% a year earlier, it added.
+Supermarket sales rose 4.9% to A$19.8 billion, ahead of analyst forecasts collated by market aggregator Visible Alpha, and the company said that growth rate had continued in the first eight weeks of 2024.
+Coles shares were trading 6.8% higher by midsession, against a 0.2% decline on the broader market, their biggest intraday gain in since March 2020, as analysts began upgrading full-year profit forecasts.
+"A better than expected result and improving sales momentum ... is expected to support further share price gains," said E&P Capital analyst Phillip Kimber.
+Woolworths last week posted worse-than-expected first-half results and said its CEO Brad Banducci would retire after more than eight years at the helm.
+($1 = 1.5307 Australian dollars)
+(Reporting by Byron Kaye in Sydney and Echha Jain and John Biju in Bengaluru; Editing by Pooja Desai and Jamie Freed)
+================================================================================
+
+Investing in Coles Group (ASX:COL) five years ago would have delivered you a 43% gain 2023-11-22T20:00:31.000Z
+
+If you buy and hold a stock for many years, you'd hope to be making a profit. But more than that, you probably want to see it rise more than the market average. Unfortunately for shareholders, while the 
+ (
+) share price is up 20% in the last five years, that's less than the market return. Unfortunately the share price is down 11% in the last year.
+Let's take a look at the underlying fundamentals over the longer term, and see if they've been consistent with shareholders returns.
+While the efficient markets hypothesis continues to be taught by some, it has been proven that markets are over-reactive dynamic systems, and investors are not always rational. One way to examine how market sentiment has changed over time is to look at the interaction between a company's share price and its earnings per share (EPS).
+During five years of share price growth, Coles Group achieved compound earnings per share (EPS) growth of 0.4% per year. This EPS growth is lower than the 4% average annual increase in the share price. This suggests that market participants hold the company in higher regard, these days. That's not necessarily surprising considering the five-year track record of earnings growth.
+The company's earnings per share (over time) is depicted in the image below (click to see the exact numbers).
+It's good to see that there was some significant insider buying in the last three months. That's a positive. That said, we think earnings and revenue growth trends are even more important factors to consider. Before buying or selling a stock, we always recommend a close examination of 
+.
+It is important to consider the total shareholder return, as well as the share price return, for any given stock. The TSR incorporates the value of any spin-offs or discounted capital raisings, along with any dividends, based on the assumption that the dividends are reinvested. It's fair to say that the TSR gives a more complete picture for stocks that pay a dividend. As it happens, Coles Group's TSR for the last 5 years was 43%, which exceeds the share price return mentioned earlier. And there's no prize for guessing that the dividend payments largely explain the divergence!
+While the broader market gained around 2.7% in the last year, Coles Group shareholders lost 7.9% (even including dividends). However, keep in mind that even the best stocks will sometimes underperform the market over a twelve month period. On the bright side, long term shareholders have made money, with a gain of 7% per year over half a decade. If the fundamental data continues to indicate long term sustainable growth, the current sell-off could be an opportunity worth considering. It's always interesting to track share price performance over the longer term. But to understand Coles Group better, we need to consider many other factors. Case in point: We've spotted 
+ you should be aware of.
+Coles Group is not the only stock insiders are buying. So take a peek at this 
+ 
+ 
+================================================================================
+
+Coles Group First Half 2024 Earnings: EPS: AU$0.45 (vs AU$0.46 in 1H 2023) 2024-02-28T22:19:44.000Z
 
 Looking ahead, revenue is forecast to grow 3.7% p.a. on average during the next 3 years, compared to a 3.5% growth forecast for the Consumer Retailing industry in Australia.
 The company's shares are up 8.7% from a week ago.
@@ -113,7 +132,7 @@ What about risks? Every company has them, and we've spotted
  
 ================================================================================
 
-A Look At The Intrinsic Value Of Coles Group Limited (ASX:COL)
+A Look At The Intrinsic Value Of Coles Group Limited (ASX:COL) 2024-03-20T05:02:30.000Z
 
 Today we will run through one way of estimating the intrinsic value of Coles Group Limited (
 ) by taking the expected future cash flows and discounting them to today's value. This will be done using the Discounted Cash Flow (DCF) model. Don't get put off by the jargon, the math behind it is actually quite straightforward.
@@ -136,26 +155,7 @@ PS. Simply Wall St updates its DCF calculation for every Australian stock every 
  
 ================================================================================
 
-Australia's Coles denies price gouging, says food inflation is a global problem
-
-By Byron Kaye and Echha Jain
-SYDNEY (Reuters) - Australia's No. 2 supermarket operator Coles Group on Tuesday rejected accusations of price gouging as its first-half profit beat analyst forecasts, saying food inflation was a global problem and its margins were steady.
-Coles and larger rival Woolworths Group, which together account for two-thirds of Australian grocery sales, have been accused by lawmakers of using their market dominance to put up shelf prices more than needed at a time when 13 interest rate hikes have left more people struggling to pay their mortgages.
-The companies now face Senate and competition regulator inquiries into how they set prices, with some politicians calling for more aggressive anti-cartel regulation and even for them to be broken up.
-Coles posted an underlying profit of A$589 million ($385 million) for the six months to Dec. 31, down 8.4% on the same period a year earlier but 5% above the average analyst forecast.
-Coles CEO Leah Weckert said the company's earnings margins had remained flat for years and it needed profit to pay employees, suppliers and shareholders.
-For at least five years the company had made less than 3 cents of profit for every dollar spent by shoppers, and "it has not gone up as we have seen inflation come through", she told reporters.
-"Food inflation has been faced everywhere in the world," Weckert said. "It is a global issue. It is not unique to Australia."
-The Melbourne-based company said the pre-tax earnings margin of its supermarket division shrunk to 5.1% in the half, from 5.3% a year earlier. Supermarket price inflation slowed to 3%, from 7.4% a year earlier, it added.
-Supermarket sales rose 4.9% to A$19.8 billion, ahead of analyst forecasts collated by market aggregator Visible Alpha, and the company said that growth rate had continued in the first eight weeks of 2024.
-Coles shares were trading 6.8% higher by midsession, against a 0.2% decline on the broader market, their biggest intraday gain in since March 2020, as analysts began upgrading full-year profit forecasts.
-"A better than expected result and improving sales momentum ... is expected to support further share price gains," said E&P Capital analyst Phillip Kimber.
-Woolworths last week posted worse-than-expected first-half results and said its CEO Brad Banducci would retire after more than eight years at the helm.
-($1 = 1.5307 Australian dollars)
-(Reporting by Byron Kaye in Sydney and Echha Jain and John Biju in Bengaluru; Editing by Pooja Desai and Jamie Freed)
-================================================================================
-
-Returns On Capital Signal Tricky Times Ahead For Coles Group (ASX:COL)
+Returns On Capital Signal Tricky Times Ahead For Coles Group (ASX:COL) 2024-04-09T21:34:40.000Z
 
 If you're looking for a multi-bagger, there's a few things to keep an eye out for. One common approach is to try and find a company with 
  on capital employed (ROCE) that are increasing, in conjunction with a growing 
@@ -179,7 +179,7 @@ While Coles Group isn't earning the highest return, check out this
  
 ================================================================================
 
-Coles Group Limited's (ASX:COL) Fundamentals Look Pretty Strong: Could The Market Be Wrong About The Stock?
+Coles Group Limited's (ASX:COL) Fundamentals Look Pretty Strong: Could The Market Be Wrong About The Stock? 2024-04-30T21:19:57.000Z
 
 With its stock down 4.3% over the past month, it is easy to disregard Coles Group (ASX:COL). However, stock prices are usually driven by a company’s financials over the long term, which in this case look pretty respectable. Specifically, we decided to study 
  ROE in this article.
@@ -201,7 +201,7 @@ Overall, we feel that Coles Group certainly does have some positive factors to c
  
 ================================================================================
 
-Coles Group's (ASX:COL) investors will be pleased with their respectable 58% return over the last five years
+Coles Group's (ASX:COL) investors will be pleased with their respectable 58% return over the last five years 2024-05-23T22:37:14.000Z
 
 When we invest, we're generally looking for stocks that outperform the market average. And while active stock picking involves risks (and requires diversification) it can also provide excess returns. To wit, the Coles Group share price has climbed 30% in five years, easily topping the market return of 22% (ignoring dividends).
 So let's investigate and see if the longer term performance of the company has been in line with the underlying business' progress.
