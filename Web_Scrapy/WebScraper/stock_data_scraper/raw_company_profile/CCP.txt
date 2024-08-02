@@ -1,0 +1,7 @@
+Ticker: CCP
+            Name: Credit Corp Group Limited (ASX: CCP)
+            Founded: 1992
+            Sector: Financials
+            Industry: Credit Services
+            CEO: Thomas Beregi
+            Description: Credit Corp Group Limited provides debt ledger purchase and collection, and consumer lending services in Australia and the United States.The company operates through three segments: Debt Ledger Purchasing – Australia and New Zealand; Debt Ledger Purchasing – United States; and Consumer Lending – Australia, New Zealand and the United States.The company offers debt sale, contingency and agency collection, local government debt recovery, and hardship and insolvency management services, as well as various loan products.It provides financial services under the Wallet Wizard, ClearCash, CarStart Finance, Resolvr, and Wizpay brands.The company was founded in 1992 and is headquartered in Sydney, Australia.

@@ -1,0 +1,7 @@
+Ticker: KAR
+            Name: Karoon Energy Ltd (ASX: KAR)
+            Founded: 2003
+            Sector: Energy
+            Industry: Oil & Gas Exploration & Production
+            CEO: Julian Fowles
+            Description: Karoon Energy Ltd operates as an oil and gas exploration and production company in Brazil, the United States, and Australia.It holds 100% interest in the Santos Basin located in the Sáo Paulo, Brazil. The company was formerly known as Karoon Gas Australia Ltd and changed its name to Karoon Energy Ltd in December 2018.Karoon Energy Ltd was incorporated in 2003 and is based in Southbank, Australia.

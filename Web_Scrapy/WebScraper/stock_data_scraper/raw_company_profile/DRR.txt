@@ -1,0 +1,7 @@
+Ticker: DRR
+            Name: Deterra Royalties Limited (ASX: DRR)
+            Founded: 2020
+            Sector: Materials
+            Industry: Other Industrial Metals & Mining
+            CEO: Julian Andrews
+            Description: Deterra Royalties Limited operates as a royalty investment company in Australia.The company is also involved in the management and growth of a portfolio of royalty assets across bulk commodities, base, and battery metals.It holds interest in a portfolio of six royalties over the Mining Area C, Yoongarillup/Yalyalup, Eneabba, Wonnerup, and St Ives.The company was incorporated in 2020 and is based in Perth, Australia.
