@@ -63,7 +63,7 @@ class StockSpider(scrapy.Spider):
 
         # Save profile data to a file
         file_path = os.path.join('raw_company_profile', f'{ticker}.txt')
-        with open(file_path, 'w', encoding='utf-8') as file:
+        with open(file_path, 'a', encoding='utf-8') as file:
             file.write(profile_text.strip())
 
     def clean_html(self, html):

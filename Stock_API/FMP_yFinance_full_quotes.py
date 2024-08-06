@@ -40,8 +40,8 @@ def save_to_txt(data, directory, filename):
         os.makedirs(directory)
 
     file_path = os.path.join(directory, filename)
-    with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(str(data))  # Convert data to a string representation for saving
+    with open(file_path, 'a', encoding='utf-8') as f:
+        f.write(str(data) + "\n")  # Convert data to a string representation for saving
 
 # Directory to save the quotes
 directory = 'full_quote'
