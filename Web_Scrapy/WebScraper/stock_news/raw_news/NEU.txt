@@ -299,3 +299,304 @@ Neuren Pharmaceuticals, a notable player in the biopharmaceutical sector, recent
 Orora, a lesser-discussed player in the Australian market, recently saw insider confidence bolstered by significant share purchases. With earnings projected to climb 14.68% annually, this company stands out for its financial trajectory despite challenges like high-risk funding and substantial shareholder dilution over the past year. Their strategy avoids reliance on customer deposits, leaning instead on external borrowings—a testament to their unique market approach amidst evolving industry dynamics.
 ================================================================================
 
+Neuren Phase 2 trial shows significant improvements in Phelan-McDermid syndrome 2023-12-18T11:00:00.000Z
+
+, 
+ /PRNewswire/ -- Neuren Pharmaceuticals (ASX: NEU) today announced top-line results from its Phase 2 clinical trial of NNZ-2591 in children with Phelan-McDermid syndrome (PMS). Significant improvement was observed by both clinicians and caregivers from treatment, across multiple efficacy measures. Improvements were consistently seen across many of the core PMS characteristics. PMS has severe quality of life impacts for those living with the syndrome, as well as parents and siblings. There are no approved treatments for PMS despite its severely debilitating impact.
+Neuren CEO 
+ commented "The strength and consistency of these results has exceeded our expectations and gives us high confidence as we strive to accelerate the development of a potential first therapy to address the overwhelming unmet medical need of PMS.  We are very grateful to all the people at the trial sites in 
+ and in the PMS community who enabled this groundbreaking trial to be completed successfully."
+Elizabeth Berry-Kravis, MD, PhD, Professor Department of Pediatrics at 
+ Medical Center in 
+ and an Investigator in the study, commented: "Although the Phase 2 trial was an open label study, I am very encouraged that both clinicians and caregivers observed pervasive improvements across multiple, clinically important features of PMS including communication, cognition, learning, socialisation and behaviour.  Improvements typically considered clinically meaningful were achieved in the clinician rated CGI-I as well as the caregiver rated CIC. I look forward to seeing this program advance to the next stage of development for the PMS community".
+The open label Phase 2 trial in up to 20 children aged 3 to 12 years at four hospitals in 
+ examined safety, tolerability, pharmacokinetics and efficacy over 13 weeks of treatment with NNZ2591. NNZ-2591 was administered to all subjects as an oral liquid dose twice daily, with escalation in two stages up to the target dose of 12 mg/kg during the first 6 weeks of treatment, subject to independent review of safety and tolerability data. The study commenced with at least 4 weeks of screening and observation to thoroughly examine baseline characteristics prior to treatment, followed by the treatment period of 13 weeks. A follow-up assessment was made 2 weeks after the end of treatment. 23 children were screened, 5 failed screening and 18 entered the study. The mean age was 8.6 years.
+The primary endpoints of this first trial in children were safety, tolerability and pharmacokinetics. Secondary endpoints included 14 efficacy measures assessed by clinicians and by caregivers. Efficacy measures included global measures assessing overall change, measures assessing specific symptom areas and measures assessing quality of life.
+NNZ-2591 was well tolerated and demonstrated a good safety profile. Most Treatment Emergent Adverse Events (TEAEs) were mild to moderate. There was only one Serious TEAE (gastroenteritis), which was not related to study drug and occurred during the safety follow-up period after end of treatment. Three subjects discontinued due to TEAEs, two testing positive for COVID-19 and one due to seizures that were not related to study drug. No clinically significant changes in laboratory values, electrocardiogram (ECG) or other safety parameters were observed during treatment.
+Improvement from baseline on overall/total scores was statistically significant (Wilcoxon signed rank test p<0.05) for 10 out of 14 efficacy endpoints.
+The results for the global measures rated by both clinicians and caregivers showed a level of improvement typically considered clinically meaningful. 16 out of 18 children showed improvement measured by the Clinical Global Impression of Improvement (CGI-I), an assessment by the clinician of the child's overall status compared with baseline. The mean CGI-I score was 2.4. 10 children received a score of either 1 ("very much improved") or 2 ("much improved").
+15 out of 18 children showed improvement measured by the Caregiver Overall Impression of Change (CIC), an assessment by the caregiver of the child's overall status compared with baseline. The mean CIC score was 2.7.  Seven children received a score of either 1 ("very much improved") or 2 ("much improved").
+Neuren is also conducting Phase 2 clinical trials of NNZ-2591 in children with three other neurodevelopmental disorders – Pitt Hopkins syndrome, Angelman syndrome and Prader-Willi syndrome. Top-line results from the Pitt Hopkins syndrome trial are expected in Q2 2024. All four programs have been granted Orphan Drug designation by the US Food and Drug Administration (FDA) and are being developed under Investigational New Drug (IND) applications. Each syndrome is a seriously debilitating neurological disorder that emerges in early childhood and has no or limited approved treatment options.
+Detailed results are available in the full announcement: 
+Phelan-McDermid syndrome is caused by a deletion or other change in the 22q13 region of chromosome 22, which includes the 
+ gene, or a mutation of the gene. PMS is also known as 22q13 deletion syndrome. The 
+gene codes for the shank3 protein, which supports the structure of synapses between nerve cells in the brain. It is estimated that between 1 in 8,000 and 1 in 15,000 people have PMS. There are no medications, drugs, or therapies specifically for PMS, which has an overwhelming unmet medical need.
+PMS has severe quality of life impacts on those living with it, as well as on parents and siblings. The most common characteristics are moderate to severe developmental and intellectual impairment and developmental delay, delayed or absent speech, symptoms of autism, low muscle tone, motor delays, mild to severe epilepsy, difficulties with toilet training and problems with eating.
+Further information about PMS is available at: 
+Neuren is developing new drug therapies to treat multiple serious neurological disorders that emerge in early childhood and have no or limited approved treatment options. Recognising the urgent unmet need, all programs have been granted "orphan drug" designation in 
+. Orphan drug designation provides incentives to encourage development of therapies for rare and serious diseases.
+DAYBUE™ (trofinetide) is approved by the US Food and Drug Administration (FDA) for the treatment of Rett syndrome in adult and pediatric patients two years of age and older. Neuren has granted an exclusive worldwide licence to Acadia Pharmaceuticals Inc. for the development and commercialisation of trofinetide.
+Neuren's second drug candidate, NNZ-2591 is in Phase 2 development for each of Phelan-McDermid syndrome, Angelman syndrome, Pitt Hopkins syndrome and Prader-Willi syndrome. 
+This announcement was authorized to be given to the ASX by the board of directors of Neuren Pharmaceuticals Limited, Suite 201, 697 Burke Road, Camberwell, VIC 3124
+ 
+View original content:
+SOURCE Neuren Pharmaceuticals Ltd
+================================================================================
+
+An Intrinsic Calculation For Neuren Pharmaceuticals Limited (ASX:NEU) Suggests It's 44% Undervalued 2023-12-26T21:15:45.000Z
+
+Today we will run through one way of estimating the intrinsic value of Neuren Pharmaceuticals Limited (ASX:NEU) by taking the expected future cash flows and discounting them to today's value. The Discounted Cash Flow (DCF) model is the tool we will apply to do this. It may sound complicated, but actually it is quite simple!
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. For those who are keen learners of equity analysis, the 
+ may be something of interest to you.
+We are going to use a two-stage DCF model, which, as the name states, takes into account two stages of growth. The first stage is generally a higher growth period which levels off heading towards the terminal value, captured in the second 'steady growth' period. To begin with, we have to get estimates of the next ten years of cash flows. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+Generally we assume that a dollar today is more valuable than a dollar in the future, so we discount the value of these future cash flows to their estimated value in today's dollars:
+ = AU$1.4b
+After calculating the present value of future cash flows in the initial 10-year period, we need to calculate the Terminal Value, which accounts for all future cash flows beyond the first stage. The Gordon Growth formula is used to calculate Terminal Value at a future annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.1%. We discount the terminal cash flows to today's value at a cost of equity of 6.1%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$289m× (1 + 2.1%) ÷ (6.1%– 2.1%) = AU$7.4b
+= TV / (1 + r)
+= AU$7.4b÷ ( 1 + 6.1%)
+= AU$4.1b
+The total value is the sum of cash flows for the next ten years plus the discounted terminal value, which results in the Total Equity Value, which in this case is AU$5.5b. To get the intrinsic value per share, we divide this by the total number of shares outstanding. Compared to the current share price of AU$24.0, the company appears quite undervalued at a 44% discount to where the stock price trades currently. The assumptions in any calculation have a big impact on the valuation, so it is better to view this as a rough estimate, not precise down to the last cent.
+We would point out that the most important inputs to a discounted cash flow are the discount rate and of course the actual cash flows. You don't have to agree with these inputs, I recommend redoing the calculations yourself and playing with them. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Neuren Pharmaceuticals as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 6.1%, which is based on a levered beta of 0.800. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Whilst important, the DCF calculation ideally won't be the sole piece of analysis you scrutinize for a company. DCF models are not the be-all and end-all of investment valuation. Rather it should be seen as a guide to "what assumptions need to be true for this stock to be under/overvalued?" For example, changes in the company's cost of equity or the risk free rate can significantly impact the valuation. What is the reason for the share price sitting below the intrinsic value? For Neuren Pharmaceuticals, we've compiled three fundamental aspects you should look at:
+PS. The Simply Wall St app conducts a discounted cash flow valuation for every stock on the ASX every day. If you want to find the calculation for other stocks just 
+.
+ 
+================================================================================
+
+Are Robust Financials Driving The Recent Rally In Neuren Pharmaceuticals Limited's (ASX:NEU) Stock? 2024-03-01T22:21:22.000Z
+
+Most readers would already be aware that Neuren Pharmaceuticals' (ASX:NEU) stock increased significantly by 22% over the past three months. Given the company's impressive performance, we decided to study its financial indicators more closely as a company's financial health over the long-term usually dictates market outcomes. In this article, we decided to focus on 
+ ROE.
+Return on equity or ROE is an important factor to be considered by a shareholder because it tells them how effectively their capital is being reinvested. Put another way, it reveals the company's success at turning shareholder investments into profits.
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Neuren Pharmaceuticals is:
+77% = AU$157m ÷ AU$205m (Based on the trailing twelve months to December 2023).
+The 'return' is the amount earned after tax over the last twelve months. That means that for every A$1 worth of shareholders' equity, the company generated A$0.77 in profit.
+So far, we've learned that ROE is a measure of a company's profitability. We now need to evaluate how much profit the company reinvests or "retains" for future growth which then gives us an idea about the growth potential of the company. Assuming everything else remains unchanged, the higher the ROE and profit retention, the higher the growth rate of a company compared to companies that don't necessarily bear these characteristics.
+Firstly, we acknowledge that Neuren Pharmaceuticals has a significantly high ROE. Secondly, even when compared to the industry average of 21% the company's ROE is quite impressive. As a result, Neuren Pharmaceuticals' exceptional 77% net income growth seen over the past five years, doesn't come as a surprise.
+We then compared Neuren Pharmaceuticals' net income growth with the industry and we're pleased to see that the company's growth figure is higher when compared with the industry which has a growth rate of 34% in the same 5-year period.
+Earnings growth is a huge factor in stock valuation. The investor should try to establish if the expected growth or decline in earnings, whichever the case may be, is priced in. This then helps them determine if the stock is placed for a bright or bleak future. If you're wondering about Neuren Pharmaceuticals''s valuation, check out 
+, as compared to its industry.
+Neuren Pharmaceuticals doesn't pay any dividend to its shareholders, meaning that the company has been reinvesting all of its profits into the business. This is likely what's driving the high earnings growth number discussed above.
+On the whole, we feel that Neuren Pharmaceuticals' performance has been quite good. Particularly, we like that the company is reinvesting heavily into its business, and at a high rate of return. Unsurprisingly, this has led to an impressive earnings growth. That being so, a study of the latest analyst forecasts show that the company is expected to see a slowdown in its future earnings growth. Are these analysts expectations based on the broad expectations for the industry, or on the company's fundamentals?
+ 
+================================================================================
+
+Neuren Phase 2 trial shows significant improvements in Pitt Hopkins syndrome 2024-05-27T10:00:00.000Z
+
+, 
+ /PRNewswire/ -- Neuren Pharmaceuticals (ASX: NEU) today announced top-line results from its Phase 2 clinical trial of NNZ-2591 in children with Pitt Hopkins syndrome (PTHS). Statistically significant improvement from baseline was observed by both clinicians and caregivers from treatment, across all 4 efficacy measures that were specifically designed to assess the core characteristics of PTHS. There are no approved treatments for PTHS despite its severely debilitating impact on the lives of patients, as well as their parents and siblings.
+Neuren CEO 
+ commented "We are very excited about the results of this first clinical trial in Pitt Hopkins patients. This underserved community has such urgent unmet need and we can now continue towards our goal of developing a first approved treatment. We are very grateful to the people in the Pitt Hopkins community and at the trial sites in 
+ who enabled the successful completion of this extremely challenging, but groundbreaking trial."
+, M.D., Ph.D., Professor of Neurology and Pediatrics at the 
+, and Director, Brain Development Research Program was an investigator in the trial. Dr Sherr commented: "I am optimistic about the results in the PTHS specific measures. The mechanism of action of NNZ-2591 supports this response seen in PTHS and its potential in other highly impactful neurodevelopmental disorders."
+Dr. 
+, Neuren Vice President of Clinical Development commented: "The consistent results on the PTHS specific assessments affirm the need for syndrome specific measurements in severe neurodevelopmental disorders where measures that were developed for broader populations may not be as appropriate. Neuren appreciates the collaboration of Dr. 
+, Associate Professor at the 
+ (an investigator in the trial), the Pitt-Hopkins Research Foundation, and others who contributed to the development of these important measures."
+The open label Phase 2 trial in 16 children aged 3 to 17 years (mean age 9 years) at five hospitals in 
+ examined safety, tolerability, pharmacokinetics and efficacy over 13 weeks of treatment with NNZ-2591. NNZ-2591 was administered to all subjects as an oral liquid dose twice daily, with escalation in two stages up to the target dose of 12 mg/kg during the first 6 weeks of treatment, subject to independent review of safety and tolerability data. The study commenced with at least 4 weeks of screening and observation to thoroughly define baseline characteristics prior to treatment, followed by the treatment period of 13 weeks. A follow-up assessment was made 2 weeks after the end of treatment.
+The primary endpoints of this first trial in children with PTHS were safety, tolerability and pharmacokinetics. Secondary endpoints included four efficacy measures specifically designed for PTHS assessed by clinicians and by caregivers, as well as ten efficacy measures that were not designed for use in PTHS but have been used in other neurodevelopmental conditions.
+NNZ-2591 was well tolerated and demonstrated a good safety profile. All Treatment Emergent Adverse Events (TEAEs) were mild to moderate and most were considered not related to study drug. There were no Serious TEAEs and no meaningful trends in laboratory values, electrocardiogram (ECG) or other safety parameters were observed during treatment. 
+11 subjects completed the trial. One subject discontinued because they were unable to complete the safety monitoring procedures required by the study protocol. Four subjects discontinued due to TEAEs, all of which resolved.  For two of those subjects the TEAEs (COVID-19 and mild vomiting/diarrhea/lethargy) were considered not related to study drug and for two subjects the TEAEs (moderate constipation/self-injury/abdominal distention/fatigue and mild sleep disorder/constipation) were considered related to study drug.
+The mean improvement from baseline was statistically significant (Wilcoxon signed rank test p<0.05) for each of the four efficacy measures that were specifically designed for Pitt Hopkins syndrome, whether calculated for the subjects that completed the study (n=11), or including discontinued subjects (n=15).
+Changes from baseline were not statistically significant for the efficacy measures that were not designed for use in PTHS but have been used in other neurodevelopmental conditions.
+The results for the global measures rated by both clinicians and caregivers showed a level of improvement considered clinically meaningful. 9 out of 11 children that completed the trial showed improvement measured by the PTHS Clinical Global Impression of Improvement (CGI-I), an assessment by the clinician of the child's overall status compared with baseline. The mean CGI-I score was 2.6. Five children received a score of either 1 ("very much improved") or 2 ("much improved").
+8 out of 11 children that completed the trial showed improvement measured by the PTHS Caregiver Overall Impression of Change (CIC), an assessment by the caregiver of the child's overall status compared with baseline. The mean CIC score was 3.0. Four children received a score of 2 ("much improved"). 
+6 out of 11 children that completed the trial showed improvement measured by the PTHS Clinical Global Impression of Severity (CGI-S), an assessment by the clinician of the child's overall severity of illness, compared with the assessment at baseline. The CGI-S score improved from 6 to 5 for 3 children and from 5 to 4 for 3 children.
+8 out of 11 children that completed the trial showed improvement measured by the Caregiver Top 3 Concerns overall score, an individualised assessment by the caregiver of their child's most concerning symptoms. Language/Communication was the most commonly chosen concern.
+Detailed results are available in the full announcement and investor presentation:
+Pitt Hopkins syndrome (PTHS) is a neurodevelopmental condition caused by the loss of one copy or a mutation of the TCF4 gene on chromosome 18. The incidence of PTHS has been estimated at between 1 in 34,000 and 1 in 41,000 people. Characteristics of PTHS are a range of developmental delay with moderate-to-severe intellectual disability and behavioral differences, hyperventilation and/or breath-holding while awake, seizures, gastrointestinal issues, lack of speech, sleep disturbance, stereotypic hand movements and distinctive facial features. Some individuals with PTHS are diagnosed with autism.  Further information about PTHS is available at: 
+Neuren is developing new drug therapies to treat multiple serious neurological disorders that emerge in early childhood and have no or limited approved treatment options. Recognising the urgent unmet need, all programs have been granted "orphan drug" designation in 
+. Orphan drug designation provides incentives to encourage development of therapies for rare and serious diseases.
+DAYBUE™ (trofinetide) is approved by the US Food and Drug Administration (FDA) for the treatment of Rett syndrome in adult and pediatric patients two years of age and older. Neuren has granted an exclusive worldwide licence to Acadia Pharmaceuticals Inc. for the development and commercialisation of trofinetide.
+Neuren's second drug candidate, NNZ-2591, is in Phase 2 development for multiple neurodevelopmental disorders, with positive results achieved in Phase 2 clinical trials in Phelan-McDermid syndrome and Pitt Hopkins syndrome.
+This announcement was authorized to be given to the ASX by the board of directors of Neuren Pharmaceuticals Limited, Suite 201, 697 Burke Road, Camberwell, VIC 3124
+View original content:
+SOURCE Neuren Pharmaceuticals Ltd
+================================================================================
+
+Are Investors Undervaluing Neuren Pharmaceuticals Limited (ASX:NEU) By 46%? 2024-06-03T22:06:37.000Z
+
+In this article we are going to estimate the intrinsic value of Neuren Pharmaceuticals Limited (
+) by taking the forecast future cash flows of the company and discounting them back to today's value. One way to achieve this is by employing the Discounted Cash Flow (DCF) model. There's really not all that much to it, even though it might appear quite complex.
+Companies can be valued in a lot of ways, so we would point out that a DCF is not perfect for every situation. If you still have some burning questions about this type of valuation, take a look at the 
+.
+We are going to use a two-stage DCF model, which, as the name states, takes into account two stages of growth. The first stage is generally a higher growth period which levels off heading towards the terminal value, captured in the second 'steady growth' period. To begin with, we have to get estimates of the next ten years of cash flows. Where possible we use analyst estimates, but when these aren't available we extrapolate the previous free cash flow (FCF) from the last estimate or reported value. We assume companies with shrinking free cash flow will slow their rate of shrinkage, and that companies with growing free cash flow will see their growth rate slow, over this period. We do this to reflect that growth tends to slow more in the early years than it does in later years.
+Generally we assume that a dollar today is more valuable than a dollar in the future, and so the sum of these future cash flows is then discounted to today's value:
+ = AU$1.3b
+We now need to calculate the Terminal Value, which accounts for all the future cash flows after this ten year period. The Gordon Growth formula is used to calculate Terminal Value at a future annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.3%. We discount the terminal cash flows to today's value at a cost of equity of 5.9%.
+= FCF
+ × (1 + g) ÷ (r – g) = AU$225m× (1 + 2.3%) ÷ (5.9%– 2.3%) = AU$6.3b
+= TV / (1 + r)
+= AU$6.3b÷ ( 1 + 5.9%)
+= AU$3.5b
+The total value is the sum of cash flows for the next ten years plus the discounted terminal value, which results in the Total Equity Value, which in this case is AU$4.8b. The last step is to then divide the equity value by the number of shares outstanding. Relative to the current share price of AU$20.3, the company appears quite good value at a 46% discount to where the stock price trades currently. Valuations are imprecise instruments though, rather like a telescope - move a few degrees and end up in a different galaxy. Do keep this in mind.
+Now the most important inputs to a discounted cash flow are the discount rate, and of course, the actual cash flows. If you don't agree with these result, have a go at the calculation yourself and play with the assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Neuren Pharmaceuticals as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 5.9%, which is based on a levered beta of 0.800. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Valuation is only one side of the coin in terms of building your investment thesis, and it is only one of many factors that you need to assess for a company. The DCF model is not a perfect stock valuation tool. Rather it should be seen as a guide to "what assumptions need to be true for this stock to be under/overvalued?" For example, changes in the company's cost of equity or the risk free rate can significantly impact the valuation. Why is the intrinsic value higher than the current share price? For Neuren Pharmaceuticals, we've put together three pertinent items you should consider:
+PS. The Simply Wall St app conducts a discounted cash flow valuation for every stock on the ASX every day. If you want to find the calculation for other stocks just 
+.
+ 
+================================================================================
+
+Exploring Undervalued Small Caps With Insider Action In Australia June 2024 2024-06-21T04:31:23.000Z
+
+Amidst a backdrop of fluctuating indices, the Australian market has shown mixed signals, with sectors like utilities and communications experiencing growth while materials lag behind. This nuanced landscape sets an intriguing stage for exploring undervalued small-cap companies that may offer unique opportunities in the current economic environment. A good stock in this context would ideally demonstrate resilience and potential for growth despite broader market volatility, making it an attractive consideration for those looking to diversify their portfolios.
+Here we highlight a subset of our preferred stocks from the screener.
+ ★★★★☆☆
+ Eagers Automotive is an automotive retailer primarily engaged in car retailing, with a market capitalization of approximately A$3.82 billion.
+ Car Retailing is the primary revenue generator for the entity, achieving A$9.85 billion in sales. The gross profit margin has shown a slight increase over recent periods, reaching 0.19% as of the latest data point.
+ 9.7x
+Eagers Automotive, a notable player in the automotive sector, recently announced an ambitious share repurchase program, aiming to buy back 10% of its issued shares by June 2025. This move underscores insider confidence and aligns with their proactive Next100 strategy, emphasizing aggressive revenue growth and strategic mergers and acquisitions. Despite a forecasted slight decline in earnings by about 0.8% annually over the next three years, revenue is expected to rise by approximately 5.53% annually. Their approach combines financial agility with strategic foresight in the market.
+ ★★★★★☆
+ Neuren Pharmaceuticals is a company focused on the development of pharmaceutical products, with a market capitalization of approximately A$231.94 million.
+ Pharmaceutical Products generated A$231.94 million in revenue, with a gross profit margin of 88.47%, reflecting the cost efficiency in production relative to sales. The company's operating expenses were A$5.95 million for the period analyzed, indicating management of operational costs amidst revenue activities.
+ 16.2x
+Neuren Pharmaceuticals, an intriguing player in the biopharmaceutical sector, has recently demonstrated promising Phase 2 clinical trial results for NNZ-2591 in treating Pitt Hopkins syndrome, showcasing significant improvements across all primary efficacy measures. With no current approved treatments for this condition, their innovative approach could capture a niche market. Financially, Neuren is poised for growth with revenue expected to rise annually by 10.53%. Insider confidence is evident as they have recently purchased shares, signaling belief in the company's future prospects and stability derived from high-risk funding sources exclusively through external borrowing.
+ ★★★★★★
+ Tabcorp Holdings is a diversified entertainment group operating in gaming services and wagering and media, with a market capitalization of approximately A$11 billion.
+ The company has demonstrated a consistently high gross profit margin, nearly 1.0 across several periods, reflecting its ability to fully convert revenue into gross profit since COGS are absent. Net income has fluctuated significantly, with notable dips into negative territory in recent years, indicating challenges in managing operational or non-operational expenses effectively against its revenues.
+ -2.5x
+Tabcorp Holdings, recently buoyed by insider confidence with significant share purchases, underscores a promising outlook. Forecasting an 82% earnings growth annually, the company leverages external borrowing entirely for its financial needs, reflecting a strategic but higher risk approach. This blend of aggressive growth prospects and recent insider investments paints a picture of potential underappreciated by the market.
+================================================================================
+
+Exploring Undervalued Small Caps With Insider Actions In Australia June 2024 2024-06-27T22:04:09.000Z
+
+In recent times, the Australian market has shown a steady increase, rising 8.9% over the past year despite remaining flat in the last week. Given these conditions and with earnings expected to grow by 14% annually in the near future, undervalued small caps with insider buying actions can present intriguing opportunities for investors looking to potentially benefit from market inefficiencies.
+We're going to check out a few of the best picks from our screener tool.
+ ★★★★☆☆
+ Codan is a diversified technology company specializing in communications equipment and metal detection, with a market capitalization of approximately A$1.02 billion.
+ The company generates its revenue primarily from communications and metal detection, with respective contributions of A$291.50 million and A$212.20 million. Its gross profit margin has shown a trend, averaging approximately 0.56% over recent periods, indicating the cost-effectiveness of its operations relative to sales.
+ 28.6x
+Recently, Codan has demonstrated insider confidence with significant share purchases, underscoring a belief in the company's potential. With earnings expected to grow by 16% annually, this reflects not just resilience but an optimistic outlook despite its reliance on external borrowing for funding. This strategic financial posture might raise eyebrows due to higher risk; however, it also suggests a proactive approach to leveraging opportunities within their market sector. These elements collectively suggest that Codan remains undervalued amidst its peers, presenting a noteworthy opportunity for discerning investors looking toward future growth prospects in the Australian market.
+ ★★★☆☆☆
+ Clarity Pharmaceuticals is a company focused on the development of radiopharmaceuticals.
+ Radiopharmaceutical Development generated A$9.49 million in revenue, with a consistent gross profit margin of 100%. The net income margin has deteriorated over recent periods, reaching -3.22% by the end of 2024.
+ -51.7x
+Clarity Pharmaceuticals, an Australian entity, recently bolstered its financial position through a series of follow-on equity offerings totaling A$121 million. These strategic moves, including presentations at major international medical conferences, underscore its proactive approach in the biopharmaceutical sector. Despite current unprofitability with no immediate turnaround projected, insider confidence is reflected by recent share purchases. This activity suggests a belief in long-term potential among those closest to the company's operations and strategy.
+ ★★★★★★
+ Neuren Pharmaceuticals is a company focused on developing pharmaceutical products, with a market capitalization of approximately A$231.94 million.
+ Pharmaceutical Products generate annual revenue of A$231.94 million, with a gross profit margin of 88.47%. Operating expenses for the year total A$5.95 million.
+ 16.8x
+Neuren Pharmaceuticals recently spotlighted its innovative potential at multiple industry conferences, underscoring its leadership in developing treatments for rare neurological disorders. Their latest Phase 2 trial results showcased significant improvements in children with Pitt Hopkins syndrome, a market with no approved treatments, highlighting their niche expertise. With revenue projected to grow annually by 10.53%, and insider confidence demonstrated through recent share purchases, Neuren's strategic position within the biotech sector appears increasingly compelling.
+================================================================================
+
+Codan Leads Three Undervalued Small Caps With Insider Actions In Australia 2024-06-30T22:03:56.000Z
+
+In recent trading sessions, the Australian market has shown mixed signals with the ASX200 marginally up by 0.1%. Notably, the IT sector outperformed, gaining 0.9%, while materials faced a downturn, nearly losing 1%. In such a fluctuating environment, identifying undervalued small-cap stocks like Codan that show potential for growth becomes crucial for investors looking for opportunities amidst broader market movements.
+Let's explore several standout options from the results in the screener.
+ ★★★★☆☆
+ Codan is a diversified technology company specializing in communications equipment and metal detection, with a market capitalization of approximately A$1.07 billion.
+ The company generates revenue primarily from Communications and Metal Detection, contributing A$291.50 million and A$212.20 million respectively. Gross profit margin has shown a notable increase, rising from 59.60% in September 2013 to 54.42% by December 2024, reflecting changes in cost of goods sold and operational efficiencies over time.
+ 29.1x
+Recently, insider confidence in Codan has been underscored by their share purchases, signaling strong belief in the company's prospects. With earnings expected to grow by 16% annually, this highlights its potential despite reliance on higher-risk funding sources. This Australian firm, often overlooked due to its smaller market presence, offers intriguing growth possibilities rooted in solid insider buying activities and financial forecasts. Such dynamics suggest that Codan might be poised for noteworthy advancements in its sector.
+ ★★★☆☆☆
+ Clarity Pharmaceuticals is a company focused on the development of radiopharmaceuticals.
+ Radiopharmaceutical Development generates A$9.49 million in revenue, consistently achieving a gross profit margin of 100%. The company experiences substantial operating losses, with net income margins worsening over time to -3.22% by the end of 2024 due to escalating R&D expenses, which reached A$36.37 million.
+ -55.3x
+Clarity Pharmaceuticals, despite being unprofitable with no near-term projections for profitability, recently bolstered its financial position through a follow-on equity offering of A$20.33 million. This move, coupled with their active presence at major medical conferences, demonstrates a strategic push to enhance visibility and credibility in the biopharmaceutical sector. Insider confidence is evident as they recently purchased shares, signaling belief in long-term value despite current financial metrics and reliance on high-risk external funding. These elements collectively suggest potential for future growth as the company continues to engage actively in industry events and secure capital.
+ ★★★★★★
+ Neuren Pharmaceuticals is a company focused on the development of pharmaceutical products, with a market capitalization of approximately A$231.94 million.
+ Pharmaceutical Products generated A$231.94 million in revenue, with a gross profit of A$205.19 million after deducting costs of goods sold at A$26.75 million. This segment achieved a gross profit margin of 88.47%.
+ 17.3x
+Neuren Pharmaceuticals, a lesser-known entity in the Australian market, recently showcased promising Phase 2 clinical trial results for NNZ-2591, targeting Pitt Hopkins syndrome—a condition with no approved treatments. This significant development was highlighted during their presentation at the Bell Potter Emerging Leaders Conference. Demonstrating both safety and efficacy, NNZ-2591's progress could position Neuren as an appealing prospect in the biopharmaceutical sector. Moreover, insider confidence is reflected through recent share purchases by executives, underscoring a strong belief in the company’s future trajectory.
+================================================================================
+
+Top Undervalued Small Caps With Insider Actions In Australia July 2024 2024-07-01T22:03:42.000Z
+
+Amidst a fluctuating Australian market where the ASX200 has seen a slight decline and sectors like IT have struggled significantly, small-cap stocks continue to present unique opportunities. Particularly, certain undervalued small caps are drawing attention with insider actions suggesting potential unrecognized value in this turbulent economic landscape. In such conditions, discerning investors might look for stocks that not only show promising fundamentals but also exhibit positive insider engagements, hinting at confidence from those who know the company best.
+Let's review some notable picks from our screened stocks.
+ ★★★★☆☆
+ Codan is a diversified technology company specializing in communications and metal detection, with a market capitalization of approximately A$1.37 billion.
+ Communications and Metal Detection are the primary revenue contributors, generating A$291.50 million and A$212.20 million respectively. The company's gross profit margin has shown a trend of fluctuation, with recent figures around 54.42% for the latest reported period.
+ 28.6x
+Codan, a notable player in the Australian market, recently saw insider confidence demonstrated through share purchases, signaling strong belief in the company's prospects. With earnings expected to grow by 16% annually, this reflects positively on its financial trajectory. Despite relying solely on external borrowing—a riskier funding method—these strategic moves suggest a robust foundation for future growth. This blend of insider activity and solid growth forecasts paints Codan as an appealing prospect for those eyeing potential in lesser-known entities.
+ ★★★☆☆☆
+ Lifestyle Communities is a company engaged in property development and management, with a market capitalization of approximately A$1.5 billion.
+ In recent financial data, the company reported a gross profit margin of 21.02% and a net income margin of 32.38%. This performance is derived from its primary operation in property development and management, which generated A$239.11 million in revenue.
+ 19.6x
+Lifestyle Communities, a notable player in the Australian market, recently showcased at the Macquarie Australia Conference. With earnings expected to climb by 22% annually, this reflects strong future prospects. Despite relying on higher-risk funding with no customer deposits, they maintain a good financial stance with significant non-cash earnings. Notably, insiders have recently demonstrated their confidence through share purchases, underscoring a belief in the company’s potential growth and current market positioning as undervalued.
+ ★★★★★★
+ Neuren Pharmaceuticals is a company focused on the development of pharmaceutical products, with a market capitalization of approximately A$231.94 million.
+ Pharmaceutical Products generated A$231.94 million in revenue, with a gross profit margin of 88.47%. The company's operating expenses were A$5.95 million.
+ 16.4x
+Neuren Pharmaceuticals, a lesser-known entity in the Australian market, recently showcased promising Phase 2 clinical trial results for NNZ-2591, targeting Pitt Hopkins syndrome—a condition with no approved treatments. This development could significantly enhance its market position. With revenue projected to increase by over 10% annually, and backed by insider confidence demonstrated through recent share purchases, Neuren's strategic moves suggest a potential upward trajectory in its valuation amidst small-cap peers.
+================================================================================
+
+Elders And 2 Other Undervalued Small Caps With Insider Action In Australia 2024-07-14T22:01:19.000Z
+
+Amidst a generally buoyant Australian market where the ASX200 recently closed up by 0.9%, all sectors except IT showed positive movement. This environment, coupled with anticipations of a U.S Federal Reserve rate cut, creates an interesting backdrop for exploring undervalued opportunities within the small-cap space. In this context, understanding what constitutes a good stock can be pivotal; factors such as insider buying can often signal unrecognized value in smaller companies poised for growth.
+Let's explore several standout options from the results in the screener.
+ ★★★★☆☆
+ Elders is an Australian company involved in providing a range of services including branch network operations, wholesale products, feed and processing services, and corporate services, with a market capitalization of approximately A$2.54 billion.
+ The entity generates the majority of its revenue from its Branch Network, contributing A$2.54 billion, supplemented by Wholesale Products and Feed and Processing Services at A$341.19 million and A$120.14 million respectively. Over recent periods, it has observed a gross profit margin trend ranging from 16% to 21%, indicating variability in cost management relative to sales revenue across different fiscal quarters.
+ 22.0x
+Elders Limited, a notable player in the Australian market, recently reaffirmed its earnings guidance for FY 2024, projecting an underlying EBIT of A$120 million to A$140 million. Despite a challenging half-year with net income dropping to A$11.59 million from A$48.85 million the previous year, insider confidence remains evident as they recently purchased shares, signaling belief in the company's resilience and growth potential. With new board appointments enhancing leadership and strategic direction, Elders is poised to leverage its industry expertise despite current financial hurdles.
+ ★★★★★☆
+ Nick Scali is a furniture retailing company with operations primarily focused on selling a range of furniture products.
+ Retailing of Furniture generated A$450.45 million, with a gross profit margin peaking at 65.48% in the latest period, reflecting significant efficiency in managing production costs relative to revenue.
+ 14.5x
+Nick Scali Limited, a standout in the market for undervalued entities, has recently fortified its financial position through substantial equity offerings totaling A$60 million at a price of A$13.25 per share. This strategic move, executed in May and April 2024, underscores their proactive approach to capital management. With earnings projected to grow by 8.3% annually, insider confidence is evident as they've recently purchased shares, signaling strong belief in the company's future prospects amidst higher risk funding structures solely reliant on external borrowing.
+ ★★★★★☆
+ Neuren Pharmaceuticals is a company focused on developing pharmaceutical products, with a market capitalization of approximately A$231.94 million.
+ Pharmaceutical Products generated A$231.94 million in revenue, with a gross profit margin of 88.47%. Operating expenses for the period amounted to A$5.95 million.
+ 16.7x
+Neuren Pharmaceuticals, a lesser-known yet promising player in the pharmaceutical sector, recently showcased positive Phase 2 trial results for NNZ-2591, targeting Pitt Hopkins syndrome—a condition with no approved treatments. This breakthrough underscores their potential in addressing unmet medical needs. With revenue expected to grow by 10.53% annually, and insider confidence demonstrated through recent share purchases, the company's prospects appear increasingly compelling despite its reliance on higher-risk external borrowing for funding.
+================================================================================
+
+Eagers Automotive Leads Three Undervalued Small Caps With Insider Actions In Australia 2024-07-16T22:01:26.000Z
+
+Amidst a buoyant Australian market, which has seen a 3.1% rise in the past week and a 10% increase over the last year with earnings projected to grow by 13% annually, investors are keenly watching for opportunities. In this environment, stocks like Eagers Automotive stand out as potentially undervalued small caps, particularly when insider actions suggest confidence in their future prospects.
+Here we highlight a subset of our preferred stocks from the screener.
+ ★★★★☆☆
+ Eagers Automotive operates primarily in car retailing, with a minor segment in property, maintaining a market capitalization of approximately A$3.41 billion.
+ Car Retailing is the primary revenue generator for this entity, contributing A$9.85 billion to its total income. The company's gross profit margin has shown a trend around 0.18% over recent periods, indicating the proportion of revenue exceeding direct costs associated with car retailing before accounting for other operational expenses.
+ 9.6x
+Eagers Automotive, amidst a landscape of fluctuating market valuations, stands out with its strategic maneuvers and financial agility. Recently, the company announced a share repurchase program set to reclaim up to 10% of its issued capital by June 2025—a move reflecting strong insider confidence and commitment to shareholder value. Despite facing a high debt level, Eagers is poised for revenue growth at an annual rate of 5.53%, complemented by aggressive pursuits in mergers and acquisitions as outlined in their recent shareholder communications. This approach not only underscores their proactive stance in market expansion but also aligns with their Next100 Strategy aiming for sustained growth.
+ ★★★★☆☆
+ Elders is a diversified agribusiness company, operating in branch network services, wholesale products, feed and processing services, with a market capitalization of approximately A$1.67 billion.
+ The business generates significant revenue from its Branch Network, contributing A$2.54 billion, supported by Wholesale Products and Feed and Processing Services which add A$341.19 million and A$120.14 million respectively. The gross profit margin observed a trend fluctuation, peaking at 0.217% in late 2018 before settling around 0.194% by mid-2024, reflecting variations in cost of goods sold and operational efficiency over the period.
+ 22.8x
+Elders Limited, a firm with a focus on agriculture, has shown resilience despite recent financial turbulence. With sales dropping to A$1.34 billion in the first half of 2024 from A$1.66 billion the previous year and net income falling significantly, they still project an underlying EBIT of A$120 million to A$140 million for the fiscal year. This forecast, coupled with insider confidence reflected in recent share purchases by executives, suggests a belief in future recovery and growth potential amidst challenging conditions.
+ ★★★★★☆
+ Neuren Pharmaceuticals is a company focused on the development of pharmaceutical products, with a market capitalization of approximately A$231.94 million.
+ Pharmaceutical Products generated A$231.94 million in revenue, with a gross profit margin of 88.47%, after accounting for costs of goods sold at A$26.75 million and operating expenses totaling A$5.95 million.
+ 17.1x
+Recently, Neuren Pharmaceuticals showcased promising results from a Phase 2 trial of NNZ-2591 for Pitt Hopkins syndrome, with significant improvements noted across all targeted efficacy measures. This development could position them favorably in a market devoid of approved treatments. At their Annual General Meeting on May 28, 2024, the re-election of director Patrick Davies was confirmed, reflecting stable leadership. Insider confidence is evident as they have recently purchased shares, signaling belief in the company's trajectory despite its modest market capitalization and reliance on higher-risk funding sources like external borrowing.
+================================================================================
+
+Exploring Undervalued Small Caps With Insider Action In Australia July 2024 2024-07-17T22:03:11.000Z
+
+The Australian market has shown robust performance, rising 2.1% over the last week and achieving a 10% increase over the past year with earnings expected to grow by 13% annually. In this context, identifying undervalued small-cap stocks with recent insider buying can be particularly compelling, as these actions often signal confidence in the company's future prospects amidst favorable market conditions.
+We'll examine a selection from our screener results.
+ ★★★★☆☆
+ Elders is an Australian company involved in providing a range of services including branch network operations, wholesale products, feed and processing services, and corporate services, with a market capitalization of approximately A$1.47 billion.
+ Branch Network, Wholesale Products, and Feed and Processing Services collectively generated A$3.00 billion in revenue, with Corporate Services contributing minimally. The gross profit margin observed a slight increase from 16.22% to 19.41% over the analyzed periods, reflecting improved efficiency in managing cost of goods sold relative to revenue.
+ 22.8x
+Elders Limited, an Australian firm, recently reaffirmed its fiscal 2024 EBIT forecast of A$120 million to A$140 million amidst a challenging backdrop with a significant drop in half-year sales from A$1.66 billion to A$1.34 billion and net income falling to A$11.59 million from last year's A$48.85 million. Despite these hurdles and a high debt level, insider confidence is evident as they recently purchased shares, signaling belief in the company’s resilience and future prospects.
+ ★★★★★☆
+ Neuren Pharmaceuticals is a company focused on the development of pharmaceutical products, with a market capitalization of approximately A$231.94 million.
+ Pharmaceutical Products generated A$231.94 million in revenue, with a high gross profit margin of 88.47%, reflecting significant efficiency in managing production costs relative to sales.
+ 18.0x
+Neuren Pharmaceuticals, a notable entity within Australia's lesser-known equity segment, recently showcased promising Phase 2 clinical trial results for NNZ-2591, targeting Pitt Hopkins syndrome—a condition lacking approved treatments. This development could significantly impact patient lives and market positioning. Financially, the company is poised for a modest annual earnings growth of 3.37%. Adding to investor optimism, insiders have recently demonstrated their confidence through share purchases, signaling potential undervalued status and aligning with strategic growth prospects presented at various industry conferences.
+ ★★★★☆☆
+ Orora is a company specializing in packaging solutions, operating primarily across Australasia and North America with a market capitalization of approximately A$3.20 billion.
+ Australasia and North America contribute significantly to the company's revenue, generating A$1.03 billion and A$3.02 billion respectively. The gross profit margin has shown a trend of fluctuation over the years, with recent figures around 18.75%.
+ 18.5x
+Orora's recent Analyst/Investor Day highlighted its strategic focus, aligning with a 14.68% forecasted annual earnings growth. Despite challenges in debt coverage by operating cash flow, the company maintains a low-risk funding structure with no reliance on customer deposits. Insider confidence is evident as they recently purchased shares, signaling belief in the firm’s prospects. This activity complements Orora's financial narrative, suggesting potential for growth despite some financial strains.
+================================================================================
+
+Exploring Undervalued Small Caps With Insider Insights In Australia July 2024 2024-07-18T22:01:27.000Z
+
+The Australian market has shown robust growth, climbing 3.0% in the past week and achieving a 10% increase over the last twelve months, with earnings projected to grow by 14% per annum. In this context, identifying undervalued small-cap stocks can offer potential opportunities for investors looking to capitalize on companies with promising prospects yet to be fully recognized by the broader market.
+Let's uncover some gems from our specialized screener.
+ ★★★★☆☆
+ Elders is an Australian company involved in providing a range of services and products across branch network operations, wholesale products, feed and processing services, with a market capitalization of approximately A$1.47 billion.
+ Branch Network is the primary revenue contributor, generating A$2.54 billion, supplemented by Wholesale Products and Feed and Processing Services at A$341.19 million and A$120.14 million respectively. The company's gross profit margin has shown variability over recent periods, with a recent figure of 0.194% as of mid-2024, reflecting changes in cost of goods sold and operational efficiency.
+ 23.0x
+Elders, reflecting a mix of challenges and potential, recently reaffirmed its earnings guidance for FY 2024 with expected EBIT between A$120 million to A$140 million. Despite a significant drop in sales and net income in the first half of the year, insider confidence is evident as they recently purchased shares, signaling belief in long-term value. The company's reliance on external borrowing underscores a higher-risk financial structure but also points to possible growth avenues from strategic leadership additions like Damien Frawley starting July 2024.
+ ★★★★★☆
+ Neuren Pharmaceuticals is a company focused on the development of pharmaceutical products, specifically targeting neurological disorders, with a market capitalization of approximately A$231.94 million.
+ Pharmaceutical Products generated A$231.94 million in revenue, with a gross profit of A$205.19 million after accounting for COGS of A$26.75 million, leading to a gross profit margin of 88.47%.
+ 16.9x
+Neuren Pharmaceuticals, a notable player in the biopharmaceutical sector, recently showcased promising Phase 2 results for NNZ-2591 in treating Pitt Hopkins syndrome, with significant improvements noted across all primary efficacy measures. This progress underpins the stock's potential, further bolstered by insider confidence demonstrated through recent share purchases. With earnings expected to grow annually by 3.37%, Neuren's strategic positioning and innovative pipeline suggest a bright outlook, aligning with its undervalued status in the market.
+ ★★★★☆☆
+ Orora is a company specializing in packaging solutions, operating primarily across Australasia and North America with a market capitalization of approximately A$3.17 billion.
+ Australasia and North America are significant contributors to the company's revenue, generating A$1.03 billion and A$3.02 billion respectively. The gross profit margin has shown a trend of slight increase over recent periods, reaching 0.19% by the latest date recorded.
+ 18.9x
+Orora, a lesser-discussed player in the Australian market, recently saw insider confidence bolstered by significant share purchases. With earnings projected to climb 14.68% annually, this company stands out for its financial trajectory despite challenges like high-risk funding and substantial shareholder dilution over the past year. Their strategy avoids reliance on customer deposits, leaning instead on external borrowings—a testament to their unique market approach amidst evolving industry dynamics.
+================================================================================
+

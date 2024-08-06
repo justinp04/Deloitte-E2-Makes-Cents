@@ -116,3 +116,104 @@ PS. The Simply Wall St app conducts a discounted cash flow valuation for every s
  
 ================================================================================
 
+A Look At The Fair Value Of GR Engineering Services Limited (ASX:GNG) 2023-08-11T22:41:24.000Z
+
+Today we will run through one way of estimating the intrinsic value of GR Engineering Services Limited (
+) by estimating the company's future cash flows and discounting them to their present value. The Discounted Cash Flow (DCF) model is the tool we will apply to do this. Don't get put off by the jargon, the math behind it is actually quite straightforward.
+We generally believe that a company's value is the present value of all of the cash it will generate in the future. However, a DCF is just one valuation metric among many, and it is not without flaws. Anyone interested in learning a bit more about intrinsic value should have a read of the 
+.
+We have to calculate the value of GR Engineering Services slightly differently to other stocks because it is a metals and mining company. In this approach dividends per share (DPS) are used, as free cash flow is difficult to estimate and often not reported by analysts. This often underestimates the value of a stock, but it can still be good as a comparison to competitors. The 'Gordon Growth Model' is used, which simply assumes that dividend payments will continue to increase at a sustainable growth rate forever. The dividend is expected to grow at an annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.0%. We then discount this figure to today's value at a cost of equity of 8.7%. Compared to the current share price of AU$2.3, the company appears about fair value at a 20% discount to where the stock price trades currently. The assumptions in any calculation have a big impact on the valuation, so it is better to view this as a rough estimate, not precise down to the last cent.
+Value Per Share = Expected Dividend Per Share / (Discount Rate - Perpetual Growth Rate)
+= AU$0.2 / (8.7% – 2.0%)
+= AU$2.8
+The calculation above is very dependent on two assumptions. The first is the discount rate and the other is the cash flows. Part of investing is coming up with your own evaluation of a company's future performance, so try the calculation yourself and check your own assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at GR Engineering Services as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 8.7%, which is based on a levered beta of 1.339. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Whilst important, the DCF calculation ideally won't be the sole piece of analysis you scrutinize for a company. It's not possible to obtain a foolproof valuation with a DCF model. Preferably you'd apply different cases and assumptions and see how they would impact the company's valuation. For example, changes in the company's cost of equity or the risk free rate can significantly impact the valuation. For GR Engineering Services, we've compiled three pertinent factors you should further research:
+PS. The Simply Wall St app conducts a discounted cash flow valuation for every stock on the ASX every day. If you want to find the calculation for other stocks just 
+.
+ 
+================================================================================
+
+GR Engineering Services Full Year 2023 Earnings: EPS: AU$0.17 (vs AU$0.22 in FY 2022) 2023-08-24T01:24:01.000Z
+
+GR Engineering Services shares are up 1.3% from a week ago.
+Don't forget that there may still be risks. For instance, we've identified 
+ that you should be aware of.
+ 
+================================================================================
+
+GR Engineering Services (ASX:GNG) Has Affirmed Its Dividend Of A$0.10 2023-08-25T20:02:35.000Z
+
+ (
+) has announced that it will pay a dividend of A$0.10 per share on the 22nd of September. This makes the dividend yield 8.3%, which will augment investor returns quite nicely.
+Impressive dividend yields are good, but this doesn't matter much if the payments can't be sustained. Based on the last payment, the company wasn't making enough to cover what it was paying to shareholders. Without profits and cash flows increasing, it would be difficult for the company to continue paying the dividend at this level.
+EPS is set to grow by 17.5% over the next year if recent trends continue. If the dividend continues on its recent course, the payout ratio in 12 months could be 104%, which is a bit high and could start applying pressure to the balance sheet.
+The company's dividend history has been marked by instability, with at least one cut in the last 10 years. The annual payment during the last 10 years was A$0.04 in 2013, and the most recent fiscal year payment was A$0.19. This implies that the company grew its distributions at a yearly rate of about 17% over that duration. It is great to see strong growth in the dividend payments, but cuts are concerning as it may indicate the payout policy is too ambitious.
+Given that the dividend has been cut in the past, we need to check if earnings are growing and if that might lead to stronger dividends in the future. GR Engineering Services has seen EPS rising for the last five years, at 18% per annum. Although per-share earnings are growing at a credible rate, the massive payout ratio may limit growth in the company's future dividend payments.
+Overall, we don't think this company makes a great dividend stock, even though the dividend wasn't cut this year. Strong earnings growth means GR Engineering Services has the potential to be a good dividend stock in the future, despite the current payments being at elevated levels. This company is not in the top tier of income providing stocks.
+Market movements attest to how highly valued a consistent dividend policy is compared to one which is more unpredictable. At the same time, there are other factors our readers should be conscious of before pouring capital into a stock. Taking the debate a bit further, we've identified 
+ that investors need to be conscious of moving forward. Looking for more high-yielding dividend ideas? Try our 
+ 
+================================================================================
+
+Estimating The Intrinsic Value Of GR Engineering Services Limited (ASX:GNG) 2024-01-24T20:03:07.000Z
+
+Today we will run through one way of estimating the intrinsic value of GR Engineering Services Limited (
+) by projecting its future cash flows and then discounting them to today's value. This will be done using the Discounted Cash Flow (DCF) model. There's really not all that much to it, even though it might appear quite complex.
+Remember though, that there are many ways to estimate a company's value, and a DCF is just one method. For those who are keen learners of equity analysis, the 
+ may be something of interest to you.
+We have to calculate the value of GR Engineering Services slightly differently to other stocks because it is a metals and mining company. In this approach dividends per share (DPS) are used, as free cash flow is difficult to estimate and often not reported by analysts. Unless a company pays out the majority of its FCF as a dividend, this method will typically underestimate the value of the stock. We use the Gordon Growth Model, which assumes dividend will grow into perpetuity at a rate that can be sustained. The dividend is expected to grow at an annual growth rate equal to the 5-year average of the 10-year government bond yield of 2.1%. We then discount this figure to today's value at a cost of equity of 8.6%. Compared to the current share price of AU$2.4, the company appears about fair value at a 19% discount to where the stock price trades currently. The assumptions in any calculation have a big impact on the valuation, so it is better to view this as a rough estimate, not precise down to the last cent.
+Value Per Share = Expected Dividend Per Share / (Discount Rate - Perpetual Growth Rate)
+= AU$0.2 / (8.6% – 2.1%)
+= AU$2.9
+The calculation above is very dependent on two assumptions. The first is the discount rate and the other is the cash flows. Part of investing is coming up with your own evaluation of a company's future performance, so try the calculation yourself and check your own assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at GR Engineering Services as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 8.6%, which is based on a levered beta of 1.302. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Although the valuation of a company is important, it is only one of many factors that you need to assess for a company. DCF models are not the be-all and end-all of investment valuation. Rather it should be seen as a guide to "what assumptions need to be true for this stock to be under/overvalued?" For example, changes in the company's cost of equity or the risk free rate can significantly impact the valuation. For GR Engineering Services, we've compiled three further items you should further research:
+PS. Simply Wall St updates its DCF calculation for every Australian stock every day, so if you want to find the intrinsic value of any other stock just 
+.
+ 
+================================================================================
+
+With a 34% stake, GR Engineering Services Limited (ASX:GNG) insiders have a lot riding on the company 2024-05-05T23:38:40.000Z
+
+Every investor in GR Engineering Services Limited (
+) should be aware of the most powerful shareholder groups. With 34% stake, individual insiders possess the maximum shares in the company. In other words, the group stands to gain the most (or lose the most) from their investment into the company.
+So it follows, every decision made by insiders of GR Engineering Services regarding the company's future would be crucial to them.
+In the chart below, we zoom in on the different ownership groups of GR Engineering Services.
+Institutional investors commonly compare their own returns to the returns of a commonly followed index. So they generally do consider buying larger companies that are included in the relevant benchmark index.
+GR Engineering Services already has institutions on the share registry. Indeed, they own a respectable stake in the company. This implies the analysts working for those institutions have looked at the stock and they like it. But just like anyone else, they could be wrong. If multiple institutions change their view on a stock at the same time, you could see the share price drop fast. It's therefore worth looking at GR Engineering Services' earnings history below. Of course, the future is what really matters.
+We note that hedge funds don't have a meaningful investment in GR Engineering Services. From our data, we infer that the largest shareholder is David Sala Tenna (who also holds the title of Chief Operating Officer) with 7.4% of shares outstanding. Its usually considered a good sign when insiders own a significant number of shares in the company, and in this case, we're glad to see a company insider play the role of a key stakeholder. The second and third largest shareholders are Colonial First State Investments Limited and First Sentier Investors (Australia) IM Ltd, with an equal amount of shares to their name at 6.4%. In addition, we found that Tony Patrizi, the CEO has 5.9% of the shares allocated to their name.
+We did some more digging and found that 9 of the top shareholders account for roughly 53% of the register, implying that along with larger shareholders, there are a few smaller shareholders, thereby balancing out each others interests somewhat.
+While studying institutional ownership for a company can add value to your research, it is also a good practice to research analyst recommendations to get a deeper understand of a stock's expected performance. As far as we can tell there isn't analyst coverage of the company, so it is probably flying under the radar.
+While the precise definition of an insider can be subjective, almost everyone considers board members to be insiders. The company management answer to the board and the latter should represent the interests of shareholders. Notably, sometimes top-level managers are on the board themselves.
+Most consider insider ownership a positive because it can indicate the board is well aligned with other shareholders. However, on some occasions too much power is concentrated within this group.
+Our most recent data indicates that insiders own a reasonable proportion of GR Engineering Services Limited. Insiders own AU$127m worth of shares in the AU$376m company. This may suggest that the founders still own a lot of shares. You can 
+The general public, who are usually individual investors, hold a 26% stake in GR Engineering Services. This size of ownership, while considerable, may not be enough to change company policy if the decision is not in sync with other large shareholders.
+We can see that Private Companies own 21%, of the shares on issue. It might be worth looking deeper into this. If related parties, such as insiders, have an interest in one of these private companies, that should be disclosed in the annual report. Private companies may also have a strategic interest in the company.
+I find it very interesting to look at who exactly owns a company. But to truly gain insight, we need to consider other information, too. Case in point: We've spotted 
+ you should be aware of, and 1 of them is a bit unpleasant.
+Of course 
+. Therefore, you may wish to see our 
+ 
+================================================================================
+
+Investing in GR Engineering Services (ASX:GNG) five years ago would have delivered you a 298% gain 2024-06-12T03:54:12.000Z
+
+When you buy a stock there is always a possibility that it could drop 100%. But on the bright side, if you buy shares in a high quality company at the right price, you can gain well over 100%. One great example is 
+ (
+) which saw its share price drive 176% higher over five years.
+Let's take a look at the underlying fundamentals over the longer term, and see if they've been consistent with shareholders returns.
+While the efficient markets hypothesis continues to be taught by some, it has been proven that markets are over-reactive dynamic systems, and investors are not always rational. One flawed but reasonable way to assess how sentiment around a company has changed is to compare the earnings per share (EPS) with the share price.
+Over half a decade, GR Engineering Services managed to grow its earnings per share at 31% a year. The EPS growth is more impressive than the yearly share price gain of 23% over the same period. Therefore, it seems the market has become relatively pessimistic about the company.
+The graphic below depicts how EPS has changed over time (unveil the exact values by clicking on the image).
+We're pleased to report that the CEO is remunerated more modestly than most CEOs at similarly capitalized companies. But while CEO remuneration is always worth checking, the really important question is whether the company can grow earnings going forward. It might be well worthwhile taking a look at our 
+ 
+.
+It is important to consider the total shareholder return, as well as the share price return, for any given stock. The TSR is a return calculation that accounts for the value of cash dividends (assuming that any dividend received was reinvested) and the calculated value of any discounted capital raisings and spin-offs. It's fair to say that the TSR gives a more complete picture for stocks that pay a dividend. As it happens, GR Engineering Services' TSR for the last 5 years was 298%, which exceeds the share price return mentioned earlier. The dividends paid by the company have thusly boosted the 
+ shareholder return.
+GR Engineering Services shareholders have received returns of 15% over twelve months (even including dividends), which isn't far from the general market return. It has to be noted that the recent return falls short of the 32% shareholders have gained each year, over half a decade. More recently, the share price growth has slowed. But it has to be said the overall picture is one of good long term and short term performance. Arguably that makes GR Engineering Services a stock worth watching. While it is well worth considering the different impacts that market conditions can have on the share price, there are other factors that are even more important. Like risks, for instance. Every company has them, and we've spotted 
+ (of which 1 shouldn't be ignored!) you should know about.
+Of course 
+. So you may wish to see this 
+ 
+ 
+================================================================================
+

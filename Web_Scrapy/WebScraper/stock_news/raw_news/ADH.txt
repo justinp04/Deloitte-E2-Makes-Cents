@@ -302,3 +302,155 @@ If you are no longer interested in Adairs, you can use our free platform to see 
  
 ================================================================================
 
+Is Now The Time To Look At Buying Adairs Limited (ASX:ADH)? 2023-08-17T02:05:46.000Z
+
+Adairs Limited (
+), is not the largest company out there, but it led the ASX gainers with a relatively large price hike in the past couple of weeks. As a stock with high coverage by analysts, you could assume any recent changes in the company’s outlook is already priced into the stock. However, could the stock still be trading at a relatively cheap price? Let’s examine Adairs’s valuation and outlook in more detail to determine if there’s still a bargain opportunity.
+The share price seems sensible at the moment according to my price multiple model, where I compare the company's price-to-earnings ratio to the industry average. In this instance, I’ve used the price-to-earnings (PE) ratio given that there is not enough information to reliably forecast the stock’s cash flows. I find that Adairs’s ratio of 6.19x is trading slightly below its industry peers’ ratio of 10.53x, which means if you buy Adairs today, you’d be paying a decent price for it. And if you believe that Adairs should be trading at this level in the long run, then there’s not much of an upside to gain over and above other industry peers. So, is there another chance to buy low in the future? Given that Adairs’s share is fairly volatile (i.e. its price movements are magnified relative to the rest of the market) this could mean the price can sink lower, giving us an opportunity to buy later on. This is based on its high beta, which is a good indicator for share price volatility.
+Investors looking for growth in their portfolio may want to consider the prospects of a company before buying its shares. Although value investors would argue that it’s the intrinsic value relative to the price that matter the most, a more compelling investment thesis would be high growth potential at a cheap price. However, with a negative profit growth of -6.0% expected over the next couple of years, near-term growth certainly doesn’t appear to be a driver for a buy decision for Adairs. This certainty tips the risk-return scale towards higher risk.
+ Currently, ADH appears to be trading around industry price multiples, but given the uncertainty from negative returns in the future, this could be the right time to reduce the risk in your portfolio. Is your current exposure to the stock beneficial for your total portfolio? And is the opportunity cost of holding a negative-outlook stock too high? Before you make a decision on ADH, take a look at whether its fundamentals have changed.
+ If you’ve been keeping an eye on ADH for a while, now may not be the most advantageous time to buy, given it is trading around industry price multiples. This means there’s less benefit from mispricing. In addition to this, the negative growth outlook increases the risk of holding the stock. However, there are also other important factors we haven’t considered today, which can help crystallize your views on ADH should the price fluctuate below the industry PE ratio.
+If you want to dive deeper into Adairs, you'd also look into what risks it is currently facing. To help with this, we've discovered 
+ (1 can't be ignored!) that you ought to be aware of before buying any shares in Adairs.
+If you are no longer interested in Adairs, you can use our free platform to see our list of over 
+ 
+================================================================================
+
+Are Investors Undervaluing Adairs Limited (ASX:ADH) By 41%? 2023-09-07T20:00:07.000Z
+
+Does the September share price for Adairs Limited (
+) reflect what it's really worth? Today, we will estimate the stock's intrinsic value by taking the forecast future cash flows of the company and discounting them back to today's value. The Discounted Cash Flow (DCF) model is the tool we will apply to do this. Before you think you won't be able to understand it, just read on! It's actually much less complex than you'd imagine.
+We would caution that there are many ways of valuing a company and, like the DCF, each technique has advantages and disadvantages in certain scenarios. If you want to learn more about discounted cash flow, the rationale behind this calculation can be read in detail in the 
+.
+As Adairs operates in the specialty retail sector, we need to calculate the intrinsic value slightly differently. In this approach dividends per share (DPS) are used, as free cash flow is difficult to estimate and often not reported by analysts. This often underestimates the value of a stock, but it can still be good as a comparison to competitors. We use the Gordon Growth Model, which assumes dividend will grow into perpetuity at a rate that can be sustained. For a number of reasons a very conservative growth rate is used that cannot exceed that of a company's Gross Domestic Product (GDP). In this case we used the 5-year average of the 10-year government bond yield (2.0%). The expected dividend per share is then discounted to today's value at a cost of equity of 8.1%. Compared to the current share price of AU$1.4, the company appears quite good value at a 41% discount to where the stock price trades currently. Remember though, that this is just an approximate valuation, and like any complex formula - garbage in, garbage out.
+Value Per Share = Expected Dividend Per Share / (Discount Rate - Perpetual Growth Rate)
+= AU$0.1 / (8.1% – 2.0%)
+= AU$2.4
+The calculation above is very dependent on two assumptions. The first is the discount rate and the other is the cash flows. If you don't agree with these result, have a go at the calculation yourself and play with the assumptions. The DCF also does not consider the possible cyclicality of an industry, or a company's future capital requirements, so it does not give a full picture of a company's potential performance. Given that we are looking at Adairs as potential shareholders, the cost of equity is used as the discount rate, rather than the cost of capital (or weighted average cost of capital, WACC) which accounts for debt. In this calculation we've used 8.1%, which is based on a levered beta of 1.221. Beta is a measure of a stock's volatility, compared to the market as a whole. We get our beta from the industry average beta of globally comparable companies, with an imposed limit between 0.8 and 2.0, which is a reasonable range for a stable business.
+Whilst important, the DCF calculation shouldn't be the only metric you look at when researching a company. The DCF model is not a perfect stock valuation tool. Instead the best use for a DCF model is to test certain assumptions and theories to see if they would lead to the company being undervalued or overvalued. For instance, if the terminal value growth rate is adjusted slightly, it can dramatically alter the overall result. Why is the intrinsic value higher than the current share price? For Adairs, we've put together three additional elements you should assess:
+PS. Simply Wall St updates its DCF calculation for every Australian stock every day, so if you want to find the intrinsic value of any other stock just 
+.
+ 
+================================================================================
+
+Adairs Limited's (ASX:ADH) Stock Has Been Sliding But Fundamentals Look Strong: Is The Market Wrong? 2023-09-28T02:12:19.000Z
+
+It is hard to get excited after looking at Adairs' (ASX:ADH) recent performance, when its stock has declined 8.6% over the past three months. However, a closer look at its sound financials might cause you to think again. Given that fundamentals usually drive long-term market outcomes, the company is worth looking at. In this article, we decided to focus on 
+ ROE.
+Return on Equity or ROE is a test of how effectively a company is growing its value and managing investors’ money. In simpler terms, it measures the profitability of a company in relation to shareholder's equity.
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Adairs is:
+19% = AU$38m ÷ AU$202m (Based on the trailing twelve months to June 2023).
+The 'return' refers to a company's earnings over the last year. That means that for every A$1 worth of shareholders' equity, the company generated A$0.19 in profit.
+We have already established that ROE serves as an efficient profit-generating gauge for a company's future earnings. Depending on how much of these profits the company reinvests or "retains", and how effectively it does so, we are then able to assess a company’s earnings growth potential. Assuming all else is equal, companies that have both a higher return on equity and higher profit retention are usually the ones that have a higher growth rate when compared to companies that don't have the same features.
+To start with, Adairs' ROE looks acceptable. Further, the company's ROE is similar to the industry average of 20%. Consequently, this likely laid the ground for the decent growth of 9.5% seen over the past five years by Adairs.
+As a next step, we compared Adairs' net income growth with the industry and were disappointed to see that the company's growth is lower than the industry average growth of 20% in the same period.
+The basis for attaching value to a company is, to a great extent, tied to its earnings growth. The investor should try to establish if the expected growth or decline in earnings, whichever the case may be, is priced in. By doing so, they will have an idea if the stock is headed into clear blue waters or if swampy waters await. What is ADH worth today? The 
+ helps visualize whether ADH is currently mispriced by the market.
+While the company did pay out a portion of its dividend in the past, it currently doesn't pay a dividend. We infer that the company has been reinvesting all of its profits to grow its business.
+On the whole, we feel that Adairs' performance has been quite good. Particularly, we like that the company is reinvesting heavily into its business, and at a high rate of return. As a result, the decent growth in its earnings is not surprising. We also studied the latest analyst forecasts and found that the company's earnings growth is expected be similar to its current growth rate. Are these analysts expectations based on the broad expectations for the industry, or on the company's fundamentals?
+ 
+================================================================================
+
+Investors in Adairs (ASX:ADH) have unfortunately lost 62% over the last three years 2023-10-30T02:13:06.000Z
+
+If you are building a properly diversified stock portfolio, the chances are some of your picks will perform badly. But long term 
+ (
+) shareholders have had a particularly rough ride in the last three year. Regrettably, they have had to cope with a 68% drop in the share price over that period. And the ride hasn't got any smoother in recent times over the last year, with the price 41% lower in that time. Shareholders have had an even rougher run lately, with the share price down 29% in the last 90 days.
+Since shareholders are down over the longer term, lets look at the underlying fundamentals over the that time and see if they've been consistent with returns.
+While the efficient markets hypothesis continues to be taught by some, it has been proven that markets are over-reactive dynamic systems, and investors are not always rational. One flawed but reasonable way to assess how sentiment around a company has changed is to compare the earnings per share (EPS) with the share price.
+Although the share price is down over three years, Adairs actually managed to grow EPS by 1.3% per year in that time. Given the share price reaction, one might suspect that EPS is not a good guide to the business performance during the period (perhaps due to a one-off loss or gain). Alternatively, growth expectations may have been unreasonable in the past.
+It's pretty reasonable to suspect the market was previously to bullish on the stock, and has since moderated expectations. Looking to other metrics might better explain the share price change.
+Revenue is actually up 16% over the three years, so the share price drop doesn't seem to hinge on revenue, either. It's probably worth investigating Adairs further; while we may be missing something on this analysis, there might also be an opportunity.
+You can see how earnings and revenue have changed over time in the image below (click on the chart to see the exact values).
+If you are thinking of buying or selling Adairs stock, you should check out this 
+ 
+.
+We've already covered Adairs' share price action, but we should also mention its total shareholder return (TSR). The TSR is a return calculation that accounts for the value of cash dividends (assuming that any dividend received was reinvested) and the calculated value of any discounted capital raisings and spin-offs. Adairs' TSR of was a loss of 62% for the 3 years. That wasn't as bad as its share price return, because it has paid dividends.
+While the broader market gained around 4.3% in the last year, Adairs shareholders lost 39%. However, keep in mind that even the best stocks will sometimes underperform the market over a twelve month period. Regrettably, last year's performance caps off a bad run, with the shareholders facing a total loss of 4% per year over five years. Generally speaking long term share price weakness can be a bad sign, though contrarian investors might want to research the stock in hope of a turnaround. Most investors take the time to check the data on insider transactions. You can 
+If you are like me, then you will 
+ want to miss this 
+ 
+ 
+================================================================================
+
+Adairs Limited (ASX:ADH) Surges 28% Yet Its Low P/E Is No Reason For Excitement 2023-12-18T05:58:52.000Z
+
+Despite an already strong run, 
+ (
+) shares have been powering on, with a gain of 28% in the last thirty days. Not all shareholders will be feeling jubilant, since the share price is still down a very disappointing 15% in the last twelve months.
+In spite of the firm bounce in price, given about half the companies in Australia have price-to-earnings ratios (or "P/E's") above 19x, you may still consider Adairs as a highly attractive investment with its 8.7x P/E ratio. Although, it's not wise to just take the P/E at face value as there may be an explanation why it's so limited.
+Recent times haven't been advantageous for Adairs as its earnings have been falling quicker than most other companies. The P/E is probably low because investors think this poor earnings performance isn't going to improve at all. If you still like the company, you'd want its earnings trajectory to turn around before making any decisions. If not, then existing shareholders will probably struggle to get excited about the future direction of the share price.
+Want the full picture on analyst estimates for the company? Then our 
+will help you uncover what's on the horizon.
+There's an inherent assumption that a company should far underperform the market for P/E ratios like Adairs' to be considered reasonable.
+Taking a look back first, the company's earnings per share growth last year wasn't something to get excited about as it posted a disappointing decline of 17%. Unfortunately, that's brought it right back to where it started three years ago with EPS growth being virtually non-existent overall during that time. Therefore, it's fair to say that earnings growth has been inconsistent recently for the company.
+Turning to the outlook, the next three years should generate growth of 7.6% per annum as estimated by the eight analysts watching the company. That's shaping up to be materially lower than the 18% each year growth forecast for the broader market.
+With this information, we can see why Adairs is trading at a P/E lower than the market. Apparently many shareholders weren't comfortable holding on while the company is potentially eyeing a less prosperous future.
+Even after such a strong price move, Adairs' P/E still trails the rest of the market significantly. It's argued the price-to-earnings ratio is an inferior measure of value within certain industries, but it can be a powerful business sentiment indicator.
+As we suspected, our examination of Adairs' analyst forecasts revealed that its inferior earnings outlook is contributing to its low P/E. At this stage investors feel the potential for an improvement in earnings isn't great enough to justify a higher P/E ratio. Unless these conditions improve, they will continue to form a barrier for the share price around these levels.
+A lot of potential risks can sit within a company's balance sheet. Take a look at our 
+ with six simple checks on some of these key factors.
+If you're 
+, why not explore 
+ for some other companies you may have missed.
+ 
+================================================================================
+
+Adairs Limited's (ASX:ADH) Stock On An Uptrend: Could Fundamentals Be Driving The Momentum? 2024-04-02T04:58:35.000Z
+
+Adairs (ASX:ADH) has had a great run on the share market with its stock up by a significant 44% over the last three months. As most would know, fundamentals are what usually guide market price movements over the long-term, so we decided to look at the company's key financial indicators today to determine if they have any role to play in the recent price movement. Particularly, we will be paying attention to 
+ ROE today.
+Return on equity or ROE is a key measure used to assess how efficiently a company's management is utilizing the company's capital. In short, ROE shows the profit each dollar generates with respect to its shareholder investments.
+The 
+ is:
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Adairs is:
+16% = AU$34m ÷ AU$216m (Based on the trailing twelve months to December 2023).
+The 'return' is the amount earned after tax over the last twelve months. That means that for every A$1 worth of shareholders' equity, the company generated A$0.16 in profit.
+Thus far, we have learned that ROE measures how efficiently a company is generating its profits. Depending on how much of these profits the company reinvests or "retains", and how effectively it does so, we are then able to assess a company’s earnings growth potential. Generally speaking, other things being equal, firms with a high return on equity and profit retention, have a higher growth rate than firms that don’t share these attributes.
+At first glance, Adairs seems to have a decent ROE. And on comparing with the industry, we found that the the average industry ROE is similar at 17%. Despite the moderate return on equity, Adairs has posted a net income growth of 4.7% over the past five years. A few likely reasons that could be keeping earnings growth low are - the company has a high payout ratio or the business has allocated capital poorly, for instance.
+We then compared Adairs' net income growth with the industry and found that the company's growth figure is lower than the average industry growth rate of 18% in the same 5-year period, which is a bit concerning.
+Earnings growth is an important metric to consider when valuing a stock. The investor should try to establish if the expected growth or decline in earnings, whichever the case may be, is priced in. Doing so will help them establish if the stock's future looks promising or ominous. One good indicator of expected earnings growth is the P/E ratio which determines the price the market is willing to pay for a stock based on its earnings prospects. So, you may want to 
+, relative to its industry.
+The high three-year median payout ratio of 64% (that is, the company retains only 36% of its income) over the past three years for Adairs suggests that the company's earnings growth was lower as a result of paying out a majority of its earnings.
+Moreover, Adairs has been paying dividends for eight years, which is a considerable amount of time, suggesting that management must have perceived that the shareholders prefer dividends over earnings growth. Upon studying the latest analysts' consensus data, we found that the company is expected to keep paying out approximately 68% of its profits over the next three years. Accordingly, forecasts suggest that Adairs' future ROE will be 19% which is again, similar to the current ROE.
+Overall, we feel that Adairs certainly does have some positive factors to consider. However, while the company does have a high ROE, its earnings growth number is quite disappointing. This can be blamed on the fact that it reinvests only a small portion of its profits and pays out the rest as dividends. With that said, the latest industry analyst forecasts reveal that the company's earnings are expected to accelerate. Are these analysts expectations based on the broad expectations for the industry, or on the company's fundamentals?
+ 
+================================================================================
+
+The past three years for Adairs (ASX:ADH) investors has not been profitable 2024-04-30T00:41:18.000Z
+
+ (
+) shareholders should be happy to see the share price up 24% in the last quarter. But that doesn't change the fact that the returns over the last three years have been less than pleasing. Truth be told the share price declined 51% in three years and that return, Dear Reader, falls short of what you could have got from passive investing with an index fund.
+Since shareholders are down over the longer term, lets look at the underlying fundamentals over the that time and see if they've been consistent with returns.
+In his essay 
+ Warren Buffett described how share prices do not always rationally reflect the value of a business. By comparing earnings per share (EPS) and share price changes over time, we can get a feel for how investor attitudes to a company have morphed over time.
+During the three years that the share price fell, Adairs' earnings per share (EPS) dropped by 21% each year. So do you think it's a coincidence that the share price has dropped 21% per year, a very similar rate to the EPS? We don't. So it seems that investor expectations of the company are staying pretty steady, despite the disappointment. In this case, it seems that the EPS is guiding the share price.
+The image below shows how EPS has tracked over time (if you click on the image you can see greater detail).
+Dive deeper into Adairs' key metrics by checking this interactive graph of Adairs's 
+.
+When looking at investment returns, it is important to consider the difference between 
+ (TSR) and 
+. The TSR is a return calculation that accounts for the value of cash dividends (assuming that any dividend received was reinvested) and the calculated value of any discounted capital raisings and spin-offs. Arguably, the TSR gives a more comprehensive picture of the return generated by a stock. We note that for Adairs the TSR over the last 3 years was -43%, which is better than the share price return mentioned above. This is largely a result of its dividend payments!
+Adairs shareholders are down 2.0% for the year (even including dividends), but the market itself is up 8.6%. Even the share prices of good stocks drop sometimes, but we want to see improvements in the fundamental metrics of a business, before getting too interested. Longer term investors wouldn't be so upset, since they would have made 10%, each year, over five years. It could be that the recent sell-off is an opportunity, so it may be worth checking the fundamental data for signs of a long term growth trend. It's always interesting to track share price performance over the longer term. But to understand Adairs better, we need to consider many other factors. For instance, we've identified 
+ that you should be aware of.
+We will like Adairs better if we see some big insider buys. While we wait, check out this 
+ 
+ 
+================================================================================
+
+What Does Adairs Limited's (ASX:ADH) Share Price Indicate? 2024-07-02T03:40:28.000Z
+
+Adairs Limited (
+), is not the largest company out there, but it saw a decent share price growth of 13% on the ASX over the last few months. The recent rally in share prices has nudged the company in the right direction, though it still falls short of its yearly peak. With many analysts covering the stock, we may expect any price-sensitive announcements have already been factored into the stock’s share price. However, what if the stock is still a bargain? Let’s examine Adairs’s valuation and outlook in more detail to determine if there’s still a bargain opportunity.
+Great news for investors – Adairs is still trading at a fairly cheap price according to our price multiple model, where we compare the company's price-to-earnings ratio to the industry average. We’ve used the price-to-earnings ratio in this instance because there’s not enough visibility to forecast its cash flows. The stock’s ratio of 9.81x is currently well-below the industry average of 14.23x, meaning that it is trading at a cheaper price relative to its peers. What’s more interesting is that, Adairs’s share price is quite volatile, which gives us more chances to buy since the share price could sink lower (or rise higher) in the future. This is based on its high beta, which is a good indicator for how much the stock moves relative to the rest of the market.
+Future outlook is an important aspect when you’re looking at buying a stock, especially if you are an investor looking for growth in your portfolio. Buying a great company with a robust outlook at a cheap price is always a good investment, so let’s also take a look at the company's future expectations. With profit expected to grow by 45% over the next couple of years, the future seems bright for Adairs. It looks like higher cash flow is on the cards for the stock, which should feed into a higher share valuation.
+ Since ADH is currently below the industry PE ratio, it may be a great time to increase your holdings in the stock. With an optimistic outlook on the horizon, it seems like this growth has not yet been fully factored into the share price. However, there are also other factors such as capital structure to consider, which could explain the current price multiple.
+ If you’ve been keeping an eye on ADH for a while, now might be the time to enter the stock. Its prosperous future profit outlook isn’t fully reflected in the current share price yet, which means it’s not too late to buy ADH. But before you make any investment decisions, consider other factors such as the track record of its management team, in order to make a well-informed investment decision.
+Keep in mind, when it comes to analysing a stock it's worth noting the risks involved. For example - Adairs has 
+ we think you should be aware of.
+If you are no longer interested in Adairs, you can use our free platform to see our list of over 
+ 
+================================================================================
+
