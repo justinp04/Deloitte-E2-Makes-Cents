@@ -1,7 +1,0 @@
-Ticker: APA
-            Name: APA Group (ASX: APA)
-            Founded: 2007
-            Sector: Utilities
-            Industry: Utilities - Regulated Gas
-            CEO: Adam Watson
-            Description: APA Group engages in energy infrastructure business in Australia.The company operates through three segments: Energy Infrastructure, Asset Management, and Energy Investments.It operates natural gas pipelines, electricity interconnectors, gas fired power generation stations, and solar farms and wind farms, as well as gas storage, processing, and compression facilities.The company has interests in approximately 15,000 kilometers of gas transmission pipelines; approximately 29,500 kilometers of gas mains and pipelines; and 1.5 million gas consumer connections.It also provides commercial, operating, and asset maintenance services to its energy investments and third parties; and invests in energy infrastructure.The company was incorporated in 2007 and is headquartered in Sydney, Australia.

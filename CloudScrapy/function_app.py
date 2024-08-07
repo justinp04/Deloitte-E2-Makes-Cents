@@ -7,8 +7,12 @@ import requests
 import yfinance as yf
 
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
+from scraped_stock import scraped_stock
 
 app = func.FunctionApp()
+
+# Register the blueprint
+app.register_functions(scraped_stock)
 
 # Azure Blob Storage connection string
 CONNECTION_STRING = 'DefaultEndpointsProtocol=https;AccountName=stockfullquotesapi;AccountKey=HmVGx3RXJwRHNTk7ONCW1guuWty7cuXQXIvcNsDI9Viw8R2oGjsW1udji4NJGSef7buuHhUHWrAm+AStWIlGMw==;EndpointSuffix=core.windows.net'

@@ -1,7 +1,0 @@
-Ticker: GMG
-            Name: Goodman Group (ASX: GMG)
-            Founded: 2002
-            Sector: Real Estate
-            Industry: Real Estate - Diversified
-            CEO: Gregory Goodman
-            Description: Goodman Group is an integrated property group with operations throughout Australia, New Zealand, Asia, Europe, the United Kingdom and the Americas.Goodman Group, comprised of the stapled entities Goodman Limited, Goodman Industrial Trust and Goodman Logistics (HK) Limited, is the largest industrial property group listed on the Australian Securities Exchange and one of the largest listed specialist investment managers of industrial property and business space globally.Goodman’s global property expertise, integrated own+develop+manage customer service offering and significant investment management platform ensures it creates innovative property solutions that meet the individual requirements of its customers, while seeking to deliver long-term returns for investors.

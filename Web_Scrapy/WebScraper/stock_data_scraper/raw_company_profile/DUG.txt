@@ -1,7 +1,0 @@
-Ticker: DUG
-            Name: DUG Technology Ltd (ASX: DUG)
-            Founded: 2003
-            Sector: Technology
-            Industry: Information Technology Services
-            CEO: Matthew Lamont
-            Description: Dug Technology Ltd, a technology company, provides hardware and software solutions for the technology and resource sectors in Australia, Malaysia, the United States, and the United Kingdom.The company offers high-performance computing as a service solution; data centre cooling solutions; scientific data analysis services; and DUG Insight, a full-service, interactive software platform for advanced seismic data processing and imaging, interpretation, visualization, and QI across land, marine, and ocean-bottom surveys.It also provides data services, including on-demand support for data loading, quality control, and management; and geoscience services, such as seismic processing, DUG deblend, time-lapse and ocean bottom seismic, full waveform inversion, depth and least-squares imaging, petrophysical processing and interpretation, quantitative interpretation, and regional velocity model services.The company was incorporated in 2003 and is headquartered in West Perth, Australia.

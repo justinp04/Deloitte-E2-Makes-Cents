@@ -1,7 +1,0 @@
-Ticker: BOQ
-            Name: Bank of Queensland Limited (ASX: BOQ)
-            Founded: 1874
-            Sector: Financials
-            Industry: Banks - Regional
-            CEO: Patrick Allaway
-            Description: Bank of Queensland Limited, together with its subsidiaries, provides various financial services in Australia and New Zealand.The company operates in Retail Banking, BOQ Business, and Other segments. It offers personal banking services comprises savings and term deposits, and transactional accounts; debit and credit cards; home, personal, and car loans; and travel, home and content, landlord, and car insurance, as well as investment services comprising online share trading services, and self-managed superannuation funds.The company’s business banking services include transaction accounts, and savings and investment accounts; loans and finance products, such as business loans, equipment and vehicle finance, and dealer finance; merchant and payment products; and financial market and international services.It also offers Internet and mobile banking services. The company was founded in 1874 and is headquartered in Newstead, Australia.

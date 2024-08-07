@@ -1,7 +1,0 @@
-Ticker: CHC
-            Name: Charter Hall Group (ASX: CHC)
-            Founded: 1991
-            Sector: Real Estate
-            Industry: Real Estate - Diversified
-            CEO: David Harrison
-            Description: Charter Hall is one of Australia’s leading fully integrated property investment and funds management groups.We use our expertise to access, deploy, manage and invest equity to create value and generate superior returns for our investor customers.We’ve curated a diverse portfolio of high-quality properties across our core sectors – Office, Industrial &amp; Logistics, Retail and Social Infrastructure.With partnerships and financial discipline at the heart of our approach, we create and invest in places that support our customers, people and communities grow.
