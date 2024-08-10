@@ -1,0 +1,7 @@
+Ticker: QBE
+            Name: QBE Insurance Group Limited (ASX: QBE)
+            Founded: 1886
+            Sector: Financials
+            Industry: Insurance - Property & Casualty
+            CEO: Andrew Horton
+            Description: QBE Insurance Group Limited engages in underwriting general insurance and reinsurance risks in the Australia Pacific, North America, and internationally.It offers range of commercial, personal, and specialty products, such as commercial and domestic property, agriculture, public/product liability, motor and motor casualty, professional indemnity, workers' compensation, accident, health, financial and credit, and other insurance products, as well as marine, energy and aviation insurance products, and risk management solutions.The company also manages Lloyd’s syndicates, as well as provides investment management services. QBE Insurance Group Limited was founded in 1886 and is headquartered in Sydney, Australia.

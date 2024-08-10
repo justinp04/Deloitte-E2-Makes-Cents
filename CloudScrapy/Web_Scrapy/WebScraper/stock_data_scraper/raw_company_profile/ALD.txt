@@ -1,0 +1,7 @@
+Ticker: ALD
+            Name: Ampol Limited (ASX: ALD)
+            Founded: 1900
+            Sector: Energy
+            Industry: Oil & Gas Refining & Marketing
+            CEO: Matthew Halliday
+            Description: Ampol Limited purchases, refines, distributes, and markets petroleum products in Australia, New Zealand, Singapore, and the United States.The company operates through Convenience Retail, Z Energy, and Fuels and Infrastructure segments. The Convenience Retail segment sells fuels through Ampol’s network of stores.The Fuels and Infrastructure segment wholesales fuels and lubricant supplies. The Z Energy segment distributes fuel in the New Zealand market.It distributes its products through depots, terminals, pipelines, and service station sites. The company sells fuels to various customers in defense, mining, transport, marine, agriculture, aviation, and other commercial and industrial sectors.The company was formerly known as Caltex Australia Limited and changed its name to Ampol Limited in May 2020.The company was founded in 1900 and is headquartered in Alexandria, Australia.

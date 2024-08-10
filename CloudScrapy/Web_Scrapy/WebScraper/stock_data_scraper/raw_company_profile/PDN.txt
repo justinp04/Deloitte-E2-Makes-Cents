@@ -1,0 +1,7 @@
+Ticker: PDN
+            Name: Paladin Energy Ltd (ASX: PDN)
+            Founded: 1993
+            Sector: Energy
+            Industry: Uranium
+            CEO: Ian Purdy
+            Description: Paladin Energy Ltd develops, explores for, owns, and operates uranium mines in Australia, Canada, and Africa.The company operates through Exploration, Namibia, and Australia segments. Its flagship project is the Langer Heinrich mine located in the Namib Desert in Namibia.The company was formerly known as Paladin Resources Ltd and changed its name to Paladin Energy Limited in November 2007.Paladin Energy Ltd was incorporated in 1993 and is headquartered in Perth, Australia.

@@ -1,0 +1,7 @@
+Ticker: CTD
+            Name: Corporate Travel Management Limited (ASX: CTD)
+            Founded: 1994
+            Sector: Consumer Discretionary
+            Industry: Travel Services
+            CEO: Jamie Pherous
+            Description: Corporate Travel Management Limited, a travel management solutions company, manages the procurement and delivery of travel services.It operates through four segments: Australia and New Zealand, North America, Asia, and Europe. The company provides corporate and event travel management, leisure travel, loyalty travel, and wholesale travel services, as well as accommodation agency services.Corporate Travel Management Limited was founded in 1994 and is based in Brisbane, Australia.
