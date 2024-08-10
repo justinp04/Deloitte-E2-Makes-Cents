@@ -1,0 +1,7 @@
+Ticker: MGR
+            Name: Mirvac Group (ASX: MGR)
+            Founded: 1972
+            Sector: Real Estate
+            Industry: REIT - Diversified
+            CEO: Campbell Hanan
+            Description: Founded in 1972, Mirvac is an Australian Securities Exchange (ASX) top 50 company with an integrated asset creation and curation capability.For more than 50 years, we’ve dedicated ourselves to creating extraordinary urban places and experiences.We have over $35 billion of assets under management, together with a $12 billion commercial and mixed use development pipeline, and a $17 billion residential development pipeline, enabling us to deliver innovative and high-quality property for our customers, while driving long-term value for our securityholders.

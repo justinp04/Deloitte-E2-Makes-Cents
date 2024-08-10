@@ -1,0 +1,7 @@
+Ticker: SHL
+            Name: Sonic Healthcare Limited (ASX: SHL)
+            Founded: 1934
+            Sector: Healthcare
+            Industry: Diagnostics & Research
+            CEO: Colin Goldschmidt
+            Description: Sonic Healthcare Limited offers medical diagnostic services to medical practitioners, hospitals, community health services, and their collective patients.The company provides laboratory medicine/pathology testing services, such as biochemistry, cytopathology, genetics, haematology, histopathology, immunoserology, microbiology, molecular pathology, prenatal testing, toxicology, and ancillary functions; and radiology services, including magnetic resonance imaging, computed tomography (CT), ultrasound, X-ray, mammography, nuclear medicine, PET CT, interventional procedures, and bone mineral densitometry.It offers primary care medical services comprising general practice clinics, occupational health services, skin cancer clinics, after-hours general practice services, general practice IT solutions, and community-based healthcare services.The company operates in Australia, the United Kingdom, Ireland, the United States, Germany, Switzerland, New Zealand, Belgium, and internationally.Sonic Healthcare Limited was incorporated in 1934 and is headquartered in Sydney, Australia.

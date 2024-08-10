@@ -1,0 +1,7 @@
+Ticker: LLC
+            Name: Lendlease Group (ASX: LLC)
+            Founded: 1958
+            Sector: Real Estate
+            Industry: Real Estate - Diversified
+            CEO: Anthony Lombardo
+            Description: Lendlease Group operates as an integrated real estate and investment company in Australia, Asia, Europe, and the Americas.It operates through Development, Construction, and Investments segments. The Development segment develops inner-city mixed-use developments, apartments, communities, retirement, retail, commercial assets, and social and economic infrastructure.The Construction segment provides project management, design, and construction services primarily in the commercial, residential, mixed use, defense, and social infrastructure sectors.The Investments segment owns and/or manages investments, including property and infrastructure co-investments, retirement livings, and the U.S. military housings.The company was founded in 1958 and is headquartered in Barangaroo, Australia.

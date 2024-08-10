@@ -1,0 +1,23 @@
+Can Computershare Limited (ASX:CPU) Maintain Its Strong Returns? 2023-10-28T23:27:22.000Z
+
+One of the best investments we can make is in our own knowledge and skill set. With that in mind, this article will work through how we can use Return On Equity (ROE) to better understand a business. We'll use ROE to examine Computershare Limited (
+), by way of a worked example.
+Return on equity or ROE is a key measure used to assess how efficiently a company's management is utilizing the company's capital. In other words, it is a profitability ratio which measures the rate of return on the capital provided by the company's shareholders.
+Return on Equity = Net Profit (from continuing operations) ÷ Shareholders' Equity
+So, based on the above formula, the ROE for Computershare is:
+21% = US$445m ÷ US$2.1b (Based on the trailing twelve months to June 2023).
+The 'return' refers to a company's earnings over the last year. Another way to think of that is that for every A$1 worth of equity, the company was able to earn A$0.21 in profit.
+Arguably the easiest way to assess company's ROE is to compare it with the average in its industry. However, this method is only useful as a rough check, because companies do differ quite a bit within the same industry classification. As is clear from the image below, Computershare has a better ROE than the average (16%) in the 
+.
+That's what we like to see. Bear in mind, a high ROE doesn't always mean superior financial performance. Aside from changes in net income, a high ROE can also be the outcome of high debt relative to equity, which indicates risk. 
+should have the 2 risks we have identified for Computershare.
+Companies usually need to invest money to grow their profits. That cash can come from retained earnings, issuing new shares (equity), or debt. In the first and second cases, the ROE will reflect this use of cash for investment in the business. In the latter case, the use of debt will improve the returns, but will not change the equity. In this manner the use of debt will boost ROE, even though the core economics of the business stay the same.
+Computershare does use a high amount of debt to increase returns. It has a debt to equity ratio of 1.32. While its ROE is respectable, it is worth keeping in mind that there is usually a limit as to how much debt a company can use. Debt increases risk and reduces options for the company in the future, so you generally want to see some good returns from using it.
+Return on equity is a useful indicator of the ability of a business to generate profits and return them to shareholders. In our books, the highest quality companies have high return on equity, despite low debt. If two companies have the same ROE, then I would generally prefer the one with less debt.
+But when a business is high quality, the market often bids it up to a price that reflects this. It is important to consider other factors, such as future profit growth -- and how much investment is required going forward. So you might want to take a peek at this 
+.
+Of course, 
+ So take a peek at this 
+ 
+================================================================================
+

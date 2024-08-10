@@ -1,0 +1,7 @@
+Ticker: GQG
+            Name: GQG Partners Inc. (ASX: GQG)
+            Founded: 2016
+            Sector: Financials
+            Industry: Asset Management
+            CEO: Timothy Carver
+            Description: GQG Partners Inc. operates as a boutique asset management company worldwide.It manages equity portfolios for investors, including insurance funds, pension/superannuation funds, sovereign wealth funds, ultra high net worth investors, sub advised funds, financial advisors, wealth management administration platforms, private banks, and other discretionary wealth managers.The company was founded in 2016 and is headquartered in Fort Lauderdale, Florida. GQG Partners Inc. is a subsidiary of QVFT LLC.

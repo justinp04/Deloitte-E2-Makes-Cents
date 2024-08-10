@@ -1,0 +1,7 @@
+Ticker: SEK
+            Name: SEEK Limited (ASX: SEK)
+            Founded: 1997
+            Sector: Communication Services
+            Industry: Internet Content & Information
+            CEO: Ian Narev
+            Description: SEEK Limited, together with its subsidiaries, engages in the provision of online employment marketplace services in Australia, South East Asia, Brazil, New Zealand, Mexico, the United Kingdom, Europe, and internationally.It operates through ANZ, SEEK Asia, Brazil Online, OCC, Platform support, Portfolio investments, and SEEK Growth Fund segments.The company offers Jora, an online employment marketplace; JobAdder, a talent acquisition suite that simplifies the hiring process for recruiter and corporate talent acquisition teams; and Certsy, a platform to securely verify and share work credentials, and to complete compliance checks.It also owns and manages seek, JobsDB, JobStreet, catho, and occmundial platforms. In addition, the company holds a portfolio of investments in the human capital management industry.SEEK Limited was incorporated in 1997 and is headquartered in Melbourne, Australia.

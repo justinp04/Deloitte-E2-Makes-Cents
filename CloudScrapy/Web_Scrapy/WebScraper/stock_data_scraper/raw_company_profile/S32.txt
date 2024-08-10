@@ -1,0 +1,7 @@
+Ticker: S32
+            Name: South32 Limited (ASX: S32)
+            Founded: 2000
+            Sector: Materials
+            Industry: Other Industrial Metals & Mining
+            CEO: Graham Kerr
+            Description: South32 Limited operates as a diversified metals and mining company in Australia, India, China, Japan, the Middle East, Mozambique, the Netherlands, Brazil, Russia, South Africa, South Korea, the United States, and internationally.The company operates through Worsley Alumina, Brazil Alumina, Brazil Aluminium, Hillside Aluminium, Mozal Aluminium, Sierra Gorda, Cannington, Hermosa, Cerro Matoso, Illawarra Metallurgical Coal, Australia Manganese, and South Africa Manganese segments.It has a portfolio of assets producing bauxite, alumina, aluminum, copper, silver, lead, zinc, nickel, metallurgical coal, manganese, ferronickel, and other base metals.The company also exports its products. South32 Limited was incorporated in 2000 and is headquartered in Perth, Australia.
