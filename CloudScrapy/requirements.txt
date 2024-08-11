@@ -7,3 +7,4 @@ requests
 yfinance
 azure-storage-blob
 scrapy
+tabulate

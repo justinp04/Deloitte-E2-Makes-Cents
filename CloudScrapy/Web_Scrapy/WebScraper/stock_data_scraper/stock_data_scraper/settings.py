@@ -14,7 +14,7 @@ NEWSPIDER_MODULE = "stock_data_scraper.spiders"
 
 # Enable the financial statements pipeline
 ITEM_PIPELINES = {
-    'stock_data_scraper.pipelines.StockDataScraperPipeline': 1,
+    'stock_data_scraper.pipelines.StockDataScraperPipeline': 300,
 }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
