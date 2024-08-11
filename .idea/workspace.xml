@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d6e193f-1dd1-416f-b7dd-8fa770970de2" name="Changes" comment="Company profile cron job" />
+    <list default="true" id="2d6e193f-1dd1-416f-b7dd-8fa770970de2" name="Changes" comment="Company profile cron job">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudScrapy/scraped_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudScrapy/scraped_stock.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="web_scrap_data" />
+        <entry key="$PROJECT_DIR$" value="auto_scrape_data" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +33,7 @@
   "keyToString": {
     "Python.FMP_yFinance_full_quotes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "auto__scrape__data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -199,6 +203,7 @@
       <workItem from="1722943770913" duration="6365000" />
       <workItem from="1722954099849" duration="7921000" />
       <workItem from="1723011730775" duration="4266000" />
+      <workItem from="1723028829959" duration="6948000" />
     </task>
     <task id="LOCAL-00001" summary="Update full quotes 6/8/2024">
       <option name="closed" value="true" />
