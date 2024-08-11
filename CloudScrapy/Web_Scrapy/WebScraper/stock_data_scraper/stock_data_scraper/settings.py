@@ -13,9 +13,9 @@ SPIDER_MODULES = ["stock_data_scraper.spiders"]
 NEWSPIDER_MODULE = "stock_data_scraper.spiders"
 
 # Enable the financial statements pipeline
-ITEM_PIPELINES = {
-    'stock_data_scraper.pipelines.StockDataScraperPipeline': 300,
-}
+# ITEM_PIPELINES = {
+#     'stock_data_scraper.pipelines.StockDataScraperPipeline': 1,
+# }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "stock_data_scraper (+http://www.yourdomain.com)"
