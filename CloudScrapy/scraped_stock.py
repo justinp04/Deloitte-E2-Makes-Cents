@@ -2,8 +2,9 @@ import azure.functions as func
 import logging
 
 from Web_Scrapy.WebScraper.stock_data_scraper.stock_data_scraper.spiders.company_profile import StockSpider as CompanyProfileSpider
-from Web_Scrapy.WebScraper.stock_data_scraper.stock_data_scraper.spiders.company_profile import StockSpider as StockAnalysisSpider
+from Web_Scrapy.WebScraper.stock_data_scraper.stock_data_scraper.spiders.stock_analysis import StockSpider as StockAnalysisSpider
 from Web_Scrapy.WebScraper.stock_news.stock_news.spiders.stocknews_yahoofinance import StockSpider as StockNews
+
 from scrapy.crawler import CrawlerProcess
 
 scraped_stock = func.Blueprint()
@@ -14,7 +15,7 @@ def ScrapedStockData(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     process = CrawlerProcess()
-    process.crawl(CompanyProfileSpider)
+    # process.crawl(CompanyProfileSpider)
     process.crawl(StockAnalysisSpider)
     # process.crawl(StockNews)
     process.start()

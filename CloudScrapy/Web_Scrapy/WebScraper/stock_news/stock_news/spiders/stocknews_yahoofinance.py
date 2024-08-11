@@ -55,7 +55,7 @@ class StockSpider(scrapy.Spider):
         if title and time:
             content = title + " " + time + '\n\n' + '\n'.join(paragraphs)
             company_name = response.meta['company_name']
-            file_name = f'{company_name}.txt'
+            file_name = f'{company_name}-news.txt'
             
             # Save content to Azure Blob Storage
             self.save_to_blob(file_name, content)
@@ -79,4 +79,4 @@ class StockSpider(scrapy.Spider):
 
         # Upload the content to the blob
         blob_client.upload_blob(content_bytes, overwrite=True)
-        print(f'Saved news content for {file_name} to Blob Storage')
+        print(f'Saved news content for {file_name}-news.txt to Blob Storage')
