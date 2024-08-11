@@ -1,7 +1,0 @@
-Ticker: REH
-            Name: Reece Limited (ASX: REH)
-            Founded: 1919
-            Sector: Industrials
-            Industry: Industrial Distribution
-            CEO: Peter Wilson
-            Description: Reece Limited engages in the distribution of plumbing, waterworks, bathroom, heating, ventilation, air-conditioning, and refrigeration products to commercial and residential customers in Australia, the United States, and New Zealand.It also distributes irrigation and pools, and kitchen products. The company serves customers in the trade, retail, commercial, and infrastructure markets.The company was formerly known as Reece Australia Limited and changed its name to Reece Limited in November 2015.Reece Limited was founded in 1919 and is based in Cremorne, Australia.

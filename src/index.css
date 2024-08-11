@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
 :root {
   --background-color-light: #FFFFFF;
   --mc-green: #BAF43E;
@@ -21,7 +23,7 @@ code {
 
 /* Font Sizes */
 .site-title {
-  font-size: 50x;
+  font-size: 50px;
   font-weight: bold;
 }
 .main-title {
@@ -269,4 +271,3 @@ code {
 }
 
 
-@import "~bootstrap/dist/css/bootstrap.css";

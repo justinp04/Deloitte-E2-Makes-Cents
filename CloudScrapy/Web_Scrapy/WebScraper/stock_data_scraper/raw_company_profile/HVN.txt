@@ -1,7 +1,0 @@
-Ticker: HVN
-            Name: Harvey Norman Holdings Limited (ASX: HVN)
-            Founded: 1982
-            Sector: Consumer Discretionary
-            Industry: Specialty Retail
-            CEO: Kay Lesley Page
-            Description: Harvey Norman Holdings Limited engages in the integrated retail, franchise, property, and digital system businesses.It franchises and sells products in various categories, including electrical goods, furniture, computerized communications, bedding and Manchester, kitchen and small appliances, bathroom and tiles, and carpets and floorings.It operates complexes under the Harvey Norman, Domayne, and Joyce Mayne brands in Australia; and company-operated stores under the Harvey Norman brand in New Zealand, Singapore, Malaysia, Slovenia, Croatia, Ireland, and Northern Ireland.It is also involved in the property investment and media placement activities; acts as a lessor of premises to Harvey Norman, Domayne, and Joyce Mayne franchisees and other third parties, as well as retail properties; development and sale of properties; and provision of consumer finance and other commercial loans and advances.The company was founded in 1982 and is headquartered in Homebush West, Australia.

@@ -1,7 +1,0 @@
-Ticker: NEU
-            Name: Neuren Pharmaceuticals Limited (ASX: NEU)
-            Founded: 2001
-            Sector: Healthcare
-            Industry: Biotechnology
-            CEO: Jonathan Pilcher
-            Description: Neuren Pharmaceuticals Limited, a biopharmaceutical company, develops drugs for the treatment of neurological disorders.It develops and commercializes DAYBUE (trofinetide), which has been registered to treat Rett syndrome in adults and pediatric patients 2 years of age and older, as well as in Phase 2 clinical trial to treat Fragile X syndrome.The company also develops NNZ-2591, which has completed Phase 2 clinical trial for the treatment of Phelan-McDermid, and in Phase 2 clinical trial for the treatment of Angelman, Pitt Hopkins, and Prader-Will syndromes.In addition, it provides development services; and holds loan funded shares. The company was incorporated in 2001 and is based in Camberwell, Australia.

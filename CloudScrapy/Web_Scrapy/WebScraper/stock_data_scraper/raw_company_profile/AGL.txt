@@ -1,7 +1,0 @@
-Ticker: AGL
-            Name: AGL Energy Limited (ASX: AGL)
-            Founded: 1837
-            Sector: Utilities
-            Industry: Utilities - Independent Power Producers
-            CEO: Damien Nicks
-            Description: AGL Energy Limited supplies energy and other essential services to residential, small and large businesses, and wholesale customers in Australia.It operates through three segments: Customer Markets, Integrated Energy, and Investments. The company engages in retailing of electricity, gas, broadband, mobile, voice, solar, and energy products and services; and operates power generation portfolio and other assets including coal, gas and renewable generation, natural gas storage and production, and development projects.It also offers renewable energy schemes; and controls dispatch of owned and contracted generation assets, gas offtake agreements, and associated portfolio of energy hedging products.In addition, the company offers coal and gas-fired generation; and renewable energy sources, such as wind, hydro and solar, batteries and other firming technology; and gas production and storage assets.AGL Energy Limited was founded in 1837 and is based in Sydney, Australia.

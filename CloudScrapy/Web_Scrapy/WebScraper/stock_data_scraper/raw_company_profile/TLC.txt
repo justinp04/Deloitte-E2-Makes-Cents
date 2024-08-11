@@ -1,7 +1,0 @@
-Ticker: TLC
-            Name: The Lottery Corporation Limited (ASX: TLC)
-            Founded: 1881
-            Sector: Consumer Discretionary
-            Industry: Gambling
-            CEO: Sue van der Merwe
-            Description: The Lottery Corporation Limited engages in lottery and keno businesses in Australia. It operates under the The Lott and Keno brand names. The company was founded in 1881 and is based in Brisbane, Australia.

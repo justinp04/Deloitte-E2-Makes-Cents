@@ -1,7 +1,0 @@
-Ticker: DYL
-            Name: Deep Yellow Limited (ASX: DYL)
-            Founded: 1985
-            Sector: Energy
-            Industry: Uranium
-            CEO: John Borshoff
-            Description: Deep Yellow Limited, together with its subsidiaries, operates as a uranium exploration company in Namibia.The company holds a 100% interest in the Reptile project, which covers an area of 896 square kilometers (km2); 65% interest in the Nova Joint Venture covering an area of 599 km2; and 85% interest in the Yellow Dune Joint Venture covering an area of 190 km2.It is involved in the iron ore exploration and property investment businesses. The company was incorporated in 1985 and is headquartered in Subiaco, Australia.

@@ -1,7 +1,0 @@
-Ticker: EML
-            Name: EML Payments Limited (ASX: EML)
-            Founded: 2003
-            Sector: Technology
-            Industry: Software - Infrastructure
-            CEO: Ronald Hynes
-            Description: EML Payments Limited provides payment solutions platform in Australia, Europe, and North America.It operates in three segments: General Purpose Reloadable, Gift and Incentives, and Digital Payments.The General Purpose Reloadable segment offers reloadable cards to various industries, such as government, salary packaging, gaming, and digital banking.This segment also provides issuance, processing, and program management services. The Gift and Incentives segment provides single load gift cards for shopping malls and incentive programs.The Digital Payments segment offers payment options for open banking, buy-now pay-later providers, and bill payment providers.The company also offers banking, credit, and disbursements services, as well as earned wage access, gifts, incentives and rewards, open banking, and forex payment solutions.The company was formerly known as Emerchants Limited. EML Payments Limited was incorporated in 2003 and is based in Brisbane, Australia.

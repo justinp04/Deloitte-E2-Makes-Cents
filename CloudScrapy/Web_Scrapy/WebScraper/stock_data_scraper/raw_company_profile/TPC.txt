@@ -1,7 +1,0 @@
-Ticker: TPC
-            Name: TPC Consolidated Limited (ASX: TPC)
-            Founded: 1996
-            Sector: Utilities
-            Industry: Utilities - Diversified
-            CEO: Chiao-Heng Huang
-            Description: TPC Consolidated Limited provides retail electricity and gas services to residential and business customers in Australia.The company was formerly known as Tel. Pacific Limited and changed its name to TPC Consolidated Limited in December 2015.TPC Consolidated Limited was incorporated in 1996 and is based in Sydney, Australia.

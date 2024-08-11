@@ -10,9 +10,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
+import {SignOutButton} from "../../authentication/SignOutButton";
+import {SignInButton} from "../../authentication/SignInButton";
+import {useIsAuthenticated} from "@azure/msal-react";
 
 function NavbarComponent({ isSignedIn, setIsSignedIn }) {
   const navigate = useNavigate();
+  const isAuthenticated = useIsAuthenticated();
 
   const handleSignOut = () => {
     setIsSignedIn(false);
@@ -31,7 +35,7 @@ function NavbarComponent({ isSignedIn, setIsSignedIn }) {
             <Nav.Link as={Link} to="/about" className="fw-bold me-3 ms-3">
               About Us
             </Nav.Link>
-            {isSignedIn ? (
+            {isAuthenticated ? (
               <>
                 <Nav.Link as={Link} to="/stock-analysis" className="fw-bold me-3 ms-3">
                   Stock Analysis
@@ -45,18 +49,10 @@ function NavbarComponent({ isSignedIn, setIsSignedIn }) {
                 <Nav.Link as={Link} to="/settings" className="fw-bold me-3 ms-3">
                   <img src="./images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="60" height="60" />
                 </Nav.Link>
-                <Nav.Link
-                  as="button"
-                  className="btn btn-link nav-link fw-bold me-3 ms-3"
-                  onClick={handleSignOut}
-                >
-                  Sign Out
-                </Nav.Link>
+                <SignOutButton/>
               </>
             ) : (
-              <Nav.Link as={Link} to="/signin" className="fw-bold">
-                <button className="green-btn">Sign in</button>
-              </Nav.Link>
+              <SignInButton/>
             )}
           </Nav>
         </Navbar.Collapse>

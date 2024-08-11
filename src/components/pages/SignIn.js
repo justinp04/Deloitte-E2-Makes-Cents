@@ -20,8 +20,6 @@ function SignIn({ setIsSignedIn }) {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const isAuthenticated = useIsAuthenticated();
-
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log('Form Submitted');
@@ -44,7 +42,6 @@ function SignIn({ setIsSignedIn }) {
     <div className='container'>
       <h1 className="text-center mb-0 page-title">SIGN IN</h1>
       <div className="d-flex justify-content-center align-items-center mt-5">
-      {isAuthenticated ? <SignOutButton /> : <SignInButton />}
         <form onSubmit={handleSubmit} className="w-100" style={{ maxWidth: '400px' }}>
              {/* Email input */}
             <TextInputBox

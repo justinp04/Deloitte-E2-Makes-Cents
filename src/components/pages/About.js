@@ -9,8 +9,17 @@
 import React, {Component, startTransition} from "react";
 
 import { Link } from "react-router-dom";
+import { useMsal } from "@azure/msal-react";
+import { loginRequest } from "../../authentication/authConfig";
 
 function About() {
+    const { instance } = useMsal();
+
+    const handleLogin = () => {
+        instance.loginPopup(loginRequest).catch((e) => {
+            console.log(e);
+        });
+    };
     return (
         <div className="container">
             <div className="text-center">
@@ -27,29 +36,32 @@ function About() {
                 <div className="row justify-content-center">
                     <div className="col-md-4 justify-content-center">
                         <div className="feature-box">
-                            <img src="/images/increase.jpg" alt="Feature Icon" />
+                            <img src="/images/increase.jpg" alt="Feature Icon"/>
                             <p>Analysing past stock performance to present accurate futures</p>
                         </div>
                         <div className="feature-box">
-                            <img src="/images/lightbulb.jpg" alt="Feature Icon" />
+                            <img src="/images/lightbulb.jpg" alt="Feature Icon"/>
                             <p>Simplifying complex financial information for easy-to-understand data</p>
                         </div>
                     </div>
                     <div className="col-md-4 justify-content-center">
                         <div className="feature-box">
-                            <img src="/images/newspaper.jpg" alt="Feature Icon" />
+                            <img src="/images/newspaper.jpg" alt="Feature Icon"/>
                             <p>Monitoring social media sentiment for real-time insights</p>
                         </div>
                         <div className="feature-box">
-                            <img src="/images/person.jpg" alt="Feature Icon" />
+                            <img src="/images/person.jpg" alt="Feature Icon"/>
                             <p>Providing tailored recommendations just for you</p>
                         </div>
                     </div>
                 </div>
 
-                <Link to="/signin">
-                    <button className="btn green-btn my-1 mt-2 mb-5">Create An Account</button>
-                </Link>
+                <button
+                    className="green-btn"
+                    onClick={() => handleLogin()}
+                >
+                    Create An Account
+                </button>
 
             </div>
         </div>

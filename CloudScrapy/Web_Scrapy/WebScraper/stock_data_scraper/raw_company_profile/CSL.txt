@@ -1,7 +1,0 @@
-Ticker: CSL
-            Name: CSL Limited (ASX: CSL)
-            Founded: 1916
-            Sector: Healthcare
-            Industry: Biotechnology
-            CEO: Paul McKenzie
-            Description: CSL Limited researches, develops, manufactures, markets, and distributes biopharmaceutical and vaccines in Australia, the United States, Germany, the United Kingdom, Switzerland, China, and internationally.The company operates through CSL Behring, CSL Seqirus, and CSL Vifor segments. The CSL Behring segment offers plasma products, gene therapies, and recombinants.The CSL Seqirus segment provides influenza related products and pandemic services to governments. The CSL Vifor segment offers products in the therapeutic areas of iron deficiency and nephrology.The company also licenses CSL intellectual property. CSL Limited was founded in 1916 and is headquartered in Melbourne, Australia.

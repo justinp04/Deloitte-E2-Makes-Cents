@@ -1,7 +1,0 @@
-Ticker: FMG
-            Name: Fortescue Ltd (ASX: FMG)
-            Founded: 1983
-            Sector: Materials
-            Industry: Other Industrial Metals & Mining
-            CEO: Dino Otranto
-            Description: Fortescue Ltd engages in the exploration, development, production, processing, and sale of iron ore in Australia, China, and internationally.It explores for copper, gold, and lithium deposits; and rare earth elements. The company owns and operates the Chichester Hub that includes the Cloudbreak and Christmas Creek mines located in the Chichester ranges; and the Solomon Hub comprising the Firetail, Kings Valley, and Queens Valley mines located in the Hamersley ranges of Pilbara, Western Australia.It also develops and produces the Eliwana mine situated in the Pilbara region of Western Australia. In addition, the company holds a portfolio of properties situated in Argentina, Peru, Chile, and Brazil, as well as Portugal and Kazakhstan.Further, it provides port towage services; owns and operates rail and port facilities; and focuses on producing green energy and green hydrogen, including derivatives comprising green ammonia.The company was formerly known as Fortescue Metals Group Limited and changed its name to Fortescue Ltd in November 2023.Fortescue Ltd was incorporated in 1983 and is headquartered in East Perth, Australia.

@@ -1,7 +1,0 @@
-Ticker: AZJ
-            Name: Aurizon Holdings Limited (ASX: AZJ)
-            Founded: 2010
-            Sector: Industrials
-            Industry: Railroads
-            CEO: Andrew Harding
-            Description: Aurizon Holdings Limited, through its subsidiaries, operates as a rail freight operator in Australia.The company operates through Network, Coal, Bulk, and Other segments. It transports various commodities, including mining, agricultural, industrial, and retail products; and retail goods and groceries across small and big towns, and cities, as well as coal and iron ore.The company also operates and manages the Central Queensland Coal Network that consists of 2,670 kilometers of track network; and provides various specialist services, such as rail design, engineering, construction, management, and maintenance, as well as supply chain solutions.It serves miners, primary producers, and the industry. The company was formerly known as QR National Limited and changed its name to Aurizon Holdings Limited in December 2012.The company was incorporated in 2010 and is headquartered in Fortitude Valley, Australia.

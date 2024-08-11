@@ -1,7 +1,0 @@
-Ticker: WC8
-            Name: Wildcat Resources Limited (ASX: WC8)
-            Founded: 2001
-            Sector: Materials
-            Industry: Gold
-            CEO: Ajanth Shiran Saverimutto
-            Description: Wildcat Resources Limited operates as a mineral exploration company in Australia.It explores for gold, lithium, copper, and nickel deposits. The company’s projects include the Mt Adrah project, which covers an area of approximately 493 square kilometers located in the Lachlan Fold located in New South Wales; the Bolt Cutter Gold project that comprises two exploration licenses covering 446 square kilometers of the Mallina Basin located in the Pilbara region of Western Australia.It also holds 100% interests in the Bolt Cutter Lithium project, which covers an area of approximately 470 square kilometers located in the Mallina Province, Pilbara; and the Tabba Tabba Lithium-Tantalum project located in the Pilbara.The company was formerly known as Fraser Range Metals Group Limited and changed its name to Wildcat Resources Limited in July 2020.Wildcat Resources Limited was incorporated in 2001 and is based in West Perth, Australia.
