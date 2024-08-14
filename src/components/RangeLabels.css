@@ -1,0 +1,8 @@
+.range-number {
+    font-size: smaller;
+  }
+
+.range-label {
+    font-size: small;
+    color: var(--mc-purple)
+  }
