@@ -10,6 +10,8 @@ import '../TextInputBox.css';
 
 const AccountInfo = () => {
   const [isEditMode, setIsEditMode] = useState(false);
+
+  // Placeholder text for user information. Link with mySQL.
   const [formData, setFormData] = useState({
     firstName: 'Joe',
     lastName: 'Bloggs',

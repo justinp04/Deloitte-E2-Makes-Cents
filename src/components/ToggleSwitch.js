@@ -1,6 +1,10 @@
+/************************************************************************************************
+ * Purpose: Defining Toggle Switch
+ * Fix: 
+ ************************************************************************************************/
 import React from 'react';
 
-function ToggleSwitch({ checked, onChange, id }) {
+const ToggleSwitch = ({ checked, onChange, id }) => {
   return (
     <div className="form-check form-switch ms-3">
       <input
@@ -14,5 +18,4 @@ function ToggleSwitch({ checked, onChange, id }) {
     </div>
   );
 }
-
 export default ToggleSwitch;

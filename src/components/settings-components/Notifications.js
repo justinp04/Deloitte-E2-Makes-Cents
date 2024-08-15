@@ -7,6 +7,7 @@
 import React, { useState } from 'react';
 
 const Notifications = () => {
+
   const [isNewsUpdatesChecked, setIsNewsUpdatesChecked] = useState(true);
   const [isUrgentNewsUpdatesChecked, setIsUrgentNewsUpdatesChecked] = useState(true);
   const [isExploreNewsRecommendationsChecked, setIsExploreNewsRecommendationsChecked] = useState(true);
@@ -14,11 +15,9 @@ const Notifications = () => {
   const handleNewsUpdatesChange = () => {
     setIsNewsUpdatesChecked(!isNewsUpdatesChecked);
   };
-
   const handleUrgentNewsUpdatesChange = () => {
     setIsUrgentNewsUpdatesChecked(!isUrgentNewsUpdatesChecked);
   };
-
   const handleExploreNewsRecommendationsChange = () => {
     setIsExploreNewsRecommendationsChecked(!isExploreNewsRecommendationsChecked);
   };

@@ -7,7 +7,7 @@
 
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Nav, Navbar, Container, Dropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import './NavbarComponent.css';
@@ -40,12 +40,36 @@ function NavbarComponent({ isSignedIn, setIsSignedIn }) {
                 <Nav.Link as={Link} to="/news-feed" className="fw-bold me-3 ms-3">
                   News Feed
                 </Nav.Link>
-                <Nav.Link as={Link} to="/notifications" className="fw-bold me-3 ms-3">
+                {/* <Nav.Link as={Link} to="/notifications" className="fw-bold me-3 ms-3">
                   <FontAwesomeIcon icon={faBell} size="xl" />
-                </Nav.Link>
-                <Nav.Link as={Link} to="/settings" className="fw-bold me-3 ms-3">
+                </Nav.Link> */}
+                <Dropdown align="end" className="me-3 ms-3">
+                  <Dropdown.Toggle aa={Nav.Link} className='fw-bold p-0' style={{ border: 'none', backgroundColor: 'transparent' }}>
+                    <FontAwesomeIcon icon={faBell} size="xl" style={{ color: '#555' }} />
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item>Notification 1</Dropdown.Item>
+                    <Dropdown.Item>Notification 2</Dropdown.Item>
+                    <Dropdown.Item>Notification 3</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+                {/* <Nav.Link as={Link} to="/settings" className="fw-bold me-3 ms-3">
                   <img src="./images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="60" height="60" />
-                </Nav.Link>
+                </Nav.Link> */}
+                <Dropdown align="end" className="me-3 ms-3">
+                  <Dropdown.Toggle aa={Nav.Link} className='fw-bold p-0' style={{ border: 'none', backgroundColor: 'transparent' }}>
+                    <img src="./images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="60" height="60" />
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item as={Link} to="/settings/account-info">Account Information</Dropdown.Item>
+                    <Dropdown.Item as={Link} to="/settings/update-profile">Update Profile Insights</Dropdown.Item>
+                    <Dropdown.Item as={Link} to="/settings/notifications">Notifications Settings</Dropdown.Item>
+                    <Dropdown.Item as={Link} to="/settings/user-guide">User Guide</Dropdown.Item>
+                    <Dropdown.Item>Sign Out</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
                 <Nav.Link
                   as="button"
                   className="btn btn-link nav-link fw-bold me-3 ms-3"

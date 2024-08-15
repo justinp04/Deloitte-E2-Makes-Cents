@@ -23,6 +23,7 @@ const SASidebar = () => {
             title="Search Results" 
             items={["Result 1", "Result 2", "Result 3"]}
           />
+          
         </div>
       );
 }
