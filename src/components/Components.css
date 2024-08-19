@@ -1,7 +1,6 @@
 /*********************************
 * CustomSelect.js
 **********************************/
-
     .custom-select {
     position: relative;
     font-family: Arial;
@@ -71,25 +70,160 @@
 /*********************************
 * RangeLabels.js
 **********************************/
+.range-number {
+    font-size: smaller;
+  }
+
+.range-label {
+    font-size: small;
+    color: var(--mc-purple)
+  }
 
 /*********************************
 * RangeQuestion.js
 **********************************/
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;  
+    background: #000;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: var(--mc-green);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--mc-green);
+    cursor: pointer;
+  }
 
 /*********************************
 * SearchBar.js
 **********************************/
+/*Search Bar Styling*/
+.searchbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: none;
+    height: 36px;
+  }
+  .border-no-outline {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .searchbar-icon {
+    color: darkgrey;
+    background-color: white;
+  }
+  .rounded-input-group .form-control {
+    border-radius: 20px 0 0 20px; 
+  }
+  .rounded-right {
+    border-radius: 0 20px 20px 0;
+  }
+  .rounded-input-group .input-group-prepend .input-group-text {
+    border-radius: 20px 0 0 20px;
+  }
+  .center-searchbar{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+  }
+  
 
 /*********************************
 * TextInputBox.js
 **********************************/
+.text-input-box {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+  .text-box-size{
+    width: 400px;
+  }
 
 /*********************************
 * ToggleList.js
 **********************************/
+.toggle-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-list {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .toggle-list li {
+    list-style-type: none;
+    margin-bottom: 5px;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
 
 /*********************************
 * ToggleSwitch.js
 **********************************/
-
+.toggle-list-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .title-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title-text {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .action-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .action-buttons > *:not(:last-child) {
+    margin-right: 10px; /* Add space between the FavoriteButton and ToggleSwitch */
+  }
+  
+  .toggle-list-items {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
 

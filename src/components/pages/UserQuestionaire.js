@@ -7,9 +7,9 @@
  ************************************************************************************************/
 
 import React, { useState } from 'react';
-import './UserQuestionaire.css';
 
 import ProfileInsightsForm from '../ProfileInsightsForm';
+import './UserQuestionaire.css';
 
 function UserQuestionaire() {
     return (

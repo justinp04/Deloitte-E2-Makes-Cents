@@ -4,6 +4,7 @@
  *  - Colour
  ************************************************************************************************/
 import React from 'react';
+
 import SearchBar from '../SearchBar';
 import ToggleList from '../ToggleList';
 

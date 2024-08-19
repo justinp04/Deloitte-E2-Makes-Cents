@@ -3,6 +3,7 @@
  * Fix: 
  ************************************************************************************************/
 import React from 'react';
+
 import '../pages/StockAnalysis.css';
 
 function ChatBox({ message, sender, avatar, senderName }) {

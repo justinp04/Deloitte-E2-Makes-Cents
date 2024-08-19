@@ -1,5 +1,11 @@
+/************************************************************************************************
+ * Purpose: Query bar for user questions to chatbot
+ * Fix: 
+ ************************************************************************************************/
 import React, { useState } from 'react';
+
 import '../pages/StockAnalysis.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 

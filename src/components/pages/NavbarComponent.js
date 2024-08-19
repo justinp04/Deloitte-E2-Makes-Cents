@@ -8,9 +8,11 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Nav, Navbar, Container, Dropdown } from 'react-bootstrap';
+
+import './NavbarComponent.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
-import './NavbarComponent.css';
 
 function NavbarComponent({ isSignedIn, setIsSignedIn }) {
   const navigate = useNavigate();

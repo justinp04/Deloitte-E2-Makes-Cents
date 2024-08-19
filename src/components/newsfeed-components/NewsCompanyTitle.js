@@ -3,8 +3,9 @@
  * Fix: 
  ************************************************************************************************/
 import React from "react";
+
 import '../pages/NewsFeed.css';
-import FilterButton from './FilterButton';
+
 
 const NewsCompanyTitle = () => {
     return (

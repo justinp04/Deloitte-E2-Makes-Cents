@@ -4,7 +4,7 @@
  ************************************************************************************************/
 import React from 'react';
 import PropTypes from 'prop-types';
-import './TextInputBox.css';
+import './Components.css';
 
 const TextInputBox = ({ label, type, id, placeholder, value, onChange, required }) => {
   return (

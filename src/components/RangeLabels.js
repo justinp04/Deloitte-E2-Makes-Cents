@@ -4,7 +4,7 @@
  ************************************************************************************************/
 import React from 'react';
 import PropTypes from 'prop-types';
-import './RangeLabels.css'
+import './Components.css'
 
 const RangeLabels = ({ labels }) => {
   return (
