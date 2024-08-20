@@ -1,12 +1,9 @@
 
 import React, { useState } from 'react';
-
-import './Components.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-
+import './ToggleList.css';
 
 const ToggleList = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);

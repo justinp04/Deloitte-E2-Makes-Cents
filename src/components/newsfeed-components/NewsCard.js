@@ -5,7 +5,6 @@
  *  - 
  ************************************************************************************************/
 import React from 'react';
-
 import '../pages/NewsFeed.css';
 
 const NewsCard = ({ imageSrc, newsTitle, newsInfo, date }) => {

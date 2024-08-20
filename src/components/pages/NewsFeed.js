@@ -25,7 +25,7 @@ function NewsFeed({ isSignedIn }) {
         <div className="d-flex align-items-center">
           <NewsCompanyTitle />
         </div>
-          <div className="d-flex align-items-center justify-content-between me-5">
+          <div className="d-flex align-items-center">
             <h4 className='filter-title'>Most Recent</h4>
             <FilterButton/>
           </div>

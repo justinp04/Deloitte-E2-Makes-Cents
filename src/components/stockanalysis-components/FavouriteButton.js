@@ -4,9 +4,7 @@
  ************************************************************************************************/
 
 import React, { useState } from 'react';
-
 import '../pages/StockAnalysis.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 

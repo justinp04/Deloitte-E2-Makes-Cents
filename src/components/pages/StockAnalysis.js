@@ -4,11 +4,9 @@
  *  - Need to update so that the latest chat is scrolled down to at the bottom
  *  - warning disclaimer, need to work on positioning when window size changes
  *  - when toggles open, it covers chat, need to figure out how to push content down
- *  - fix the blue line placement when the summary is opened
  ************************************************************************************************/
 
 import React, { useState } from 'react';
-
 import SASidebar from '../stockanalysis-components/SASidebar';
 import ToggleList from '../ToggleList';
 import FavoriteButton from '../stockanalysis-components/FavouriteButton';
@@ -37,7 +35,7 @@ function StockAnalysis({ isSignedIn }) {
       </div>
       <div className="content" style={{ paddingTop: '200px' }}>
         <div className="position-fixed" style={{ top: 0, left: '300px',top: '70px', width: 'calc(100% - 300px)', backgroundColor: 'white', zIndex: 1000 }}>
-          <div className="ms-3 mt-3 mb-1 title-container">
+          <div className="ms-3 mt-3 title-container">
             <h1 className="page-header ms-3">Stock Analysis</h1>
           </div>
           <div className="toggle-title-container">
@@ -68,7 +66,6 @@ function StockAnalysis({ isSignedIn }) {
         </div>
         {/* Placeholder text for user-bot chat*/}
         <div style={{marginTop: '50px'}}>
-        <ChatBox message="Howdy! 🤠" sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
           <ChatBox message="What is Bega Cheese Limited's revenue growth trend and profit margins, and how does it indicate stability and growth?" sender="user"  senderName="You" avatar="./images/UserProfile.jpg" />
           <ChatBox message="Bega Cheese Limited's financial performance in FY2023 showed both positive and negative aspects. The company's revenue grew by 12% to $3.4 billion, which is a good sign for potential investors. 
             However, the normalised EBITDA, which stands for Earnings Before Interest, Taxes, Depreciation, and Amortization, decreased by 11% to $160.2 million in the same period, which may raise some concerns about profitability 1 .  
