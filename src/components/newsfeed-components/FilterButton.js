@@ -8,7 +8,7 @@ const FilterButton = () => {
     <button className="filter-button ">
       <span className="filter-text">Filter</span>
       <FontAwesomeIcon icon={faFilter} className="ms-2" />
-      style{{}}
+      {/* style{{}} */}
     </button>
   );
 }
