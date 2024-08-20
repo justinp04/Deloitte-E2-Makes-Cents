@@ -4,7 +4,6 @@
  ************************************************************************************************/
 
 import React from 'react';
-
 import ProfileInsightsForm from '../ProfileInsightsForm';
 
 const UpdateProfileInsights = () => {

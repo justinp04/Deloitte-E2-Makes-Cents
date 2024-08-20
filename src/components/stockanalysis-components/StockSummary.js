@@ -1,14 +1,7 @@
-/************************************************************************************************
- * Purpose: Summary portion for stock in 'Stock Analysis' page
- * Fix: 
- ************************************************************************************************/
 import React, { useState } from 'react';
-
-import '../Components.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-
+import '../ToggleList.css';
 
 const StockSummary = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);

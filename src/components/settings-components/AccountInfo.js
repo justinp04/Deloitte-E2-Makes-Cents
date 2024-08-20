@@ -6,8 +6,7 @@
  ************************************************************************************************/
 
 import React, { useState } from 'react';
-
-import '../Components.css';
+import '../TextInputBox.css';
 
 const AccountInfo = () => {
   const [isEditMode, setIsEditMode] = useState(false);

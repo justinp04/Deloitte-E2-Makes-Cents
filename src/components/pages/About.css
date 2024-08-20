@@ -1,7 +1,8 @@
 /* About Page Styling */
 .feature-box {
     border: 5px solid var(--mc-purple); 
-    border-radius: 15px;
+    border-radius: 15px; /* Rounded corners */
+    text-align: center;
     background-color: #fff;
     padding: 10px;
     margin-bottom: 20px;

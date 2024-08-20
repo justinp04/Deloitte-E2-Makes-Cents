@@ -4,7 +4,7 @@
  ************************************************************************************************/
 import React from 'react';
 import RangeLabels from './RangeLabels'; 
-import './Components.css';
+import './RangeQuestion.css';
 
 const RangeQuestion = ({ label, min, max, value, onChange, labels }) => {
   return (

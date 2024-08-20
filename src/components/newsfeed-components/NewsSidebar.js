@@ -4,16 +4,13 @@
  *  - Colour
  ************************************************************************************************/
 import React, {useState} from 'react';
+import SearchBar from '../SearchBar';
 import { Button, Dropdown, Nav} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
-import SearchBar from '../SearchBar';
-import '../pages/NewsFeed.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-
+import '../pages/NewsFeed.css';
 
 import ToggleList from '../ToggleList';
 
