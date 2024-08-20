@@ -3,8 +3,8 @@
  * Fix:
  *  - Colour
  ************************************************************************************************/
-import React, {useState} from 'react';
-import { Button, Dropdown, Nav} from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Button, Dropdown, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import SearchBar from '../SearchBar';
@@ -20,15 +20,15 @@ import ToggleList from '../ToggleList';
 const NewsSidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
+    const toggleAccordion = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
         <div className="p-0 mt-4">
             <SearchBar placeholder="Search A Stock" />
             {/* <ToggleList /> */}
-            
+
             {/* <Button 
                 className='add-button'>
             </Button> */}
@@ -40,48 +40,48 @@ const NewsSidebar = () => {
                     style={{ border: 'none', backgroundColor: 'transparent' }}
                 >
                     <FontAwesomeIcon
-                    icon={faPlus}
-                    style={{
-                        height: '2rem',
-                        width: '2rem',
-                        color: 'white'
-                    }}
-                    className="align-items-center"
+                        icon={faPlus}
+                        style={{
+                            height: '2rem',
+                            width: '2rem',
+                            color: 'white'
+                        }}
+                        className="align-items-center"
                     />
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
                     <Dropdown.Item as={Link} to="">
-                    Add new current investment
+                        Add new current investment
                     </Dropdown.Item>
                     <Dropdown.Item as={Link} to="">
-                    Add new following
+                        Add new following
                     </Dropdown.Item>
                     <Dropdown.Item as={Link} to="">
-                    Edit List
+                        Edit List
                     </Dropdown.Item>
                 </Dropdown.Menu>
-                </Dropdown>
-        
+            </Dropdown>
+
             <div id="accordion" >
                 <div className="card w-300" style={{ border: 'none', backgroundColor: 'transparent' }}>
                     <div className="card-header w-300" id="headingOne" style={{ border: 'none', backgroundColor: 'transparent' }}>
-                    <h5 className="mb-0">
-                        <button
-                        className="accordion-button d-flex align-items-center"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                        >
-                            <FontAwesomeIcon
-                                icon={isOpen ? faChevronDown : faChevronRight}
-                                className="me-2"
-                            />
-                            <span>Stock Recommendations</span>
-                        </button>
-                    </h5>
+                        <h5 className="mb-0">
+                            <button
+                                className="accordion-button d-flex align-items-center"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                            >
+                                <FontAwesomeIcon
+                                    icon={isOpen ? faChevronDown : faChevronRight}
+                                    className="me-2"
+                                />
+                                <span>Stock Recommendations</span>
+                            </button>
+                        </h5>
                     </div>
 
                     <div
@@ -89,7 +89,7 @@ const NewsSidebar = () => {
                         className={`collapse ${isOpen ? 'show' : ''}`}
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordion"
-                        >
+                    >
                         <div className="card-body">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
@@ -97,37 +97,37 @@ const NewsSidebar = () => {
                 </div>
                 <div className="card w-300" style={{ border: 'none', backgroundColor: 'transparent' }}>
                     <div className="card-header w-300" id="headingTwo " style={{ border: 'none', backgroundColor: 'transparent' }}>
-                    <h5 className="mb-0">
-                        <button
-                        className="accordion-button d-flex align-items-center"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                        >
-                        <FontAwesomeIcon
-                                icon={isOpen ? faChevronDown : faChevronRight}
-                                className="me-2"
-                            />
-                            <span>Following</span>
-                        </button>
-                    </h5>
+                        <h5 className="mb-0">
+                            <button
+                                className="accordion-button d-flex align-items-center"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                            >
+                                <FontAwesomeIcon
+                                    icon={isOpen ? faChevronDown : faChevronRight}
+                                    className="me-2"
+                                />
+                                <span>Following</span>
+                            </button>
+                        </h5>
                     </div>
                     <div
                         id="collapseTwo"
                         className="collapse"
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordion"
-                        >
+                    >
                         <div className="card-body">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                             <Button></Button>
                         </div>
                     </div>
                 </div>
-                </div>    
+            </div>
         </div>
-      );
+    );
 }
 export default NewsSidebar;

@@ -36,7 +36,7 @@ function Register() {
                 <h2 className='fw-bold'>Personal Details</h2>
                 <p>Please complete all fields marked with an asterisk (*) as they are required.</p>
             </div>
-            
+
             <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '7vh' }}>
                 <form onSubmit={handleSubmit} className="w-100" style={{ maxWidth: '400px' }}>
                     {/* First Name input */}
@@ -89,35 +89,35 @@ function Register() {
                     {/* dob input */}
                     {/* Need to add logic that validates dob + need to improve box styling for dob */}
                     <label htmlFor="dob">Date of Birth *</label>
-                        <div className="dob-inputs">
-                        <input 
-                            type="text" 
-                            value={day} 
-                            onChange={e => setDay(e.target.value)} 
-                            placeholder="DD" 
-                            maxLength="2" 
-                            className="dob text-input-box ddmm" 
-                            required 
+                    <div className="dob-inputs">
+                        <input
+                            type="text"
+                            value={day}
+                            onChange={e => setDay(e.target.value)}
+                            placeholder="DD"
+                            maxLength="2"
+                            className="dob text-input-box ddmm"
+                            required
                         />
                         <span>  /  </span>
-                        <input 
-                            type="text" 
-                            value={month} 
-                            onChange={e => setMonth(e.target.value)} 
-                            placeholder="MM" 
-                            maxLength="2" 
-                            className="dob text-input-box ddmm" 
-                            required 
-                        /> 
+                        <input
+                            type="text"
+                            value={month}
+                            onChange={e => setMonth(e.target.value)}
+                            placeholder="MM"
+                            maxLength="2"
+                            className="dob text-input-box ddmm"
+                            required
+                        />
                         <span>  /  </span>
-                        <input 
-                            type="text" 
-                            value={year} 
-                            onChange={e => setYear(e.target.value)} 
-                            placeholder="YYYY" 
-                            maxLength="4" 
-                            className="dob text-input-box yyyy" 
-                            required 
+                        <input
+                            type="text"
+                            value={year}
+                            onChange={e => setYear(e.target.value)}
+                            placeholder="YYYY"
+                            maxLength="4"
+                            className="dob text-input-box yyyy"
+                            required
                         />
                     </div>
 
@@ -126,7 +126,7 @@ function Register() {
                             <button type="submit" className="green-btn w-300">Next</button>
                         </Link>
                     </div>
-                    
+
                     <p className="text-center mt-3 pb-4">
                         Already have an account? <a href="/signin">Sign in Here.</a>
                     </p>

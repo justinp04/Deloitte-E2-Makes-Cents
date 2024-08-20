@@ -1,41 +1,46 @@
 /* Company Title Styling */
 .company-title-div {
-  margin-left: 36px;
-  margin-top: 5px;
-  margin-bottom: 20px;
+    margin-left: 36px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
+
 .company-title-img {
-  height: 6.5rem;
-  width: 6.5rem;
-  border-radius: 20px;
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 20px;
 }
+
 .company-title-text {
-  font-size: 40px;
-  text-transform: uppercase;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 /* Filter button styling */
 .filter-button {
     background-color: #D1D1D1;
     border: none;
-    border-radius: 20px; 
+    border-radius: 20px;
     padding: 5px 10px;
     display: flex;
-    align-items: center; /* Vertically centers content */
-    justify-content: center; /* Horizontally centers content */
+    align-items: center;
+    /* Vertically centers content */
+    justify-content: center;
+    /* Horizontally centers content */
     font-weight: bold;
     font-size: 12px;
     cursor: pointer;
     width: 90px;
     height: 23px;
-  }
+}
+
 .filter-button .ms-1 {
     margin-left: 5px;
 }
-  
-  .filter-button:hover {
-    background-color: #c6c6c6; 
-  }
+
+.filter-button:hover {
+    background-color: #c6c6c6;
+}
 
 .filter-title {
     font-size: 20px;
@@ -43,75 +48,81 @@
     margin-top: 20px;
     margin-left: 37px;
 }
-  
+
 /* Custom styles for cards */
 .card {
     border: 1px solid #ddd;
     border-radius: 20px;
     background-color: #F3F3F3;
-  }
-  .card img {
+}
+
+.card img {
     border-radius: 10px;
-  }
-  .card .d-flex {
+}
+
+.card .d-flex {
     padding: 10px;
-  }
+}
 
 /* News Feed sidebar styling */
-.center-searchbar{
-  display: flex;
-  align-items: center; /* Vertically centers content */
-  justify-content: center; /* Horizontally centers content */
+.center-searchbar {
+    display: flex;
+    align-items: center;
+    /* Vertically centers content */
+    justify-content: center;
+    /* Horizontally centers content */
 }
 
 .add-button {
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  background-color: #9747FF;
-  display: flex;
-  align-items: center; /* Vertically centers content */
-  justify-content: center; /* Horizontally centers content */
-  border: none;
-  position: fixed; 
-  bottom: 23px;
-  left: 205px;
-  z-index: 1000; 
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #9747FF;
+    display: flex;
+    align-items: center;
+    /* Vertically centers content */
+    justify-content: center;
+    /* Horizontally centers content */
+    border: none;
+    position: fixed;
+    bottom: 23px;
+    left: 205px;
+    z-index: 1000;
 }
 
 .no-caret::after {
-  display: none !important;
+    display: none !important;
 }
 
 .accordion-button {
-  background-color: pink;
-  border: none;
-  font-size: 15px;
-  font-weight: bold;
-  text-align: left;
-  padding: 5px 10px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  color: #333; 
-  width: 300px;
+    background-color: pink;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #333;
+    width: 300px;
 }
 
 .accordion-button:hover {
-  text-decoration: none;
-  color: #000; 
+    text-decoration: none;
+    color: #000;
 }
 
 .accordion-button i {
-  font-size: 16px;
-  transition: transform 0.3s ease;
+    font-size: 16px;
+    transition: transform 0.3s ease;
 }
 
 .collapse.show .accordion-button i {
-  transform: rotate(90deg); 
+    transform: rotate(90deg);
 }
 
 .accordion-button:focus {
-  outline: none;
-  box-shadow: none;
+    outline: none;
+    box-shadow: none;
 }
