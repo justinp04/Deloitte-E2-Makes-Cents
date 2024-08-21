@@ -24,7 +24,7 @@ function About() {
                     ditch the guesswork and trade uncertainty for clarity. Join us now and unlock the
                     power of informed investing!
                 </h5>
-                <h4 className="fw-bold pb-3">Here's what sets us apart:</h4>
+                <h4 className="fw-bold pb-3 mt-5">Here's what sets us apart:</h4>
                 <div className="row justify-content-center">
                     <div className="col-md-4 justify-content-center">
                         <div className="feature-box">
@@ -49,7 +49,7 @@ function About() {
                 </div>
 
                 <Link to="/register">
-                    <button className="btn green-btn my-1 mt-2 mb-5">Create An Account</button>
+                    <button className="btn green-btn my-1 mt-3 mb-5">Create An Account</button>
                 </Link>
 
             </div>
