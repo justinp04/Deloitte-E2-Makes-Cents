@@ -1,0 +1,7 @@
+Ticker: PLS
+            Name: Pilbara Minerals Limited (ASX: PLS)
+            Founded: 2005
+            Sector: Materials
+            Industry: Other Industrial Metals & Mining
+            CEO: Dale Henderson
+            Description: Pilbara Minerals Limited engages in the exploration, development, and operation of mineral resources in Australia.The company primarily explores for lithium. It primarily holds a 100% interest in the Pilgangoora lithium-tantalum project located in the Pilbara region of Western Australia.The company was incorporated in 2005 and is based in West Perth, Australia.

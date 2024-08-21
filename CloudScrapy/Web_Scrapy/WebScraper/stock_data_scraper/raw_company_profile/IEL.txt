@@ -1,0 +1,7 @@
+Ticker: IEL
+            Name: IDP Education Limited (ASX: IEL)
+            Founded: 1969
+            Sector: Consumer Staples
+            Industry: Education & Training Services
+            CEO: Tennealle O’Shannessy
+            Description: IDP Education Limited engages in the placement of students into education institutions in Australia, the United Kingdom, the United States, Canada, New Zealand, and Ireland.Its services include counselling, application processing, pre-departure guidance, student placement and examinations, English language teaching, client relations, online student recruitment, as well as examinations support and shared services.The company is also involved in the distribution and administration of International English Language Testing System tests for study, work, and migration purposes.In addition, it operates English language schools; and provides digital marketing and event services.IDP Education Limited was founded in 1969 and is headquartered in Docklands, Australia.

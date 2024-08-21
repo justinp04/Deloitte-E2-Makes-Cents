@@ -1,0 +1,7 @@
+Ticker: CBA
+            Name: Commonwealth Bank of Australia (ASX: CBA)
+            Founded: 1911
+            Sector: Financials
+            Industry: Banks - Diversified
+            CEO: Matthew Comyn
+            Description: Commonwealth Bank of Australia provides financial services in Australia, New Zealand, and internationally.It operates through Retail Banking Services, Business Banking, Institutional Banking and Markets, and New Zealand segments.The company offers transaction, savings, and foreign currency accounts; term deposits; personal and business loans; overdrafts; equipment finance; credit cards; international payment and trade; and private banking services, as well as home and car loans.It also provides retail, premium, business, offshore, and institutional banking services; and funds management, superannuation, and share broking products and services, as well as car, health, life, income protection, and travel insurance.In addition, the company offers advisory services for high-net-worth individuals; equities trading and margin lending services; debt capital, transaction banking, working capital, and risk management services; and international and foreign exchange services.Commonwealth Bank of Australia was founded in 1911 and is based in Sydney, Australia.

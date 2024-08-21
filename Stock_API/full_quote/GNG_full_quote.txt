@@ -1,0 +1,1 @@
+[{'exchange': 'NMS', 'quoteType': 'ECNQUOTE', 'symbol': 'GNG', 'underlyingSymbol': 'GNG', 'firstTradeDateEpochUtc': 971703000, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': 'a58fa4af-abff-38c4-94a3-a085d06b2f47', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

@@ -1,0 +1,7 @@
+Ticker: STO
+            Name: Santos Limited (ASX: STO)
+            Founded: 1954
+            Sector: Energy
+            Industry: Oil & Gas Exploration & Production
+            CEO: Kevin Gallagher
+            Description: Santos Limited explores for, develops, produces, transports, and markets hydrocarbons in Australia and Papua New Guinea.The company’s assets are located in the Cooper Basin, Queensland and NSW, Papua New Guinea, Western Australia, Northern Australia and Timor-Leste.It also holds an asset in Alaska, the United States; and engages in the development of decarbonization technologies, such as carbon capture and storage technologies.In addition, the company produces crude oil, liquefied petroleum gas, ethane, coal seam gas, liquefied natural gas, and condensate, as well as natural gas.Santos Limited was incorporated in 1954 and is headquartered in Adelaide, Australia.

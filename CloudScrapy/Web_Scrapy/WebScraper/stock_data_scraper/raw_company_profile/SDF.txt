@@ -1,0 +1,7 @@
+Ticker: SDF
+            Name: Steadfast Group Limited (ASX: SDF)
+            Founded: 1996
+            Sector: Financials
+            Industry: Insurance Brokers
+            CEO: Robert Kelly
+            Description: Steadfast Group Limited provides general insurance brokerage services Australasia, Asia, and Europe.It also offers insurance underwriting services and related services. The company provides various business insurance products, such as aviation, business pack and interruption, contract works, corporate travel, cyber, events, farm, marine, management and product liability, professional indemnity, public liability, trade credit, and workers’ compensation insurance.In addition, it offers personal insurance products, including home and contents, landlord, life, motor, and strata insurance.The company operates a network of general insurance brokers and underwriting agencies. Steadfast Group Limited was incorporated in 1996 and is headquartered in Sydney, Australia.

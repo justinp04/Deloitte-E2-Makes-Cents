@@ -1,0 +1,1 @@
+[{'exchange': 'NMS', 'quoteType': 'ECNQUOTE', 'symbol': 'OML', 'underlyingSymbol': 'OML', 'firstTradeDateEpochUtc': 946996200, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': 'ef23d0fa-bc4f-3778-b2b2-83fc6df042cb', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

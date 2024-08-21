@@ -1,0 +1,7 @@
+Ticker: WTC
+            Name: WiseTech Global Limited (ASX: WTC)
+            Founded: 1994
+            Sector: Technology
+            Industry: Software - Application
+            CEO: Richard White
+            Description: WiseTech Global Limited provides software solutions to the logistics execution industry in the Americas, Asia Pacific, Europe, Middle East and Africa, and internationally.The company offers CargoWise, a software platform for logistics service providers that enables execution of complex logistics transactions and manage operations.It also provides customs declaration management and related international trade, customs compliance and warehouse, customs management, freight forwarding, warehousing, transport, customs clearance, tracking, shipping and port logistics, cloud-enabled customs compliance, trade compliance, container optimization, parcel, less than truckload and logistics transportation management, freight rate management, ocean freight rate management, container yard/terminal management, and messaging and data integration software solutions.WiseTech Global Limited was incorporated in 1994 and is based in Alexandria, Australia.

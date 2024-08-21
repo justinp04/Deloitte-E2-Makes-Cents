@@ -1,0 +1,7 @@
+Ticker: SCG
+            Name: Scentre Group (ASX: SCG)
+            Founded: 2014
+            Sector: Real Estate
+            Industry: REIT - Retail
+            CEO: Elliott Chaim Rusanow
+            Description: Scentre Group owns and operates a leading portfolio of 42 Westfield destinations with 37 located in Australia and five in New Zealand encompassing more than 12,000 outlets.Our Westfield destinations are strategically located in the heart of the local communities we serve. Our centres are considered community hubs that connect people with services and experiences that enrich their daily lives.The Trust has a joint interest in 39 Westfield destinations.
