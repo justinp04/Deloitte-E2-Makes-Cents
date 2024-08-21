@@ -23,9 +23,9 @@ PURPOSE: gets the vector embedding for the user query
         ensures different deployments are used for
         different features
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-def get_query_embedding(query_text, embedding_selection):
+def get_query_embedding(query_text):
     embeddings_response = load_openai_client().embeddings.create(
-        model=os.getenv(embedding_selection),
+        model=os.getenv("AZURE_OPENAI_EMBEDDING_NAME"),
         input=[query_text]
     )
     embedding = embeddings_response.data[0].embedding
@@ -41,8 +41,8 @@ PURPOSE: returns the closest matched results from the
         embedding from the users query and then
         extracts the documents from the serch results
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-def query_qdrant(query_text, embedding_selection):
-    query_embedding = get_query_embedding(query_text, embedding_selection)
+def query_qdrant(query_text):
+    query_embedding = get_query_embedding(query_text)
     
     search_result = load_qdrant_client().search( #perform vector similarity search in qdrant database
         collection_name="E2cluster1",
