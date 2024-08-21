@@ -16,8 +16,8 @@ function About() {
         <div className="container">
             <div className="text-center">
                 <h1 className="main-title">Makes Cents</h1>
-                <h3 className="text-primary">Invest with Clarity, Confidence and Conviction</h3>
-                <h5 className="my-4">
+                <h4 className="text-primary mb-3">Invest with Clarity, Confidence and Conviction</h4>
+                <h5 className="my-4 mx-5" >
                     We get it. Investing can feel overwhelming, but it doesn't have to be.
                     Our cutting-edge solution utilises generative AI to deliver personalised investment
                     recommendations that fit YOUR goals and preferences. With our platform, you'll
