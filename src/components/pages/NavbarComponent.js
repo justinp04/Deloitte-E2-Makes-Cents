@@ -8,6 +8,9 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Nav, Navbar, Container, Dropdown } from 'react-bootstrap';
+import {SignOutButton} from "../../authentication/SignOutButton";
+import {SignInButton} from "../../authentication/SignInButton";
+import {useIsAuthenticated} from "@azure/msal-react";
 
 import './NavbarComponent.css';
 
@@ -16,6 +19,7 @@ import { faBell } from '@fortawesome/free-solid-svg-icons';
 
 function NavbarComponent({ isSignedIn, setIsSignedIn }) {
     const navigate = useNavigate();
+    const isAuthenticated = useIsAuthenticated();
 
     const handleSignOut = () => {
         setIsSignedIn(false);
@@ -34,7 +38,7 @@ function NavbarComponent({ isSignedIn, setIsSignedIn }) {
                         <Nav.Link as={Link} to="/about" className="fw-bold me-3 ms-3">
                             About Us
                         </Nav.Link>
-                        {isSignedIn ? (
+                        {isAuthenticated ? (
                             <>
                                 <Nav.Link as={Link} to="/stock-analysis" className="fw-bold me-3 ms-3">
                                     Stock Analysis
@@ -72,18 +76,20 @@ function NavbarComponent({ isSignedIn, setIsSignedIn }) {
                                         <Dropdown.Item>Sign Out</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
-                                <Nav.Link
+                                <SignOutButton/>
+                                {/* <Nav.Link
                                     as="button"
                                     className="btn btn-link nav-link fw-bold me-3 ms-3"
                                     onClick={handleSignOut}
                                 >
                                     Sign Out
-                                </Nav.Link>
+                                </Nav.Link> */}
                             </>
                         ) : (
-                            <Nav.Link as={Link} to="/signin" className="fw-bold">
-                                <button style={{ width: 120 }} className="green-btn ">Sign in  </button>
-                            </Nav.Link>
+                            <SignInButton/>
+                            // <Nav.Link as={Link} to="/signin" className="fw-bold">
+                            //     <button style={{ width: 120 }} className="green-btn ">Sign in  </button>
+                            // </Nav.Link>
                         )}
                     </Nav>
                 </Navbar.Collapse>
