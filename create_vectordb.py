@@ -114,6 +114,3 @@ def qdrant_store(points):
                 time.sleep(2 ** attempt)  
             else:
                 raise
-
-if __name__ == "__main__":
-    main()
