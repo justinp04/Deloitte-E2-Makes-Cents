@@ -16,6 +16,7 @@ const ProfileInsightsForm = () => {
   const [declineTolerance, setDeclineTolerance] = useState(1);
   const [investmentType, setInvestmentType] = useState(1);
 
+
   // income options
   const incomeOptions = [
     "Less than $18,000",
@@ -24,6 +25,7 @@ const ProfileInsightsForm = () => {
     "$135,000 - $190,000",
     "More than $190,000"
   ];
+
   // range options
   const rangeLabelsQ1 = ["Novice", "Beginner", "Intermediate", "Advanced", "Expert"];
   const rangeLabelsQ3 = ["Less than 3 years", "3-10 years", "10+ years"];
@@ -33,16 +35,41 @@ const ProfileInsightsForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    var incomeIndex = incomeOptions.indexOf(income) + 1;
+    console.log(incomeIndex);
+    
     const formData = {
-      experience,
-      income,
-      investmentDuration,
-      riskLevel,
-      declineTolerance,
-      investmentType
-    };
+      question_response_1: parseInt(experience),
+      question_response_2: incomeIndex,
+      question_response_3: parseInt(investmentDuration),
+      question_response_4: parseInt(riskLevel),
+      question_response_5: parseInt(declineTolerance),
+      question_response_6: parseInt(investmentType)
+  };
+  
     console.log(formData);
-    // Submit these values to backend
+
+    fetch('http://localhost:4000/next/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log(data);
+        alert('Request successful! Check console for response.');
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Request failed. Check console for error details.');
+      });
   };
 
   return (
@@ -100,13 +127,14 @@ const ProfileInsightsForm = () => {
         labels={rangeLabelsQ6}
       />
 
-      {/* <div className="center-button">
+      <div className="center-button">
         <button type="submit" className="btn btn-primary green-btn mb-3">Create Account</button>
       </div>
 
       <p className="text-center mb-5">
         Have an account? <a href="/signin">Sign In Here.</a>
-      </p> */}
+      </p> 
+
     </form>
   );
 };
