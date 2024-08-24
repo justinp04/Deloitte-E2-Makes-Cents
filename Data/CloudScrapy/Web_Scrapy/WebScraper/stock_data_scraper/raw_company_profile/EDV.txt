@@ -1,7 +1,0 @@
-Ticker: EDV
-            Name: Endeavour Group Limited (ASX: EDV)
-            Founded: 2012
-            Sector: Consumer Staples
-            Industry: Beverages - Wineries & Distilleries
-            CEO: Steve Donohue
-            Description: Endeavour Group Limited engages in the retail drinks and hospitality businesses in Australia.It operates through Retail, Hotels, and Other segments. The company manufactures and sells drinks; and provides hotels-related goods and services, including food and drinks, accommodation, entertainment, and gaming.It operates stores under the Dan Murphy’s and BWS brands, and hotels. Endeavour Group Limited was incorporated in 2012 and is based in Surry Hills, Australia.

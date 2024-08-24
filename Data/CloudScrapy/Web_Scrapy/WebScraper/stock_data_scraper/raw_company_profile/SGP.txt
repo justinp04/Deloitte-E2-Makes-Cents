@@ -1,7 +1,0 @@
-Ticker: SGP
-            Name: Stockland (ASX: SGP)
-            Founded: 1952
-            Sector: Real Estate
-            Industry: REIT - Diversified
-            CEO: Tarun Gupta
-            Description: We are a leading creator and curator of connected communities with people at the heart of the places we create.For more than 70 years, we have built a proud legacy, helping more Australians achieve the dream of home ownership, and enabling the future of work and retail.Today, we continue to build on our history as one of Australia’s largest diversified property groups to elevate the social value of our places, and create a tangible sense of human connection, belonging and community for our customers.We own, fund, develop and manage one of Australia’s largest portfolios of residential and land lease communities, retail town centres, and workplace and logistics assets.Our approach is distinctive, bringing a unique combination of development expertise, scale, deep customer insight, and diverse talent - with care in everything we do.We are committed to contributing to the economic prosperity of Australia and the wellbeing of our communities and our planet.

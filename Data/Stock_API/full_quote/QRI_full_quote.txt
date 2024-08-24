@@ -1,1 +1,0 @@
-[{'exchange': 'NMS', 'quoteType': 'ECNQUOTE', 'symbol': 'QRI', 'underlyingSymbol': 'QRI', 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

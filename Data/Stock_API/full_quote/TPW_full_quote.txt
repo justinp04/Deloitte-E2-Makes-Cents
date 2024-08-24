@@ -1,1 +1,0 @@
-[{'exchange': 'NMS', 'quoteType': 'ECNQUOTE', 'symbol': 'TPW', 'underlyingSymbol': 'TPW', 'firstTradeDateEpochUtc': 1406035800, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': 'f83c9679-afae-3f7a-9f3e-2335124be7df', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

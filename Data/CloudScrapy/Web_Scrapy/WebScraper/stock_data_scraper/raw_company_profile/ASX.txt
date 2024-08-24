@@ -1,7 +1,0 @@
-Ticker: ASX
-            Name: ASX Limited (ASX: ASX)
-            Founded: 1987
-            Sector: Financials
-            Industry: Financial Data & Stock Exchanges
-            CEO: Helen Lofthouse
-            Description: ASX Limited operates as a multi-asset class and integrated exchange company in Australia and internationally.The company provides education programs, research and insights, investor access and peer group networking; distribution facility for quoted exchange traded funds (ETFs) and debt securities.It is also involved in the trading of futures and options on interest rate, equity index, agriculture and energy products, and options over individual securities; cash market trading of equities, warrants, exchange-traded funds, and debt securities; and clearing of exchange-traded derivatives and over-the-counter interest rate and equity derivatives.In addition, it offers information services, including pricing and trading data; technical services, such as s market access, connectivity, hosting and co-location services; central counterparty clearing and settlement services for equities; settlement, depository, and registry services for debt securities; and payment platform for property transactions, high value payments and electricity providers.The company was incorporated in 1987 and is based in Sydney, Australia.

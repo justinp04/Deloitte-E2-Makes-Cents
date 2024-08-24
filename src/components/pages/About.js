@@ -8,20 +8,10 @@
 
 import React, {Component, startTransition} from "react";
 import { Link } from "react-router-dom";
-import { useMsal } from "@azure/msal-react";
-import { loginRequest } from "../../authentication/authConfig";
 
 import './About.css';
 
 function About() {
-    const { instance } = useMsal();
-
-    const handleLogin = () => {
-        instance.loginPopup(loginRequest).catch((e) => {
-            console.log(e);
-        });
-    };
-
     return (
         <div className="container">
             <div className="text-center">
@@ -58,15 +48,9 @@ function About() {
                     </div>
                 </div>
 
-                <button
-                    className="green-btn"
-                    onClick={() => handleLogin()}
-                >
-                    Create An Account
-                </button>
-                {/* <Link to="/register">
+                <Link to="/register">
                     <button className="btn green-btn my-1 mt-3 mb-5">Create An Account</button>
-                </Link> */}
+                </Link>
 
             </div>
         </div>

@@ -1,1 +1,0 @@
-[{'exchange': 'NMS', 'quoteType': 'ECNQUOTE', 'symbol': 'CTD', 'underlyingSymbol': 'CTD', 'firstTradeDateEpochUtc': 1266849000, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': '2a343745-26bc-3eff-a318-d4e72f64df24', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

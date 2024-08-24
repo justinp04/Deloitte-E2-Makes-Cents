@@ -1,7 +1,0 @@
-Ticker: TCL
-            Name: Transurban Group (ASX: TCL)
-            Founded: None
-            Sector: 1,900
-            Industry: Industrials
-            CEO: None
-            Description: Transurban Group develops, operates, manages, and maintains toll road networks.It operates 22 toll roads in Sydney, Melbourne, and Brisbane in Australia; the Greater Washington area and Montreal, North America.The company is headquartered in Docklands, Australia.

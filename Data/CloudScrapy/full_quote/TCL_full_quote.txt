@@ -1,3 +1,0 @@
-[{'quoteType': 'NONE', 'symbol': 'TCL', 'underlyingSymbol': 'TCL', 'uuid': '4e9c7160-58c1-3e41-a17e-458e4b7b70cd', 'maxAge': 86400, 'trailingPegRatio': None}]
-[{'quoteType': 'NONE', 'symbol': 'TCL', 'underlyingSymbol': 'TCL', 'uuid': '4e9c7160-58c1-3e41-a17e-458e4b7b70cd', 'maxAge': 86400, 'trailingPegRatio': None}]
-[{'quoteType': 'NONE', 'symbol': 'TCL', 'underlyingSymbol': 'TCL', 'uuid': '4e9c7160-58c1-3e41-a17e-458e4b7b70cd', 'maxAge': 86400, 'trailingPegRatio': None}]
