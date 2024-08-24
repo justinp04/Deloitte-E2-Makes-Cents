@@ -1,4 +1,7 @@
 # Versions
+# E2_GenAI
+Software Engineer Capstone Project - Deloitte
+# Getting Started with Create React App
 
 To develop in this project, please use:
 - Node 22.4.1

@@ -1,0 +1,7 @@
+Ticker: TPW
+            Name: Temple & Webster Group Ltd (ASX: TPW)
+            Founded: 2011
+            Sector: Consumer Discretionary
+            Industry: Internet Retail
+            CEO: Mark Coulter
+            Description: Temple &amp; Webster Group Ltd engages in the online retail of furniture, homewares, and home improvement products in Australia.The company operates the Temple &amp; Webster online platform, which offers approximately 200,000 products.Temple &amp; Webster Group Ltd was founded in 2011 and is headquartered in St Peters, Australia.

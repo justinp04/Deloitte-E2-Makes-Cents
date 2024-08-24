@@ -1,0 +1,7 @@
+Ticker: NXT
+            Name: NEXTDC Limited (ASX: NXT)
+            Founded: 2010
+            Sector: Technology
+            Industry: Information Technology Services
+            CEO: Craig Scroggie
+            Description: NEXTDC Limited develops and operates data centers in Australia.The company offers Data Centre colocation solutions, such as rackspaces, cages and suites, rack spaces, private cages, private suites, high performance computing, remote hands, and amenities; mission critical spaces; data centre migration and relocation; e-waste recycling, IT asset destruction and disposal, and carbon neutral solutions; build-to-suit and wholesale data center solutions; disaster recovery and business continuity solutions; security and compliance solutions; and edge data centers.It also provides self-service portals comprising ONEDC, which offers access to real-time data and insights that streamline management; and AXON that allows interconnection of digital services and platforms.NEXTDC Limited was incorporated in 2010 and is headquartered in Brisbane, Australia.

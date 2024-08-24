@@ -1,0 +1,7 @@
+Ticker: XRO
+            Name: Xero Limited (ASX: XRO)
+            Founded: 2006
+            Sector: Technology
+            Industry: Software - Application
+            CEO: Sukhinder Cassidy
+            Description: Xero Limited, together with its subsidiaries, a software as a service company, provides online business solutions for small businesses and their advisors in Australia, New Zealand, and internationally.It offers Xero, an open platform that connects small businesses to a range of solutions, which helps to manage their finances.The company also provides Xero mobile app; and accountant/bookkeeper tools, including Xero HQ, Xero Practice Manager, Xero Workpapers, and Xero Cashbook or Xero Ledger.Xero Limited was incorporated in 2006 and is headquartered in Wellington, New Zealand.

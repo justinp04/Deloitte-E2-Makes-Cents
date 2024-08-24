@@ -1,0 +1,7 @@
+Ticker: HUB
+            Name: HUB24 Limited (ASX: HUB)
+            Founded: 2007
+            Sector: Financials
+            Industry: Capital Markets
+            CEO: Andrew Alcock
+            Description: HUB24 Limited, a financial services company, provides integrated platform, technology, and data solutions to wealth industry in Australia.It operates in Platform and Tech Solutions segments. The company develops and operates HUB24 and Xplore Wealth that are investment and superannuation platforms; and portfolio administration and reporting services for financial advisers, stockbrokers, accountants and their clients, and direct consumers.It also provides accounting, portfolio management, legal documentation, corporate compliance, and self-managed superannuation fund administration solutions; and application and technology products for the financial services sector, as well as license and consulting services for data management, software, and infrastructure.In addition, HUB24 Limited offers retirement solutions. The company was formerly known as Investorfirst Ltd. and changed its name to HUB24 Limited in August 2013.HUB24 Limited was incorporated in 2007 and is headquartered in Sydney, Australia.

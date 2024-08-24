@@ -1,0 +1,7 @@
+Ticker: WOW
+            Name: Woolworths Group Limited (ASX: WOW)
+            Founded: 1924
+            Sector: Consumer Staples
+            Industry: Grocery Stores
+            CEO: Bradford Banducci
+            Description: Woolworths Group Limited operates retail stores in Australia and New Zealand.It operates through Australian Food, Australian B2B, New Zealand Food, BIG W, and Other segments. The Australian Food segment procures and resells food and related products, and provides services to customers in Australia.The Australian B2B segment engages in procurement and distribution of food and related products for resale to other businesses, as well as provision of supply chain services to business customers in Australia.The New Zealand Food segment is involved in the procurement and resale of food and drinks, and provides services to retail customers in New Zealand.BIG W segment procures and resells discount general merchandise products to customers in Australia. The Other segment operates Quantium and MyDeal retail stores  The company was formerly known as Woolworths Limited and changed its name to Woolworths Group Limited in December 2017.Woolworths Group Limited was incorporated in 1924 and is based in Bella Vista, Australia.

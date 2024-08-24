@@ -1,0 +1,7 @@
+Ticker: ALL
+            Name: Aristocrat Leisure Limited (ASX: ALL)
+            Founded: 1950
+            Sector: Consumer Discretionary
+            Industry: Gambling
+            CEO: Trevor Croker
+            Description: Aristocrat Leisure Limited, together with its subsidiaries, operates as a gaming content and technology company in Australia and internationally.The company designs, develops, assembles, distributes, sells, and services gaming content, platforms, and systems, including electronic gaming machines, casino management systems, and free-to-play mobile games.It also offers pixel united, a mobile-first games powerhouse; aristocrat gaming, a gaming content; and Anaxi, an immersive and interactive digital entertainment experience content.In addition, the company provides online money gaming services; and cabinets and gaming products. Aristocrat Leisure Limited was founded in 1950 and is headquartered in North Ryde, Australia.

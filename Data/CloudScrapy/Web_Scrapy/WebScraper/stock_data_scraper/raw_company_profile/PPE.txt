@@ -1,0 +1,7 @@
+Ticker: PPE
+            Name: Peoplein Limited (ASX: PPE)
+            Founded: 1996
+            Sector: Industrials
+            Industry: Staffing & Employment Services
+            CEO: Ross Thompson
+            Description: Peoplein Limited engages in the provision of workforce management, contracted staffing, recruitment, and human resources outsourcing service in Australia and New Zealand.The company operates through three segments: Industrial and Specialist Services, Professional Services, and Health and Community.It offers recruiting, on-boarding, contracting, rostering, timesheet management, payroll, and workplace health and safety management services.The company was formerly known as People Infrastructure Ltd and changed its name to Peoplein Limited in December 2021.Peoplein Limited was founded in 1996 and is based in Fortitude Valley, Australia.
