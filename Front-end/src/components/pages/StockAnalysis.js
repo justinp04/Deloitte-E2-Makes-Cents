@@ -26,8 +26,31 @@ function StockAnalysis({ isSignedIn }) {
         setChecked(!isChecked);
     };
 
-    const handleSendMessage = (newMessage) => {
+    // Send query here ~~
+    const handleSendMessage = async (newMessage) => {
+
+        if (!newMessage.trim()) {
+            // Prevent sending empty messages
+            return;
+        }
+
         setMessages([...messages, { sender: 'user', message: newMessage }]);
+
+        try {
+            const res = await fetch('http://localhost:4000/chatbot/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: newMessage }),
+            });
+
+            const data = await res.json();
+            setMessages(prevMessages => [...prevMessages, { sender: 'bot', message: data.response }]);
+        } catch (error) {
+            console.error('Error:', error);
+            setMessages(prevMessages => [...prevMessages, { sender: 'bot', message: 'An error occurred while sending your message' }]);
+        }
     };
 
     return (

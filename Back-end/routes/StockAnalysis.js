@@ -1,0 +1,52 @@
+import express from 'express';
+import { spawn } from 'child_process';
+
+const router = express.Router();
+
+// Define the /chat route to handle chatbot requests
+router.post('/chat', (req, res) => {
+    const userMessage = req.body.message;
+
+    if (!userMessage) {
+        console.error('No user message received');
+        return res.status(400).json({ error: 'No message provided' });
+    }
+
+    console.log(`Received message: ${userMessage}`);
+
+    // Call the Python script and pass the user message
+    const pythonExecutable = '/Users/anna/Desktop/MakeCents/E2_GenAI-2/venv/bin/python3';
+    const pythonProcess = spawn(pythonExecutable, ['/Users/anna/Desktop/MakeCents/E2_GenAI-2/Rag/chatbot.py', userMessage]);
+    
+    // Collect the Python script output
+    let responseData = '';
+
+    pythonProcess.stdout.on('data', (data) => {
+        responseData += data.toString(); // Collect the output
+        console.log(`Python script output: ${data}`);
+    });
+
+    pythonProcess.stderr.on('data', (data) => {
+        const errorMessage = data.toString();
+        console.error(`Python script error: ${errorMessage}`);
+        if (errorMessage.includes('429')) {
+            res.status(429).json({ error: 'Rate limit exceeded. Please try again later.' });
+        } else {
+            res.status(500).json({ error: `Python script error: ${errorMessage}` });
+        }
+    });
+
+    pythonProcess.on('close', (code) => {
+        console.log(`Python script exited with code ${code}`);
+        if (!res.headersSent) {
+            res.json({ response: responseData.trim() }); // Trim and send the response
+        }
+    });
+
+    pythonProcess.on('error', (err) => {
+        console.error('Failed to start Python script:', err);
+        res.status(500).json({ error: 'Failed to start Python script.' });
+    });
+});
+
+export default router;
