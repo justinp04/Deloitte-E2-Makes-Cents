@@ -1,7 +1,10 @@
+/************************************************************************************************
+ * Purpose: Logic for sliders for range questions
+ * Fix: 
+ ************************************************************************************************/
 import React from 'react';
 import RangeLabels from './RangeLabels'; 
-
-// Logic for sliders for range questions
+import './Components.css';
 
 const RangeQuestion = ({ label, min, max, value, onChange, labels }) => {
   return (

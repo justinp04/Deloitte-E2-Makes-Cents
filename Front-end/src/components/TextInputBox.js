@@ -1,7 +1,10 @@
+/************************************************************************************************
+ * Purpose: Logic for written text boxes
+ * Fix: 
+ ************************************************************************************************/
 import React from 'react';
 import PropTypes from 'prop-types';
-
-// Logic for written text boxes
+import './Components.css';
 
 const TextInputBox = ({ label, type, id, placeholder, value, onChange, required }) => {
   return (

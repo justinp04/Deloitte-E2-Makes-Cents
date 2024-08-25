@@ -1,7 +1,9 @@
+/************************************************************************************************
+ * Purpose: Drop down menu logic for income selection
+ * Fix: 
+ ************************************************************************************************/
 import React from 'react';
 import CustomSelect from './CustomSelect';
-
-// Drop down menu logic for income selection
 
 const SelectQuestion = ({ label, options, value, onChange }) => {
   return (

@@ -1,7 +1,10 @@
+/************************************************************************************************
+ * Purpose: Logic for the labels under sliders for range questions
+ * Fix: 
+ ************************************************************************************************/
 import React from 'react';
 import PropTypes from 'prop-types';
-
-// Logic for the labels under sliders for range questions
+import './Components.css'
 
 const RangeLabels = ({ labels }) => {
   return (
