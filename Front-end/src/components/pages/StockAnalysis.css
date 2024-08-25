@@ -1,0 +1,160 @@
+.fixed-position {
+    position: fixed;
+    background-color: white;
+}
+
+.favourited {
+    background-color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #9747FF;
+    transition: transform 0.2s ease;
+}
+
+.favorited:hover {
+    transform: scale(1.2);
+}
+
+.blue-line {
+    width: 100%;
+    height: 1px;
+    background-color: #0085FF;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.toggle-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.title-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.title-button-container .favorite-button {
+    margin-left: 10px;
+}
+
+.title-button-container .toggle-switch {
+    margin-left: 10px;
+}
+
+
+/* Chat Box Styling */
+.chat-box {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.user {
+    justify-content: flex-end;
+}
+
+.bot {
+    justify-content: flex-start;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.sender-name {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.message-card {
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+}
+
+.user .message-card {
+    background-color: #d1e7ff;
+}
+
+.chat-message {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+/* css for QueryInputBar.js */
+.query-input-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 300px;
+    width: calc(100% - 300px);
+    /* Subtract the width of the sidebar from the total width */
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: white;
+}
+
+.input-field {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.send-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
+
+.warning {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-39.2%);
+    width: 100%;
+    max-width: calc(100% - 300px);
+    height: 20px;
+    background-color: white;
+    text-align: center;
+    font-size: 60%;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.warning p {
+    margin: 0 10px;
+}

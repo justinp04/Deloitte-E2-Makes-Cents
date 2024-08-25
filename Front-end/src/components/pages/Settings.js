@@ -1,17 +1,36 @@
 /************************************************************************************************
  * Purpose: Settings Page
- * Fix: 
+ * Fix: - User guide font size changes
  ************************************************************************************************/
-
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-function Settings() {
-  return (
-    <div className="container">
-      <h1>Settings</h1>
-      {/* Your stock analysis content */}
-    </div>
-  );
+import SettingsSidebar from '../settings_components/SettingsSidebar';
+import AccountInfo from '../settings_components/AccountInfo';
+import NotificationsSettings from '../settings_components/Notifications';
+import UserGuide from '../settings_components/UserGuide';
+import UpdateProfileInsights from '../settings_components/UpdateProfileInsights';
+import './Settings.css';
+
+function Settings({ isSignedIn }) {
+    return (
+        <div className="page-container">
+            <div className="sidebar">
+                <SettingsSidebar />
+            </div>
+            <div className="content">
+                <div className="title-container">
+                    <h1 className="page-header ms-3">Settings</h1>
+                </div>
+                <Routes>
+                    <Route path="account-info" element={<AccountInfo />} />
+                    <Route path="update-profile" element={<UpdateProfileInsights />} />
+                    <Route path="notifications" element={<NotificationsSettings />} />
+                    <Route path="user-guide" element={<UserGuide />} />
+                </Routes>
+            </div>
+        </div>
+    );
 }
-
 export default Settings;
+
