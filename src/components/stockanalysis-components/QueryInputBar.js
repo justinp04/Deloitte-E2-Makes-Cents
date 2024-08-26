@@ -30,8 +30,8 @@ const QueryInputBar = ({ onSendMessage }) => {
             type="text"
             value={message}
             onChange={handleInputChange}
-            placeholder="Ask a query..."
-            className="input-field"
+            placeholder="Ask Gerry a question..."
+            className="input-field px-4"
           />
           <button onClick={handleSend} className="send-button">Send</button>
         </div>

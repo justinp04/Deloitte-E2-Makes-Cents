@@ -10,7 +10,7 @@ import './Components.css';
 
 const SearchBar = ({ placeholder }) => {
   return (
-    <div className="pt-3" style={{ width: '270px' }}>
+    <div className=" mx-3 mb-2" style={{ width: '260px' }}>
       <InputGroup className="rounded-input-group mt-2">
         <Form.Control
           placeholder={placeholder}

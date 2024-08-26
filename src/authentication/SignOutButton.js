@@ -19,6 +19,7 @@ export const SignOutButton = () => {
   return (
       <button
           className="green-btn"
+          style={{width: '150px'}}
           onClick={() => handleLogout()}
       >
         Sign Out

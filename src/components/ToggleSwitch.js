@@ -4,18 +4,25 @@
  ************************************************************************************************/
 import React from 'react';
 
-const ToggleSwitch = ({ checked, onChange, id }) => {
+import './Components.css';
+
+const ToggleSwitch = () => {
   return (
-    <div className="form-check form-switch ms-3">
+    <>
       <input
-        className="form-check-input"
+        className="react-switch-checkbox"
+        id={`react-switch-new`}
         type="checkbox"
-        role="switch"
-        id={id}
-        checked={checked}
-        onChange={onChange}
       />
-    </div>
+      <label
+        className="react-switch-label"
+        htmlFor={`react-switch-new`}
+      >
+        <span className={`react-switch-button`} />
+      </label>
+      <span className="toggle-switch-text fw-bold">Detailed Summary</span>
+    </>
   );
 }
 export default ToggleSwitch;
+

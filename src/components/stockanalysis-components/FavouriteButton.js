@@ -2,28 +2,43 @@
  * Purpose: Favourites button in the shape of a star
  * Fix: 
  ************************************************************************************************/
-
-import React, { useState } from 'react';
-
-import '../pages/StockAnalysis.css';
-
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faCheck } from '@fortawesome/free-solid-svg-icons';
 
-function FavoriteButton() {
-    const [isFavorited, setIsFavorited] = useState(false);
-  
-    const toggleFavorite = () => {
-      setIsFavorited(!isFavorited);
+function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavourited }) {
+    const [isFav, setIsFav] = useState(isFavourited);
+
+    useEffect(() => {
+        setIsFav(isFavourited);
+    }, [isFavourited]);
+
+    const toggleFavourite = () => {
+        if (isFav) {
+            if (onRemoveFavourite) {
+                onRemoveFavourite(companyTitle);
+            }
+        } else {
+            if (onFavourite) {
+                onFavourite(companyTitle);
+            }
+        }
+        setIsFav(!isFav);
     };
-  
+
     return (
-        <div>
-            <button className='border-no-outline favourited'> 
-                <FontAwesomeIcon icon={faStar}/>
-            </button>
-        </div>
+        <button 
+            className='border-no-outline favourited' 
+            onClick={toggleFavourite}
+            style={{ background: 'none', border: 'none', padding: 0 }}
+        >
+            <FontAwesomeIcon 
+                icon={isFav ? faCheck : faPlus} 
+                className="fw-bold" 
+                style={{ color: '#9747FF', fontSize: "1.4rem" }} 
+            />
+        </button>
     );
-  }
-  export default FavoriteButton;
-  
+}
+
+export default FavouriteButton;
