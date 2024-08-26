@@ -7,7 +7,7 @@
  *  - fix the blue line placement when the summary is opened
  ************************************************************************************************/
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 import SASidebar from '../stockanalysis-components/SASidebar';
 import ToggleList from '../ToggleList';
@@ -22,6 +22,10 @@ function StockAnalysis({ isSignedIn }) {
     const [isChecked, setChecked] = useState(true);
     const [messages, setMessages] = useState([]);
 
+    // State to manage typing indicator
+    const [typing, setTyping] = useState(false); 
+    const chatEndRef = useRef(null);
+
     const handleChange = () => {
         setChecked(!isChecked);
     };
@@ -35,6 +39,15 @@ function StockAnalysis({ isSignedIn }) {
         }
 
         setMessages([...messages, { sender: 'user', message: newMessage }]);
+        
+        // Show typing indicator
+        setTyping(true); 
+
+        // Simulate a delay before sending the request to backend
+        const simulateTyping = new Promise((resolve) => setTimeout(resolve, 1000)); // 1-second delay
+
+        await simulateTyping; // Wait for the simulated typing delay
+
 
         try {
             const res = await fetch('http://localhost:4000/chatbot/chat', {
@@ -46,12 +59,24 @@ function StockAnalysis({ isSignedIn }) {
             });
 
             const data = await res.json();
+            
+            // Hide typing indicator when response is received
+            setTyping(false); 
             setMessages(prevMessages => [...prevMessages, { sender: 'bot', message: data.response }]);
+
         } catch (error) {
             console.error('Error:', error);
+
+            // Hide typing indicator on error
+            setTyping(false);
             setMessages(prevMessages => [...prevMessages, { sender: 'bot', message: 'An error occurred while sending your message' }]);
         }
     };
+
+    // Scroll to the latest message when new messages are added
+    useEffect(() => {
+        chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, [messages, typing]); // Re-run effect when typing state changes
 
     return (
         <div className="page-container">
@@ -105,6 +130,24 @@ function StockAnalysis({ isSignedIn }) {
                     {messages.map((msg, index) => (
                         <ChatBox key={index} message={msg.message} sender={msg.sender} senderName={msg.sender === 'user' ? 'You' : 'Gerry'} avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'} />
                     ))}
+
+                    {typing && (
+                        <ChatBox 
+                            message={
+                                <div className="typing-indicator">
+                                    <div className="dot"></div>
+                                    <div className="dot"></div>
+                                    <div className="dot"></div>
+                                </div>
+                            } 
+                            sender="bot" 
+                            senderName="Gerry" 
+                            avatar="./images/GerryProfile.jpg" 
+                        />
+                    )}
+                    {/* A reference div to keep the chat view scrolled to the latest message */}
+                    <div ref={chatEndRef} />
+
                     <QueryInputBar onSendMessage={handleSendMessage} />
                 </div>
             </div>

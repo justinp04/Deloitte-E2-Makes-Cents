@@ -23,6 +23,10 @@ def main():
         token_limit = 4096
         conversation = [system_message]
 
+        # Append only the last few messages to maintain context
+        if len(conversation) > 6:  # Limit to the last 3 pairs of user-bot exchanges
+            conversation = conversation[-6:]
+
         conversation.append({"role": "user", "content": user_input})
         documents = query_qdrant(user_input)
         context = "\n".join(documents)
