@@ -1,7 +1,0 @@
-Ticker: RHC
-            Name: Ramsay Health Care Limited (ASX: RHC)
-            Founded: 1964
-            Sector: Healthcare
-            Industry: Medical Care Facilities
-            CEO: Craig McNally
-            Description: Ramsay Health Care Limited owns and operates hospitals.The company offers health care services to public and private patients. It operates facilities in approximately 530 locations in the Asia Pacific, the United Kingdom, France, and Nordics.Ramsay Health Care Limited was founded in 1964 and is based in Sydney, Australia.

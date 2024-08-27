@@ -1,7 +1,0 @@
-Ticker: AMP
-            Name: AMP Limited (ASX: AMP)
-            Founded: 1849
-            Sector: Financials
-            Industry: Financial Conglomerates
-            CEO: Alexis George
-            Description: AMP Limited provides banking, super, retirement, and advice services in Australia and New Zealand.It operates through AMP Bank, Platform, Master Trust, Advice, and New Zealand Wealth Management (NZWM) segments.The company provides superannuation, retirement, and investment solutions; pension solutions; and SignatureSuper, a retail master trust.It also offers financial advice and wealth solutions, including retirement planning, investments, and financing; and home loans, deposit, and transaction accounts.In addition, the company provides wealth management solutions, such as KiwiSaver, retail investments, and operates wrap investment management platform; corporate superannuation; and general insurance distribution businesses.AMP Limited was founded in 1849 and is headquartered in Sydney, Australia.

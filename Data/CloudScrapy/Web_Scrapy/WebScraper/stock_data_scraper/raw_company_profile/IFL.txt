@@ -1,7 +1,0 @@
-Ticker: IFL
-            Name: Insignia Financial Ltd. (ASX: IFL)
-            Founded: 1846
-            Sector: Financials
-            Industry: Asset Management
-            CEO: Scott Hartley
-            Description: Insignia Financial Ltd. provides financial advice, platforms, and asset management services in Australia.The company offers financial services solutions on superannuation and investments to clients including investors, members, employers, and advisers.It also provides financial advisory, various financial products and services, and investment management services on behalf of institutional, retail, and direct clients.The company was formerly known as IOOF Holdings Ltd. and changed its name to Insignia Financial Ltd. in December 2021.The company was founded in 1846 and is based in Docklands, Australia.

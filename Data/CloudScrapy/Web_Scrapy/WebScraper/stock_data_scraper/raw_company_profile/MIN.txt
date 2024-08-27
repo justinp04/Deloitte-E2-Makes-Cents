@@ -1,7 +1,0 @@
-Ticker: MIN
-            Name: Mineral Resources Limited (ASX: MIN)
-            Founded: 1993
-            Sector: Materials
-            Industry: Other Industrial Metals & Mining
-            CEO: Christopher Ellison
-            Description: Mineral Resources Limited, together with subsidiaries, operates as a mining services company in Australia, Asia, and internationally.It operates through five segments: Mining Services, Iron Ore, Lithium, Energy, and Other Commodities.The company offers contract crushing, screening, and processing; specialized mine services, including materials handling, plant and equipment hire and maintenance, tails recovery, and aggregate crushing; and design, engineering, and construction services for resources sector.It also manages the processing, production, logistics, ship loading, marketing, and export of commodities on behalf of tenement owners; and provides specialist parts to the mining, quarrying, and recycling industries.In addition, the company has a portfolio of iron ore assets; and holds interests in the Mount Marion and Wodgina lithium projects located in Western Australia.Mineral Resources Limited was founded in 1993 and is based in Osborne Park, Australia.

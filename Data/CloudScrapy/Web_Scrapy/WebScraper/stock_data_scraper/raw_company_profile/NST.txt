@@ -1,7 +1,0 @@
-Ticker: NST
-            Name: Northern Star Resources Limited (ASX: NST)
-            Founded: 2000
-            Sector: Materials
-            Industry: Gold
-            CEO: Stuart Tonkin
-            Description: Northern Star Resources Limited engages in the exploration, development, mining, and processing of gold deposits.It also sells refined gold. It operates in Western Australia, the Northern Territory, and Alaska.The company was incorporated in 2000 and is headquartered in Subiaco, Australia.

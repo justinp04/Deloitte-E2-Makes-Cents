@@ -1,1 +1,0 @@
-[{'quoteType': 'NONE', 'symbol': 'WBC', 'underlyingSymbol': 'WBC', 'uuid': '37a10609-f2dc-39b5-aaba-0761da5e3a3c', 'maxAge': 86400, 'trailingPegRatio': None}][{'quoteType': 'NONE', 'symbol': 'WBC', 'underlyingSymbol': 'WBC', 'uuid': '37a10609-f2dc-39b5-aaba-0761da5e3a3c', 'maxAge': 86400, 'trailingPegRatio': None}]

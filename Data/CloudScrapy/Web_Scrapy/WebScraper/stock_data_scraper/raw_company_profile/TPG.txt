@@ -1,7 +1,0 @@
-Ticker: TPG
-            Name: TPG Telecom Limited (ASX: TPG)
-            Founded: 1986
-            Sector: Communication Services
-            Industry: Telecom Services
-            CEO: Inaki Berroeta
-            Description: TPG Telecom Limited provides telecommunications services to consumer, business, enterprise, and government and wholesale customers in Australia.The company owns and operates fixed and mobile telecommunication services. It also offers mobile, voice, fibre internet, enterprise ethernet, SD-WAN, data, business answering, messaging, enterprise fixed wireless, IoT devices, cloud, mobile private network, business satellite, and call centre services.It provides its services under the Vodafone, TPG, iiNet, AAPT, Internode, Lebara, and felix brands. The company was formerly known as Vodafone Hutchison Australia Limited and changed its name to TPG Telecom Limited in June 2020.TPG Telecom Limited was founded in 1986 and is based in Barangaroo, Australia.

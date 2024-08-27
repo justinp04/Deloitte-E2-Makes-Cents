@@ -1,7 +1,0 @@
-Ticker: SGM
-            Name: Sims Limited (ASX: SGM)
-            Founded: 1917
-            Sector: Materials
-            Industry: Steel
-            CEO: Stephen Mikkelsen
-            Description: Sims Limited engages in buying, processing, and selling ferrous and non-ferrous recycled metals in Australia, Bangladesh, China, Turkey, the United States, and internationally.The company operates through six segments: North America Metals, Investment in SA Recycling, Australia/New Zealand Metals, UK Metals, Global Trading, and Sims Lifecycle Services.It is involved in the collection, processing, and trading of iron and steel secondary raw materials; and other metal alloys and residues, principally aluminum, lead, copper, zinc, and nickel bearing materials.The company also engages in the provision of environmentally responsible solutions for the disposal of post-consumer electronic products, such as information technology assets recycled for commercial customers; and environmentally responsible recycling of negative value materials, including electronic equipment.In addition, it provides secondary processing and other services comprising recycling of municipal curbside materials, stevedoring, and other sources of service.The company was founded in 1917 and is headquartered in Mascot, Australia.

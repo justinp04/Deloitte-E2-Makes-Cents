@@ -1,7 +1,0 @@
-Ticker: COL
-            Name: Coles Group Limited (ASX: COL)
-            Founded: 1914
-            Sector: Consumer Staples
-            Industry: Grocery Stores
-            CEO: Leah Weckert
-            Description: Coles Group Limited operates as a retailer in Australia.It operates through Supermarkets and Liquor segments. The company operates various supermarkets; and coles.com.au, which offers a choice of home delivery, including same-day, overnight drop and go services, and pick up from click and collect locations.Its Coles Financial Services provides insurance, credit cards, and personal loans to Australian families.The company is also involved in the retailing of liquor through its various stores under the Liquorland, First Choice, First Choice Liquor, and Vintage Cellars brand names.In addition, it operates as flybuys loyalty program. The company was formerly known as Coles Myer Ltd. and changed its name to Coles Group Limited.Coles Group Limited was founded in 1914 and is based in Hawthorn East, Australia.

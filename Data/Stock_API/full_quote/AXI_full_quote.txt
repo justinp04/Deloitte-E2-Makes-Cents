@@ -1,1 +1,0 @@
-[{'exchange': 'NMS', 'quoteType': 'ECNQUOTE', 'symbol': 'AXI', 'underlyingSymbol': 'AXI', 'firstTradeDateEpochUtc': 854721000, 'timeZoneFullName': 'America/New_York', 'timeZoneShortName': 'EDT', 'uuid': 'd4b37d9c-236c-37f7-a2be-f544da3fcf1e', 'gmtOffSetMilliseconds': -14400000, 'maxAge': 86400, 'trailingPegRatio': None}]

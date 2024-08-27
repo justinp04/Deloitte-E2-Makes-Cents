@@ -1,7 +1,0 @@
-Ticker: WHC
-            Name: Whitehaven Coal Limited (ASX: WHC)
-            Founded: 1999
-            Sector: Energy
-            Industry: Thermal Coal
-            CEO: Paul Flynn
-            Description: Whitehaven Coal Limited develops and operates coal mines in New South Wales and Queensland.It operates through three segments: Open Cut Operations, Underground Operations, and Coal Trading and Blending.The company produces metallurgical and thermal coal. It operates four mines, including three open cut and one underground located in the Gunnedah Coal Basin in New South Wales.The company sells coal in Japan, Korea, Taiwan, Malaysia, New Caledonia, Vietnam, Indonesia, Europe, and internationally.Whitehaven Coal Limited was founded in 1999 and is based in Sydney, Australia.

@@ -1,7 +1,0 @@
-Ticker: WDS
-            Name: Woodside Energy Group Ltd (ASX: WDS)
-            Founded: 1954
-            Sector: Energy
-            Industry: Oil & Gas Exploration & Production
-            CEO: Marguerite O’Neill
-            Description: Woodside Energy Group Ltd engages in the exploration, evaluation, development, production, and marketing of hydrocarbons in the Asia Pacific, Africa, the Americas, and the Europe.The company produces liquefied natural gas, pipeline gas, crude oil and condensate, and natural gas liquids.It holds interests in the Pluto LNG, North West Shelf, Wheatstone and Julimar-Brunello, Bass Strait, Ngujima-Yin FPSO, Okha FPSO, Pyrenees FPSO, Macedon, Shenzi, Mad dog, Greater Angostura, as well as Scarborough, Sangomar, Trion, Calypso, Browse, Liard, Atlantis, Woodside Solar opportunity, and Sunrise and Troubadour.The company involves in development of new energy products and carbon services. The company was formerly known as Woodside Petroleum Ltd and changed its name to Woodside Energy Group Ltd in May 2022.Woodside Energy Group Ltd was founded in 1954 and is headquartered in Perth, Australia.

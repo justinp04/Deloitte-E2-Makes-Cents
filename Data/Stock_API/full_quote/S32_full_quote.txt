@@ -1,1 +1,0 @@
-[{'trailingPegRatio': None}][{'trailingPegRatio': None}]

@@ -1,7 +1,0 @@
-Ticker: WOR
-            Name: Worley Limited (ASX: WOR)
-            Founded: 1893
-            Sector: Energy
-            Industry: Oil & Gas Equipment & Services
-            CEO: Robert Ashton
-            Description: Worley Limited provides professional project and asset services to energy, chemicals, and resources sectors worldwide.The company offers digital, consulting, engineering and design, construction management, construction and fabrication, supply chain management, project management, and operation and maintenance services, as well as maintenance, modification, and operation services.It serves new energy, power, upstream and midstream, refining and chemicals, and infrastructure markets, as well as mining, minerals, and metals markets.The company was formerly known as WorleyParsons Limited and changed its name to Worley Limited in October 2019.The company was founded in 1893 and is based in Sydney, Australia.

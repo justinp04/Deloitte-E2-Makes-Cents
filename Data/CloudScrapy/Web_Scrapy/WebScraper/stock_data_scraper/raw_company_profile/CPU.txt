@@ -1,7 +1,0 @@
-Ticker: CPU
-            Name: Computershare Limited (ASX: CPU)
-            Founded: 1978
-            Sector: Financials
-            Industry: Capital Markets
-            CEO: Stuart Irving
-            Description: Computershare Limited provides issuer, employee share plans and voucher, business, communication and utilities, technology, and mortgage and property rental services.The company offers issuer services that include register maintenance, corporate actions, stakeholder relationship management, corporate governance, and related services; mortgage services and property rental, including tenancy bond protection services; and employee share plans and voucher services comprising administration and related services for employee share and option plans, and childcare voucher administration services.It also provides business services, including the provision of bankruptcy, class action, and corporate trust administration services; communication services and utilities operations consisting of document composition and printing, intelligent mailing, inbound process automation, scanning, and electronic delivery; and technology services, such as software solutions in share registry and financial services, as well as agency services in connection with the administration of debt securities.It operates in Australia, New Zealand, Asia, Canada, Continental Europe, the United Kingdom, the Channel Islands, Ireland, Africa, and the United States.The company was incorporated in 1978 and is based in Abbotsford, Australia.

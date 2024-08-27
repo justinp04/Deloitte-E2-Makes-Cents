@@ -1,7 +1,0 @@
-Ticker: MFG
-            Name: Magellan Financial Group Limited (ASX: MFG)
-            Founded: 2004
-            Sector: Financials
-            Industry: Asset Management
-            CEO: Ms. Kirsten Elizabeth Morton
-            Description: Magellan Financial Group Limited is a publicly owned investment manager. It invests in global equities and global listed infrastructure markets across the globe. Magellan Financial Group Limited founded in 2004 and is based in Sydney, Australia.
