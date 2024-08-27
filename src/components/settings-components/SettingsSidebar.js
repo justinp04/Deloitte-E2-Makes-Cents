@@ -12,7 +12,7 @@ import SearchBar from '../SearchBar';
 const SettingsSidebar = () => {
     return (
         <div className="mt-4">
-            <SearchBar placeholder="Search Settings" />
+            <SearchBar placeholder="Search Settings" className="mt-5" style={{marginTop:"500px"}}/>
             <Nav className="flex-column">
                 <Nav.Item>
                     <Nav.Link as={Link} to="account-info" className="nav-link fw-bold">Account Information</Nav.Link>
