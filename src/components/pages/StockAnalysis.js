@@ -43,7 +43,7 @@ function StockAnalysis() {
 
     return (
         <div className="page-container">
-            <div className="sidebar">
+            <div className="sa-sidebar">
                 <SASidebar 
                     favouriteStocks={favouriteStocks} 
                     addFavourite={addFavourite} 

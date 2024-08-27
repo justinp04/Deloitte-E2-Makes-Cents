@@ -29,6 +29,15 @@
     margin-left: 10px;
 }
 
+.sa-sidebar {
+    position: fixed; /* Fixes the sidebar to the left*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px; /* Set the width of the sidebar */
+    background-color: #f8f9fa;
+    margin-top: 30px;
+  }
 
 /* Chat Box Styling */
 /* Chat*/

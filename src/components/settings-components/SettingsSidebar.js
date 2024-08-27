@@ -11,7 +11,7 @@ import SearchBar from '../SearchBar';
 
 const SettingsSidebar = () => {
     return (
-        <div className="p-3 mt-4">
+        <div className="mt-4">
             <SearchBar placeholder="Search Settings" />
             <Nav className="flex-column">
                 <Nav.Item>
