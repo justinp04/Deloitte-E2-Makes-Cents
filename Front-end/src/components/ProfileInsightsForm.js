@@ -3,12 +3,14 @@
  * Fix: 
  * 
  ************************************************************************************************/
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
+import { useMsal } from '@azure/msal-react';
 import RangeQuestion from './RangeQuestion';
 import SelectQuestion from './SelectQuestion';
 
 const ProfileInsightsForm = () => {
+  const { accounts } = useMsal();
+  const [email, setEmail] = useState('');
   const [experience, setExperience] = useState(1);
   const [income, setIncome] = useState('');
   const [investmentDuration, setInvestmentDuration] = useState(1);
@@ -33,12 +35,21 @@ const ProfileInsightsForm = () => {
   const rangeLabelsQ5 = ["Can't Afford", "Can Barely Afford", "Can Somewhat Afford", "Can Comfortably Afford", "Can Easily Afford"];
   const rangeLabelsQ6 = ["Lump Sum", "Mix of Both", "Recurring Investments"];
 
+  // Fetch email from logged-in user's account information
+  useEffect(() => {
+    if (accounts.length > 0) {
+      const userEmail = accounts[0].username; 
+      setEmail(userEmail);
+    }
+  }, [accounts]);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     var incomeIndex = incomeOptions.indexOf(income) + 1;
     console.log(incomeIndex);
     
     const formData = {
+      email: email,
       question_response_1: parseInt(experience),
       question_response_2: incomeIndex,
       question_response_3: parseInt(investmentDuration),
@@ -74,6 +85,7 @@ const ProfileInsightsForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className='w-100' style={{ maxWidth: '800px' }}>
+      
       {/* Question One */}
       <RangeQuestion
         label="Q1. How experienced are you with stock investing?"

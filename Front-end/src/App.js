@@ -35,6 +35,7 @@ function App() {
           <Route path="/news-feed" element={<NewsFeed />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/questionnaire" element={<UserQuestionaire />} />
         </Routes>
       </div>
   );
