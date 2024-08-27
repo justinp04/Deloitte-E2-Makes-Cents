@@ -5,11 +5,13 @@
  ************************************************************************************************/
 import React, { useState, useEffect } from 'react';
 import { useMsal } from '@azure/msal-react';
+import { useNavigate } from 'react-router-dom';
 import RangeQuestion from './RangeQuestion';
 import SelectQuestion from './SelectQuestion';
 
 const ProfileInsightsForm = () => {
   const { accounts } = useMsal();
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [experience, setExperience] = useState(1);
   const [income, setIncome] = useState('');
@@ -76,6 +78,7 @@ const ProfileInsightsForm = () => {
       .then(data => {
         console.log(data);
         alert('Request successful! Check console for response.');
+        navigate('/about')
       })
       .catch(error => {
         console.error('Error:', error);

@@ -38,8 +38,8 @@ router.post('/register', async (req, res) => {
         question_response_6
     } = req.body;
 
-    if (!email | !question_response_1 || !question_response_2 || !question_response_3 || !question_response_4 || !question_response_5 || !question_response_6) {
-        return res.status(400).json({ error: 'All fields are required' });
+    if (!email || question_response_1 < 1 || question_response_3 < 1 || question_response_4 < 1 || question_response_5 < 1 || question_response_6 < 1) {
+        return res.status(400).json({ error: 'All fields are required and must have valid values' });
     }
 
     console.log('question_response_1:', question_response_1);
@@ -61,7 +61,6 @@ router.post('/register', async (req, res) => {
             .input('Response5', sql.TinyInt, question_response_5)
             .input('Response6', sql.TinyInt, question_response_6)
             .query(query);
-        console.log('Database operation successful:', result);
         res.status(201).json({ message: 'User data successfully inserted' });
     } catch (err) {
         console.error('Error inserting data:', err);
