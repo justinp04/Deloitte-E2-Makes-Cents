@@ -1,4 +1,4 @@
-/* Company Title Styling */
+/* NewsCompanyTitle.js */
 .company-title-div {
     margin-left: 36px;
     margin-top: 5px;
@@ -16,7 +16,7 @@
     text-transform: uppercase;
 }
 
-/* Filter button styling */
+/* FilterButton.js */
 .filter-button {
     background-color: #D1D1D1;
     border: none;
@@ -49,7 +49,7 @@
     margin-left: 37px;
 }
 
-/* Custom styles for cards */
+/* NewsCard.js */
 .card {
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -64,7 +64,7 @@
     padding: 10px;
 }
 
-/* News Feed sidebar styling */
+/* NewsSidebar.js */
 .center-searchbar {
     display: flex;
     align-items: center;

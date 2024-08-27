@@ -1,3 +1,7 @@
+/************************************************************************************************
+ * Purpose: Card for companies that will be added to stock analysis sidebar
+ * Fix: 
+ ************************************************************************************************/
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import FavouriteButton from './FavouriteButton';

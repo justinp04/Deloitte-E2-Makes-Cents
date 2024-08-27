@@ -6,14 +6,15 @@
  *  - Remove create account button when user is signed in
  ************************************************************************************************/
 
-import React, {Component, startTransition} from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import { useMsal } from "@azure/msal-react";
 import { loginRequest } from "../../authentication/authConfig";
 
 import './About.css';
 
-function About() {
+function About() 
+{
+    // Handling user login logic
     const { instance } = useMsal();
 
     const handleLogin = () => {
@@ -58,16 +59,9 @@ function About() {
                     </div>
                 </div>
 
-                <button
-                    className="green-btn"
-                    onClick={() => handleLogin()}
-                >
+                <button className="green-btn" onClick={() => handleLogin()}>
                     Create An Account
                 </button>
-                {/* <Link to="/register">
-                    <button className="btn green-btn my-1 mt-3 mb-5">Create An Account</button>
-                </Link> */}
-
             </div>
         </div>
     );

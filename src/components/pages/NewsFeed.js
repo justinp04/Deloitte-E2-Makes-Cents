@@ -12,7 +12,7 @@ import NewsSidebar from '../newsfeed-components/NewsSidebar';
 import FilterButton from '../newsfeed-components/FilterButton';
 import './NewsFeed.css';
 
-function NewsFeed({ isSignedIn }) {
+function NewsFeed() {
     return (
         <div className="page-container">
             <div className="sidebar">

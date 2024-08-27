@@ -1,4 +1,4 @@
-/* Navbar Styling */
+/* NavbarComponent.js */
 .navbar {
     height: 80px;
     width: 100%;
@@ -12,9 +12,7 @@
     color: #555;
     display: flex;
     align-items: center;
-    /* Ensure links are centered vertically */
-    height: 100%;
-    /* Full height to match parent flex container */
+    height: 100%; /* Full height to match parent flex container */
 }
 
 .navbar-light .navbar-nav .nav-link:hover {

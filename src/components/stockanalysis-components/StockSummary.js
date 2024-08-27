@@ -10,7 +10,8 @@ import FavouriteButton from './FavouriteButton';
 import '../Components.css';
 import ToggleSwitch from '../ToggleSwitch';
 
-const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks }) => {
+const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks }) => 
+{
     const [referencesOpen, setReferencesOpen] = useState(false); // To control the nested accordion
 	const [isChecked, setChecked] = useState(true);
 
@@ -45,7 +46,7 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
         <div className="toggle-list-container">
 			{/* Data  */}
 			<div className="me-5" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-				<h5 className='mx-4 ps-3 fw-bold' style={{ margin: 0 }}>{companyTitle}</h5>
+				<h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{companyTitle}</h5>
 				<FavouriteButton
 					companyTitle={companyTitle}
 					isFavourited={isFavourited}
@@ -111,5 +112,4 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
         </div>
     );
 };
-
 export default StockSummary;

@@ -115,40 +115,46 @@
 /*********************************
 * SearchBar.js
 **********************************/
-/*Search Bar Styling*/
 .searchbar {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    margin: none;
-    height: 36px;
-  }
-  .border-no-outline {
-    border: none;
-    outline: none;
-    box-shadow: none;
-  }
-  .searchbar-icon {
-    color: darkgrey;
-    background-color: white;
-  }
-  .rounded-input-group .form-control {
-    border-radius: 20px 0 0 20px; 
-  }
-  .rounded-right {
-    border-radius: 0 20px 20px 0;
-  }
-  .rounded-input-group .input-group-prepend .input-group-text {
-    border-radius: 20px 0 0 20px;
-  }
-  .center-searchbar{
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-  }
-  
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: none;
+  height: 36px;
+}
+
+/* Ensure no outline, border, or shadow is applied on focus */
+.rounded-input-group .form-control:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.searchbar-icon {
+  color: none;
+  background-color: white;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rounded-input-group .form-control {
+  border-radius: 0 20px 20px 0;
+}
+
+.rounded-input-group .input-group-text {
+  border-radius: 20px 0 0 20px;
+  background-color: white; /* Matches the input background */
+  border: none; /* Remove any borders */
+}
+
+.center-searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*********************************
 * TextInputBox.js
@@ -190,42 +196,6 @@
 /*********************************
 * ToggleSwitch.js
 **********************************/
-/* .toggle-list-container {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .toggle-list-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .title-icon {
-    display: flex;
-    align-items: center;
-  }
-  
-  .title-text {
-    margin-left: 10px;
-    font-weight: bold;
-  }
-  
-  .action-buttons {
-    display: flex;
-    align-items: center;
-  }
-  
-  .action-buttons > *:not(:last-child) {
-    margin-right: 10px; 
-  }
-  
-  .toggle-list-items {
-    margin-top: 10px;
-    padding-left: 20px;
-  }
-   */
    .react-switch-checkbox {
     height: 0;
     width: 0;

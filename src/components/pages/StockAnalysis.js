@@ -1,29 +1,30 @@
 /************************************************************************************************
  * Purpose: Stock Analysis Page
  * Fix: 
- *  - Need to update so that the latest chat is scrolled down to at the bottom
- *  - warning disclaimer, need to work on positioning when window size changes
- *  - when toggles open, it covers chat, need to figure out how to push content down
- *  - fix the blue line placement when the summary is opened
  ************************************************************************************************/
 import React, { useState } from 'react';
 import SASidebar from '../stockanalysis-components/SASidebar';
 import ChatBox from '../stockanalysis-components/ChatBox';
-import ToggleSwitch from '../ToggleSwitch';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import StockSummary from '../stockanalysis-components/StockSummary';
 
-function StockAnalysis({ isSignedIn }) {
-    const [messages, setMessages] = useState([]);
-    const [accordionOpen, setAccordionOpen] = useState(false);
-    const [favouriteStocks, setFavouriteStocks] = useState([]); // Manage favourite stocks
+function StockAnalysis() {
+    const [messages, setMessages] = useState([]); // State to hold the list of messages exchanged in the application
+    const [accordionOpen, setAccordionOpen] = useState(false); // State to control whether an accordion (presumably in the UI) is open or closed
+    const [favouriteStocks, setFavouriteStocks] = useState([]); // State to manage the list of favourite stocks
 
+    // Function to handle sending a new message
     const handleSendMessage = (newMessage) => {
+        // Adds the new message to the list of messages. Each message object includes a sender and the message content.
         setMessages([...messages, { sender: 'user', message: newMessage }]);
     };
 
+    // Function to add a stock to the list of favourites
     const addFavourite = (companyTitle) => {
+        // Check if the stock is already in the favourites list
         if (!favouriteStocks.some(stock => stock.title === companyTitle)) {
+            // If not, add it to the list by updating the state
+            // Uses the previous state (prevFavourites) to add the new favourite to the list
             setFavouriteStocks(prevFavourites => [
                 ...prevFavourites, 
                 { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" }
@@ -31,7 +32,10 @@ function StockAnalysis({ isSignedIn }) {
         }
     };
 
+    // Function to remove a stock from the list of favourites
     const removeFavourite = (companyTitle) => {
+        // Filters out the stock that matches the companyTitle from the favourites list
+        // Updates the state with the new list of favourites that no longer includes the removed stock
         setFavouriteStocks(prevFavourites =>
             prevFavourites.filter(stock => stock.title !== companyTitle)
         );

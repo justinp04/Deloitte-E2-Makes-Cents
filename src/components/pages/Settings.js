@@ -12,7 +12,7 @@ import UserGuide from '../settings-components/UserGuide';
 import UpdateProfileInsights from '../settings-components/UpdateProfileInsights';
 import './Settings.css';
 
-function Settings({ isSignedIn }) {
+function Settings() {
     return (
         <div className="page-container">
             <div className="sidebar">

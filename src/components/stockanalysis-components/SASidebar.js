@@ -35,12 +35,9 @@ const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => {} }) => 
                 activeKey={openKeys} 
                 onSelect={handleSelect}
             >
+				{/* 'Stock Recommendations' accordion item */}
                 <Accordion.Item eventKey='0' className="item">
                     <Accordion.Header style={{ 
-                        backgroundColor: '#F8F9FA', 
-                        color: openKeys.includes('0') ? '#000' : 'inherit', 
-                        border: openKeys.includes('0') ? '1px solid #E0E0E0' : 'none',
-                        boxShadow: openKeys.includes('0') ? '0 0 5px rgba(0, 0, 0, 0.1)' : 'none',
                         display: 'flex', 
                         alignItems: 'center' 
                     }}>
@@ -71,12 +68,9 @@ const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => {} }) => 
                         />
                     </Accordion.Body>
                 </Accordion.Item>
+				{/* 'Favourites' accordion item */}
                 <Accordion.Item eventKey='2' className="item">
                     <Accordion.Header style={{ 
-                        backgroundColor: '#F8F9FA', 
-                        color: openKeys.includes('2') ? '#000' : 'inherit',
-                        border: openKeys.includes('2') ? '1px solid #E0E0E0' : 'none',
-                        boxShadow: openKeys.includes('2') ? '0 0 5px rgba(0, 0, 0, 0.1)' : 'none',
                         display: 'flex', 
                         alignItems: 'center' 
                     }}>
@@ -96,6 +90,22 @@ const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => {} }) => 
                                 onClick={() => handleCardClick(stock.title)}
                             />
                         ))}
+                    </Accordion.Body>
+                </Accordion.Item>
+				{/* 'Search Result' accordion item */}
+                <Accordion.Item eventKey='3' className="item">
+                    <Accordion.Header style={{ 
+                        display: 'flex', 
+                        alignItems: 'center' 
+                    }}>
+                        <FontAwesomeIcon 
+                            icon={openKeys.includes('3') ? faChevronDown : faChevronRight} 
+                            className='me-2' 
+                        />
+                        Search Result
+                    </Accordion.Header>
+                    <Accordion.Body className='px-0 pt-1 pb-0'>
+                        <SearchBar placeholder="Search for a stock" />
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

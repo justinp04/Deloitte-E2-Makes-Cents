@@ -5,7 +5,7 @@
  * ********************************************/
 
 
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import NavbarComponent from './components/pages/NavbarComponent';
@@ -17,25 +17,23 @@ import StockAnalysis from './components/pages/StockAnalysis';
 import NewsFeed from './components/pages/NewsFeed';
 import Settings from './components/pages/Settings';
 
-function App() {
-  const [isSignedIn, setIsSignedIn] = useState(false);
-
+function App() 
+{
   return (
-      <div>
-        <NavbarComponent isSignedIn={isSignedIn} setIsSignedIn={setIsSignedIn} />
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/signin" element={<SignIn setIsSignedIn={setIsSignedIn} />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/next" element={<UserQuestionaire />} />
-          <Route path="/stock-analysis" element={<StockAnalysis isSignedIn={isSignedIn}/>} />
-          <Route path="/news-feed" element={<NewsFeed isSignedIn={isSignedIn}/>} />
-          <Route path="/settings/*" element={<Settings isSignedIn={isSignedIn}/>} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-      </div>
+		<div>
+			<NavbarComponent />
+			<Routes>
+				<Route path="/" element={<About />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/signin" element={<SignIn />} />
+				<Route path="/register" element={<Register />} />
+				<Route path="/next" element={<UserQuestionaire />} />
+				<Route path="/stock-analysis" element={<StockAnalysis />} />
+				<Route path="/news-feed" element={<NewsFeed />} />
+				<Route path="/settings/*" element={<Settings />} />
+				<Route path="*" element={<Navigate to="/" />} />
+			</Routes>
+		</div>
   );
 }
-
 export default App;
