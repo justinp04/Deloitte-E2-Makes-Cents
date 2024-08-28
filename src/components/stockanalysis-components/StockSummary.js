@@ -2,7 +2,7 @@
  * Purpose: Summary portion on the top of content page for stock in 'Stock Analysis' page
  * Fix: 
  ************************************************************************************************/
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -10,41 +10,44 @@ import FavouriteButton from './FavouriteButton';
 import '../Components.css';
 import ToggleSwitch from '../ToggleSwitch';
 
-const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks }) => 
-{
+const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks }) => {
     const [referencesOpen, setReferencesOpen] = useState(false); // To control the nested accordion
 	const [isChecked, setChecked] = useState(true);
 
-	// Need to update this to take in names from the database -> currently mock data
-    const companyTitle = "BEGA CHEESE LIMITED (BGA)"; // The stock name to be added/removed from favourites 
+	// Mock database for references
+    const mockDatabase = [
+        {
+            id: 1,
+            title: 'Introduction to React',
+            url: 'https://reactjs.org/docs/getting-started.html'
+        },
+        {
+            id: 2,
+            title: 'Bootstrap Documentation',
+            url: 'https://getbootstrap.com/docs/5.0/getting-started/introduction/'
+        },
+        {
+            id: 3,
+            title: 'FontAwesome Icons',
+            url: 'https://fontawesome.com/icons?d=gallery'
+        }
+    ];
+
+	// Use the mock database as references
+    const [references, setReferences] = useState(mockDatabase);
+
+	const companyTitle = "BEGA CHEESE LIMITED (BGA)"; // The stock name to be added/removed from favourites 
 
     // Determine if this company is already in the favourites list
     const isFavourited = favouriteStocks.some(stock => stock.title === companyTitle);
-
-    // Fetch the references from the API
-    const [references, setReferences] = useState([]);
-    useEffect(() => {
-        const fetchReferences = async () => {
-            try {
-                const response = await fetch('/api/references'); // Replace with your actual API endpoint
-                const data = await response.json();
-                setReferences(data);
-            } catch (error) {
-                console.error('Error fetching references:', error);
-            }
-        };
-
-        fetchReferences();
-    }, []);
 
 	const handleChange = () => {
         setChecked(!isChecked);
     };
 
-
     return (
         <div className="toggle-list-container">
-			{/* Data  */}
+			{/* Data */}
 			<div className="me-5" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
 				<h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{companyTitle}</h5>
 				<FavouriteButton
@@ -59,8 +62,9 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
 					id="detaildSummarySwitch"
 					style={{ marginLeft: 'auto', paddingBottom: '20px' }} // This will push the toggle switch to the end
 				/>
+				<span className="toggle-switch-text" style={{fontSize:"0.7rem"}}>Detailed Summary</span>
+			
 			</div>
-
 
             <Accordion className='mx-4' defaultActiveKey="0">
                 <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
@@ -85,7 +89,7 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
                             <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
                                 <Accordion.Header 
                                     onClick={() => setReferencesOpen(!referencesOpen)}
-                                    style={{ display: 'flex', alignItems: 'center', width: '100%', paddingRight: '0', border: 'none', fontSize:'0.2rem'}}
+                                    style={{ display: 'flex', alignItems: 'center', width: '100%', paddingRight: '0', border: 'none', fontSize:'0.8rem'}}
                                 >
                                     <FontAwesomeIcon 
                                         icon={referencesOpen ? faChevronDown : faChevronRight} 
@@ -94,14 +98,18 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
                                     References
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    <ol style={{ paddingLeft: '1.5rem' }}>
-                                        {references.map((ref) => (
-                                            <li key={ref.id}>
-                                                <a href={ref.url} target="_blank" rel="noopener noreferrer">
-                                                    {ref.title}
-                                                </a>
-                                            </li>
-                                        ))}
+                                    <ol style={{ paddingLeft: '3.8rem', fontSize:"0.8rem"}}>
+                                        {references.length > 0 ? (
+                                            references.map((ref) => (
+                                                <li key={ref.id}>
+                                                    <a href={ref.url} target="_blank" rel="noopener noreferrer">
+                                                        {ref.title}
+                                                    </a>
+                                                </li>
+                                            ))
+                                        ) : (
+                                            <p>No references available</p>
+                                        )}
                                     </ol>
                                 </Accordion.Body>
                             </Accordion.Item>
@@ -112,4 +120,5 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
         </div>
     );
 };
+
 export default StockSummary;

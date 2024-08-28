@@ -243,10 +243,11 @@
 
 /* Style for the text label */
 .toggle-switch-text {
-  margin-left: 10px; 
+  margin-left: 2px; 
   font-size: 10px; 
-  color: #333; 
+  color: #333; /* Text color */
   user-select: none; /* Prevent text selection */
   width: 20px;
+  font-weight:bold;
 }
 

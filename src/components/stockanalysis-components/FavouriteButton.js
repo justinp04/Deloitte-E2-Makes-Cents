@@ -5,29 +5,38 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faCheck } from '@fortawesome/free-solid-svg-icons';
+import '../pages/StockAnalysis.css';
 
 function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavourited }) {
     const [isFav, setIsFav] = useState(isFavourited);
+    const [iconClass, setIconClass] = useState('fav-icon');
 
-    // If icon is a plus and clicked, it will be added to favourites
     useEffect(() => {
         setIsFav(isFavourited);
     }, [isFavourited]);
 
-    // condition to check if stock is favourited
-    // If the icon is a check and clicked (is a favourite), it will be removed from favourites
-    // Else a sidebar card will be made for them
+    // Change icon and also adds transition
     const toggleFavourite = () => {
-        if (isFav) {
-            if (onRemoveFavourite) {
-                onRemoveFavourite(companyTitle);
+        setIconClass('fav-icon fav-icon-leave');
+
+        setTimeout(() => {
+            if (isFav) {
+                if (onRemoveFavourite) {
+                    onRemoveFavourite(companyTitle);
+                }
+            } else {
+                if (onFavourite) {
+                    onFavourite(companyTitle);
+                }
             }
-        } else {
-            if (onFavourite) {
-                onFavourite(companyTitle);
-            }
-        }
-        setIsFav(!isFav);
+            setIsFav(!isFav);
+
+            setIconClass('fav-icon fav-icon-enter');
+
+            setTimeout(() => {
+                setIconClass('fav-icon');
+            }, 175); // Duration of transition
+        }, 175);
     };
 
     return (
@@ -38,7 +47,7 @@ function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavou
         >
             <FontAwesomeIcon 
                 icon={isFav ? faCheck : faPlus} 
-                className="fw-bold" 
+                className={iconClass} 
                 style={{ color: '#9747FF', fontSize: "1.4rem" }} 
             />
         </button>
@@ -46,3 +55,4 @@ function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavou
 }
 
 export default FavouriteButton;
+

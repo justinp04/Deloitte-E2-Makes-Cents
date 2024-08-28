@@ -1,3 +1,4 @@
+/* StockAnalysis.js */
 .fixed-position {
     position: fixed;
     background-color: white;
@@ -21,26 +22,22 @@
     align-items: center;
 }
 
-.title-button-container .favorite-button {
-    margin-left: 10px;
+/* FavouriteButton.css */
+.fav-icon {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.title-button-container .toggle-switch {
-    margin-left: 10px;
+.fav-icon-enter {
+    transform: scale(1.2);
+    opacity: 0;
 }
 
-.sa-sidebar {
-    position: fixed; /* Fixes the sidebar to the left*/
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 300px; /* Set the width of the sidebar */
-    background-color: #f8f9fa;
-    margin-top: 30px;
+.fav-icon-leave {
+    transform: scale(0.8);
+    opacity: 0;
 }
 
 /* Chat Box Styling */
-/* Chat*/
 .chat-box {
     display: flex;
     align-items: flex-start;
@@ -91,20 +88,20 @@
     color: #000;
 }
 
-/* css for QueryInputBar.js */
+/* QueryInputBar.js */
 .query-input-bar {
     position: fixed;
     bottom: 20px;
     left: 300px;
-    width: calc(100% - 330px);
+    width: calc(100% - 400px);
     /* Subtract the width of the sidebar from the total width */
     background-color: #f9f9f9;
     border-top: 1px solid #ccc;
     display: flex;
     align-items: center;
     padding: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
     border: none;
     background-color: white;
 }
@@ -156,6 +153,15 @@
 }
 
 /* SASidebar.js */
+.sa-sidebar {
+    position: fixed; /* Fixes the sidebar to the left*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px; /* Set the width of the sidebar */
+    background-color: #f8f9fa;
+    margin-top: 30px;
+}
 /* General accordion header styles */
 .accordion .accordion-item .accordion-header {
     background-color: #f8f9fa; /* Set background color to #f8f9fa */
