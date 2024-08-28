@@ -1,1 +1,30 @@
 /* Settings Page Styling */
+.text-input-box {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+  .text-box-size{
+    width: 400px;
+  }
+
+/* SettingsSidebar.js */
+.menu-selection {
+    color: black;
+    background-color: white; /* Default background color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    display: flex;
+    align-items: center; 
+    padding-left: 20px; 
+}
+
+.menu-selection:hover, .menu-selection:focus {
+    background-color: #BAF43E; /* Background color when hovered or focused */
+}
+
+.active {
+    background-color: #BAF43E; /* Background color for the active link */
+}
+

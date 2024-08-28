@@ -22,28 +22,25 @@ function UserQuestionaire() {
         question_response_5: 1,
         question_response_6: 1
     });
-
+    
     return (
         <div className='container'>
-            <div>
+            <div style={{ marginBottom: '50px' }}>
                 <h1 className="text-center mb-0 page-title">REGISTER</h1>
                 <h2 className='fw-bold'>Profile Insights</h2>
                 <p>To provide you with the most relevant stock recommendations, please fill out the 'Profile Insights' section.
                     This information will help us tailor our suggestions to match your investment experience, financial goals, and risk tolerance.</p>
             </div>
 
-            <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '7vh' }}>
+            <div className="d-flex flex-column justify-content-center align-items-center" style={{ minHeight: '7vh' }}>
                 <ProfileInsightsForm />
-                {/* <div className="center-button">
-                    <button type="submit" 
-                            className="btn btn-primary green-btn mb-3"
-                            >Create Account</button>
-
+                <div className="center-button mt-3">
+                    <button type="submit" className="btn btn-primary green-btn mb-3">Create Account</button>
                 </div>
 
                 <p className="text-center mb-5">
                     Have an account? <a href="/signin">Sign In Here.</a>
-                </p> */}
+                </p>
             </div>
         </div>
     );

@@ -22,12 +22,14 @@ function Settings() {
                 <div className="title-container">
                     <h1 className="page-header ms-3">Settings</h1>
                 </div>
-                <Routes>
-                    <Route path="account-info" element={<AccountInfo />} />
-                    <Route path="update-profile" element={<UpdateProfileInsights />} />
-                    <Route path="notifications" element={<NotificationsSettings />} />
-                    <Route path="user-guide" element={<UserGuide />} />
-                </Routes>
+                <div className='ms-3'>
+                    <Routes>
+                        <Route path="account-info" element={<AccountInfo />} />
+                        <Route path="update-profile" element={<UpdateProfileInsights />} />
+                        <Route path="notifications" element={<NotificationsSettings />} />
+                        <Route path="user-guide" element={<UserGuide />} />
+                    </Routes>
+                </div>
             </div>
         </div>
     );
