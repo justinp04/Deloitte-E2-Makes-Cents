@@ -124,3 +124,13 @@
     outline: none;
     box-shadow: none;
 }
+
+/* CSS ANIMATIONS */
+.chevron-icon {
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
