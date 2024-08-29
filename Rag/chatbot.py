@@ -18,17 +18,25 @@ def main():
             user_input = "default query"  # Fallback input
 
         # Your existing script logic
-        system_message = {"role": "system", "content": "You are a helpful assistant that helps a user make informed stock investment decisions."}
-        max_response_tokens = 300
-        token_limit = 4096
+        system_message = {
+        "role": "system",
+        "content": (
+            "You are an ASX stock investment assistant. Answer only ASX-related questions. Give specific advice"
+            "If you don't have an answer for a stock related question, say: 'Oops! Gerry's gears aren't turning on that one.' or 'Beep boop! Gerry's circuits didn't catch that.' "
+            "For off-topic questions, reply: 'Just keep ya head in the game! Troy Bolton 2006.'"
+        )
+        }
+        max_response_tokens = 200
+        token_limit = 1000
         conversation = [system_message]
 
         # Append only the last few messages to maintain context
-        if len(conversation) > 6:  # Limit to the last 3 pairs of user-bot exchanges
-            conversation = conversation[-6:]
+        #if len(conversation) > 6:  # Limit to the last 3 pairs of user-bot exchanges
+            #conversation = conversation[-6:]
 
         conversation.append({"role": "user", "content": user_input})
         documents = query_qdrant(user_input)
+        #print(documents)
         context = "\n".join(documents)
         
         conversation.append({"role": "system", "content": f"Context:\n{context}"})
