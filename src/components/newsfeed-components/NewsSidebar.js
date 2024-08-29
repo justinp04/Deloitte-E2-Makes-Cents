@@ -32,7 +32,7 @@ const NewsSidebar = () => {
                                 id="stockRecommendations"
                                 icon={faChevronRight}
                                 className={`chevron-icon ${expandedItem === "0" ? 'rotate' : ''}`}/>
-                            <p className="my-0 ps-3">Stock Recommendations</p>
+                            <p className="my-0 ps-3 fw-bold">Stock Recommendations</p>
                         </Accordion.Header>
                         <Accordion.Body className="ps-4 pe-1">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -45,12 +45,12 @@ const NewsSidebar = () => {
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1" onClick={() => handleToggle("1")}>
-                        <Accordion.Header className="d-inline-flex justify-content-between align-items-centre">
+                        <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "0" ? 'focus' : ''}`}>
                             <FontAwesomeIcon
                                 id="stockRecommendations"
                                 icon={faChevronRight}
                                 className={`chevron-icon ${expandedItem === "1" ? 'rotate' : ''}`}/>
-                            <p className="my-0 ps-3">Following</p>
+                            <p className="my-0 ps-3 fw-bold">Following</p>
                         </Accordion.Header>
                         <Accordion.Body className="ps-4 pe-1">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

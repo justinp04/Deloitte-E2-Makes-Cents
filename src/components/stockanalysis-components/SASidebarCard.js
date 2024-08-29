@@ -14,28 +14,28 @@ const SASidebarCard = ({ companyTitle, status = "Analyse", onClick, onFavourite 
     };
 
     return (
-        <Card 
-            style={{ cursor: 'pointer', backgroundColor: '#FFFFFF', borderRadius: '0', border: 'none' }} 
+        <Card
+            style={{ cursor: 'pointer', backgroundColor: '#FFFFFF', borderRadius: '0', border: 'none' }}
             onClick={onClick}
         >
             <Card.Body className='fw-bold d-flex justify-content-between align-items-center' style={{ fontSize: '65%' }}>
                 {companyTitle}
                 <div className="d-flex align-items-center">
-                    <FavouriteButton 
-                        companyTitle={companyTitle} 
-                        onFavourite={onFavourite} 
+                    <FavouriteButton
+                        companyTitle={companyTitle}
+                        onFavourite={onFavourite}
                     />
-                    <Button 
-                        className="btn-sm ms-2" 
+                    <Button
+                        className="btn-sm ms-2"
                         onClick={(e) => {
                             e.stopPropagation();
                             onClick();
                         }}
                         style={{
-                            ...statusStyles[status], 
-                            borderRadius: '30px', 
-                            fontSize: '80%', 
-                            fontWeight: 'bold', 
+                            ...statusStyles[status],
+                            borderRadius: '30px',
+                            fontSize: '80%',
+                            fontWeight: 'bold',
                             width: '60px',
                             border: 'none',
                         }}
