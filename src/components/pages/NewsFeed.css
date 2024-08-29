@@ -45,7 +45,6 @@
 .filter-title {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 20px;
     margin-left: 37px;
 }
 
@@ -94,36 +93,54 @@
     display: none !important;
 }
 
-.accordion-button {
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: left;
-    padding: 5px 10px;
+.focus {
+    --bs-accordion-btn-bg: #BAF43E;
+}
+
+/* News hero section */
+.hero-section {
+    position: relative;
+    min-width: 550px;
+    max-width: 75%;
     width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    color: #333;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px; /* Adjust as needed */
+    color: white; /* Text color */
+    transition-duration: 0.5s;
+    background: rgba(0, 0, 0, 0.3); /* Optional background for text, to increase contrast */
 }
 
-.accordion-button:hover {
-    text-decoration: none;
-    color: #000;
+.hero-text-container:hover {
+    background: rgba(0, 0, 0, 0.6); /* Optional background for text, to increase contrast */
 }
 
-.accordion-button i {
-    font-size: 16px;
-    transition: transform 0.3s ease;
+.hero-title {
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.collapse.show .accordion-button i {
-    transform: rotate(90deg);
+.hero-subtitle {
+    font-size: 1rem; /* Adjust as needed */
+    line-height: 1.5;
 }
 
-.accordion-button:focus {
-    outline: none;
-    box-shadow: none;
-}
 
 /* CSS ANIMATIONS */
 .chevron-icon {

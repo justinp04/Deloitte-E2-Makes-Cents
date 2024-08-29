@@ -24,15 +24,14 @@ const NewsSidebar = () => {
     return (
         <div className="flex flex-direction-column justify-content-start p-0 mt-4">
             <Container fluid className="m-0 p-0">
-                <SearchBar placeholder="Search A Stock" />
+                <SearchBar placeholder="Search a stock" />
                 <Accordion>
                     <Accordion.Item eventKey="0" onClick={() => handleToggle("0")}>
-                        <Accordion.Header className="d-inline-flex justify-content-between align-items-centre">
+                        <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "0" ? 'focus' : ''}`}>
                             <FontAwesomeIcon
                                 id="stockRecommendations"
                                 icon={faChevronRight}
-                                className={`chevron-icon ${expandedItem === "0" ? 'rotate' : ''}`}
-                            />
+                                className={`chevron-icon ${expandedItem === "0" ? 'rotate' : ''}`}/>
                             <p className="my-0 ps-3">Stock Recommendations</p>
                         </Accordion.Header>
                         <Accordion.Body className="ps-4 pe-1">
@@ -50,8 +49,7 @@ const NewsSidebar = () => {
                             <FontAwesomeIcon
                                 id="stockRecommendations"
                                 icon={faChevronRight}
-                                className={`chevron-icon ${expandedItem === "1" ? 'rotate' : ''}`}
-                            />
+                                className={`chevron-icon ${expandedItem === "1" ? 'rotate' : ''}`}/>
                             <p className="my-0 ps-3">Following</p>
                         </Accordion.Header>
                         <Accordion.Body className="ps-4 pe-1">
