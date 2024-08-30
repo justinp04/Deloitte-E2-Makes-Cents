@@ -73,6 +73,7 @@
 }
 
 .add-button {
+    position: absolute !important;
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -83,8 +84,7 @@
     justify-content: center;
     /* Horizontally centers content */
     border: none;
-    position: fixed;
-    bottom: 23px;
+    bottom: 90px;
     left: 205px;
     z-index: 1000;
 }
@@ -101,7 +101,7 @@
 .hero-section {
     position: relative;
     min-width: 550px;
-    max-width: 75%;
+    max-width: 60%;
     width: 100%;
 }
 

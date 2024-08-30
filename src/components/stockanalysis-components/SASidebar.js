@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import SearchBar from '../SearchBar';
 import '../pages/StockAnalysis.css';

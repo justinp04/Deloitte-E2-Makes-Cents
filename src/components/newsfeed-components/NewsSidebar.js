@@ -12,7 +12,7 @@ import '../pages/NewsFeed.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const NewsSidebar = () => {
     const [expandedItem, setExpandedItem] = useState(false);
@@ -22,7 +22,7 @@ const NewsSidebar = () => {
     };
 
     return (
-        <div className="flex flex-direction-column justify-content-start p-0 mt-4">
+        <div className="flex flex-direction-column justify-content-between p-0 mt-4">
             <Container fluid className="m-0 p-0">
                 <SearchBar placeholder="Search a stock" />
                 <Accordion>
@@ -45,7 +45,7 @@ const NewsSidebar = () => {
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1" onClick={() => handleToggle("1")}>
-                        <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "0" ? 'focus' : ''}`}>
+                        <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "1" ? 'focus' : ''}`}>
                             <FontAwesomeIcon
                                 id="stockRecommendations"
                                 icon={faChevronRight}
