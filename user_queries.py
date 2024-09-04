@@ -47,13 +47,18 @@ def query_qdrant(query_text):
     search_result = load_qdrant_client().search( #perform vector similarity search in qdrant database
         collection_name="E2cluster1",
         query_vector=query_embedding,
-        limit=5  #number of top results to retrieve
+        limit=6  #number of top results to retrieve CAN CHANGE THIS NUMBER AS NEEDED
     )
     
     documents = []
     for point in search_result:
         if isinstance(point, ScoredPoint) and hasattr(point, 'payload') and 'content' in point.payload:
-            documents.append(point.payload['content'])
+            #documents.append(point.payload['content'])
+            document = {
+                'content': point.payload['content'],
+                'metadata': point.payload.get('metadata', {})  #extract metadata
+            }
+            documents.append(document)
         else:
             print(f"Skipping point due to missing payload or content: {point}")
     

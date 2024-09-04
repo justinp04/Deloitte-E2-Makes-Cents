@@ -1,5 +1,3 @@
-from user_profile import load_user_profile
-
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
 Purpose:    Deloitte E2 Capstone Project - Makes Cents
@@ -8,96 +6,209 @@ Purpose:    Deloitte E2 Capstone Project - Makes Cents
 Date:       18/08/24
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-
-'''''''''''''''''''''''''''''''''''''''''''''''''''
-METHOD: load_user_profile
-IMPORT: none
-EXPORT: user_profile
-PURPOSE: This function loads the user profile based
-        on their responses to the registration
-        questions saved in the mySQL database
-'''''''''''''''''''''''''''''''''''''''''''''''''''
-'''def load_user_profile():
-    user_profile = {
-        "experience_level": "novice",
-        "annual_income": "135,000 - 190,000",
-        "investment_horizon": "less than 3 years",
-        "risk_tolerance": "low",
-        "short_term_loss_tolerance": "minimal",
-        "investment_preference": "recurring"
-    }
-    return user_profile'''
-
+#this is where the user registration questions should be loaded in from the sql database (where the example numbers currently are)
 user_profile = {
-        "experience_level": "novice",
-        "annual_income": "135,000 - 190,000",
-        "investment_horizon": "less than 3 years",
-        "risk_tolerance": "low",
-        "short_term_loss_tolerance": "minimal",
-        "investment_preference": "recurring"
+        "experience_level": "5",
+        "annual_income": "4",
+        "investment_horizon": "2",
+        "risk_tolerance": "4",
+        "short_term_loss_tolerance": "2",
+        "investment_preference": "3"
     }
-
-'''''''''''''''''''''''''''''''''''''''''''''''''''
-METHOD: user_customisation
-IMPORT: user_profile
-EXPORT: user_profile_context
-PURPOSE: creates the user profile based on responses
-        to the registration questions
-'''''''''''''''''''''''''''''''''''''''''''''''''''
-def user_customisation():
-    user_profile_context = (
-        f"Experience Level: {user_profile['experience_level']}\n"
-        f"Annual Income: {user_profile['annual_income']}\n"
-        f"Investment Horizon: {user_profile['investment_horizon']}\n"
-        f"Risk Tolerance: {user_profile['risk_tolerance']}\n"
-        f"Short-Term Loss Tolerance: {user_profile['short_term_loss_tolerance']}\n"
-        f"Investment Preference: {user_profile['investment_preference']}\n"
-    )
-    return user_profile_context
-
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: response_complexity
 IMPORT: user_profile
 EXPORT: complexity_instruction
-PURPOSE: takes the information from the user profile
-        to provide the LLM with an instruction on how
-        financially complex responses should be. this
-        is based on the experience level of the user
-        provided in the registration questions
+PURPOSE: provides instructions on response complexity
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def response_complexity():
-    experience_level = user_profile['experience_level']
-    if experience_level in ["novice"]:
-        complexity_instruction = "Provide a simple and easy-to-understand response, for someone with no stock investment knowledge or investing background."
-    elif experience_level in ["beginner"]:
-        complexity_instruction = "Provide a simple and easy-to-understand response."
-    elif experience_level in ["intermediate"]:
-        complexity_instruction = "Provide a balanced response that is clear but includes some detail."
-    elif experience_level in ["advanced"]:
-        complexity_instruction = "Provide a detailed and in-depth response."
-    elif experience_level in ["expert"]:
-        complexity_instruction = "Provide a detailed and in-depth response. The use of technical jargon is encouraged."
-    return complexity_instruction
+    levels = {
+        "1": "Use basic language for beginners.",
+        "2": "Provide simple, clear information.",
+        "3": "Offer a balanced explanation with some detail.",
+        "4": "Include detailed analysis and technical terms.",
+        "5": "Deliver expert insights with advanced terminology."
+    }
+    return levels.get(user_profile['experience_level'], "")
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-METHOD: response_length
-IMPORT: response_depth
-EXPORT: length_instruction
-PURPOSE: gives instructions to the LLM to either make
-        its response 'quick' or 'detailed'. this is
-        for the feature that lets the user toggle
-        the detailed view for the summary response
+METHOD: user_income
+IMPORT: NONE
+EXPORT: income_instruction
+PURPOSE: instructs the LLM based on user income
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-def response_length(response_depth = "detailed"):
-    if response_depth == "quick":
-        length_instruction = " Keep the response concise and to the point. The reader should be able to grasp the main concepts presented to them quickly and easily."
-    elif response_depth == "detailed":
-        length_instruction = " Expand on relevant details and provide a thorough explanation. Explain each conclusion you come to."
-    return length_instruction
+def user_income():
+    incomes = {
+        "1": "with low costs to minimize risk and fees,",
+        "2": "of stable ASX blue-chips or dividend payers,",
+        "3": "suitable for a diversified ASX portfolio including mid-caps,",
+        "4": "in growth sectors with higher potential returns,",
+        "5": "with high yield and speculative opportunities,"
+    }
+    return incomes.get(user_profile['annual_income'], "")
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: user_horizon
+IMPORT: NONE
+EXPORT: horizon_instruction
+PURPOSE: instructs the LLM based on user investment horizon
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def user_horizon():
+    horizons = {
+        "1": " suitable for short-term goals with high liquidity,",
+        "2": " balancing growth and income for medium-term goals,",
+        "3": " with high growth potential for long-term investments,"
+    }
+    return horizons.get(user_profile['investment_horizon'], "")
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: user_risk
+IMPORT: NONE
+EXPORT: risk_instruction
+PURPOSE: instructs the LLM based on user risk tolerance
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def user_risk():
+    risks = {
+        "1": " with low risk, such as government bonds or defensive stocks,",
+        "2": " with steady returns, like blue-chip or dividend stocks,",
+        "3": " with a balanced risk profile, including growth stocks,",
+        "4": " with higher volatility and growth potential,",
+        "5": " with high risk and speculative characteristics,"
+    }
+    return risks.get(user_profile['risk_tolerance'], "")
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: user_loss
+IMPORT: NONE
+EXPORT: loss_instruction
+PURPOSE: instructs the LLM based on user short-term loss tolerance
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def user_loss():
+    losses = {
+        "1": " with low volatility to avoid short-term losses,",
+        "2": " with minimal risk and stability,",
+        "3": " with a balance of defensive and growth attributes,",
+        "4": " with higher volatility for greater potential returns,",
+        "5": " with high risk and substantial potential for short-term losses,"
+    }
+    return losses.get(user_profile['short_term_loss_tolerance'], "")
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: user_preference
+IMPORT: NONE
+EXPORT: preference_instruction
+PURPOSE: instructs the LLM based on user investment preference
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def user_preference():
+    preferences = {
+        "1": " and that is undervalued and suitable for a lump sum.",
+        "2": " and that fits both lump sum and recurring investments.",
+        "3": " and with stable performance for regular investments."
+    }
+    return preferences.get(user_profile['investment_preference'], "")
 
 
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: chatbot_experience
+IMPORT: NONE
+EXPORT: experience
+PURPOSE: instructs the LLM based on user investment preference
+        for the chatbot feature
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def chatbot_experience():
+    experience = {
+        "1": " novice at stock investing,",
+        "2": " beginner at stock investing,",
+        "3": " intermediate at stock investing,",
+        "4": " advanced at stock investing,",
+        "5": " expert at stock investing,"
+    }
+    return experience.get(user_profile['experience_level'])
 
-#def user_income():
-    #if annual_income
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: chatbot_income
+IMPORT: NONE
+EXPORT: income
+PURPOSE: instructs the LLM based on user income
+        for the chatbot feature
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def chatbot_income():
+    income = {
+        "1": " earns less than AUD$18,000,",
+        "2": " earns AUD$18,000-$45,000,",
+        "3": " earns AUD$45,000-$135,000,",
+        "4": " earns AUD$135,000-$190,000,",
+        "5": " earns more than AUD$190,000,"
+    }
+    return income.get(user_profile['annual_income'])
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: chatbot_invest_length
+IMPORT: NONE
+EXPORT: invest_length
+PURPOSE: instructs the LLM based on user investment
+        length for the chatbot feature
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def chatbot_invest_length():
+    invest_length = {
+        "1": " wants to hold investments for less than 3 years,",
+        "2": " wants to hold investments for 3-10 years",
+        "3": " wants to hold investments for more than 10 years,"
+    }
+    return invest_length.get(user_profile['investment_horizon'])
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: chatbot_risk
+IMPORT: NONE
+EXPORT: risk
+PURPOSE: instructs the LLM based on user risk willingness
+        for the chatbot feature
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def chatbot_risk():
+    risk = {
+        "1": " has very low risk tolerance,",
+        "2": " has low risk tolerance,",
+        "3": " has moderate risk tolerance,",
+        "4": " has high risk tolerance,",
+        "5": " has very high risk tolerance,"
+    }
+    return risk.get(user_profile['risk_tolerance'])
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: chatbot_loss
+IMPORT: NONE
+EXPORT: loss
+PURPOSE: instructs the LLM based on user short-term loss
+        for the chatbot feature
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def chatbot_loss():
+    loss = {
+        "1": " can handle no short term decline,",
+        "2": " can handle minimal short term decline,",
+        "3": " can handle moderate short term decline,",
+        "4": " can handle significant short term decline,",
+        "5": " can handle substantial short term decline,"
+    }
+    return loss.get(user_profile['short_term_loss_tolerance'])
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: chatbot_invest_type
+IMPORT: NONE
+EXPORT: invest_type
+PURPOSE: instructs the LLM based on user investment type
+        for the chatbot feature
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def chatbot_invest_type():
+    invest_type = {
+        "1": " and prefers investing lump sums.",
+        "2": " and prefers lump sum and recurring investments.",
+        "3": " and prefers investing recurring sums."
+    }
+    return invest_type.get(user_profile['investment_preference'])

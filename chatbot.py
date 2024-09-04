@@ -1,5 +1,7 @@
 import tiktoken
 from user_queries import query_qdrant, get_llm_response
+from prompt_engineering import chatbot_experience, chatbot_income, chatbot_invest_length, chatbot_risk, chatbot_loss, chatbot_invest_type
+from summary import get_stock_name
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -10,9 +12,19 @@ Date:       18/08/24
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 def main():
-    system_message = {"role": "system", "content": "You are a helpful assistant that helps a user make informed stock investment decisions."}
-    max_response_tokens = 300 
-    token_limit = 4096
+    system_message = {
+    "role": "system",
+    "content": (
+        "You are an ASX stock investment assistant called Gerry. Answer only ASX-related questions. Always give the most up-to-date answer."
+        f"Provide personalised answers for someone who is {chatbot_experience()} {chatbot_income()} {chatbot_invest_length()} {chatbot_risk()} {chatbot_loss()} {chatbot_invest_type()}"
+        f"You need to provide answers about {get_stock_name()}."
+        "If you don't have an answer for a stock related question, or you are told to give a specific response, say: 'Oops! Gerry's gears aren't turning on that one.' "
+        "For off-topic questions, reply: ' 'Just keep ya head in the game.' Troy Bolton 2006'"
+    )
+    }
+
+    max_response_tokens = 200 
+    token_limit = 1000 #this was originally 4096 but ive reduced it to try and help with token limits
     conversation = []
     conversation.append(system_message)
 
