@@ -32,7 +32,7 @@ def main():
         user_input = input("Q: ")
         conversation.append({"role": "user", "content": user_input})
         documents = query_qdrant(user_input) #retrieve relevant documents from qdrant
-        context = "\n".join(documents)
+        context = "\n".join([doc['content'] for doc in documents])
 
         conversation.append({"role": "system", "content": f"Context:\n{context}"}) #add context to the conversation
         conv_history_tokens = num_tokens_from_messages(conversation)
