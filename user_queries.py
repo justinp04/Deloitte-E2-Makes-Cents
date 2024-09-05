@@ -44,19 +44,18 @@ PURPOSE: returns the closest matched results from the
 def query_qdrant(query_text):
     query_embedding = get_query_embedding(query_text)
     
-    search_result = load_qdrant_client().search( #perform vector similarity search in qdrant database
+    search_result = load_qdrant_client().search(  
         collection_name="E2cluster1",
         query_vector=query_embedding,
-        limit=6  #number of top results to retrieve CAN CHANGE THIS NUMBER AS NEEDED
+        limit=6  #number of top results to retrieve - can change this if need more/less results
     )
     
     documents = []
     for point in search_result:
         if isinstance(point, ScoredPoint) and hasattr(point, 'payload') and 'content' in point.payload:
-            #documents.append(point.payload['content'])
             document = {
                 'content': point.payload['content'],
-                'metadata': point.payload.get('metadata', {})  #extract metadata
+                'metadata': point.payload.get('metadata', {})
             }
             documents.append(document)
         else:

@@ -1,9 +1,8 @@
-import os
+import os, re, time
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 from qdrant_client.models import PointStruct
 from load_clients import load_openai_client, load_qdrant_client, load_blob_client
-import time
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -21,12 +20,20 @@ def main():
     try:
         container_client = load_blob_client()
         blob_list = container_client.list_blobs()
-        global_id_counter = 0 #ensure unique ids
+        global_id_counter = 0  #ensure unique ids
         
         for blob in blob_list:
             blob_client = container_client.get_blob_client(blob.name)
             blob_content = blob_client.download_blob().readall().decode('utf-8')
-            doc = Document(page_content=blob_content, metadata={"source": blob.name})
+
+            url_match = re.search(r'https://\S+', blob_content) #get the url from each file
+            url = url_match.group(0) if url_match else None
+            
+            metadata = {"source": blob.name} #store the URL in metadata for later!
+            if url:
+                metadata["url"] = url
+
+            doc = Document(page_content=blob_content, metadata=metadata)
             
             chunks = create_chunks([doc])
             chunk_texts = [chunk.page_content for chunk in chunks]
@@ -114,3 +121,7 @@ def qdrant_store(points):
                 time.sleep(2 ** attempt)  
             else:
                 raise
+
+
+if __name__ == "__main__":
+    main()
