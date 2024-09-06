@@ -15,6 +15,7 @@ function UserQuestionaire() {
 
      // State to store form data from ProfileInsightsForm
      const [formData, setFormData] = useState({
+        email: '',
         question_response_1: 1,
         question_response_2: 1,
         question_response_3: 1,
