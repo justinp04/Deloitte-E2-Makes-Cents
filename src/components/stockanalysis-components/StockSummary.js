@@ -12,9 +12,9 @@ import ToggleSwitch from '../ToggleSwitch';
 
 const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks }) => {
     const [referencesOpen, setReferencesOpen] = useState(false); // To control the nested accordion
-	const [isChecked, setChecked] = useState(true);
+    const [isChecked, setChecked] = useState(true);
 
-	// Mock database for references
+    // Mock database for references
     const mockDatabase = [
         {
             id: 1,
@@ -33,50 +33,51 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
         }
     ];
 
-	// Use the mock database as references
+    // Use the mock database as references
     const [references, setReferences] = useState(mockDatabase);
 
-	const companyTitle = "BEGA CHEESE LIMITED (BGA)"; // The stock name to be added/removed from favourites 
+    const companyTitle = "BEGA CHEESE LIMITED (BGA)"; // The stock name to be added/removed from favourites 
 
     // Determine if this company is already in the favourites list
     const isFavourited = favouriteStocks.some(stock => stock.title === companyTitle);
 
-	const handleChange = () => {
+    const handleChange = () => {
         setChecked(!isChecked);
     };
 
     return (
         <div className="toggle-list-container">
-			{/* Data */}
-			<div className="me-5" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-				<h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{companyTitle}</h5>
-				<FavouriteButton
-					companyTitle={companyTitle}
-					isFavourited={isFavourited}
-					onFavourite={addFavourite}
-					onRemoveFavourite={removeFavourite}
-				/>
-				<ToggleSwitch
-					checked={isChecked}
-					onChange={handleChange}
-					id="detaildSummarySwitch"
-					style={{ marginLeft: 'auto', paddingBottom: '20px' }} // This will push the toggle switch to the end
-				/>
-				<span className="toggle-switch-text" style={{fontSize:"0.7rem"}}>Detailed Summary</span>
-			
-			</div>
+            {/* Data */}
+            <div className="me-5 d-flex w-100" style={{}}>
+                <div className='d-flex flex-row align-items-center'>
+                    <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{companyTitle}</h5>
+                    <FavouriteButton
+                        companyTitle={companyTitle}
+                        isFavourited={isFavourited}
+                        onFavourite={addFavourite}
+                        onRemoveFavourite={removeFavourite} />
+                </div>
+                <div className='d-flex flex-row align-items-center position-relative end-0'>
+                    <ToggleSwitch
+                        checked={isChecked}
+                        onChange={handleChange}
+                        id="detaildSummarySwitch"
+                        style={{ marginLeft: 'auto', paddingBottom: '20px' }} /* This will push the toggle switch to the end */ />
+                    <span className="toggle-switch-text" style={{ fontSize: "0.7rem" }}>Detailed Summary</span>
+                </div>
+            </div>
 
             <Accordion className='mx-4' defaultActiveKey="0">
                 <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
-                    <Accordion.Header 
+                    <Accordion.Header
                         onClick={() => {
                             setAccordionOpen(!accordionOpen); // Toggle the state
                             setReferencesOpen(false); // Close references when summary closes
-                        }} 
-                        style={{ display: 'flex', alignItems: 'center', width: '1370px', border: 'none'}}
+                        }}
+                        style={{ display: 'flex', alignItems: 'center', width: '1370px', border: 'none' }}
                     >
-                        <FontAwesomeIcon 
-                            icon={accordionOpen ? faChevronRight : faChevronDown} 
+                        <FontAwesomeIcon
+                            icon={accordionOpen ? faChevronRight : faChevronDown}
                             className='me-2'
                         />
                         Summary
@@ -87,18 +88,18 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
                         {/* Nested Accordion for References */}
                         <Accordion activeKey={referencesOpen ? "0" : null}>
                             <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
-                                <Accordion.Header 
+                                <Accordion.Header
                                     onClick={() => setReferencesOpen(!referencesOpen)}
-                                    style={{ display: 'flex', alignItems: 'center', width: '100%', paddingRight: '0', border: 'none', fontSize:'0.8rem'}}
+                                    style={{ display: 'flex', alignItems: 'center', width: '100%', paddingRight: '0', border: 'none', fontSize: '0.8rem' }}
                                 >
-                                    <FontAwesomeIcon 
-                                        icon={referencesOpen ? faChevronDown : faChevronRight} 
+                                    <FontAwesomeIcon
+                                        icon={referencesOpen ? faChevronDown : faChevronRight}
                                         className='me-2'
                                     />
                                     References
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    <ol style={{ paddingLeft: '3.8rem', fontSize:"0.8rem"}}>
+                                    <ol style={{ paddingLeft: '3.8rem', fontSize: "0.8rem" }}>
                                         {references.length > 0 ? (
                                             references.map((ref) => (
                                                 <li key={ref.id}>

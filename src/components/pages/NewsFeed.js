@@ -26,7 +26,7 @@ function NewsFeed() {
                 {/* <div className="d-flex align-items-center">
                 </div> */}
                 <NewsHeroSection/>
-                <hr />
+                <hr className='blue-line'/>
                 <div className="d-flex align-items-center justify-content-between me-5">
                     <h4 className='filter-title my-2'>Most Recent</h4>
                     <FilterButton />

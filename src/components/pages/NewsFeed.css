@@ -49,10 +49,10 @@
 }
 
 /* NewsCard.js */
-.card {
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background-color: #F3F3F3;
+.news-card {
+    border: 1px solid #ddd !important;
+    border-radius: 20px !important;
+    background-color: #F3F3F3 !important;
 }
 
 .card img {
