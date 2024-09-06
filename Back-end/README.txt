@@ -4,6 +4,12 @@ python3 -m venv venv
 
 source venv/bin/activate
 
-and ... pip install -r requirements.txt
+and 
 
+pip install -r requirements.txt
+npm install cors
+npm install mssql
+
+-- To run --
+npm run dev
 

@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d6e193f-1dd1-416f-b7dd-8fa770970de2" name="Changes" comment="Company profile cron job">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudScrapy/scraped_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudScrapy/scraped_stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-end/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/userquestionairesEndpoint" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -33,7 +35,8 @@
   "keyToString": {
     "Python.FMP_yFinance_full_quotes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "auto__scrape__data",
+    "git-widget-placeholder": "ragEndpoint",
+    "last_opened_file_path": "/Users/anna/Desktop/MakeCents/E2_GenAI-1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -204,6 +207,7 @@
       <workItem from="1722954099849" duration="7921000" />
       <workItem from="1723011730775" duration="4266000" />
       <workItem from="1723028829959" duration="6948000" />
+      <workItem from="1725635058749" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="Update full quotes 6/8/2024">
       <option name="closed" value="true" />
