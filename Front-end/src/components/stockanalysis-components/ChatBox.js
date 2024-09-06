@@ -21,3 +21,4 @@ function ChatBox({ message, sender, avatar, senderName }) {
     );
 }
 export default ChatBox;
+
