@@ -14,9 +14,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-
-import ToggleList from '../ToggleList';
-
 const NewsSidebar = () => {
     const isOpen = useRef(false); 
     // Using a ref now so that it persist across renders, without re-rendering the component upon changing

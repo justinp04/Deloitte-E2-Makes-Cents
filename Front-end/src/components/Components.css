@@ -1,71 +1,71 @@
 /*********************************
 * CustomSelect.js
 **********************************/
-    .custom-select {
-    position: relative;
-    font-family: Arial;
-    width: 300px; /* Set a specific width for the custom select box */
-    }
-    
-    .custom-select select {
-        display: none; /* Hide original SELECT element */
-    }
-    
-    .select-selected {
-        background-color: white;
-        padding: 8px 16px; /* Adjust padding to control the height */
-        border: 1px solid black; /* Add border to match the item style */
-        border-radius: 30px;
-        cursor: pointer;
-    }
-    
-    /* Style the arrow inside the select element */
-    .select-selected:after {
-        position: absolute;
-        content: "";
-        top: 50%; /* Center the arrow vertically */
-        right: 20px; /* Move the arrow more to the left */
-        transform: translateY(-25%); /* Center the arrow vertically */
-        width: 0;
-        height: 0;
-        border: 8px solid transparent;
-        border-color: black transparent transparent transparent;
-    }
-    
-    /* Point the arrow upwards when the select box is open (active) */
-    .select-selected.select-arrow-active:after {
-        border-color: transparent transparent black transparent;
-        transform: translateY(-85%); /* Rotate the arrow */
-    }
-    
-    /* Style the items (options), including the selected item */
-    .select-items div, .select-selected {
-        color: black;
-        padding: 8px 16px;
-        border: 1px solid black;
-        border-radius: 20px;
-        cursor: pointer;
-    }
-    
-    /* Style items (options) */
-    .select-items {
-        position: absolute;
-        background-color: white;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 99;
-        border-radius: 20px; /* Match the border radius of the select */
-    }
-    
-    /* Hide the items when the select box is closed */
-    .select-hide {
-        display: none;
-    }
-    
-    .select-items div:hover, .same-as-selected {
-        background-color: rgba(0, 0, 0, 0.1);
-    }
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 300px; /* Set a specific width for the custom select box */
+  }
+  
+  .custom-select select {
+      display: none; /* Hide original SELECT element */
+  }
+  
+  .select-selected {
+      background-color: white;
+      padding: 8px 16px; /* Adjust padding to control the height */
+      border: 1px solid black; /* Add border to match the item style */
+      border-radius: 30px;
+      cursor: pointer;
+  }
+  
+  /* Style the arrow inside the select element */
+  .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 50%; /* Center the arrow vertically */
+      right: 20px; /* Move the arrow more to the left */
+      transform: translateY(-25%); /* Center the arrow vertically */
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-color: black transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active) */
+  .select-selected.select-arrow-active:after {
+      border-color: transparent transparent black transparent;
+      transform: translateY(-85%); /* Rotate the arrow */
+  }
+  
+  /* Style the items (options), including the selected item */
+  .select-items div, .select-selected {
+      color: black;
+      padding: 8px 16px;
+      border: 1px solid black;
+      border-radius: 20px;
+      cursor: pointer;
+  }
+  
+  /* Style items (options) */
+  .select-items {
+      position: absolute;
+      background-color: white;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      border-radius: 20px; /* Match the border radius of the select */
+  }
+  
+  /* Hide the items when the select box is closed */
+  .select-hide {
+      display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+      background-color: rgba(0, 0, 0, 0.1);
+  }
 
 /*********************************
 * RangeLabels.js
@@ -115,52 +115,58 @@
 /*********************************
 * SearchBar.js
 **********************************/
-/*Search Bar Styling*/
 .searchbar {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    margin: none;
-    height: 36px;
-  }
-  .border-no-outline {
-    border: none;
-    outline: none;
-    box-shadow: none;
-  }
-  .searchbar-icon {
-    color: darkgrey;
-    background-color: white;
-  }
-  .rounded-input-group .form-control {
-    border-radius: 20px 0 0 20px; 
-  }
-  .rounded-right {
-    border-radius: 0 20px 20px 0;
-  }
-  .rounded-input-group .input-group-prepend .input-group-text {
-    border-radius: 20px 0 0 20px;
-  }
-  .center-searchbar{
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-  }
-  
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: none;
+  height: 36px;
+}
+
+/* Ensure no outline, border, or shadow is applied on focus */
+.rounded-input-group .form-control:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.searchbar-icon {
+  color: none;
+  background-color: white;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rounded-input-group .form-control {
+  border-radius: 0 20px 20px 0;
+}
+
+.rounded-input-group .input-group-text {
+  border-radius: 20px 0 0 20px;
+  background-color: white; /* Matches the input background */
+  border: none; /* Remove any borders */
+}
+
+.center-searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*********************************
 * TextInputBox.js
 **********************************/
 .text-input-box {
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px 20px;
-    border-radius: 50px;
-  }
+  background-color: white !important;
+  border: 1px solid black !important;
+  padding: 10px 20px !important;
+  border-radius: 50px !important;
+}
   .text-box-size{
-    width: 400px;
+    width: 400px !important;
   }
 
 /*********************************
@@ -190,40 +196,57 @@
 /*********************************
 * ToggleSwitch.js
 **********************************/
-.toggle-list-container {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .toggle-list-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .title-icon {
-    display: flex;
-    align-items: center;
-  }
-  
-  .title-text {
-    margin-left: 10px;
-    font-weight: bold;
-  }
-  
-  .action-buttons {
-    display: flex;
-    align-items: center;
-  }
-  
-  .action-buttons > *:not(:last-child) {
-    margin-right: 10px; /* Add space between the FavoriteButton and ToggleSwitch */
-  }
-  
-  .toggle-list-items {
-    margin-top: 10px;
-    padding-left: 20px;
-  }
-  
+   .react-switch-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
 
+.react-switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 40px; 
+    height: 20px; 
+    background: grey;
+    border-radius: 40px;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.react-switch-label .react-switch-button {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: 0 0 0.8px 0 rgba(10, 10, 10, 0.29);
+}
+
+.react-switch-checkbox:checked + .react-switch-label {
+    background-color: #BAF43E; /* Green background when checked */
+}
+
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
+
+.react-switch-label:active .react-switch-button {
+    width: 24px; /* Adjusted for the smaller size */
+}
+
+/* Style for the text label */
+.toggle-switch-text {
+  margin-left: 2px; 
+  font-size: 10px; 
+  color: #333; /* Text color */
+  user-select: none; /* Prevent text selection */
+  width: 20px;
+  font-weight:bold;
+}

@@ -1,27 +1,13 @@
+/* StockAnalysis.js */
 .fixed-position {
     position: fixed;
     background-color: white;
-}
-
-.favourited {
-    background-color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color: #9747FF;
-    transition: transform 0.2s ease;
-}
-
-.favorited:hover {
-    transform: scale(1.2);
 }
 
 .blue-line {
     width: 100%;
     height: 1px;
     background-color: #0085FF;
-    margin: 20px 0;
     border-radius: 5px;
 }
 
@@ -29,7 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
 }
 
 .title-button-container {
@@ -37,14 +22,20 @@
     align-items: center;
 }
 
-.title-button-container .favorite-button {
-    margin-left: 10px;
+/* FavouriteButton.css */
+.fav-icon {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.title-button-container .toggle-switch {
-    margin-left: 10px;
+.fav-icon-enter {
+    transform: scale(1.2);
+    opacity: 0;
 }
 
+.fav-icon-leave {
+    transform: scale(0.8);
+    opacity: 0;
+}
 
 /* Chat Box Styling */
 .chat-box {
@@ -97,18 +88,20 @@
     color: #000;
 }
 
-/* css for QueryInputBar.js */
+/* QueryInputBar.js */
 .query-input-bar {
     position: fixed;
     bottom: 20px;
     left: 300px;
-    width: calc(100% - 300px);
+    width: calc(100% - 400px);
     /* Subtract the width of the sidebar from the total width */
     background-color: #f9f9f9;
     border-top: 1px solid #ccc;
     display: flex;
     align-items: center;
     padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
     border: none;
     background-color: white;
 }
@@ -118,7 +111,7 @@
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 30px;
     outline: none;
 }
 
@@ -129,7 +122,7 @@
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
 }
 
@@ -158,6 +151,67 @@
 .warning p {
     margin: 0 10px;
 }
+
+/* SASidebar.js */
+.sa-sidebar {
+    position: fixed; /* Fixes the sidebar to the left*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px; /* Set the width of the sidebar */
+    background-color: #f8f9fa;
+    margin-top: 30px;
+}
+/* General accordion header styles */
+.accordion .accordion-item .accordion-header {
+    background-color: #f8f9fa; /* Set background color to #f8f9fa */
+    color: inherit !important; /* Keep the original text color */
+    border: none !important; /* Remove the border */
+    box-shadow: none !important; /* Remove any shadow */
+}
+
+/* Remove the default Bootstrap accordion arrow */
+.custom-accordion-header .accordion-button::after {
+    display: none;
+    border: none;
+    background: none;
+}
+
+/* Hide the default Bootstrap accordion arrow */
+.accordion-button::after {
+    display: none;
+}
+
+/* Remove background color, border, and shadow when the accordion is open */
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    color: inherit !important; /* Keep the text color instead of making it transparent */
+    border: none !important;
+    box-shadow: none !important; /* Ensure no shadow is applied */
+}
+
+/* Ensure no shadow appears when the button is focused */
+button.accordion-button:focus {
+    box-shadow: none !important;
+    border: none !important; /* Ensure no border is added when focused */
+    outline: none !important; /* Remove any outline that might appear */
+}
+
+/* Remove borders and shadows from accordion items */
+.accordion-item {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Specifically remove bottom border from the accordion body */
+.accordion-body {
+    border-top: none !important;
+    border-bottom: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
 
 /* Adding texting animation */
 

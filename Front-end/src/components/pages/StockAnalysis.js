@@ -10,20 +10,20 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 import SASidebar from '../stockanalysis-components/SASidebar';
-import ToggleList from '../ToggleList';
 import FavoriteButton from '../stockanalysis-components/FavouriteButton';
 import ChatBox from '../stockanalysis-components/ChatBox';
 import ToggleSwitch from '../ToggleSwitch';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import StockSummary from '../stockanalysis-components/StockSummary';
-import SummaryReferences from '../stockanalysis-components/SummaryReferences';
 
 function StockAnalysis({ isSignedIn }) {
     const [isChecked, setChecked] = useState(true);
     const [messages, setMessages] = useState([]);
+    const [accordionOpen, setAccordionOpen] = useState(false); // State to control whether an accordion (presumably in the UI) is open or closed
+    const [favouriteStocks, setFavouriteStocks] = useState([]); // State to manage the list of favourite stocks
 
     // State to manage typing indicator
-    const [typing, setTyping] = useState(false); 
+    const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
 
     const handleChange = () => {
@@ -39,9 +39,9 @@ function StockAnalysis({ isSignedIn }) {
         }
 
         setMessages([...messages, { sender: 'user', message: newMessage }]);
-        
+
         // Show typing indicator
-        setTyping(true); 
+        setTyping(true);
 
         // Simulate a delay before sending the request to backend
         const simulateTyping = new Promise((resolve) => setTimeout(resolve, 1000)); // 1-second delay
@@ -59,9 +59,9 @@ function StockAnalysis({ isSignedIn }) {
             });
 
             const data = await res.json();
-            
+
             // Hide typing indicator when response is received
-            setTyping(false); 
+            setTyping(false);
             setMessages(prevMessages => [...prevMessages, { sender: 'bot', message: data.response }]);
 
         } catch (error) {
@@ -73,6 +73,28 @@ function StockAnalysis({ isSignedIn }) {
         }
     };
 
+    // Function to add a stock to the list of favourites
+    const addFavourite = (companyTitle) => {
+        // Check if the stock is already in the favourites list
+        if (!favouriteStocks.some(stock => stock.title === companyTitle)) {
+            // If not, add it to the list by updating the state
+            // Uses the previous state (prevFavourites) to add the new favourite to the list
+            setFavouriteStocks(prevFavourites => [
+                ...prevFavourites,
+                { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" }
+            ]);
+        }
+    };
+
+    // Function to remove a stock from the list of favourites
+    const removeFavourite = (companyTitle) => {
+        // Filters out the stock that matches the companyTitle from the favourites list
+        // Updates the state with the new list of favourites that no longer includes the removed stock
+        setFavouriteStocks(prevFavourites =>
+            prevFavourites.filter(stock => stock.title !== companyTitle)
+        );
+    };
+
     // Scroll to the latest message when new messages are added
     useEffect(() => {
         chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -81,41 +103,31 @@ function StockAnalysis({ isSignedIn }) {
     return (
         <div className="page-container">
             <div className="sidebar">
-                <SASidebar />
+                <SASidebar
+                    favouriteStocks={favouriteStocks}
+                    addFavourite={addFavourite}
+                    removeFavourite={removeFavourite}
+                />
             </div>
             <div className="content" style={{ paddingTop: '200px' }}>
-                <div className="position-fixed" style={{ top: 0, left: '300px', top: '70px', width: 'calc(100% - 300px)', backgroundColor: 'white', zIndex: 1000 }}>
-                    <div className="ms-3 mt-3 mb-1 title-container">
-                        <h1 className="page-header ms-3">Stock Analysis</h1>
-                    </div>
+            <div className="position-fixed" style={{ top: 0, left: '300px', top: '70px', width: 'calc(100% - 300px)', backgroundColor: 'white', zIndex: 1000 }}>
+                    <h1 className="page-header ms-3 mt-3 mb-2 me-5 ps-4" style={{ marginRight: '62%' }}>Stock Analysis</h1>
+
                     <div className="toggle-title-container">
                         <div className="title-button-container">
-                            {/* <StockSummary
-                // <ToggleList 
-                  title="BEGA CHEESE LIMITED (BGA)" 
-                  items={["Recommendation 1", "Recommendation 2", "Recommendation 3"]}
-                />
-                <FavoriteButton />
-                 */}
-                            <SummaryReferences
-                                title="References"
-                                references={[
-                                    { text: 'Bega Annual Report 2023', link: 'https://example.com/report' },
-                                    { text: 'Industry Analysis', link: 'https://example.com/industry' }
-                                ]}
+                            <StockSummary
+                                accordionOpen={accordionOpen}
+                                setAccordionOpen={setAccordionOpen}
+                                addFavourite={addFavourite}
+                                removeFavourite={removeFavourite}
+                                favouriteStocks={favouriteStocks} // Pass favourite stocks to check if already favourited
                             />
-                            {/* <ToggleSwitch
-                  checked={isChecked}
-                  onChange={handleChange}
-                  id="detaildSummarySwitch"
-                /> */}
                         </div>
                     </div>
-                    {/* <StockSummary /> */}
                     <div className="blue-line"></div>
                 </div>
                 {/* Placeholder text for user-bot chat*/}
-                <div style={{ marginTop: '50px' }}>
+                <div style={{ marginTop: accordionOpen ? '10px' : '190px' }}>  
                     <ChatBox message="Howdy! 🤠" sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
                     <ChatBox message="What is Bega Cheese Limited's revenue growth trend and profit margins, and how does it indicate stability and growth?" sender="user" senderName="You" avatar="./images/UserProfile.jpg" />
                     <ChatBox message="Bega Cheese Limited's financial performance in FY2023 showed both positive and negative aspects. The company's revenue grew by 12% to $3.4 billion, which is a good sign for potential investors. 
@@ -132,17 +144,17 @@ function StockAnalysis({ isSignedIn }) {
                     ))}
 
                     {typing && (
-                        <ChatBox 
+                        <ChatBox
                             message={
                                 <div className="typing-indicator">
                                     <div className="dot"></div>
                                     <div className="dot"></div>
                                     <div className="dot"></div>
                                 </div>
-                            } 
-                            sender="bot" 
-                            senderName="Gerry" 
-                            avatar="./images/GerryProfile.jpg" 
+                            }
+                            sender="bot"
+                            senderName="Gerry"
+                            avatar="./images/GerryProfile.jpg"
                         />
                     )}
                     {/* A reference div to keep the chat view scrolled to the latest message */}
