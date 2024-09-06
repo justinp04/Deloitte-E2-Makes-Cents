@@ -44,16 +44,20 @@ PURPOSE: returns the closest matched results from the
 def query_qdrant(query_text):
     query_embedding = get_query_embedding(query_text)
     
-    search_result = load_qdrant_client().search( #perform vector similarity search in qdrant database
+    search_result = load_qdrant_client().search(  
         collection_name="E2cluster1",
         query_vector=query_embedding,
-        limit=5  #number of top results to retrieve
+        limit=6  #number of top results to retrieve - can change this if need more/less results
     )
     
     documents = []
     for point in search_result:
         if isinstance(point, ScoredPoint) and hasattr(point, 'payload') and 'content' in point.payload:
-            documents.append(point.payload['content'])
+            document = {
+                'content': point.payload['content'],
+                'metadata': point.payload.get('metadata', {})
+            }
+            documents.append(document)
         else:
             print(f"Skipping point due to missing payload or content: {point}")
     
@@ -86,5 +90,27 @@ def get_llm_response(messages, max_response_tokens):
     except AttributeError as e:
         print("Error accessing response:", e)
         return "An error occurred while generating the response."
+    
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: generate_references
+IMPORT: documents
+EXPORT: references
+PURPOSE: Extracts and formats the references from 
+         the documents to provide to the users.
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def generate_references(documents):
+    unique_urls = set()  #keep track of URLs
+    references_list = []
+    
+    for i, doc in enumerate(documents):
+        if isinstance(doc, dict) and 'metadata' in doc:
+            url = doc['metadata'].get('url', '') 
+            if url and url not in unique_urls:  #prevents duplicating URLs
+                unique_urls.add(url)
+                references_list.append(f"{len(references_list) + 1}. {url}")
+    
+    references = "\n".join(references_list)
+    return references
     
     

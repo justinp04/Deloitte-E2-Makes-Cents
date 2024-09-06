@@ -1,6 +1,7 @@
 import tiktoken
 from user_queries import query_qdrant, get_llm_response
-import sys
+from prompt_engineering import chatbot_experience, chatbot_income, chatbot_invest_length, chatbot_risk, chatbot_loss, chatbot_invest_type
+from summary import get_stock_name
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -11,48 +12,38 @@ Date:       18/08/24
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 def main():
-    try:
-        if len(sys.argv) > 1:
-            user_input = sys.argv[1]  # Capture the command-line input
-        else:
-            user_input = "default query"  # Fallback input
+    system_message = {
+    "role": "system",
+    "content": (
+        "You are an ASX stock investment assistant called Gerry. Answer only ASX-related questions. Always give the most up-to-date answer."
+        f"Provide personalised answers for someone who is {chatbot_experience()} {chatbot_income()} {chatbot_invest_length()} {chatbot_risk()} {chatbot_loss()} {chatbot_invest_type()}"
+        f"You need to provide answers about {get_stock_name()}."
+        "If you don't have an answer for a stock related question, or you are told to give a specific response, say: 'Oops! Gerry's gears aren't turning on that one.' "
+        "For off-topic questions, reply: ' 'Just keep ya head in the game.' Troy Bolton 2006'"
+    )
+    }
 
-        # Your existing script logic
-        system_message = {
-        "role": "system",
-        "content": (
-            "You are an ASX stock investment assistant. Answer only ASX-related questions. Give specific advice"
-            "If you don't have an answer for a stock related question, say: 'Oops! Gerry's gears aren't turning on that one.' or 'Beep boop! Gerry's circuits didn't catch that.' "
-            "For off-topic questions, reply: 'Just keep ya head in the game! Troy Bolton 2006.'"
-        )
-        }
-        max_response_tokens = 200
-        token_limit = 1000
-        conversation = [system_message]
+    max_response_tokens = 200 
+    token_limit = 1000 #this was originally 4096 but ive reduced it to try and help with token limits
+    conversation = []
+    conversation.append(system_message)
 
-        # Append only the last few messages to maintain context
-        #if len(conversation) > 6:  # Limit to the last 3 pairs of user-bot exchanges
-            #conversation = conversation[-6:]
-
+    while True:
+        user_input = input("Q: ")
         conversation.append({"role": "user", "content": user_input})
-        documents = query_qdrant(user_input)
-        #print(documents)
-        context = "\n".join(documents)
-        
-        conversation.append({"role": "system", "content": f"Context:\n{context}"})
-        conv_history_tokens = num_tokens_from_messages(conversation)
+        documents = query_qdrant(user_input) #retrieve relevant documents from qdrant
+        context = "\n".join([doc['content'] for doc in documents])
 
-        while conv_history_tokens + max_response_tokens >= token_limit:
+        conversation.append({"role": "system", "content": f"Context:\n{context}"}) #add context to the conversation
+        conv_history_tokens = num_tokens_from_messages(conversation)
+        
+        while conv_history_tokens + max_response_tokens >= token_limit: #check if the token limit will be exceeded
             del conversation[1]
             conv_history_tokens = num_tokens_from_messages(conversation)
 
         response = get_llm_response(conversation, max_response_tokens)
         conversation.append({"role": "assistant", "content": response.choices[0].message.content})
-        print(response.choices[0].message.content)  # Immediate response output
-
-    except Exception as e:
-        print(f"Error: {str(e)}")
-        sys.exit(1)
+        print("\n" + response.choices[0].message.content + "\n")
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
