@@ -37,11 +37,11 @@ const ProfileInsightsForm = () => {
 	const rangeLabelsQ5 = ["Can't Afford", "Can Barely Afford", "Can Somewhat Afford", "Can Comfortably Afford", "Can Easily Afford"];
 	const rangeLabelsQ6 = ["Lump Sum", "Mix of Both", "Recurring Investments"];
 
-  // Fetch email from logged-in user's account information
-  useEffect(() => {
+ // Fetch email from logged-in user's account information
+ useEffect(() => {
     if (accounts.length > 0) {
-      const userEmail = accounts[0].username;
-      setEmail(userEmail);
+      const userEmail = accounts[0].username; // Extract email from the account object
+      setEmail(userEmail); // Set the email in state
     }
   }, [accounts]);
 
