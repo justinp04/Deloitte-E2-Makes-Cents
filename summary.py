@@ -1,5 +1,5 @@
 from prompt_engineering import response_complexity, user_income, user_horizon, user_risk, user_loss, user_preference
-from user_queries import query_qdrant, get_llm_response
+from user_queries import query_qdrant, get_llm_response, generate_references
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -106,7 +106,7 @@ EXPORT: references
 PURPOSE: extracts and formats the references 
         from the documents to provide to the users
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-def generate_references(documents):
+'''def generate_references(documents):
     unique_urls = set()  #keep track of URLs
     references_list = []
     
@@ -118,7 +118,7 @@ def generate_references(documents):
                 references_list.append(f"{len(references_list) + 1}. {url}")
     
     references = "\n".join(references_list)
-    return references
+    return references'''
 
 
 if __name__ == "__main__":

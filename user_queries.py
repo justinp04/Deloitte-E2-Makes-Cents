@@ -91,4 +91,26 @@ def get_llm_response(messages, max_response_tokens):
         print("Error accessing response:", e)
         return "An error occurred while generating the response."
     
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: generate_references
+IMPORT: documents
+EXPORT: references
+PURPOSE: Extracts and formats the references from 
+         the documents to provide to the users.
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def generate_references(documents):
+    unique_urls = set()  #keep track of URLs
+    references_list = []
+    
+    for i, doc in enumerate(documents):
+        if isinstance(doc, dict) and 'metadata' in doc:
+            url = doc['metadata'].get('url', '') 
+            if url and url not in unique_urls:  #prevents duplicating URLs
+                unique_urls.add(url)
+                references_list.append(f"{len(references_list) + 1}. {url}")
+    
+    references = "\n".join(references_list)
+    return references
+    
     
