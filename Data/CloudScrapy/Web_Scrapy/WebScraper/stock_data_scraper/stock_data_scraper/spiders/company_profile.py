@@ -15,9 +15,9 @@ class StockSpider(scrapy.Spider):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # Initialize Azure Blob Storage client
-        connection_string = 'DefaultEndpointsProtocol=https;AccountName=stockfullquotesapi;AccountKey=HmVGx3RXJwRHNTk7ONCW1guuWty7cuXQXIvcNsDI9Viw8R2oGjsW1udji4NJGSef7buuHhUHWrAm+AStWIlGMw==;EndpointSuffix=core.windows.net'
+        connection_string = 'DefaultEndpointsProtocol=https;AccountName=stockdatascrape;AccountKey=Sg1ioSfzwWybd5qh1C15IS1TmuhAaDDEAvajAybblFYKqMPE6qyPbzb4u4a1B0G+ES8fo4pAieFH+ASt/D17bQ==;EndpointSuffix=core.windows.net'
         self.blob_service_client = BlobServiceClient.from_connection_string(connection_string)
-        self.container_name = 'stockfullquotesapi'
+        self.container_name = 'stockdatascrape'
 
         # Ensure the container exists
         self.container_client = self.blob_service_client.get_container_client(self.container_name)
@@ -44,6 +44,9 @@ class StockSpider(scrapy.Spider):
     def parse_profile(self, response):
         ticker = response.meta['ticker']
 
+        # Extract the company profile URL
+        profile_url = response.url
+
         # Extract company profile information
         profile = {
             'ticker': ticker,
@@ -53,6 +56,7 @@ class StockSpider(scrapy.Spider):
             'industry': response.xpath('//*[@id="main"]/div[2]/div[2]/div[1]/table/tbody/tr[3]/td[2]/a//text()').get(),
             'CEO': response.xpath('//*[@id="main"]/div[2]/div[2]/div[1]/table/tbody/tr[6]/td[2]//text()').get(),
             'description': self.clean_html(response.xpath('//*[@id="main"]/div[2]/div[1]/div').get()),
+            'url': profile_url,
         }
 
         # Save the profile data to a file
@@ -69,6 +73,7 @@ class StockSpider(scrapy.Spider):
             Industry: {profile.get('industry', 'N/A')}
             CEO: {profile.get('CEO', 'N/A')}
             Description: {profile.get('description', 'N/A')}
+            Profile URL: {profile.get('url', 'N/A')}
         """
 
         # Convert profile data to bytes

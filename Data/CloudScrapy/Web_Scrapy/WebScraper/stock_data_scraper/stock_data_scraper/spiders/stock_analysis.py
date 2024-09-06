@@ -15,9 +15,9 @@ class StockSpider(scrapy.Spider):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # Initialize Azure Blob Storage client
-        connection_string = 'DefaultEndpointsProtocol=https;AccountName=stockfullquotesapi;AccountKey=HmVGx3RXJwRHNTk7ONCW1guuWty7cuXQXIvcNsDI9Viw8R2oGjsW1udji4NJGSef7buuHhUHWrAm+AStWIlGMw==;EndpointSuffix=core.windows.net'
+        connection_string = 'DefaultEndpointsProtocol=https;AccountName=stockdatascrape;AccountKey=Sg1ioSfzwWybd5qh1C15IS1TmuhAaDDEAvajAybblFYKqMPE6qyPbzb4u4a1B0G+ES8fo4pAieFH+ASt/D17bQ==;EndpointSuffix=core.windows.net'
         self.blob_service_client = BlobServiceClient.from_connection_string(connection_string)
-        self.container_name = 'stockfullquotesapi'
+        self.container_name = 'stockdatascrape'
 
         # Ensure the container exists
         self.container_client = self.blob_service_client.get_container_client(self.container_name)
@@ -62,16 +62,19 @@ class StockSpider(scrapy.Spider):
 
         for i, table in enumerate(tables):
             formatted_sheet_name = f"{sheet_name} {i}" if len(tables) > 1 else sheet_name
-            content = self.prepare_content(ticker, formatted_sheet_name, table)
+            content = self.prepare_content(ticker, formatted_sheet_name, table, response.url)
             self.upload_to_blob(f'Financial-Statement-{ticker}.md', content)
 
-    def prepare_content(self, ticker, sheet_name, df):
+    def prepare_content(self, ticker, sheet_name, df, scraped_url):
         # Clean and format the data
         df = self.clean_data(df)
         markdown_data = df.to_markdown(index=False)
 
         # Combine markdown data into content
-        content = f"## {sheet_name}\n{markdown_data}\n\n"
+        content = f"## {sheet_name}\n\n"
+        content += f"**Scraped from:** {scraped_url}\n\n"  # Include the URL where data was scraped
+        content += f"{markdown_data}\n\n"
+
         self.logger.info(f'Prepared content for {ticker}: {content}')
         return content
 
