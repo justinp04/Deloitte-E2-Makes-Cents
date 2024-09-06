@@ -96,7 +96,6 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -126,10 +125,10 @@ dmypy.json
 bin
 obj
 appsettings.json
-local.settings.json
 
 # Azurite artifacts
 __blobstorage__
 __queuestorage__
 __azurite_db*__.json
 .python_packages
+node_modules
