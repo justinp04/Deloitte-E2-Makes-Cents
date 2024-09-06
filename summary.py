@@ -99,27 +99,6 @@ def response_length(answer, response_depth):
         print(f"{quick_answer.choices[0].message.content.strip()}")
 
 
-'''''''''''''''''''''''''''''''''''''''''''''''''''
-METHOD: generate_references
-IMPORT: documents
-EXPORT: references
-PURPOSE: extracts and formats the references 
-        from the documents to provide to the users
-'''''''''''''''''''''''''''''''''''''''''''''''''''
-'''def generate_references(documents):
-    unique_urls = set()  #keep track of URLs
-    references_list = []
-    
-    for i, doc in enumerate(documents):
-        if isinstance(doc, dict) and 'metadata' in doc:
-            url = doc['metadata'].get('url', '') 
-            if url and url not in unique_urls:  #prevents doubling up on URLs
-                unique_urls.add(url)
-                references_list.append(f"{len(references_list) + 1}. {url}")
-    
-    references = "\n".join(references_list)
-    return references'''
-
 
 if __name__ == "__main__":
     main()
