@@ -173,7 +173,7 @@ router.put('/update-responses', async (req, res) => {
 
 // DELETE users
 router.delete('/delete-user', async (req, res) => {
-    const email = req.query.email; // Assume email is passed as a query parameter
+    const email = req.query.email;
 
     if (!email) {
         return res.status(400).json({ error: 'Email is required' });
