@@ -3,7 +3,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 from qdrant_client.models import PointStruct
 from load_clients import load_openai_client, load_qdrant_client, load_blob_client
-
+import logging
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
 Purpose:    Deloitte E2 Capstone Project - Makes Cents
@@ -21,14 +21,14 @@ def main():
         container_client = load_blob_client()
         blob_list = container_client.list_blobs()
         global_id_counter = 0  #ensure unique ids
-        
+        logging.info("Hello")
         for blob in blob_list:
             blob_client = container_client.get_blob_client(blob.name)
             blob_content = blob_client.download_blob().readall().decode('utf-8')
-
+            logging.info("hello2")
             url_match = re.search(r'https://\S+', blob_content) #get the url from each file
             url = url_match.group(0) if url_match else None
-            
+            logging.info("Here's the url: " + url)
             metadata = {"source": blob.name} #store the URL in metadata for later!
             if url:
                 metadata["url"] = url

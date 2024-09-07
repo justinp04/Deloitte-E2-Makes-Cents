@@ -61,6 +61,6 @@ EXPORT: container_client
 PURPOSE: load the client for the Azure blob storage
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def load_blob_client():
-    blob_service_client = BlobServiceClient.from_connection_string(os.getenv("AZURE_STORAGE_CONNECTION_STRING"))
-    container_client = blob_service_client.get_container_client(os.getenv("CONTAINER_NAME"))
+    blob_service_client = BlobServiceClient.from_connection_string("DefaultEndpointsProtocol=https;AccountName=stockdatascrape;AccountKey=Sg1ioSfzwWybd5qh1C15IS1TmuhAaDDEAvajAybblFYKqMPE6qyPbzb4u4a1B0G+ES8fo4pAieFH+ASt/D17bQ==;EndpointSuffix=core.windows.net")
+    container_client = blob_service_client.get_container_client("stockdatascrape")
     return container_client
