@@ -14,7 +14,8 @@ Date:       18/08/24
 
 def main():
     stock_name = sys.argv[1]
-
+    response_depth = sys.argv[2]
+    # response_depth = "detailed"
     #stock_name = input("") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
     # stock_name = get_stock_name()
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
@@ -23,7 +24,7 @@ def main():
     #print(documents) #can comment this in for debugging purposes
     answer = generate_response(documents, user_query)
     references = generate_references(documents)
-    response_length(answer, response_depth="detailed") #RESPONSE DEPTH TAKEN FROM TOGGLE MENU ON FRONT END!
+    response_length(answer, response_depth=response_depth) #RESPONSE DEPTH TAKEN FROM TOGGLE MENU ON FRONT END!
 
     # Return the response and references in JSON format
     result = {

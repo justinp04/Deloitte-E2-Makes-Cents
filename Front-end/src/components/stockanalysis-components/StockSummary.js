@@ -10,15 +10,19 @@ import FavouriteButton from './FavouriteButton';
 import '../Components.css';
 import ToggleSwitch from '../ToggleSwitch';
 
-const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks, stockName }) => {
+const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks, stockName, onToggleChange }) => {
     const [referencesOpen, setReferencesOpen] = useState(false); // To control the nested accordion
-    const [isChecked, setChecked] = useState(true);
+    const [isChecked, setChecked] = useState(true); // Handle Toggle for Detailed vs Quick Mode
+    const [responseDepth, setResponseDepth] = useState('quick'); // State to manage response depth (detailed/quick)
 
     const companyTitle = stockName || "No stock name provided"; 
     const isFavourited = favouriteStocks.some(stock => stock.title === companyTitle);
 
     const handleChange = () => {
-        setChecked(!isChecked);
+        const newCheckedState = !isChecked;
+        setChecked(newCheckedState);
+        setResponseDepth(newCheckedState ? 'detailed' : 'quick');
+        setChecked(!isChecked); // Set response depth based on toggle
     };
 
     // Fetch stock data (summary and references) from the backend when the component mounts
@@ -30,7 +34,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ stockName }), // Send the stock name to the backend
+                    body: JSON.stringify({ stockName, response_depth: responseDepth}), // Send the stock name to the backend
                 });
 
                 const data = await res.json();
@@ -42,7 +46,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
         if (stockName) {
             fetchStockData(); 
         }
-    }, [stockName]);
+    }, [stockName, responseDepth]);
 
     return (
         <div className="toggle-list-container">
@@ -51,15 +55,15 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                 <div className='d-flex flex-row align-items-center'>
                     <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{stockName || "No stock name provided"}</h5>
                     <FavouriteButton
-                        companyTitle={companyTitle}
+                        companyTitle={stockName || "Unknown"}
                         isFavourited={favouriteStocks.some(stock => stock.title === companyTitle)}
                         onFavourite={addFavourite}
                         onRemoveFavourite={removeFavourite} />
                 </div>
                 <div className='d-flex flex-row align-items-center position-relative end-0'>
                     <ToggleSwitch
-                        checked={isChecked}
-                        onChange={() => setChecked(!isChecked)}
+                        checked={responseDepth === 'detailed'} 
+                        onChange={onToggleChange}
                         id="detaildSummarySwitch"
                         style={{ marginLeft: 'auto', paddingBottom: '20px' }} /* This will push the toggle switch to the end */ />
                     <span className="toggle-switch-text" style={{ fontSize: "0.7rem" }}>Detailed Summary</span>

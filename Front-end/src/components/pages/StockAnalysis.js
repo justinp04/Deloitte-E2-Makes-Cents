@@ -24,11 +24,16 @@ function StockAnalysis({ isSignedIn }) {
     const [favouriteStocks, setFavouriteStocks] = useState([]); // State to manage the list of favourite stocks
     const [summary, setSummary] = useState(''); // State for summary text
     const [references, setReferences] = useState([]); // State for references array
+    const [responseDepth, setResponseDepth] = useState('detailed');
     const [stockName, setStockName] = useState('');
 
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
+
+    const handleToggleChange = () => {
+        setResponseDepth(responseDepth === 'detailed' ? 'quick' : 'detailed'); // Toggle between quick and detailed
+    };
 
     const handleChange = () => {
         setChecked(!isChecked);
@@ -83,7 +88,7 @@ function StockAnalysis({ isSignedIn }) {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ stockName: searchTerm }),
+                body: JSON.stringify({ stockName: searchTerm, response_depth: responseDepth }),
             });
 
             const data = await res.json();
@@ -153,6 +158,8 @@ function StockAnalysis({ isSignedIn }) {
                                 summary={summary} // Pass summary as prop
                                 references={references} // Pass references as prop
                                 stockName={stockName}
+                                responseDepth={responseDepth}
+                                onToggleChange={handleToggleChange}
                             />
                         </div>
                     </div>

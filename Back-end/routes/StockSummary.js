@@ -5,19 +5,25 @@ const router = express.Router();
 
 // Route to fetch the stock summary and references by calling summary.py
 router.post('/stock-summary', (req, res) => {
-    const { stockName } = req.body; // Get the stock name from the request
+    const { stockName, response_depth } = req.body; // Get the stock name from the request
 
     if (!stockName) {
         console.error('No stock name received');
         return res.status(400).json({ error: 'No stock name provided' });
     }
 
+    if (!response_depth) {
+        console.error('No response depth received');
+        return res.status(400).json({ error: 'No response depth provided' });
+    }
+
     console.log(`Received stock name: ${stockName}`);
+    console.log(`Received response depth: ${response_depth}`);
 
     // Call the Python script and pass the stock name
     const pythonExecutable = '/Users/anna/Desktop/MakeCents/E2_GenAI-3/venv/bin/python3';
     const pythonScriptPath = '/Users/anna/Desktop/MakeCents/E2_GenAI-3/Rag/summary.py'; // Absolute path to your Python script
-    const pythonProcess = spawn(pythonExecutable, [pythonScriptPath, stockName]);
+    const pythonProcess = spawn(pythonExecutable, [pythonScriptPath, stockName, response_depth]);
 
     // Collect the Python script output
     let responseData = '';
@@ -30,7 +36,9 @@ router.post('/stock-summary', (req, res) => {
     pythonProcess.stderr.on('data', (data) => {
         const errorMessage = data.toString();
         console.error(`Python script error: ${errorMessage}`);
-        res.status(500).json({ error: `Python script error: ${errorMessage}` });
+        if (!res.headersSent) {
+            res.status(500).json({ error: `Python script error: ${errorMessage}` });
+        }
     });
 
     pythonProcess.on('close', (code) => {
@@ -40,9 +48,12 @@ router.post('/stock-summary', (req, res) => {
             try {
                 // Attempt to extract JSON from the output
                 const jsonStartIndex = responseData.indexOf('{');
+                if (jsonStartIndex === -1) {
+                    throw new Error('No JSON found in the response.');
+                }
                 const jsonString = responseData.slice(jsonStartIndex).trim(); // Extract the JSON part
                 const result = JSON.parse(jsonString); // Parse the JSON
-
+                
                 res.json(result); // Send the JSON result back to the client
             } catch (parseError) {
                 console.error(`Error parsing Python output: ${parseError.message}`);
