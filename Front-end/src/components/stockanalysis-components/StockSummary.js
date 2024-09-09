@@ -2,7 +2,7 @@
  * Purpose: Summary portion on the top of content page for stock in 'Stock Analysis' page
  * Fix: 
  ************************************************************************************************/
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -10,57 +10,56 @@ import FavouriteButton from './FavouriteButton';
 import '../Components.css';
 import ToggleSwitch from '../ToggleSwitch';
 
-const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks }) => {
+const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks, stockName }) => {
     const [referencesOpen, setReferencesOpen] = useState(false); // To control the nested accordion
     const [isChecked, setChecked] = useState(true);
 
-    // Mock database for references
-    const mockDatabase = [
-        {
-            id: 1,
-            title: 'Introduction to React',
-            url: 'https://reactjs.org/docs/getting-started.html'
-        },
-        {
-            id: 2,
-            title: 'Bootstrap Documentation',
-            url: 'https://getbootstrap.com/docs/5.0/getting-started/introduction/'
-        },
-        {
-            id: 3,
-            title: 'FontAwesome Icons',
-            url: 'https://fontawesome.com/icons?d=gallery'
-        }
-    ];
-
-    // Use the mock database as references
-    const [references, setReferences] = useState(mockDatabase);
-
-    const companyTitle = "BEGA CHEESE LIMITED (BGA)"; // The stock name to be added/removed from favourites 
-
-    // Determine if this company is already in the favourites list
+    const companyTitle = stockName || "No stock name provided"; 
     const isFavourited = favouriteStocks.some(stock => stock.title === companyTitle);
 
     const handleChange = () => {
         setChecked(!isChecked);
     };
 
+    // Fetch stock data (summary and references) from the backend when the component mounts
+    useEffect(() => {
+        const fetchStockData = async () => {
+            try {
+                const res = await fetch('http://localhost:4000/summary/stock-summary', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ stockName }), // Send the stock name to the backend
+                });
+
+                const data = await res.json();
+            } catch (error) {
+                console.error('Error fetching stock data:', error);
+            }
+        };
+
+        if (stockName) {
+            fetchStockData(); 
+        }
+    }, [stockName]);
+
     return (
         <div className="toggle-list-container">
             {/* Data */}
-            <div className="me-5 d-flex w-100" style={{}}>
+            <div className="me-5 d-flex w-100">
                 <div className='d-flex flex-row align-items-center'>
-                    <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{companyTitle}</h5>
+                    <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{stockName || "No stock name provided"}</h5>
                     <FavouriteButton
                         companyTitle={companyTitle}
-                        isFavourited={isFavourited}
+                        isFavourited={favouriteStocks.some(stock => stock.title === companyTitle)}
                         onFavourite={addFavourite}
                         onRemoveFavourite={removeFavourite} />
                 </div>
                 <div className='d-flex flex-row align-items-center position-relative end-0'>
                     <ToggleSwitch
                         checked={isChecked}
-                        onChange={handleChange}
+                        onChange={() => setChecked(!isChecked)}
                         id="detaildSummarySwitch"
                         style={{ marginLeft: 'auto', paddingBottom: '20px' }} /* This will push the toggle switch to the end */ />
                     <span className="toggle-switch-text" style={{ fontSize: "0.7rem" }}>Detailed Summary</span>
@@ -83,7 +82,7 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
                         Summary
                     </Accordion.Header>
                     <Accordion.Body className="px-4" style={{ padding: '0' }}>
-                        As a beginner investor with a long-term investment horizon and a higher risk tolerance, investing in Bega Cheese Limited could be a suitable option. Given your neutral stance on potential losses and ability to withstand short-term declines, Bega Cheese Limited, as a well-established company in the food industry, may offer potential for higher returns over the long term. However, it's important to conduct thorough research and consider diversifying your portfolio with other stocks as well.
+                        {summary || "No summary available."}
 
                         {/* Nested Accordion for References */}
                         <Accordion activeKey={referencesOpen ? "0" : null}>
@@ -100,11 +99,11 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
                                 </Accordion.Header>
                                 <Accordion.Body>
                                     <ol style={{ paddingLeft: '3.8rem', fontSize: "0.8rem" }}>
-                                        {references.length > 0 ? (
-                                            references.map((ref) => (
-                                                <li key={ref.id}>
-                                                    <a href={ref.url} target="_blank" rel="noopener noreferrer">
-                                                        {ref.title}
+                                        {Array.isArray(references) && references.length > 0 ? (
+                                            references.map((ref, index) => (
+                                                <li key={index}>
+                                                    <a href={ref} target="_blank" rel="noopener noreferrer">
+                                                        {ref}
                                                     </a>
                                                 </li>
                                             ))

@@ -6,6 +6,7 @@ import path from 'path';
 import posts from './routes/posts.js';
 import UserQuestionaires from './routes/userQuestionaires.js';
 import stockAnalysisRoutes from './routes/StockAnalysis.js';
+import stockSummary from './routes/StockSummary.js'
 
 const port = process.env.PORT || 4000;
 const app = express();
@@ -20,5 +21,6 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/next', UserQuestionaires);
 app.use('/chatbot', stockAnalysisRoutes);
+app.use('/summary', stockSummary);
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));

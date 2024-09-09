@@ -1,5 +1,7 @@
 from prompt_engineering import response_complexity, user_income, user_horizon, user_risk, user_loss, user_preference
 from user_queries import query_qdrant, get_llm_response, generate_references
+import sys
+import json
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -11,15 +13,25 @@ Date:       18/08/24
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 def main():
+    stock_name = sys.argv[1]
+
     #stock_name = input("") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
-    stock_name = get_stock_name()
+    # stock_name = get_stock_name()
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
+    
     documents = query_qdrant(user_query)
     #print(documents) #can comment this in for debugging purposes
     answer = generate_response(documents, user_query)
     references = generate_references(documents)
     response_length(answer, response_depth="detailed") #RESPONSE DEPTH TAKEN FROM TOGGLE MENU ON FRONT END!
-    print(f"References:\n{references}")
+
+    # Return the response and references in JSON format
+    result = {
+        "summary": answer,
+        "references": references
+    }
+    
+    print(json.dumps(result))  # Output the result as JSON
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -29,8 +41,8 @@ EXPORT: stock_name
 PURPOSE: gets the stock name from the user input
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def get_stock_name():
-    # stock_name = input("Input: ") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
-    stock_name = "Woolworths" #THIS IS JUST A TEST FOR CHATBOT, DELETE THIS LINE WHEN HOOKED UP TO FRONT END
+    stock_name = input("Input: ") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
+    # stock_name = "Woolworths" #THIS IS JUST A TEST FOR CHATBOT, DELETE THIS LINE WHEN HOOKED UP TO FRONT END
     return stock_name
 
 

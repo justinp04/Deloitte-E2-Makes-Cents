@@ -15,12 +15,16 @@ import ChatBox from '../stockanalysis-components/ChatBox';
 import ToggleSwitch from '../ToggleSwitch';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import StockSummary from '../stockanalysis-components/StockSummary';
+import SearchBar from '../SearchBar';
 
 function StockAnalysis({ isSignedIn }) {
     const [isChecked, setChecked] = useState(true);
     const [messages, setMessages] = useState([]);
     const [accordionOpen, setAccordionOpen] = useState(false); // State to control whether an accordion (presumably in the UI) is open or closed
     const [favouriteStocks, setFavouriteStocks] = useState([]); // State to manage the list of favourite stocks
+    const [summary, setSummary] = useState(''); // State for summary text
+    const [references, setReferences] = useState([]); // State for references array
+    const [stockName, setStockName] = useState('');
 
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
@@ -30,48 +34,73 @@ function StockAnalysis({ isSignedIn }) {
         setChecked(!isChecked);
     };
 
+    // Function to update stock data (summary and references)
+    const setStockData = (data) => {
+        setSummary(data.summary); // Update summary state
+        setReferences(data.references); // Update references state
+    };
+
     // Send query here ~~
     const handleSendMessage = async (newMessage) => {
-
         if (!newMessage.trim()) {
-            // Prevent sending empty messages
-            return;
+            return; // Prevent sending empty messages
         }
-
+    
         setMessages([...messages, { sender: 'user', message: newMessage }]);
-
-        // Show typing indicator
-        setTyping(true);
-
-        // Simulate a delay before sending the request to backend
-        const simulateTyping = new Promise((resolve) => setTimeout(resolve, 1000)); // 1-second delay
-
-        await simulateTyping; // Wait for the simulated typing delay
-
-
+        setTyping(true); // Show typing indicator
+    
         try {
-            const res = await fetch('http://localhost:4000/chatbot/chat', {
+            // Start both API calls at the same time
+            const chatPromise = fetch('http://localhost:4000/chatbot/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ message: newMessage }),
             });
+    
+            // Wait for both promises to resolve
+            const [chatResponse] = await Promise.all([chatPromise]);
+    
+            const chatData = await chatResponse.json();
+    
+            setMessages(prevMessages => [...prevMessages, { sender: 'bot', message: chatData.response }]);
+    
+        } catch (error) {
+            console.error('Error:', error);
+            setMessages(prevMessages => [...prevMessages, { sender: 'bot', message: 'An error occurred while sending your message' }]);
+        } finally {
+            setTyping(false); // Hide typing indicator after all calls complete
+        }
+    };
+    
+    // Function to handle stock search and update summary/references
+    const handleSearch = async (searchTerm) => {
+        try {
+            // Fetch stock summary from the backend
+            const res = await fetch('http://localhost:4000/summary/stock-summary', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ stockName: searchTerm }),
+            });
 
             const data = await res.json();
 
-            // Hide typing indicator when response is received
-            setTyping(false);
-            setMessages(prevMessages => [...prevMessages, { sender: 'bot', message: data.response }]);
-
+            if (res.ok) {
+                // Update the summary and references state with the fetched data
+                setSummary(data.summary);
+                setReferences(data.references);
+                setStockName(searchTerm); // Update the stockName state for display purposes
+            } else {
+                alert('Stock not found.');
+            }
         } catch (error) {
-            console.error('Error:', error);
-
-            // Hide typing indicator on error
-            setTyping(false);
-            setMessages(prevMessages => [...prevMessages, { sender: 'bot', message: 'An error occurred while sending your message' }]);
+            console.error('Error fetching stock data:', error);
         }
     };
+
 
     // Function to add a stock to the list of favourites
     const addFavourite = (companyTitle) => {
@@ -107,12 +136,12 @@ function StockAnalysis({ isSignedIn }) {
                     favouriteStocks={favouriteStocks}
                     addFavourite={addFavourite}
                     removeFavourite={removeFavourite}
+                    onSearch={handleSearch}
                 />
             </div>
             <div className="content" style={{ paddingTop: '200px' }}>
             <div className="position-fixed" style={{ top: 0, left: '300px', top: '70px', width: 'calc(100% - 300px)', backgroundColor: 'white', zIndex: 1000 }}>
                     <h1 className="page-header ms-3 mt-3 mb-2 me-5 ps-4" style={{ marginRight: '62%' }}>Stock Analysis</h1>
-
                     <div className="toggle-title-container">
                         <div className="title-button-container">
                             <StockSummary
@@ -121,6 +150,9 @@ function StockAnalysis({ isSignedIn }) {
                                 addFavourite={addFavourite}
                                 removeFavourite={removeFavourite}
                                 favouriteStocks={favouriteStocks} // Pass favourite stocks to check if already favourited
+                                summary={summary} // Pass summary as prop
+                                references={references} // Pass references as prop
+                                stockName={stockName}
                             />
                         </div>
                     </div>

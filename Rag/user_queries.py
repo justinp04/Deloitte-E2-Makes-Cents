@@ -99,18 +99,31 @@ EXPORT: references
 PURPOSE: Extracts and formats the references from 
          the documents to provide to the users.
 '''''''''''''''''''''''''''''''''''''''''''''''''''
+# def generate_references(documents):
+#     unique_urls = set()  #keep track of URLs
+#     references_list = []
+    
+#     for i, doc in enumerate(documents):
+#         if isinstance(doc, dict) and 'metadata' in doc:
+#             url = doc['metadata'].get('url', '') 
+#             if url and url not in unique_urls:  #prevents duplicating URLs
+#                 unique_urls.add(url)
+#                 references_list.append(f"{len(references_list) + 1}. {url}")
+    
+#     references = "\n".join(references_list)
+#     return references
+
 def generate_references(documents):
-    unique_urls = set()  #keep track of URLs
+    unique_urls = set()  # Keep track of URLs
     references_list = []
     
-    for i, doc in enumerate(documents):
+    for doc in documents:
         if isinstance(doc, dict) and 'metadata' in doc:
             url = doc['metadata'].get('url', '') 
-            if url and url not in unique_urls:  #prevents duplicating URLs
+            if url and url not in unique_urls:  # Prevents duplicating URLs
                 unique_urls.add(url)
-                references_list.append(f"{len(references_list) + 1}. {url}")
+                references_list.append(url)  # Append the raw URL to the list
     
-    references = "\n".join(references_list)
-    return references
+    return references_list  # Return the list of URLs directly
     
     

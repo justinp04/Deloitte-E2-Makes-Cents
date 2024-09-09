@@ -12,8 +12,9 @@ import SearchBar from '../SearchBar';
 import '../pages/StockAnalysis.css';
 import SASidebarCard from './SASidebarCard';
 
-const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => { } }) => {
+const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, onNavigate = () => { } }) => {
     const [openKeys, setOpenKeys] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('');
 
     const handleSelect = (eventKey) => {
         if (openKeys.includes(eventKey)) {
@@ -31,6 +32,14 @@ const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => { } }) =>
 
     const handleToggle = (eventKey) => {
         setExpandedItem(expandedItem === eventKey ? null : eventKey);
+    };
+
+    const handleSearch = () => {
+        if (!searchTerm.trim()) {
+            alert('Please enter a stock name to search.');
+            return;
+        }
+        onSearch(searchTerm);  // Trigger search in StockAnalysis.js
     };
 
     return (
@@ -102,7 +111,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => { } }) =>
                         <p className="my-0 ps-3 fw-bold">Search Result</p>
                     </Accordion.Header>
                     <Accordion.Body className='px-0 pt-1 pb-0'>
-                        <SearchBar placeholder="Search for a stock" />
+                        <SearchBar placeholder="Search for a stock" onSearch={onSearch}/>
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
