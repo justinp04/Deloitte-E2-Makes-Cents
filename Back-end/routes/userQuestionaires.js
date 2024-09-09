@@ -211,7 +211,6 @@ router.delete('/delete-user', async (req, res) => {
 
 
 
-
 // Endpoint to check if a user already exists
 router.get('/check-user', async (req, res) => {
     const email = req.query.email;
