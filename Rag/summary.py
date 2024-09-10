@@ -1,7 +1,7 @@
 from prompt_engineering import response_complexity, user_income, user_horizon, user_risk, user_loss, user_preference
 from user_queries import query_qdrant, get_llm_response, generate_references
 import sys
-import json
+import json, time
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -38,6 +38,12 @@ def main():
     
     print(json.dumps(result))  # Output the result as JSON
 
+    # All debug info should go to stderr
+    start_time = time.time()
+    end_time = time.time()
+    total_time = end_time - start_time
+    print(f"Total execution time: {total_time} seconds", file=sys.stderr)
+
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: stock_name
@@ -60,6 +66,9 @@ PURPOSE: generates the customised sentiment summary
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def generate_response(documents, user_query):
     #context = "\n".join(documents)
+
+    top_documents = documents[:3]   # Limit to top 3 most relevant documents for faster processing
+
     context = "\n".join([doc['content'] for doc in documents])
 
     messages = [
@@ -114,7 +123,12 @@ def response_length(answer, response_depth):
             }
         ]
         quick_answer = get_llm_response(system_message, max_response_tokens=100)
-        print(f"{quick_answer.choices[0].message.content.strip()}")
+        
+        # Check if the response is valid
+        if quick_answer and quick_answer.choices:
+            return quick_answer.choices[0].message.content.strip()
+        else:
+            return "Failed to generate a quick summary."
 
 
 

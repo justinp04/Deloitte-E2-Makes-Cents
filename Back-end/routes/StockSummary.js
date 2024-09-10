@@ -48,10 +48,11 @@ router.post('/stock-summary', (req, res) => {
             try {
                 // Attempt to extract JSON from the output
                 const jsonStartIndex = responseData.indexOf('{');
-                if (jsonStartIndex === -1) {
+                const jsonEndIndex = responseData.lastIndexOf('}');
+                if (jsonStartIndex === -1 || jsonEndIndex === -1) {
                     throw new Error('No JSON found in the response.');
                 }
-                const jsonString = responseData.slice(jsonStartIndex).trim(); // Extract the JSON part
+                const jsonString = responseData.slice(jsonStartIndex, jsonEndIndex + 1).trim();
                 const result = JSON.parse(jsonString); // Parse the JSON
                 
                 res.json(result); // Send the JSON result back to the client
