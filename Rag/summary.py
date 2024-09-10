@@ -14,21 +14,25 @@ Date:       18/08/24
 
 def main():
     stock_name = sys.argv[1]
-    response_depth = sys.argv[2]
-    # response_depth = "detailed"
-    #stock_name = input("") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
-    # stock_name = get_stock_name()
+    # response_depth = sys.argv[2]
+
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
     
     documents = query_qdrant(user_query)
     #print(documents) #can comment this in for debugging purposes
-    answer = generate_response(documents, user_query)
-    references = generate_references(documents)
-    response_length(answer, response_depth=response_depth) #RESPONSE DEPTH TAKEN FROM TOGGLE MENU ON FRONT END!
 
-    # Return the response and references in JSON format
+    # Generate both quick and detailed summaries
+    detailed_answer = generate_response(documents, user_query)
+    
+    # Generate quick summary using response_length function
+    quick_answer = response_length(detailed_answer, response_depth="quick")
+
+    references = generate_references(documents)
+
+    # Return both summaries and references
     result = {
-        "summary": answer,
+        "quick_summary": quick_answer,
+        "detailed_summary": detailed_answer,
         "references": references
     }
     
@@ -62,7 +66,8 @@ def generate_response(documents, user_query):
     {
         "role": "system",
         "content": (
-            f"You are a financial assistant providing personalised advice. A good stock would be one {user_income()} {user_horizon()} {user_risk()} {user_loss()} {user_preference()} {response_complexity()}."
+            f"You are a financial assistant providing personalised advice. "
+            f"A good stock would be one {user_income()} {user_horizon()} {user_risk()} {user_loss()} {user_preference()} {response_complexity()}."
         )
     },
     {

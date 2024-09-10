@@ -18,13 +18,14 @@ import StockSummary from '../stockanalysis-components/StockSummary';
 import SearchBar from '../SearchBar';
 
 function StockAnalysis({ isSignedIn }) {
-    const [isChecked, setChecked] = useState(true);
     const [messages, setMessages] = useState([]);
     const [accordionOpen, setAccordionOpen] = useState(false); // State to control whether an accordion (presumably in the UI) is open or closed
     const [favouriteStocks, setFavouriteStocks] = useState([]); // State to manage the list of favourite stocks
-    const [summary, setSummary] = useState(''); // State for summary text
+
+    const [quickSummary, setQuickSummary] = useState('');
+    const [detailedSummary, setDetailedSummary] = useState('')
     const [references, setReferences] = useState([]); // State for references array
-    const [responseDepth, setResponseDepth] = useState('detailed');
+    const [responseDepth, setResponseDepth] = useState('quick');
     const [stockName, setStockName] = useState('');
 
     // State to manage typing indicator
@@ -32,16 +33,13 @@ function StockAnalysis({ isSignedIn }) {
     const chatEndRef = useRef(null);
 
     const handleToggleChange = () => {
-        setResponseDepth(responseDepth === 'detailed' ? 'quick' : 'detailed'); // Toggle between quick and detailed
-    };
-
-    const handleChange = () => {
-        setChecked(!isChecked);
+        setResponseDepth(responseDepth === 'quick' ? 'detailed' : 'quick'); // Toggle between quick and detailed
     };
 
     // Function to update stock data (summary and references)
     const setStockData = (data) => {
-        setSummary(data.summary); // Update summary state
+        setQuickSummary(data.quick_summary);
+        setDetailedSummary(data.detailed_summary);
         setReferences(data.references); // Update references state
     };
 
@@ -95,8 +93,7 @@ function StockAnalysis({ isSignedIn }) {
 
             if (res.ok) {
                 // Update the summary and references state with the fetched data
-                setSummary(data.summary);
-                setReferences(data.references);
+                setStockData(data);
                 setStockName(searchTerm); // Update the stockName state for display purposes
             } else {
                 alert('Stock not found.');
@@ -155,7 +152,7 @@ function StockAnalysis({ isSignedIn }) {
                                 addFavourite={addFavourite}
                                 removeFavourite={removeFavourite}
                                 favouriteStocks={favouriteStocks} // Pass favourite stocks to check if already favourited
-                                summary={summary} // Pass summary as prop
+                                summary={responseDepth === 'quick' ? quickSummary : detailedSummary} // Pass summary as prop
                                 references={references} // Pass references as prop
                                 stockName={stockName}
                                 responseDepth={responseDepth}

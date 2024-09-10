@@ -10,20 +10,11 @@ import FavouriteButton from './FavouriteButton';
 import '../Components.css';
 import ToggleSwitch from '../ToggleSwitch';
 
-const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks, stockName, onToggleChange }) => {
+const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks, stockName, responseDepth, onToggleChange }) => {
     const [referencesOpen, setReferencesOpen] = useState(false); // To control the nested accordion
-    const [isChecked, setChecked] = useState(true); // Handle Toggle for Detailed vs Quick Mode
-    const [responseDepth, setResponseDepth] = useState('quick'); // State to manage response depth (detailed/quick)
 
     const companyTitle = stockName || "No stock name provided"; 
     const isFavourited = favouriteStocks.some(stock => stock.title === companyTitle);
-
-    const handleChange = () => {
-        const newCheckedState = !isChecked;
-        setChecked(newCheckedState);
-        setResponseDepth(newCheckedState ? 'detailed' : 'quick');
-        setChecked(!isChecked); // Set response depth based on toggle
-    };
 
     // Fetch stock data (summary and references) from the backend when the component mounts
     useEffect(() => {
@@ -38,6 +29,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                 });
 
                 const data = await res.json();
+                console.log(data);
             } catch (error) {
                 console.error('Error fetching stock data:', error);
             }
