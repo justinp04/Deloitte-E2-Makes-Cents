@@ -1,8 +1,13 @@
 {
-    "IsEncrypted": false,
-    "Values": {
-      "AzureWebJobsStorage": "",
-      "FUNCTIONS_WORKER_RUNTIME": "python",
-      "AzureWebJobsFeatureFlags": "DefaultEndpointsProtocol=https;AccountName=stockdatascrape;AccountKey=Sg1ioSfzwWybd5qh1C15IS1TmuhAaDDEAvajAybblFYKqMPE6qyPbzb4u4a1B0G+ES8fo4pAieFH+ASt/D17bQ==;EndpointSuffix=core.windows.netclear"
-    }
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=stockdatascrape;AccountKey=Sg1ioSfzwWybd5qh1C15IS1TmuhAaDDEAvajAybblFYKqMPE6qyPbzb4u4a1B0G+ES8fo4pAieFH+ASt/D17bQ==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+    "AZURE_OPENAI_EMBEDDING_NAME": "e2Embed",
+    "AZURE_OPENAI_API_KEY": "33ea5702df134f8bb0ec4d2181b5bedd",
+    "BLOB_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=stockdatascrape;AccountKey=Sg1ioSfzwWybd5qh1C15IS1TmuhAaDDEAvajAybblFYKqMPE6qyPbzb4u4a1B0G+ES8fo4pAieFH+ASt/D17bQ==;EndpointSuffix=core.windows.net",
+    "QDRANT_API_URL": "https://ef32f0bc-42ee-4576-85a2-8634285b097a.us-east4-0.gcp.cloud.qdrant.io",
+    "QDRANT_API_KEY": "sgs0_d_VCt7zy6bpP3Ev42D0Ib6wIlMLMx-VuF5cxhL0xAQEgEGhGA"
+  }
 }

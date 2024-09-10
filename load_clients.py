@@ -22,8 +22,8 @@ PURPOSE: load the client for Azure openai
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def load_openai_client():
     openai_client = AzureOpenAI(
-        azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
-        api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+        azure_endpoint="https://austest2dp.openai.azure.com/",
+        api_key="33ea5702df134f8bb0ec4d2181b5bedd",
         api_version="2024-02-01"
     )
     return openai_client
@@ -36,7 +36,7 @@ EXPORT: deployment_name
 PURPOSE: load the gpt model
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def load_deployment_name():
-    deployment_name = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME")
+    deployment_name = "AUS35Test3"
     return deployment_name
 
 
@@ -48,8 +48,8 @@ PURPOSE: load the client for the qdrant cloud
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def load_qdrant_client():
     qdrant_client = QdrantClient(
-        url=os.getenv("QDRANT_CLOUD_URL"),
-        api_key=os.getenv("QDRANT_API_KEY")
+        url="https://ef32f0bc-42ee-4576-85a2-8634285b097a.us-east4-0.gcp.cloud.qdrant.io",
+        api_key="sgs0_d_VCt7zy6bpP3Ev42D0Ib6wIlMLMx-VuF5cxhL0xAQEgEGhGA"
     )
     return qdrant_client
 
