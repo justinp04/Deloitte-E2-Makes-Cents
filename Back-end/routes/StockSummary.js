@@ -21,8 +21,8 @@ router.post('/stock-summary', (req, res) => {
     console.log(`Received response depth: ${response_depth}`);
 
     // Call the Python script and pass the stock name
-    const pythonExecutable = '/Users/anna/Desktop/MakeCents/E2_GenAI-3/venv/bin/python3';
-    const pythonScriptPath = '/Users/anna/Desktop/MakeCents/E2_GenAI-3/Rag/summary.py'; // Absolute path to your Python script
+    const pythonExecutable = '/opt/homebrew/bin/python3';
+    const pythonScriptPath = '/Users/anna/Desktop/MakeCents/E2_GenAI-6/Rag/summary.py'; // Absolute path to your Python script
     const pythonProcess = spawn(pythonExecutable, [pythonScriptPath, stockName, response_depth]);
 
     // Collect the Python script output

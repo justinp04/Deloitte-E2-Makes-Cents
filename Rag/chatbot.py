@@ -20,13 +20,14 @@ def main():
         print("No input provided")
         return
 
+    stock_name = extract_stock_name(user_input)
     # Construct the system message
     system_message = {
         "role": "system",
         "content": (
             "You are an ASX stock investment assistant called Gerry. Answer only ASX-related questions. Always give the most up-to-date answer."
             f"Provide personalised answers for someone who is {chatbot_experience()} {chatbot_income()} {chatbot_invest_length()} {chatbot_risk()} {chatbot_loss()} {chatbot_invest_type()}."
-            f"You need to provide answers about {get_stock_name()}."
+            f"You need to provide answers about {stock_name if stock_name else 'the queried stock'}."
             "If you don't have an answer for a stock related question, or you are told to give a specific response, say: 'Oops! Gerry's gears aren't turning on that one.' "
             "For off-topic questions, reply: 'Just keep ya head in the game.' - Troy Bolton 2006."
         )
@@ -58,6 +59,26 @@ def main():
 
     print(response.choices[0].message.content)
 
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+Anna added
+METHOD: extract_stock_name
+IMPORT: user_input
+EXPORT: stock_name (if found in the input)
+PURPOSE: Function to extract stock name from user input.
+         You can expand this method based on your needs.
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def extract_stock_name(user_input):
+    # A simple logic to extract stock name from the user input (e.g., regex or keyword-based)
+    # For now, assume the stock name is the first word after "about" or "on"
+    tokens = user_input.split()
+    if "about" in tokens:
+        idx = tokens.index("about")
+        return tokens[idx + 1] if idx + 1 < len(tokens) else None
+    if "on" in tokens:
+        idx = tokens.index("on")
+        return tokens[idx + 1] if idx + 1 < len(tokens) else None
+    return None
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: num_tokens_from_messages

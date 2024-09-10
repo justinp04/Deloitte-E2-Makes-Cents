@@ -15,8 +15,8 @@ router.post('/chat', (req, res) => {
     console.log(`Received message: ${userMessage}`);
 
     // Call the Python script and pass the user message
-    const pythonExecutable = '/Users/anna/Desktop/MakeCents/E2_GenAI-3/venv/bin/python3';
-    const pythonProcess = spawn(pythonExecutable, ['/Users/anna/Desktop/MakeCents/E2_GenAI-3/Rag/chatbot.py', userMessage]);
+    const pythonExecutable = '/opt/homebrew/bin/python3';
+    const pythonProcess = spawn(pythonExecutable, ['/Users/anna/Desktop/MakeCents/E2_GenAI-6/Rag/chatbot.py', userMessage]);
     
     // Collect the Python script output
     let responseData = '';

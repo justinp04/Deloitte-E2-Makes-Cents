@@ -1,7 +1,7 @@
 from prompt_engineering import response_complexity, user_income, user_horizon, user_risk, user_loss, user_preference
 from user_queries import query_qdrant, get_llm_response, generate_references
 import sys
-import json, time
+import json, re
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -37,13 +37,6 @@ def main():
     }
     
     print(json.dumps(result))  # Output the result as JSON
-
-    # All debug info should go to stderr
-    start_time = time.time()
-    end_time = time.time()
-    total_time = end_time - start_time
-    print(f"Total execution time: {total_time} seconds", file=sys.stderr)
-
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: stock_name
@@ -95,7 +88,21 @@ def generate_response(documents, user_query):
 
     max_response_tokens = 450 #set the max number of tokens to be used for responses
     response = get_llm_response(messages, max_response_tokens)
-    return response.choices[0].message.content.strip()
+
+    detailed_answer = response.choices[0].message.content.strip()
+
+    # Format the response with proper bullet points and newlines
+    formatted_response = "Based on your investment criteria, here are some key points:\n\n"
+
+    # Use a regular expression to find bullet points (e.g., "1.", "2.", etc.)
+    bullet_points = re.split(r'\n?\d+\.\s+', detailed_answer)
+
+    # Enumerate over bullet points and append them to the formatted response
+    for i, point in enumerate(bullet_points):
+        if point.strip():  # Avoid empty strings
+            formatted_response += f"{i}. {point.strip()}\n\n"
+
+    return formatted_response
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
