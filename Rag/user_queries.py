@@ -138,24 +138,17 @@ PURPOSE: Extracts and formats the references from
 #     return references
 
 def generate_references(documents):
-    unique_urls = set()  # keep track of URLs
+    unique_urls = set()  # Keep track of URLs
     references_list = []
-    
+
     for i, doc in enumerate(documents):
         if isinstance(doc, dict) and 'metadata' in doc:
             url = doc['metadata'].get('url', '')
-            title = doc['metadata'].get('title', 'Untitled')
-            if url and url not in unique_urls:  # prevents duplicating URLs
+            if url and url not in unique_urls:  # Prevent duplicating URLs
                 unique_urls.add(url)
-                references_list.append(f"{len(references_list) + 1}. {title} - {url}")
-        else:
-            print(f"Document {i} has no 'metadata' or 'url' field.")
+                references_list.append(url)  # Append just the URL, no need to convert to a formatted string
     
-    if not references_list:
-        return "No references available."
-    
-    references = "\n".join(references_list)
-    return references
+    return references_list if references_list else ["No references available."]
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''

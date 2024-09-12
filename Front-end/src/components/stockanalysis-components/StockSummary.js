@@ -30,6 +30,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
 
                 const data = await res.json();
                 console.log(data);
+                console.log("References:", data.references);
             } catch (error) {
                 console.error('Error fetching stock data:', error);
             }
