@@ -1,47 +1,43 @@
 /************************************************************************************************
  * Purpose: Account Info Page
  * Fix: 
- *  - Seperate into another component and call input boxes
- *  - Discard changes not working
  ************************************************************************************************/
-
 import React, { useState } from 'react';
-
 import '../Components.css';
 
 const AccountInfo = () => {
     const [isEditMode, setIsEditMode] = useState(false);
 
-    // Placeholder text for user information. Link with mySQL.
-    const [formData, setFormData] = useState({
+    // Placeholder text for user information. Link with mySQL or EntraID.
+    const initialData = {
         firstName: 'Joe',
         lastName: 'Bloggs',
         email: 'joebloggs@outlook.com',
         password: '**********',
         dateOfBirth: '08/05/1980'
-    });
+    };
+
+    const [savedData, setSavedData] = useState(initialData);
+    const [formData, setFormData] = useState(savedData);
 
     const handleSaveClick = (e) => {
         e.preventDefault();
+        setSavedData(formData); // Save the changes
         setIsEditMode(false);
     };
 
     const handleDiscardClick = () => {
+        setFormData(savedData); // Revert form data to the last saved state
         setIsEditMode(false);
     };
 
+    // Get the name and the current value of the input field where the user is typing
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
             [name]: value
         });
-        if (!isEditMode) {
-            setIsEditMode(true);
-        }
-    };
-
-    const handleFocus = () => {
         if (!isEditMode) {
             setIsEditMode(true);
         }
@@ -59,7 +55,6 @@ const AccountInfo = () => {
                         value={formData.firstName}
                         name="firstName"
                         onChange={handleChange}
-                        onFocus={handleFocus}
                     />
                 </div>
                 <div className="mb-3 ps-3 pe-5">
@@ -70,7 +65,6 @@ const AccountInfo = () => {
                         value={formData.lastName}
                         name="lastName"
                         onChange={handleChange}
-                        onFocus={handleFocus}
                     />
                 </div>
                 <div className="mb-3 ps-3 pe-5">
@@ -81,7 +75,6 @@ const AccountInfo = () => {
                         value={formData.email}
                         name="email"
                         onChange={handleChange}
-                        onFocus={handleFocus}
                     />
                 </div>
                 <div className="mb-3 ps-3 pe-5">
@@ -92,7 +85,6 @@ const AccountInfo = () => {
                         value={formData.password}
                         name="password"
                         onChange={handleChange}
-                        onFocus={handleFocus}
                     />
                 </div>
                 <div className="mb-5 ps-3 pe-5">
@@ -103,7 +95,6 @@ const AccountInfo = () => {
                         value={formData.dateOfBirth}
                         name="dateOfBirth"
                         onChange={handleChange}
-                        onFocus={handleFocus}
                     />
                 </div>
                 {isEditMode && (
@@ -116,6 +107,5 @@ const AccountInfo = () => {
         </div>
     );
 };
+
 export default AccountInfo;
-
-

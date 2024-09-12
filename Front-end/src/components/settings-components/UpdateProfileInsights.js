@@ -14,7 +14,7 @@ const UpdateProfileInsights = () => {
             <p className='ms-3'>To provide you with the most relevant stock recommendations, please fill out the 'Profile Insights' section.
                 This information will help us tailor our suggestions to match your investment experience, financial goals, and risk tolerance.</p>
 
-            <div className="d-flex mt-4 ms-3">
+            <div className="d-flex justify-content-center align-items-center mt-4 ms-3 ">
                 <ProfileInsightsForm />
             </div>
         </div>

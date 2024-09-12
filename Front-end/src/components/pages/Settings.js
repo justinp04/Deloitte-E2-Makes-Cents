@@ -5,14 +5,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import SettingsSidebar from '../settings_components/SettingsSidebar';
-import AccountInfo from '../settings_components/AccountInfo';
-import NotificationsSettings from '../settings_components/Notifications';
-import UserGuide from '../settings_components/UserGuide';
-import UpdateProfileInsights from '../settings_components/UpdateProfileInsights';
+import SettingsSidebar from '../settings-components/SettingsSidebar';
+import AccountInfo from '../settings-components/AccountInfo';
+import NotificationsSettings from '../settings-components/Notifications';
+import UserGuide from '../settings-components/UserGuide';
+import UpdateProfileInsights from '../settings-components/UpdateProfileInsights';
 import './Settings.css';
 
-function Settings({ isSignedIn }) {
+function Settings() {
     return (
         <div className="page-container">
             <div className="sidebar">
@@ -22,12 +22,14 @@ function Settings({ isSignedIn }) {
                 <div className="title-container">
                     <h1 className="page-header ms-3">Settings</h1>
                 </div>
-                <Routes>
-                    <Route path="account-info" element={<AccountInfo />} />
-                    <Route path="update-profile" element={<UpdateProfileInsights />} />
-                    <Route path="notifications" element={<NotificationsSettings />} />
-                    <Route path="user-guide" element={<UserGuide />} />
-                </Routes>
+                <div className='ms-3'>
+                    <Routes>
+                        <Route path="account-info" element={<AccountInfo />} />
+                        <Route path="update-profile" element={<UpdateProfileInsights />} />
+                        <Route path="notifications" element={<NotificationsSettings />} />
+                        <Route path="user-guide" element={<UserGuide />} />
+                    </Routes>
+                </div>
             </div>
         </div>
     );

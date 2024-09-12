@@ -12,7 +12,7 @@ const NewsCard = ({ imageSrc, newsTitle, newsInfo, date }) => {
     return (
         <div>
             <small className="text-muted">{date}</small>
-            <div className="card mb-3">
+            <div className="news-card mb-3">
                 <div className="d-flex align-items-center p-3">
                     <div className="flex-shrink-0">
                         <img

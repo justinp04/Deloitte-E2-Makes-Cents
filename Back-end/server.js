@@ -4,7 +4,7 @@ import cors from 'cors';
 
 import path from 'path';
 import posts from './routes/posts.js';
-import UserQuestionaires from './routes/userQuestionaires.js';
+// import UserQuestionaires from './routes/userQuestionaires.js';
 import stockAnalysisRoutes from './routes/StockAnalysis.js';
 import stockSummary from './routes/StockSummary.js'
 
@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use('/next', UserQuestionaires);
+// app.use('/next', UserQuestionaires);
 app.use('/chatbot', stockAnalysisRoutes);
 app.use('/summary', stockSummary);
 

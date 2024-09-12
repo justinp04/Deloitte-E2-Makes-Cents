@@ -87,71 +87,73 @@ const ProfileInsightsForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='w-100' style={{ maxWidth: '800px' }}>
-
-      {/* Question One */}
-      <RangeQuestion
-        label="Q1. How experienced are you with stock investing?"
-        min="1"
-        max="5"
-        value={experience}
-        onChange={setExperience}
-        labels={rangeLabelsQ1}
-      />
-      {/* Question Two */}
-      <SelectQuestion
-        label="Q2. What is your annual income range?"
-        options={incomeOptions}
-        value={income}
-        onChange={setIncome}
-      />
-      {/* Question Three */}
-      <RangeQuestion
-        label="Q3. How long do you plan to hold your investments?"
-        min="1"
-        max="3"
-        value={investmentDuration}
-        onChange={setInvestmentDuration}
-        labels={rangeLabelsQ3}
-      />
-      {/* Question Four */}
-      <RangeQuestion
-        label="Q4. How much risk are you willing to take for higher returns?"
-        min="1"
-        max="5"
-        value={riskLevel}
-        onChange={setRiskLevel}
-        labels={rangeLabelsQ4}
-      />
-      {/* Question Five */}
-      <RangeQuestion
-        label="Q5. How much short-term decline can you handle financially?"
-        min="1"
-        max="5"
-        value={declineTolerance}
-        onChange={setDeclineTolerance}
-        labels={rangeLabelsQ5}
-      />
-      {/* Question Six */}
-      <RangeQuestion
-        label="Q6. Do you prefer investing a lump sum or recurring investments?"
-        min="1"
-        max="3"
-        value={investmentType}
-        onChange={setInvestmentType}
-        labels={rangeLabelsQ6}
-      />
-
-      <div className="center-button">
-        <button type="submit" className="btn btn-primary green-btn mb-3">Create Account</button>
-      </div>
-
-      <p className="text-center mb-5">
-        Have an account? <a href="/signin">Sign In Here.</a>
-      </p> 
-
-    </form>
-  );
+		<form onSubmit={handleSubmit} className='w-100' style={{ maxWidth: '800px' }}>
+		{/* Question One */}
+		<div style={{ marginBottom: '70px' }}>
+			<RangeQuestion
+			label="Q1. How experienced are you with stock investing?"
+			min="1"
+			max="5"
+			value={experience}
+			onChange={setExperience}
+			labels={rangeLabelsQ1}
+			/>
+		</div>
+		{/* Question Two */}
+		<div style={{ marginBottom: '20px' }}>
+			<SelectQuestion
+			label="Q2. What is your annual income range?"
+			options={incomeOptions}
+			value={income}
+			onChange={setIncome}
+			/>
+		</div>
+		{/* Question Three */}
+		<div style={{ marginBottom: '70px' }}>
+			<RangeQuestion
+			label="Q3. How long do you plan to hold your investments?"
+			min="1"
+			max="3"
+			value={investmentDuration}
+			onChange={setInvestmentDuration}
+			labels={rangeLabelsQ3}
+			/>
+		</div>
+		{/* Question Four */}
+		<div style={{ marginBottom: '70px' }}>
+			<RangeQuestion
+			label="Q4. How much risk are you willing to take for higher returns?"
+			min="1"
+			max="5"
+			value={riskLevel}
+			onChange={setRiskLevel}
+			labels={rangeLabelsQ4}
+			/>
+		</div>
+		{/* Question Five */}
+		<div style={{ marginBottom: '70px' }}>
+			<RangeQuestion
+			label="Q5. How much short-term decline can you handle financially?"
+			min="1"
+			max="5"
+			value={declineTolerance}
+			onChange={setDeclineTolerance}
+			labels={rangeLabelsQ5}
+			/>
+		</div>
+		{/* Question Six */}
+		<div style={{ marginBottom: '70px' }}>
+			<RangeQuestion
+			label="Q6. Do you prefer investing a lump sum or recurring investments?"
+			min="1"
+			max="3"
+			value={investmentType}
+			onChange={setInvestmentType}
+			labels={rangeLabelsQ6}
+			/>
+		</div>
+		</form>
+	);
 };
 
 export default ProfileInsightsForm;

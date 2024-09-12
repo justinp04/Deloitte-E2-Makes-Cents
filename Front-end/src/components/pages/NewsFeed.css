@@ -1,4 +1,4 @@
-/* Company Title Styling */
+/* NewsCompanyTitle.js */
 .company-title-div {
     margin-left: 36px;
     margin-top: 5px;
@@ -16,7 +16,7 @@
     text-transform: uppercase;
 }
 
-/* Filter button styling */
+/* FilterButton.js */
 .filter-button {
     background-color: #D1D1D1;
     border: none;
@@ -45,15 +45,14 @@
 .filter-title {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 20px;
     margin-left: 37px;
 }
 
-/* Custom styles for cards */
-.card {
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background-color: #F3F3F3;
+/* NewsCard.js */
+.news-card {
+    border: 1px solid #ddd !important;
+    border-radius: 20px !important;
+    background-color: #F3F3F3 !important;
 }
 
 .card img {
@@ -64,7 +63,7 @@
     padding: 10px;
 }
 
-/* News Feed sidebar styling */
+/* NewsSidebar.js */
 .center-searchbar {
     display: flex;
     align-items: center;
@@ -74,6 +73,7 @@
 }
 
 .add-button {
+    position: absolute !important;
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -84,8 +84,7 @@
     justify-content: center;
     /* Horizontally centers content */
     border: none;
-    position: fixed;
-    bottom: 23px;
+    bottom: 90px;
     left: 205px;
     z-index: 1000;
 }
@@ -94,33 +93,61 @@
     display: none !important;
 }
 
-.accordion-button {
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: left;
-    padding: 5px 10px;
+.focus {
+    --bs-accordion-btn-bg: #BAF43E;
+}
+
+/* News hero section */
+.hero-section {
+    position: relative;
+    min-width: 550px;
+    max-width: 60%;
     width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    color: #333;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px; /* Adjust as needed */
+    color: white; /* Text color */
+    transition-duration: 0.5s;
+    background: rgba(0, 0, 0, 0.3); /* Optional background for text, to increase contrast */
 }
 
-.accordion-button:hover {
-    text-decoration: none;
-    color: #000;
+.hero-text-container:hover {
+    background: rgba(0, 0, 0, 0.6); /* Optional background for text, to increase contrast */
 }
 
-.accordion-button i {
-    font-size: 16px;
-    transition: transform 0.3s ease;
+.hero-title {
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.collapse.show .accordion-button i {
+.hero-subtitle {
+    font-size: 1rem; /* Adjust as needed */
+    line-height: 1.5;
+}
+
+
+/* CSS ANIMATIONS */
+.chevron-icon {
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+.rotate {
     transform: rotate(90deg);
-}
-
-.accordion-button:focus {
-    outline: none;
-    box-shadow: none;
 }
