@@ -47,7 +47,7 @@ def query_qdrant(query_text):
     search_result = load_qdrant_client().search(  
         collection_name="E2cluster1",
         query_vector=query_embedding,
-        limit=6  #number of top results to retrieve - can change this if need more/less results
+        limit=5  #number of top results to retrieve - can change this if need more/less results
     )
     
     documents = []

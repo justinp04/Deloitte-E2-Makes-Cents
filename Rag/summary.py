@@ -59,9 +59,7 @@ PURPOSE: generates the customised sentiment summary
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def generate_response(documents, user_query):
     #context = "\n".join(documents)
-
-    top_documents = documents[:3]   # Limit to top 3 most relevant documents for faster processing
-
+    
     context = "\n".join([doc['content'] for doc in documents])
 
     messages = [
