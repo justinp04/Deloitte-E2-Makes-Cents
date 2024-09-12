@@ -40,11 +40,11 @@ function About()
           </h6>
     
           {/* Dynamic Boxes Section */}
-          <div className="container">
+          <div className="container mt-5">
             <div className="row justify-content-center">
               {boxes.map(box => (
                 <div key={box.id} className="col-md-3 mb-4">
-                  <div className="box feature-box d-flex flex-column justify-content-center align-items-center text-center" style={{backgroundColor:"white", height:"23rem"}}>
+                  <div className="box feature-box d-flex flex-column justify-content-center align-items-center text-center" style={{backgroundColor:"white", height:"23rem", borderRadius:"40px"}}>
                     <img src={box.image} alt={box.title} className="img-fluid mb-5"/>
                     <p>{box.content}</p>
                   </div>

@@ -33,7 +33,7 @@ function NavbarComponent()
                 </Navbar.Brand>
                 {/* Allows for hamburger style menu when display size is changed */}
                 <Navbar.Toggle aria-controls="navbarNav" />
-                <Navbar.Collapse id="navbarNav">
+                <Navbar.Collapse id="navbarNav ma-3" style={{backgroundColor:"white"} }>
                     <Nav className="ms-auto align-items-center">
                          {/* About Us link */}
                         <Nav.Link as={Link} to="/about" className="fw-bold me-3 ms-3">
