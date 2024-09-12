@@ -1,6 +1,7 @@
 import os
 from qdrant_client.models import ScoredPoint
 from load_clients import load_openai_client, load_qdrant_client, load_deployment_name
+import numpy as np
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -137,16 +138,35 @@ PURPOSE: Extracts and formats the references from
 #     return references
 
 def generate_references(documents):
-    unique_urls = set()  # Keep track of URLs
+    unique_urls = set()  # keep track of URLs
     references_list = []
     
-    for doc in documents:
+    for i, doc in enumerate(documents):
         if isinstance(doc, dict) and 'metadata' in doc:
-            url = doc['metadata'].get('url', '') 
-            if url and url not in unique_urls:  # Prevents duplicating URLs
+            url = doc['metadata'].get('url', '')
+            title = doc['metadata'].get('title', 'Untitled')
+            if url and url not in unique_urls:  # prevents duplicating URLs
                 unique_urls.add(url)
-                references_list.append(url)  # Append the raw URL to the list
+                references_list.append(f"{len(references_list) + 1}. {title} - {url}")
+        else:
+            print(f"Document {i} has no 'metadata' or 'url' field.")
     
-    return references_list  # Return the list of URLs directly
+    if not references_list:
+        return "No references available."
     
-    
+    references = "\n".join(references_list)
+    return references
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: normalise_vector
+IMPORT: vector
+EXPORT: vector / norm
+PURPOSE: Normalises all the vector embeddings for
+        Qdrant
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def normalise_vector(vector):
+    norm = np.linalg.norm(vector)
+    if norm == 0:
+        return vector  #return the original vector if norm is 0
+    return vector / norm
