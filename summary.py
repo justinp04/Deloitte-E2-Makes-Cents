@@ -14,7 +14,7 @@ def main():
     #stock_name = input("") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
     stock_name = get_stock_name()
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
-    documents = query_qdrant(user_query)
+    documents = query_qdrant(user_query, stock_name)
     #print(documents) #can comment this in for debugging purposes
     answer = generate_response(documents, user_query)
     references = generate_references(documents)
@@ -29,8 +29,8 @@ EXPORT: stock_name
 PURPOSE: gets the stock name from the user input
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def get_stock_name():
-    stock_name = input("Input: ") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
-    #stock_name = "Woolworths" #THIS IS JUST A TEST FOR CHATBOT, DELETE THIS LINE WHEN HOOKED UP TO FRONT END
+    #stock_name = input("Input: ") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
+    stock_name = "ADH" #THIS IS JUST A TEST FOR CHATBOT, DELETE THIS LINE WHEN HOOKED UP TO FRONT END
     return stock_name
 
 
@@ -42,8 +42,8 @@ PURPOSE: generates the customised sentiment summary
         response to be provided to the user
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def generate_response(documents, user_query):
-    #context = "\n".join(documents)
     context = "\n".join([doc['content'] for doc in documents])
+    #print(context)
 
     messages = [
     {
@@ -55,9 +55,14 @@ def generate_response(documents, user_query):
     {
         "role": "system",
         "content": (
-            "Example Response: Based on your criteria, Woolworths may not be ideal.\n\n"
+            "Template to follow for response: Based on your criteria, Woolworths may/may not be ideal.\n\n"
             "1. reason1.\n\n"
             "2. reason2.\n\n"
+            "3. reason3.\n\n"
+            "4. reason4.\n\n"
+            "5. reason5.\n\n"
+            "6. reason6.\n\n"
+            "Stick to this template strictly"
         )
     },
     {

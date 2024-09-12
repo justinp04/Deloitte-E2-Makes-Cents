@@ -30,8 +30,10 @@ def main():
 
     while True:
         user_input = input("Q: ")
+        user_input_with_context = f"{user_input}\nProvide answer about {get_stock_name()}"
         conversation.append({"role": "user", "content": user_input})
-        documents = query_qdrant(user_input) #retrieve relevant documents from qdrant
+        stock_name = get_stock_name()
+        documents = query_qdrant(user_input_with_context, stock_name) #retrieve relevant documents from qdrant
         context = "\n".join([doc['content'] for doc in documents])
 
         conversation.append({"role": "system", "content": f"Context:\n{context}"}) #add context to the conversation

@@ -37,7 +37,7 @@ PURPOSE: Retrieves the favorite stocks from the SQL
 def get_fav_stock():
     #this is where a list of fav stocks would need to be fetched from sql database
 
-    fav_stocks = ["Woolworths", "Adairs", "Westfarmers", "BHP"] #this is just for testing purposes until it gets hooked up to sql
+    fav_stocks = ["Adairs", "BHP"] #this is just for testing purposes until it gets hooked up to sql
 
     return fav_stocks
 
@@ -52,7 +52,7 @@ PURPOSE: Queries Qdrant for news articles related to
 def query_qdrant_for_news(stock):
     today = datetime.datetime.now().strftime('%Y-%m-%d')  #get today's date
     user_query = f"{stock} news {today}"  #query Qdrant for news related to the stock and today's date
-    documents = query_qdrant(user_query) 
+    documents = query_qdrant(user_query, stock) 
     return [doc for doc in documents if 'news' in doc['metadata']['source']]  #get only news from blog storage following STOCK-news.txt format
 
 

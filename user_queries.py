@@ -1,6 +1,7 @@
 import os
 from qdrant_client.models import ScoredPoint
 from load_clients import load_openai_client, load_qdrant_client, load_deployment_name
+import numpy as np
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -24,12 +25,17 @@ PURPOSE: gets the vector embedding for the user query
         different features
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def get_query_embedding(query_text):
-    embeddings_response = load_openai_client().embeddings.create(
-        model=os.getenv("AZURE_OPENAI_EMBEDDING_NAME"),
-        input=[query_text]
-    )
-    embedding = embeddings_response.data[0].embedding
-    return embedding
+    try:
+        embeddings_response = load_openai_client().embeddings.create(
+            model=os.getenv("AZURE_OPENAI_EMBEDDING_NAME"),
+            input=[query_text]
+        )
+        embedding = embeddings_response.data[0].embedding
+        normalised_embedding = normalise_vector(np.array(embedding)) #normalise the embedding!
+        return normalised_embedding
+    except Exception as e:
+        print(f"Failed to get data embeddings: {e}")
+        raise
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -41,27 +47,43 @@ PURPOSE: returns the closest matched results from the
         embedding from the users query and then
         extracts the documents from the serch results
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-def query_qdrant(query_text):
+def query_qdrant(query_text, stock_name):
     query_embedding = get_query_embedding(query_text)
     
-    search_result = load_qdrant_client().search(  
+    search_result = load_qdrant_client().search(
         collection_name="E2cluster1",
-        query_vector=query_embedding,
-        limit=6  #number of top results to retrieve - can change this if need more/less results
+        query_vector=query_embedding, 
+        limit=10 #adjust as needed
     )
+
+    #print("Raw search results:", search_result) #DEBUG!
+    stock_name = stock_name.strip()
     
-    documents = []
-    for point in search_result:
-        if isinstance(point, ScoredPoint) and hasattr(point, 'payload') and 'content' in point.payload:
-            document = {
-                'content': point.payload['content'],
-                'metadata': point.payload.get('metadata', {})
-            }
-            documents.append(document)
-        else:
-            print(f"Skipping point due to missing payload or content: {point}")
+    filtered_results = []
+    for point in search_result: #filter results to include only relevant documents based on the doc source in metadata!
+        if isinstance(point, ScoredPoint) and hasattr(point, 'payload'):
+            payload = point.payload
+            metadata = payload.get('metadata', {})
+            source = metadata.get('source', '')
+
+            #print(f"Checking source: '{source}'") #DEBUGGING
+
+            if source.startswith(f"{stock_name}-"): #make sure source starts with correct stock name
+                filtered_results.append(point)
     
-    return documents
+    #print("Filtered results:", filtered_results) #DEBUG
+    
+    final_documents = []
+    for point in filtered_results: #prepare the document list based on filtered results
+        #print("Processing document:", point.payload) #DEEEEBUG!
+        document = {
+            'content': point.payload.get('content', 'No content available'),
+            'metadata': point.payload.get('metadata', {})
+        }
+        final_documents.append(document)
+    
+    return final_documents
+
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -112,5 +134,19 @@ def generate_references(documents):
     
     references = "\n".join(references_list)
     return references
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: normalise_vector
+IMPORT: vector
+EXPORT: vector / norm
+PURPOSE: Normalises all the vector embeddings for
+        Qdrant
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def normalise_vector(vector):
+    norm = np.linalg.norm(vector)
+    if norm == 0:
+        return vector  #return the original vector if norm is 0
+    return vector / norm
     
     
