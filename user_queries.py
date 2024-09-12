@@ -53,29 +53,32 @@ def query_qdrant(query_text, stock_name):
     search_result = load_qdrant_client().search(
         collection_name="E2cluster1",
         query_vector=query_embedding, 
-        limit=10 #adjust as needed
+        limit=10  # Adjust as needed
     )
 
-    #print("Raw search results:", search_result) #DEBUG!
-    stock_name = stock_name.strip()
+    # print("Raw search results:", search_result) #debug
     
+    stock_name = stock_name.strip()
+
     filtered_results = []
-    for point in search_result: #filter results to include only relevant documents based on the doc source in metadata!
+    for point in search_result:
         if isinstance(point, ScoredPoint) and hasattr(point, 'payload'):
             payload = point.payload
             metadata = payload.get('metadata', {})
             source = metadata.get('source', '')
 
-            #print(f"Checking source: '{source}'") #DEBUGGING
+            # print(f"Checking source: '{source}'") #debug
 
-            if source.startswith(f"{stock_name}-"): #make sure source starts with correct stock name
+            if (source.startswith(f"{stock_name}-") or #check for both formats
+                f"Financial-Statement-{stock_name}.md" in source): 
                 filtered_results.append(point)
     
-    #print("Filtered results:", filtered_results) #DEBUG
+    # print("Filtered results:", filtered_results) #debug
     
     final_documents = []
-    for point in filtered_results: #prepare the document list based on filtered results
-        #print("Processing document:", point.payload) #DEEEEBUG!
+    for point in filtered_results:
+        # print("Processing document:", point.payload) #debug
+        
         document = {
             'content': point.payload.get('content', 'No content available'),
             'metadata': point.payload.get('metadata', {})
