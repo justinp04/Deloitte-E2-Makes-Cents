@@ -1,4 +1,66 @@
 /*********************************
+* TutorialOverlay.js
+**********************************/
+
+.tutorial-overlay {
+  position: fixed;
+  right: 60px;  /* Moves it to the right side */
+  top: 70px;    /* Adjust as needed for vertical positioning */
+  background-color: rgba(201,229,255,255);
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2000;  /* Set this value higher than the top bar */
+  width: 250px;  /* Adjust as needed */
+}
+
+.tutorial-box {
+  font-size: 14px;
+  text-align: left; /* Aligns the buttons and text to the right */
+}
+
+.tutorial-box button {
+  font-weight: bold; /* Make the text bold */
+  color: black;      /* Make the text black */
+  border: none;
+  padding: /*height*/3px /*width*/10px;
+  margin-left: 5px;  /* Adds some space between the buttons */
+  border-radius: 25px;  /* Rounds the button */
+  cursor: pointer;
+}
+
+.tutorial-box button:first-of-type {
+  background-color: #baf43e; /* Keeping the Next button green */
+  color: black;              /* White text for the Next button */
+  float: right;              /* Ensures the buttons are aligned to the right */
+}
+
+.tutorial-box button:last-of-type {
+  background-color: #ededed;    /* Grey background for the Close button */
+  float: right;              /* Aligns all buttons to the right */
+}
+
+.tutorial-box button:hover {
+  background-color: #45a049;  /* Optional: Button hover effect for Next button */
+}
+
+.tutorial-box button:last-of-type:hover {
+  background-color: darkgrey; /* Optional: Darker grey for Close button on hover */
+}
+
+/* Style for the title (e.g., "Settings") */
+.step-title {
+  font-size: 16px;    /* Larger font size for the title */
+  font-weight: bold;  /* Bold text for the title */
+  margin-bottom: 5px; /* Optional: space below the title */
+}
+
+/* Style for the description (e.g., "Click here to edit your settings.") */
+.step-description {
+  font-size: 14px;    /* Slightly smaller font size for the description */
+}
+
+/*********************************
 * CustomSelect.js
 **********************************/
   .custom-select {
