@@ -10,7 +10,8 @@ symbols = ['CBA', 'BHP', 'RIO', 'CSL', 'NAB', 'WBC', 'ANZ', 'WES', 'MQG', 'GMG',
 
 # Function to get full quote for a stock from FMP
 def get_full_quote_fmp(symbol):
-    url = f'https://financialmodelingprep.com/api/v3/quote/{symbol}?apikey={API_KEY}'
+    symbol_with_suffix = f'{symbol}.AX'
+    url = f'https://financialmodelingprep.com/api/v3/quote/{symbol_with_suffix}?apikey={API_KEY}'
     try:
         response = requests.get(url)
         response.raise_for_status()  # Check for HTTP errors
@@ -18,20 +19,21 @@ def get_full_quote_fmp(symbol):
         if data and isinstance(data, list) and len(data) > 0:
             return data
         else:
-            print(f'No data returned from FMP for symbol {symbol}')
+            print(f'No data returned from FMP for symbol {symbol_with_suffix}')
             return None
     except requests.RequestException as e:
-        print(f'Error fetching data from FMP for symbol {symbol}: {e}')
+        print(f'Error fetching data from FMP for symbol {symbol_with_suffix}: {e}')
         return None
 
 # Function to get full quote for a stock from Yahoo Finance
 def get_full_quote_yf(symbol):
-    ticker = yf.Ticker(symbol)
+    symbol_with_suffix = f'{symbol}.AX'
+    ticker = yf.Ticker(symbol_with_suffix)
     data = ticker.info
     if data:
         return [data]
     else:
-        print(f'No data returned from Yahoo Finance for symbol {symbol}')
+        print(f'No data returned from Yahoo Finance for symbol {symbol_with_suffix}')
         return None
 
 # Function to save data to a .txt file
