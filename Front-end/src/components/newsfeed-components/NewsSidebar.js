@@ -23,12 +23,12 @@ const NewsSidebar = () => {
             <Container fluid className="m-0 p-0">
                 <SearchBar placeholder="Search a stock" />
                 <Accordion>
-                    <Accordion.Item eventKey="0" onClick={() => handleToggle("0")}>
-                        <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "0" ? 'focus' : ''}`}>
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "0" ? 'focus' : ''}`} onClick={() => handleToggle("0")}>
                             <FontAwesomeIcon
                                 id="stockRecommendations"
                                 icon={faChevronRight}
-                                className={`chevron-icon ${expandedItem === "0" ? 'rotate' : ''}`}/>
+                                className={`chevron-icon ${expandedItem === "0" ? 'rotate' : ''}`} />
                             <p className="my-0 ps-3 fw-bold">Current Investments</p>
                         </Accordion.Header>
                         <Accordion.Body className="ps-4 pe-1">
@@ -41,12 +41,12 @@ const NewsSidebar = () => {
                             culpa qui officia deserunt mollit anim id est laborum.
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="1" onClick={() => handleToggle("1")}>
-                        <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "1" ? 'focus' : ''}`}>
+                    <Accordion.Item eventKey="1">
+                        <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "1" ? 'focus' : ''}`} onClick={() => handleToggle("1")}>
                             <FontAwesomeIcon
                                 id="stockRecommendations"
                                 icon={faChevronRight}
-                                className={`chevron-icon ${expandedItem === "1" ? 'rotate' : ''}`}/>
+                                className={`chevron-icon ${expandedItem === "1" ? 'rotate' : ''}`} />
                             <p className="my-0 ps-3 fw-bold">Following</p>
                         </Accordion.Header>
                         <Accordion.Body className="ps-4 pe-1">
@@ -59,12 +59,12 @@ const NewsSidebar = () => {
                             culpa qui officia deserunt mollit anim id est laborum.
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="2" onClick={() => handleToggle("2")}>
-                        <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "2" ? 'focus' : ''}`}>
+                    <Accordion.Item eventKey="2">
+                        <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "2" ? 'focus' : ''}`} onClick={() => handleToggle("2")}>
                             <FontAwesomeIcon
                                 id="NewsFeedSearch"
                                 icon={faChevronRight}
-                                className={`chevron-icon ${expandedItem === "2" ? 'rotate' : ''}`}/>
+                                className={`chevron-icon ${expandedItem === "2" ? 'rotate' : ''}`} />
                             <p className="my-0 ps-3 fw-bold">Search Result</p>
                         </Accordion.Header>
                         <Accordion.Body className="ps-4 pe-1">
@@ -92,7 +92,7 @@ const NewsSidebar = () => {
                             width: '2rem',
                             color: 'white'
                         }}
-                        className="align-items-center"/>
+                        className="align-items-center" />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                     <Dropdown.Item as={Link} to="">

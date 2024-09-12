@@ -51,8 +51,8 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                 onSelect={handleSelect}
             >
                 {/* 'Stock Recommendations' accordion item */}
-                <Accordion.Item eventKey="0" onClick={() => handleToggle("0")}>
-                    <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "0" ? 'focus' : ''}`}>
+                <Accordion.Item eventKey="0">
+                    <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "0" ? 'focus' : ''}`} onClick={() => handleToggle("0")}>
                         <FontAwesomeIcon
                             id="stockRecommendations"
                             icon={faChevronRight}
@@ -81,8 +81,8 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                     </Accordion.Body>
                 </Accordion.Item>
                 {/* 'Favourites' accordion item */}
-                <Accordion.Item eventKey='1' className="item" onClick={() => handleToggle("1")}>
-                    <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "1" ? 'focus' : ''}`}>
+                <Accordion.Item eventKey='1' className="item">
+                    <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "1" ? 'focus' : ''}`} onClick={() => handleToggle("1")}>
                         <FontAwesomeIcon
                             id="favourites"
                             icon={faChevronRight}
@@ -102,8 +102,8 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                     </Accordion.Body>
                 </Accordion.Item>
                 {/* 'Search Result' accordion item */}
-                <Accordion.Item eventKey='2' className="item" onClick={() => handleToggle("2")}>
-                    <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "2" ? 'focus' : ''}`}>
+                <Accordion.Item eventKey='2' className="item">
+                    <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "2" ? 'focus' : ''}`} onClick={() => handleToggle("2")}>
                         <FontAwesomeIcon
                             id="searchResults"
                             icon={faChevronRight}
