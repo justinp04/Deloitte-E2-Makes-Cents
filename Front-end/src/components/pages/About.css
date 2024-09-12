@@ -1,12 +1,10 @@
 /* About.js */
 .feature-box {
-    border: 4px solid var(--mc-purple);
+    border: 2px solid var(--mc-purple);
     border-radius: 15px;
     background-color: #fff;
     padding: 10px;
     margin-bottom: 20px;
-    height: 174px;
-    width: 416px;
     justify-content: center;
     align-items: center;
 }

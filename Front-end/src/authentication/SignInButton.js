@@ -36,6 +36,7 @@ export const SignInButton = () => {
   return (
     <button
         className="green-btn"
+        style={{width: '150px'}}
         onClick={() => handleLogin()}
     >
       Sign In

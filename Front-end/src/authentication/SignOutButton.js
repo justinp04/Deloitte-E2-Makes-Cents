@@ -17,11 +17,12 @@ export const SignOutButton = () => {
   };
 
   return (
-      <button
-          className="green-btn"
-          onClick={() => handleLogout()}
-      >
-        Sign Out
-      </button>
-  );
+    <button
+        className="green-btn"
+        style={{width: '150px'}}
+        onClick={() => handleLogout()}
+    >
+      Sign Out
+    </button>
+);
 };
