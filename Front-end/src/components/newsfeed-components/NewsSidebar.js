@@ -1,15 +1,12 @@
 /************************************************************************************************
- * Purpose: Sidebar for News Feed Page
- * Fix:
- *  - Colour
+ * Authors: Alyssha Kwok
+ * Purpose: Sidebar on news feed page
  ************************************************************************************************/
 import React, { useState } from 'react';
 import { Dropdown, Nav, Accordion, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
 import SearchBar from '../SearchBar';
 import '../pages/NewsFeed.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';

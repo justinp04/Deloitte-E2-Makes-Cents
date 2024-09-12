@@ -6,6 +6,7 @@
  ************************************************************************************************/
 
 import React from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Nav, Navbar, Container, Dropdown } from 'react-bootstrap';
 import {SignOutButton} from "../../authentication/SignOutButton";
@@ -19,14 +20,15 @@ import { faBell } from '@fortawesome/free-solid-svg-icons';
 
 function NavbarComponent() 
 {
+    const [aboutPageState, setAboutPageState] = useState(true);
     const navigate = useNavigate();
     const isAuthenticated = useIsAuthenticated();
 
     return (
-        <Navbar bg="light" expand="lg" fixed="top" className="navbar-light">
+        <Navbar expand="lg" fixed="top" className="navbar-light navbar-gradient">
             <Container fluid className="me-2 ms-3">
                 {/* Site Logo Name */}
-                <Navbar.Brand as={Link} to="/" className="site-title fw-bold">
+                <Navbar.Brand as={Link} to="/" className="site-title fw-bold { x % y == 0 ? 'purple' : 'not-purple'}" hidden={aboutPageState ? "true" : "false"}>
                     Makes Cents
                 </Navbar.Brand>
                 {/* Allows for hamburger style menu when display size is changed */}

@@ -1,6 +1,6 @@
 /************************************************************************************************
+ * Authors: Justin Pan
  * Purpose: Spotlight news article
- * Fix: 
  ************************************************************************************************/
 import React from "react";
 import { Image, Carousel } from "react-bootstrap";

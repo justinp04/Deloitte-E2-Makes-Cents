@@ -40,7 +40,7 @@ const QueryInputBar = ({ onSendMessage }) => {
           onChange={handleInputChange}
           onKeyDown={handleEnterKey}
           placeholder="Ask a query..."
-          className="input-field"
+          className="input-field px-4"
         />
         <button onClick={handleSend} className="send-button">Send</button>
       </div>

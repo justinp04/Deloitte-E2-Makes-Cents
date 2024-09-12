@@ -1,9 +1,8 @@
 /************************************************************************************************
+ * Authors: Alyssha Kwok
  * Purpose: Company stock title on news feed page
- * Fix: 
  ************************************************************************************************/
 import React from "react";
-
 import '../pages/NewsFeed.css';
 
 const NewsCompanyTitle = ({ textContent }) => {
