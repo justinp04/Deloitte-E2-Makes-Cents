@@ -24,12 +24,17 @@ PURPOSE: gets the vector embedding for the user query
         different features
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def get_query_embedding(query_text):
-    embeddings_response = load_openai_client().embeddings.create(
-        model=os.getenv("AZURE_OPENAI_EMBEDDING_NAME"),
-        input=[query_text]
-    )
-    embedding = embeddings_response.data[0].embedding
-    return embedding
+    try:
+        embeddings_response = load_openai_client().embeddings.create(
+            model=os.getenv("AZURE_OPENAI_EMBEDDING_NAME"),
+            input=[query_text]
+        )
+        embedding = embeddings_response.data[0].embedding
+        normalised_embedding = normalise_vector(np.array(embedding)) #normalise the embedding!
+        return normalised_embedding
+    except Exception as e:
+        print(f"Failed to get data embeddings: {e}")
+        raise
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -41,27 +46,45 @@ PURPOSE: returns the closest matched results from the
         embedding from the users query and then
         extracts the documents from the serch results
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-def query_qdrant(query_text):
+def query_qdrant(query_text, stock_name):
     query_embedding = get_query_embedding(query_text)
     
-    search_result = load_qdrant_client().search(  
+    search_result = load_qdrant_client().search(
         collection_name="E2cluster1",
-        query_vector=query_embedding,
-        limit=5  #number of top results to retrieve - can change this if need more/less results
+        query_vector=query_embedding, 
+        limit=10  # Adjust as needed
     )
+
+    # print("Raw search results:", search_result) #debug
     
-    documents = []
+    stock_name = stock_name.strip()
+
+    filtered_results = []
     for point in search_result:
-        if isinstance(point, ScoredPoint) and hasattr(point, 'payload') and 'content' in point.payload:
-            document = {
-                'content': point.payload['content'],
-                'metadata': point.payload.get('metadata', {})
-            }
-            documents.append(document)
-        else:
-            print(f"Skipping point due to missing payload or content: {point}")
+        if isinstance(point, ScoredPoint) and hasattr(point, 'payload'):
+            payload = point.payload
+            metadata = payload.get('metadata', {})
+            source = metadata.get('source', '')
+
+            # print(f"Checking source: '{source}'") #debug
+
+            if (source.startswith(f"{stock_name}") or #check for both formats
+                f"Financial-Statement-{stock_name}.md" in source): 
+                filtered_results.append(point)
     
-    return documents
+    # print("Filtered results:", filtered_results) #debug
+    
+    final_documents = []
+    for point in filtered_results:
+        # print("Processing document:", point.payload) #debug
+        
+        document = {
+            'content': point.payload.get('content', 'No content available'),
+            'metadata': point.payload.get('metadata', {})
+        }
+        final_documents.append(document)
+    
+    return final_documents
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''

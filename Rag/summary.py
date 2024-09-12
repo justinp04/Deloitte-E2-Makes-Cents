@@ -18,7 +18,7 @@ def main():
 
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
     
-    documents = query_qdrant(user_query)
+    documents = query_qdrant(user_query, stock_name);
     #print(documents) #can comment this in for debugging purposes
 
     # Generate both quick and detailed summaries
