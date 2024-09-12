@@ -68,7 +68,7 @@ PURPOSE: chunks the loaded documents into chunks
 def create_chunks(docs: list[Document]):
     try:
         textSplitter = RecursiveCharacterTextSplitter(
-            chunk_size=400, #can adjust this as needed
+            chunk_size=750, #can adjust this as needed
             chunk_overlap=20,
             length_function=len,
             add_start_index=True,
@@ -93,7 +93,9 @@ def get_data_embeddings(chunk_texts):
             model=os.getenv("AZURE_OPENAI_EMBEDDING_NAME"),
             input=chunk_texts
         )
-        return [embedding_object.embedding for embedding_object in embeddings_response.data]
+        embeddings = [embedding_object.embedding for embedding_object in embeddings_response.data]
+        normalized_embeddings = [normalise_vector(np.array(embedding)) for embedding in embeddings] #normalise embeddings!!
+        return normalized_embeddings
     except Exception as e:
         print(f"Failed to get data embeddings: {e}")
         raise

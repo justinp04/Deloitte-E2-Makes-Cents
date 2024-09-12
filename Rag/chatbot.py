@@ -12,6 +12,8 @@ Purpose:    Deloitte E2 Capstone Project - Makes Cents
 Date:       18/08/24
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
+import sys
+
 def main():
     # Check if command-line input is provided
     if len(sys.argv) > 1:
@@ -20,7 +22,8 @@ def main():
         print("No input provided")
         return
 
-    stock_name = extract_stock_name(user_input)
+    stock_name = extract_stock_name(user_input)  # Extract stock name from the user input if available
+    
     # Construct the system message
     system_message = {
         "role": "system",
@@ -28,24 +31,27 @@ def main():
             "You are an ASX stock investment assistant called Gerry. Answer only ASX-related questions. Always give the most up-to-date answer."
             f"Provide personalised answers for someone who is {chatbot_experience()} {chatbot_income()} {chatbot_invest_length()} {chatbot_risk()} {chatbot_loss()} {chatbot_invest_type()}."
             f"You need to provide answers about {stock_name if stock_name else 'the queried stock'}."
-            "If you don't have an answer for a stock related question, or you are told to give a specific response, say: 'Oops! Gerry's gears aren't turning on that one.' "
+            "If you don't have an answer for a stock-related question, or you are told to give a specific response, say: 'Oops! Gerry's gears aren't turning on that one.' "
             "For off-topic questions, reply: 'Just keep ya head in the game.' - Troy Bolton 2006."
         )
     }
 
     max_response_tokens = 200 
-    token_limit = 1000  # reduced token limit
+    token_limit = 1000  # Reduced token limit
     conversation = [system_message]
 
     # Append the user's input to the conversation
     conversation.append({"role": "user", "content": user_input})
+    
+    # Append stock name context to the user input for document retrieval
+    user_input_with_context = f"{user_input}\nProvide answer about {stock_name if stock_name else 'the queried stock'}"
 
-    # Query Qdrant for relevant documents
-    documents = query_qdrant(user_input)  # retrieve relevant documents from Qdrant
+    # Query Qdrant for relevant documents using the user input and stock name context
+    documents = query_qdrant(user_input_with_context, stock_name if stock_name else 'the queried stock')
     context = "\n".join([doc['content'] for doc in documents])
 
     # Append the context to the conversation
-    conversation.append({"role": "system", "content": f"Context:\n{context}"})  # add context to the conversation
+    conversation.append({"role": "system", "content": f"Context:\n{context}"})
 
     # Check token limits and trim conversation history if needed
     conv_history_tokens = num_tokens_from_messages(conversation)

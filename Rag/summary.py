@@ -58,24 +58,27 @@ PURPOSE: generates the customised sentiment summary
         response to be provided to the user
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def generate_response(documents, user_query):
-    #context = "\n".join(documents)
-    
     context = "\n".join([doc['content'] for doc in documents])
+    #print(context)
 
     messages = [
     {
         "role": "system",
         "content": (
-            f"You are a financial assistant providing personalised advice. "
-            f"A good stock would be one {user_income()} {user_horizon()} {user_risk()} {user_loss()} {user_preference()} {response_complexity()}."
+            f"You are a financial assistant providing personalised advice. A good stock would be one {user_income()} {user_horizon()} {user_risk()} {user_loss()} {user_preference()} {response_complexity()}."
         )
     },
     {
         "role": "system",
         "content": (
-            "Example Response: Based on your criteria, Woolworths may not be ideal.\n\n"
+            "Template to follow for response: Based on your criteria, Woolworths may/may not be ideal.\n\n"
             "1. reason1.\n\n"
             "2. reason2.\n\n"
+            "3. reason3.\n\n"
+            "4. reason4.\n\n"
+            "5. reason5.\n\n"
+            "6. reason6.\n\n"
+            "Stick to this template strictly"
         )
     },
     {
@@ -86,21 +89,7 @@ def generate_response(documents, user_query):
 
     max_response_tokens = 450 #set the max number of tokens to be used for responses
     response = get_llm_response(messages, max_response_tokens)
-
-    detailed_answer = response.choices[0].message.content.strip()
-
-    # Format the response with proper bullet points and newlines
-    formatted_response = "Based on your investment criteria, here are some key points:\n\n"
-
-    # Use a regular expression to find bullet points (e.g., "1.", "2.", etc.)
-    bullet_points = re.split(r'\n?\d+\.\s+', detailed_answer)
-
-    # Enumerate over bullet points and append them to the formatted response
-    for i, point in enumerate(bullet_points):
-        if point.strip():  # Avoid empty strings
-            formatted_response += f"{i}. {point.strip()}\n\n"
-
-    return formatted_response
+    return response.choices[0].message.content.strip()
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
