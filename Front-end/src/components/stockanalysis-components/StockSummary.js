@@ -52,7 +52,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                         onFavourite={addFavourite}
                         onRemoveFavourite={removeFavourite} />
                 </div>
-                <div className='d-flex flex-row align-items-center position-relative end-0'>
+                <div className='d-flex flex-row align-items-center' style={{ marginLeft: 'auto', marginRight: '130px' }}>
                     <ToggleSwitch
                         checked={responseDepth === 'detailed'} 
                         onChange={onToggleChange}
