@@ -15,9 +15,9 @@ import './About.css';
 function About() 
 {
     const boxes = [
-        { id: 1, content: 'Monitoring of social media and news for real-time insights', image: '/images/increase.jpg' },
+        { id: 1, content: 'Monitoring of social media and news for real-time insights', image: '/images/newspaper.jpg' },
         { id: 2, content: 'Simplifying of complex financial information into easy-to-understand bites', image: '/images/lightbulb.jpg' },
-        { id: 3, content: 'Providing tailored recommendations just for you', image: '/images/newspaper.jpg' }
+        { id: 3, content: 'Providing tailored recommendations just for you', image: '/images/person.jpg' }
       ];
     
       const { instance } = useMsal();
@@ -45,7 +45,7 @@ function About()
               {boxes.map(box => (
                 <div key={box.id} className="col-md-3 mb-4">
                   <div className="box feature-box d-flex flex-column justify-content-center align-items-center text-center" style={{backgroundColor:"white", height:"23rem", borderRadius:"40px"}}>
-                    <img src={box.image} alt={box.title} className="img-fluid mb-5"/>
+                    <img src={box.image} className="img-fluid mb-5"/>
                     <p>{box.content}</p>
                   </div>
                 </div>
