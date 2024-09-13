@@ -89,7 +89,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                             className={`chevron-icon ${expandedItem === "1" ? 'rotate' : ''}`} />
                         <p className="my-0 ps-3 fw-bold">Favourites</p>
                     </Accordion.Header>
-                    <Accordion.Body className='px-0 pt-1 pb-1'>
+                    <Accordion.Body className='px-0 pt-1 pb-2'>
                         <SearchBar placeholder="Search your saved stocks" />
                         {favouriteStocks.map(stock => (
                             <SASidebarCard
@@ -110,7 +110,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                             className={`chevron-icon ${expandedItem === "2" ? 'rotate' : ''}`} />
                         <p className="my-0 ps-3 fw-bold">Search Result</p>
                     </Accordion.Header>
-                    <Accordion.Body className='px-0 pt-1 pb-0'>
+                    <Accordion.Body className='px-0 pt-1 pb-2'>
                         <SearchBar placeholder="Search for a stock" onSearch={onSearch}/>
                     </Accordion.Body>
                 </Accordion.Item>

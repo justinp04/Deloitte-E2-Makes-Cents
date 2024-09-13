@@ -94,16 +94,14 @@
 .query-input-bar {
     position: fixed;
     bottom: 20px;
-    left: 300px;
-    width: calc(1653px - 247px);
+    right: 0;
+    width: calc(100% - 330px);
     /* Subtract the width of the sidebar from the total width */
     background-color: #f9f9f9;
     border-top: 1px solid #ccc;
     display: flex;
     align-items: center;
-    padding: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 10px 50px;
     border: none;
     background-color: white;
 }
@@ -135,8 +133,8 @@
 .warning {
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-39.2%);
+    right: 0;
+    
     width: 100%;
     max-width: calc(100% - 300px);
     height: 20px;

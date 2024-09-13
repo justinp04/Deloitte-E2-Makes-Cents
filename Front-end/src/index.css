@@ -26,12 +26,14 @@ code {
   font-size: 6rem;
   padding-top: 10px;
 }
+
 .page-title {
   font-weight: bold;
   font-size: 280%;
   padding-top: 30px;
   padding-bottom: 10px;
-} 
+}
+
 .page-header {
   font-weight: bold;
   font-size: 280%;
@@ -39,11 +41,12 @@ code {
   padding-left: 15px;
   border: none;
   text-transform: uppercase;
-} 
+}
 
 .container {
   margin-top: 80px;
 }
+
 .container-mid {
   min-height: 100vh;
   display: flex;
@@ -67,10 +70,12 @@ code {
   border-radius: 50px;
   width: 200px;
 }
+
 .green-btn:hover {
   background-color: black;
   color: white;
 }
+
 .green-btn:active {
   background-color: var(--mc-green);
 }
@@ -78,16 +83,18 @@ code {
 .black-btn {
   background-color: black;
   font-weight: bold;
-  color:white;
+  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
   width: 200px;
 }
+
 .black-btn:hover {
   background-color: rgb(58, 58, 61);
   color: white;
 }
+
 .black-btn:active {
   background-color: black;
 }
@@ -99,6 +106,7 @@ code {
   cursor: pointer;
   outline: none;
 }
+
 .btn-no-outline:focus {
   outline: none;
   box-shadow: none;
@@ -106,13 +114,14 @@ code {
 
 .center-button {
   display: flex;
-  justify-content: center; 
-  align-items: center;      
-  height: 100%;             
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
+
 /* Styling for Sidebar */
 
-.image-size{
+.image-size {
   width: 50px;
   height: 50px;
 }
@@ -123,20 +132,25 @@ code {
 }
 
 .sidebar {
-  position: fixed; /* Fixes the sidebar to the left*/
+  position: fixed;
+  /* Fixes the sidebar to the left*/
   top: 0;
   left: 0;
   height: 100%;
-  width: 300px; /* Set the width of the sidebar */
-  background-color: #f8f9fa;
-  margin-top: 70px;
+  width: 300px;
+  /* Set the width of the sidebar */
+  margin-top: 80px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .content {
-  margin-left: 300px; /* Pushes the content to the right of the sidebar */
+  margin-left: 300px;
+  /* Pushes the content to the right of the sidebar */
   margin-top: 65px;
   padding: 20px;
-  width: calc(100% - 250px); /* Makes sure the content fits next to the sidebar */
+  width: calc(100% - 250px);
+  /* Makes sure the content fits next to the sidebar */
 }
 
 .blue-line {

@@ -277,12 +277,6 @@
 /****************************
 Sidebad component styling
 ****************************/
-.sidebar {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-
 .sidebar-item-header {
     background-color: var(--sidebar-background) !important;
 }
