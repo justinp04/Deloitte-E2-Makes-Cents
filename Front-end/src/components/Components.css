@@ -273,3 +273,11 @@
     width: 20px;
     font-weight: bold;
 }
+
+/****************************
+Sidebad component styling
+****************************/
+
+.sidebar-item-header {
+    background-color: var(--sidebar-background) !important;
+}

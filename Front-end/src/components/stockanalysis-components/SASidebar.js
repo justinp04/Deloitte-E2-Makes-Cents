@@ -45,14 +45,14 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
     return (
         <div>
             <Accordion
-                className='mt-5 p-0'
+                className='p-0'
                 style={{ width: '300px' }}
                 activeKey={openKeys}
                 onSelect={handleSelect}
             >
                 {/* 'Stock Recommendations' accordion item */}
                 <Accordion.Item eventKey="0">
-                    <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "0" ? 'focus' : ''}`} onClick={() => handleToggle("0")}>
+                    <Accordion.Header className={`sidebar-item-header d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "0" ? 'focus' : ''}`} onClick={() => handleToggle("0")}>
                         <FontAwesomeIcon
                             id="stockRecommendations"
                             icon={faChevronRight}
