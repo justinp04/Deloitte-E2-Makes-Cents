@@ -6,8 +6,8 @@
  ************************************************************************************************/
 
 import React from 'react';
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Nav, Navbar, Container, Dropdown } from 'react-bootstrap';
 import {SignOutButton} from "../../authentication/SignOutButton";
 import {SignInButton} from "../../authentication/SignInButton";
@@ -20,15 +20,26 @@ import { faBell } from '@fortawesome/free-solid-svg-icons';
 
 function NavbarComponent() 
 {
-    const [aboutPageState, setAboutPageState] = useState(true);
+    const [showTitleState, setTitleState] = useState(false);
     const navigate = useNavigate();
     const isAuthenticated = useIsAuthenticated();
 
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname.includes("stock-analysis") || location.pathname.includes("news-feed")) {
+            setTitleState(false);
+        } else {
+            setTitleState(true);
+        }
+    }, [location.pathname]); // Add location.pathname to dependencies
+    
+
     return (
-        <Navbar expand="lg" fixed="top" className="navbar-light navbar-gradient">
+        <Navbar expand="lg" fixed="top" className="navbar-light">
             <Container fluid className="me-2 ms-3">
                 {/* Site Logo Name */}
-                <Navbar.Brand as={Link} to="/" className="site-title fw-bold { x % y == 0 ? 'purple' : 'not-purple'}" hidden={aboutPageState ? "true" : "false"}>
+                <Navbar.Brand as={Link} to="/" className="site-title fw-bold" hidden={showTitleState}>
                     Makes Cents
                 </Navbar.Brand>
                 {/* Allows for hamburger style menu when display size is changed */}

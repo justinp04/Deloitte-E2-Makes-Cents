@@ -29,7 +29,7 @@ function About()
       };
     
       return (
-        <div className="container text-center">
+        <div className="container text-center mb-3">
           <h1 className="main-title">Makes Cents</h1>
           <h4 className="text-primary mb-3">Invest with Clarity, Confidence and Conviction</h4>
           <h6 className="my-4 mx-5 px-5">

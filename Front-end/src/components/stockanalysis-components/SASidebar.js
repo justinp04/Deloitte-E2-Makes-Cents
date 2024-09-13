@@ -43,7 +43,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
     };
 
     return (
-        <div>
+        <div className="sidebar">
             <Accordion
                 className='p-0'
                 style={{ width: '300px' }}
