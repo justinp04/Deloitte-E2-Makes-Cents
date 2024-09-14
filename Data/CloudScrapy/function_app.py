@@ -13,7 +13,7 @@ app.register_functions(scraped_stock)
 
 # Azure Blob Storage connection string and container
 CONNECTION_STRING = 'DefaultEndpointsProtocol=https;AccountName=stockdatascrape;AccountKey=Sg1ioSfzwWybd5qh1C15IS1TmuhAaDDEAvajAybblFYKqMPE6qyPbzb4u4a1B0G+ES8fo4pAieFH+ASt/D17bQ==;EndpointSuffix=core.windows.net'
-CONTAINER_NAME = 'stockdatascrape'
+CONTAINER_NAME = 'stockdata'
 
 # Azure Function to trigger the data scraping every day at midnight
 @app.schedule(schedule="0 0 0 * * *", arg_name="myTimer", run_on_startup=True, use_monitor=False) 

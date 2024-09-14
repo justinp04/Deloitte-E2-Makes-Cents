@@ -17,7 +17,7 @@ class StockSpider(scrapy.Spider):
         # Initialize Azure Blob Storage client
         connection_string = 'DefaultEndpointsProtocol=https;AccountName=stockdatascrape;AccountKey=Sg1ioSfzwWybd5qh1C15IS1TmuhAaDDEAvajAybblFYKqMPE6qyPbzb4u4a1B0G+ES8fo4pAieFH+ASt/D17bQ==;EndpointSuffix=core.windows.net'
         self.blob_service_client = BlobServiceClient.from_connection_string(connection_string)
-        self.container_name = 'stockdatascrape'
+        self.container_name = 'stockdata'
 
         # Ensure the container exists
         self.container_client = self.blob_service_client.get_container_client(self.container_name)
