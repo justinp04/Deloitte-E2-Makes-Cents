@@ -88,18 +88,9 @@ class StockSpider(scrapy.Spider):
         blob_client = self.container_client.get_blob_client(file_path)
         
         try:
-            # Check if blob exists
-            existing_content = ""
-            if blob_client.exists():
-                self.logger.info(f'Blob {file_path} already exists. Downloading existing content.')
-                existing_content = blob_client.download_blob().readall().decode('utf-8')
-
-            # Append the new content to existing content
-            combined_content = existing_content + content
-
-            # Upload the content to the blob
-            self.logger.info(f'Uploading combined content to {file_path}')
-            blob_client.upload_blob(combined_content.encode('utf-8'), overwrite=True)
+            # Overwrite the existing blob with new content
+            self.logger.info(f'Overwriting content in {file_path}')
+            blob_client.upload_blob(content.encode('utf-8'), overwrite=True)
             self.logger.info(f'Successfully saved financial data to {file_path} in Blob Storage')
         except Exception as e:
             self.logger.error(f"Failed to upload blob: {str(e)}")
