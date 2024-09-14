@@ -68,7 +68,7 @@ PURPOSE: chunks the loaded documents into chunks
 def create_chunks(docs: list[Document]):
     try:
         textSplitter = RecursiveCharacterTextSplitter(
-            chunk_size=750, #can adjust this as needed
+            chunk_size=4000, #can adjust this as needed
             chunk_overlap=20,
             length_function=len,
             add_start_index=True,
