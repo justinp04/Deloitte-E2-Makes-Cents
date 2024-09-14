@@ -1,7 +1,0 @@
-Ticker: TNE
-            Name: Technology One Limited (ASX: TNE)
-            Founded: 1983
-            Sector: Technology
-            Industry: Software - Application
-            CEO: Edward Chung
-            Description: Technology One Limited develops, markets, sells, implements, and supports integrated enterprise business software solutions in Australia and internationally.The company operates through Software and Consulting segments. It offers various business software solutions, including business analytics, corporate performance management, DXP local government, enterprise asset management, enterprise budgeting, enterprise cash receipting, enterprise content management, financials, human resources and payroll, performance planning, property and rating, spatial, strategic asset management, student management, timetabling and scheduling, and supply chain management.The company serves local government, education, government, health and community services, asset and project intensive, and financial services and corporate organizations.Technology One Limited was incorporated in 1983 and is headquartered in Fortitude Valley, Australia.

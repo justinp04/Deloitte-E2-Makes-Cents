@@ -1,7 +1,0 @@
-Ticker: IPL
-            Name: Incitec Pivot Limited (ASX: IPL)
-            Founded: 1831
-            Sector: Materials
-            Industry: Specialty Chemicals
-            CEO: Mauro de Moraes
-            Description: Incitec Pivot Limited, together with its subsidiaries, manufactures and distributes industrial explosives, industrial chemicals, and fertilizers in Australia, the United States, the Asia Pacific, Turkey, France, and internationally.It offers ammonium nitrate, nitrogen-based fertilizer, ammonia, di/mono-ammonium phosphate, and single super phosphate.The company also manufactures and sells industrial explosives, and related products and services to mining, quarrying, and construction industries.In addition, it offers industrial chemicals to the agriculture and specialist industries. The company was founded in 1831 and is headquartered in Southbank, Australia.

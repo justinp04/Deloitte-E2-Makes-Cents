@@ -1,7 +1,0 @@
-Ticker: AXI
-            Name: Axiom Properties Limited (ASX: AXI)
-            Founded: 1983
-            Sector: Real Estate
-            Industry: Real Estate - Diversified
-            CEO: Benjamin Laurance
-            Description: Axiom Properties Limited, together with its subsidiaries, engages in property investment and development activities in Australia.It is also involved in fund management activities. The company was incorporated in 1983 and is based in Adelaide, Australia.

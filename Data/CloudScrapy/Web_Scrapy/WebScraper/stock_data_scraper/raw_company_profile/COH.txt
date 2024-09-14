@@ -1,7 +1,0 @@
-Ticker: COH
-            Name: Cochlear Limited (ASX: COH)
-            Founded: 1981
-            Sector: Healthcare
-            Industry: Medical Devices
-            CEO: Diggory Howitt
-            Description: Cochlear Limited provides implantable hearing solutions for children and adults worldwide.It offers cochlear implant systems, sound processor upgrades, bone conduction systems, accessories, and other products.Cochlear Limited was founded in 1981 and is headquartered in Sydney, Australia.

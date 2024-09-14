@@ -1,7 +1,0 @@
-Ticker: ALX
-            Name: Atlas Arteria Limited (ASX: ALX)
-            Founded: 2009
-            Sector: Industrials
-            Industry: Infrastructure Operations
-            CEO: None
-            Description: Atlas Arteria Limited owns, develops, and operates toll roads.It holds a 31.14% of interest in the APRR and A79 and 31.17% interest in the ADELAC located in France; 100% interest in the Warnow Tunnel located in Rostock, Germany; 66.67% interest in the Chicago Skyway situated in Chicago and 100% interest in the Dulles Greenway located in Virginia, United States.The company was formerly known as Macquarie Atlas Roads Limited and changed its name to Atlas Arteria Limited in May 2018.Atlas Arteria Limited was incorporated in 2009 and is based in Melbourne, Australia.

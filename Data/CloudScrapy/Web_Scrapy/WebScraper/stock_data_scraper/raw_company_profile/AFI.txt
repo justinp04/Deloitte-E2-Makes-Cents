@@ -1,7 +1,0 @@
-Ticker: AFI
-            Name: Australian Foundation Investment Company Limited (ASX: AFI)
-            Founded: 1928
-            Sector: Financials
-            Industry: Asset Management
-            CEO: Robert Freeman
-            Description: Australian Foundation Investment Company Limited is a publicly owned investment manager.The firm invests in the public equity markets of Australia and New Zealand. It invests in value stocks of companies.It benchmarks the performance of its portfolio against S&amp;P/ASX 200 Accumulation Index. It invests in companies across diversified industries.The firm employs fundamental analysis with a focus on bottom-up research to make its investments. The firm conducts in-house research to make its investments.Australian Foundation Investment Company Limited was founded in 1928 and is based in Melbourne, Australia.

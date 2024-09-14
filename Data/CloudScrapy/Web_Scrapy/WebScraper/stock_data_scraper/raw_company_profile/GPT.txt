@@ -1,7 +1,0 @@
-Ticker: GPT
-            Name: The GPT Group (ASX: GPT)
-            Founded: 1959
-            Sector: Real Estate
-            Industry: REIT - Diversified
-            CEO: Russell Proutt
-            Description: GPT is a vertically integrated diversified property group that owns and actively manages a portfolio of high quality Australian retail, office and logistics assets, with assets under management of $32.4 billion.The Group utilises its real estate management platform to enhance returns through property development and funds management.

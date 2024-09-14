@@ -1,7 +1,0 @@
-Ticker: SOL
-            Name: Washington H. Soul Pattinson and Company Limited (ASX: SOL)
-            Founded: 1872
-            Sector: Financials
-            Industry: Capital Markets
-            CEO: Todd Barlow
-            Description: Washington H. Soul Pattinson and Company Limited, an investment company, engages in investing various industries and asset classes in Australia.It operates through Strategic Portfolio, Large Caps Portfolio, Emerging Companies Portfolio, Private Equity Portfolio, Structured Yield Portfolio, and Property Portfolio segments.The company invests in various industries, such as natural resources, building materials, telecommunications, retail, agriculture, property equity, investments and corporate advisory, financial services, education, and others.Washington H. Soul Pattinson and Company Limited was founded in 1872 and is headquartered in Sydney, Australia.
