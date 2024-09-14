@@ -6,8 +6,10 @@ import yfinance as yf
 from azure.storage.blob import BlobServiceClient, ContainerClient
 from io import StringIO
 import csv
+from scraped_stock import scraped_stock
 
 app = func.FunctionApp()
+app.register_functions(scraped_stock)
 
 # Azure Blob Storage connection string and container
 CONNECTION_STRING = 'DefaultEndpointsProtocol=https;AccountName=stockdatascrape;AccountKey=Sg1ioSfzwWybd5qh1C15IS1TmuhAaDDEAvajAybblFYKqMPE6qyPbzb4u4a1B0G+ES8fo4pAieFH+ASt/D17bQ==;EndpointSuffix=core.windows.net'
