@@ -82,7 +82,14 @@ def save_to_blob(data, container_name, filename):
 # Main function to run the process
 def run():
     # Fetch all ASX stock symbols dynamically
-    symbols = get_all_asx_symbols()
+    # symbols = get_all_asx_symbols()
+
+    # List of all Australian Stock Markets
+    symbols = ['CBA', 'BHP', 'RIO', 'CSL', 'NAB', 'WBC', 'ANZ', 'WES', 'MQG', 'GMG', 'FMG', 'WDS', 'RMD', 'TLS', 'WOW', 'TCL', 'ALL', 'WTC', 'QBE', 'REA', 'STO', 'COL', 'JHX', 
+               'AMC', 'SUN', 'COH', 'BXB', 'XRO', 'ORG', 'SCG', 'REH', 'IAG', 'FPH', 'CPU', 'NST', 'SVW', 'PME', 'S32', 'SHL', 'CAR', 'SOL', 'ASX', 'TLC', 'SGP', 'MPL', 'RHC', 
+               'MIN', 'QAN', 'APA', 'NXT', 'TWE', 'EDV', 'BSL', 'VCX', 'YAL', 'AFI', 'GPT', 'PLS', 'TPG', 'GQG', 'ORI', 'MGR', 'WOR', 'ALD', 'SEK', 'EVN', 'JBH', 'ALX', 'DXS', 
+               'SDF', 'BEN', 'AGL', 'AZJ', 'TNE', 'WHC', 'TLX', 'CHC', 'HVN', 'LYC', 'IPL', 'FLT', 'LLC', 'AWC', 'IGO', 'IEL', 'BOQ', 'NHC', 'HUB', 'SFR', 'VNT', 'SUL', 'PDN', 
+               'AMP', 'BFL', 'ILU', 'NEU', 'DRR', 'SGM', 'CTD', 'IFL', 'MFG', 'KAR', 'DYL', 'CCP', 'TPW', 'OML', 'QRI', 'ADH', 'EML', 'GNG', 'DUG', 'WC8', 'KSL', 'TPC', 'PPE', 'AXI']
 
     if not symbols:
         logging.error("No ASX symbols were fetched.")
