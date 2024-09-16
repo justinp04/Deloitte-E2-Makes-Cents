@@ -100,16 +100,17 @@
 /* News hero section */
 .hero-section {
     position: relative;
-    min-width: 550px;
     max-width: 60%;
-    min-height: 400px;
     width: 100%;
+    min-height: 200px;
 }
 
 .hero-image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+    width: 100%; 
+    height: auto;
+    max-width: 600px; 
+    max-height: 400px; 
+    object-fit: cover; 
 }
 
 .hero-text-container {
@@ -122,25 +123,73 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 20px; /* Adjust as needed */
-    color: white; /* Text color */
+    padding: 20px;
+    color: white;
     transition-duration: 0.5s;
-    background: rgba(0, 0, 0, 0.3); /* Optional background for text, to increase contrast */
+    background: rgba(0, 0, 0, 0.3); 
 }
 
 .hero-text-container:hover {
-    background: rgba(0, 0, 0, 0.6); /* Optional background for text, to increase contrast */
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .hero-title {
-    font-size: 2rem; /* Adjust as needed */
+    font-size: clamp(0.9rem, 1.5vw + 0.2rem, 1.2rem); 
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .hero-subtitle {
-    font-size: 1rem; /* Adjust as needed */
+    font-size: clamp(0.7rem, 1vw + 0.1rem, 1rem); 
     line-height: 1.5;
+}
+
+/* Medium screen */
+@media (max-width: 768px) {
+    .hero-section {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 200px; 
+    }
+
+    .hero-image {
+        height: 200px; 
+    }
+
+    .hero-title {
+        font-size: clamp(0.8rem, 1.2vw + 0.15rem, 1rem); 
+    }
+
+    .hero-subtitle {
+        font-size: clamp(0.6rem, 1vw + 0.1rem, 0.85rem); 
+    }
+
+    .hero-text-container {
+        padding: 10px;
+    }
+}
+
+/* Small screen */
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 250px; 
+    }
+
+    .hero-image {
+        height: 250px; 
+    }
+
+    .hero-title {
+        font-size: clamp(0.75rem, 1vw + 0.1rem, 0.9rem);
+    }
+
+    .hero-subtitle {
+        font-size: clamp(0.6rem, 0.9vw + 0.05rem, 0.8rem); 
+    }
+
+    .hero-text-container {
+        padding: 8px; 
+    }
 }
 
 
