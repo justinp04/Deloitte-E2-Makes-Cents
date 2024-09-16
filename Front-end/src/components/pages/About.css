@@ -1,16 +1,17 @@
 /* About.js */
 .feature-box {
-    border: 3px solid var(--mc-purple);
+    border: 5px solid var(--mc-purple);
     border-radius: 15px;
     background-color: #fff;
     padding: 10px;
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
+    max-width: fit-content;
 }
 
 .feature-box img {
-    max-width: 60px;
+    max-width: 50px;
     margin-bottom: 10px;
     padding-top: 1rem;
     justify-content: center;
@@ -19,4 +20,22 @@
 .feature-box p {
     font-weight: bold;
     color: black;
+    max-width: 250px;
 }
+
+.feature-icon {
+    font-size: 4rem; /* Default size */
+    color: #BAF43E;  /* Icon color */
+
+
+
+    /* Responsive behavior */
+    @media (min-width: 768px) {
+        font-size: 5rem; /* Medium screens and up */
+    }
+
+    @media (min-width: 992px) {
+        font-size: 6rem; /* Large screens and up */
+    }
+}
+
