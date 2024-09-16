@@ -6,11 +6,11 @@ import NewsList from '../newsfeed-components/NewsList';
 import NewsSidebar from '../newsfeed-components/NewsSidebar';
 import FilterButton from '../newsfeed-components/FilterButton';
 import { useMsal } from '@azure/msal-react';
+
 import './NewsFeed.css';
 
 function NewsFeed() {
 
-    const { accounts } = useMsal();
     const [newsData, setNewsData] = useState({
         hero: { title: '', subtitle: '', image: '' },
         articles: []
@@ -18,13 +18,6 @@ function NewsFeed() {
     const [searchTerm, setSearchTerm] = useState('CBA'); // Default company symbol
     const [email, setEmail] = useState('');
 
-    // Fetch email from the logged-in user using MSAL
-    useEffect(() => {
-        if (accounts.length > 0) {
-            const userEmail = accounts[0].username;  // Extract email from the account object
-            setEmail(userEmail);
-        }
-    }, [accounts]);
 
     useEffect(() => {
         const fetchNews = async () => {
@@ -69,7 +62,7 @@ function NewsFeed() {
         };
 
         fetchNews();
-    }, [searchTerm, email]); // Fetch news whenever searchTerm changes
+    }, [searchTerm]); // Fetch news whenever searchTerm changes
 
     const handleSearch = (term) => {
         setSearchTerm(term);

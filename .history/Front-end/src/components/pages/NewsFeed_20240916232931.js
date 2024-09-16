@@ -69,7 +69,7 @@ function NewsFeed() {
         };
 
         fetchNews();
-    }, [searchTerm, email]); // Fetch news whenever searchTerm changes
+    }, [searchTerm]); // Fetch news whenever searchTerm changes
 
     const handleSearch = (term) => {
         setSearchTerm(term);

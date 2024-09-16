@@ -10,7 +10,6 @@ import './NewsFeed.css';
 
 function NewsFeed() {
 
-    const { accounts } = useMsal();
     const [newsData, setNewsData] = useState({
         hero: { title: '', subtitle: '', image: '' },
         articles: []
@@ -69,7 +68,7 @@ function NewsFeed() {
         };
 
         fetchNews();
-    }, [searchTerm, email]); // Fetch news whenever searchTerm changes
+    }, [searchTerm]); // Fetch news whenever searchTerm changes
 
     const handleSearch = (term) => {
         setSearchTerm(term);
