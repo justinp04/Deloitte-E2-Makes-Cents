@@ -1,5 +1,6 @@
 from prompt_engineering import response_complexity, user_income, user_horizon, user_risk, user_loss, user_preference
 from user_queries import query_qdrant, get_llm_response, generate_references
+from load_clients import load_blob_client
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -11,13 +12,22 @@ Date:       18/08/24
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 def main():
+    container_client = load_blob_client()
+    blob_names = [blob.name for blob in container_client.list_blobs()]
+    
     #stock_name = input("") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
     stock_name = get_stock_name()
+
+    if not any(stock_name in blob_name for blob_name in blob_names):
+        print(f"The stock '{stock_name}' cannot be analysed at this time!")
+        return
+
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
+
     documents = query_qdrant(user_query, stock_name)
-    #print(documents) #can comment this in for debugging purposes
     answer = generate_response(documents, user_query)
     references = generate_references(documents)
+    
     response_length(answer, response_depth="detailed") #RESPONSE DEPTH TAKEN FROM TOGGLE MENU ON FRONT END!
     print(f"References:\n{references}")
 
@@ -50,6 +60,8 @@ def generate_response(documents, user_query):
         "role": "system",
         "content": (
             f"You are a financial assistant providing personalised advice. A good stock would be one {user_income()} {user_horizon()} {user_risk()} {user_loss()} {user_preference()} {response_complexity()}."
+            " The response needs to be around 170 words in length."
+            " Don't include disclaimers or advice that doesn't add value to the core response."
         )
     },
     {
@@ -92,7 +104,9 @@ def response_length(answer, response_depth):
             {
                 "role": "system",
                 "content": (
-                    "You are an assistant that helps summarize information. Take the provided text and provide a brief and to-the-point summary in 100 words or less. Make sure to include a clear yes or no conclusion in the summary."
+                    "You are an assistant that helps summarize information. Take the provided text and provide a brief and to-the-point summary in approximately 50 words."
+                    " Include a clear yes or no conclusion at the start of the summary."
+                    " Don't include disclaimers or advice that doesn't add value to the core response."
                 )
             },
             {

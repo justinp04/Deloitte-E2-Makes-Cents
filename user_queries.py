@@ -56,7 +56,7 @@ def query_qdrant(query_text, stock_name):
         limit=10  # Adjust as needed
     )
 
-    # print("Raw search results:", search_result) #debug
+    print("Raw search results:", search_result) #debug
     
     stock_name = stock_name.strip()
 
@@ -69,11 +69,12 @@ def query_qdrant(query_text, stock_name):
 
             # print(f"Checking source: '{source}'") #debug
 
-            if (source.startswith(f"{stock_name}-") or #check for both formats
+            if (source.startswith(f"{stock_name}") or #check for both formats
                 f"Financial-Statement-{stock_name}.md" in source): 
                 filtered_results.append(point)
     
-    # print("Filtered results:", filtered_results) #debug
+    print("\n\n\nFiltered results:", filtered_results) #debug
+    #filtered_results = search_result
     
     final_documents = []
     for point in filtered_results:
@@ -86,6 +87,33 @@ def query_qdrant(query_text, stock_name):
         final_documents.append(document)
     
     return final_documents
+'''def query_qdrant(query_text, stock_name):
+    query_embedding = get_query_embedding(query_text)
+    
+    search_result = load_qdrant_client().search(
+        collection_name="E2cluster1",
+        query_vector=query_embedding, 
+        limit=10  #adjust as needed
+    )
+
+    print("Raw search results:", search_result)  #debug
+    
+    stock_name = stock_name.strip()
+
+    filtered_results = search_result  
+    
+    final_documents = []
+    for point in filtered_results:
+        if isinstance(point, ScoredPoint) and hasattr(point, 'payload'):
+            # print("Processing document:", point.payload)  #debug
+            
+            document = {
+                'content': point.payload.get('content', 'No content available'),
+                'metadata': point.payload.get('metadata', {})
+            }
+            final_documents.append(document)
+    
+    return final_documents'''
 
 
 
