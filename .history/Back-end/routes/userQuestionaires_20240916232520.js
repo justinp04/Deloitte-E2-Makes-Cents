@@ -238,4 +238,32 @@ router.get('/check-user', async (req, res) => {
 });
 
 
+// Endpoint to retrieve the user's email
+router.get('/get-email', async (req, res) => {
+    const { email } = req.query;
+
+    if (!email) {
+        return res.status(400).json({ error: 'Email is required' });
+    }
+
+    try {
+        const pool = await sql.connect(sqlConfig);
+        const result = await pool.request()
+            .input('Email', sql.VarChar, email)
+            .query('SELECT email FROM Users WHERE email = @Email');
+
+        if (result.recordset.length === 0) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+
+        // Return just the email
+        const userEmail = result.recordset[0].email;
+        res.status(200).json({ email: userEmail });
+    } catch (err) {
+        console.error('Error fetching email:', err);
+        res.status(500).json({ error: 'Failed to retrieve email' });
+    }
+});
+
+
 export default router;
