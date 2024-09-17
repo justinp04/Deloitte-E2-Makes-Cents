@@ -5,7 +5,7 @@ import '../pages/NewsFeed.css';
 
 const NewsHeroSection = ({ title, subtitle, image, articles }) => {
     return (
-        <div className=" container mb-4">
+        <div className=" container mb-4 mt-0">
             <Carousel className="hero-section mx-auto">
                 {articles.length > 0 ? (
                     articles.map((article, index) => (

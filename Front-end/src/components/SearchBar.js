@@ -24,7 +24,7 @@ const SearchBar = ({ placeholder, onSearch }) => {
     };
 
     return (
-        <div className="mx-3 mb-2" style={{ width: '260px' }}>
+        <div className="searchbar-container mx-3 mb-2">
             <InputGroup className="rounded-input-group mt-2" style={{ border: '1px solid grey', borderRadius: '30px' }}>
                 <Form.Control
                     placeholder={placeholder}
@@ -32,6 +32,7 @@ const SearchBar = ({ placeholder, onSearch }) => {
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)} // Update the search term as the user types
                     onKeyPress={handleKeyPress} // Trigger search on "Enter" key press
+                    className="searchbar-input"
                     style={{ border: 'none', borderRadius: '30px 0 0 30px' }} // No individual border, only round the left corners
                 />
                 <Button 
@@ -43,7 +44,8 @@ const SearchBar = ({ placeholder, onSearch }) => {
                 </Button>
             </InputGroup>
         </div>
-    );
+    );    
+     
 };
 
 export default SearchBar;

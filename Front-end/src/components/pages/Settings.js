@@ -2,27 +2,31 @@
  * Purpose: Settings Page
  * Fix: - User guide font size changes
  ************************************************************************************************/
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-
 import SettingsSidebar from '../settings-components/SettingsSidebar';
 import AccountInfo from '../settings-components/AccountInfo';
 import NotificationsSettings from '../settings-components/Notifications';
 import UserGuide from '../settings-components/UserGuide';
 import UpdateProfileInsights from '../settings-components/UpdateProfileInsights';
-import './Settings.css';
+import '../pages/Settings.css';
 
 function Settings() {
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
+    // Callback to toggle the sidebar state
+    const openSidebar = (isOpen) => {
+        setSidebarOpen(isOpen);
+    };
+
     return (
-        <div className="page-container">
-            <div className="sidebar">
-                <SettingsSidebar />
-            </div>
-            <div className="content">
+        <div className={`page-container ${sidebarOpen ? 'sidebar-open' : ''}`}>
+            <SettingsSidebar toggleSidebar={openSidebar} />
+            <div className={`content ${sidebarOpen ? 'shift-content' : ''}`}>
                 <div className="title-container">
-                    <h1 className="page-header ms-3">Settings</h1>
+                    <h1 className="page-header ms-3 align-self-start">Settings</h1>
                 </div>
-                <div className='ms-3'>
+                <div className="ms-3">
                     <Routes>
                         <Route path="account-info" element={<AccountInfo />} />
                         <Route path="update-profile" element={<UpdateProfileInsights />} />
@@ -34,5 +38,11 @@ function Settings() {
         </div>
     );
 }
+
 export default Settings;
+
+
+
+
+
 

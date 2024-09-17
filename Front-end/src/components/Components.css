@@ -126,7 +126,7 @@
 /*********************************
 * SearchBar.js
 **********************************/
-.searchbar {
+ .searchbar {
     background-color: white;
     display: flex;
     align-items: center;
@@ -158,16 +158,16 @@
 .rounded-input-group .input-group-text {
     border-radius: 20px 0 0 20px;
     background-color: white;
-    /* Matches the input background */
     border: none;
-    /* Remove any borders */
 }
 
 .center-searchbar {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} 
+
+
 
 /*********************************
 * TextInputBox.js

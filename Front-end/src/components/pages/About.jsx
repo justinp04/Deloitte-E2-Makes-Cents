@@ -16,7 +16,7 @@ import './About.css';
 function About() {
     const boxes = [
         { id: 1, title: 'Column 1', content: 'Monitoring of social media and news for real-time insights', icon: faNewspaper },
-        { id: 2, title: 'Column 2', content: 'Simplifying complex financial information into easy-to-understand bites', icon: faWandMagicSparkles },
+        { id: 2, title: 'Column 2', content: 'Simplifying complex financial information into pieces', icon: faWandMagicSparkles },
         { id: 3, title: 'Column 3', content: 'Providing tailored recommendations just for you', icon: faPerson }
     ];
 
@@ -32,7 +32,7 @@ function About() {
         <div className="container text-center mb-3">
             <h1 className="main-title">Makes Cents</h1>
             <h4 className="text-primary mb-3">Invest with Clarity, Confidence and Conviction</h4>
-            <h6 className="my-4 mx-5 px-5">
+            <h6 className="my-5 mx-5 px-5">
                 Investing can feel overwhelming, but it doesn't have to be. <br />
                 Our AI-powered solution delivers personalised investment recommendations tailored to your goals. Say goodbye to guesswork and gain clarity with our platform. <br />
                 <br />
@@ -43,10 +43,9 @@ function About() {
                 {/* Dynamically render the boxes */}
                 <div className="row">
                     {boxes.map((box) => (
-                        <div key={box.id} className="col-lg">
-                            <div className="card p-5">
-                                <FontAwesomeIcon icon={box.icon} size="3x" className="mb-3" />
-                                <h3>{box.title}</h3>
+                        <div key={box.id} className="col-lg mb-3">
+                            <div className="card p-5 feature-box">
+                                <FontAwesomeIcon icon={box.icon} size="4x" className="mb-4" style={{color:"#BAF43E", borderColor:"black" }}/>
                                 <p>{box.content}</p>
                             </div>
                         </div>

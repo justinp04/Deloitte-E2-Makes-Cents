@@ -16,7 +16,7 @@ import {useIsAuthenticated} from "@azure/msal-react";
 import './NavbarComponent.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faBars, faCircleUser, faIdBadge, faBookOpen  } from '@fortawesome/free-solid-svg-icons';
 
 function NavbarComponent() 
 {
@@ -42,8 +42,12 @@ function NavbarComponent()
                 <Navbar.Brand as={Link} to="/" className="site-title fw-bold" hidden={showTitleState}>
                     Makes Cents
                 </Navbar.Brand>
+
                 {/* Allows for hamburger style menu when display size is changed */}
-                <Navbar.Toggle aria-controls="navbarNav" />
+                <Navbar.Toggle className="ms-auto" style={{border:"none"}}>
+                    <FontAwesomeIcon icon={faBars} />
+                </Navbar.Toggle>
+                
                 <Navbar.Collapse id="navbarNav ma-3" style={{backgroundColor:"white"} }>
                     <Nav className="ms-auto align-items-center">
                          {/* About Us link */}
@@ -75,17 +79,46 @@ function NavbarComponent()
                                 {/* Settings link */}
                                 <Dropdown align="end" className="me-3 ms-3">
                                     <Dropdown.Toggle aa={Nav.Link} className='fw-bold p-0' style={{ border: 'none', backgroundColor: 'transparent' }}>
-                                        <img src="./images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="60" height="60" />
+                                        <img src="../images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="60" height="60" />
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>
-                                        <Dropdown.Item as={Link} to="/settings/account-info">Account Information</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/settings/update-profile">Update Profile Insights</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/settings/notifications">Notifications Settings</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/settings/user-guide">User Guide</Dropdown.Item>
-                                        <Dropdown.Item>Sign Out</Dropdown.Item>
+                                        {/* <Dropdown.Header className='fw-bold'>Settings Preferences</Dropdown.Header> */}
+                                        {/* Account Information with Icon */}
+                                        <Dropdown.Item as={Link} to="/settings/account-info" className='my-2'>
+                                            <div className="d-flex align-items-center">
+                                                <FontAwesomeIcon icon={faCircleUser} className="me-2" />
+                                                Account Information
+                                            </div>
+                                        </Dropdown.Item>
+
+                                        {/* Update Profile Insights with Icon */}
+                                        <Dropdown.Item as={Link} to="/settings/update-profile" className='my-2'>
+                                            <div className="d-flex align-items-center">
+                                                <FontAwesomeIcon icon={faIdBadge} className="me-2" />
+                                                Update Profile Insights
+                                            </div>
+                                        </Dropdown.Item>
+
+                                        {/* Notifications Settings with Icon */}
+                                        <Dropdown.Item as={Link} to="/settings/notifications" className='my-2'>
+                                            <div className="d-flex align-items-center">
+                                                <FontAwesomeIcon icon={faBell} className="me-2" />
+                                                Notifications Settings
+                                            </div>
+                                        </Dropdown.Item>
+
+                                        {/* User Guide with Icon */}
+                                        <Dropdown.Item as={Link} to="/settings/user-guide" className='my-2'>
+                                            <div className="d-flex align-items-center">
+                                                <FontAwesomeIcon icon={faBookOpen} className="me-2" />
+                                                User Guide
+                                            </div>
+                                        </Dropdown.Item>
+                                        <div className="d-flex justify-content-center my-2">
+                                            <SignOutButton />
+                                        </div>
                                     </Dropdown.Menu>
                                 </Dropdown>
-                                <SignOutButton/>
                             </>
                         ) : (
                             <SignInButton/>

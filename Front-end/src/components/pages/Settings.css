@@ -27,3 +27,68 @@
 .active {
     background-color: #BAF43E; /* Background color for the active link */
 }
+
+/* SettingsSidebar.css */
+
+.settings-sidebar {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+}
+
+.menu-selection {
+  width: 100%;
+  height: 3rem;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.menu-selection:hover {
+  background-color: #e9ecef;
+}
+
+.menu-selection.active {
+  background-color: #BAF43E;
+}
+
+.sidebar-toggle{
+  top: 0;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .settings-sidebar {
+      width: 100%;
+      max-width: 100%;
+      padding: 10px;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+  }
+
+  .menu-selection {
+      height: 2.5rem;
+      padding-left: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .settings-sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .menu-selection {
+      font-size: 0.9rem;
+      padding-left: 10px;
+      height: 2.2rem;
+  }
+}
+
+

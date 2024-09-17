@@ -44,24 +44,28 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
     return (
         <div className="toggle-list-container">
             {/* Data */}
-            <div className="me-5 d-flex justify-content-between">
-                <div className='d-flex flex-row align-items-center'>
-                    <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{stockName || "No stock name provided"}</h5>
-                    <FavouriteButton
-                        companyTitle={stockName || "Unknown"}
-                        isFavourited={favouriteStocks.some(stock => stock.title === companyTitle)}
-                        onFavourite={addFavourite}
-                        onRemoveFavourite={removeFavourite} />
-                </div>
-                <div className='d-flex flex-row align-items-center toggle-button'>
-                    <ToggleSwitch
-                        checked={responseDepth === 'detailed'} 
-                        onChange={onToggleChange}
-                        id="detailedSummarySwitch"
-                        style={{paddingBottom: '20px' }} /* This will push the toggle switch to the end */ />
-                    <span className="toggle-switch-text ms-2" style={{ fontSize: "0.7rem" }}>Detailed Summary</span>
-                </div>
-            </div>
+            <div className="me-5 d-flex justify-content-between flex-wrap align-items-center">
+    
+    <div className='d-flex flex-row align-items-center'>
+        <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{stockName || "No stock name provided"}</h5>
+        <FavouriteButton
+            companyTitle={stockName || "Unknown"}
+            isFavourited={favouriteStocks.some(stock => stock.title === companyTitle)}
+            onFavourite={addFavourite}
+            onRemoveFavourite={removeFavourite}
+        />
+    </div>
+    <div className='d-flex flex-row align-items-center toggle-button'>
+        <ToggleSwitch
+            checked={responseDepth === 'detailed'} 
+            onChange={onToggleChange}
+            id="detailedSummarySwitch"
+            style={{ paddingBottom: '20px' }} 
+        />
+        <span className="toggle-switch-text ms-2" style={{ fontSize: "0.7rem" }}>Detailed Summary</span>
+    </div>
+</div>
+
 
             <Accordion className='mx-4 mt-2' defaultActiveKey="0">
                 <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
@@ -70,7 +74,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                             setAccordionOpen(!accordionOpen); // Toggle the state
                             setReferencesOpen(false); // Close references when summary closes
                         }}
-                        style={{ display: 'flex', alignItems: 'center', width: '1370px', border: 'none' }}
+                        className="accordion-header"
                     >
                         <FontAwesomeIcon
                             icon={accordionOpen ? faChevronRight : faChevronDown}
