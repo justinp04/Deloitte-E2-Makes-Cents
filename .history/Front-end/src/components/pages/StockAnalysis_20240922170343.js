@@ -30,42 +30,11 @@ function StockAnalysis({ isSignedIn }) {
     const [stockName, setStockName] = useState('');
     const [suggestions, setSuggestions] = useState([]);
 
-    const [summaryHeight, setSummaryHeight] = useState(300);
-    const [isDragging, setIsDragging] = useState(false);
+    const [lineWidth, setLineWidth] = useState(100);
 
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
-
-    const handleMouseDown = () => {
-        setIsDragging(true);
-    };
-
-    const handleMouseMove = (e) => {
-        if (isDragging) {
-            const newHeight = e.clientY - 70; // 70px to account for the top margin
-            setSummaryHeight(Math.max(100, newHeight)); // Set a minimum height of 100px for the summary
-        }
-    };
-
-    const handleMouseUp = () => {
-        setIsDragging(false);
-    };
-
-    useEffect(() => {
-        if (isDragging) {
-            window.addEventListener('mousemove', handleMouseMove);
-            window.addEventListener('mouseup', handleMouseUp);
-        } else {
-            window.removeEventListener('mousemove', handleMouseMove);
-            window.removeEventListener('mouseup', handleMouseUp);
-        }
-
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-            window.removeEventListener('mouseup', handleMouseUp);
-        };
-    }, [isDragging]);
 
     const handleToggleChange = () => {
         setResponseDepth(responseDepth === 'quick' ? 'detailed' : 'quick'); // Toggle between quick and detailed
@@ -205,9 +174,14 @@ function StockAnalysis({ isSignedIn }) {
                             />
                         </div>
                     </div>
-                    {/* Draggable Divider */}
                     <div
-                        className="divider"
+                        className="blue-line"
+                        style={{
+                            width: `${lineWidth}px`,
+                            height: '5px',
+                            backgroundColor: 'blue',
+                            cursor: 'ew-resize'
+                        }}
                         onMouseDown={handleMouseDown}
                     ></div>
                 </div>

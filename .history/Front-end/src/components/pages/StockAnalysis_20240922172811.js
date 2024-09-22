@@ -36,6 +36,7 @@ function StockAnalysis({ isSignedIn }) {
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
+    const dividerRef = useRef(null);
 
     const handleMouseDown = () => {
         setIsDragging(true);
@@ -187,7 +188,7 @@ function StockAnalysis({ isSignedIn }) {
                 />
             </div>
             <div className="content" style={{ paddingTop: '200px' }}>
-                <div className="position-fixed" style={{ top: 0, left: '300px', top: '70px', width: 'calc(100% - 300px)', backgroundColor: 'white', zIndex: 1000 }}>
+                <div style={{ height: `${summaryHeight}px`, overflow: 'auto' }}>
                     <h1 className="page-header ms-3 mt-3 mb-2 me-5 ps-4" style={{ marginRight: '62%' }}>Stock Analysis</h1>
                     <div className="toggle-title-container">
                         <div className="title-button-container">
@@ -223,52 +224,54 @@ function StockAnalysis({ isSignedIn }) {
                     the company's strategic initiatives and commitment to sustainable growth indicate stability and growth potential, which could positively impact your decision to invest in Bega Cheese Limited ." sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
                 </div> */}
 
-                <div className="content">
+
+                <div style={{ height: `calc(100vh - ${summaryHeight}px - 80px)`, overflow: 'auto' }}>
                     <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
-                </div>
 
-                {/* Div for user input */}
-                <div style={{ marginBottom: '70px' }}>
-                    {messages.map((msg, index) => (
-                        <ChatBox key={index} message={msg.message} sender={msg.sender} senderName={msg.sender === 'user' ? 'You' : 'Gerry'} avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'} />
-                    ))}
+                    {/* Div for user input */}
+                    <div style={{ marginBottom: '70px' }}>
+                        {messages.map((msg, index) => (
+                            <ChatBox key={index} message={msg.message} sender={msg.sender} senderName={msg.sender === 'user' ? 'You' : 'Gerry'} avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'} />
+                        ))}
 
-                    {typing && (
-                        <ChatBox
-                            message={
-                                <div className="typing-indicator">
-                                    <div className="dot"></div>
-                                    <div className="dot"></div>
-                                    <div className="dot"></div>
-                                </div>
-                            }
-                            sender="bot"
-                            senderName="Gerry"
-                            avatar="./images/GerryProfile.jpg"
-                        />
-                    )}
+                        {typing && (
+                            <ChatBox
+                                message={
+                                    <div className="typing-indicator">
+                                        <div className="dot"></div>
+                                        <div className="dot"></div>
+                                        <div className="dot"></div>
+                                    </div>
+                                }
+                                sender="bot"
+                                senderName="Gerry"
+                                avatar="./images/GerryProfile.jpg"
+                            />
+                        )}
 
-                    {/* Follow-up suggestions */}
-                    {suggestions.length > 0 && (
-                        <div className="suggestions-box">
-                            {suggestions.map((suggestion, index) => (
-                                <button
-                                    key={index}
-                                    className="suggested-question-chip"
-                                    onClick={() => handleSuggestedQuestionClick(suggestion)}
-                                >
-                                    {suggestion}
-                                </button>
-                            ))}
-                        </div>
-                    )}
-                    {/* A reference div to keep the chat view scrolled to the latest message */}
-                    <div ref={chatEndRef} />
+                        {/* Follow-up suggestions */}
+                        {suggestions.length > 0 && (
+                            <div className="suggestions-box">
+                                {suggestions.map((suggestion, index) => (
+                                    <button
+                                        key={index}
+                                        className="suggested-question-chip"
+                                        onClick={() => handleSuggestedQuestionClick(suggestion)}
+                                    >
+                                        {suggestion}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
+                        {/* A reference div to keep the chat view scrolled to the latest message */}
+                        <div ref={chatEndRef} />
 
-                    <QueryInputBar onSendMessage={handleSendMessage} />
+                        <QueryInputBar onSendMessage={handleSendMessage} />
+                    </div>
                 </div>
             </div>
         </div>
+
     );
 }
 

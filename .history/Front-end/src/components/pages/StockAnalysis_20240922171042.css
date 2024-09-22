@@ -134,7 +134,7 @@
     position: fixed;
     bottom: 0;
     right: 0;
-
+    
     width: 100%;
     max-width: calc(100% - 300px);
     height: 20px;
@@ -154,26 +154,19 @@
 
 /* SASidebar.js */
 .sa-sidebar {
-    position: fixed;
-    /* Fixes the sidebar to the left*/
+    position: fixed; /* Fixes the sidebar to the left*/
     top: 80px;
     left: 0;
     height: 100%;
-    width: 300px;
-    /* Set the width of the sidebar */
+    width: 300px; /* Set the width of the sidebar */
     background-color: var(--sidebar-background);
 }
-
 /* General accordion header styles */
 .accordion .accordion-item .accordion-header {
-    background-color: #f8f9fa;
-    /* Set background color to #f8f9fa */
-    color: inherit !important;
-    /* Keep the original text color */
-    border: none !important;
-    /* Remove the border */
-    box-shadow: none !important;
-    /* Remove any shadow */
+    background-color: #f8f9fa; /* Set background color to #f8f9fa */
+    color: inherit !important; /* Keep the original text color */
+    border: none !important; /* Remove the border */
+    box-shadow: none !important; /* Remove any shadow */
 }
 
 /* Remove the default Bootstrap accordion arrow */
@@ -191,20 +184,16 @@
 /* Remove background color, border, and shadow when the accordion is open */
 .accordion-button:not(.collapsed) {
     background-color: white !important;
-    color: inherit !important;
-    /* Keep the text color instead of making it transparent */
+    color: inherit !important; /* Keep the text color instead of making it transparent */
     border: none !important;
-    box-shadow: none !important;
-    /* Ensure no shadow is applied */
+    box-shadow: none !important; /* Ensure no shadow is applied */
 }
 
 /* Ensure no shadow appears when the button is focused */
 button.accordion-button:focus {
     box-shadow: none !important;
-    border: none !important;
-    /* Ensure no border is added when focused */
-    outline: none !important;
-    /* Remove any outline that might appear */
+    border: none !important; /* Ensure no border is added when focused */
+    outline: none !important; /* Remove any outline that might appear */
 }
 
 /* Remove borders and shadows from accordion items */
@@ -251,23 +240,19 @@ button.accordion-button:focus {
 }
 
 .divider {
-
-    height: 2px;
-    background-color: greenyellow;
-    cursor: ns-resize;
-    position: relative;
-    z-index: 1;
+    
+        height: '5px',
+        backgroundColor: 'blue',
+        cursor: 'ns-resize',
 }
 
 @keyframes typing {
     0% {
         opacity: 0;
     }
-
     50% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
     }

@@ -52,21 +52,6 @@ function StockAnalysis({ isSignedIn }) {
         setIsDragging(false);
     };
 
-    useEffect(() => {
-        if (isDragging) {
-            window.addEventListener('mousemove', handleMouseMove);
-            window.addEventListener('mouseup', handleMouseUp);
-        } else {
-            window.removeEventListener('mousemove', handleMouseMove);
-            window.removeEventListener('mouseup', handleMouseUp);
-        }
-
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-            window.removeEventListener('mouseup', handleMouseUp);
-        };
-    }, [isDragging]);
-
     const handleToggleChange = () => {
         setResponseDepth(responseDepth === 'quick' ? 'detailed' : 'quick'); // Toggle between quick and detailed
     };
@@ -205,9 +190,14 @@ function StockAnalysis({ isSignedIn }) {
                             />
                         </div>
                     </div>
-                    {/* Draggable Divider */}
                     <div
-                        className="divider"
+                        className="blue-line"
+                        style={{
+                            width: `${lineWidth}px`,
+                            height: '5px',
+                            backgroundColor: 'blue',
+                            cursor: 'ew-resize'
+                        }}
                         onMouseDown={handleMouseDown}
                     ></div>
                 </div>

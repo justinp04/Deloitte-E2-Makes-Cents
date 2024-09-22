@@ -49,7 +49,11 @@ function StockAnalysis({ isSignedIn }) {
     };
 
     const handleMouseUp = () => {
-        setIsDragging(false);
+        setIsDragging(false); // Stop dragging when mouse is released
+    };
+
+    const handleToggleChange = () => {
+        setResponseDepth(responseDepth === 'quick' ? 'detailed' : 'quick'); // Toggle between quick and detailed
     };
 
     useEffect(() => {
@@ -66,10 +70,6 @@ function StockAnalysis({ isSignedIn }) {
             window.removeEventListener('mouseup', handleMouseUp);
         };
     }, [isDragging]);
-
-    const handleToggleChange = () => {
-        setResponseDepth(responseDepth === 'quick' ? 'detailed' : 'quick'); // Toggle between quick and detailed
-    };
 
     // Function to update stock data (summary and references)
     const setStockData = (data) => {
@@ -205,9 +205,14 @@ function StockAnalysis({ isSignedIn }) {
                             />
                         </div>
                     </div>
-                    {/* Draggable Divider */}
                     <div
-                        className="divider"
+                        className="blue-line"
+                        style={{
+                            width: `${lineWidth}px`,
+                            height: '5px',
+                            backgroundColor: 'blue',
+                            cursor: 'ew-resize'
+                        }}
                         onMouseDown={handleMouseDown}
                     ></div>
                 </div>

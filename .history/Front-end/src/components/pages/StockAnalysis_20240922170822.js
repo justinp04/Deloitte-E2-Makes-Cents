@@ -205,9 +205,14 @@ function StockAnalysis({ isSignedIn }) {
                             />
                         </div>
                     </div>
-                    {/* Draggable Divider */}
                     <div
-                        className="divider"
+                        className="blue-line"
+                        style={{
+                            width: `${lineWidth}px`,
+                            height: '5px',
+                            backgroundColor: 'blue',
+                            cursor: 'ew-resize'
+                        }}
                         onMouseDown={handleMouseDown}
                     ></div>
                 </div>

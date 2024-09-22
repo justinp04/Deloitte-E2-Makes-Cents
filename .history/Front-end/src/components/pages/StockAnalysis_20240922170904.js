@@ -208,6 +208,11 @@ function StockAnalysis({ isSignedIn }) {
                     {/* Draggable Divider */}
                     <div
                         className="divider"
+                        style={{
+                            height: '5px',
+                            backgroundColor: 'blue',
+                            cursor: 'ns-resize',
+                        }}
                         onMouseDown={handleMouseDown}
                     ></div>
                 </div>

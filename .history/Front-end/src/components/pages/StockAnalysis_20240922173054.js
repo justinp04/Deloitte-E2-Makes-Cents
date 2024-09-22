@@ -36,6 +36,7 @@ function StockAnalysis({ isSignedIn }) {
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
+    
 
     const handleMouseDown = () => {
         setIsDragging(true);

@@ -206,10 +206,15 @@ function StockAnalysis({ isSignedIn }) {
                         </div>
                     </div>
                     {/* Draggable Divider */}
-                    <div
-                        className="divider"
-                        onMouseDown={handleMouseDown}
-                    ></div>
+                <div
+                    className="divider"
+                    style={{
+                        height: '5px',
+                        backgroundColor: 'blue',
+                        cursor: 'ns-resize',
+                    }}
+                    onMouseDown={handleMouseDown}
+                ></div>
                 </div>
                 {/* Placeholder text for user-bot chat*/}
                 {/* <div style={{ marginTop: accordionOpen ? '10px' : '190px' }}>  

@@ -36,6 +36,7 @@ function StockAnalysis({ isSignedIn }) {
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
+    const dividerRef = useRef(null);
 
     const handleMouseDown = () => {
         setIsDragging(true);
@@ -187,7 +188,7 @@ function StockAnalysis({ isSignedIn }) {
                 />
             </div>
             <div className="content" style={{ paddingTop: '200px' }}>
-                <div className="position-fixed" style={{ top: 0, left: '300px', top: '70px', width: 'calc(100% - 300px)', backgroundColor: 'white', zIndex: 1000 }}>
+                <div style={{ height: `${summaryHeight}px`, overflow: 'auto' }}>
                     <h1 className="page-header ms-3 mt-3 mb-2 me-5 ps-4" style={{ marginRight: '62%' }}>Stock Analysis</h1>
                     <div className="toggle-title-container">
                         <div className="title-button-container">
@@ -226,6 +227,7 @@ function StockAnalysis({ isSignedIn }) {
                 <div className="content">
                     <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
                 </div>
+                
 
                 {/* Div for user input */}
                 <div style={{ marginBottom: '70px' }}>

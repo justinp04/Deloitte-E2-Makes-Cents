@@ -30,26 +30,30 @@ function StockAnalysis({ isSignedIn }) {
     const [stockName, setStockName] = useState('');
     const [suggestions, setSuggestions] = useState([]);
 
-    const [summaryHeight, setSummaryHeight] = useState(300);
+    const [lineWidth, setLineWidth] = useState(100);
     const [isDragging, setIsDragging] = useState(false);
 
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
 
-    const handleMouseDown = () => {
+    const handleMouseDown = (e) => {
         setIsDragging(true);
     };
 
     const handleMouseMove = (e) => {
         if (isDragging) {
-            const newHeight = e.clientY - 70; // 70px to account for the top margin
-            setSummaryHeight(Math.max(100, newHeight)); // Set a minimum height of 100px for the summary
+            const newWidth = Math.max(100, e.clientX); // Set the minimum width to 100px
+            setLineWidth(newWidth); // Update the width of the line while dragging
         }
     };
 
     const handleMouseUp = () => {
-        setIsDragging(false);
+        setIsDragging(false); // Stop dragging when mouse is released
+    };
+
+    const handleToggleChange = () => {
+        setResponseDepth(responseDepth === 'quick' ? 'detailed' : 'quick'); // Toggle between quick and detailed
     };
 
     useEffect(() => {
@@ -66,10 +70,6 @@ function StockAnalysis({ isSignedIn }) {
             window.removeEventListener('mouseup', handleMouseUp);
         };
     }, [isDragging]);
-
-    const handleToggleChange = () => {
-        setResponseDepth(responseDepth === 'quick' ? 'detailed' : 'quick'); // Toggle between quick and detailed
-    };
 
     // Function to update stock data (summary and references)
     const setStockData = (data) => {
@@ -205,9 +205,14 @@ function StockAnalysis({ isSignedIn }) {
                             />
                         </div>
                     </div>
-                    {/* Draggable Divider */}
                     <div
-                        className="divider"
+                        className="blue-line"
+                        style={{
+                            width: `${lineWidth}px`,
+                            height: '5px',
+                            backgroundColor: 'blue',
+                            cursor: 'ew-resize'
+                        }}
                         onMouseDown={handleMouseDown}
                     ></div>
                 </div>

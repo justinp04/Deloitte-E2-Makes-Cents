@@ -36,6 +36,7 @@ function StockAnalysis({ isSignedIn }) {
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
+    const dividerRef = useRef(null);
 
     const handleMouseDown = () => {
         setIsDragging(true);
@@ -208,6 +209,7 @@ function StockAnalysis({ isSignedIn }) {
                     {/* Draggable Divider */}
                     <div
                         className="divider"
+                        ref={dividerRef}
                         onMouseDown={handleMouseDown}
                     ></div>
                 </div>

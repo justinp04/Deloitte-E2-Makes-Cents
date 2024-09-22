@@ -252,11 +252,11 @@ button.accordion-button:focus {
 
 .divider {
 
-    height: 2px;
-    background-color: greenyellow;
+    height: 5px;
+    background-color: blue;
     cursor: ns-resize;
     position: relative;
-    z-index: 1;
+    zI
 }
 
 @keyframes typing {
