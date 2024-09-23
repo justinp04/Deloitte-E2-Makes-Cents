@@ -71,7 +71,7 @@ function NavbarComponent() {
 
                                 <Dropdown align="end" className="me-3 ms-3">
                                     <Dropdown.Toggle as={Nav.Link} className="fw-bold p-0 no-caret" style={{ border: 'none', backgroundColor: 'transparent' }}>
-                                        <img src="../images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="60" height="60" />
+                                        <img src="../images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="55" height="55" />
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>
                                         <Dropdown.Item as={Link} to="/settings/account-info" className="my-2">
