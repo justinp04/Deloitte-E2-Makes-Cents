@@ -128,7 +128,7 @@ function StockAnalysis({ isSignedIn }) {
                     className="position-sticky"
                     style={{ top: '0', width: '100%', backgroundColor: 'white', zIndex: 1000 }}
                 >
-                    <h1 className="page-header ms-4 mb-2 me-5" style={{ marginRight: '62%'}}>INVESTMENT INSIGHT</h1>
+                    <h1 className="page-header ms-4 mb-2 me-5" style={{ marginRight: '62%'}}>STOCK ANALYSIS</h1>
                     <StockSummary
                         accordionOpen={accordionOpen}
                         setAccordionOpen={setAccordionOpen}

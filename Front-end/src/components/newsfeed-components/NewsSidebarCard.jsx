@@ -9,7 +9,7 @@ const NewsSidebarCard = ({ companyTitle, onClick }) => {
         >
             <Card.Body 
                 className='fw-bold' 
-                style={{ fontSize: '75%', textTransform: 'uppercase' }} // Apply uppercase transformation here
+                style={{ fontSize: '75%', textTransform: 'uppercase' }}
             >
                 {companyTitle}
             </Card.Body>

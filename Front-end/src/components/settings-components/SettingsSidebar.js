@@ -73,7 +73,7 @@ const SettingsSidebar = ({ toggleSidebar }) => {
                                 Update Profile Insights
                             </NavLink>
                         </Nav.Item>
-                        <Nav.Item className="d-flex">
+                        {/* <Nav.Item className="d-flex">
                             <NavLink
                                 to="notifications"
                                 className="menu-selection fw-bold"
@@ -81,7 +81,7 @@ const SettingsSidebar = ({ toggleSidebar }) => {
                             >
                                 Notification Preferences
                             </NavLink>
-                        </Nav.Item>
+                        </Nav.Item> */}
                         <Nav.Item className="d-flex">
                             <NavLink
                                 to="user-guide"

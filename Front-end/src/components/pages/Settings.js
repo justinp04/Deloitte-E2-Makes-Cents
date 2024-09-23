@@ -30,7 +30,7 @@ function Settings() {
                     <Routes>
                         <Route path="account-info" element={<AccountInfo />} />
                         <Route path="update-profile" element={<UpdateProfileInsights />} />
-                        <Route path="notifications" element={<NotificationsSettings />} />
+                        {/* <Route path="notifications" element={<NotificationsSettings />} /> */}
                         <Route path="user-guide" element={<UserGuide />} />
                     </Routes>
                 </div>

@@ -82,7 +82,7 @@ function NewsFeed() {
             </div>
             <div className="content">
                 <div className="title-container">
-                    <NewsCompanyTitle textContent={`${searchTerm} News Feed`} />
+                    <NewsCompanyTitle textContent={`News Feed (${searchTerm})`} />
                 </div>
                 <NewsHeroSection
                     title={newsData.hero.title}

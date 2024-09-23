@@ -18,6 +18,11 @@
     /* Full height to match parent flex container */
 }
 
+.active-link {
+    color: var(--mc-purple) !important;
+}
+
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: #000;
 }
