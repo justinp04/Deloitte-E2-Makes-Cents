@@ -5,7 +5,7 @@
  * ********************************************/
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import {Routes, Route, Navigate } from 'react-router-dom';
 
 import NavbarComponent from './components/pages/NavbarComponent';
 import About from './components/pages/About';
