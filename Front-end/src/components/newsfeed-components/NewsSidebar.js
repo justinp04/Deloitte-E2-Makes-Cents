@@ -2,13 +2,14 @@
  * Authors: Alyssha Kwok
  * Purpose: Sidebar on news feed page
  ************************************************************************************************/
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Accordion, Container, Button, Offcanvas } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faBars } from '@fortawesome/free-solid-svg-icons';
 import SearchBar from '../SearchBar';
 import '../pages/NewsFeed.css';
 import AddButton from './AddButton';
+import NewsSidebarCard from './NewsSidebarCard'
 
 const NewsSidebar = ({ onSearch }) => {
     const [expandedItems, setExpandedItems] = useState({}); // Tracks open/close state of each accordion item
@@ -21,6 +22,23 @@ const NewsSidebar = ({ onSearch }) => {
             [eventKey]: !prevState[eventKey], // Toggle only the specific accordion item
         }));
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            const currentExpandedKeys = Object.keys(expandedItems).filter(key => expandedItems[key]);
+            currentExpandedKeys.forEach((key) => (handleToggleAccordion(key)));
+
+            setExpandedItems((prev) => {
+                // Logic to maintain state based on size, if necessary
+                return { ...prev }; // Modify this if you want to adjust based on size
+            });
+        };
+    
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [expandedItems]);
 
     const handleCloseSidebar = () => setShowSidebar(false);
     const handleShowSidebar = () => setShowSidebar(true);
@@ -74,6 +92,7 @@ const NewsSidebar = ({ onSearch }) => {
                                     {expandedItems[key] && (
                                         <Accordion.Body className="ps-4 pe-1">
                                             Lorem ipsum dolor sit amet...
+                                            {/* <NewsSidebarCard companyTitle={"Test Company"} onClick={() => {console.log("Button clicked")}}/> */}
                                         </Accordion.Body>
                                     )}
                                 </Accordion.Item>
