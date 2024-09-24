@@ -79,6 +79,10 @@
 }
 
 /* NewsSidebar.js */
+#sidebarContainer {
+    margin-top: 80px;
+}
+
 .center-searchbar {
     display: flex;
     align-items: center;
@@ -191,7 +195,33 @@
 }
 
 /* Medium screen */
+/* Adjust add-button position on smaller screens */
+/* Responsive adjustments for news-card */
 @media (max-width: 768px) {
+    .news-card {
+        padding: 8px; /* Adjust padding for medium screens */
+        border-radius: 15px;
+    }
+
+    .card img {
+        border-radius: 8px;
+    }
+
+    .news-card-title {
+        font-size: clamp(0.6rem, 2vw + 0.3rem, 1rem); /* Smaller title size for medium screens */
+    }
+
+    .news-card-summary {
+        font-size: 0.9rem;
+    }
+
+    .add-button {
+        width: 50px;
+        height: 50px;
+        bottom: 70px;
+        left: 150px;
+    }
+
     .hero-section {
         max-width: 100%;
         min-width: 100%;
@@ -215,45 +245,6 @@
     }
 }
 
-/* Adjust add-button position on smaller screens */
-@media (max-width: 768px) {
-    .add-button {
-        width: 50px;
-        height: 50px;
-        bottom: 70px;
-        left: 150px;
-    }
-}
-
-@media (max-width: 576px) {
-    .add-button {
-        width: 40px;
-        height: 40px;
-        bottom: 60px;
-        left: 120px;
-    }
-}
-
-/* Responsive adjustments for news-card */
-@media (max-width: 768px) {
-    .news-card {
-        padding: 8px; /* Adjust padding for medium screens */
-        border-radius: 15px;
-    }
-
-    .card img {
-        border-radius: 8px;
-    }
-
-    .news-card-title {
-        font-size: clamp(0.6rem, 2vw + 0.3rem, 1rem); /* Smaller title size for medium screens */
-    }
-
-    .news-card-summary {
-        font-size: 0.9rem;
-    }
-}
-
 @media (max-width: 576px) {
     .news-card {
         padding: 5px; /* Further reduce padding for small screens */
@@ -270,5 +261,16 @@
 
     .news-card-summary {
         font-size: 0.85rem;
+    }
+
+    .add-button {
+        width: 40px;
+        height: 40px;
+        bottom: 60px;
+        left: 120px;
+    }
+
+    #sidebarContainer {
+        margin-top: 0px;
     }
 }

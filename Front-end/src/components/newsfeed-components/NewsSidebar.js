@@ -68,7 +68,7 @@ const NewsSidebar = ({ onSearch }) => {
                 </Offcanvas.Header>
 
                 <Offcanvas.Body className="p-0">
-                    <Container fluid className="p-0" style={{ marginTop: showSidebar ? '0px' : '80px' }}>
+                    <Container fluid id="sidebarContainer" className="p-0">
                         <SearchBar placeholder="Search a stock" onSearch={onSearch} />
                         
                         {/* Accordion with individual open/close state for each item */}
