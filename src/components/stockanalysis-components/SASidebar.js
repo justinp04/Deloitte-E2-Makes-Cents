@@ -1,19 +1,20 @@
-/************************************************************************************************
- * Purpose: Sidebar for Stock Analysis(SA) Page
- * Fix:
- *  - Colour
- ************************************************************************************************/
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-
 import SearchBar from '../SearchBar';
 import '../pages/StockAnalysis.css';
 import SASidebarCard from './SASidebarCard';
 
-const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => { } }) => {
+const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => { }, tutorialActive }) => {
     const [openKeys, setOpenKeys] = useState([]);
+    const [expandedItem, setExpandedItem] = useState(false);
+
+    useEffect(() => {
+        if (tutorialActive) {
+            setOpenKeys(['0', '1', '2']); // Expand all accordions when the tutorial is active
+        }
+    }, [tutorialActive]);
 
     const handleSelect = (eventKey) => {
         if (openKeys.includes(eventKey)) {
@@ -26,8 +27,6 @@ const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => { } }) =>
     const handleCardClick = (content) => {
         onNavigate(content);
     };
-
-    const [expandedItem, setExpandedItem] = useState(false);
 
     const handleToggle = (eventKey) => {
         setExpandedItem(expandedItem === eventKey ? null : eventKey);

@@ -1,30 +1,34 @@
-/************************************************************************************************
- * Purpose: Stock Analysis Page
- * Fix: 
- ************************************************************************************************/
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SASidebar from '../stockanalysis-components/SASidebar';
 import ChatBox from '../stockanalysis-components/ChatBox';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import StockSummary from '../stockanalysis-components/StockSummary';
+import TutorialOverlay from '../stockanalysis-components/TutorialOverlay';
 
 function StockAnalysis() {
-    const [messages, setMessages] = useState([]); // State to hold the list of messages exchanged in the application
-    const [accordionOpen, setAccordionOpen] = useState(false); // State to control whether an accordion (presumably in the UI) is open or closed
-    const [favouriteStocks, setFavouriteStocks] = useState([]); // State to manage the list of favourite stocks
+    const [messages, setMessages] = useState([]);
+    const [accordionOpen, setAccordionOpen] = useState(false);
+    const [favouriteStocks, setFavouriteStocks] = useState([]);
+    const [tutorialActive, setTutorialActive] = useState(false);
+    const [tutorialStep, setTutorialStep] = useState(1);
 
-    // Function to handle sending a new message
+    // Check localStorage for the tutorial flag
+    useEffect(() => {
+        const showTutorial = localStorage.getItem('showTutorial');
+        if (showTutorial === 'true') {
+            setTutorialActive(true);
+            // opens the components on the left so that the tutorial can show stuff there XD
+            //setAccordionOpen(true);
+            localStorage.removeItem('showTutorial'); // Remove flag so tutorial only shows once after pressing the button
+        }
+    }, []);
+
     const handleSendMessage = (newMessage) => {
-        // Adds the new message to the list of messages. Each message object includes a sender and the message content.
         setMessages([...messages, { sender: 'user', message: newMessage }]);
     };
 
-    // Function to add a stock to the list of favourites
     const addFavourite = (companyTitle) => {
-        // Check if the stock is already in the favourites list
         if (!favouriteStocks.some(stock => stock.title === companyTitle)) {
-            // If not, add it to the list by updating the state
-            // Uses the previous state (prevFavourites) to add the new favourite to the list
             setFavouriteStocks(prevFavourites => [
                 ...prevFavourites, 
                 { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" }
@@ -32,13 +36,24 @@ function StockAnalysis() {
         }
     };
 
-    // Function to remove a stock from the list of favourites
     const removeFavourite = (companyTitle) => {
-        // Filters out the stock that matches the companyTitle from the favourites list
-        // Updates the state with the new list of favourites that no longer includes the removed stock
         setFavouriteStocks(prevFavourites =>
             prevFavourites.filter(stock => stock.title !== companyTitle)
         );
+    };
+
+
+    // THIS HERE IS A BIT FUCKED LAD
+    const handleNextTutorialStep = () => {
+        if (tutorialStep < 11) { 
+            setTutorialStep(tutorialStep + 1);
+        } else {
+            setTutorialActive(false);
+        }
+    };
+
+    const handleCloseTutorial = () => {
+        setTutorialActive(false);
     };
 
     return (
@@ -48,6 +63,7 @@ function StockAnalysis() {
                     favouriteStocks={favouriteStocks} 
                     addFavourite={addFavourite} 
                     removeFavourite={removeFavourite}
+                    tutorialActive={tutorialActive} // Pass tutorialActive to SASidebar
                 />
             </div>
 
@@ -62,7 +78,7 @@ function StockAnalysis() {
                                 setAccordionOpen={setAccordionOpen}
                                 addFavourite={addFavourite}
                                 removeFavourite={removeFavourite}
-                                favouriteStocks={favouriteStocks} // Pass favourite stocks to check if already favourited
+                                favouriteStocks={favouriteStocks}
                             />
                         </div>
                     </div>
@@ -81,8 +97,16 @@ function StockAnalysis() {
                     <QueryInputBar onSendMessage={handleSendMessage} />
                 </div>
             </div>
+
+            {tutorialActive && (
+                <TutorialOverlay 
+                    step={tutorialStep} 
+                    onNext={handleNextTutorialStep} 
+                    onClose={handleCloseTutorial} 
+                />
+            )}
         </div>
     );
 }
-export default StockAnalysis;
 
+export default StockAnalysis;

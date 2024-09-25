@@ -1,4 +1,99 @@
 /*********************************
+* TutorialOverlay.js
+**********************************/
+
+/* Dimming effect */
+.dimmed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1999;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Spotlight circle */
+.spotlight-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5),
+              0 0 0 3px rgba(255, 255, 255, 1);
+  z-index: 2000;
+  transition: top 0.5s ease, left 0.5s ease, width 0.5s ease,
+              height 0.5s ease, border-radius 0.5s ease;
+}
+
+/* Tutorial box */
+.tutorial-box {
+  position: fixed;
+  right: 60px;
+  top: 70px;
+  background-color: rgba(201, 229, 255, 1);
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2001;
+  width: 250px;
+  font-size: 14px;
+  text-align: left;
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Button styles */
+.tutorial-box button {
+  font-weight: bold;
+  color: black;
+  border: none;
+  padding: 3px 10px;
+  margin-left: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.tutorial-box button:first-of-type {
+  background-color: #baf43e;
+  float: right;
+}
+
+.tutorial-box button:last-of-type {
+  background-color: #ededed;
+  float: right;
+}
+
+.tutorial-box button:hover {
+  background-color: #45a049;
+}
+
+.tutorial-box button:last-of-type:hover {
+  background-color: darkgrey;
+}
+
+/* Step title and description */
+.step-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.step-description {
+  font-size: 14px;
+}
+
+/* Fade-out effect */
+.tutorial-overlay-container.fade-out .dimmed-background,
+.tutorial-overlay-container.fade-out .tutorial-box,
+.tutorial-overlay-container.fade-out .spotlight-circle {
+  opacity: 0;
+}
+
+
+
+/*********************************
 * CustomSelect.js
 **********************************/
   .custom-select {

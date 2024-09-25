@@ -48,24 +48,27 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
     return (
         <div className="toggle-list-container">
             {/* Data */}
-            <div className="me-5 d-flex w-100" style={{}}>
+            
+            <div className="me-5 d-flex w-100 justify-content-between" style={{}}>
                 <div className='d-flex flex-row align-items-center'>
                     <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{companyTitle}</h5>
-                    <FavouriteButton
-                        companyTitle={companyTitle}
-                        isFavourited={isFavourited}
-                        onFavourite={addFavourite}
-                        onRemoveFavourite={removeFavourite} />
+                        <FavouriteButton
+                            companyTitle={companyTitle}
+                            isFavourited={isFavourited}
+                            onFavourite={addFavourite}
+                            onRemoveFavourite={removeFavourite}
+                            style={{ marginRight: '20px' }} />
                 </div>
-                <div className='d-flex flex-row align-items-center position-relative end-0'>
+                <div className='d-flex flex-row align-items-center' style={{ marginLeft: 'auto', marginRight: '145px' }}> {/* Adjust the margin-right to move ToggleSwitch left */}
                     <ToggleSwitch
                         checked={isChecked}
                         onChange={handleChange}
                         id="detaildSummarySwitch"
-                        style={{ marginLeft: 'auto', paddingBottom: '20px' }} /* This will push the toggle switch to the end */ />
+                        style={{ marginLeft: 'auto', paddingBottom: '20px' }} />
                     <span className="toggle-switch-text" style={{ fontSize: "0.7rem" }}>Detailed Summary</span>
                 </div>
             </div>
+            
 
             <Accordion className='mx-4' defaultActiveKey="0">
                 <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
