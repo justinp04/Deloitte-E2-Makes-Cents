@@ -10,6 +10,7 @@ import { NavLink } from 'react-router-dom';
 import SearchBar from '../SearchBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import '../Components.css';
 
 const SettingsSidebar = ({ toggleSidebar }) => {
     const [show, setShow] = useState(false);
@@ -52,10 +53,14 @@ const SettingsSidebar = ({ toggleSidebar }) => {
                 <Offcanvas.Body className="p-0">
                     <Nav
                         className="flex-column"
-                        style={{ marginTop: show ? '0px' : '80px' }} // 80px when not collapsed
+                        style={{ marginTop: show ? '0px' : '73px' }} // 80px when not collapsed
                     >
-                        <SearchBar placeholder="Search Settings" />
-                        <Nav.Item className="d-flex">
+                        {/* <SearchBar placeholder="Search Settings" className="mb-3"/> */}
+                        <div className="fixed-searchbar">
+                            <SearchBar placeholder="Search Settings" className="mb-0"/>
+                        </div>
+                        
+                        <Nav.Item className="d-flex mt-2">
                             <NavLink
                                 to="account-info"
                                 className="menu-selection fw-bold"
@@ -73,15 +78,6 @@ const SettingsSidebar = ({ toggleSidebar }) => {
                                 Update Profile Insights
                             </NavLink>
                         </Nav.Item>
-                        {/* <Nav.Item className="d-flex">
-                            <NavLink
-                                to="notifications"
-                                className="menu-selection fw-bold"
-                                activeClassName="active"
-                            >
-                                Notification Preferences
-                            </NavLink>
-                        </Nav.Item> */}
                         <Nav.Item className="d-flex">
                             <NavLink
                                 to="user-guide"

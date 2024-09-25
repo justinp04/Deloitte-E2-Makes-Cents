@@ -20,9 +20,10 @@ function NavbarComponent() {
     const location = useLocation(); // Get the current location
 
     useEffect(() => {
-        if (location.pathname.includes("stock-analysis") || location.pathname.includes("news-feed")) {
+        if (location.pathname.includes("stock-analysis") || location.pathname.includes("news-feed") || location.pathname.includes("settings") ) {
             setTitleState(false);
-        } else {
+        } 
+        else {
             setTitleState(true);
         }
     }, [location.pathname]);
@@ -87,12 +88,6 @@ function NavbarComponent() {
                                                 Update Profile Insights
                                             </div>
                                         </Dropdown.Item>
-                                        {/* <Dropdown.Item as={Link} to="/settings/notifications" className="my-2">
-                                            <div className="d-flex align-items-center">
-                                                <FontAwesomeIcon icon={faBell} className="me-2" />
-                                                Notifications Settings
-                                            </div>
-                                        </Dropdown.Item> */}
                                         <Dropdown.Item as={Link} to="/settings/user-guide" className="my-2">
                                             <div className="d-flex align-items-center">
                                                 <FontAwesomeIcon icon={faBookOpen} className="me-2" />

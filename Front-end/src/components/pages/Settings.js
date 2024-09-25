@@ -22,9 +22,9 @@ function Settings() {
     return (
         <div className={`page-container ${sidebarOpen ? 'sidebar-open' : ''}`}>
             <SettingsSidebar toggleSidebar={openSidebar} />
-            <div className={`content ${sidebarOpen ? 'shift-content' : ''}`}>
+            <div className={`content pt-0 ${sidebarOpen ? 'shift-content' : ''}`}>
                 <div className="title-container">
-                    <h1 className="page-header ms-3 align-self-start">Settings</h1>
+                    <h1 className="page-header pt-2 p-0 ms-3 align-self-start">Settings</h1>
                 </div>
                 <div className="ms-3">
                     <Routes>

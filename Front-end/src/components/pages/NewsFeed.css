@@ -85,7 +85,7 @@
 }
 
 .sidebar-background-colour{
-        background-color: var(--background-color-light) !important;
+    background-color: var(--background-color-light) !important;
 }
 .center-searchbar {
     display: flex;

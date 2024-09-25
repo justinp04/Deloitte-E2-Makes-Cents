@@ -140,6 +140,13 @@
     background-color: white;
 }
 
+.fixed-searchbar {
+    position: sticky; 
+    top: 0;          
+    z-index: 1000;  
+    width: 100%;     
+}
+
 /* Ensure no outline, border, or shadow is applied on focus */
 .rounded-input-group .form-control:focus {
     border: none;
