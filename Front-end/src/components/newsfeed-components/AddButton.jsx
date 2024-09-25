@@ -1,32 +1,32 @@
+/************************************************************************************************
+ * Authors: Alyssha Kwok
+ * Purpose: Elipsis button that allows user to add company news to following or current investment list
+ ************************************************************************************************/
 import React from 'react';
 import { Dropdown, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 
-const AddButton = () => {
+const AddButton = ({ onAddNewInvestment, onAddNewFollowing }) => {
     return (
-        <Dropdown className="me-3 ms-3 add-button" style={{ border: 'none' }}>
+        <Dropdown className="ms-5 mt-1" style={{ border: 'none' }}>
             <Dropdown.Toggle
                 as={Nav.Link}
                 className="fw-bold p-0 no-caret"
                 style={{ border: 'none', backgroundColor: 'transparent' }}
             >
                 <FontAwesomeIcon
-                    icon={faPlus}
-                    style={{ height: '2rem', width: '2rem', color: 'white' }}
-                    className="align-items-center"
+                    icon={faEllipsisVertical}
+                    style={{ height: '1.2rem', width: '1.2rem', color: 'black' }}
                 />
             </Dropdown.Toggle>
+            {/* Dropdown options */}
             <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="">
-                    Add new current investment
+                <Dropdown.Item onClick={onAddNewInvestment}>
+                    Add to Current Investments
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} to="">
-                    Add new following
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} to="">
-                    Edit List
+                <Dropdown.Item onClick={onAddNewFollowing}>
+                    Add to Following
                 </Dropdown.Item>
             </Dropdown.Menu>
         </Dropdown>
@@ -34,3 +34,4 @@ const AddButton = () => {
 };
 
 export default AddButton;
+

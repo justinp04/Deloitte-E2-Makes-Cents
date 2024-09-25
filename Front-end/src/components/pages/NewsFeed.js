@@ -9,7 +9,6 @@ import { useMsal } from '@azure/msal-react';
 import './NewsFeed.css';
 
 function NewsFeed() {
-
     const { accounts } = useMsal();
     const [newsData, setNewsData] = useState({
         hero: { title: '', subtitle: '', image: '' },
@@ -17,6 +16,31 @@ function NewsFeed() {
     });
     const [searchTerm, setSearchTerm] = useState('CBA'); // Default company symbol
     const [email, setEmail] = useState('');
+
+    // State for current investment companies
+    const [currentInvestmentCompanies, setCurrentInvestmentCompanies] = useState([
+        { id: 1, companyTitle: 'WOOLWORTHS GROUP LIMITED (WOW)' },
+        { id: 2, companyTitle: 'BHP Group Ltd (BHP)' },
+        { id: 3, companyTitle: 'Adairs (ADH)' },
+        { id: 4, companyTitle: 'COLES GROUP LIMITED (COL)' },
+        { id: 5, companyTitle: 'APPLE (APL)' },
+        { id: 6, companyTitle: 'BHP Group Ltd (BHP)' },
+        { id: 7, companyTitle: 'Adairs (ADH)' },
+        { id: 8, companyTitle: 'COLES GROUP LIMITED (COL)' },
+        { id: 9, companyTitle: 'APPLE (APL)' },
+    ]);
+
+    // State for followed companies
+    const [followedCompanies, setFollowedCompanies] = useState([
+        { id: 1, companyTitle: 'WOOLWORTHS GROUP LIMITED (WOW)' },
+        { id: 2, companyTitle: 'BHP Group Ltd (BHP)' },
+        { id: 3, companyTitle: 'Adairs (ADH)' },
+        { id: 4, companyTitle: 'COLES GROUP LIMITED (COL)' },
+        { id: 5, companyTitle: 'WOOLWORTHS GROUP LIMITED (WOW)' },
+        { id: 6, companyTitle: 'BHP Group Ltd (BHP)' },
+        { id: 7, companyTitle: 'Adairs (ADH)' },
+        { id: 8, companyTitle: 'COLES GROUP LIMITED (COL)' },
+    ]);
 
     // Fetch email from the logged-in user using MSAL
     useEffect(() => {
@@ -69,28 +93,54 @@ function NewsFeed() {
         };
 
         fetchNews();
-    }, [searchTerm, email]); // Fetch news whenever searchTerm changes
+    }, [searchTerm, email]);
 
     const handleSearch = (term) => {
         setSearchTerm(term);
     };
 
+    // Add a new current investment
+    const handleAddNewInvestment = () => {
+        const newInvestment = {
+            id: currentInvestmentCompanies.length + 1,
+            companyTitle: `New Investment ${currentInvestmentCompanies.length + 1}`
+        };
+        setCurrentInvestmentCompanies([...currentInvestmentCompanies, newInvestment]);
+    };
+
+    // Add a new followed company
+    const handleAddNewFollowing = () => {
+        const newFollowing = {
+            id: followedCompanies.length + 1,
+            companyTitle: `New Following ${followedCompanies.length + 1}`
+        };
+        setFollowedCompanies([...followedCompanies, newFollowing]);
+    };
+
     return (
         <div className="page-container">
             <div className="sidebar" style={{ zIndex: 1000 }}>
-                <NewsSidebar onSearch={handleSearch} />
+                {/* Passing currentInvestmentCompanies and followedCompanies to NewsSidebar */}
+                <NewsSidebar 
+                    onSearch={handleSearch}
+                    currentInvestmentCompanies={currentInvestmentCompanies}
+                    followedCompanies={followedCompanies}
+                />
             </div>
             <div className="content pt-0">
                 <div className="title-container">
-                    <NewsCompanyTitle textContent={`Commonwealth Bank of Australia (${searchTerm})`} />
+                    <NewsCompanyTitle
+                        textContent={`Commonwealth Bank of Australia (${searchTerm})`}
+                        onAddNewInvestment={handleAddNewInvestment}
+                        onAddNewFollowing={handleAddNewFollowing}
+                    />
                 </div>
                 <NewsHeroSection
                     title={newsData.hero.title}
                     subtitle={newsData.hero.subtitle}
-                    image={newsData.hero.image} // This may be redundant if using articles for the carousel
-                    articles={newsData.articles} // Pass articles for the carousel
+                    image={newsData.hero.image}
+                    articles={newsData.articles}
                 />
-
                 <hr className='blue-line' />
                 <div className="d-flex align-items-center justify-content-between me-5">
                     <h4 className='filter-title my-2'>Most Recent</h4>
