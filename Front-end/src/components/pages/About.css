@@ -1,22 +1,7 @@
 /* About.js */
 .feature-box {
-    border: 3px solid var(--mc-purple);
-    border-radius: 15px;
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
+    border: 3px solid var(--mc-purple) !important;
+    border-radius: 20px !important;
 }
 
-.feature-box img {
-    max-width: 60px;
-    margin-bottom: 10px;
-    padding-top: 1rem;
-    justify-content: center;
-}
 
-.feature-box p {
-    font-weight: bold;
-    color: black;
-}

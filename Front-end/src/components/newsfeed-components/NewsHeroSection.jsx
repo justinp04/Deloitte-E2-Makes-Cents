@@ -5,7 +5,7 @@ import '../pages/NewsFeed.css';
 
 const NewsHeroSection = ({ title, subtitle, image, articles }) => {
     return (
-        <div className="mb-4">
+        <div className=" container mb-4 mt-0">
             <Carousel className="hero-section mx-auto">
                 {articles.length > 0 ? (
                     articles.map((article, index) => (
@@ -28,7 +28,7 @@ const NewsHeroSection = ({ title, subtitle, image, articles }) => {
                     ))
                 ) : (
                     <Carousel.Item>
-                        {/* <Image 
+                        <Image 
                             src="./images/placeholder_img.jpeg" 
                             className="d-block hero-image" 
                             fluid 
@@ -37,7 +37,10 @@ const NewsHeroSection = ({ title, subtitle, image, articles }) => {
                             <div className="hero-title">
                                 No news available
                             </div>
-                        </div> */}
+                            <div className="hero-subtitle">
+                                Please try again later.
+                            </div>
+                        </div>
                     </Carousel.Item>
                 )}
             </Carousel>

@@ -4,17 +4,34 @@
  ************************************************************************************************/
 import React from "react";
 import '../pages/NewsFeed.css';
+import { Container, Row, Col} from 'react-bootstrap';
+import AddButton from "./AddButton";
 
-const NewsCompanyTitle = ({ textContent }) => {
+const NewsCompanyTitle = ({ textContent, onAddNewInvestment, onAddNewFollowing}) => {
     return (
-        <div className="d-flex align-items-center company-title-div">
-            <div className="flex-shrink-0">
-                <img src="./images/BegaLogo.jpeg" alt="User Profile" className="company-title-img" />
-            </div>
-            <div className="flex-grow-1 ms-3 fw-bold company-title-text">
-                {textContent}
-            </div>
-        </div>
+        <Container className="company-title-div">
+            <Row>
+                {/* Page title */}
+                <Col className="fw-bold company-title-text">
+                    News Feed
+                </Col>
+            </Row>
+            <Row>
+                {/* Company name  */}
+                <Col className="fw-bold" style={{fontSize:"130%"}}>
+                    {textContent}
+                </Col>
+                <Col className="d-flex justify-content-end" >
+                    {/* Add button to add company news feed to user list  */}
+                    <AddButton 
+                        className="mt-2"
+                        onAddNewInvestment={onAddNewInvestment}
+                        onAddNewFollowing={onAddNewFollowing}
+                    />
+                </Col>
+            </Row>
+        </Container>
     );
 }
+
 export default NewsCompanyTitle;

@@ -2,7 +2,6 @@
  * Author: Anna Duong
  * Purpose: User Endpoint for fetching stock article and AI Summary for article content 
  ************************************************************************************************/
-
 import express from 'express';
 import axios from 'axios';
 import { exec } from 'child_process';
