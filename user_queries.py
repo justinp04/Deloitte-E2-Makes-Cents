@@ -50,6 +50,7 @@ PURPOSE: returns the closest matched results from the
 def query_qdrant(query_text, stock_name):
     query_embedding = get_query_embedding(query_text)
     
+    # 1. Vector similarity search 
     search_result = load_qdrant_client().search(
         collection_name="E2cluster1",
         query_vector=query_embedding, 
@@ -60,6 +61,7 @@ def query_qdrant(query_text, stock_name):
     
     stock_name = stock_name.strip()
 
+    # 2. Semantic searching begins
     filtered_results = []
     for point in search_result:
         if isinstance(point, ScoredPoint) and hasattr(point, 'payload'):
