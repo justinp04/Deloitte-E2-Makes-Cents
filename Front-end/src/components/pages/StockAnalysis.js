@@ -185,7 +185,8 @@ function StockAnalysis() {
                     the company's strategic initiatives and commitment to sustainable growth indicate stability and growth potential, which could positively impact your decision to invest in Bega Cheese Limited ." sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
                 </div> */}
                 {/* Chat Messages */}
-                <div className="content" style={{marginTop:"400px"}}>
+                {/* need to chnage the positioning for this, styling for this is temp */}
+                <div className="content" style={{marginTop:"100px" }}>
                     <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
                 </div>
 
