@@ -79,11 +79,8 @@
 }
 
 /* NewsSidebar.js */
-.sidebar {
-    height: 100vh;
-}
 
-.sidebarContainer {
+.sidebar {
     margin-top: 73px;
 }
 
