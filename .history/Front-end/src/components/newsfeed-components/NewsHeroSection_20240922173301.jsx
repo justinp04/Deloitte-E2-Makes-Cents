@@ -27,18 +27,18 @@ const NewsHeroSection = ({ title, subtitle, image, articles }) => {
                         </Carousel.Item>
                     ))
                 ) : (
-                    <Carousel.Item>
-                        {/* <Image 
-                            src="./images/placeholder_img.jpeg" 
-                            className="d-block hero-image" 
-                            fluid 
-                        />
-                        <div className="hero-text-container">
-                            <div className="hero-title">
-                                No news available
-                            </div>
-                        </div> */}
-                    </Carousel.Item>
+                    // <Carousel.Item>
+                    //     <Image 
+                    //         src="./images/placeholder_img.jpeg" 
+                    //         className="d-block hero-image" 
+                    //         fluid 
+                    //     />
+                    //     <div className="hero-text-container">
+                    //         <div className="hero-title">
+                    //             No news available
+                    //         </div>
+                    //     </div>
+                    // </Carousel.Item>
                 )}
             </Carousel>
         </div>

@@ -28,7 +28,7 @@ const NewsHeroSection = ({ title, subtitle, image, articles }) => {
                     ))
                 ) : (
                     <Carousel.Item>
-                        {/* <Image 
+                        <Image 
                             src="./images/placeholder_img.jpeg" 
                             className="d-block hero-image" 
                             fluid 
@@ -37,7 +37,7 @@ const NewsHeroSection = ({ title, subtitle, image, articles }) => {
                             <div className="hero-title">
                                 No news available
                             </div>
-                        </div> */}
+                        </div>
                     </Carousel.Item>
                 )}
             </Carousel>
