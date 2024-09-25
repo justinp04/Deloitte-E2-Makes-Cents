@@ -4,6 +4,7 @@ import ChatBox from '../stockanalysis-components/ChatBox';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import StockSummary from '../stockanalysis-components/StockSummary';
 import TutorialOverlay from '../stockanalysis-components/TutorialOverlay';
+import TutorialOverlay from '../stockanalysis-components/TutorialOverlay';
 
 function StockAnalysis() {
     const [messages, setMessages] = useState([]);
@@ -84,6 +85,14 @@ function StockAnalysis() {
                     </div>
                     <div className="blue-line"></div>
                 </div>
+
+                {/* Button to start the tutorial */}
+                <button 
+                    onClick={() => setTutorialActive(true)} 
+                    style={{ position: 'absolute', top: '120px', right: '50px', zIndex: 1500 }}
+                >
+                    Start Tutorial
+                </button>
 
                 <div style={{ marginTop: accordionOpen ? '10px' : '190px' }}>  
                     <ChatBox message="Howdy! 🤠" sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
