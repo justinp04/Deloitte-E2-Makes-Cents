@@ -29,14 +29,13 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
     const handleShowSidebar = () => setShowSidebar(true);
 
     return (
-        <>
+        <div className="">
             {/* Sidebar Toggle Button */}
             <Button
                 variant="light"
                 className="d-lg-none position-fixed"
-                style={{ marginTop: "85px", border: "none", background: "none", outline: "none" }}
-                onClick={handleShowSidebar}
-            >
+                style={{ marginTop: "80px", border: "none", background: "none", outline: "none" }}
+                onClick={handleShowSidebar}>
                 <FontAwesomeIcon icon={faBars} />
             </Button>
 
@@ -46,8 +45,8 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                 onHide={handleCloseSidebar}
                 responsive="lg"
                 className="p-0"
-                style={{ width: '300px' }}
-            >
+                style={{ width: '300px' }}>
+
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>News Feed</Offcanvas.Title>
                 </Offcanvas.Header>
@@ -86,8 +85,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                                                         key={company.id}
                                                         companyTitle={company.companyTitle}
                                                         onClick={() => console.log(`Clicked on ${company.companyTitle}`)}
-                                                        className="news-sidebar-card"
-                                                    />
+                                                        className="news-sidebar-card"/>
                                                 ))
                                             ) : index === 1 ? (
                                                 // Create cards for followed companies
@@ -108,7 +106,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                     </Container>
                 </Offcanvas.Body>
             </Offcanvas>
-        </>
+        </div>
     );
 };
 

@@ -79,7 +79,11 @@
 }
 
 /* NewsSidebar.js */
-#sidebarContainer {
+.sidebar {
+    height: 100vh;
+}
+
+.sidebarContainer {
     margin-top: 73px;
 }
 
@@ -107,6 +111,9 @@
 }
 
 .add-button {
+    position: fixed !important;
+    width: 60px;
+    height: 60px;
     position: absolute !important;
     width: 40px;
     height: 40px;
