@@ -54,7 +54,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                 <Offcanvas.Body className="p-0 scrollable-sidebar">
                     <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar">
                         {/* Search bar for searching stocks */}
-                        <div className="fixed-searchbar">
+                        <div className="fixed-searchbar py-2" style={{backgroundColor:"white"}}>
                             <SearchBar placeholder="Search a stock" onSearch={onSearch} className="mb-0"/>
                         </div>
 

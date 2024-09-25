@@ -8,64 +8,28 @@
  ************************************************************************************************/
 
 import React, { useState, useRef, useEffect } from 'react';
-
+import { Container } from 'react-bootstrap';
 import SASidebar from '../stockanalysis-components/SASidebar';
-import FavoriteButton from '../stockanalysis-components/FavouriteButton';
-import ChatBox from '../stockanalysis-components/ChatBox';
-import ToggleSwitch from '../ToggleSwitch';
-import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import StockSummary from '../stockanalysis-components/StockSummary';
-import SearchBar from '../SearchBar';
+import ChatBox from '../stockanalysis-components/ChatBox';
+import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import QuestionSuggestions from '../stockanalysis-components/QuestionSuggestions';
 
-function StockAnalysis({ isSignedIn }) {
+function StockAnalysis() {
     const [messages, setMessages] = useState([]);
     const [accordionOpen, setAccordionOpen] = useState(false); // State to control whether an accordion (presumably in the UI) is open or closed
     const [favouriteStocks, setFavouriteStocks] = useState([]); // State to manage the list of favourite stocks
-
     const [quickSummary, setQuickSummary] = useState('');
     const [detailedSummary, setDetailedSummary] = useState('')
     const [references, setReferences] = useState([]); // State for references array
     const [responseDepth, setResponseDepth] = useState('quick');
     const [stockName, setStockName] = useState('');
     const [suggestions, setSuggestions] = useState([]);
-
-    const [summaryHeight, setSummaryHeight] = useState(300);
-    const [isDragging, setIsDragging] = useState(false);
+    const [sidebarOpen, setSidebarOpen] = useState(false); // Tracks if the sidebar is open or closed
 
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
-
-    const handleMouseDown = () => {
-        setIsDragging(true);
-    };
-
-    const handleMouseMove = (e) => {
-        if (isDragging) {
-            const newHeight = e.clientY - 70; // 70px to account for the top margin
-            setSummaryHeight(Math.max(100, newHeight)); // Set a minimum height of 100px for the summary
-        }
-    };
-
-    const handleMouseUp = () => {
-        setIsDragging(false);
-    };
-
-    useEffect(() => {
-        if (isDragging) {
-            window.addEventListener('mousemove', handleMouseMove);
-            window.addEventListener('mouseup', handleMouseUp);
-        } else {
-            window.removeEventListener('mousemove', handleMouseMove);
-            window.removeEventListener('mouseup', handleMouseUp);
-        }
-
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-            window.removeEventListener('mouseup', handleMouseUp);
-        };
-    }, [isDragging]);
 
     const handleToggleChange = () => {
         setResponseDepth(responseDepth === 'quick' ? 'detailed' : 'quick'); // Toggle between quick and detailed
@@ -142,12 +106,9 @@ function StockAnalysis({ isSignedIn }) {
         }
     };
 
-
     const handleSuggestedQuestionClick = (question) => {
         handleSendMessage(question);
     };
-
-
 
     // Function to add a stock to the list of favourites
     const addFavourite = (companyTitle) => {
@@ -176,40 +137,41 @@ function StockAnalysis({ isSignedIn }) {
         chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [messages, typing]); // Re-run effect when typing state changes
 
+    // Toggle sidebar open/close state
+    const toggleSidebar = (isOpen) => {
+        setSidebarOpen(isOpen);
+    };
+
     return (
-        <div className="page-container">
-            <div className="sa-sidebar">
+        <div className={`page-container me-3 ${sidebarOpen ? 'sidebar-open' : ''}`}>
+            {/* Sidebar */}
+            <div>
                 <SASidebar
                     favouriteStocks={favouriteStocks}
                     addFavourite={addFavourite}
                     removeFavourite={removeFavourite}
                     onSearch={handleSearch}
+                    toggleSidebar={toggleSidebar}
                 />
             </div>
-            <div className="content" style={{ paddingTop: '200px' }}>
-                <div className="position-fixed" style={{ top: 0, left: '300px', top: '70px', width: 'calc(100% - 300px)', backgroundColor: 'white', zIndex: 1000 }}>
-                    <h1 className="page-header ms-3 mt-3 mb-2 me-5 ps-4" style={{ marginRight: '62%' }}>Stock Analysis</h1>
-                    <div className="toggle-title-container">
-                        <div className="title-button-container">
-                            <StockSummary
-                                accordionOpen={accordionOpen}
-                                setAccordionOpen={setAccordionOpen}
-                                addFavourite={addFavourite}
-                                removeFavourite={removeFavourite}
-                                favouriteStocks={favouriteStocks} // Pass favourite stocks to check if already favourited
-                                summary={responseDepth === 'quick' ? quickSummary : detailedSummary} // Pass summary as prop
-                                references={references} // Pass references as prop
-                                stockName={stockName}
-                                responseDepth={responseDepth}
-                                onToggleChange={handleToggleChange}
-                            />
-                        </div>
-                    </div>
-                    {/* Draggable Divider */}
-                    <div
-                        className="divider"
-                        onMouseDown={handleMouseDown}
-                    ></div>
+            <div className={`content ${sidebarOpen ? 'shift-content' : ''}`}  >
+                <div
+                    className="position-sticky stock-summary-container"
+                    style={{ top: '0', width: '100%', backgroundColor: 'white', zIndex: 1000 }}>
+                    <h1 className="page-header ms-4 mb-2 me-5" style={{ marginRight: '62%' }}>STOCK ANALYSIS</h1>
+                    <StockSummary
+                        accordionOpen={accordionOpen}
+                        setAccordionOpen={setAccordionOpen}
+                        addFavourite={addFavourite}
+                        removeFavourite={removeFavourite}
+                        favouriteStocks={favouriteStocks}
+                        summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
+                        references={references}
+                        stockName={stockName}
+                        responseDepth={responseDepth}
+                        onToggleChange={handleToggleChange}
+                    />
+                    <hr className='blue-line' />
                 </div>
                 {/* Placeholder text for user-bot chat*/}
                 {/* <div style={{ marginTop: accordionOpen ? '10px' : '190px' }}>  
@@ -222,31 +184,30 @@ function StockAnalysis({ isSignedIn }) {
                     These initiatives can provide stability and growth potential for the company, which are favorable factors for potential investors .  In summary, while the revenue growth trend is positive, the decrease in EBITDA may raise some concerns. However, 
                     the company's strategic initiatives and commitment to sustainable growth indicate stability and growth potential, which could positively impact your decision to invest in Bega Cheese Limited ." sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
                 </div> */}
-
-                <div className="content">
+                {/* Chat Messages */}
+                <div className="content" style={{marginTop:"400px"}}>
                     <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
                 </div>
 
-                {/* Div for user input */}
-                <div style={{ marginBottom: '70px' }}>
-                    {messages.map((msg, index) => (
-                        <ChatBox key={index} message={msg.message} sender={msg.sender} senderName={msg.sender === 'user' ? 'You' : 'Gerry'} avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'} />
-                    ))}
-
-                    {typing && (
-                        <ChatBox
-                            message={
-                                <div className="typing-indicator">
-                                    <div className="dot"></div>
-                                    <div className="dot"></div>
-                                    <div className="dot"></div>
-                                </div>
-                            }
-                            sender="bot"
-                            senderName="Gerry"
-                            avatar="./images/GerryProfile.jpg"
-                        />
-                    )}
+                {/* Chat Messages */}
+                <div style={{ marginTop: accordionOpen ? '10px' : '10px', paddingBottom: '120px' }}>
+                        {messages.map((msg, index) => (
+                            <ChatBox
+                                key={index}
+                                message={msg.message}
+                                sender={msg.sender}
+                                senderName={msg.sender === 'user' ? 'You' : 'Gerry'}
+                                avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'}
+                            />
+                        ))}
+                        {typing && (
+                            <ChatBox
+                                message={<div className="typing-indicator"><div className="dot"></div><div className="dot"></div><div className="dot"></div></div>}
+                                sender="bot"
+                                senderName="Gerry"
+                                avatar="./images/GerryProfile.jpg"
+                            />
+                        )}
 
                     {/* Follow-up suggestions */}
                     {suggestions.length > 0 && (
@@ -264,11 +225,12 @@ function StockAnalysis({ isSignedIn }) {
                     )}
                     {/* A reference div to keep the chat view scrolled to the latest message */}
                     <div ref={chatEndRef} />
-
-                    <QueryInputBar onSendMessage={handleSendMessage} />
+                </div>
+                    <Container className="query-bar-container">
+                        <QueryInputBar onSendMessage={handleSendMessage} />
+                    </Container>
                 </div>
             </div>
-        </div>
     );
 }
 

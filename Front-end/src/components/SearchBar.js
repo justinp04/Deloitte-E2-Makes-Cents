@@ -24,7 +24,7 @@ const SearchBar = ({ placeholder, onSearch }) => {
     };
 
     return (
-        <div className="mx-3 mb-2" style={{ width: '260px' }}>
+        <div className="mx-3 mb-2" style={{ width: '260px', backgroundColor:"white" }}>
             <InputGroup className="rounded-input-group mt-2" style={{ border: '1px solid grey', borderRadius: '30px' }}>
                 <Form.Control
                     placeholder={placeholder}

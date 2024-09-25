@@ -48,9 +48,9 @@
 
 /* NewsCard.js */
 .news-card {
-    border: 1px solid #ddd;
+    border: none #ddd;
     border-radius: 20px;
-    background-color: lightgray;
+    background-color: var(--sidebar-background) !important;
     padding: 10px;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .sidebar-background-colour{
-    background-color: var(--background-color-light) !important;
+    background-color: var(--sidebar-background) !important;
 }
 .center-searchbar {
     display: flex;
@@ -98,7 +98,8 @@
     position: sticky; 
     top: 0;          
     z-index: 1000;  
-    width: 100%;     
+    width: 100%; 
+    background-color: var(--bs-accordion-btn-bg);    
 }
 
 .news-sidebar-card {

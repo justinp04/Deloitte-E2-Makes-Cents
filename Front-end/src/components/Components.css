@@ -56,7 +56,6 @@
     cursor: pointer;
 }
 
-/* Style items (options) */
 .select-items {
     position: absolute;
     background-color: white;
@@ -65,7 +64,6 @@
     right: 0;
     z-index: 99;
     border-radius: 20px;
-    /* Match the border radius of the select */
 }
 
 /* Hide the items when the select box is closed */
@@ -136,7 +134,6 @@
     height: 36px;
 }
 
-/* Ensure no outline, border, or shadow is applied on focus */
 .rounded-input-group .form-control:focus {
     border: none;
     outline: none;
@@ -158,9 +155,7 @@
 .rounded-input-group .input-group-text {
     border-radius: 20px 0 0 20px;
     background-color: white;
-    /* Matches the input background */
     border: none;
-    /* Remove any borders */
 }
 
 .center-searchbar {
@@ -205,7 +200,6 @@
 .font-bold {
     font-weight: bold;
 }
-
 
 /*********************************
 * ToggleSwitch.js
@@ -267,9 +261,7 @@
     margin-left: 2px;
     font-size: 10px;
     color: #333;
-    /* Text color */
     user-select: none;
-    /* Prevent text selection */
     width: 20px;
     font-weight: bold;
 }
