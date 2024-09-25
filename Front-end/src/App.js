@@ -5,12 +5,10 @@
  * ********************************************/
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import {Routes, Route, Navigate } from 'react-router-dom';
 
 import NavbarComponent from './components/pages/NavbarComponent';
 import About from './components/pages/About';
-import SignIn from './components/pages/SignIn';
-import Register from './components/pages/Register';
 import UserQuestionaire from './components/pages/UserQuestionaire';
 import StockAnalysis from './components/pages/StockAnalysis';
 import NewsFeed from './components/pages/NewsFeed';
@@ -24,8 +22,6 @@ function App()
 			<Routes>
 				<Route path="/" element={<About />} />
 				<Route path="/about" element={<About />} />
-				<Route path="/signin" element={<SignIn />} />
-				<Route path="/register" element={<Register />} />
 				<Route path="/next" element={<UserQuestionaire />} />
 				<Route path="/stock-analysis" element={<StockAnalysis />} />
 				<Route path="/news-feed" element={<NewsFeed />} />

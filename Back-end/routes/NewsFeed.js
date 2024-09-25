@@ -18,10 +18,11 @@ const router = express.Router();
 const generateSummaryForArticle = (userEmail, stock, article) => {
     return new Promise((resolve, reject) => {
         // Path to your Python script
-        const pythonScriptPath = path.join(__dirname, '../../Rag/news_feed_summary.py');
+        // const pythonScriptPath = path.join(__dirname, '../../Rag/news_feed_summary.py');
+        const pythonScriptPath = '/Users/alyssha/Desktop/E2_GenAI-5/Rag/news_feed_summary.py'
         
         // Command to execute the Python script with necessary arguments
-        const command = `python3 ${pythonScriptPath} --user_email ${userEmail} --stock ${stock} --article_title "${article.article_title}" --article_url "${article.article_url}"`;
+        const command = `python ${pythonScriptPath} --user_email ${userEmail} --stock ${stock} --article_title "${article.article_title}" --article_url "${article.article_url}"`;
 
         exec(command, (error, stdout, stderr) => {
             if (error) {
