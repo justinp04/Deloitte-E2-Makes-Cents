@@ -1,7 +1,7 @@
 /* NewsCompanyTitle.js */
 .company-title-div {
-    margin-left: 36px;
-    margin-top: 5px;
+    margin-left: 0px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
@@ -90,6 +90,14 @@
     width: 100%; /* Ensure search bar spans full width on smaller screens */
 }
 
+.news-sidebar-card {
+    transition: background-color 0.3s ease;
+}
+
+.news-sidebar-card:hover {
+    background-color: #dcdcdc; 
+}
+
 .add-button {
     position: absolute !important;
     width: 60px;
@@ -100,8 +108,8 @@
     align-items: center;
     justify-content: center;
     border: none;
-    bottom: 90px;
-    left: 205px;
+    bottom: 25px;
+    left: 200px;
     z-index: 1000;
 }
 
@@ -111,6 +119,12 @@
 
 .focus {
     --bs-accordion-btn-bg: var(--mc-green);
+}
+
+.scrollable-sidebar {
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
 /* News hero section */

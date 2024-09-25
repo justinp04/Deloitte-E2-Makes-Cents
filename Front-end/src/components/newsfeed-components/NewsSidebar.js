@@ -12,8 +12,35 @@ import AddButton from './AddButton';
 import NewsSidebarCard from './NewsSidebarCard'
 
 const NewsSidebar = ({ onSearch }) => {
+    
     const [expandedItems, setExpandedItems] = useState({}); // Tracks open/close state of each accordion item
     const [showSidebar, setShowSidebar] = useState(false); // Controls Offcanvas visibility
+
+    // Need to connect to sql database
+    // Mock database of followed companies
+    const currentInvestmentCompanies = [
+        { id: 1, companyTitle: 'WOOLWORTHS GROUP LIMITED (WOW)' },
+        { id: 2, companyTitle: 'BHP Group Ltd (BHP)' },
+        { id: 3, companyTitle: 'Adairs (ADH)' },
+        { id: 4, companyTitle: 'COLES GROUP LIMITED (COL)' },
+        { id: 5, companyTitle: 'APPLE (APL)' },
+        { id: 6, companyTitle: 'BHP Group Ltd (BHP)' },
+        { id: 7, companyTitle: 'Adairs (ADH)' },
+        { id: 8, companyTitle: 'COLES GROUP LIMITED (COL)' },
+        { id: 9, companyTitle: 'APPLE (APL)' },
+    ];
+
+     // Mock database of followed companies
+     const followedCompanies = [
+        { id: 1, companyTitle: 'WOOLWORTHS GROUP LIMITED (WOW)' },
+        { id: 2, companyTitle: 'BHP Group Ltd (BHP)' },
+        { id: 3, companyTitle: 'Adairs (ADH)' },
+        { id: 4, companyTitle: 'COLES GROUP LIMITED (COL)' },
+        { id: 5, companyTitle: 'WOOLWORTHS GROUP LIMITED (WOW)' },
+        { id: 6, companyTitle: 'BHP Group Ltd (BHP)' },
+        { id: 7, companyTitle: 'Adairs (ADH)' },
+        { id: 8, companyTitle: 'COLES GROUP LIMITED (COL)' },
+    ];
 
     // Toggle the accordion items and track their open/close state
     const handleToggleAccordion = (eventKey) => {
@@ -49,7 +76,7 @@ const NewsSidebar = ({ onSearch }) => {
             <Button
                 variant="light"
                 className="d-lg-none position-fixed"
-                style={{ marginTop: "85px", border: "none", background: "white", outline: "none" }}
+                style={{ marginTop: "85px", border: "none", background: "none", outline: "none" }}
                 onClick={handleShowSidebar}
             >
                 <FontAwesomeIcon icon={faBars} />
@@ -67,17 +94,17 @@ const NewsSidebar = ({ onSearch }) => {
                     <Offcanvas.Title>News Feed</Offcanvas.Title>
                 </Offcanvas.Header>
 
-                <Offcanvas.Body className="p-0">
-                    <Container fluid id="sidebarContainer" className="p-0">
-                        <SearchBar placeholder="Search a stock" onSearch={onSearch} />
+                <Offcanvas.Body className="p-0 scrollable-sidebar">
                         
+                    <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar mb-5">
+                        <SearchBar placeholder="Search a stock" onSearch={onSearch}/>
                         {/* Accordion with individual open/close state for each item */}
-                        <Accordion defaultActiveKey={null} alwaysOpen>
+                        <Accordion defaultActiveKey={null} alwaysOpen className='mb-3'>
                             {["0", "1", "2"].map((key, index) => (
                                 <Accordion.Item eventKey={key} key={key}>
                                     <Accordion.Header
-                                        className="d-inline-flex justify-content-between align-items-center w-100"
-                                        onClick={() => handleToggleAccordion(key)} // Custom onClick for toggle
+                                        className=" pb-0 d-inline-flex justify-content-between align-items-center w-100"
+                                        onClick={() => handleToggleAccordion(key)} 
                                     >
                                         <FontAwesomeIcon
                                             id={`chevron-${key}`}
@@ -90,17 +117,39 @@ const NewsSidebar = ({ onSearch }) => {
                                     </Accordion.Header>
                                     {/* Show or hide based on expandedItems */}
                                     {expandedItems[key] && (
-                                        <Accordion.Body className="ps-4 pe-1">
-                                            Lorem ipsum dolor sit amet...
-                                            {/* <NewsSidebarCard companyTitle={"Test Company"} onClick={() => {console.log("Button clicked")}}/> */}
+                                        <Accordion.Body className="pe-1">
+                                            {index === 0 ? (
+                                                // Create cards for current investment companies
+                                                currentInvestmentCompanies.map(company => (
+                                                    <NewsSidebarCard
+                                                        key={company.id}
+                                                        companyTitle={company.companyTitle}
+                                                        onClick={() => console.log(`Clicked on ${company.companyTitle}`)}
+                                                        className="news-sidebar-card"
+                                                    />
+                                                ))
+                                            ) : index === 1 ? (
+                                                // Create cards for followed companies
+                                                followedCompanies.map(company => (
+                                                    <NewsSidebarCard
+                                                        key={company.id}
+                                                        companyTitle={company.companyTitle}
+                                                        onClick={() => console.log(`Clicked on ${company.companyTitle}`)}
+                                                    />
+                                                ))
+                                            ) : index === 2 ? (
+                                                <div style={{ marginBottom: '50px' }}> 
+                                                    <SearchBar placeholder="Search a stock" onSearch={onSearch} />
+                                                </div>
+                                            ) :  null}
                                         </Accordion.Body>
                                     )}
+
                                 </Accordion.Item>
                             ))}
                         </Accordion>
                     </Container>
-
-                    {/* Add Button */}
+                    {/* Add Button to add companies to list*/}
                     <AddButton />
                 </Offcanvas.Body>
             </Offcanvas>

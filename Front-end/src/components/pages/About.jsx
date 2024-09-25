@@ -15,9 +15,9 @@ import './About.css';
 
 function About() {
     const boxes = [
-        { id: 1, title: 'Column 1', content: 'Monitoring of social media and news for real-time insights', icon: faNewspaper },
-        { id: 2, title: 'Column 2', content: 'Simplifying complex financial information into pieces', icon: faWandMagicSparkles },
-        { id: 3, title: 'Column 3', content: 'Providing tailored recommendations just for you', icon: faPerson }
+        { id: 1, title: 'Column 3', content: 'Providing tailored recommendations just for you', icon: faPerson },
+        { id: 2, title: 'Column 2', content: 'Simplifying complex financial information into bite-sized pieces', icon: faWandMagicSparkles },
+        { id: 3, title: 'Column 1', content: 'Monitoring of social media and news for real-time insights', icon: faNewspaper }
     ];
 
     const { instance } = useMsal();

@@ -80,9 +80,9 @@ function NewsFeed() {
             <div className="sidebar" style={{ zIndex: 1000 }}>
                 <NewsSidebar onSearch={handleSearch} />
             </div>
-            <div className="content">
+            <div className="content pt-0">
                 <div className="title-container">
-                    <NewsCompanyTitle textContent={`News Feed (${searchTerm})`} />
+                    <NewsCompanyTitle textContent={`Commonwealth Bank of Australia (${searchTerm})`} />
                 </div>
                 <NewsHeroSection
                     title={newsData.hero.title}

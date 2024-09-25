@@ -34,6 +34,7 @@ function NavbarComponent() {
         <Navbar expand="lg" fixed="top" className="navbar-light">
             <Container fluid className="me-2 ms-3">
                 <Navbar.Brand as={Link} to="/" className="site-title fw-bold" hidden={showTitleState}>
+                    <img src="../images/MCLogo.png" width="30" height="30" className='mb-2 me-2'/>
                     Makes Cents
                 </Navbar.Brand>
 

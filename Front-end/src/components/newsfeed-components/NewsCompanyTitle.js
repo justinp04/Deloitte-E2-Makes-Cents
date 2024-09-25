@@ -4,14 +4,23 @@
  ************************************************************************************************/
 import React from "react";
 import '../pages/NewsFeed.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const NewsCompanyTitle = ({ textContent }) => {
     return (
-        <div className="d-flex align-items-center company-title-div">
-            <div className="flex-grow-1 fw-bold company-title-text">
-                {textContent}
-            </div>
-        </div>
+        <Container className="company-title-div">
+            <Row>
+                <Col className="fw-bold company-title-text">
+                    News Feed
+                </Col>
+            </Row>
+            <Row>
+                <Col className="fw-bold" style={{fontSize:"130%"}}>
+                    {textContent}
+                </Col>
+            </Row>
+        </Container>
     );
 }
+
 export default NewsCompanyTitle;
