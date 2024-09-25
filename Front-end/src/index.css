@@ -129,7 +129,7 @@ code {
 /* Sidebar and page content styling for 'Stock Analysis', 'News Feed' and 'Settings' pages */
 .page-container {
   display: flex;
-  height: 100vh;
+  max-height: 100vh;
   transition: margin-left 0.3s ease; /* Smooth transition when the sidebar opens/closes */
 }
 
@@ -149,6 +149,20 @@ code {
   margin-left: 0; /* Reset the margin when sidebar is closed */
 }
 
+/* Sidebar general styling */
+.sidebar-container-styling {
+  margin-top: 80px;
+  width: 300px;
+  position: sticky !important;
+  top: 80px;
+  z-index: 1000;
+}
 
+@media (max-width: 992px) {
+  .sidebar-container-styling {
+      margin-top: 0px;
+      width: 0px;
+  }
+}
 
 @import "~bootstrap/dist/css/bootstrap.css";

@@ -3,7 +3,7 @@
  * Fix:
  *  - Colour
  ************************************************************************************************/
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Accordion, Button, Offcanvas } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -27,7 +27,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
     };
 
     // Handle accordion item expansion
-    const handleToggle = (eventKey) => {
+    const handleToggleAccordion = (eventKey) => {
         setExpandedItem(expandedItem === eventKey ? null : eventKey);
     };
 
@@ -44,14 +44,13 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
     const handleShowSidebar = () => setShowSidebar(true);   // Open the Offcanvas sidebar
 
     return (
-        <>
+        <div className="sidebar-container-styling">
             {/* Sidebar Toggle Button */}
             <Button
                 variant="light"
                 className="d-lg-none position-fixed"
                 style={{ marginTop: '85px', border: 'none', background: 'white', outline: 'none' }}
-                onClick={handleShowSidebar}
-            >
+                onClick={handleShowSidebar}>
                 <FontAwesomeIcon icon={faBars} />
             </Button>
 
@@ -61,8 +60,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                 onHide={handleCloseSidebar}
                 responsive="lg"
                 className="p-0"
-                style={{ width: '300px' }}
-            >
+                style={{ width: '300px' }}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Stock Analysis</Offcanvas.Title>
                 </Offcanvas.Header>
@@ -70,24 +68,17 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                 <Offcanvas.Body className="p-0">
                     <Accordion
                         className="p-0"
-                        style={{
-                            marginTop: showSidebar ? '0px' : '85px', // Adjust top margin based on Offcanvas state
-                            width: '300px',
-                        }}
                         activeKey={openKeys}
-                        onSelect={handleSelect}
-                    >
+                        onSelect={handleSelect}>
                         {/* 'Stock Recommendations' accordion item */}
                         <Accordion.Item eventKey="0">
                             <Accordion.Header
                                 className={`sidebar-item-header d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === '0' ? 'focus' : ''}`}
-                                onClick={() => handleToggle('0')}
-                            >
+                                onClick={() => handleToggleAccordion('0')}>
                                 <FontAwesomeIcon
                                     id="stockRecommendations"
                                     icon={faChevronRight}
-                                    className={`chevron-icon ${expandedItem === '0' ? 'rotate' : ''}`}
-                                />
+                                    className={`chevron-icon ${expandedItem === '0' ? 'rotate' : ''}`}/>
                                 <p className="my-0 ps-3 fw-bold">Stock Recommendations</p>
                             </Accordion.Header>
                             <Accordion.Body className="p-0">
@@ -95,20 +86,17 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                                     companyTitle="BEGA CHEESE LIMITED (BGA)"
                                     status="Analysing"
                                     onClick={() => onNavigate('Bega Cheese Limited')}
-                                    onFavourite={addFavourite}
-                                />
+                                    onFavourite={addFavourite}/>
                                 <SASidebarCard
                                     companyTitle="WOOLWORTHS GROUP LIMITED (WOW)"
                                     status="Analysed"
                                     onClick={() => onNavigate('Woolworths Group Limited')}
-                                    onFavourite={addFavourite}
-                                />
+                                    onFavourite={addFavourite}/>
                                 <SASidebarCard
                                     companyTitle="COLES GROUP LIMITED (COL)"
                                     status="Analyse"
                                     onClick={() => onNavigate('Coles Group Limited')}
-                                    onFavourite={addFavourite}
-                                />
+                                    onFavourite={addFavourite}/>
                             </Accordion.Body>
                         </Accordion.Item>
 
@@ -116,13 +104,11 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                         <Accordion.Item eventKey="2">
                             <Accordion.Header
                                 className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === '2' ? 'focus' : ''}`}
-                                onClick={() => handleToggle('2')}
-                            >
+                                onClick={() => handleToggleAccordion('2')}>
                                 <FontAwesomeIcon
                                     id="favourites"
                                     icon={faChevronRight}
-                                    className={`chevron-icon ${expandedItem === '2' ? 'rotate' : ''}`}
-                                />
+                                    className={`chevron-icon ${expandedItem === '2' ? 'rotate' : ''}`}/>
                                 <p className="my-0 ps-3 fw-bold">Favourites</p>
                             </Accordion.Header>
                             <Accordion.Body className="px-0 pt-1 pb-2">
@@ -132,9 +118,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                                         key={stock.id}
                                         companyTitle={stock.title}
                                         status="Analyse"
-                                        onClick={() => onNavigate(stock.title)}
-                                    />
-                                ))}
+                                        onClick={() => onNavigate(stock.title)}/>))}
                             </Accordion.Body>
                         </Accordion.Item>
 
@@ -142,13 +126,11 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                         <Accordion.Item eventKey="3">
                             <Accordion.Header
                                 className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === '3' ? 'focus' : ''}`}
-                                onClick={() => handleToggle('3')}
-                            >
+                                onClick={() => handleToggleAccordion('3')}>
                                 <FontAwesomeIcon
                                     id="searchResults"
                                     icon={faChevronRight}
-                                    className={`chevron-icon ${expandedItem === '3' ? 'rotate' : ''}`}
-                                />
+                                    className={`chevron-icon ${expandedItem === '3' ? 'rotate' : ''}`}/>
                                 <p className="my-0 ps-3 fw-bold">Search Result</p>
                             </Accordion.Header>
                             <Accordion.Body className="px-0 pt-1 pb-2">
@@ -158,7 +140,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                     </Accordion>
                 </Offcanvas.Body>
             </Offcanvas>
-        </>
+        </div>
     );
 };
 

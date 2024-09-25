@@ -13,7 +13,7 @@ import ToggleSwitch from '../ToggleSwitch';
 const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks, stockName, responseDepth, onToggleChange }) => {
     const [referencesOpen, setReferencesOpen] = useState(false); // To control the nested accordion
 
-    const companyTitle = stockName || "No stock name provided"; 
+    const companyTitle = stockName || "No stock name provided";
     const isFavourited = favouriteStocks.some(stock => stock.title === companyTitle);
 
     // Fetch stock data (summary and references) from the backend when the component mounts
@@ -25,7 +25,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ stockName, response_depth: responseDepth}), // Send the stock name to the backend
+                    body: JSON.stringify({ stockName, response_depth: responseDepth }), // Send the stock name to the backend
                 });
 
                 const data = await res.json();
@@ -37,7 +37,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
         };
 
         if (stockName) {
-            fetchStockData(); 
+            fetchStockData();
         }
     }, [stockName, responseDepth]);
 
@@ -45,27 +45,25 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
         <div className="toggle-list-container">
             {/* Data */}
             <div className="me-5 d-flex justify-content-between flex-wrap align-items-center">
-    
-    <div className='d-flex flex-row align-items-center'>
-        <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{stockName || "No stock name provided"}</h5>
-        <FavouriteButton
-            companyTitle={stockName || "Unknown"}
-            isFavourited={favouriteStocks.some(stock => stock.title === companyTitle)}
-            onFavourite={addFavourite}
-            onRemoveFavourite={removeFavourite}
-        />
-    </div>
-    <div className='d-flex flex-row align-items-center toggle-button'>
-        <ToggleSwitch
-            checked={responseDepth === 'detailed'} 
-            onChange={onToggleChange}
-            id="detailedSummarySwitch"
-            style={{ paddingBottom: '20px' }} 
-        />
-        <span className="toggle-switch-text ms-2" style={{ fontSize: "0.7rem" }}>Detailed Summary</span>
-    </div>
-</div>
-
+                <div className='d-flex flex-row align-items-center'>
+                    <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{stockName || "No stock name provided"}</h5>
+                    <FavouriteButton
+                        companyTitle={stockName || "Unknown"}
+                        isFavourited={favouriteStocks.some(stock => stock.title === companyTitle)}
+                        onFavourite={addFavourite}
+                        onRemoveFavourite={removeFavourite}
+                    />
+                </div>
+                <div className='d-flex flex-row align-items-center toggle-button'>
+                    <ToggleSwitch
+                        checked={responseDepth === 'detailed'}
+                        onChange={onToggleChange}
+                        id="detailedSummarySwitch"
+                        style={{ paddingBottom: '20px' }}
+                    />
+                    <span className="toggle-switch-text ms-2" style={{ fontSize: "0.7rem" }}>Detailed Summary</span>
+                </div>
+            </div>
 
             <Accordion className='mx-4 mt-2' defaultActiveKey="0">
                 <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
@@ -84,14 +82,14 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                     </Accordion.Header>
                     <Accordion.Body className="px-4" style={{ padding: '0' }}>
                         {summary ? (
-                                <div
-                                    className="summary-text"
-                                    style={{ whiteSpace: 'pre-line', fontSize: '1rem', lineHeight: '1.5' }}
-                                    dangerouslySetInnerHTML={{ __html: summary.replace(/\n/g, '<br>') }}
-                                />
-                            ) : (
-                                "No summary available."
-                            )}
+                            <div
+                                className="summary-text"
+                                style={{ whiteSpace: 'pre-line', fontSize: '1rem', lineHeight: '1.5' }}
+                                dangerouslySetInnerHTML={{ __html: summary.replace(/\n/g, '<br>') }}
+                            />
+                        ) : (
+                            "No summary available."
+                        )}
 
                         {/* Nested Accordion for References */}
                         <Accordion activeKey={referencesOpen ? "0" : null}>
@@ -115,10 +113,8 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                                                         {ref}
                                                     </a>
                                                 </li>
-                                            ))
-                                        ) : (
-                                            <p>No references available</p>
-                                        )}
+                                            ))) : 
+                                            (<p>No references available</p>)}
                                     </ol>
                                 </Accordion.Body>
                             </Accordion.Item>

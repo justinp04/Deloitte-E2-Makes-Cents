@@ -79,8 +79,8 @@
 }
 
 /* NewsSidebar.js */
-#sidebarContainer {
-    margin-top: 80px;
+.sidebar {
+    height: 100vh;
 }
 
 .center-searchbar {
@@ -99,7 +99,7 @@
 }
 
 .add-button {
-    position: absolute !important;
+    position: fixed !important;
     width: 60px;
     height: 60px;
     border-radius: 100%;

@@ -77,7 +77,7 @@ function NewsFeed() {
 
     return (
         <div className="page-container">
-            <div className="sidebar" style={{ zIndex: 1000 }}>
+            <div className="sidebar-container-styling">
                 <NewsSidebar onSearch={handleSearch} />
             </div>
             <div className="content pt-0">

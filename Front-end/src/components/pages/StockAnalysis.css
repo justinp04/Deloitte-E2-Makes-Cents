@@ -1,13 +1,13 @@
 /* StockAnalysis.js */
 .fixed-position {
     position: fixed;
-    background-color: white;
+    background-color: var(--background-color-light);
 }
 
 .blue-line {
     width: 100%;
     height: 1px;
-    background-color: #0085FF;
+    background-color: var(--mc-blue);
     border-radius: 5px;
 }
 
@@ -20,6 +20,13 @@
 .title-button-container {
     display: flex;
     align-items: center;
+}
+
+.stock-summary-container {
+    top: 0;
+    width: 100%; 
+    background-color: var(--background-color-light); 
+    z-index: 1000;
 }
 
 /* FavouriteButton.css */
@@ -41,7 +48,7 @@
 .chat-box {
     display: flex;
     align-items: flex-start;
-    margin: 10px 0;
+    margin: 10px 0; 
 }
 
 .user {
@@ -91,6 +98,14 @@
 }
 
 /* QueryInputBar.js */
+#query-bar-container {
+    position: 'fixed'; 
+    bottom: 0; 
+    width: '100%'; 
+    z-index: 1000; 
+    background-color: 'white';
+}
+
 .query-input-bar {
     position: fixed;
     bottom: 20px;

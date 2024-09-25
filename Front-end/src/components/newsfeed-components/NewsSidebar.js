@@ -71,14 +71,13 @@ const NewsSidebar = ({ onSearch }) => {
     const handleShowSidebar = () => setShowSidebar(true);
 
     return (
-        <>
+        <div className="">
             {/* Sidebar Toggle Button */}
             <Button
                 variant="light"
                 className="d-lg-none position-fixed"
-                style={{ marginTop: "85px", border: "none", background: "none", outline: "none" }}
-                onClick={handleShowSidebar}
-            >
+                style={{ marginTop: "80px", border: "none", background: "none", outline: "none" }}
+                onClick={handleShowSidebar}>
                 <FontAwesomeIcon icon={faBars} />
             </Button>
 
@@ -88,14 +87,13 @@ const NewsSidebar = ({ onSearch }) => {
                 onHide={handleCloseSidebar}
                 responsive="lg"
                 className="p-0"
-                style={{ width: '300px' }}
-            >
+                style={{ width: '300px' }}>
+
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>News Feed</Offcanvas.Title>
                 </Offcanvas.Header>
 
                 <Offcanvas.Body className="p-0 scrollable-sidebar">
-                        
                     <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar mb-5">
                         <SearchBar placeholder="Search a stock" onSearch={onSearch}/>
                         {/* Accordion with individual open/close state for each item */}
@@ -104,13 +102,11 @@ const NewsSidebar = ({ onSearch }) => {
                                 <Accordion.Item eventKey={key} key={key}>
                                     <Accordion.Header
                                         className=" pb-0 d-inline-flex justify-content-between align-items-center w-100"
-                                        onClick={() => handleToggleAccordion(key)} 
-                                    >
+                                        onClick={() => handleToggleAccordion(key)} >
                                         <FontAwesomeIcon
                                             id={`chevron-${key}`}
                                             icon={faChevronRight}
-                                            className={`chevron-icon ${expandedItems[key] ? 'rotate' : ''}`} 
-                                        />
+                                            className={`chevron-icon ${expandedItems[key] ? 'rotate' : ''}`} />
                                         <p className="my-0 ps-3 fw-bold">
                                             {index === 0 ? 'Current Investments' : index === 1 ? 'Following' : 'Search Result'}
                                         </p>
@@ -125,8 +121,7 @@ const NewsSidebar = ({ onSearch }) => {
                                                         key={company.id}
                                                         companyTitle={company.companyTitle}
                                                         onClick={() => console.log(`Clicked on ${company.companyTitle}`)}
-                                                        className="news-sidebar-card"
-                                                    />
+                                                        className="news-sidebar-card"/>
                                                 ))
                                             ) : index === 1 ? (
                                                 // Create cards for followed companies
@@ -153,7 +148,7 @@ const NewsSidebar = ({ onSearch }) => {
                     <AddButton />
                 </Offcanvas.Body>
             </Offcanvas>
-        </>
+        </div>
     );
 };
 
