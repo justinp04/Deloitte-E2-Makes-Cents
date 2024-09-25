@@ -84,6 +84,9 @@
     margin-top: 73px;
 }
 
+.sidebar-background-colour{
+        background-color: var(--background-color-light) !important;
+}
 .center-searchbar {
     display: flex;
     align-items: center;
@@ -94,8 +97,7 @@
 .fixed-searchbar {
     position: sticky; 
     top: 0;          
-    z-index: 1000;    
-    background-color: white; 
+    z-index: 1000;  
     width: 100%;     
 }
 
@@ -105,6 +107,10 @@
 
 .news-sidebar-card:hover {
     background-color: #dcdcdc; 
+}
+
+.news-sidebar-card:active {
+    background-color: var(--mc-green); 
 }
 
 .add-button {

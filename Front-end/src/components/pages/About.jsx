@@ -30,6 +30,10 @@ function About() {
 
     return (
         <div className="container text-center mb-3">
+            {/* <div className=" d-flex justify-content-center align-items-center">
+                <img src="../images/MCLogo.png" width="100rem" height="100rem" className='me-4 mb-3'/>
+                <h1 className="main-title">Makes Cents</h1>
+            </div> */}
             <h1 className="main-title">Makes Cents</h1>
             <h4 className="text-primary mb-3">Invest with Clarity, Confidence and Conviction</h4>
             <h6 className="my-5 mx-5 px-5">

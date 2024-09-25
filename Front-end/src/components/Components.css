@@ -136,6 +136,10 @@
     height: 36px;
 }
 
+.searchbar-container{
+    background-color: white;
+}
+
 /* Ensure no outline, border, or shadow is applied on focus */
 .rounded-input-group .form-control:focus {
     border: none;
@@ -166,7 +170,6 @@
     align-items: center;
     justify-content: center;
 } 
-
 
 /*********************************
 * TextInputBox.js

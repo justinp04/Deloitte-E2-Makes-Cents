@@ -52,19 +52,22 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                 </Offcanvas.Header>
 
                 <Offcanvas.Body className="p-0 scrollable-sidebar">
-                    <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar mb-5">
+                    <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar">
                         {/* Search bar for searching stocks */}
                         <div className="fixed-searchbar">
                             <SearchBar placeholder="Search a stock" onSearch={onSearch} className="mb-0"/>
                         </div>
 
                         {/* Accordion with individual open/close state for each item */}
-                        <Accordion defaultActiveKey={null} alwaysOpen className='mb-3'>
+                        <Accordion defaultActiveKey={null} alwaysOpen className='mb-3 sidebar-background-colour'>
                             {["0", "1"].map((key, index) => (
-                                <Accordion.Item eventKey={key} key={key}>
+                                <Accordion.Item eventKey={key} key={key} className='sidebar-background-colour'>
                                     <Accordion.Header
-                                        className="pb-0 d-inline-flex justify-content-between align-items-center w-100"
+                                        className=" sidebar-background-colour pb-0 d-inline-flex justify-content-between align-items-center w-100"
                                         onClick={() => handleToggleAccordion(key)}
+                                        style={{
+                                            backgroundColor:"blue"
+                                        }}
                                     >
                                         <FontAwesomeIcon
                                             id={`chevron-${key}`}
@@ -77,7 +80,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                                     </Accordion.Header>
                                     {/* Show or hide based on expandedItems */}
                                     {expandedItems[key] && (
-                                        <Accordion.Body className="pe-1">
+                                        <Accordion.Body>
                                             {index === 0 ? (
                                                 // Create cards for current investment companies
                                                 currentInvestmentCompanies.map((company) => (

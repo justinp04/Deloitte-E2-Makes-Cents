@@ -9,7 +9,7 @@ const NewsSidebarCard = ({ companyTitle, onClick, className }) => {
             className={`news-sidebar-card ${className}`}
         >
             <Card.Body 
-                // className='fw-bold' 
+                className='fw-bold' 
                 style={{ fontSize: '70%', textTransform: 'uppercase' }}
             >
                 {companyTitle}
