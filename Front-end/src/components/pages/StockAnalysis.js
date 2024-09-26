@@ -54,7 +54,7 @@ function StockAnalysis() {
             const response = await fetch('http://localhost:4000/chatbot/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: newMessage, stockName: stockName})
+                body: JSON.stringify({ message: newMessage })
             });
 
             const data = await response.json();
@@ -154,7 +154,7 @@ function StockAnalysis() {
                     toggleSidebar={toggleSidebar}
                 />
             </div>
-            <div className={`content ${sidebarOpen ? 'shift-content' : ''}`}  >
+            <div className={`content p-0 ${sidebarOpen ? 'shift-content' : ''}`}  >
                 <div
                     className="position-sticky stock-summary-container"
                     style={{ top: '0', width: '100%', backgroundColor: 'none' }}>
