@@ -4,6 +4,7 @@ from langchain.schema import Document
 from qdrant_client.models import PointStruct
 from load_clients import load_openai_client, load_qdrant_client, load_blob_client
 from user_queries import normalise_vector
+import numpy as np 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
