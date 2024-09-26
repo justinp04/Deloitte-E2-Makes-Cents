@@ -1,5 +1,5 @@
 import tiktoken
-from user_queries import query_qdrant, get_llm_response
+from user_queries import query_qdrant, get_llm_response, qquery_qdrant, scroll_for_stock
 from prompt_engineering import chatbot_experience, chatbot_income, chatbot_invest_length, chatbot_risk, chatbot_loss, chatbot_invest_type
 from summary import get_stock_name
 
@@ -25,7 +25,7 @@ def main():
     }
 
     max_response_tokens = 200 
-    token_limit = 1000
+    token_limit = 2000
     conversation = []
     conversation.append(system_message)
 
@@ -35,10 +35,15 @@ def main():
     while True:
         user_input = input("Q:")
         conversation.append({"role": "user", "content": user_input})
+
+        print("1. The conversation variable: ", conversation)
+
         stock_name = get_stock_name()
 
-        documents = query_qdrant(user_input, stock_name) #retreive relevant docs
+        documents = scroll_for_stock(stock_name)
+        #documents = qquery_qdrant(user_input, stock_name) #retreive relevant docs
         context = "\n".join([doc['content'] for doc in documents])
+        #context = "\n".join(documents)
 
         conversation.append({"role": "system", "content": f"Context:\n{context}"})
         conv_history_tokens = num_tokens_from_messages(conversation)
@@ -47,7 +52,12 @@ def main():
             del conversation[1]
             conv_history_tokens = num_tokens_from_messages(conversation)
 
+        print("2. The conversation variable: ", conversation)
+
         response = get_llm_response(conversation, max_response_tokens)
+
+        # print("The response object is: ", response.choices[0])
+        
         assistant_reply = response.choices[0].message.content
         conversation.append({"role": "assistant", "content": assistant_reply})
         print("\n" + assistant_reply + "\n")

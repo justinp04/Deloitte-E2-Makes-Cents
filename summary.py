@@ -1,5 +1,5 @@
 from prompt_engineering import response_complexity, user_income, user_horizon, user_risk, user_loss, user_preference
-from user_queries import query_qdrant, get_llm_response, generate_references
+from user_queries import query_qdrant, get_llm_response, generate_references, qquery_qdrant, scroll_for_stock, vector_similarity_search
 from load_clients import load_blob_client
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -18,13 +18,20 @@ def main():
     #stock_name = input("") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
     stock_name = get_stock_name()
 
+
     if not any(stock_name in blob_name for blob_name in blob_names):
         print(f"The stock '{stock_name}' cannot be analysed at this time!")
         return
 
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
 
-    documents = query_qdrant(user_query, stock_name)
+    #scroll_results = scroll_for_stock(stock_name)
+    documents = scroll_for_stock(stock_name)
+    #documents = vector_similarity_search(user_query, scroll_results)
+    #documents = qquery_qdrant(user_query, stock_name)
+
+    #documents = query_qdrant(user_query, stock_name)
+    #print(documents)
     answer = generate_response(documents, user_query)
     references = generate_references(documents)
     
@@ -40,7 +47,7 @@ PURPOSE: gets the stock name from the user input
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def get_stock_name():
     #stock_name = input("Input: ") #THIS NEEDS TO BE TAKEN FROM THE USER INPUT ON THE FRONT END SEARCH BAR!
-    stock_name = "ADH" #THIS IS JUST A TEST FOR CHATBOT, DELETE THIS LINE WHEN HOOKED UP TO FRONT END
+    stock_name = "1AE" #THIS IS JUST A TEST FOR CHATBOT, DELETE THIS LINE WHEN HOOKED UP TO FRONT END
     return stock_name
 
 
@@ -53,6 +60,7 @@ PURPOSE: generates the customised sentiment summary
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def generate_response(documents, user_query):
     context = "\n".join([doc['content'] for doc in documents])
+    #context = "\n".join(documents)
     #print(context)
 
     messages = [
