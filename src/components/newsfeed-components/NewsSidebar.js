@@ -1,9 +1,4 @@
-/************************************************************************************************
- * Purpose: Sidebar for News Feed Page
- * Fix:
- *  - Colour
- ************************************************************************************************/
-import React, { useState } from 'react';
+import React, { forwardRef } from 'react';
 import { Dropdown, Nav, Accordion, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -14,27 +9,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-const NewsSidebar = () => {
-    const [expandedItem, setExpandedItem] = useState(false);
-
-    const handleToggle = (eventKey) => {
-        setExpandedItem(expandedItem === eventKey ? null : eventKey);
-    };
-
+const NewsSidebar = forwardRef(({ expandedItem, onToggle }, ref) => {
     return (
         <div className="flex flex-direction-column justify-content-between p-0 mt-4">
             <Container fluid className="m-0 p-0">
                 <SearchBar placeholder="Search a stock" />
-                <Accordion>
-                    <Accordion.Item eventKey="0" onClick={() => handleToggle("0")}>
+                <Accordion activeKey={expandedItem}>
+                    <Accordion.Item eventKey="0" id="stock-recommendations-section" ref={ref} onClick={() => onToggle("0")}>
                         <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "0" ? 'focus' : ''}`}>
                             <FontAwesomeIcon
                                 id="stockRecommendations"
                                 icon={faChevronRight}
-                                className={`chevron-icon ${expandedItem === "0" ? 'rotate' : ''}`}/>
+                                className={`chevron-icon ${expandedItem === "0" ? 'rotate' : ''}`} />
                             <p className="my-0 ps-3 fw-bold">Stock Recommendations</p>
                         </Accordion.Header>
-                        <Accordion.Body className="ps-4 pe-1">
+                        <Accordion.Body 
+                            id="stock-news"
+                            className="ps-4 pe-1">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -44,12 +35,12 @@ const NewsSidebar = () => {
                             culpa qui officia deserunt mollit anim id est laborum.
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="1" onClick={() => handleToggle("1")}>
+                    <Accordion.Item eventKey="1" onClick={() => onToggle("1")}>
                         <Accordion.Header className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === "1" ? 'focus' : ''}`}>
                             <FontAwesomeIcon
-                                id="stockRecommendations"
+                                id="following"
                                 icon={faChevronRight}
-                                className={`chevron-icon ${expandedItem === "1" ? 'rotate' : ''}`}/>
+                                className={`chevron-icon ${expandedItem === "1" ? 'rotate' : ''}`} />
                             <p className="my-0 ps-3 fw-bold">Following</p>
                         </Accordion.Header>
                         <Accordion.Body className="ps-4 pe-1">
@@ -63,7 +54,7 @@ const NewsSidebar = () => {
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
-            </Container >
+            </Container>
 
             <Dropdown className="me-3 ms-3 add-button" style={{ border: 'none' }}>
                 <Dropdown.Toggle
@@ -71,13 +62,14 @@ const NewsSidebar = () => {
                     className="fw-bold p-0 no-caret"
                     style={{ border: 'none', backgroundColor: 'transparent' }}>
                     <FontAwesomeIcon
+                        id = "plus-icon-news"
                         icon={faPlus}
                         style={{
                             height: '2rem',
                             width: '2rem',
                             color: 'white'
                         }}
-                        className="align-items-center"/>
+                        className="align-items-center" />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                     <Dropdown.Item as={Link} to="">
@@ -91,7 +83,8 @@ const NewsSidebar = () => {
                     </Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
-        </div >
+        </div>
     );
-}
+});
+
 export default NewsSidebar;

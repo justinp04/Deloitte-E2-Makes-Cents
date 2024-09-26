@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../Components.css';
+import { useNavigate } from 'react-router-dom';
 
 function TutorialOverlay({ step, onNext, onClose }) {
     const [elementRect, setElementRect] = useState(null);
@@ -10,6 +11,8 @@ function TutorialOverlay({ step, onNext, onClose }) {
         const { innerWidth: width, innerHeight: height } = window;
         return { width, height };
     }
+
+    const navigate = useNavigate();
 
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
@@ -83,6 +86,21 @@ function TutorialOverlay({ step, onNext, onClose }) {
             shape: 'roundedRect',
             position: 'bottom', 
         }, 
+        {
+            // Step 10
+            message: "<span class='step-title'>Company Stock News</span><br /><span class='step-description'>Click here to view personalised news insights on your favourited stocks.</span>",
+            selector: '#stock-news', // Update the selector to match an element in NewsFeed.js
+            shape: 'roundedRect',
+            position: 'bottom', 
+        }, 
+        {
+            // Step 11
+            message: "<span class='step-title'>Add New Stock</span><br /><span class='step-description'>Click here to add a new stock to the current investments or following list to view its news insights.</span>",
+            selector: '#plus-icon-news', // Update the selector to match an element in NewsFeed.js
+            shape: 'circle',
+            position: 'god_help_me', 
+            padding: 10
+        }, 
     ];
 
     const currentStep = steps[step - 1];
@@ -140,11 +158,18 @@ function TutorialOverlay({ step, onNext, onClose }) {
     const boxPosition = calculateTextBoxPosition(elementRect, position, padding);
 
     const handleNext = () => {
-        setFadeOut(true);
-        setTimeout(() => {
-            onNext();
-            setFadeOut(false);
-        }, 500); // fade out duration
+        if (step === 9) {
+            // Set tutorial continuation flags
+            localStorage.setItem('showTutorial', 'true');
+            localStorage.setItem('tutorialStep', '10');
+            navigate('/news-feed');
+        } else {
+            setFadeOut(true);
+            setTimeout(() => {
+                onNext();
+                setFadeOut(false);
+            }, 500); // fade out duration
+        }
     };
 
     const handleClose = () => {
@@ -193,6 +218,10 @@ function calculateTextBoxPosition(elementRect, position, padding = 0) {
             top += elementRect.height + padding + 15;
             left += elementRect.width / 2 - 120;
             break;
+        case 'god_help_me':
+            left += elementRect.width + padding - 140;
+            top += elementRect.height / 2 - 240;
+            break;  
         default:
             top += elementRect.height + padding;
             left += elementRect.width / 2;

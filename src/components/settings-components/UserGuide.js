@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const UserGuide = () => {
 
     const navigate = useNavigate();
-    
+
     const activateTutorial = () => {
         localStorage.setItem('showTutorial', 'true'); // Set flag in localStorage
         navigate('/stock-analysis');
