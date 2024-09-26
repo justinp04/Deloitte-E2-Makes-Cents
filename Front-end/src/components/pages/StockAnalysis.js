@@ -54,7 +54,7 @@ function StockAnalysis() {
             const response = await fetch('http://localhost:4000/chatbot/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: newMessage })
+                body: JSON.stringify({ message: newMessage, stockName: stockName})
             });
 
             const data = await response.json();

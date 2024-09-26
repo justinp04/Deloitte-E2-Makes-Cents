@@ -47,6 +47,8 @@ PURPOSE: uses semantic based searching to return
         relevant documents from Qdrant
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def scroll_for_stock(stock_name):
+    # print(stock_name)
+
     source_filter = Filter( #create filter based on source name
         must=[
             FieldCondition(

@@ -16,6 +16,7 @@ const router = express.Router();
 // Define the /chat route to handle chatbot requests
 router.post('/chat', (req, res) => {
     const userMessage = req.body.message;
+    const stockName = req.body.stockName;
 
     if (!userMessage) {
         console.error('No user message received');
@@ -27,7 +28,7 @@ router.post('/chat', (req, res) => {
     // Call the Python script and pass the user message
     const pythonExecutable = 'python3';
     const pythonScriptPath = path.join(__dirname, '../../Rag/chatbot.py');
-    const pythonProcess = spawn(pythonExecutable, [pythonScriptPath, userMessage]);
+    const pythonProcess = spawn(pythonExecutable, [pythonScriptPath, userMessage, stockName]);
     
     // Collect the Python script output
     let responseData = '';

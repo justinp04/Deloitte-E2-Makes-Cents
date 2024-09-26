@@ -5,7 +5,7 @@ from summary import get_stock_name
 import sys, requests, json
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-Authors:    Gwyneth Gardiner, 
+Authors:    Gwyneth Gardiner, Thi Van Anna Duong, Justin Pan
 Purpose:    Deloitte E2 Capstone Project - Makes Cents
             This file handles the functionality for the
             chatbot feature with question suggestion feature added
@@ -21,12 +21,14 @@ def main():
     # Check if command-line input is provided
     if len(sys.argv) > 1:
         user_input = sys.argv[1]  # Get the user message from the command-line argument
+        # Create another argument for the stock ticker name
+        stock_name = sys.argv[2]
     else:
         initial_question = generate_initial_question()  # Suggest an initial question
         # print(f"Gerry suggests you ask: {initial_question}\n")
         user_input = input("Q:")  # Get input from the user
 
-    stock_name = extract_stock_name(user_input)  # Extract stock name from the user input if available
+    # stock_name = extract_stock_name(user_input)  # Extract stock name from the user input if available
     
     # Construct the system message
     system_message = {
@@ -74,6 +76,8 @@ def main():
     follow_up_question = generate_follow_up_question(user_input, assistant_reply)
     # Create the response as JSON with separate fields for response and follow-up question
     result = {
+        "stock_name": stock_name,
+        "user_input_object": user_input,
         "response": assistant_reply.strip(),  # Main response from the assistant
         "followUpSuggestions": [follow_up_question.strip()]  # Add follow-up question as a suggestion
     }
