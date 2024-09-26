@@ -1,21 +1,11 @@
-
-/************************************************************************************************
- * Purpose: About Page - Information on application
- * Fix: 
- *  - Nav bar gets smaller on this page for some reason
- *  - Remove create account button when user is signed in
- ************************************************************************************************/
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useMsal } from "@azure/msal-react";
 import { loginRequest } from "../../authentication/authConfig";
-
 import './About.css';
 
-function About() 
-{
-    // Handling user login logic
-    const { instance } = useMsal();
+function About() {
+    // handling user login logic
+    const { instance, accounts } = useMsal();
 
     const handleLogin = () => {
         instance.loginPopup(loginRequest).catch((e) => {
@@ -23,14 +13,22 @@ function About()
         });
     };
 
+    // state to track if user is signed in
+    const [isSignedIn, setIsSignedIn] = useState(false);
+
+    // update isSignedIn whenever accounts change
+    useEffect(() => {
+        setIsSignedIn(accounts.length > 0);
+    }, [accounts]);
+
     return (
         <div className="container">
             <div className="text-center">
                 <h1 className="main-title">Makes Cents</h1>
                 <h4 className="text-primary mb-3">Invest with Clarity, Confidence and Conviction</h4>
-                <h5 className="my-4 mx-5" >
+                <h5 className="my-4 mx-5">
                     We get it. Investing can feel overwhelming, but it doesn't have to be.
-                    Our cutting-edge solution utilises generative AI to deliver personalised investment
+                    Our cutting-edge solution utilizes generative AI to deliver personalized investment
                     recommendations that fit YOUR goals and preferences. With our platform, you'll
                     ditch the guesswork and trade uncertainty for clarity. Join us now and unlock the
                     power of informed investing!
@@ -40,7 +38,7 @@ function About()
                     <div className="col-md-4 justify-content-center">
                         <div className="feature-box">
                             <img src="/images/increase.jpg" alt="Feature Icon" />
-                            <p>Analysing past stock performance to present accurate futures</p>
+                            <p>Analyzing past stock performance to present accurate futures</p>
                         </div>
                         <div className="feature-box">
                             <img src="/images/lightbulb.jpg" alt="Feature Icon" />
@@ -59,9 +57,12 @@ function About()
                     </div>
                 </div>
 
-                <button className="green-btn" onClick={() => handleLogin()}>
-                    Create An Account
-                </button>
+                {/* conditionally render "Create An Account button" if user is not signed in */}
+                {!isSignedIn && (
+                    <button className="green-btn" onClick={handleLogin}>
+                        Create An Account
+                    </button>
+                )}
             </div>
         </div>
     );

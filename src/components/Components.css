@@ -2,8 +2,7 @@
 * TutorialOverlay.js
 **********************************/
 
-/* Dimming effect */
-.dimmed-background {
+/*.dimmed-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,9 +12,8 @@
   z-index: 1999;
   opacity: 1;
   animation: fadeIn 0.5s ease-in-out;
-}
+}*/
 
-/* Spotlight circle */
 .spotlight-circle {
   position: absolute;
   background: transparent;
@@ -24,9 +22,10 @@
     0 0 0 3px rgba(255, 255, 255, 1);
   z-index: 2000;
   animation: pulse 2s infinite;
+  transition: top 0.5s ease, left 0.5s ease, width 0.5s ease,
+              height 0.5s ease, border-radius 0.5s ease;
 }
 
-/* Tutorial box */
 .tutorial-box {
   position: absolute;
   background-color: rgba(201, 229, 255, 1);
@@ -39,27 +38,24 @@
   text-align: left;
   opacity: 1;
   animation: slideIn 0.5s ease-out;
+  transition: top 0.5s ease, left 0.5s ease, opacity 0.5s ease;
 }
 
-/* Fade-in animation */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Fade-out animation */
 @keyframes fadeOut {
   from { opacity: 1; }
   to { opacity: 0; }
 }
 
-/* Spotlight pulsing animation */
 @keyframes pulse {
   0%, 100% { box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5), 0 0 0 3px rgba(255, 255, 255, 1); }
   50% { box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5), 0 0 0 6px rgba(255, 255, 255, 1); }
 }
 
-/* Slide-in animation for tutorial box */
 @keyframes slideIn {
   from {
     transform: translateY(20px);
@@ -71,14 +67,12 @@
   }
 }
 
-/* Fade-out effect when closing */
 .tutorial-overlay-container.fade-out .dimmed-background,
 .tutorial-overlay-container.fade-out .tutorial-box,
 .tutorial-overlay-container.fade-out .spotlight-circle {
   animation: fadeOut 0.5s ease-in-out forwards;
 }
 
-/* Button styles */
 .tutorial-box button {
   font-weight: bold;
   color: black;
@@ -107,7 +101,6 @@
   background-color: darkgrey;
 }
 
-/* Step title and description */
 .step-title {
   font-size: 16px;
   font-weight: bold;
@@ -118,7 +111,14 @@
   font-size: 14px;
 }
 
+.spotlight-circle {
+  transition: top 0.5s ease, left 0.5s ease, width 0.5s ease,
+              height 0.5s ease, border-radius 0.5s ease;
+}
 
+.tutorial-box {
+  transition: top 0.5s ease, left 0.5s ease, opacity 0.5s ease;
+}
 
 
 /*********************************

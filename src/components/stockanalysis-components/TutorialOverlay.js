@@ -6,7 +6,6 @@ function TutorialOverlay({ step, onNext, onClose }) {
     const [elementRect, setElementRect] = useState(null);
     const [fadeOut, setFadeOut] = useState(false);
 
-    // for responsiveness 
     function getWindowDimensions() {
         const { innerWidth: width, innerHeight: height } = window;
         return { width, height };
@@ -17,9 +16,6 @@ function TutorialOverlay({ step, onNext, onClose }) {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
     const steps = [
-
-        // position for text box can be right left top bottom
-
         {
             // Step 1
             message: "<span class='step-title'>Settings</span><br /><span class='step-description'>Click here to edit your settings.</span>",
@@ -46,7 +42,7 @@ function TutorialOverlay({ step, onNext, onClose }) {
             // Step 4
             message: "<span class='step-title'>Detailed Summary</span><br /><span class='step-description'>Toggle on for a detailed summary view.</span>",
             selector: '#detailed-summary-switch', 
-            shape: 'roundedRect',
+            shape: 'sigma',
             position: 'bottom', 
         },
         {
@@ -89,16 +85,16 @@ function TutorialOverlay({ step, onNext, onClose }) {
         {
             // Step 10
             message: "<span class='step-title'>Company Stock News</span><br /><span class='step-description'>Click here to view personalised news insights on your favourited stocks.</span>",
-            selector: '#stock-news', // Update the selector to match an element in NewsFeed.js
+            selector: '#stock-news',
             shape: 'roundedRect',
             position: 'bottom', 
         }, 
         {
             // Step 11
             message: "<span class='step-title'>Add New Stock</span><br /><span class='step-description'>Click here to add a new stock to the current investments or following list to view its news insights.</span>",
-            selector: '#plus-icon-news', // Update the selector to match an element in NewsFeed.js
+            selector: '#plus-icon-news', 
             shape: 'circle',
-            position: 'god_help_me', 
+            position: 'special_step', 
             padding: 10
         }, 
     ];
@@ -134,41 +130,47 @@ function TutorialOverlay({ step, onNext, onClose }) {
 
     const { message, shape, position, padding = 0 } = currentStep;
 
-    // fixes the spotlight from being an oval
     const spotlightDiameter =
         shape === 'circle'
             ? Math.min(elementRect.width, elementRect.height)
             : elementRect.width;
-
-    // for either circle or rounded rectangle spotlight        
+       
+    // spotlight style can be either:
+    // circle
+    // sigma (which is for the detailed summary button, because the component didn't properly line up)
+    // and rounded rectangle, which can be used by having the shape be anything other than circle and sigma        
     const spotlightStyle = {
-        width:
-            shape === 'circle'
-                ? `${spotlightDiameter + padding * 2}px`
-                : `${elementRect.width + padding * 2}px`,
-        height:
-            shape === 'circle'
-                ? `${spotlightDiameter + padding * 2}px`
-                : `${elementRect.height + padding * 2}px`,
+        width: (() => {
+            if (shape === 'circle') {
+                return `${spotlightDiameter + padding * 2}px`;
+            } else if (shape === 'sigma') {
+                return `${elementRect.width + padding * 2 + 40}px`;
+            } else {
+                return `${elementRect.width + padding * 2}px`;
+            }
+        })(),
+        height: (() => {
+            if (shape === 'circle') {
+                return `${spotlightDiameter + padding * 2}px`;
+            } else {
+                return `${elementRect.height + padding * 2}px`;
+            }
+        })(),
         top: `${elementRect.top + window.scrollY - padding}px`,
         left: `${elementRect.left + window.scrollX - padding}px`,
-        borderRadius: shape === 'circle' ? '50%' : '10px',
+        borderRadius: shape === 'circle' ? '50%' : '30px',
     };
-
+                
+    
     const boxPosition = calculateTextBoxPosition(elementRect, position, padding);
 
     const handleNext = () => {
         if (step === 9) {
-            // Set tutorial continuation flags
             localStorage.setItem('showTutorial', 'true');
             localStorage.setItem('tutorialStep', '10');
             navigate('/news-feed');
         } else {
-            setFadeOut(true);
-            setTimeout(() => {
-                onNext();
-                setFadeOut(false);
-            }, 500); // fade out duration
+            onNext();
         }
     };
 
@@ -218,7 +220,9 @@ function calculateTextBoxPosition(elementRect, position, padding = 0) {
             top += elementRect.height + padding + 15;
             left += elementRect.width / 2 - 120;
             break;
-        case 'god_help_me':
+        // this is for the very last step, because the text box didn't work for any
+        // of the other cases    
+        case 'special_step':
             left += elementRect.width + padding - 140;
             top += elementRect.height / 2 - 240;
             break;  

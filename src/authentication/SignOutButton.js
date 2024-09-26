@@ -1,7 +1,5 @@
 import React from "react";
 import { useMsal } from "@azure/msal-react";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import Dropdown from "react-bootstrap/Dropdown";
 
 /**
  * Renders a sign out button 
@@ -9,7 +7,11 @@ import Dropdown from "react-bootstrap/Dropdown";
 export const SignOutButton = () => {
   const { instance } = useMsal();
 
-  const handleLogout = (logoutType) => {
+  const handleLogout = () => {
+      // set 'isSignedIn' flag to false in local storage
+      localStorage.setItem('isSignedIn', 'false');
+
+      // proceed with Azure AD sign-out
       instance.logoutPopup({
         postLogoutRedirectUri: "/",
         mainWindowRedirectUri: "/",
@@ -20,7 +22,7 @@ export const SignOutButton = () => {
       <button
           className="green-btn"
           style={{width: '150px'}}
-          onClick={() => handleLogout()}
+          onClick={handleLogout}
       >
         Sign Out
       </button>
