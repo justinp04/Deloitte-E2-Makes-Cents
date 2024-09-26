@@ -1,5 +1,5 @@
 import tiktoken
-from user_queries import query_qdrant, get_llm_response
+from user_queries import query_qdrant, get_llm_response, scroll_for_stock
 from prompt_engineering import chatbot_experience, chatbot_income, chatbot_invest_length, chatbot_risk, chatbot_loss, chatbot_invest_type
 from summary import get_stock_name
 import sys, requests, json
@@ -41,7 +41,7 @@ def main():
     }
 
     max_response_tokens = 200 
-    token_limit = 1000  # Reduced token limit
+    token_limit = 2000  # Reduced token limit
     conversation = [system_message]
 
     # Append the user's input to the conversation
@@ -51,7 +51,8 @@ def main():
     user_input_with_context = f"{user_input}\nProvide answer about {stock_name if stock_name else 'the queried stock'}"
 
     # Query Qdrant for relevant documents using the user input and stock name context
-    documents = query_qdrant(user_input_with_context, stock_name if stock_name else 'the queried stock')
+    #documents = query_qdrant(user_input_with_context, stock_name if stock_name else 'the queried stock') #this line not currently being used for scroll
+    documents = scroll_for_stock(stock_name)
     context = "\n".join([doc['content'] for doc in documents])
 
     # Append the context to the conversation

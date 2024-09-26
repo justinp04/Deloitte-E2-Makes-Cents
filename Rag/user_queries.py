@@ -1,6 +1,7 @@
 import os
 from qdrant_client.models import ScoredPoint
 from load_clients import load_openai_client, load_qdrant_client, load_deployment_name
+from qdrant_client.models import ScoredPoint, Filter, Match, FieldCondition, MatchText
 import numpy as np
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -37,6 +38,43 @@ def get_query_embedding(query_text):
         print(f"Failed to get data embeddings: {e}")
         raise
 
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: scroll_for_stock
+IMPORT: stock_name
+EXPORT: final_documents
+PURPOSE: uses semantic based searching to return 
+        relevant documents from Qdrant
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def scroll_for_stock(stock_name):
+    source_filter = Filter( #create filter based on source name
+        must=[
+            FieldCondition(
+                key="source",
+                match=MatchText(text=stock_name)
+            )
+        ]
+    )
+    
+    scroll_result, next_page = load_qdrant_client().scroll( #use scroll to retrieve all matching vectors
+        collection_name="E2cluster1",
+        scroll_filter=source_filter,
+        limit=100  #can adjust - keep high to avoid missing points 
+    )
+
+    final_documents = []
+    for point in scroll_result:
+        document = {
+            'content': point.payload.get('content', 'No content available'),
+            'metadata': {
+                'source': point.payload.get('source', 'No source available'),
+                'url': point.payload.get('url', 'No URL available')
+            }
+        }
+        final_documents.append(document)  # This should be inside the loop
+    
+    return final_documents
+    
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: query_qdrant

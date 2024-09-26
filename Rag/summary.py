@@ -1,7 +1,8 @@
 from prompt_engineering import response_complexity, user_income, user_horizon, user_risk, user_loss, user_preference
-from user_queries import query_qdrant, get_llm_response, generate_references
+from user_queries import query_qdrant, get_llm_response, generate_references, scroll_for_stock
 import sys
 import json, re
+from load_clients import load_blob_client
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -16,9 +17,17 @@ def main():
     stock_name = sys.argv[1]
     # response_depth = sys.argv[2]
 
+    container_client = load_blob_client()
+    blob_names = [blob.name for blob in container_client.list_blobs()]
+
+    if not any(stock_name in blob_name for blob_name in blob_names):
+        print(f"The stock '{stock_name}' cannot be analysed at this time!")
+        return
+
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
     
-    documents = query_qdrant(user_query, stock_name);
+    documents = scroll_for_stock(stock_name)
+    #documents = query_qdrant(user_query, stock_name);
     #print(documents) #can comment this in for debugging purposes
 
     # Generate both quick and detailed summaries

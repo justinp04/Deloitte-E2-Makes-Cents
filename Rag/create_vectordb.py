@@ -3,6 +3,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 from qdrant_client.models import PointStruct
 from load_clients import load_openai_client, load_qdrant_client, load_blob_client
+from user_queries import normalise_vector
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -68,7 +69,7 @@ PURPOSE: chunks the loaded documents into chunks
 def create_chunks(docs: list[Document]):
     try:
         textSplitter = RecursiveCharacterTextSplitter(
-            chunk_size=750, #can adjust this as needed
+            chunk_size=4000, #can adjust this as needed
             chunk_overlap=20,
             length_function=len,
             add_start_index=True,
@@ -94,8 +95,8 @@ def get_data_embeddings(chunk_texts):
             input=chunk_texts
         )
         embeddings = [embedding_object.embedding for embedding_object in embeddings_response.data]
-        normalized_embeddings = [normalise_vector(np.array(embedding)) for embedding in embeddings] #normalise embeddings!!
-        return normalized_embeddings
+        normalised_embeddings = [normalise_vector(np.array(embedding)) for embedding in embeddings] #normalise embeddings!!
+        return normalised_embeddings
     except Exception as e:
         print(f"Failed to get data embeddings: {e}")
         raise
