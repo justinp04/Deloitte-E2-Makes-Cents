@@ -52,7 +52,8 @@ def main():
 
     # Query Qdrant for relevant documents using the user input and stock name context
     #documents = query_qdrant(user_input_with_context, stock_name if stock_name else 'the queried stock') #this line not currently being used for scroll
-    documents = scroll_for_stock(stock_name)
+    documents = scroll_for_stock(stock_name if stock_name else 'the queried stock')
+    #documents = scroll_for_stock(stock_name)
     context = "\n".join([doc['content'] for doc in documents])
 
     # Append the context to the conversation
