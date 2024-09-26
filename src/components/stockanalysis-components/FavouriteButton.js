@@ -1,13 +1,13 @@
 /************************************************************************************************
  * Purpose: Favourites button in the shape of a star
- * Fix: 
+ * Fix: Added id prop and assigned it to the button element
  ************************************************************************************************/
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faCheck } from '@fortawesome/free-solid-svg-icons';
 import '../pages/StockAnalysis.css';
 
-function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavourited }) {
+function FavouriteButton({ id, companyTitle, onFavourite, onRemoveFavourite, isFavourited }) {
     const [isFav, setIsFav] = useState(isFavourited);
     const [iconClass, setIconClass] = useState('fav-icon');
 
@@ -15,7 +15,6 @@ function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavou
         setIsFav(isFavourited);
     }, [isFavourited]);
 
-    // Change icon and also adds transition
     const toggleFavourite = () => {
         setIconClass('fav-icon fav-icon-leave');
 
@@ -41,6 +40,7 @@ function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavou
 
     return (
         <button 
+            id={id}  
             className='border-no-outline' 
             onClick={toggleFavourite}
             style={{ background: 'none', border: 'none', padding: 0 }}
@@ -55,4 +55,3 @@ function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavou
 }
 
 export default FavouriteButton;
-

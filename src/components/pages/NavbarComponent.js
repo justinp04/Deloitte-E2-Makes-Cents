@@ -41,16 +41,29 @@ function NavbarComponent()
                         {isAuthenticated ? (
                             <>
                                 {/* Stock Analysis link */}
-                                <Nav.Link as={Link} to="/stock-analysis" className="fw-bold me-3 ms-3">
+                                <Nav.Link 
+                                    as={Link} 
+                                    to="/stock-analysis" 
+                                    id = "stock-analysis-button"
+                                    className="fw-bold me-3 ms-3">
                                     Stock Analysis
                                 </Nav.Link>
                                 {/* News Feed link */}
-                                <Nav.Link as={Link} to="/news-feed" className="fw-bold me-3 ms-3">
+                                <Nav.Link 
+                                    as={Link} 
+                                    to="/news-feed" 
+                                    id = "news-feed-button"
+                                    className="fw-bold me-3 ms-3"
+                                >
                                     News Feed
                                 </Nav.Link>
                                 {/* Notifications link */}
                                 <Dropdown align="end" className="me-3 ms-3">
-                                    <Dropdown.Toggle aa={Nav.Link} className='fw-bold p-0' style={{ border: 'none', backgroundColor: 'transparent' }}>
+                                    <Dropdown.Toggle 
+                                        aa={Nav.Link} 
+                                        id = "notifications-button"
+                                        className='fw-bold p-0' 
+                                        style={{ border: 'none', backgroundColor: 'transparent' }}>
                                         <FontAwesomeIcon icon={faBell} size="xl" style={{ color: '#555' }} />
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>
@@ -61,7 +74,11 @@ function NavbarComponent()
                                 </Dropdown>
                                 {/* Settings link */}
                                 <Dropdown align="end" className="me-3 ms-3">
-                                    <Dropdown.Toggle aa={Nav.Link} className='fw-bold p-0' style={{ border: 'none', backgroundColor: 'transparent' }}>
+                                    <Dropdown.Toggle 
+                                        aa={Nav.Link} 
+                                        id="settings-button"
+                                        className='fw-bold p-0' 
+                                        style={{ border: 'none', backgroundColor: 'transparent' }}>
                                         <img src="./images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="60" height="60" />
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>

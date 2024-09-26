@@ -1,12 +1,12 @@
 /************************************************************************************************
  * Purpose: Card for companies that will be added to stock analysis sidebar
- * Fix: 
+ * Fix: Added id prop to the main <div> element
  ************************************************************************************************/
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import FavouriteButton from './FavouriteButton';
 
-const SASidebarCard = ({ companyTitle, status = "Analyse", onClick, onFavourite }) => {
+const SASidebarCard = ({ id, companyTitle, status = "Analyse", onClick, onFavourite, statusId }) => {
     const statusStyles = {
         Analyse: { backgroundColor: '#000000', color: '#FFFFFF' },
         Analysing: { backgroundColor: '#9747FF', color: '#FFFFFF' },
@@ -15,6 +15,7 @@ const SASidebarCard = ({ companyTitle, status = "Analyse", onClick, onFavourite 
 
     return (
         <Card
+            id={id} 
             style={{ cursor: 'pointer', backgroundColor: '#FFFFFF', borderRadius: '0', border: 'none' }}
             onClick={onClick}
         >
@@ -26,6 +27,7 @@ const SASidebarCard = ({ companyTitle, status = "Analyse", onClick, onFavourite 
                         onFavourite={onFavourite}
                     />
                     <Button
+                        id={statusId}  // Apply the statusId here
                         className="btn-sm ms-2"
                         onClick={(e) => {
                             e.stopPropagation();

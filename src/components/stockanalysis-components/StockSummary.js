@@ -1,6 +1,6 @@
 /************************************************************************************************
  * Purpose: Summary portion on the top of content page for stock in 'Stock Analysis' page
- * Fix: 
+ * Fix: Added id prop to the FavouriteButton and assigned it to the button
  ************************************************************************************************/
 import React, { useState } from 'react';
 import { Accordion } from 'react-bootstrap';
@@ -47,29 +47,33 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
 
     return (
         <div className="toggle-list-container">
-            {/* Data */}
-            
-            <div className="me-5 d-flex w-100 justify-content-between" style={{}}>
+            {/* Header Section with Title, Favourite Button, and Toggle Switch */}
+            <div className="me-5 d-flex w-100 justify-content-between">
                 <div className='d-flex flex-row align-items-center'>
                     <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{companyTitle}</h5>
-                        <FavouriteButton
-                            companyTitle={companyTitle}
-                            isFavourited={isFavourited}
-                            onFavourite={addFavourite}
-                            onRemoveFavourite={removeFavourite}
-                            style={{ marginRight: '20px' }} />
+                    <FavouriteButton
+                        companyTitle={companyTitle}
+                        isFavourited={isFavourited}
+                        id="favorites-button"  // Added id here
+                        onFavourite={addFavourite}
+                        onRemoveFavourite={removeFavourite}
+                        style={{ marginRight: '20px' }} />
                 </div>
-                <div className='d-flex flex-row align-items-center' style={{ marginLeft: 'auto', marginRight: '145px' }}> {/* Adjust the margin-right to move ToggleSwitch left */}
+                <div id="detailed-summary-switch" className='d-flex flex-row align-items-center' style={{ marginLeft: 'auto', marginRight: '145px' }}>
                     <ToggleSwitch
                         checked={isChecked}
                         onChange={handleChange}
-                        id="detaildSummarySwitch"
-                        style={{ marginLeft: 'auto', paddingBottom: '20px' }} />
-                    <span className="toggle-switch-text" style={{ fontSize: "0.7rem" }}>Detailed Summary</span>
+                        className="switch-toggle" // Apply class instead of id
+                        style={{ marginLeft: 'auto', paddingBottom: '20px' }} 
+                    />
+                    <span className="toggle-switch-text" style={{ fontSize: "0.7rem" }}>
+                        Detailed Summary
+                    </span>
                 </div>
-            </div>
-            
 
+            </div>
+
+            {/* Accordion for Summary */}
             <Accordion className='mx-4' defaultActiveKey="0">
                 <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
                     <Accordion.Header
@@ -86,6 +90,7 @@ const StockSummary = ({ accordionOpen, setAccordionOpen, addFavourite, removeFav
                         Summary
                     </Accordion.Header>
                     <Accordion.Body className="px-4" style={{ padding: '0' }}>
+                        {/* Summary Text */}
                         As a beginner investor with a long-term investment horizon and a higher risk tolerance, investing in Bega Cheese Limited could be a suitable option. Given your neutral stance on potential losses and ability to withstand short-term declines, Bega Cheese Limited, as a well-established company in the food industry, may offer potential for higher returns over the long term. However, it's important to conduct thorough research and consider diversifying your portfolio with other stocks as well.
 
                         {/* Nested Accordion for References */}

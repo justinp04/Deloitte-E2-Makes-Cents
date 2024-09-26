@@ -65,6 +65,8 @@ const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => { }, tuto
                         <SASidebarCard
                             companyTitle="COLES GROUP LIMITED (COL)"
                             status="Analyse"
+                            id="coles-analyse-card"
+                            statusId="coles-status-button"  // This id is for the status button
                             onClick={() => handleCardClick('Coles Group Limited')}
                             onFavourite={addFavourite}
                         />
@@ -101,7 +103,10 @@ const SASidebar = ({ favouriteStocks, addFavourite, onNavigate = () => { }, tuto
                         <p className="my-0 ps-3 fw-bold">Search Result</p>
                     </Accordion.Header>
                     <Accordion.Body className='px-0 pt-1 pb-0'>
-                        <SearchBar placeholder="Search for a stock" />
+                        <SearchBar
+                            placeholder="Search for a stock" 
+                            id = "stock-search-bar"
+                        />
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

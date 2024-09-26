@@ -4,7 +4,6 @@ import ChatBox from '../stockanalysis-components/ChatBox';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import StockSummary from '../stockanalysis-components/StockSummary';
 import TutorialOverlay from '../stockanalysis-components/TutorialOverlay';
-import TutorialOverlay from '../stockanalysis-components/TutorialOverlay';
 
 function StockAnalysis() {
     const [messages, setMessages] = useState([]);
@@ -43,8 +42,6 @@ function StockAnalysis() {
         );
     };
 
-
-    // THIS HERE IS A BIT FUCKED LAD
     const handleNextTutorialStep = () => {
         if (tutorialStep < 11) { 
             setTutorialStep(tutorialStep + 1);
@@ -64,7 +61,7 @@ function StockAnalysis() {
                     favouriteStocks={favouriteStocks} 
                     addFavourite={addFavourite} 
                     removeFavourite={removeFavourite}
-                    tutorialActive={tutorialActive} // Pass tutorialActive to SASidebar
+                    tutorialActive={tutorialActive} 
                 />
             </div>
 
@@ -85,14 +82,6 @@ function StockAnalysis() {
                     </div>
                     <div className="blue-line"></div>
                 </div>
-
-                {/* Button to start the tutorial */}
-                <button 
-                    onClick={() => setTutorialActive(true)} 
-                    style={{ position: 'absolute', top: '120px', right: '50px', zIndex: 1500 }}
-                >
-                    Start Tutorial
-                </button>
 
                 <div style={{ marginTop: accordionOpen ? '10px' : '190px' }}>  
                     <ChatBox message="Howdy! 🤠" sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
@@ -119,3 +108,4 @@ function StockAnalysis() {
 }
 
 export default StockAnalysis;
+

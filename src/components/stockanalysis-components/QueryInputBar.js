@@ -19,13 +19,13 @@ const QueryInputBar = ({ onSendMessage }) => {
     const handleSend = () => {
       if (message.trim()) {
         onSendMessage(message);
-        setMessage(''); // Clear the input after sending
+        setMessage(''); 
       }
     };
   
     return (
       <div>
-        <div className="query-input-bar">
+        <div className="query-input-bar" id = "query-bar">
           <input
             type="text"
             value={message}
