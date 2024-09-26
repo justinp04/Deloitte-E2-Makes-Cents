@@ -61,8 +61,8 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                     <Offcanvas.Title>Stock Analysis</Offcanvas.Title>
                 </Offcanvas.Header>
 
-                <Offcanvas.Body className="p-0">
-                    <Accordion alwaysOpen className="p-0">
+                <Offcanvas.Body className="p-0 sidebar-background-colour">
+                    <Accordion alwaysOpen className="p-0 sidebar-background-colour">
                         {/* Map through accordion items just like NewsSidebar */}
                         {accordionItems.map((key, index) => (
                             <Accordion.Item eventKey={key} key={key}>

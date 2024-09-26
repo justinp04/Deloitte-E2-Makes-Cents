@@ -119,7 +119,7 @@ function NewsFeed() {
 
     return (
         <div className="page-container">
-            <div className="sidebar-container sidebar-background-colour" style={{ zIndex: 1000 }}>
+            <div className="sidebar-container" style={{ zIndex: 1000 }}>
                 {/* Passing currentInvestmentCompanies and followedCompanies to NewsSidebar */}
                 <NewsSidebar 
                     onSearch={handleSearch}

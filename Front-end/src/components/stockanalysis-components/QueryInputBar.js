@@ -46,7 +46,7 @@ const QueryInputBar = ({ onSendMessage }) => {
 					<FontAwesomeIcon icon={faPaperPlane} />
 				</button>
 			</div>
-			<div className='d-flex warning'>
+			<div className='mx-auto warning'>
 				<FontAwesomeIcon icon={faTriangleExclamation} />
 				<p>Makes Cents is not a financial advisor, investing is a risky venture and your actions are done at your own risk</p>
 				<FontAwesomeIcon icon={faTriangleExclamation} />

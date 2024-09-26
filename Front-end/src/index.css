@@ -130,6 +130,7 @@ code {
 .page-container {
   display: flex;
   max-height: 100vh;
+  margin-right: 20px;
   transition: margin-left 0.3s ease; /* Smooth transition when the sidebar opens/closes */
 }
 
@@ -156,6 +157,10 @@ code {
   position: sticky !important;
   top: 80px;
   z-index: 1000;
+}
+
+.sidebar-background-colour{
+  background-color: var(--sidebar-background) !important;
 }
 
 @media (max-width: 992px) {

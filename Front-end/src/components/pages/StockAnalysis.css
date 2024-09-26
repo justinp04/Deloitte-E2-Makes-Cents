@@ -24,8 +24,8 @@
 
 .stock-summary-container {
     top: 0;
-    width: 100%; 
-    background-color: var(--background-color-light); 
+    width: 100%;
+    background-color: var(--background-color-light);
     z-index: 1000;
 }
 
@@ -48,7 +48,7 @@
 .chat-box {
     display: flex;
     align-items: flex-start;
-    margin: 10px 0; 
+    margin: 10px 0;
 }
 
 .user {
@@ -98,12 +98,13 @@
 }
 
 /* QueryInputBar.js */
-#query-bar-container {
-    position: 'fixed'; 
-    bottom: 0; 
-    width: '100%'; 
-    z-index: 1000; 
+.query-bar-container {
+    position: 'fixed';
+    bottom: 0;
+    width: '100%';
+    z-index: 1000;
     background-color: 'white';
+    margin-left: 300px;
 }
 
 .query-input-bar {
@@ -148,7 +149,6 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    
     width: 100%;
     max-width: calc(100% - 300px);
     height: 20px;
@@ -177,10 +177,14 @@
 } */
 /* General accordion header styles */
 .accordion .accordion-item .accordion-header {
-    background-color: #f8f9fa; /* Set background color to #f8f9fa */
-    color: inherit !important; /* Keep the original text color */
-    border: none !important; /* Remove the border */
-    box-shadow: none !important; /* Remove any shadow */
+    background-color: #f8f9fa;
+    /* Set background color to #f8f9fa */
+    color: inherit !important;
+    /* Keep the original text color */
+    border: none !important;
+    /* Remove the border */
+    box-shadow: none !important;
+    /* Remove any shadow */
 }
 
 /* Remove the default Bootstrap accordion arrow */
@@ -198,16 +202,20 @@
 /* Remove background color, border, and shadow when the accordion is open */
 .accordion-button:not(.collapsed) {
     background-color: white !important;
-    color: inherit !important; /* Keep the text color instead of making it transparent */
+    color: inherit !important;
+    /* Keep the text color instead of making it transparent */
     border: none !important;
-    box-shadow: none !important; /* Ensure no shadow is applied */
+    box-shadow: none !important;
+    /* Ensure no shadow is applied */
 }
 
 /* Ensure no shadow appears when the button is focused */
 button.accordion-button:focus {
     box-shadow: none !important;
-    border: none !important; /* Ensure no border is added when focused */
-    outline: none !important; /* Remove any outline that might appear */
+    border: none !important;
+    /* Ensure no border is added when focused */
+    outline: none !important;
+    /* Remove any outline that might appear */
 }
 
 /* Remove borders and shadows from accordion items */
@@ -253,10 +261,28 @@ button.accordion-button:focus {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
+    }
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+    .query-bar-container {
+        margin-left: 0px;
+    }
+
+    .query-input-bar {
+        width: 100%;
+    }
+
+    .warning {
+        width: 100%;
+        max-width: none;
     }
 }

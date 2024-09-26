@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 const NewsSidebarCard = ({ companyTitle, onClick, className }) => {
     return (
         <Card
-            style={{ cursor: 'pointer', borderRadius: '0', border: 'none' }}
+            style={{ cursor: 'pointer', border: 'none' }}
             onClick={onClick}
             className={`news-sidebar-card ${className}`}
         >

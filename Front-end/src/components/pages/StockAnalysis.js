@@ -157,7 +157,7 @@ function StockAnalysis() {
             <div className={`content ${sidebarOpen ? 'shift-content' : ''}`}  >
                 <div
                     className="position-sticky stock-summary-container"
-                    style={{ top: '0', width: '100%', backgroundColor: 'white', zIndex: 1000 }}>
+                    style={{ top: '0', width: '100%', backgroundColor: 'none' }}>
                     <h1 className="page-header ms-4 mb-2 me-5" style={{ marginRight: '62%' }}>STOCK ANALYSIS</h1>
                     <StockSummary
                         accordionOpen={accordionOpen}
@@ -186,29 +186,29 @@ function StockAnalysis() {
                 </div> */}
                 {/* Chat Messages */}
                 {/* need to chnage the positioning for this, styling for this is temp */}
-                <div className="content" style={{marginTop:"100px" }}>
+                <div className="content" style={{ marginTop: "100px" }}>
                     <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
                 </div>
 
                 {/* Chat Messages */}
                 <div style={{ marginTop: accordionOpen ? '10px' : '10px', paddingBottom: '120px' }}>
-                        {messages.map((msg, index) => (
-                            <ChatBox
-                                key={index}
-                                message={msg.message}
-                                sender={msg.sender}
-                                senderName={msg.sender === 'user' ? 'You' : 'Gerry'}
-                                avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'}
-                            />
-                        ))}
-                        {typing && (
-                            <ChatBox
-                                message={<div className="typing-indicator"><div className="dot"></div><div className="dot"></div><div className="dot"></div></div>}
-                                sender="bot"
-                                senderName="Gerry"
-                                avatar="./images/GerryProfile.jpg"
-                            />
-                        )}
+                    {messages.map((msg, index) => (
+                        <ChatBox
+                            key={index}
+                            message={msg.message}
+                            sender={msg.sender}
+                            senderName={msg.sender === 'user' ? 'You' : 'Gerry'}
+                            avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'}
+                        />
+                    ))}
+                    {typing && (
+                        <ChatBox
+                            message={<div className="typing-indicator"><div className="dot"></div><div className="dot"></div><div className="dot"></div></div>}
+                            sender="bot"
+                            senderName="Gerry"
+                            avatar="./images/GerryProfile.jpg"
+                        />
+                    )}
 
                     {/* Follow-up suggestions */}
                     {suggestions.length > 0 && (
@@ -227,11 +227,11 @@ function StockAnalysis() {
                     {/* A reference div to keep the chat view scrolled to the latest message */}
                     <div ref={chatEndRef} />
                 </div>
-                    <Container className="query-bar-container">
-                        <QueryInputBar onSendMessage={handleSendMessage} />
-                    </Container>
-                </div>
+                <Container className="query-bar-container">
+                    <QueryInputBar onSendMessage={handleSendMessage} />
+                </Container>
             </div>
+        </div>
     );
 }
 
