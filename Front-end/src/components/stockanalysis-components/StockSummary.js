@@ -9,6 +9,7 @@ import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import FavouriteButton from './FavouriteButton';
 import '../Components.css';
 import ToggleSwitch from '../ToggleSwitch';
+import SummaryTable from './SummaryTable';
 
 const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, addFavourite, removeFavourite, favouriteStocks, stockName, responseDepth, onToggleChange }) => {
     const [referencesOpen, setReferencesOpen] = useState(false); // To control the nested accordion
@@ -40,52 +41,6 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
             fetchStockData();
         }
     }, [stockName, responseDepth]);
-
-    const renderSummaryTable = () => {
-        // Split the summary into individual lines
-        const summaryLines = summary.trim().split("\n");
-    
-        // Extract the first and last sentence separately
-        const firstSentence = summaryLines[0]; 
-        const lastSentence = summaryLines[summaryLines.length - 1]; 
-    
-        // Get the lines in between for the table (excluding first and last)
-        const middleLines = summaryLines.slice(1, -1);
-    
-        // Generate table rows from the middle lines
-        const summaryRows = middleLines.map((line, index) => {
-            const [consideration, analysis] = line.split(": ");
-            return consideration && analysis ? (
-                <tr key={index}>
-                    <td style={{ border: '1px solid #ddd', padding: '8px' }}>{consideration.trim()}</td>
-                    <td style={{ border: '1px solid #ddd', padding: '8px' }}>{analysis.trim()}</td>
-                </tr>
-            ) : null;
-        });
-    
-        return (
-            <div>
-                {/* Display the first sentence */}
-                <p>{firstSentence}</p>
-    
-                {/* Display the table with the middle content */}
-                <table style={{ borderCollapse: 'collapse', width: '100%' }}>
-                    <thead>
-                        <tr>
-                            <th style={{ border: '1px solid #ddd', padding: '8px' }}>Investment Consideration</th>
-                            <th style={{ border: '1px solid #ddd', padding: '8px' }}>Analysis</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {summaryRows}
-                    </tbody>
-                </table>
-                <br />
-                {/* Display the last sentence */}
-                <p>{lastSentence}</p>
-            </div>
-        );
-    };
 
     return (
         <div className="toggle-list-container">
@@ -128,10 +83,10 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                     </Accordion.Header>
                     <Accordion.Body className="px-4" style={{ padding: '0' }}>
                         {summary ? (
-                            renderSummaryTable() // Call summary table
-                        ) : (
-                            "No summary available."
-                        )}
+                                <SummaryTable summary={summary} responseDepth={responseDepth} /> 
+                            ) : (
+                                "No summary available."
+                            )}
 
                         {/* Nested Accordion for References */}
                         <Accordion activeKey={referencesOpen ? "0" : null}>
