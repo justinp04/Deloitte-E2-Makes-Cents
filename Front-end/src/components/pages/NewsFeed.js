@@ -127,7 +127,7 @@ function NewsFeed() {
                     followedCompanies={followedCompanies}
                 />
             </div>
-            <div className="content pt-0">
+            <div className="content newsfeed-container pt-0">
                 <div className="title-container">
                     <NewsCompanyTitle
                         textContent={`Commonwealth Bank of Australia (${searchTerm})`}

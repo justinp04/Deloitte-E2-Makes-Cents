@@ -12,7 +12,7 @@ import { SignInButton } from "../../authentication/SignInButton";
 import { useIsAuthenticated } from "@azure/msal-react";
 import './NavbarComponent.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faBars, faCircleUser, faIdBadge, faBookOpen } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCircleUser, faIdBadge, faBookOpen } from '@fortawesome/free-solid-svg-icons';
 
 function NavbarComponent() {
     const [showTitleState, setTitleState] = useState(false);

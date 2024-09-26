@@ -29,12 +29,12 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
     const handleShowSidebar = () => setShowSidebar(true);
 
     return (
-        <div className="">
+        <div className="position-fixed">
             {/* Sidebar Toggle Button */}
             <Button
                 variant="light"
                 className="d-lg-none position-fixed"
-                style={{ marginTop: "80px", border: "none", background: "none", outline: "none" }}
+                style={{border: "none", background: "none", outline: "none" }}
                 onClick={handleShowSidebar}>
                 <FontAwesomeIcon icon={faBars} />
             </Button>
