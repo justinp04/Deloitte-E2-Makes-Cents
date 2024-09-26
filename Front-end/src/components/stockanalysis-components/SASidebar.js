@@ -125,7 +125,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                                             )}
                                             {index === 2 && (
                                                 <>
-                                                    <SearchBar placeholder="Search for a stock" onSearch={() => handleSearch(searchTerm)} />
+                                                    <SearchBar placeholder="Search for a stock" onSearch={onSearch} />
                                                     {/* <SearchBar
                                                         placeholder="Search for a stock"
                                                         onSearch={() => handleSearch(searchTerm)} // Pass search term when search is triggered
