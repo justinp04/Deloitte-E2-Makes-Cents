@@ -28,10 +28,10 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
 
     // Handle stock search
     const handleSearch = () => {
-        // if (!searchTerm.trim()) {
-        //     alert('Please enter a stock name to search.');
-        //     return;
-        // }
+        if (!searchTerm.trim()) {
+            alert('Please enter a stock name to search.');
+            return;
+        }
 
         setSearchResults((prevResults) => [...prevResults, searchTerm]);  // Add new search term to search results
         onSearch(searchTerm); // Trigger search in StockAnalysis.js
