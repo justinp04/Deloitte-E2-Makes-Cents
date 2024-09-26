@@ -1,9 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const UserGuide = () => {
+
+    const navigate = useNavigate();
+    
     const activateTutorial = () => {
         localStorage.setItem('showTutorial', 'true'); // Set flag in localStorage
-        alert("Tutorial will be shown next time you visit the Stock Analysis page.");
+        navigate('/stock-analysis');
     };
 
     return (
