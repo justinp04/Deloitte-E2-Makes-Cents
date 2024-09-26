@@ -3,7 +3,7 @@
  * Fix:
  *  - Colour
  ************************************************************************************************/
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Accordion, Button, Offcanvas } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -12,23 +12,16 @@ import '../pages/StockAnalysis.css';
 import SASidebarCard from './SASidebarCard';
 
 const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, onNavigate = () => {} }) => {
-    const [openKeys, setOpenKeys] = useState([]); // Accordion control
+    const [expandedItems, setExpandedItems] = useState({}); // Tracks the open/close state of each accordion item
     const [searchTerm, setSearchTerm] = useState('');
     const [showSidebar, setShowSidebar] = useState(false); // Offcanvas visibility
-    const [expandedItem, setExpandedItem] = useState(false); // Expanded accordion item
 
-    // Toggle accordion items
-    const handleSelect = (eventKey) => {
-        if (openKeys.includes(eventKey)) {
-            setOpenKeys(openKeys.filter((key) => key !== eventKey));
-        } else {
-            setOpenKeys([...openKeys, eventKey]);
-        }
-    };
-
-    // Handle accordion item expansion
+    // Toggle the accordion items and track their open/close state
     const handleToggleAccordion = (eventKey) => {
-        setExpandedItem(expandedItem === eventKey ? null : eventKey);
+        setExpandedItems((prevState) => ({
+            ...prevState,
+            [eventKey]: !prevState[eventKey], // Toggle only the specific accordion item
+        }));
     };
 
     // Handle stock search
@@ -42,6 +35,9 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
 
     const handleCloseSidebar = () => setShowSidebar(false); // Close the Offcanvas sidebar
     const handleShowSidebar = () => setShowSidebar(true);   // Open the Offcanvas sidebar
+
+    // Map event keys like in NewsSidebar
+    const accordionItems = ["0", "1", "2"]; // Map event keys for Stock Recommendations, Favourites, and Search Result
 
     return (
         <div className="sidebar-container-styling">
@@ -66,77 +62,69 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, o
                 </Offcanvas.Header>
 
                 <Offcanvas.Body className="p-0">
-                    <Accordion
-                        className="p-0"
-                        activeKey={openKeys}
-                        onSelect={handleSelect}>
-                        {/* 'Stock Recommendations' accordion item */}
-                        <Accordion.Item eventKey="0">
-                            <Accordion.Header
-                                className={`sidebar-item-header d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === '0' ? 'focus' : ''}`}
-                                onClick={() => handleToggleAccordion('0')}>
-                                <FontAwesomeIcon
-                                    id="stockRecommendations"
-                                    icon={faChevronRight}
-                                    className={`chevron-icon ${expandedItem === '0' ? 'rotate' : ''}`}/>
-                                <p className="my-0 ps-3 fw-bold">Stock Recommendations</p>
-                            </Accordion.Header>
-                            <Accordion.Body className="p-0">
-                                <SASidebarCard
-                                    companyTitle="BEGA CHEESE LIMITED (BGA)"
-                                    status="Analysing"
-                                    onClick={() => onNavigate('Bega Cheese Limited')}
-                                    onFavourite={addFavourite}/>
-                                <SASidebarCard
-                                    companyTitle="WOOLWORTHS GROUP LIMITED (WOW)"
-                                    status="Analysed"
-                                    onClick={() => onNavigate('Woolworths Group Limited')}
-                                    onFavourite={addFavourite}/>
-                                <SASidebarCard
-                                    companyTitle="COLES GROUP LIMITED (COL)"
-                                    status="Analyse"
-                                    onClick={() => onNavigate('Coles Group Limited')}
-                                    onFavourite={addFavourite}/>
-                            </Accordion.Body>
-                        </Accordion.Item>
+                    <Accordion alwaysOpen className="p-0">
+                        {/* Map through accordion items just like NewsSidebar */}
+                        {accordionItems.map((key, index) => (
+                            <Accordion.Item eventKey={key} key={key}>
+                                <Accordion.Header
+                                    className="sidebar-item-header d-inline-flex justify-content-between align-items-centre w-100"
+                                    onClick={() => handleToggleAccordion(key)}>
+                                    <FontAwesomeIcon
+                                        id={`chevron-${key}`}
+                                        icon={faChevronRight}
+                                        className={`chevron-icon ${expandedItems[key] ? 'rotate' : ''}`}
+                                    />
+                                    <p className="my-0 ps-3 fw-bold">
+                                        {index === 0 ? 'Stock Recommendations' : index === 1 ? 'Favourites' : 'Search Result'}
+                                    </p>
+                                </Accordion.Header>
+                                {/* Only show Accordion.Body if expanded */}
+                                {expandedItems[key] && (
+                                    <Accordion.Body className="p-0">
+                                        {index === 0 && (
+                                            <>
+                                                <SASidebarCard
+                                                    companyTitle="BEGA CHEESE LIMITED (BGA)"
+                                                    status="Analysing"
+                                                    onClick={() => onNavigate('Bega Cheese Limited')}
+                                                    onFavourite={addFavourite}
+                                                />
+                                                <SASidebarCard
+                                                    companyTitle="WOOLWORTHS GROUP LIMITED (WOW)"
+                                                    status="Analysed"
+                                                    onClick={() => onNavigate('Woolworths Group Limited')}
+                                                    onFavourite={addFavourite}
+                                                />
+                                                <SASidebarCard
+                                                    companyTitle="COLES GROUP LIMITED (COL)"
+                                                    status="Analyse"
+                                                    onClick={() => onNavigate('Coles Group Limited')}
+                                                    onFavourite={addFavourite}
+                                                />
+                                            </>
+                                        )}
 
-                        {/* 'Favourites' accordion item */}
-                        <Accordion.Item eventKey="2">
-                            <Accordion.Header
-                                className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === '2' ? 'focus' : ''}`}
-                                onClick={() => handleToggleAccordion('2')}>
-                                <FontAwesomeIcon
-                                    id="favourites"
-                                    icon={faChevronRight}
-                                    className={`chevron-icon ${expandedItem === '2' ? 'rotate' : ''}`}/>
-                                <p className="my-0 ps-3 fw-bold">Favourites</p>
-                            </Accordion.Header>
-                            <Accordion.Body className="px-0 pt-1 pb-2">
-                                <SearchBar placeholder="Search your saved stocks" />
-                                {favouriteStocks.map((stock) => (
-                                    <SASidebarCard
-                                        key={stock.id}
-                                        companyTitle={stock.title}
-                                        status="Analyse"
-                                        onClick={() => onNavigate(stock.title)}/>))}
-                            </Accordion.Body>
-                        </Accordion.Item>
+                                        {index === 1 && (
+                                            <>
+                                                <SearchBar placeholder="Search your saved stocks" />
+                                                {favouriteStocks.map((stock) => (
+                                                    <SASidebarCard
+                                                        key={stock.id}
+                                                        companyTitle={stock.title}
+                                                        status="Analyse"
+                                                        onClick={() => onNavigate(stock.title)}
+                                                    />
+                                                ))}
+                                            </>
+                                        )}
 
-                        {/* 'Search Result' accordion item */}
-                        <Accordion.Item eventKey="3">
-                            <Accordion.Header
-                                className={`d-inline-flex justify-content-between align-items-centre w-100 ${expandedItem === '3' ? 'focus' : ''}`}
-                                onClick={() => handleToggleAccordion('3')}>
-                                <FontAwesomeIcon
-                                    id="searchResults"
-                                    icon={faChevronRight}
-                                    className={`chevron-icon ${expandedItem === '3' ? 'rotate' : ''}`}/>
-                                <p className="my-0 ps-3 fw-bold">Search Result</p>
-                            </Accordion.Header>
-                            <Accordion.Body className="px-0 pt-1 pb-2">
-                                <SearchBar placeholder="Search for a stock" onSearch={onSearch} />
-                            </Accordion.Body>
-                        </Accordion.Item>
+                                        {index === 2 && (
+                                            <SearchBar placeholder="Search for a stock" onSearch={onSearch} />
+                                        )}
+                                    </Accordion.Body>
+                                )}
+                            </Accordion.Item>
+                        ))}
                     </Accordion>
                 </Offcanvas.Body>
             </Offcanvas>

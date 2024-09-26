@@ -128,7 +128,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                     </Accordion.Header>
                     <Accordion.Body className="px-4" style={{ padding: '0' }}>
                         {summary ? (
-                            renderSummaryTable() // Render the summary table here
+                            renderSummaryTable() // Call summary table
                         ) : (
                             "No summary available."
                         )}
