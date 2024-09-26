@@ -27,8 +27,6 @@ def main():
         initial_question = generate_initial_question()  # Suggest an initial question
         # print(f"Gerry suggests you ask: {initial_question}\n")
         user_input = input("Q:")  # Get input from the user
-
-    # stock_name = extract_stock_name(user_input)  # Extract stock name from the user input if available
     
     # Construct the system message
     system_message = {
@@ -55,7 +53,6 @@ def main():
     # Query Qdrant for relevant documents using the user input and stock name context
     #documents = query_qdrant(user_input_with_context, stock_name if stock_name else 'the queried stock') #this line not currently being used for scroll
     documents = scroll_for_stock(stock_name if stock_name else 'the queried stock')
-    #documents = scroll_for_stock(stock_name)
     context = "\n".join([doc['content'] for doc in documents])
 
     # Append the context to the conversation
@@ -121,26 +118,6 @@ def fetch_user_profile(user_email):
     except requests.exceptions.RequestException as e:
         print(f"Error fetching user profile: {e}")
         return None
-
-
-'''''''''''''''''''''''''''''''''''''''''''''''''''
-METHOD: extract_stock_name
-IMPORT: user_input
-EXPORT: stock_name (if found in the input)
-PURPOSE: Function to extract stock name from user input.
-         You can expand this method based on your needs.
-'''''''''''''''''''''''''''''''''''''''''''''''''''
-def extract_stock_name(user_input):
-    # A simple logic to extract stock name from the user input (e.g., regex or keyword-based)
-    # For now, assume the stock name is the first word after "about" or "on"
-    tokens = user_input.split()
-    if "about" in tokens:
-        idx = tokens.index("about")
-        return tokens[idx + 1] if idx + 1 < len(tokens) else None
-    if "on" in tokens:
-        idx = tokens.index("on")
-        return tokens[idx + 1] if idx + 1 < len(tokens) else None
-    return None
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: num_tokens_from_messages
