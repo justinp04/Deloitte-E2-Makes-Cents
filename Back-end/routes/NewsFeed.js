@@ -20,6 +20,7 @@ const generateSummaryForArticle = (userEmail, stock, article) => {
         // Path to your Python script
         // const pythonScriptPath = path.join(__dirname, '../../Rag/news_feed_summary.py');
         const pythonScriptPath = path.join(__dirname, '../../Rag/news_feed_summary.py');
+        console.log(`Python script path: ${pythonScriptPath}`);
         
         // Command to execute the Python script with necessary arguments
         const command = `python ${pythonScriptPath} --user_email ${userEmail} --stock ${stock} --article_title "${article.article_title}" --article_url "${article.article_url}"`;
@@ -27,6 +28,8 @@ const generateSummaryForArticle = (userEmail, stock, article) => {
         exec(command, (error, stdout, stderr) => {
             if (error) {
                 console.error(`Error executing Python script: ${stderr}`);
+                console.error(`stderr: ${stderr}`);
+                console.error(`stdout: ${stdout}`);
                 return reject(new Error(`Error executing Python script: ${stderr}`));
             }
             resolve(stdout.trim());
