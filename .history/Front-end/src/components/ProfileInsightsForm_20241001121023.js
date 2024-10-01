@@ -138,7 +138,7 @@ const ProfileInsightsForm = ({isUpdating = false}) => {
       .then(data => {
         console.log(data);
         alert('Profile updated successfully!');
-        // navigate('/about');
+        navigate('/about');
       })
       .catch(error => {
         console.error('Error:', error);

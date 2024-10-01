@@ -77,7 +77,8 @@ const ProfileInsightsForm = ({isUpdating = false}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const incomeIndex = incomeOptions.indexOf(income) + 1;
+    var incomeIndex = incomeOptions.indexOf(income) + 1;
+    console.log(incomeIndex);
 
     const formData = {
       email: email,
@@ -87,13 +88,32 @@ const ProfileInsightsForm = ({isUpdating = false}) => {
       question_response_4: parseInt(riskLevel),
       question_response_5: parseInt(declineTolerance),
       question_response_6: parseInt(investmentType)
-    };
+  };
+  
+    console.log(formData);
 
-    if (isUpdating) {
-      handleUpdate(formData);
-    } else {
-      handleCreate(formData);
-    }
+    fetch('http://localhost:4000/next/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log(data);
+        alert('Request successful! Check console for response.');
+        navigate('/about')
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Request failed. Check console for error details.');
+      });
   };
 
   const handleCreate = (formData) => {
@@ -118,31 +138,6 @@ const ProfileInsightsForm = ({isUpdating = false}) => {
       .catch(error => {
         console.error('Error:', error);
         alert('Failed to create account. Please check the console for more details.');
-      });
-  };
-
-  const handleUpdate = (formData) => {
-    fetch('http://localhost:4000/next/update-responses', {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Failed to update user');
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-        alert('Profile updated successfully!');
-        // navigate('/about');
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('Failed to update profile. Please check the console for more details.');
       });
   };
 

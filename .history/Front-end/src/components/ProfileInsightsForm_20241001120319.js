@@ -16,7 +16,7 @@ import { useNavigate } from 'react-router-dom';
 import RangeQuestion from './RangeQuestion';
 import SelectQuestion from './SelectQuestion';
 
-const ProfileInsightsForm = ({isUpdating = false}) => {
+const ProfileInsightsForm = () => {
   const { accounts } = useMsal();
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -44,40 +44,18 @@ const ProfileInsightsForm = ({isUpdating = false}) => {
 	const rangeLabelsQ5 = ["Can't Afford", "Can Barely Afford", "Can Somewhat Afford", "Can Comfortably Afford", "Can Easily Afford"];
 	const rangeLabelsQ6 = ["Lump Sum", "Mix of Both", "Recurring Investments"];
 
- // Fetch email from logged-in user's account information and populate data if updating
+ // Fetch email from logged-in user's account information and populate dta
  useEffect(() => {
     if (accounts.length > 0) {
-      const userEmail = accounts[0].username;
-      setEmail(userEmail);
-
-      if (isUpdating) {
-        // Fetch existing data for the user
-        fetch(`http://localhost:4000/next/user-responses?email=${userEmail}`)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Failed to fetch user data');
-            }
-            return response.json();
-          })
-          .then(data => {
-            const responses = data.response;
-            setExperience(parseInt(responses[0]));
-            setIncome(incomeOptions[parseInt(responses[1]) - 1]);
-            setInvestmentDuration(parseInt(responses[2]));
-            setRiskLevel(parseInt(responses[3]));
-            setDeclineTolerance(parseInt(responses[4]));
-            setInvestmentType(parseInt(responses[5]));
-          })
-          .catch(error => {
-            console.error('Error fetching user data:', error);
-          });
-      }
+      const userEmail = accounts[0].username; // Extract email from the account object
+      setEmail(userEmail); // Set the email in state
     }
-  }, [accounts, isUpdating]);
+  }, [accounts]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const incomeIndex = incomeOptions.indexOf(income) + 1;
+    var incomeIndex = incomeOptions.indexOf(income) + 1;
+    console.log(incomeIndex);
 
     const formData = {
       email: email,
@@ -87,16 +65,10 @@ const ProfileInsightsForm = ({isUpdating = false}) => {
       question_response_4: parseInt(riskLevel),
       question_response_5: parseInt(declineTolerance),
       question_response_6: parseInt(investmentType)
-    };
-
-    if (isUpdating) {
-      handleUpdate(formData);
-    } else {
-      handleCreate(formData);
-    }
   };
+  
+    console.log(formData);
 
-  const handleCreate = (formData) => {
     fetch('http://localhost:4000/next/register', {
       method: 'POST',
       headers: {
@@ -106,43 +78,18 @@ const ProfileInsightsForm = ({isUpdating = false}) => {
     })
       .then(response => {
         if (!response.ok) {
-          throw new Error('Failed to create user');
+          throw new Error('Network response was not ok');
         }
         return response.json();
       })
       .then(data => {
         console.log(data);
-        alert('Account created successfully!');
-        navigate('/about');
+        alert('Request successful! Check console for response.');
+        navigate('/about')
       })
       .catch(error => {
         console.error('Error:', error);
-        alert('Failed to create account. Please check the console for more details.');
-      });
-  };
-
-  const handleUpdate = (formData) => {
-    fetch('http://localhost:4000/next/update-responses', {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Failed to update user');
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-        alert('Profile updated successfully!');
-        // navigate('/about');
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('Failed to update profile. Please check the console for more details.');
+        alert('Request failed. Check console for error details.');
       });
   };
 

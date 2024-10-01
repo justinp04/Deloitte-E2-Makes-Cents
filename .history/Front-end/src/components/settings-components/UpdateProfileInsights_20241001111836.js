@@ -15,7 +15,7 @@ const UpdateProfileInsights = () => {
                 This information will help us tailor our suggestions to match your investment experience, financial goals, and risk tolerance.</p>
 
             <div className="d-flex justify-content-center align-items-center mt-4 ms-3 ">
-                <ProfileInsightsForm isUpdating={true}/>
+                <ProfileInsightsForm />
             </div>
         </div>
     );
