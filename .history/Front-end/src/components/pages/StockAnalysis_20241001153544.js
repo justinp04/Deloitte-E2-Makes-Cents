@@ -124,66 +124,25 @@ function StockAnalysis() {
     };
 
     // Function to add a stock to the list of favourites
-    const addFavourite = async (companyTitle) => {
-        try {
-            const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
-            const userIdData = await userIdResponse.json();
-            const userId = userIdData.userId;
-
-            const response = await fetch('http://localhost:4000/favorite-stocks/add', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    userId,
-                    stockSymbol: companyTitle,
-                }),
-            });
-
-            if (response.ok) {
-                setFavouriteStocks(prevFavourites => [
-                    ...prevFavourites,
-                    { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" }
-                ]);
-            } else {
-                alert("Failed to add favourite stock.");
-            }
-        } catch (error) {
-            console.error('Error adding favourite stock:', error);
-            alert("Error occurred while adding favourite stock.");
+    const addFavourite = (companyTitle) => {
+        // Check if the stock is already in the favourites list
+        if (!favouriteStocks.some(stock => stock.title === companyTitle)) {
+            // If not, add it to the list by updating the state
+            // Uses the previous state (prevFavourites) to add the new favourite to the list
+            setFavouriteStocks(prevFavourites => [
+                ...prevFavourites,
+                { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" }
+            ]);
         }
     };
 
     // Function to remove a stock from the list of favourites
-    const removeFavourite = async (companyTitle) => {
-        try {
-            const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
-            const userIdData = await userIdResponse.json();
-            const userId = userIdData.userId;
-
-            const response = await fetch('http://localhost:4000/favorite-stocks/remove', {
-                method: 'DELETE',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    userId,
-                    stockSymbol: companyTitle,
-                }),
-            });
-
-            if (response.ok) {
-                setFavouriteStocks(prevFavourites =>
-                    prevFavourites.filter(stock => stock.title !== companyTitle)
-                );
-            } else {
-                alert("Failed to remove favourite stock.");
-            }
-        } catch (error) {
-            console.error('Error removing favourite stock:', error);
-            alert("Error occurred while removing favourite stock.");
-        }
+    const removeFavourite = (companyTitle) => {
+        // Filters out the stock that matches the companyTitle from the favourites list
+        // Updates the state with the new list of favourites that no longer includes the removed stock
+        setFavouriteStocks(prevFavourites =>
+            prevFavourites.filter(stock => stock.title !== companyTitle)
+        );
     };
 
     // Scroll to the latest message when new messages are added

@@ -158,11 +158,11 @@ function StockAnalysis() {
     // Function to remove a stock from the list of favourites
     const removeFavourite = async (companyTitle) => {
         try {
-            const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
+            const userIdResponse = await fetch(`http://localhost:4000/favorites/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
             const userId = userIdData.userId;
 
-            const response = await fetch('http://localhost:4000/favorite-stocks/remove', {
+            const response = await fetch('http://localhost:4000/favorites/remove', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

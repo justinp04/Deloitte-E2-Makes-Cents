@@ -29,7 +29,7 @@ function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavou
                     onFavourite(companyTitle);
                 }
             }
-            setIsFav(prev => !prev);
+            setIsFav(!isFav);
 
             setIconClass('fav-icon fav-icon-enter');
 

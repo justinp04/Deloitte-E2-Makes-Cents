@@ -13,7 +13,7 @@ import UserQuestionaires from './routes/UserQuestionaires.js';
 import stockAnalysisRoutes from './routes/StockAnalysis.js';
 import stockSummary from './routes/StockSummary.js'
 import NewsFeed from './routes/NewsFeed.js'
-import FavouriteStocks from './routes/FavouriteStocks.js';
+import Favou
 
 const port = process.env.PORT || 4000;
 const app = express();
@@ -30,6 +30,5 @@ app.use('/next', UserQuestionaires);
 app.use('/chatbot', stockAnalysisRoutes);
 app.use('/summary', stockSummary);
 app.use('/news', NewsFeed);
-app.use('/favorite-stocks', FavouriteStocks);
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));

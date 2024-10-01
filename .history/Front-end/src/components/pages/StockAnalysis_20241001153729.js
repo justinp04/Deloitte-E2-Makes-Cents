@@ -156,34 +156,12 @@ function StockAnalysis() {
     };
 
     // Function to remove a stock from the list of favourites
-    const removeFavourite = async (companyTitle) => {
-        try {
-            const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
-            const userIdData = await userIdResponse.json();
-            const userId = userIdData.userId;
-
-            const response = await fetch('http://localhost:4000/favorite-stocks/remove', {
-                method: 'DELETE',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    userId,
-                    stockSymbol: companyTitle,
-                }),
-            });
-
-            if (response.ok) {
-                setFavouriteStocks(prevFavourites =>
-                    prevFavourites.filter(stock => stock.title !== companyTitle)
-                );
-            } else {
-                alert("Failed to remove favourite stock.");
-            }
-        } catch (error) {
-            console.error('Error removing favourite stock:', error);
-            alert("Error occurred while removing favourite stock.");
-        }
+    const removeFavourite = (companyTitle) => {
+        // Filters out the stock that matches the companyTitle from the favourites list
+        // Updates the state with the new list of favourites that no longer includes the removed stock
+        setFavouriteStocks(prevFavourites =>
+            prevFavourites.filter(stock => stock.title !== companyTitle)
+        );
     };
 
     // Scroll to the latest message when new messages are added

@@ -30,6 +30,6 @@ app.use('/next', UserQuestionaires);
 app.use('/chatbot', stockAnalysisRoutes);
 app.use('/summary', stockSummary);
 app.use('/news', NewsFeed);
-app.use('/favorite-stocks', FavouriteStocks);
+app.use('/fav')
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
