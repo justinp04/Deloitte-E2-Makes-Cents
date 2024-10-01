@@ -41,7 +41,7 @@ def main():
     }
 
     max_response_tokens = 200 
-    token_limit = 3000  # Reduced token limit
+    token_limit = 6000  # Reduced token limit
     conversation = [system_message]
 
     # Append the user's input to the conversation
