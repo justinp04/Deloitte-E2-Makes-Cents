@@ -99,13 +99,13 @@ const SASidebar = ({ favouriteStocks, addFavourite, addFavouriteToDatabase, remo
                                                         companyTitle="WOOLWORTHS GROUP LIMITED (WOW)"
                                                         status="Analysed"
                                                         onClick={() => onNavigate('Woolworths Group Limited')}
-                                                        onFavourite={() => addFavourite("WOOLWORTHS GROUP LIMITED (WOW)")}
+                                                        onFavourite={() => addToFavouritesList("WOOLWORTHS GROUP LIMITED (WOW)")}
                                                     />
                                                     <SASidebarCard
                                                         companyTitle="COLES GROUP LIMITED (COL)"
                                                         status="Analyse"
                                                         onClick={() => onNavigate('Coles Group Limited')}
-                                                        onFavourite={() => addFavourite("COLES GROUP LIMITED (COL)")}
+                                                        onFavourite={() => addToFavouritesList("COLES GROUP LIMITED (COL)")}
                                                     />
                                                 </>
                                             )}

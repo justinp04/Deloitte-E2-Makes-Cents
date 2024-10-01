@@ -224,7 +224,7 @@ function StockAnalysis() {
             <div>
                 <SASidebar
                     favouriteStocks={favouriteStocks}
-                    addFavourite={addFavourite}
+                    addFavourite={addFavouritetoDatabase}
                     removeFavourite={removeFavouriteFromDatabase}
                     onSearch={handleSearch}
                     toggleSidebar={toggleSidebar}

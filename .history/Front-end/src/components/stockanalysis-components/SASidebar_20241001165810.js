@@ -105,7 +105,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, addFavouriteToDatabase, remo
                                                         companyTitle="COLES GROUP LIMITED (COL)"
                                                         status="Analyse"
                                                         onClick={() => onNavigate('Coles Group Limited')}
-                                                        onFavourite={() => addFavourite("COLES GROUP LIMITED (COL)")}
+                                                        onFavourite={() => addToFavouritesList("COLES GROUP LIMITED (COL)")}
                                                     />
                                                 </>
                                             )}

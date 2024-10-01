@@ -12,7 +12,7 @@ import '../pages/StockAnalysis.css';
 import SASidebarCard from './SASidebarCard';
 import SearchCard from './SearchCard';
 
-const SASidebar = ({ favouriteStocks, addFavourite, addFavouriteToDatabase, removeFavouriteFromDatabase, onSearch, onNavigate = () => {} }) => {
+const SASidebar = ({ favouriteStocks, addToFavouritesList, addFavouritetoDatabase, removeavouritetoDatabase, onSearch, onNavigate = () => {} }) => {
     const [expandedItems, setExpandedItems] = useState({}); // Tracks the open/close state of each accordion item
     const [searchTerm, setSearchTerm] = useState('');
     const [showSidebar, setShowSidebar] = useState(false); // Offcanvas visibility
@@ -93,19 +93,19 @@ const SASidebar = ({ favouriteStocks, addFavourite, addFavouriteToDatabase, remo
                                                         companyTitle="BEGA CHEESE LIMITED (BGA)"
                                                         status="Analysing"
                                                         onClick={() => onNavigate('Bega Cheese Limited')}
-                                                        onFavourite={() => addFavourite("BEGA CHEESE LIMITED (BGA)")}
+                                                        onFavourite={addToFavouritesList}
                                                     />
                                                     <SASidebarCard
                                                         companyTitle="WOOLWORTHS GROUP LIMITED (WOW)"
                                                         status="Analysed"
                                                         onClick={() => onNavigate('Woolworths Group Limited')}
-                                                        onFavourite={() => addFavourite("WOOLWORTHS GROUP LIMITED (WOW)")}
+                                                        onFavourite={addFavourite}
                                                     />
                                                     <SASidebarCard
                                                         companyTitle="COLES GROUP LIMITED (COL)"
                                                         status="Analyse"
                                                         onClick={() => onNavigate('Coles Group Limited')}
-                                                        onFavourite={() => addFavourite("COLES GROUP LIMITED (COL)")}
+                                                        onFavourite={addFavourite}
                                                     />
                                                 </>
                                             )}
@@ -119,9 +119,6 @@ const SASidebar = ({ favouriteStocks, addFavourite, addFavouriteToDatabase, remo
                                                             companyTitle={stock.title}
                                                             status="Analyse"
                                                             onClick={() => onNavigate(stock.title)}
-                                                            onFavourite={() => addFavouriteToDatabase(stock.title)}   // Add to Database
-                                                            onRemoveFavourite={() => removeFavouriteFromDatabase(stock.title)} // Remove from Database
-                                                            isFavourited={true}
                                                         />
                                                     ))}
                                                 </>

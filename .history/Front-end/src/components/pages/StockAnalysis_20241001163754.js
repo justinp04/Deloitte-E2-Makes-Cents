@@ -123,26 +123,14 @@ function StockAnalysis() {
         handleSendMessage(question);
     };
 
-    // Function to add a stock to the list of favourites
-    const addFavourite = (companyTitle) => {
-        // Check if the stock is already in the favourites list
+    // Function to add a stock to the list of favourites (local UI state only)
+    const addToFavouritesList = (companyTitle) => {
         if (!favouriteStocks.some(stock => stock.title === companyTitle)) {
-            // If not, add it to the list by updating the state
-            // Uses the previous state (prevFavourites) to add the new favourite to the list
             setFavouriteStocks(prevFavourites => [
                 ...prevFavourites,
                 { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" }
             ]);
         }
-    };
-
-    // Function to remove a stock from the list of favourites
-    const removeFavourite = (companyTitle) => {
-        // Filters out the stock that matches the companyTitle from the favourites list
-        // Updates the state with the new list of favourites that no longer includes the removed stock
-        setFavouriteStocks(prevFavourites =>
-            prevFavourites.filter(stock => stock.title !== companyTitle)
-        );
     };
 
     // Function to add a stock to the list of favourites
@@ -178,7 +166,7 @@ function StockAnalysis() {
     };
 
     // Function to remove a stock from the list of favourites
-    const removeFavouriteFromDatabase = async (companyTitle) => {
+    const removeFavourite = async (companyTitle) => {
         try {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
@@ -225,7 +213,7 @@ function StockAnalysis() {
                 <SASidebar
                     favouriteStocks={favouriteStocks}
                     addFavourite={addFavourite}
-                    removeFavourite={removeFavouriteFromDatabase}
+                    removeFavourite={removeFavourite}
                     onSearch={handleSearch}
                     toggleSidebar={toggleSidebar}
                 />
@@ -239,7 +227,7 @@ function StockAnalysis() {
                         accordionOpen={accordionOpen}
                         setAccordionOpen={setAccordionOpen}
                         addFavourite={addFavourite}
-                        removeFavourite={removeFavouriteFromDatabase}
+                        removeFavourite={removeFavourite}
                         favouriteStocks={favouriteStocks}
                         summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
                         references={references}

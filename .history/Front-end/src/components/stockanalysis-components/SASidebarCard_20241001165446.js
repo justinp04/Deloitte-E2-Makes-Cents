@@ -6,7 +6,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import FavouriteButton from './FavouriteButton';
 
-const SASidebarCard = ({ companyTitle, onClick, onFavourite}) => {
+const SASidebarCard = ({ companyTitle, onClick, onFavourite , addToFavouritesList}) => {
 
     return (
         <Card

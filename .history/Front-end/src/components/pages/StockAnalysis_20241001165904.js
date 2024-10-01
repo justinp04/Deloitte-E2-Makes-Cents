@@ -224,7 +224,7 @@ function StockAnalysis() {
             <div>
                 <SASidebar
                     favouriteStocks={favouriteStocks}
-                    addFavourite={addFavourite}
+                    addFavourite={addFavouritetoDatabase}
                     removeFavourite={removeFavouriteFromDatabase}
                     onSearch={handleSearch}
                     toggleSidebar={toggleSidebar}
@@ -239,7 +239,7 @@ function StockAnalysis() {
                         accordionOpen={accordionOpen}
                         setAccordionOpen={setAccordionOpen}
                         addFavourite={addFavourite}
-                        removeFavourite={removeFavouriteFromDatabase}
+                        removeFavourite={Favourite}
                         favouriteStocks={favouriteStocks}
                         summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
                         references={references}
