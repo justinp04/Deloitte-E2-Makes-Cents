@@ -6,7 +6,8 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import FavouriteButton from './FavouriteButton';
 
-const SASidebarCard = ({ companyTitle, onClick, onFavourite, onRemoveFavourite, isFavourited}) => {
+const SASidebarCard = ({ companyTitle, onClick, onFavourite, onRemoveFavourite, isFavourited, addFavouriteToDatabase, removeFavouriteFromDatabase}) => {
+
     return (
         <Card
             style={{ cursor: 'pointer', backgroundColor: '#FFFFFF', borderRadius: '0', border: 'none' }}
@@ -17,8 +18,8 @@ const SASidebarCard = ({ companyTitle, onClick, onFavourite, onRemoveFavourite, 
                 <div className="d-flex align-items-center">
                     <FavouriteButton
                         companyTitle={companyTitle}
-                        onFavourite={onFavourite}
-                        onRemoveFavourite={onRemoveFavourite}
+                        onFavourite={() => addFavourite(companyTitle)} // Make sure to pass the correct title
+    onRemoveFavourite={() => removeFavourite(companyTitle)}
                         isFavourited={isFavourited}
                     />
                 </div>

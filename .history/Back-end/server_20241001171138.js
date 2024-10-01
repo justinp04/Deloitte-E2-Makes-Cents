@@ -9,7 +9,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 
 import path from 'path';
-import UserQuestionaires from './routes/UserQuestionnaires.js';
+import UserQuestionaires from './';
 import stockAnalysisRoutes from './routes/StockAnalysis.js';
 import stockSummary from './routes/StockSummary.js'
 import NewsFeed from './routes/NewsFeed.js'

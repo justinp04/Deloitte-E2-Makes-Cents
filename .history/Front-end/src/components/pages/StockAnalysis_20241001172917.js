@@ -124,28 +124,20 @@ function StockAnalysis() {
     };
 
     const addFavourite = (companyTitle) => {
-
-        if (companyTitle === "Unknown") {
-            console.log("Not a valid stock. Cannot add to favorites.");
-            return; // Prevent adding if the stock name is "Unknown"
-        }
-
-        // Check if the stock already exists
         if (!favouriteStocks.some(stock => stock.title === companyTitle)) {
             const newFavourite = { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" };
             setFavouriteStocks(prevFavourites => [...prevFavourites, newFavourite]);
             addFavouritetoDatabase(companyTitle); // Call function to add to database
-        } else {
-            console.log(`${companyTitle} is already in favorites.`);
         }
-    };    
+    };
 
-    const removeFavourite = async (companyTitle) => {
-        // Remove from local state
-        setFavouriteStocks(prevFavourites => prevFavourites.filter(stock => stock.title !== companyTitle));
-    
-        // Now call the database function to remove
-        await removeFavouriteFromDatabase(companyTitle);
+    // Function to remove a stock from the list of favourites
+    const removeFavourite = (companyTitle) => {
+        // Filters out the stock that matches the companyTitle from the favourites list
+        // Updates the state with the new list of favourites that no longer includes the removed stock
+        setFavouriteStocks(prevFavourites =>
+            prevFavourites.filter(stock => stock.title !== companyTitle)
+        );
     };
 
     // Function to add a stock to the list of favourites
@@ -165,6 +157,15 @@ function StockAnalysis() {
                     stockSymbol: companyTitle,
                 }),
             });
+
+            if (response.ok) {
+                setFavouriteStocks(prevFavourites => [
+                    ...prevFavourites,
+                    { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" }
+                ]);
+            } else {
+                alert("Failed to add favourite stock.");
+            }
         } catch (error) {
             console.error('Error adding favourite stock:', error);
             alert("Error occurred while adding favourite stock.");
@@ -219,7 +220,7 @@ function StockAnalysis() {
                     favouriteStocks={favouriteStocks}
                     addFavourite={addFavourite}
                     addFavouriteToDatabase={addFavouritetoDatabase}
-                    removeFavourite={removeFavourite}
+                    removeFavouriteFromDatabase={removeFavouriteFromDatabase}
                     onSearch={handleSearch}
                     toggleSidebar={toggleSidebar}
                 />
@@ -233,7 +234,7 @@ function StockAnalysis() {
                         accordionOpen={accordionOpen}
                         setAccordionOpen={setAccordionOpen}
                         addFavourite={addFavourite}
-                        removeFavourite={removeFavourite}
+                        removeFavourite={removeFavouriteFromDatabase}
                         favouriteStocks={favouriteStocks}
                         summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
                         references={references}

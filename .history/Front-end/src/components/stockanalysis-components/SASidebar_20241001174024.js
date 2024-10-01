@@ -12,7 +12,7 @@ import '../pages/StockAnalysis.css';
 import SASidebarCard from './SASidebarCard';
 import SearchCard from './SearchCard';
 
-const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase, onSearch, onNavigate = () => { } }) => {
+const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase onSearch, onNavigate = () => { } }) => {
     const [expandedItems, setExpandedItems] = useState({}); // Tracks the open/close state of each accordion item
     const [searchTerm, setSearchTerm] = useState('');
     const [showSidebar, setShowSidebar] = useState(false); // Offcanvas visibility

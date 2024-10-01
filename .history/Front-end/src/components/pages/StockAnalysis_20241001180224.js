@@ -124,12 +124,6 @@ function StockAnalysis() {
     };
 
     const addFavourite = (companyTitle) => {
-
-        if (companyTitle === "Unknown") {
-            console.log("Not a valid stock. Cannot add to favorites.");
-            return; // Prevent adding if the stock name is "Unknown"
-        }
-
         // Check if the stock already exists
         if (!favouriteStocks.some(stock => stock.title === companyTitle)) {
             const newFavourite = { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" };
@@ -154,22 +148,43 @@ function StockAnalysis() {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
             const userId = userIdData.userId;
-
-            const response = await fetch('http://localhost:4000/favorite-stocks/add', {
-                method: 'POST',
+    
+            // Check if the stock already exists in the database to avoid duplicates
+            const response = await fetch('http://localhost:4000/favorite-stocks/get-all', {
+                method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({
-                    userId,
-                    stockSymbol: companyTitle,
-                }),
+                body: JSON.stringify({ userId }), // This may need to be adjusted for GET
             });
+    
+            const existingStocks = await response.json();
+            
+            if (!existingStocks.some(stock => stock.stockSymbol === companyTitle)) {
+                const addResponse = await fetch('http://localhost:4000/favorite-stocks/add', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        userId,
+                        stockSymbol: companyTitle,
+                    }),
+                });
+    
+                if (addResponse.ok) {
+                    console.log(`${companyTitle} added to database successfully.`);
+                } else {
+                    alert("Failed to add favourite stock.");
+                }
+            } else {
+                console.log(`${companyTitle} already exists in database.`);
+            }
         } catch (error) {
             console.error('Error adding favourite stock:', error);
             alert("Error occurred while adding favourite stock.");
         }
-    };
+    };    
 
     const removeFavouriteFromDatabase = async (companyTitle) => {
         try {

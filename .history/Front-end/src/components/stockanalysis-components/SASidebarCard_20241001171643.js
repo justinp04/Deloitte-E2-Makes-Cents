@@ -7,6 +7,7 @@ import { Card, Button } from 'react-bootstrap';
 import FavouriteButton from './FavouriteButton';
 
 const SASidebarCard = ({ companyTitle, onClick, onFavourite, onRemoveFavourite, isFavourited}) => {
+
     return (
         <Card
             style={{ cursor: 'pointer', backgroundColor: '#FFFFFF', borderRadius: '0', border: 'none' }}

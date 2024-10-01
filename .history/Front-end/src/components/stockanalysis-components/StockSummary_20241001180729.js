@@ -41,7 +41,6 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
         if (stockName && stockName !== "Unknown") {
             fetchStockData();
         }
-        
     }, [stockName, responseDepth]);
 
     return (

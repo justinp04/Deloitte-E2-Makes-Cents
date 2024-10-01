@@ -12,7 +12,7 @@ import '../pages/StockAnalysis.css';
 import SASidebarCard from './SASidebarCard';
 import SearchCard from './SearchCard';
 
-const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase, onSearch, onNavigate = () => { } }) => {
+const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, onSearch, onNavigate = () => {} }) => {
     const [expandedItems, setExpandedItems] = useState({}); // Tracks the open/close state of each accordion item
     const [searchTerm, setSearchTerm] = useState('');
     const [showSidebar, setShowSidebar] = useState(false); // Offcanvas visibility
@@ -45,12 +45,12 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
 
     return (
         <div className="sidebar-container-styling">
-            {/* <div className="sidebar-container-styling position-fixed"> */}
+        {/* <div className="sidebar-container-styling position-fixed"> */}
             {/* Sidebar Toggle Button */}
             <Button
                 variant="light"
                 className="d-lg-none position-fixed"
-                style={{ border: "none", background: "none", outline: "none" }}
+                style={{border: "none", background: "none", outline: "none" }}
                 onClick={handleShowSidebar}>
                 <FontAwesomeIcon icon={faBars} />
             </Button>
@@ -119,8 +119,8 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                             companyTitle={stock.title}
                                                             status="Analyse"
                                                             onClick={() => onNavigate(stock.title)}
-                                                            onFavourite={() => addFavouriteToDatabase(stock.title)} // Add to Database
-                                                            onRemoveFavourite={() => removeFavourite(stock.title)} // Remove from Database
+                                                            onFavourite={() => addFavourite(stock.title)}  // Add to Database
+                                                            onRemoveFavourite={removeFavourite} // Remove from Database
                                                             isFavourited={true}
                                                         />
                                                     ))}
@@ -134,7 +134,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                         onSearch={() => handleSearch(searchTerm)} // Pass search term when search is triggered
                                                         setSearchTerm={setSearchTerm} // Pass function to update searchTerm
                                                     /> */}
-
+                                                    
                                                     {/* {searchResults.map((result, idx) => (
                                                         <SearchCard
                                                             key={idx}

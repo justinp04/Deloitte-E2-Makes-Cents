@@ -125,10 +125,7 @@ function StockAnalysis() {
 
     const addFavourite = (companyTitle) => {
 
-        if (companyTitle === "Unknown") {
-            console.log("Not a valid stock. Cannot add to favorites.");
-            return; // Prevent adding if the stock name is "Unknown"
-        }
+        
 
         // Check if the stock already exists
         if (!favouriteStocks.some(stock => stock.title === companyTitle)) {
