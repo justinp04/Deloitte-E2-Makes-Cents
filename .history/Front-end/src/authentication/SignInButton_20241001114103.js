@@ -13,10 +13,12 @@ export const SignInButton = () => {
       if (response) {
         const email = response.account.username;
   
-        // Check if the user is new or existing
-        const res = await fetch(`http://localhost:4000/next/check-user?email=${email}`);
+        // Retry logic added to handle transient issues
+        const res = await retryFetch(`http://localhost:4000/next/check-user?email=${email}`, {
+          method: 'GET',
+          headers: { 'Content-Type': 'application/json' },
+        });
   
-        // Using `res.ok` for better readability, checking for `404` explicitly
         if (res.status === 200) {
           // User exists, navigate to the /about page
           navigate('/about');
@@ -24,12 +26,11 @@ export const SignInButton = () => {
           // User does not exist, navigate to the questionnaire page
           navigate('/questionnaire');
         } else {
-          // Handle unexpected statuses here
-          throw new Error(`Unexpected response status: ${res.status}`);
+          throw new Error('Unexpected response status from server');
         }
       }
     } catch (error) {
-      console.error('Error during login or user existence check:', error);
+      console.log('Error during login or user existence check:', error);
       alert('An error occurred during the login process. Please try again.');
     }
   };
