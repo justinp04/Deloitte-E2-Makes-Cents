@@ -40,13 +40,13 @@ def get_query_embedding(query_text):
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-METHOD: scroll_for_stock
+METHOD: scroll_for_stock_summary
 IMPORT: stock_name
 EXPORT: final_documents
 PURPOSE: uses semantic based searching to return 
         relevant documents from Qdrant
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-def scroll_for_stock(stock_name):
+def scroll_for_stock_summary(stock_name):
     # print(stock_name)
 
     source_filter = Filter( #create filter based on source name
@@ -77,6 +77,49 @@ def scroll_for_stock(stock_name):
     
     return final_documents
     
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+METHOD: scroll_for_stock_chatbot
+IMPORT: stock_name
+EXPORT: final_documents
+PURPOSE: uses semantic based searching to return 
+        relevant documents from Qdrant
+'''''''''''''''''''''''''''''''''''''''''''''''''''
+def scroll_for_stock_chatbot(stock_name):
+    # print(stock_name)
+
+    source_filter = Filter(
+    should=[
+        FieldCondition(
+            key="source",
+            match=MatchText(text=f"{stock_name}-")  # Match with hyphen
+        ),
+        FieldCondition(
+            key="source",
+            match=MatchText(text=f"{stock_name}_")  # Match with underscore
+        )
+    ]
+    )
+    
+    scroll_result, next_page = load_qdrant_client().scroll( #use scroll to retrieve all matching vectors
+        collection_name="E2cluster1",
+        scroll_filter=source_filter,
+        limit=100  #can adjust - keep high to avoid missing points 
+    )
+
+    final_documents = []
+    for point in scroll_result:
+        document = {
+            'content': point.payload.get('content', 'No content available'),
+            'metadata': {
+                'source': point.payload.get('source', 'No source available'),
+                'url': point.payload.get('url', 'No URL available')
+            }
+        }
+        final_documents.append(document)  # This should be inside the loop
+    
+    return final_documents
+
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: query_qdrant

@@ -1,5 +1,5 @@
 import tiktoken
-from user_queries import query_qdrant, get_llm_response, scroll_for_stock
+from user_queries import query_qdrant, get_llm_response, scroll_for_stock_chatbot
 from prompt_engineering import chatbot_experience, chatbot_income, chatbot_invest_length, chatbot_risk, chatbot_loss, chatbot_invest_type
 from summary import get_stock_name
 import sys, requests, json
@@ -52,7 +52,7 @@ def main():
 
     # Query Qdrant for relevant documents using the user input and stock name context
     #documents = query_qdrant(user_input_with_context, stock_name if stock_name else 'the queried stock') #this line not currently being used for scroll
-    documents = scroll_for_stock(stock_name if stock_name else 'the queried stock')
+    documents = scroll_for_stock_chatbot(stock_name if stock_name else 'the queried stock')
     context = "\n".join([doc['content'] for doc in documents])
 
     # Append the context to the conversation
