@@ -3,7 +3,7 @@ import NewsCard from './NewsCard';
 
 const NewsList = ({ articles }) => {
     return (
-        <div className="mt-2">
+        <div className="mt-2 mx-3">
             {articles.map((article, index) => (
                 <NewsCard
                     key={index}

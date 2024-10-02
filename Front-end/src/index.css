@@ -23,7 +23,7 @@ code {
 
 /* Font Sizes */
 .page-title-text{
-  font-size: clamp(40px, 5vw, 50px);
+  font-size: clamp(40px, 4vw, 50px);
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -42,7 +42,6 @@ code {
   font-size: clamp(4px, 4vw, 15px);
 }
 
-
 /* Set Margining */
 .mt70{
   margin-top: 70px;
@@ -52,19 +51,6 @@ code {
 }
 .ml-300{
   margin-left: 300px;
-}
-
-.container-mid {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.border-no-outline {
-  border: none;
-  outline: none;
-  box-shadow: none;
 }
 
 /* Buttons */
@@ -77,12 +63,10 @@ code {
   border-radius: 50px;
   width: 200px;
 }
-
 .green-btn:hover {
   background-color: black;
   color: white;
 }
-
 .green-btn:active {
   background-color: var(--mc-green);
 }
@@ -96,27 +80,12 @@ code {
   border-radius: 50px;
   width: 200px;
 }
-
 .black-btn:hover {
   background-color: rgb(58, 58, 61);
   color: white;
 }
-
 .black-btn:active {
   background-color: black;
-}
-
-.btn-no-outline {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline: none;
-}
-
-.btn-no-outline:focus {
-  outline: none;
-  box-shadow: none;
 }
 
 .center-button {
@@ -127,7 +96,6 @@ code {
 }
 
 /* Styling for Sidebar */
-
 .image-size {
   width: 50px;
   height: 50px;
