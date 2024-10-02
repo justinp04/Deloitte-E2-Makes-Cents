@@ -1,5 +1,5 @@
 from prompt_engineering import response_complexity, user_income, user_horizon, user_risk, user_loss, user_preference
-from user_queries import query_qdrant, get_llm_response, generate_references, scroll_for_stock_summary
+from user_queries import get_llm_response, generate_references, search_for_stock_summary
 import sys
 import json, re
 from load_clients import load_blob_client
@@ -26,7 +26,7 @@ def main():
 
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
     
-    documents = scroll_for_stock_summary(stock_name)
+    documents = search_for_stock_summary(stock_name, user_query)
     #documents = query_qdrant(user_query, stock_name);
     #print(documents) #can comment this in for debugging purposes
 

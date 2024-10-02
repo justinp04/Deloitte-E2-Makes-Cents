@@ -1,4 +1,4 @@
-import os
+import os, string
 from qdrant_client.models import ScoredPoint
 from load_clients import load_openai_client, load_qdrant_client, load_deployment_name
 from qdrant_client.models import ScoredPoint, Filter, Match, FieldCondition, MatchText
@@ -40,14 +40,16 @@ def get_query_embedding(query_text):
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-METHOD: scroll_for_stock_summary
-IMPORT: stock_name
+METHOD: search_for_stock_summary
+IMPORT: stock_name, query_text
 EXPORT: final_documents
-PURPOSE: uses semantic based searching to return 
+PURPOSE: uses hybrid based searching to return 
         relevant documents from Qdrant
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-def scroll_for_stock_summary(stock_name):
+def search_for_stock_summary(stock_name, query_text):
     # print(stock_name)
+
+    stock_vector = get_query_embedding(query_text)
 
     source_filter = Filter( #create filter based on source name
         must=[
@@ -58,10 +60,11 @@ def scroll_for_stock_summary(stock_name):
         ]
     )
     
-    scroll_result, next_page = load_qdrant_client().scroll( #use scroll to retrieve all matching vectors
+    scroll_result, next_page = load_qdrant_client().scroll( #use search to retrieve all matching vectors
         collection_name="E2cluster1",
+        query_vector=stock_vector,
         scroll_filter=source_filter,
-        limit=100  #can adjust - keep high to avoid missing points 
+        limit=21  #can adjust - keep high to avoid missing points 
     )
 
     final_documents = []
@@ -79,32 +82,50 @@ def scroll_for_stock_summary(stock_name):
     
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-METHOD: scroll_for_stock_chatbot
-IMPORT: stock_name
+METHOD: search_for_stock_chatbot
+IMPORT: stock_name, query_text
 EXPORT: final_documents
-PURPOSE: uses semantic based searching to return 
+PURPOSE: uses hybrid based searching to return 
         relevant documents from Qdrant
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-def scroll_for_stock_chatbot(stock_name):
+def search_for_stock_chatbot(stock_name, query_text):
     # print(stock_name)
 
-    source_filter = Filter(
-    should=[
+    stock_vector = get_query_embedding(query_text)
+    query_text_cleaned = query_text.replace('?', '').replace('.', '').replace(',', '') #remove some punctuation
+    key_terms = query_text_cleaned.split() #split the user query terms for semantic search
+
+    keyword_conditions = [
         FieldCondition(
-            key="source",
-            match=MatchText(text=f"{stock_name}-")  # Match with hyphen
-        ),
-        FieldCondition(
-            key="source",
-            match=MatchText(text=f"{stock_name}_")  # Match with underscore
+            key="content",
+            match=MatchText(text=term) #condition to check to match user query terms in Qdrant points
         )
+        for term in key_terms
     ]
+
+    source_filter = Filter(
+        must=[
+            Filter(  #sub-filter to implement OR logic within the 'must' filter for source name search
+                should=[
+                    FieldCondition(
+                        key="source",
+                        match=MatchText(text=f"{stock_name}-")  
+                    ),
+                    FieldCondition(
+                        key="source",
+                        match=MatchText(text=f"{stock_name}_")  
+                    )
+                ]
+            )
+        ],
+        should=keyword_conditions  #should filter: match any of the key terms in the content
     )
     
-    scroll_result, next_page = load_qdrant_client().scroll( #use scroll to retrieve all matching vectors
+    scroll_result, next_page = load_qdrant_client().scroll( #use search to retrieve all matching vectors
         collection_name="E2cluster1",
+        query_vector=stock_vector,
         scroll_filter=source_filter,
-        limit=100  #can adjust - keep high to avoid missing points 
+        limit=20  #can adjust - keep high to avoid missing points 
     )
 
     final_documents = []
