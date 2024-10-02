@@ -23,23 +23,28 @@ code {
 
 /* Font Sizes */
 .page-title-text{
-  font-size: clamp(40px, 4vw, 50px);
+  font-size: clamp(40px, 5vw, 50px);
   text-transform: uppercase;
   font-weight: bold;
 }
 .page-subtitle1-text
 {
-  font-size: clamp(18px, 4vw, 25px);
+  font-size: clamp(18px, 5vw, 23px);
   font-weight: bold;
 }
 .page-subtitle2-text
 {
-  font-size: clamp(15px, 4vw, 20px);
+  font-size: clamp(19px, 5vw, 22px);
+  font-weight: bold;
+}
+.page-subtitle3-text
+{
+  font-size: clamp(9px, 5vw, 15px);
   font-weight: bold;
 }
 .page-normal-text
 {
-  font-size: clamp(4px, 4vw, 15px);
+  font-size: clamp(11px, 5vw, 15px);
 }
 
 /* Set Margining */
@@ -51,6 +56,9 @@ code {
 }
 .ml-300{
   margin-left: 300px;
+}
+.content-margining{
+  margin-left: 310px;
 }
 
 /* Buttons */
@@ -95,6 +103,17 @@ code {
   height: 100%;
 }
 
+/* Chevron Styling*/
+.chevron-icon {
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+
 /* Styling for Sidebar */
 .image-size {
   width: 50px;
@@ -138,25 +157,27 @@ code {
   background-color: var(--sidebar-background) !important;
 }
 
-.content-margin{
-  margin-left: 30px;
-}
-
 @media (max-width: 992px) {
   .sidebar-container-styling {
       margin-top: 0px;
       width: 0px;
   }
+  .content-margining{
+    margin-left: 30px;
+  }
 }
 
 @media (max-width: 768px) {
-  .content-margin{
-      margin-left: 30px;
+  .content-margining{
+      margin-left: 25px;
   }
 }
 
 @media (max-width: 576px) {
-
+  .content-margining{
+    margin-left: 20px;
+  }
+  
 }
 
 @import "~bootstrap/dist/css/bootstrap.css";

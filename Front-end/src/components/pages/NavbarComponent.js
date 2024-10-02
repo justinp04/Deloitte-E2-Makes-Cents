@@ -32,7 +32,7 @@ function NavbarComponent() {
     const isActive = (path) => location.pathname === path;
 
     return (
-        <Navbar expand="lg" fixed="top" className="navbar-light">
+        <Navbar expand="lg" fixed="top" className="navbar-light pt-3">
             <Container fluid className="me-2 ms-3">
                 <Navbar.Brand as={Link} to="/" className="site-title fw-bold" hidden={showTitleState}>
                     <img src="../images/MCLogo.png" width="25" height="25" className='mb-2 me-2'/>
@@ -73,7 +73,7 @@ function NavbarComponent() {
 
                                 <Dropdown align="end" className="me-3 ms-3">
                                     <Dropdown.Toggle as={Nav.Link} className="fw-bold p-0 no-caret" style={{ border: 'none', backgroundColor: 'transparent' }}>
-                                        <img src="../images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="55" height="55" />
+                                        <img src="../images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="50" height="50" />
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>
                                         <Dropdown.Item as={Link} to="/settings/account-info" className="my-2">

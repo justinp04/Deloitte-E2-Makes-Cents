@@ -42,16 +42,11 @@ const AccountInfo = () => {
     };
 
     return (
-        <div className="container mt-0 ps-0 ms-0"> 
-            <h2 className="fw-bold ms-3 align-self-start">Account Information</h2>
-                <p className="mb-3 ms-3 align-self-start">Update your account information.</p>
-            <div className="row justify-content-center mt-4">
-                
+        <div className="d-flex justify-content-center align-items-center"> 
                 <div className="col-md-8 col-lg-6">
-                    
                     <form onSubmit={handleSaveClick}>
                         <div className="mb-3">
-                            <label className="form-label fw-bold">First Name</label>
+                            <label className="page-subtitle3-text">First Name</label>
                             <input
                                 type="text"
                                 className="form-control text-input-box"
@@ -61,7 +56,7 @@ const AccountInfo = () => {
                             />
                         </div>
                         <div className="mb-3">
-                            <label className="form-label fw-bold">Last Name</label>
+                            <label className="page-subtitle3-text">Last Name</label>
                             <input
                                 type="text"
                                 className="form-control text-input-box"
@@ -71,7 +66,7 @@ const AccountInfo = () => {
                             />
                         </div>
                         <div className="mb-3">
-                            <label className="form-label fw-bold">Email</label>
+                            <label className="page-subtitle3-text">Email</label>
                             <input
                                 type="email"
                                 className="form-control text-input-box"
@@ -81,7 +76,7 @@ const AccountInfo = () => {
                             />
                         </div>
                         <div className="mb-3">
-                            <label className="form-label fw-bold">Password</label>
+                            <label className="page-subtitle3-text">Password</label>
                             <input
                                 type="password"
                                 className="form-control text-input-box"
@@ -91,7 +86,7 @@ const AccountInfo = () => {
                             />
                         </div>
                         <div className="mb-3">
-                            <label className="form-label fw-bold">Date of Birth</label>
+                            <label className="page-subtitle3-text">Date of Birth</label>
                             <input
                                 type="text"
                                 className="form-control text-input-box"
@@ -109,7 +104,6 @@ const AccountInfo = () => {
                     </form>
                 </div>
             </div>
-        </div>
     );
 };
 

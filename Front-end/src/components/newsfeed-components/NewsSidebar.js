@@ -36,7 +36,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                 className="d-lg-none position-fixed"
                 style={{border: "none", background: "none", outline: "none" }}
                 onClick={handleShowSidebar}>
-                <FontAwesomeIcon icon={faBars} />
+                <FontAwesomeIcon icon={faBars}/>
             </Button>
 
             {/* Offcanvas Sidebar for News Feed */}

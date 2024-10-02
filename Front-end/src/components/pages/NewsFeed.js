@@ -119,7 +119,7 @@ function NewsFeed() {
 
     return (
         <div className="page-container">
-            <div className="sidebar-container" style={{ zIndex: 1000 }}>
+            <div className="mt80" style={{ zIndex: 1000 }}>
                 {/* Passing currentInvestmentCompanies and followedCompanies to NewsSidebar */}
                 <NewsSidebar 
                     onSearch={handleSearch}
@@ -127,14 +127,12 @@ function NewsFeed() {
                     followedCompanies={followedCompanies}
                 />
             </div>
-            <div className="content newsfeed-container pt-0">
-                <div className="title-container">
-                    <NewsCompanyTitle
-                        textContent={`Commonwealth Bank of Australia (${searchTerm})`}
-                        onAddNewInvestment={handleAddNewInvestment}
-                        onAddNewFollowing={handleAddNewFollowing}
-                    />
-                </div>
+            <div className="content content-margining pt-0">
+                <NewsCompanyTitle
+                    textContent={`Commonwealth Bank of Australia (${searchTerm})`}
+                    onAddNewInvestment={handleAddNewInvestment}
+                    onAddNewFollowing={handleAddNewFollowing}
+                />
                 <NewsHeroSection
                     title={newsData.hero.title}
                     subtitle={newsData.hero.subtitle}
@@ -142,7 +140,7 @@ function NewsFeed() {
                     articles={newsData.articles}
                 />
                 <hr className='blue-line' />
-                <div className="d-flex align-items-center justify-content-between me-3">
+                <div className="d-flex align-items-center justify-content-between me-3 mb-4">
                     <h4 className='page-subtitle2-text'>Most Recent</h4>
                     <FilterButton />
                 </div>

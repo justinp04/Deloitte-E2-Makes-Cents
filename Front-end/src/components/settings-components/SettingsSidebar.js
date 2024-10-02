@@ -3,9 +3,8 @@
  * Fix:
  *  - Colour
  ************************************************************************************************/
-
 import React, { useState } from 'react';
-import { Nav, Button, Offcanvas } from 'react-bootstrap';
+import { Nav, Button, Offcanvas, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import SearchBar from '../SearchBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,34 +12,28 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import '../Components.css';
 
 const SettingsSidebar = ({ toggleSidebar }) => {
-    const [show, setShow] = useState(false);
+    const [showSidebar, setShowSidebar] = useState(false); // Controls Offcanvas visibility
+    // Handle closing the sidebar
+    const handleCloseSidebar = () => setShowSidebar(false);
 
-    const handleClose = () => {
-        setShow(false);
-        toggleSidebar(false); // Notify parent that the sidebar is closed
-    };
-
-    const handleShow = () => {
-        setShow(true);
-        toggleSidebar(true); // Notify parent that the sidebar is open
-    };
+    // Handle opening the sidebar
+    const handleShowSidebar = () => setShowSidebar(true);
 
     return (
-        <>
+        <div className="position-fixed">
             {/* Sidebar Toggle Button */}
             <Button
                 variant="light"
                 className="d-lg-none position-fixed"
-                style={{marginTop:"85px", border:"none", background:"white", outline:"none"}}
-                onClick={handleShow}
-            >
+                style={{border:"none", background:"white", outline:"none"}}
+                onClick={handleShowSidebar}>
                 <FontAwesomeIcon icon={faBars} />
             </Button>
 
             {/* Offcanvas Sidebar */}
             <Offcanvas
-                show={show}
-                onHide={handleClose}
+                show={showSidebar}
+                onHide={handleCloseSidebar}
                 responsive="lg"
                 className="p-0"
                 style={{ width: '300px' }}
@@ -50,47 +43,47 @@ const SettingsSidebar = ({ toggleSidebar }) => {
                 </Offcanvas.Header>
 
                 {/* Adjust the margin-top based on the collapsed state */}
-                <Offcanvas.Body className="p-0">
-                    <Nav
-                        className="flex-column"
-                        style={{ marginTop: show ? '0px' : '73px' }} // 80px when not collapsed
-                    >
-                        {/* <SearchBar placeholder="Search Settings" className="mb-3"/> */}
-                        <div className="fixed-searchbar">
+                <Offcanvas.Body className="p-0 scrollable-sidebar sidebar-background-colour">
+                    <Container className="p-0 scrollable-sidebar sidebar-background-colour">
+                        <div className="fixed-searchbar pt-2 pb-3" style={{backgroundColor:"white"}}>
                             <SearchBar placeholder="Search Settings" className="mb-0"/>
                         </div>
-                        
-                        <Nav.Item className="d-flex mt-2">
-                            <NavLink
-                                to="account-info"
-                                className="menu-selection fw-bold"
-                                activeClassName="active"
-                            >
-                                Account Information
-                            </NavLink>
-                        </Nav.Item>
-                        <Nav.Item className="d-flex">
-                            <NavLink
-                                to="update-profile"
-                                className="menu-selection fw-bold"
-                                activeClassName="active"
-                            >
-                                Update Profile Insights
-                            </NavLink>
-                        </Nav.Item>
-                        <Nav.Item className="d-flex">
-                            <NavLink
-                                to="user-guide"
-                                className="menu-selection fw-bold"
-                                activeClassName="active"
-                            >
-                                User Guide
-                            </NavLink>
-                        </Nav.Item>
-                    </Nav>
+
+                        <Nav
+                            className="flex-column"
+                        >              
+                            <Nav.Item className="d-flex">
+                                <NavLink
+                                    to="account-info"
+                                    className="menu-selection fw-bold"
+                                    activeClassName="active"
+                                >
+                                    Account Information
+                                </NavLink>
+                            </Nav.Item>
+                            <Nav.Item className="d-flex">
+                                <NavLink
+                                    to="update-profile"
+                                    className="menu-selection fw-bold"
+                                    activeClassName="active"
+                                >
+                                    Update Profile Insights
+                                </NavLink>
+                            </Nav.Item>
+                            <Nav.Item className="d-flex">
+                                <NavLink
+                                    to="user-guide"
+                                    className="menu-selection fw-bold"
+                                    activeClassName="active"
+                                >
+                                    User Guide
+                                </NavLink>
+                            </Nav.Item>
+                        </Nav>
+                    </Container>
                 </Offcanvas.Body>
             </Offcanvas>
-        </>
+        </div>
     );
 };
 
