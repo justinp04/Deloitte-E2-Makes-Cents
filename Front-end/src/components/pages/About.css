@@ -1,4 +1,11 @@
 /* About.js */
+.main-title {
+    font-weight: bold;
+    font-size: 6rem;
+    padding-top: 10px;
+  }
+  
+
 .feature-box {
     border: 3px solid var(--mc-purple) !important;
     border-radius: 20px !important;

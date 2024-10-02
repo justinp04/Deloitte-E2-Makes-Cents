@@ -4,17 +4,15 @@
     margin-top: 0px;
     margin-bottom: 20px;
 }
-
 .company-title-img {
     height: 6.5rem;
     width: 6.5rem;
     border-radius: 20px;
 }
-
-.company-title-text {
-    font-size: 40px;
+/* .company-title-text {
+    font-size: clamp(40px, 5vw, 50px);
     text-transform: uppercase;
-}
+} */
 
 /* FilterButton.js */
 .filter-button {
@@ -31,19 +29,16 @@
     width: 90px;
     height: 23px;
 }
-
 .filter-button .ms-1 {
     margin-left: 5px;
 }
-
 .filter-button:hover {
     background-color: #c6c6c6;
 }
-
-.filter-title {
+/* .filter-title {
     font-size: 20px;
     font-weight: bold;
-}
+} */
 
 /* NewsCard.js */
 .news-card {
@@ -52,13 +47,11 @@
     background-color: var(--sidebar-background) !important;
     padding: 10px;
 }
-
 .card img {
     border-radius: 10px;
     max-width: 100%; 
     height: auto; 
 }
-
 .card .d-flex {
     padding: 10px;
     align-items: center;
@@ -71,8 +64,6 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
-
-/* Card Summary */
 .news-card-summary {
     font-size: 1rem;
 }
@@ -108,21 +99,6 @@
 
 .news-sidebar-card:active {
     background-color: var(--mc-green); 
-}
-
-.add-button {
-    position: fixed !important;
-    width: 60px;
-    height: 60px;
-    position: absolute !important;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
 }
 
 .no-caret::after {
@@ -187,7 +163,7 @@
 }
 
 .newsfeed-container{
-    margin-left: 300px;
+    margin-left: 310px;
 }
 
 /* CSS ANIMATIONS */
@@ -203,7 +179,7 @@
 /* Large screen */
 @media (max-width: 992px) {
     .newsfeed-container{
-        margin-left: 0px;
+        margin-left: 30px;
     }
 }
 
@@ -226,13 +202,6 @@
 
     .news-card-summary {
         font-size: 0.9rem;
-    }
-
-    .add-button {
-        width: 50px;
-        height: 50px;
-        bottom: 70px;
-        left: 150px;
     }
 
     .hero-section {
@@ -258,7 +227,7 @@
     }
 
     .newsfeed-container{
-        margin-left: 0px;
+        margin-left: 25px;
     }
 
 }
@@ -302,14 +271,7 @@
         font-size: 0.85rem;
     }
 
-    .add-button {
-        width: 40px;
-        height: 40px;
-        bottom: 60px;
-        left: 120px;
-    }
-
     .newsfeed-container{
-        margin-left: 0px;
+        margin-left: 20px;
     }
 }

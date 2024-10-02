@@ -12,16 +12,16 @@ const NewsCompanyTitle = ({ textContent, onAddNewInvestment, onAddNewFollowing})
         <div className="company-title-div">
             <Row>
                 {/* Page title */}
-                <Col className="fw-bold company-title-text">
+                <Col className="page-title-text">
                     News Feed
                 </Col>
             </Row>
             <Row>
                 {/* Company name  */}
-                <Col className="fw-bold" style={{fontSize:"130%"}}>
+                <Col className="page-subtitle1-text">
                     {textContent}
                 </Col>
-                <Col className="d-flex justify-content-end" >
+                <Col className="d-flex justify-content-end">
                     {/* Add button to add company news feed to user list  */}
                     <AddButton 
                         className="mt-2"

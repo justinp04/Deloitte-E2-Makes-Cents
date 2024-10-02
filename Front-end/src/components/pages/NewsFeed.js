@@ -143,7 +143,7 @@ function NewsFeed() {
                 />
                 <hr className='blue-line' />
                 <div className="d-flex align-items-center justify-content-between me-3">
-                    <h4 className='filter-title'>Most Recent</h4>
+                    <h4 className='page-subtitle2-text'>Most Recent</h4>
                     <FilterButton />
                 </div>
                 <NewsList articles={newsData.articles}/>

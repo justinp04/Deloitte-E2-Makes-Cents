@@ -27,10 +27,10 @@ const NewsCard = ({ imageSrc, newsTitle, newsSummary, date, onClick }) => {
                         />
                     </div>
                     <div className="flex-grow-1 ms-3">
-                        <div className="fw-bold news-card-title">
+                        <div className="page-subtitle2-text">
                             {newsTitle}
                         </div>
-                        <div className="fw-normal" style={{ fontSize: '16px', marginTop: '5px' }}>
+                        <div className="page-normal-text" style={{marginTop: '5px' }}>
                             {newsSummary}
                         </div>
                     </div>

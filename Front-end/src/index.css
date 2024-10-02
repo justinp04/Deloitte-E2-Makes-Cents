@@ -22,28 +22,37 @@ code {
 }
 
 /* Font Sizes */
-.main-title {
-  font-weight: bold;
-  font-size: 6rem;
-  padding-top: 10px;
-}
-
-.page-title {
-  font-weight: bold;
-  font-size: 280%;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.page-header {
-  font-weight: bold;
-  font-size: 280%;
-  padding-left: 10px;
-  border: none;
+.page-title-text{
+  font-size: clamp(40px, 5vw, 50px);
   text-transform: uppercase;
+  font-weight: bold;
+}
+.page-subtitle1-text
+{
+  font-size: clamp(18px, 4vw, 25px);
+  font-weight: bold;
+}
+.page-subtitle2-text
+{
+  font-size: clamp(15px, 4vw, 20px);
+  font-weight: bold;
+}
+.page-normal-text
+{
+  font-size: clamp(4px, 4vw, 15px);
 }
 
-/* Margining */
+
+/* Set Margining */
+.mt70{
+  margin-top: 70px;
+}
+.mt80{
+  margin-top: 80px;
+}
+.ml-300{
+  margin-left: 300px;
+}
 
 .container-mid {
   min-height: 100vh;
