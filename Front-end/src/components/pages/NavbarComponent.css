@@ -2,8 +2,8 @@
 .navbar {
     height: 70px;
     width: 100%;
-    /* background-color: var(--background-color-light); */
-    background-color: teal
+    background-color: var(--background-color-light);
+    /* background-color: teal */
 }
 
 .active-link {
