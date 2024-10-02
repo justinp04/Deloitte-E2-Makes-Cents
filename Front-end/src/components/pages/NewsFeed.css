@@ -43,7 +43,6 @@
 .filter-title {
     font-size: 20px;
     font-weight: bold;
-    margin-left: 37px;
 }
 
 /* NewsCard.js */
@@ -81,7 +80,7 @@
 /* NewsSidebar.js */
 
 .sidebar-container {
-    margin-top: 73px;
+    margin-top: 70px;
 }
 
 .center-searchbar {
@@ -308,10 +307,6 @@
         height: 40px;
         bottom: 60px;
         left: 120px;
-    }
-
-    #sidebarContainer {
-        margin-top: 0px;
     }
 
     .newsfeed-container{

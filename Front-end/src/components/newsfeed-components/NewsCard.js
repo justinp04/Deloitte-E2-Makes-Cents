@@ -5,11 +5,14 @@
 import React from 'react';
 
 import '../pages/NewsFeed.css';
+import { format } from 'date-fns';
 
 const NewsCard = ({ imageSrc, newsTitle, newsSummary, date, onClick }) => {
+    const formattedDate = format(new Date(date), "eeee do MMMM yyyy h:mm a");
+
     return (
         <div onClick={onClick} style={{ cursor: 'pointer'}}>
-            <small className="text-muted">{date}</small>
+            <small className="text-muted">{formattedDate}</small>
             <div className="news-card mb-3">
                 <div className="d-flex align-items-center p-3">
                     <div className="flex-shrink-0">

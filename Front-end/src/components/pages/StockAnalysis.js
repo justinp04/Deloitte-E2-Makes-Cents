@@ -224,11 +224,11 @@ function StockAnalysis() {
                     toggleSidebar={toggleSidebar}
                 />
             </div>
-            <div className={`content p-0 ${sidebarOpen ? 'shift-content' : ''}`}  >
+            <div className={`content content-margin p-0 ${sidebarOpen ? 'shift-content' : ''}`}  >
                 <div
                     className="position-sticky stock-summary-container"
                     style={{ top: '0', width: '100%', backgroundColor: 'none' }}>
-                    <h1 className="page-header ms-4 mb-2 me-5" style={{ marginRight: '62%' }}>STOCK ANALYSIS</h1>
+                    <h1 className="page-header mb-2 me-5" style={{ marginRight: '62%' }}>STOCK ANALYSIS</h1>
                     <StockSummary
                         accordionOpen={accordionOpen}
                         setAccordionOpen={setAccordionOpen}

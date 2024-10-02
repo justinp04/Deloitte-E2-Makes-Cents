@@ -43,9 +43,7 @@ code {
   text-transform: uppercase;
 }
 
-.container {
-  margin-top: 80px;
-}
+/* Margining */
 
 .container-mid {
   min-height: 100vh;
@@ -137,7 +135,7 @@ code {
 .content {
   flex-grow: 1;
   padding: 20px;
-  margin-top: 65px;
+  margin-top: 70px;
   transition: margin-left 0.3s ease;
 }
 
@@ -163,11 +161,25 @@ code {
   background-color: var(--sidebar-background) !important;
 }
 
+.content-margin{
+  margin-left: 30px;
+}
+
 @media (max-width: 992px) {
   .sidebar-container-styling {
       margin-top: 0px;
       width: 0px;
   }
+}
+
+@media (max-width: 768px) {
+  .content-margin{
+      margin-left: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+
 }
 
 @import "~bootstrap/dist/css/bootstrap.css";

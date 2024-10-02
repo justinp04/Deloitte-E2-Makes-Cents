@@ -9,7 +9,7 @@ import AddButton from "./AddButton";
 
 const NewsCompanyTitle = ({ textContent, onAddNewInvestment, onAddNewFollowing}) => {
     return (
-        <Container className="company-title-div">
+        <div className="company-title-div">
             <Row>
                 {/* Page title */}
                 <Col className="fw-bold company-title-text">
@@ -30,7 +30,7 @@ const NewsCompanyTitle = ({ textContent, onAddNewInvestment, onAddNewFollowing})
                     />
                 </Col>
             </Row>
-        </Container>
+        </div>
     );
 }
 

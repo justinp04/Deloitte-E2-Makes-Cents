@@ -285,4 +285,20 @@ button.accordion-button:focus {
         width: 100%;
         max-width: none;
     }
+
+    .content-margin{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-margin{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-margin{
+        margin-left: 30px;
+    }
 }

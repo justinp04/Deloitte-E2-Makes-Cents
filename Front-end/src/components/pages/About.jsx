@@ -29,7 +29,7 @@ function About() {
     };
 
     return (
-        <div className="container text-center mb-3">
+        <div className="text-center mb-3" style={{marginTop:"100px"}}>
             {/* <div className=" d-flex justify-content-center align-items-center">
                 <img src="../images/MCLogo.png" width="100rem" height="100rem" className='me-4 mb-3'/>
                 <h1 className="main-title">Makes Cents</h1>
