@@ -259,11 +259,10 @@
 
 .toggle-switch-text {
     margin-left: 2px;
-    font-size: 10px;
-    color: #333;
     user-select: none;
     width: 20px;
     font-weight: bold;
+    font-size: 10px;
 }
 
 /****************************

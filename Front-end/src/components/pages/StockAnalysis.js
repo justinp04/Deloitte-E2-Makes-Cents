@@ -212,9 +212,9 @@ function StockAnalysis() {
     };
 
     return (
-        <div className={`page-container me-3 ${sidebarOpen ? 'sidebar-open' : ''}`}>
+        <div className="page-container">
             {/* Sidebar */}
-            <div>
+            <div className="mt80" style={{ zIndex: 1000 }}>
                 <SASidebar
                     favouriteStocks={favouriteStocks}
                     addFavourite={addFavourite}
@@ -224,82 +224,82 @@ function StockAnalysis() {
                     toggleSidebar={toggleSidebar}
                 />
             </div>
-            <div className={`content content-margin p-0 ${sidebarOpen ? 'shift-content' : ''}`}  >
-                <div
-                    className="position-sticky stock-summary-container"
-                    style={{ top: '0', width: '100%', backgroundColor: 'none' }}>
-                    <h1 className="page-header mb-2 me-5" style={{ marginRight: '62%' }}>STOCK ANALYSIS</h1>
-                    <StockSummary
-                        accordionOpen={accordionOpen}
-                        setAccordionOpen={setAccordionOpen}
-                        addFavourite={addFavourite}
-                        removeFavourite={removeFavourite}
-                        favouriteStocks={favouriteStocks}
-                        summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
-                        references={references}
-                        stockName={stockName}
-                        responseDepth={responseDepth}
-                        onToggleChange={handleToggleChange}
-                    />
-                    <hr className='blue-line' />
-                </div>
-                {/* Placeholder text for user-bot chat*/}
-                {/* <div style={{ marginTop: accordionOpen ? '10px' : '190px' }}>  
-                    <ChatBox message="Howdy! 🤠" sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
-                    <ChatBox message="What is Bega Cheese Limited's revenue growth trend and profit margins, and how does it indicate stability and growth?" sender="user" senderName="You" avatar="./images/UserProfile.jpg" />
-                    <ChatBox message="Bega Cheese Limited's financial performance in FY2023 showed both positive and negative aspects. The company's revenue grew by 12% to $3.4 billion, which is a good sign for potential investors. 
-                    However, the normalised EBITDA, which stands for Earnings Before Interest, Taxes, Depreciation, and Amortization, decreased by 11% to $160.2 million in the same period, which may raise some concerns about profitability 1 .  
-                    Despite the decrease in EBITDA, the company's branded segment demonstrated resilience by maintaining its #1 positions in various categories and growing volume despite cost pressures. This indicates stability and growth potential for the company 2 .  
-                    The company's commitment to strategic initiatives, such as managing the portfolio for growth in targeted segments, increasing supply chain competitiveness, and progressing sustainability objectives, also indicates stability and growth potential. 
-                    These initiatives can provide stability and growth potential for the company, which are favorable factors for potential investors .  In summary, while the revenue growth trend is positive, the decrease in EBITDA may raise some concerns. However, 
-                    the company's strategic initiatives and commitment to sustainable growth indicate stability and growth potential, which could positively impact your decision to invest in Bega Cheese Limited ." sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
-                </div> */}
-                {/* Chat Messages */}
-                {/* need to chnage the positioning for this, styling for this is temp */}
-                <div className="content" style={{ marginTop: "100px" }}>
-                    <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
-                </div>
+            <div className="content content-margining pt-0">
+                <StockSummary
+                    accordionOpen={accordionOpen}
+                    setAccordionOpen={setAccordionOpen}
+                    addFavourite={addFavourite}
+                    removeFavourite={removeFavourite}
+                    favouriteStocks={favouriteStocks}
+                    summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
+                    references={references}
+                    stockName={stockName}
+                    responseDepth={responseDepth}
+                    onToggleChange={handleToggleChange}
+                />
+                <div>
+                      {/* Chat Messages */}
+                    {/* need to chnage the positioning for this, styling for this is temp */}
+                    <div className="content" style={{ marginTop: "100px" }}>
+                        <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
+                    </div>
+                    {/* Placeholder text for user-bot chat*/}
+                    <div style={{ marginTop: accordionOpen ? '10px' : '30px' }}>  
+                        <ChatBox message="Howdy! 🤠" sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
+                        <ChatBox message="What is Bega Cheese Limited's revenue growth trend and profit margins, and how does it indicate stability and growth?" sender="user" senderName="You" avatar="./images/UserProfile.jpg" />
+                        <ChatBox message="Bega Cheese Limited's financial performance in FY2023 showed both positive and negative aspects. The company's revenue grew by 12% to $3.4 billion, which is a good sign for potential investors. 
+                        However, the normalised EBITDA, which stands for Earnings Before Interest, Taxes, Depreciation, and Amortization, decreased by 11% to $160.2 million in the same period, which may raise some concerns about profitability 1 .  
+                        Despite the decrease in EBITDA, the company's branded segment demonstrated resilience by maintaining its #1 positions in various categories and growing volume despite cost pressures. This indicates stability and growth potential for the company 2 .  
+                        The company's commitment to strategic initiatives, such as managing the portfolio for growth in targeted segments, increasing supply chain competitiveness, and progressing sustainability objectives, also indicates stability and growth potential. 
+                        These initiatives can provide stability and growth potential for the company, which are favorable factors for potential investors .  In summary, while the revenue growth trend is positive, the decrease in EBITDA may raise some concerns. However, 
+                        the company's strategic initiatives and commitment to sustainable growth indicate stability and growth potential, which could positively impact your decision to invest in Bega Cheese Limited ." sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
+                    </div>
+                    {/* Chat Messages */}
+                    {/* need to chnage the positioning for this, styling for this is temp */}
+                    {/* <div className="content" style={{ marginTop: "100px" }}>
+                        <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
+                    </div> */}
 
-                {/* Chat Messages */}
-                <div style={{ marginTop: accordionOpen ? '10px' : '10px', paddingBottom: '120px' }}>
-                    {messages.map((msg, index) => (
-                        <ChatBox
-                            key={index}
-                            message={msg.message}
-                            sender={msg.sender}
-                            senderName={msg.sender === 'user' ? 'You' : 'Gerry'}
-                            avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'}
-                        />
-                    ))}
-                    {typing && (
-                        <ChatBox
-                            message={<div className="typing-indicator"><div className="dot"></div><div className="dot"></div><div className="dot"></div></div>}
-                            sender="bot"
-                            senderName="Gerry"
-                            avatar="./images/GerryProfile.jpg"
-                        />
-                    )}
-
-                    {/* Follow-up suggestions */}
-                    {suggestions.length > 0 && (
-                        <div className="suggestions-box">
-                            {suggestions.map((suggestion, index) => (
-                                <button
-                                    key={index}
-                                    className="suggested-question-chip"
-                                    onClick={() => handleSuggestedQuestionClick(suggestion)}
-                                >
-                                    {suggestion}
-                                </button>
-                            ))}
-                        </div>
-                    )}
-                    {/* A reference div to keep the chat view scrolled to the latest message */}
-                    <div ref={chatEndRef} />
+                    {/* Chat Messages */}
+                    <div style={{ marginTop: accordionOpen ? '10px' : '10px', paddingBottom: '120px' }}>
+                        {messages.map((msg, index) => (
+                            <ChatBox
+                                key={index}
+                                message={msg.message}
+                                sender={msg.sender}
+                                senderName={msg.sender === 'user' ? 'You' : 'Gerry'}
+                                avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'}
+                            />
+                        ))}
+                        {typing && (
+                            <ChatBox
+                                message={<div className="typing-indicator"><div className="dot"></div><div className="dot"></div><div className="dot"></div></div>}
+                                sender="bot"
+                                senderName="Gerry"
+                                avatar="./images/GerryProfile.jpg"
+                            />
+                        )}
+                        {/* Follow-up suggestions */}
+                        {suggestions.length > 0 && (
+                            <div className="suggestions-box">
+                                {suggestions.map((suggestion, index) => (
+                                    <button
+                                        key={index}
+                                        className="suggested-question-chip"
+                                        onClick={() => handleSuggestedQuestionClick(suggestion)}
+                                    >
+                                        {suggestion}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
+                        {/* A reference div to keep the chat view scrolled to the latest message */}
+                        {/* <div ref={chatEndRef} /> */}
+                    </div>
                 </div>
                 <Container className="query-bar-container">
-                    <QueryInputBar onSendMessage={handleSendMessage} />
-                </Container>
+                        <QueryInputBar onSendMessage={handleSendMessage} />
+                    </Container>
             </div>
         </div>
     );

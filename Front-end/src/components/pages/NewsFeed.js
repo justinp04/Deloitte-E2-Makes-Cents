@@ -139,7 +139,7 @@ function NewsFeed() {
                     image={newsData.hero.image}
                     articles={newsData.articles}
                 />
-                <hr className='blue-line' />
+                <hr />
                 <div className="d-flex align-items-center justify-content-between me-3 mb-4">
                     <h4 className='page-subtitle2-text'>Most Recent</h4>
                     <FilterButton />

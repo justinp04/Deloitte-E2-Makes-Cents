@@ -16,8 +16,9 @@ import axios from 'axios';
 
 const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase, onSearch, onNavigate = () => { } }) => {
     const [expandedItems, setExpandedItems] = useState({}); // Tracks the open/close state of each accordion item
-    const [searchTerm, setSearchTerm] = useState('');
     const [showSidebar, setShowSidebar] = useState(false); // Offcanvas visibility
+    
+    const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [stockSuggestions, setStockSuggestions] = useState([]);
 
@@ -67,11 +68,8 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
     const handleCloseSidebar = () => setShowSidebar(false); // Close the Offcanvas sidebar
     const handleShowSidebar = () => setShowSidebar(true);   // Open the Offcanvas sidebar
 
-    // Map event keys like in NewsSidebar
-    const accordionItems = ["0", "1", "2"]; // Map event keys for Stock Recommendations, Favourites, and Search Result
-
     return (
-        <div className="sidebar-container-styling">
+        <div className="position-fixed">
             {/* <div className="sidebar-container-styling position-fixed"> */}
             {/* Sidebar Toggle Button */}
             <Button
@@ -89,15 +87,16 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                 responsive="lg"
                 className="p-0"
                 style={{ width: '300px' }}>
+
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Stock Analysis</Offcanvas.Title>
                 </Offcanvas.Header>
 
-                <Offcanvas.Body className="p-0 sidebar-background-colour">
+                <Offcanvas.Body className="p-0 scrollable-sidebar sidebar-background-colour">
                     <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar sidebar-background-colour">
-                        <Accordion alwaysOpen className="p-0">
-                            {/* Map through accordion items just like NewsSidebar */}
-                            {accordionItems.map((key, index) => (
+                        
+                        <Accordion defaultActiveKey={null} alwaysOpen className="mb-3 sidebar-background-colour">
+                            {["0", "1", "2"].map((key, index) => (
                                 <Accordion.Item eventKey={key} key={key}>
                                     <Accordion.Header
                                         className="sidebar-item-header d-inline-flex justify-content-between align-items-centre w-100"
@@ -113,7 +112,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                     </Accordion.Header>
                                     {/* Only show Accordion.Body if expanded */}
                                     {expandedItems[key] && (
-                                        <Accordion.Body className="p-0">
+                                        <Accordion.Body>
                                             {index === 0 && (
                                                 <>
                                                     {stockSuggestions.length > 0 ? (
@@ -136,7 +135,6 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                     )}
                                                 </>
                                             )}
-
                                             {index === 1 && (
                                                 <>
                                                     <SearchBar placeholder="Search your saved stocks" />

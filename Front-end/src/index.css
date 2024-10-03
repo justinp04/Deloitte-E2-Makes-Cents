@@ -60,6 +60,10 @@ code {
 .content-margining{
   margin-left: 310px;
 }
+/* Set Padding */
+.p0{
+  padding: 0 !important;
+}
 
 /* Buttons */
 .green-btn {

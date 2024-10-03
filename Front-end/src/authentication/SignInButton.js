@@ -33,7 +33,6 @@ export const SignInButton = () => {
       alert('An error occurred during the login process. Please try again.');
     }
   };
-  
 
   return (
     <button

@@ -43,12 +43,12 @@ function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavou
         <button 
             className='border-no-outline' 
             onClick={toggleFavourite}
-            style={{ background: 'none', border: 'none', padding: 0 }}
+            style={{ background: 'none', border: 'none', padding: 0, height:"26px" }}
         >
             <FontAwesomeIcon 
                 icon={isFav ? faCheck : faPlus} 
                 className={iconClass} 
-                style={{ color: '#9747FF', fontSize: "1.4rem" }} 
+                style={{ color: '#9747FF', fontSize: "1.4rem", paddingBottom:"4px"}} 
             />
         </button>
     );
