@@ -1,5 +1,7 @@
 import csv
 from fuzzywuzzy import process
+from load_clients import load_blob_client
+from io import StringIO
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -18,7 +20,19 @@ EXPORT: stock_ticker
 PURPOSE: gets the ticker name from the user input
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def get_stock_ticker(user_input):
-    asx_stocks = load_asx_stocks()  
+
+    container_client = load_blob_client()
+    blob_name = "asx_stocks.csv"
+    blob_client = container_client.get_blob_client(blob_name)
+    downloaded_blob = blob_client.download_blob()
+    csv_content = downloaded_blob.content_as_text()
+    asx_stocks = {}
+    csv_reader = csv.DictReader(StringIO(csv_content))
+    
+    for row in csv_reader:
+        asx_stocks[row['stock_name']] = row['ticker']
+
+    #asx_stocks = load_asx_stocks()  
     stock_ticker = get_stock_name(user_input, asx_stocks)
 
     #if stock_ticker:
