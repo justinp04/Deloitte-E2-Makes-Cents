@@ -60,7 +60,7 @@ def search_for_stock_summary(stock_name, query_text):
         ]
     )
     
-    search_result, next_page = load_qdrant_client().search( #use search to retrieve all matching vectors
+    search_result= load_qdrant_client().search( #use search to retrieve all matching vectors
         collection_name="E2cluster1",
         query_vector=stock_vector,
         query_filter=source_filter,
@@ -121,7 +121,7 @@ def search_for_stock_chatbot(stock_name, query_text):
         should=keyword_conditions  #should filter: match any of the key terms in the content
     )
     
-    search_result, next_page = load_qdrant_client().search( #use search to retrieve all matching vectors
+    search_result= load_qdrant_client().search( #use search to retrieve all matching vectors
         collection_name="E2cluster1",
         query_vector=stock_vector,
         query_filter=source_filter,
