@@ -20,7 +20,7 @@ function About() {
         { id: 3, title: 'Column 1', content: 'Monitoring of social media and news for real-time insights', icon: faNewspaper }
     ];
 
-    const { instance } = useMsal();
+    const { accounts, instance } = useMsal();
 
     const handleLogin = () => {
         instance.loginPopup(loginRequest).catch((e) => {
@@ -56,9 +56,11 @@ function About() {
                     ))}
                 </div>
 
-                <button className="green-btn mt-5" onClick={handleLogin}>
-                    Create An Account
-                </button>
+                {accounts.length === 0 && (
+                    <button className="green-btn mt-5" onClick={handleLogin}>
+                        Create An Account
+                    </button>
+                )}
             </div>
         </div>
     );
