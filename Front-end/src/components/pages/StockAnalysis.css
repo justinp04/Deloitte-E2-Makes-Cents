@@ -158,24 +158,11 @@
 }
 
 /* SASidebar.js */
-/* .sa-sidebar {
-    position: fixed; 
-    top: 80px;
-    left: 0;
-    height: 100%;
-    width: 300px;
-    background-color: var(--sidebar-background);
-} */
-/* General accordion header styles */
 .accordion .accordion-item .accordion-header {
-    background-color: #f8f9fa;
-    /* Set background color to #f8f9fa */
+    background-color: var(--background-color-light);
     color: inherit !important;
-    /* Keep the original text color */
     border: none !important;
-    /* Remove the border */
     box-shadow: none !important;
-    /* Remove any shadow */
 }
 
 /* Remove the default Bootstrap accordion arrow */
@@ -192,12 +179,20 @@
 
 /* Remove background color, border, and shadow when the accordion is open */
 .accordion-button:not(.collapsed) {
-    background-color: white !important;
+    background-color: var(--background-color-light) !important;
     color: inherit !important;
-    /* Keep the text color instead of making it transparent */
     border: none !important;
     box-shadow: none !important;
-    /* Ensure no shadow is applied */
+    padding-left: 10px !important;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */ 
+}
+
+.accordion-button.collapsed {
+    /* padding-left: 0 !important; */
+    padding-left: 10px !important;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
 }
 
 /* Ensure no shadow appears when the button is focused */
@@ -213,6 +208,7 @@ button.accordion-button:focus {
 .accordion-item {
     border: none !important;
     box-shadow: none !important;
+    padding: 0 !important;
 }
 
 /* Specifically remove bottom border from the accordion body */

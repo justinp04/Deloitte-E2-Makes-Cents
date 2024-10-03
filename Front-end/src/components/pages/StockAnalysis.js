@@ -60,6 +60,7 @@ function StockAnalysis() {
     const handleSendMessage = async (newMessage) => {
         if (!newMessage.trim()) return;
 
+        setSuggestions([]); 
         setMessages([...messages, { sender: 'user', message: newMessage }]);
         setTyping(true);
 
@@ -224,7 +225,7 @@ function StockAnalysis() {
                     toggleSidebar={toggleSidebar}
                 />
             </div>
-            <div className="content content-margining pt-0">
+            <div className="content content-margining pt-0" style={{marginTop:"80px"}}>
                 <StockSummary
                     accordionOpen={accordionOpen}
                     setAccordionOpen={setAccordionOpen}
@@ -240,7 +241,7 @@ function StockAnalysis() {
                 <div>
                       {/* Chat Messages */}
                     {/* need to chnage the positioning for this, styling for this is temp */}
-                    <div className="content" style={{ marginTop: "100px" }}>
+                    <div className="content" style={{ marginTop: "130px" }}>
                         <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
                     </div>
                     {/* Placeholder text for user-bot chat*/}
@@ -294,12 +295,12 @@ function StockAnalysis() {
                             </div>
                         )}
                         {/* A reference div to keep the chat view scrolled to the latest message */}
-                        {/* <div ref={chatEndRef} /> */}
+                         {/* <div ref={chatEndRef} />  */}
                     </div>
                 </div>
                 <Container className="query-bar-container">
-                        <QueryInputBar onSendMessage={handleSendMessage} />
-                    </Container>
+                    <QueryInputBar onSendMessage={handleSendMessage} />
+                </Container>
             </div>
         </div>
     );

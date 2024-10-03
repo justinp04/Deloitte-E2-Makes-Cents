@@ -5,6 +5,7 @@
   --mc-purple: #9747FF;
   --mc-blue: #0085FF;
   --mc-grey: #EDEDED;
+  --mc-white: #FFFFFF;
 }
 
 body {
@@ -23,7 +24,7 @@ code {
 
 /* Font Sizes */
 .page-title-text{
-  font-size: clamp(40px, 5vw, 50px);
+  font-size: clamp(30px, 5vw, 50px);
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -42,6 +43,11 @@ code {
   font-size: clamp(9px, 5vw, 15px);
   font-weight: bold;
 }
+.page-subtitle4-text
+{
+  font-size: clamp(7px, 5vw, 10px);
+  font-weight: bold;
+}
 .page-normal-text
 {
   font-size: clamp(11px, 5vw, 15px);
@@ -53,6 +59,9 @@ code {
 }
 .mt80{
   margin-top: 80px;
+}
+.mt90{
+  margin-top: 9px;
 }
 .ml-300{
   margin-left: 300px;

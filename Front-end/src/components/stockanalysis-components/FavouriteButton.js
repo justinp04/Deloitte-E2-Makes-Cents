@@ -48,7 +48,7 @@ function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavou
             <FontAwesomeIcon 
                 icon={isFav ? faCheck : faPlus} 
                 className={iconClass} 
-                style={{ color: '#9747FF', fontSize: "1rem", paddingBottom:"4px"}} 
+                style={{ color: '#9747FF', fontSize: "1.4rem", paddingBottom:"4px"}} 
             />
         </button>
     );

@@ -64,6 +64,31 @@
     word-wrap: break-word; 
 }
 
+.suggestions-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.suggested-question-chip {
+    background-color: #bbe2b2;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.suggested-question-chip:hover {
+    background-color: #ddd; /* Hover effect */
+}
+
+.suggested-question-chip:focus {
+    outline: none;
+}
+
 @media (max-width: 768px) {
     .suggestions-container {
         gap: 5px; 

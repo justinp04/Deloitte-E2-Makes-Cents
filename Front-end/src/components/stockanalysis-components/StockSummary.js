@@ -171,8 +171,8 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                 </div>
             </div>
 
-            <Accordion className='mx-4 mt-2' defaultActiveKey="0">
-                <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
+            <Accordion className='' defaultActiveKey="0">
+                <Accordion.Item eventKey="0" style={{ border: 'none'}}>
                     <Accordion.Header
                         onClick={() => {
                             setAccordionOpen(!accordionOpen); // Toggle the state
@@ -184,9 +184,10 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                             icon={accordionOpen ? faChevronRight : faChevronDown}
                             className='me-2'
                         />
-                        Summary
+                        <div className="fw-bold">Summary</div>
+                       
                     </Accordion.Header>
-                    <Accordion.Body className="px-4" style={{ padding: '0' }}>
+                    <Accordion.Body className="px-4">
                         {summary ? (
                                 <SummaryTable summary={summary} responseDepth={responseDepth} /> 
                             ) : (
@@ -202,9 +203,9 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                                 >
                                     <FontAwesomeIcon
                                         icon={referencesOpen ? faChevronDown : faChevronRight}
-                                        className='me-2'
+                                               className='me-2'
                                     />
-                                    References
+                                    <div className="fw-bold">References</div>
                                 </Accordion.Header>
                                 <Accordion.Body>
                                     <ol style={{ paddingLeft: '3.8rem', fontSize: "0.8rem" }}>
@@ -224,6 +225,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
+            <hr className='m-0'/>
         </div>
     );
 
