@@ -60,7 +60,7 @@ def search_for_stock_summary(stock_name, query_text):
         ]
     )
     
-    scroll_result, next_page = load_qdrant_client().scroll( #use search to retrieve all matching vectors
+    search_result, next_page = load_qdrant_client().search( #use search to retrieve all matching vectors
         collection_name="E2cluster1",
         query_vector=stock_vector,
         scroll_filter=source_filter,
@@ -68,7 +68,7 @@ def search_for_stock_summary(stock_name, query_text):
     )
 
     final_documents = []
-    for point in scroll_result:
+    for point in search_result:
         document = {
             'content': point.payload.get('content', 'No content available'),
             'metadata': {
@@ -121,7 +121,7 @@ def search_for_stock_chatbot(stock_name, query_text):
         should=keyword_conditions  #should filter: match any of the key terms in the content
     )
     
-    scroll_result, next_page = load_qdrant_client().scroll( #use search to retrieve all matching vectors
+    search_result, next_page = load_qdrant_client().search( #use search to retrieve all matching vectors
         collection_name="E2cluster1",
         query_vector=stock_vector,
         scroll_filter=source_filter,
@@ -129,7 +129,7 @@ def search_for_stock_chatbot(stock_name, query_text):
     )
 
     final_documents = []
-    for point in scroll_result:
+    for point in search_result:
         document = {
             'content': point.payload.get('content', 'No content available'),
             'metadata': {
