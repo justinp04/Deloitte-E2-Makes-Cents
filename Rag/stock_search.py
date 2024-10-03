@@ -37,7 +37,7 @@ PURPOSE: load ASX stocks from a CSV file
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 def load_asx_stocks():
     asx_stocks = {}
-    with open('asx_stocks1.csv', mode='r', encoding='utf-8-sig') as file:
+    with open('asx_stocks.csv', mode='r', encoding='utf-8-sig') as file:
         reader = csv.DictReader(file)
         for row in reader:
             asx_stocks[row['stock_name']] = row['ticker']
