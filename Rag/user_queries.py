@@ -63,7 +63,7 @@ def search_for_stock_summary(stock_name, query_text):
     search_result, next_page = load_qdrant_client().search( #use search to retrieve all matching vectors
         collection_name="E2cluster1",
         query_vector=stock_vector,
-        scroll_filter=source_filter,
+        query_filter=source_filter,
         limit=21  #can adjust - keep high to avoid missing points 
     )
 
@@ -124,7 +124,7 @@ def search_for_stock_chatbot(stock_name, query_text):
     search_result, next_page = load_qdrant_client().search( #use search to retrieve all matching vectors
         collection_name="E2cluster1",
         query_vector=stock_vector,
-        scroll_filter=source_filter,
+        query_filter=source_filter,
         limit=20  #can adjust - keep high to avoid missing points 
     )
 
