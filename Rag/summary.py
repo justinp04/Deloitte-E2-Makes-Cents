@@ -3,6 +3,7 @@ from user_queries import get_llm_response, generate_references, search_for_stock
 import sys
 import json, re
 from load_clients import load_blob_client
+from stock_search import get_stock_ticker
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -14,7 +15,8 @@ Date:       18/08/24
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 def main():
-    stock_name = sys.argv[1]
+    stock_name = get_stock_ticker(sys.argv[1])
+    # stock_name = sys.argv[1]
     # response_depth = sys.argv[2]
 
     container_client = load_blob_client()
