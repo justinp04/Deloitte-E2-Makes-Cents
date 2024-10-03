@@ -15,8 +15,8 @@ Date:       18/08/24
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 def main():
-    stock_name = get_stock_ticker(sys.argv[1])
-    # stock_name = sys.argv[1]
+    # stock_name = get_stock_ticker(sys.argv[1])
+    stock_name = sys.argv[1]
     # response_depth = sys.argv[2]
 
     container_client = load_blob_client()

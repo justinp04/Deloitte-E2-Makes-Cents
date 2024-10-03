@@ -12,7 +12,7 @@ const SASidebarCard = ({ companyTitle, onClick, onFavourite, onRemoveFavourite, 
             style={{ cursor: 'pointer', backgroundColor: '#FFFFFF', borderRadius: '0', border: 'none' }}
             onClick={onClick}
         >
-            <Card.Body className='fw-bold d-flex justify-content-between align-items-center' style={{ fontSize: '65%', marginLeft:"10px" }}>
+            <Card.Body className='fw-bold d-flex justify-content-between align-items-center' style={{ fontSize: '70%', marginLeft:"10px" }}>
                 {companyTitle}
                 <div className="d-flex align-items-center">
                     <FavouriteButton

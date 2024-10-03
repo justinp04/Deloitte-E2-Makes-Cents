@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaEye, FaChartLine, FaDollarSign, FaChartPie } from 'react-icons/fa';
-import './QuestionSuggestions.css'; // Assuming your CSS is in this file
+import './QuestionSuggestions.css'; 
 
 const QuestionSuggestions = ({ onQuestionClick }) => {
     const suggestedQuestions = [

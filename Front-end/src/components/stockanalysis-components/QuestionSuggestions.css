@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: -60px;
+    padding: 0 20px;
 }
 
 .gerry-image-container {
@@ -21,8 +22,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: nowrap;
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
     max-width: 1000px;
 }
@@ -32,7 +32,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 260px; 
+    width: 100%; 
+    max-width: 260px;
     height: 140px;
     background-color: white;
     border: 1px solid #e0e0e0;
@@ -41,6 +42,7 @@
     transition: box-shadow 0.3s ease;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px; 
 }
 
 .suggested-question-button:hover {
@@ -55,34 +57,40 @@
 }
 
 .text {
-    font-size: 14px; 
-    font-weight: 500;
+    font-size: clamp(9px, 3vw, 12px);
+    font-weight: bold;
     color: #333;
     padding: 0 10px;
     word-wrap: break-word; 
 }
 
-.suggestions-box {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    justify-content: center;
+@media (max-width: 768px) {
+    .suggestions-container {
+        gap: 5px; 
+        flex-wrap: wrap; 
+    }
+
+    .suggested-question-button {
+        width: 100%; 
+        max-width: none; 
+        height: 120px; 
+    }
+
+    .icon {
+        font-size: 20px; 
+    }
 }
 
-.suggested-question-chip {
-    background-color: #bbe2b2;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
+@media (max-width: 576px) {
+    .gerry-image {
+        width: 80px;
+        height: 80px;
+    }
 
-.suggested-question-chip:hover {
-    background-color: #ddd; /* Hover effect */
-}
-
-.suggested-question-chip:focus {
-    outline: none;
+    .suggested-question-button {
+        height: 100px; 
+    }
+    .icon {
+        font-size: 18px; 
+    }
 }

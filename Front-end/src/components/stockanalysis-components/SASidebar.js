@@ -154,6 +154,18 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                             {index === 2 && (
                                                 <>
                                                     <SearchBar placeholder="Search for a stock" onSearch={onSearch} />
+                                                    <SearchCard
+                                                            key={1}
+                                                            companyTitle={"BHP Group Limited (BHP)"}  // Display the company name
+                                                    />
+                                                    <SearchCard
+                                                            key={2}
+                                                            companyTitle={"Woolworths (WOW)"}  // Display the company name
+                                                    />
+                                                    <SearchCard
+                                                            key={3}
+                                                            companyTitle={"Apple (APL)"}  // Display the company name
+                                                    />
                                                     {/* <SearchBar
                                                         placeholder="Search for a stock"
                                                         onSearch={() => handleSearch(searchTerm)} // Pass search term when search is triggered
