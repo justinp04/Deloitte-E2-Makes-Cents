@@ -147,7 +147,7 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
     // );
 
     return (
-        <div>
+        <div id="stock-summary-div" className="position-sticky">
             <h1 className='page-title-text'>Stock Analysis</h1>
             {/* Data */}
             <div className="me-5 d-flex justify-content-between flex-wrap align-items-center">

@@ -170,6 +170,46 @@ code {
   background-color: var(--sidebar-background) !important;
 }
 
+/* Misc styling */
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Hide the scrollbar buttons (arrows) */
+::-webkit-scrollbar-button {
+  opacity: 0;
+}
+
+/* Hide scrollbar when not hovered */
+.scroll-container {
+  overflow: auto; /* Enable scrolling */
+}
+
+.scroll-container::-webkit-scrollbar {
+  opacity: 0 !important; /* Hide scrollbar */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.scroll-container:hover::-webkit-scrollbar {
+  opacity: 1 !important; /* Show scrollbar on hover */
+}
+
+/* For Firefox */
+.scroll-container {
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Color of scrollbar and background */
+}
+
+.scroll-container:hover {
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Maintain color on hover */
+}
+
 @media (max-width: 992px) {
   .sidebar-container-styling {
       margin-top: 0px;

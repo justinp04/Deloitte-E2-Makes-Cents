@@ -20,6 +20,16 @@
     z-index: 1000;
 } 
 
+#stock-summary-div {
+    position: sticky !important;
+}
+
+#chatbox-area-div {
+    padding-top: 130px;
+    height: 65vh;
+    overflow-y: scroll;
+}
+
 /* FavouriteButton.css */
 .fav-icon {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
