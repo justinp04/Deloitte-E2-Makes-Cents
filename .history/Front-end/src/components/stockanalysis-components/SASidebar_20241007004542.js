@@ -59,11 +59,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
     // Handle stock search
     const handleSearch = () => {
         if (!searchTerm.trim()) {
-            Swal.fire({
-                icon: 'warning',
-                title: 'Input Required',
-                text: 'Please enter a stock name to search.',
-            });
+            alert('Please enter a stock name to search.');
             return;
         }
 

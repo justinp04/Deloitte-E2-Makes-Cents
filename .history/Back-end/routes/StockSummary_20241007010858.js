@@ -33,19 +33,13 @@ router.post('/stock-summary', (req, res) => {
     // Call the Python script and pass the stock name
     const pythonExecutable = 'python3';
     const pythonScriptPath = path.join(__dirname, '../../Rag/summary.py');
+    const pythonProcess = spawn(pythonExecutable, [pythonScriptPath, stockName, response_depth]);
 
     const userEmail = req.body.userEmail;
     if (!userEmail) {
         console.error('No user email received');
         return res.status(400).json({ error: 'No user email provided' });
     }
-
-    const pythonProcess = spawn(pythonExecutable, [
-        pythonScriptPath,
-        '--stock_name', stockName,
-        '--user_email', userEmail,
-        '--response_depth', response_depth
-    ]);
 
     // Collect the Python script output
     let responseData = '';

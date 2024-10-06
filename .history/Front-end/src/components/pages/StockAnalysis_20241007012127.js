@@ -114,7 +114,7 @@ function StockAnalysis() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ stockName: searchTerm, response_depth: responseDepth, userEmail: email }),
+                body: JSON.stringify({ stockName: searchTerm, response_depth: responseDepth, userEmail: userEmail }),
             });
 
             const data = await res.json();

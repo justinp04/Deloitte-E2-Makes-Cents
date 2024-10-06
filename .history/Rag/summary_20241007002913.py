@@ -5,7 +5,6 @@ import json, re
 from load_clients import load_blob_client
 from stock_search import get_stock_ticker
 import requests
-import argparse
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -44,35 +43,34 @@ def fetch_user_profile(user_email):
         return None
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate stock summary based on user profile.")
-    parser.add_argument('--stock_name', required=True, help="Name of the stock to analyze.")
-    parser.add_argument('--user_email', required=True, help="User email to fetch profile.")
-    parser.add_argument('--response_depth', required=True, choices=['quick', 'detailed'], help="Depth of response: 'quick' or 'detailed'.")
+    stock_name = get_stock_ticker(sys.argv[1])
+    user_email = sys.argv[2]
+    # stock_name = sys.argv[1]
+    # response_depth = sys.argv[2]
 
-    args = parser.parse_args()
-    stock_name = args.stock_name
-    user_email = args.user_email
-    response_depth = args.response_depth
-
-    # Check available stocks in blob storage
     container_client = load_blob_client()
     blob_names = [blob.name for blob in container_client.list_blobs()]
 
     if not any(stock_name in blob_name for blob_name in blob_names):
-        print(f"The stock '{stock_name}' cannot be analyzed at this time!")
+        print(f"The stock '{stock_name}' cannot be analysed at this time!")
         return
-
-    # Fetch the user profile
+    
+    # Fetch the user profile using the provided email
     user_profile = fetch_user_profile(user_email)
     if not user_profile:
         sys.exit(1)
 
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
+    
     documents = search_for_stock_summary(stock_name, user_query)
+    #documents = query_qdrant(user_query, stock_name);
+    #print(documents) #can comment this in for debugging purposes
 
-    # Generate detailed and quick summaries
+    # Generate both quick and detailed summaries
     detailed_answer = generate_response(documents, user_query, user_profile)
-    quick_answer = response_length(detailed_answer, response_depth=response_depth)
+    
+    # Generate quick summary using response_length function
+    quick_answer = response_length(detailed_answer, response_depth="quick")
 
     references = generate_references(documents)
 
@@ -82,8 +80,8 @@ def main():
         "detailed_summary": detailed_answer.replace('. ', '.\n\n'),
         "references": references
     }
-
-    print(json.dumps(result, indent=4))
+    
+    print(json.dumps(result, indent=4))  # Output the result as JSON
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: stock_name
@@ -111,9 +109,9 @@ def generate_response(documents, user_query, user_profile):
     {
         "role": "system",
         "content": (
-            f"You are a financial assistant providing personalized advice. A good stock would be one "
+            f"You are a financial assistant providing personalised advice. A good stock would be one "
             f"{user_income(user_profile)} {user_horizon(user_profile)} {user_risk(user_profile)} "
-            f"{user_loss(user_profile)} {user_preference(user_profile)} {response_complexity(user_profile)}."
+            f"{user_loss(user_profile)} {user_preference(user_profile)} {response_complexity()}."
         )
     },
     {
@@ -142,6 +140,7 @@ def generate_response(documents, user_query, user_profile):
     detailed_answer = response.choices[0].message.content.strip()
     formatted_response = format_detailed_summary(detailed_answer)
     return formatted_response
+
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: response_length

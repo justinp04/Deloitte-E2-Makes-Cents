@@ -4,8 +4,6 @@ import sys
 import json, re
 from load_clients import load_blob_client
 from stock_search import get_stock_ticker
-import requests
-import argparse
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -14,65 +12,31 @@ Purpose:    Deloitte E2 Capstone Project - Makes Cents
             it takes in a stock name and provides a customised
             sentiment analysis to the user.
 Date:       18/08/24
-Collab: Anna Duong
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-# Add user response URL endpoint to fetch user profile
-USER_RESPONSE_URL = 'http://localhost:4000/next/user-responses'
-
-def fetch_user_profile(user_email):
-    try:
-        response = requests.get(USER_RESPONSE_URL, params={"email": user_email})
-        response.raise_for_status()
-        user_data = response.json()  # Parse the JSON response
-        
-        user_response_str = user_data.get('response', '')
-        if len(user_response_str) != 6:
-            print("Unexpected response format.")
-            return None
-
-        user_profile = {
-            'question_response_1': user_response_str[0],
-            'question_response_2': user_response_str[1],
-            'question_response_3': user_response_str[2],
-            'question_response_4': user_response_str[3],
-            'question_response_5': user_response_str[4],
-            'question_response_6': user_response_str[5]
-        }
-        return user_profile
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching user profile: {e}")
-        return None
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate stock summary based on user profile.")
-    parser.add_argument('--stock_name', required=True, help="Name of the stock to analyze.")
-    parser.add_argument('--user_email', required=True, help="User email to fetch profile.")
-    parser.add_argument('--response_depth', required=True, choices=['quick', 'detailed'], help="Depth of response: 'quick' or 'detailed'.")
+    # stock_name = get_stock_ticker(sys.argv[1])
+    # stock_name = sys.argv[1]
+    # response_depth = sys.argv[2]
 
-    args = parser.parse_args()
-    stock_name = args.stock_name
-    user_email = args.user_email
-    response_depth = args.response_depth
-
-    # Check available stocks in blob storage
     container_client = load_blob_client()
     blob_names = [blob.name for blob in container_client.list_blobs()]
 
     if not any(stock_name in blob_name for blob_name in blob_names):
-        print(f"The stock '{stock_name}' cannot be analyzed at this time!")
+        print(f"The stock '{stock_name}' cannot be analysed at this time!")
         return
 
-    # Fetch the user profile
-    user_profile = fetch_user_profile(user_email)
-    if not user_profile:
-        sys.exit(1)
-
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
+    
     documents = search_for_stock_summary(stock_name, user_query)
+    #documents = query_qdrant(user_query, stock_name);
+    #print(documents) #can comment this in for debugging purposes
 
-    # Generate detailed and quick summaries
-    detailed_answer = generate_response(documents, user_query, user_profile)
-    quick_answer = response_length(detailed_answer, response_depth=response_depth)
+    # Generate both quick and detailed summaries
+    detailed_answer = generate_response(documents, user_query)
+    
+    # Generate quick summary using response_length function
+    quick_answer = response_length(detailed_answer, response_depth="quick")
 
     references = generate_references(documents)
 
@@ -82,8 +46,8 @@ def main():
         "detailed_summary": detailed_answer.replace('. ', '.\n\n'),
         "references": references
     }
-
-    print(json.dumps(result, indent=4))
+    
+    print(json.dumps(result, indent=4))  # Output the result as JSON
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: stock_name
@@ -99,27 +63,26 @@ def get_stock_name():
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: generate_response
-IMPORT: documents, user_query, user_profile
+IMPORT: documents, user_query
 EXPORT: response
 PURPOSE: generates the customised sentiment summary
         response to be provided to the user
 '''''''''''''''''''''''''''''''''''''''''''''''''''
-def generate_response(documents, user_query, user_profile):
+def generate_response(documents, user_query):
     context = "\n".join([doc['content'] for doc in documents])
+    #print(context)
 
     messages = [
     {
         "role": "system",
         "content": (
-            f"You are a financial assistant providing personalized advice. A good stock would be one "
-            f"{user_income(user_profile)} {user_horizon(user_profile)} {user_risk(user_profile)} "
-            f"{user_loss(user_profile)} {user_preference(user_profile)} {response_complexity(user_profile)}."
+            f"You are a financial assistant providing personalised advice. A good stock would be one {user_income()} {user_horizon()} {user_risk()} {user_loss()} {user_preference()} {response_complexity()}."
         )
     },
     {
         "role": "system",
         "content": (
-            "Template to follow for response: Based on your criteria, this stock may/may not be ideal."
+            "Template to follow for response: Based on your criteria, Woolworths may/may not be ideal."
             "1. reason1.\n"
             "2. reason2.\n"
             "3. reason3.\n"
@@ -135,13 +98,14 @@ def generate_response(documents, user_query, user_profile):
     }
     ]
 
-    max_response_tokens = 450  # set the max number of tokens to be used for responses
+    max_response_tokens = 450 #set the max number of tokens to be used for responses
     response = get_llm_response(messages, max_response_tokens)
     
     # Clean up the detailed response to ensure proper formatting
     detailed_answer = response.choices[0].message.content.strip()
     formatted_response = format_detailed_summary(detailed_answer)
     return formatted_response
+
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: response_length

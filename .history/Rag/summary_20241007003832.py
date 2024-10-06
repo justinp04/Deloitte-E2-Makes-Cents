@@ -5,7 +5,6 @@ import json, re
 from load_clients import load_blob_client
 from stock_search import get_stock_ticker
 import requests
-import argparse
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
@@ -43,26 +42,36 @@ def fetch_user_profile(user_email):
         print(f"Error fetching user profile: {e}")
         return None
 
+import argparse
+
 def main():
-    parser = argparse.ArgumentParser(description="Generate stock summary based on user profile.")
+    # Set up command-line argument parsing
+    parser = argparse.ArgumentParser(description="Stock Summary Script")
     parser.add_argument('--stock_name', required=True, help="Name of the stock to analyze.")
-    parser.add_argument('--user_email', required=True, help="User email to fetch profile.")
-    parser.add_argument('--response_depth', required=True, choices=['quick', 'detailed'], help="Depth of response: 'quick' or 'detailed'.")
+    parser.add_argument('--user_email', required=True, help="Email of the user for fetching profile.")
+    parser.add_argument('--response_depth', required=True, choices=['quick', 'detailed'], help="Depth of the response: 'quick' or 'detailed'.")
 
     args = parser.parse_args()
+
+    # Assign the arguments to variables
     stock_name = args.stock_name
     user_email = args.user_email
     response_depth = args.response_depth
 
-    # Check available stocks in blob storage
+    # Print to confirm arguments received correctly (for debugging purposes)
+    print(f"Received stock name: {stock_name}")
+    print(f"Received user email: {user_email}")
+    print(f"Received response depth: {response_depth}")
+
+    # Load blob client and check if stock can be analyzed
     container_client = load_blob_client()
     blob_names = [blob.name for blob in container_client.list_blobs()]
 
     if not any(stock_name in blob_name for blob_name in blob_names):
-        print(f"The stock '{stock_name}' cannot be analyzed at this time!")
+        print(f"The stock '{stock_name}' cannot be analysed at this time!")
         return
 
-    # Fetch the user profile
+    # Fetch the user profile using the provided email
     user_profile = fetch_user_profile(user_email)
     if not user_profile:
         sys.exit(1)
@@ -70,7 +79,7 @@ def main():
     user_query = f"Would {stock_name} be a good investment choice for me to make?"
     documents = search_for_stock_summary(stock_name, user_query)
 
-    # Generate detailed and quick summaries
+    # Generate both quick and detailed summaries based on user query
     detailed_answer = generate_response(documents, user_query, user_profile)
     quick_answer = response_length(detailed_answer, response_depth=response_depth)
 
@@ -83,7 +92,7 @@ def main():
         "references": references
     }
 
-    print(json.dumps(result, indent=4))
+    print(json.dumps(result, indent=4))  # Output the result as JSON
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: stock_name
@@ -113,7 +122,7 @@ def generate_response(documents, user_query, user_profile):
         "content": (
             f"You are a financial assistant providing personalized advice. A good stock would be one "
             f"{user_income(user_profile)} {user_horizon(user_profile)} {user_risk(user_profile)} "
-            f"{user_loss(user_profile)} {user_preference(user_profile)} {response_complexity(user_profile)}."
+            f"{user_loss(user_profile)} {user_preference(user_profile)} {response_complexity()}."
         )
     },
     {
