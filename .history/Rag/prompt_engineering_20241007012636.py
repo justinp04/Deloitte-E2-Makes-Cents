@@ -47,7 +47,7 @@ def user_income(user_profile):
         "4": "in growth sectors with higher potential returns,",
         "5": "with high yield and speculative opportunities,"
     }
-    return incomes.get(user_profile['question_response_2'], "")
+    return incomes.get(user_profile['annual_income'], "")
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: user_horizon
@@ -61,7 +61,7 @@ def user_horizon(user_profile):
         "2": " balancing growth and income for medium-term goals,",
         "3": " with high growth potential for long-term investments,"
     }
-    return horizons.get(user_profile['question_response_3'], "")
+    return horizons.get(user_profile['investment_horizon'], "")
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: user_risk
@@ -77,7 +77,7 @@ def user_risk(user_profile):
         "4": " with higher volatility and growth potential,",
         "5": " with high risk and speculative characteristics,"
     }
-    return risks.get(user_profile['question_response_4'], "")
+    return risks.get(user_profile['risk_tolerance'], "")
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: user_loss
@@ -93,7 +93,7 @@ def user_loss(user_profile):
         "4": " with higher volatility for greater potential returns,",
         "5": " with high risk and substantial potential for short-term losses,"
     }
-    return losses.get(user_profile['question_response_5'], "")
+    return losses.get(user_profile['short_term_loss_tolerance'], "")
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: user_preference
@@ -107,7 +107,7 @@ def user_preference(user_profile):
         "2": " and that fits both lump sum and recurring investments.",
         "3": " and with stable performance for regular investments."
     }
-    return preferences.get(user_profile['question_response_6'], "")
+    return preferences.get(user_profile['investment_preference'], "")
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''

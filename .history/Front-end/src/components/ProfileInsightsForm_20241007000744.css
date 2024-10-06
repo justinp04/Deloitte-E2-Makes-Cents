@@ -1,0 +1,10 @@
+.green-btn {
+    background-color: #28a745 !important; 
+    border-color: #28a745 !important;     
+    color: #fff !important;                
+}
+
+.green-btn:hover {
+    background-color: #218838 !important;  /* Darker shade for hover effect */
+    border-color: #1e7e34 !important;      /* Darker border on hover */
+}

@@ -15,7 +15,6 @@ import { useMsal } from '@azure/msal-react';
 import { useNavigate } from 'react-router-dom';
 import RangeQuestion from './RangeQuestion';
 import SelectQuestion from './SelectQuestion';
-import './ProfileInsightsForm.css';
 import Swal from 'sweetalert2';
 
 
@@ -128,22 +127,12 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
       })
       .then(data => {
         console.log(data);
-        Swal.fire({
-          icon: 'success',
-          title: 'Account Created',
-          text: 'Account created successfully!',
-        }).then(() => {
-          // Redirect the user after they acknowledge the success message
-          navigate('/about');
-        });
+        alert('Account created successfully!');
+        navigate('/about');
       })
       .catch(error => {
         console.error('Error:', error);
-        Swal.fire({
-          icon: 'error',
-          title: 'Creation Failed',
-          text: 'Failed to create account. Please check the console for more details.',
-        });
+        alert('Failed to create account. Please check the console for more details.');
       });
   };
 
@@ -248,6 +237,10 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
       <div className="center-button mt-3">
         <button type="submit" className="btn btn-primary green-btn mb-3">Update</button>
       </div>
+
+      <p className="text-center mb-5">
+        Have an account? <a href="/signin">Sign In Here.</a>
+      </p>
     </form>
 
   );

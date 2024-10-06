@@ -113,7 +113,7 @@ def generate_response(documents, user_query, user_profile):
         "content": (
             f"You are a financial assistant providing personalized advice. A good stock would be one "
             f"{user_income(user_profile)} {user_horizon(user_profile)} {user_risk(user_profile)} "
-            f"{user_loss(user_profile)} {user_preference(user_profile)} {response_complexity(user_profile)}."
+            f"{user_loss(user_profile)} {user_preference(user_profile)} {response_complexity(user)}."
         )
     },
     {

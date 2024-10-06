@@ -17,7 +17,6 @@ import QuestionSuggestions from '../stockanalysis-components/QuestionSuggestions
 import { useMsal } from '@azure/msal-react';
 import Swal from 'sweetalert2';
 
-
 function StockAnalysis() {
     const [messages, setMessages] = useState([]);
     const [accordionOpen, setAccordionOpen] = useState(false); // State to control whether an accordion (presumably in the UI) is open or closed
@@ -98,15 +97,6 @@ function StockAnalysis() {
 
     // Function to handle stock search and update summary/references
     const handleSearch = async (searchTerm) => {
-        // Make sure email is loaded before attempting a search
-        if (!email) {
-            Swal.fire({
-                icon: 'error',
-                title: 'User Email Not Found',
-                text: 'Please ensure you are logged in before searching for stocks.',
-            });
-            return;
-        }
         try {
             // Fetch stock summary from the backend
             const res = await fetch('http://localhost:4000/summary/stock-summary', {
@@ -114,7 +104,7 @@ function StockAnalysis() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ stockName: searchTerm, response_depth: responseDepth, userEmail: email }),
+                body: JSON.stringify({ stockName: searchTerm, response_depth: responseDepth }),
             });
 
             const data = await res.json();
@@ -124,11 +114,7 @@ function StockAnalysis() {
                 setStockData(data);
                 setStockName(searchTerm); // Update the stockName state for display purposes
             } else {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Stock Not Found',
-                    text: `The stock "${searchTerm}" could not be found. Please check the stock name and try again.`,
-                });
+                alert('Stock not found.');
             }
         } catch (error) {
             console.error('Error fetching stock data:', error);
@@ -152,12 +138,7 @@ function StockAnalysis() {
             setFavouriteStocks(prevFavourites => [...prevFavourites, newFavourite]);
             addFavouritetoDatabase(companyTitle); // Call function to add to database
         } else {
-            // If the stock already exists in local state, show a warning using Swal
-            Swal.fire({
-                icon: 'warning',
-                title: 'Duplicate Stock',
-                text: 'This stock is already in your favourites.',
-            });
+            console.log(`${companyTitle} is already in favorites.`);
         }
     };    
 
@@ -186,23 +167,6 @@ function StockAnalysis() {
                     stockSymbol: companyTitle,
                 }),
             });
-            
-            if (response.status === 409) {
-                // If the stock already exists in the database, show a pop-up alert
-                Swal.fire({
-                    icon: 'warning',
-                    title: 'Duplicate Stock',
-                    text: 'This stock is already in your favourites.',
-                });
-            } else if (response.ok) {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Success',
-                    text: `${companyTitle} has been added to your favourites.`,
-                });
-            } else {
-                throw new Error('Failed to add the stock to your favourites.');
-            }
         } catch (error) {
             console.error('Error adding favourite stock:', error);
             alert("Error occurred while adding favourite stock.");
@@ -275,10 +239,10 @@ function StockAnalysis() {
                     responseDepth={responseDepth}
                     onToggleChange={handleToggleChange}
                 />
-                <div id="chatbox-area-div" className="scroll-container">
+                <div>
                       {/* Chat Messages */}
                     {/* need to chnage the positioning for this, styling for this is temp */}
-                    <div className="content">
+                    <div className="content" style={{ marginTop: "130px" }}>
                         <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
                     </div>
                     {/* Placeholder text for user-bot chat*/}
@@ -332,7 +296,7 @@ function StockAnalysis() {
                             </div>
                         )}
                         {/* A reference div to keep the chat view scrolled to the latest message */}
-                        <div ref={chatEndRef} />
+                         {/* <div ref={chatEndRef} />  */}
                     </div>
                 </div>
                 <Container className="query-bar-container">

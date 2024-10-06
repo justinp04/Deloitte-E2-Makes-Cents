@@ -62,6 +62,7 @@ router.post('/add', async (req, res) => {
     }
 });
 
+
 // DELETE Route to remove a favorite stock for a user
 router.delete('/remove', async (req, res) => {
     const { userId, stockSymbol } = req.body;

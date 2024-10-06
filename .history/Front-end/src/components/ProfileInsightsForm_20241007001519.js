@@ -132,18 +132,14 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
           icon: 'success',
           title: 'Account Created',
           text: 'Account created successfully!',
-        }).then(() => {
+      }).then(() => {
           // Redirect the user after they acknowledge the success message
           navigate('/about');
-        });
+      });
       })
       .catch(error => {
         console.error('Error:', error);
-        Swal.fire({
-          icon: 'error',
-          title: 'Creation Failed',
-          text: 'Failed to create account. Please check the console for more details.',
-        });
+        alert('Failed to create account. Please check the console for more details.');
       });
   };
 

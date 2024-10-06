@@ -40,13 +40,6 @@ router.post('/stock-summary', (req, res) => {
         return res.status(400).json({ error: 'No user email provided' });
     }
 
-    const pythonProcess = spawn(pythonExecutable, [
-        pythonScriptPath,
-        '--stock_name', stockName,
-        '--user_email', userEmail,
-        '--response_depth', response_depth
-    ]);
-
     // Collect the Python script output
     let responseData = '';
 

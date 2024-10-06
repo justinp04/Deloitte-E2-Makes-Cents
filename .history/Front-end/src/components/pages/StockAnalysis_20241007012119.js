@@ -99,14 +99,14 @@ function StockAnalysis() {
     // Function to handle stock search and update summary/references
     const handleSearch = async (searchTerm) => {
         // Make sure email is loaded before attempting a search
-        if (!email) {
-            Swal.fire({
-                icon: 'error',
-                title: 'User Email Not Found',
-                text: 'Please ensure you are logged in before searching for stocks.',
-            });
-            return;
-        }
+    if (!email) {
+        Swal.fire({
+            icon: 'error',
+            title: 'User Email Not Found',
+            text: 'Please ensure you are logged in before searching for stocks.',
+        });
+        return;
+    }
         try {
             // Fetch stock summary from the backend
             const res = await fetch('http://localhost:4000/summary/stock-summary', {
@@ -114,7 +114,7 @@ function StockAnalysis() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ stockName: searchTerm, response_depth: responseDepth, userEmail: email }),
+                body: JSON.stringify({ stockName: searchTerm, response_depth: responseDepth, userEmail: userEmail }),
             });
 
             const data = await res.json();

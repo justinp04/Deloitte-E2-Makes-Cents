@@ -93,7 +93,7 @@ def user_loss(user_profile):
         "4": " with higher volatility for greater potential returns,",
         "5": " with high risk and substantial potential for short-term losses,"
     }
-    return losses.get(user_profile['question_response_5'], "")
+    return losses.get(user_profile['short_term_loss_tolerance'], "")
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 METHOD: user_preference
@@ -107,7 +107,7 @@ def user_preference(user_profile):
         "2": " and that fits both lump sum and recurring investments.",
         "3": " and with stable performance for regular investments."
     }
-    return preferences.get(user_profile['question_response_6'], "")
+    return preferences.get(user_profile['investment_preference'], "")
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''
