@@ -14,13 +14,17 @@ import SearchCard from './SearchCard';
 import { useMsal } from '@azure/msal-react';
 import axios from 'axios';
 
+import SearchBarTwo from '../SearchBarTwo';
+import SearchResultsList from '../SearchResultsList';
+
 const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase, onSearch, onNavigate = () => { } }) => {
-    const [expandedItems, setExpandedItems] = useState({}); // Tracks the open/close state of each accordion item
+    const [expandedItems, setExpandedItems] = useState({ "0": true, "1": true, "2": true }); // Tracks the open/close state of each accordion item
     const [showSidebar, setShowSidebar] = useState(false); // Offcanvas visibility
     
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [stockSuggestions, setStockSuggestions] = useState([]);
+    const [results, setResults] = useState([]);
 
     const { accounts } = useMsal();
     const userEmail = accounts.length > 0 ? accounts[0].username : ''; // to get current user email
@@ -92,10 +96,10 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                     <Offcanvas.Title>Stock Analysis</Offcanvas.Title>
                 </Offcanvas.Header>
 
-                <Offcanvas.Body className="p-0 scrollable-sidebar sidebar-background-colour">
+                <Offcanvas.Body className="p-0 sidebar-background-colour">
                     <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar sidebar-background-colour">
                         
-                        <Accordion defaultActiveKey={null} alwaysOpen className="mb-3 sidebar-background-colour">
+                        <Accordion defaultActiveKey={["0", "1", "2"]} alwaysOpen className="mb-3 sidebar-background-colour">
                             {["0", "1", "2"].map((key, index) => (
                                 <Accordion.Item eventKey={key} key={key}>
                                     <Accordion.Header
@@ -179,6 +183,10 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                             onClick={() => onNavigate(result)} // Pass the company name to navigate function
                                                         />
                                                     ))} */}
+                                                    <div className="search-bar-container">
+                                                        <SearchBarTwo setResults={setResults} />
+                                                        {results && results.length > 0 && <SearchResultsList results={results} />}
+                                                    </div>
                                                 </>
                                             )}
                                         </Accordion.Body>

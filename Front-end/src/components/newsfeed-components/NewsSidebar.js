@@ -11,7 +11,7 @@ import '../pages/NewsFeed.css';
 import NewsSidebarCard from './NewsSidebarCard';
 
 const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }) => {
-    const [expandedItems, setExpandedItems] = useState({}); // Tracks the open/close state of each accordion item
+    const [expandedItems, setExpandedItems] = useState({"0": true, "1": true}); // Tracks the open/close state of each accordion item
     const [showSidebar, setShowSidebar] = useState(false); // Controls Offcanvas visibility
 
     // Toggle the accordion items and track their open/close state
@@ -51,7 +51,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                     <Offcanvas.Title>News Feed</Offcanvas.Title>
                 </Offcanvas.Header>
 
-                <Offcanvas.Body className="p-0 scrollable-sidebar sidebar-background-colour">
+                <Offcanvas.Body className="p-0 sidebar-background-colour">
                     <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar sidebar-background-colour">
                         {/* Search bar for searching stocks */}
                         <div className="fixed-searchbar py-2" style={{backgroundColor:"white"}}>
@@ -59,7 +59,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                         </div>
 
                         {/* Accordion with individual open/close state for each item */}
-                        <Accordion defaultActiveKey={null} alwaysOpen className='mb-3 sidebar-background-colour'>
+                        <Accordion defaultActiveKey={["0", "1"]} alwaysOpen className='mb-3 sidebar-background-colour'>
                             {["0", "1"].map((key, index) => (
                                 <Accordion.Item eventKey={key} key={key} className='sidebar-background-colour'>
                                     <Accordion.Header
