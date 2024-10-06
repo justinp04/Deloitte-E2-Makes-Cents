@@ -189,10 +189,10 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                             onClick={() => onNavigate(result)} // Pass the company name to navigate function
                                                         />
                                                     ))} */}
-                                                    {/* <div className="search-bar-container">
+                                                    <div className="search-bar-container">
                                                         <SearchBarTwo setResults={setResults} />
                                                         {results && results.length > 0 && <SearchResultsList results={results} />}
-                                                    </div> */}
+                                                    </div>
                                                 </>
                                             )}
                                         </Accordion.Body>

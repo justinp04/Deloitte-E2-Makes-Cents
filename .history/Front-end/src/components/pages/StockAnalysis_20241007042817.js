@@ -14,7 +14,6 @@ import StockSummary from '../stockanalysis-components/StockSummary';
 import ChatBox from '../stockanalysis-components/ChatBox';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import QuestionSuggestions from '../stockanalysis-components/QuestionSuggestions';
-import LoadingAnimation from './LoadingAnimation.js';
 import { useMsal } from '@azure/msal-react';
 import Swal from 'sweetalert2';
 
@@ -65,7 +64,7 @@ function StockAnalysis() {
     const handleSendMessage = async (newMessage) => {
         if (!newMessage.trim()) return;
 
-        setSuggestions([]);
+        setSuggestions([]); 
         setMessages([...messages, { sender: 'user', message: newMessage }]);
         setTyping(true);
 
@@ -111,12 +110,12 @@ function StockAnalysis() {
         }
 
         setLoading(true);
-
+    
         try {
             // Set the stock name in the state (this can be used for UI display purposes)
             setStockName(searchTerm);
             console.log("Stock name set to:", searchTerm);
-
+    
             // Use the searchTerm directly in the fetch request to ensure we have the latest value
             const res = await fetch('http://localhost:4000/summary/stock-summary', {
                 method: 'POST',
@@ -125,9 +124,9 @@ function StockAnalysis() {
                 },
                 body: JSON.stringify({ stockName: searchTerm, user_email: email, response_depth: responseDepth })
             });
-
+    
             const data = await res.json();
-
+    
             if (res.ok) {
                 // Update the summary and references state with the fetched data
                 setStockData(data);
@@ -141,10 +140,10 @@ function StockAnalysis() {
         } catch (error) {
             console.error('Error fetching stock data:', error);
         } finally {
-            setLoading(false);
+            set
         }
     };
-
+    
 
     const handleSuggestedQuestionClick = (question) => {
         handleSendMessage(question);
@@ -170,12 +169,12 @@ function StockAnalysis() {
                 text: 'This stock is already in your favourites.',
             });
         }
-    };
+    };    
 
     const removeFavourite = async (companyTitle) => {
         // Remove from local state
         setFavouriteStocks(prevFavourites => prevFavourites.filter(stock => stock.title !== companyTitle));
-
+    
         // Now call the database function to remove
         await removeFavouriteFromDatabase(companyTitle);
     };
@@ -197,7 +196,7 @@ function StockAnalysis() {
                     stockSymbol: companyTitle,
                 }),
             });
-
+            
             if (response.status === 409) {
                 // If the stock already exists in the database, show a pop-up alert
                 Swal.fire({
@@ -225,7 +224,7 @@ function StockAnalysis() {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
             const userId = userIdData.userId;
-
+    
             const response = await fetch('http://localhost:4000/favorite-stocks/remove', {
                 method: 'DELETE',
                 headers: {
@@ -236,7 +235,7 @@ function StockAnalysis() {
                     stockSymbol: companyTitle,
                 }),
             });
-
+    
             if (response.ok) {
                 setFavouriteStocks(prevFavourites =>
                     prevFavourites.filter(stock => stock.title !== companyTitle)
@@ -248,7 +247,7 @@ function StockAnalysis() {
             console.error('Error removing favourite stock:', error);
             alert("Error occurred while removing favourite stock.");
         }
-    };
+    };    
 
     // Scroll to the latest message when new messages are added
     useEffect(() => {
@@ -262,85 +261,96 @@ function StockAnalysis() {
 
     return (
         <div className="page-container">
-            {loading ? (
-                <LoadingAnimation />
-            ) : (
-                <>
-                    <div className="mt80" style={{ zIndex: 1000 }}>
-                        <SASidebar
-                            favouriteStocks={favouriteStocks}
-                            addFavourite={addFavourite}
-                            addFavouriteToDatabase={addFavouritetoDatabase}
-                            removeFavourite={removeFavourite}
-                            onSearch={handleSearch}
-                            email={email}
-                            toggleSidebar={toggleSidebar}
-                        />
+            {/* Sidebar */}
+            <div className="mt80" style={{ zIndex: 1000 }}>
+                <SASidebar
+                    favouriteStocks={favouriteStocks}
+                    addFavourite={addFavourite}
+                    addFavouriteToDatabase={addFavouritetoDatabase}
+                    removeFavourite={removeFavourite}
+                    onSearch={handleSearch}
+                    email={email}
+                    toggleSidebar={toggleSidebar}
+                />
+            </div>
+            <div className="content content-margining pt-0" style={{marginTop:"80px"}}>
+                <StockSummary
+                    accordionOpen={accordionOpen}
+                    setAccordionOpen={setAccordionOpen}
+                    addFavourite={addFavourite}
+                    removeFavourite={removeFavourite}
+                    favouriteStocks={favouriteStocks}
+                    summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
+                    references={references}
+                    stockName={stockName}
+                    email={email || null}
+                    responseDepth={responseDepth}
+                    onToggleChange={handleToggleChange}
+                />
+                <div id="chatbox-area-div" className="scroll-container">
+                      {/* Chat Messages */}
+                    {/* need to chnage the positioning for this, styling for this is temp */}
+                    <div className="content">
+                        <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
                     </div>
-                    <div className="content content-margining pt-0" style={{ marginTop: '80px' }}>
-                        <StockSummary
-                            accordionOpen={accordionOpen}
-                            setAccordionOpen={setAccordionOpen}
-                            addFavourite={addFavourite}
-                            removeFavourite={removeFavourite}
-                            favouriteStocks={favouriteStocks}
-                            summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
-                            references={references}
-                            stockName={stockName}
-                            email={email || null}
-                            responseDepth={responseDepth}
-                            onToggleChange={handleToggleChange}
-                        />
-                        <div id="chatbox-area-div" className="scroll-container">
-                            <div className="content">
-                                <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
-                            </div>
-                            <div style={{ marginTop: accordionOpen ? '10px' : '10px', paddingBottom: '120px' }}>
-                                {messages.map((msg, index) => (
-                                    <ChatBox
+                    {/* Placeholder text for user-bot chat*/}
+                    {/* <div style={{ marginTop: accordionOpen ? '10px' : '30px' }}>  
+                        <ChatBox message="Howdy! 🤠" sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
+                        <ChatBox message="What is Bega Cheese Limited's revenue growth trend and profit margins, and how does it indicate stability and growth?" sender="user" senderName="You" avatar="./images/UserProfile.jpg" />
+                        <ChatBox message="Bega Cheese Limited's financial performance in FY2023 showed both positive and negative aspects. The company's revenue grew by 12% to $3.4 billion, which is a good sign for potential investors. 
+                        However, the normalised EBITDA, which stands for Earnings Before Interest, Taxes, Depreciation, and Amortization, decreased by 11% to $160.2 million in the same period, which may raise some concerns about profitability 1 .  
+                        Despite the decrease in EBITDA, the company's branded segment demonstrated resilience by maintaining its #1 positions in various categories and growing volume despite cost pressures. This indicates stability and growth potential for the company 2 .  
+                        The company's commitment to strategic initiatives, such as managing the portfolio for growth in targeted segments, increasing supply chain competitiveness, and progressing sustainability objectives, also indicates stability and growth potential. 
+                        These initiatives can provide stability and growth potential for the company, which are favorable factors for potential investors .  In summary, while the revenue growth trend is positive, the decrease in EBITDA may raise some concerns. However, 
+                        the company's strategic initiatives and commitment to sustainable growth indicate stability and growth potential, which could positively impact your decision to invest in Bega Cheese Limited ." sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
+                    </div> */}
+                    {/* Chat Messages */}
+                    {/* need to chnage the positioning for this, styling for this is temp */}
+                    {/* <div className="content" style={{ marginTop: "100px" }}>
+                        <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
+                    </div> */}
+
+                    {/* Chat Messages */}
+                    <div style={{ marginTop: accordionOpen ? '10px' : '10px', paddingBottom: '120px' }}>
+                        {messages.map((msg, index) => (
+                            <ChatBox
+                                key={index}
+                                message={msg.message}
+                                sender={msg.sender}
+                                senderName={msg.sender === 'user' ? 'You' : 'Gerry'}
+                                avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'}
+                            />
+                        ))}
+                        {typing && (
+                            <ChatBox
+                                message={<div className="typing-indicator"><div className="dot"></div><div className="dot"></div><div className="dot"></div></div>}
+                                sender="bot"
+                                senderName="Gerry"
+                                avatar="./images/GerryProfile.jpg"
+                            />
+                        )}
+                        {/* Follow-up suggestions */}
+                        {suggestions.length > 0 && (
+                            <div className="suggestions-box">
+                                {suggestions.map((suggestion, index) => (
+                                    <button
                                         key={index}
-                                        message={msg.message}
-                                        sender={msg.sender}
-                                        senderName={msg.sender === 'user' ? 'You' : 'Gerry'}
-                                        avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'}
-                                    />
+                                        className="suggested-question-chip"
+                                        onClick={() => handleSuggestedQuestionClick(suggestion)}
+                                    >
+                                        {suggestion}
+                                    </button>
                                 ))}
-                                {typing && (
-                                    <ChatBox
-                                        message={
-                                            <div className="typing-indicator">
-                                                <div className="dot"></div>
-                                                <div className="dot"></div>
-                                                <div className="dot"></div>
-                                            </div>
-                                        }
-                                        sender="bot"
-                                        senderName="Gerry"
-                                        avatar="./images/GerryProfile.jpg"
-                                    />
-                                )}
-                                {suggestions.length > 0 && (
-                                    <div className="suggestions-box">
-                                        {suggestions.map((suggestion, index) => (
-                                            <button
-                                                key={index}
-                                                className="suggested-question-chip"
-                                                onClick={() => handleSuggestedQuestionClick(suggestion)}
-                                            >
-                                                {suggestion}
-                                            </button>
-                                        ))}
-                                    </div>
-                                )}
-                                <div ref={chatEndRef} />
                             </div>
-                        </div>
-                        <Container className="query-bar-container">
-                            <QueryInputBar onSendMessage={handleSendMessage} />
-                        </Container>
+                        )}
+                        {/* A reference div to keep the chat view scrolled to the latest message */}
+                        <div ref={chatEndRef} />
                     </div>
-                </>
-            )}
+                </div>
+                <Container className="query-bar-container">
+                    <QueryInputBar onSendMessage={handleSendMessage} />
+                </Container>
+            </div>
         </div>
     );
 }

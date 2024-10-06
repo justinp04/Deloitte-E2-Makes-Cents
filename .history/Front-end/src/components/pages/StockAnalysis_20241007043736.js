@@ -14,7 +14,7 @@ import StockSummary from '../stockanalysis-components/StockSummary';
 import ChatBox from '../stockanalysis-components/ChatBox';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import QuestionSuggestions from '../stockanalysis-components/QuestionSuggestions';
-import LoadingAnimation from './LoadingAnimation.js';
+import LoadingAnimation from './LoadingAnimation.css';
 import { useMsal } from '@azure/msal-react';
 import Swal from 'sweetalert2';
 
@@ -65,7 +65,7 @@ function StockAnalysis() {
     const handleSendMessage = async (newMessage) => {
         if (!newMessage.trim()) return;
 
-        setSuggestions([]);
+        setSuggestions([]); 
         setMessages([...messages, { sender: 'user', message: newMessage }]);
         setTyping(true);
 
@@ -111,12 +111,12 @@ function StockAnalysis() {
         }
 
         setLoading(true);
-
+    
         try {
             // Set the stock name in the state (this can be used for UI display purposes)
             setStockName(searchTerm);
             console.log("Stock name set to:", searchTerm);
-
+    
             // Use the searchTerm directly in the fetch request to ensure we have the latest value
             const res = await fetch('http://localhost:4000/summary/stock-summary', {
                 method: 'POST',
@@ -125,9 +125,9 @@ function StockAnalysis() {
                 },
                 body: JSON.stringify({ stockName: searchTerm, user_email: email, response_depth: responseDepth })
             });
-
+    
             const data = await res.json();
-
+    
             if (res.ok) {
                 // Update the summary and references state with the fetched data
                 setStockData(data);
@@ -144,7 +144,7 @@ function StockAnalysis() {
             setLoading(false);
         }
     };
-
+    
 
     const handleSuggestedQuestionClick = (question) => {
         handleSendMessage(question);
@@ -170,12 +170,12 @@ function StockAnalysis() {
                 text: 'This stock is already in your favourites.',
             });
         }
-    };
+    };    
 
     const removeFavourite = async (companyTitle) => {
         // Remove from local state
         setFavouriteStocks(prevFavourites => prevFavourites.filter(stock => stock.title !== companyTitle));
-
+    
         // Now call the database function to remove
         await removeFavouriteFromDatabase(companyTitle);
     };
@@ -197,7 +197,7 @@ function StockAnalysis() {
                     stockSymbol: companyTitle,
                 }),
             });
-
+            
             if (response.status === 409) {
                 // If the stock already exists in the database, show a pop-up alert
                 Swal.fire({
@@ -225,7 +225,7 @@ function StockAnalysis() {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
             const userId = userIdData.userId;
-
+    
             const response = await fetch('http://localhost:4000/favorite-stocks/remove', {
                 method: 'DELETE',
                 headers: {
@@ -236,7 +236,7 @@ function StockAnalysis() {
                     stockSymbol: companyTitle,
                 }),
             });
-
+    
             if (response.ok) {
                 setFavouriteStocks(prevFavourites =>
                     prevFavourites.filter(stock => stock.title !== companyTitle)
@@ -248,7 +248,7 @@ function StockAnalysis() {
             console.error('Error removing favourite stock:', error);
             alert("Error occurred while removing favourite stock.");
         }
-    };
+    };    
 
     // Scroll to the latest message when new messages are added
     useEffect(() => {
@@ -263,83 +263,12 @@ function StockAnalysis() {
     return (
         <div className="page-container">
             {loading ? (
-                <LoadingAnimation />
+                <LoadingAnimation/>
             ) : (
                 <>
-                    <div className="mt80" style={{ zIndex: 1000 }}>
-                        <SASidebar
-                            favouriteStocks={favouriteStocks}
-                            addFavourite={addFavourite}
-                            addFavouriteToDatabase={addFavouritetoDatabase}
-                            removeFavourite={removeFavourite}
-                            onSearch={handleSearch}
-                            email={email}
-                            toggleSidebar={toggleSidebar}
-                        />
-                    </div>
-                    <div className="content content-margining pt-0" style={{ marginTop: '80px' }}>
-                        <StockSummary
-                            accordionOpen={accordionOpen}
-                            setAccordionOpen={setAccordionOpen}
-                            addFavourite={addFavourite}
-                            removeFavourite={removeFavourite}
-                            favouriteStocks={favouriteStocks}
-                            summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
-                            references={references}
-                            stockName={stockName}
-                            email={email || null}
-                            responseDepth={responseDepth}
-                            onToggleChange={handleToggleChange}
-                        />
-                        <div id="chatbox-area-div" className="scroll-container">
-                            <div className="content">
-                                <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
-                            </div>
-                            <div style={{ marginTop: accordionOpen ? '10px' : '10px', paddingBottom: '120px' }}>
-                                {messages.map((msg, index) => (
-                                    <ChatBox
-                                        key={index}
-                                        message={msg.message}
-                                        sender={msg.sender}
-                                        senderName={msg.sender === 'user' ? 'You' : 'Gerry'}
-                                        avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'}
-                                    />
-                                ))}
-                                {typing && (
-                                    <ChatBox
-                                        message={
-                                            <div className="typing-indicator">
-                                                <div className="dot"></div>
-                                                <div className="dot"></div>
-                                                <div className="dot"></div>
-                                            </div>
-                                        }
-                                        sender="bot"
-                                        senderName="Gerry"
-                                        avatar="./images/GerryProfile.jpg"
-                                    />
-                                )}
-                                {suggestions.length > 0 && (
-                                    <div className="suggestions-box">
-                                        {suggestions.map((suggestion, index) => (
-                                            <button
-                                                key={index}
-                                                className="suggested-question-chip"
-                                                onClick={() => handleSuggestedQuestionClick(suggestion)}
-                                            >
-                                                {suggestion}
-                                            </button>
-                                        ))}
-                                    </div>
-                                )}
-                                <div ref={chatEndRef} />
-                            </div>
-                        </div>
-                        <Container className="query-bar-container">
-                            <QueryInputBar onSendMessage={handleSendMessage} />
-                        </Container>
-                    </div>
-                </>
+
+                <></>
+
             )}
         </div>
     );

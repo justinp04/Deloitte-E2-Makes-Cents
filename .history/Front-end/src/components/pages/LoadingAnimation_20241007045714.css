@@ -1,0 +1,9 @@
+.loader-container {
+    position: absolute; /* Positions the loader relative to its nearest positioned ancestor */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    pointer-events: none; /* Allows interaction with underlying content */
+    background: transparent; /* No background to block visibility */
+}

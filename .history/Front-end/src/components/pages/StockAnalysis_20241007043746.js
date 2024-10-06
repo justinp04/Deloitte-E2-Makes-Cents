@@ -14,7 +14,7 @@ import StockSummary from '../stockanalysis-components/StockSummary';
 import ChatBox from '../stockanalysis-components/ChatBox';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import QuestionSuggestions from '../stockanalysis-components/QuestionSuggestions';
-import LoadingAnimation from './LoadingAnimation.js';
+import LoadingAnimation from './LoadingAnimation.css';
 import { useMsal } from '@azure/msal-react';
 import Swal from 'sweetalert2';
 
@@ -277,7 +277,7 @@ function StockAnalysis() {
                             toggleSidebar={toggleSidebar}
                         />
                     </div>
-                    <div className="content content-margining pt-0" style={{ marginTop: '80px' }}>
+                    <div className="content content-margining pt-0" style={{ marginTop: "80px" }}>
                         <StockSummary
                             accordionOpen={accordionOpen}
                             setAccordionOpen={setAccordionOpen}
@@ -292,9 +292,29 @@ function StockAnalysis() {
                             onToggleChange={handleToggleChange}
                         />
                         <div id="chatbox-area-div" className="scroll-container">
+                            {/* Chat Messages */}
+                            {/* need to chnage the positioning for this, styling for this is temp */}
                             <div className="content">
                                 <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
                             </div>
+                            {/* Placeholder text for user-bot chat*/}
+                            {/* <div style={{ marginTop: accordionOpen ? '10px' : '30px' }}>  
+                        <ChatBox message="Howdy! 🤠" sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
+                        <ChatBox message="What is Bega Cheese Limited's revenue growth trend and profit margins, and how does it indicate stability and growth?" sender="user" senderName="You" avatar="./images/UserProfile.jpg" />
+                        <ChatBox message="Bega Cheese Limited's financial performance in FY2023 showed both positive and negative aspects. The company's revenue grew by 12% to $3.4 billion, which is a good sign for potential investors. 
+                        However, the normalised EBITDA, which stands for Earnings Before Interest, Taxes, Depreciation, and Amortization, decreased by 11% to $160.2 million in the same period, which may raise some concerns about profitability 1 .  
+                        Despite the decrease in EBITDA, the company's branded segment demonstrated resilience by maintaining its #1 positions in various categories and growing volume despite cost pressures. This indicates stability and growth potential for the company 2 .  
+                        The company's commitment to strategic initiatives, such as managing the portfolio for growth in targeted segments, increasing supply chain competitiveness, and progressing sustainability objectives, also indicates stability and growth potential. 
+                        These initiatives can provide stability and growth potential for the company, which are favorable factors for potential investors .  In summary, while the revenue growth trend is positive, the decrease in EBITDA may raise some concerns. However, 
+                        the company's strategic initiatives and commitment to sustainable growth indicate stability and growth potential, which could positively impact your decision to invest in Bega Cheese Limited ." sender="bot" senderName="Gerry" avatar="./images/GerryProfile.jpg" />
+                    </div> */}
+                            {/* Chat Messages */}
+                            {/* need to chnage the positioning for this, styling for this is temp */}
+                            {/* <div className="content" style={{ marginTop: "100px" }}>
+                        <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
+                    </div> */}
+
+                            {/* Chat Messages */}
                             <div style={{ marginTop: accordionOpen ? '10px' : '10px', paddingBottom: '120px' }}>
                                 {messages.map((msg, index) => (
                                     <ChatBox
@@ -307,18 +327,13 @@ function StockAnalysis() {
                                 ))}
                                 {typing && (
                                     <ChatBox
-                                        message={
-                                            <div className="typing-indicator">
-                                                <div className="dot"></div>
-                                                <div className="dot"></div>
-                                                <div className="dot"></div>
-                                            </div>
-                                        }
+                                        message={<div className="typing-indicator"><div className="dot"></div><div className="dot"></div><div className="dot"></div></div>}
                                         sender="bot"
                                         senderName="Gerry"
                                         avatar="./images/GerryProfile.jpg"
                                     />
                                 )}
+                                {/* Follow-up suggestions */}
                                 {suggestions.length > 0 && (
                                     <div className="suggestions-box">
                                         {suggestions.map((suggestion, index) => (
@@ -332,6 +347,7 @@ function StockAnalysis() {
                                         ))}
                                     </div>
                                 )}
+                                {/* A reference div to keep the chat view scrolled to the latest message */}
                                 <div ref={chatEndRef} />
                             </div>
                         </div>
@@ -340,6 +356,7 @@ function StockAnalysis() {
                         </Container>
                     </div>
                 </>
+
             )}
         </div>
     );

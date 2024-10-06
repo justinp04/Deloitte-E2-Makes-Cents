@@ -14,7 +14,7 @@ import StockSummary from '../stockanalysis-components/StockSummary';
 import ChatBox from '../stockanalysis-components/ChatBox';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import QuestionSuggestions from '../stockanalysis-components/QuestionSuggestions';
-import LoadingAnimation from './LoadingAnimation.js';
+import LoadingAnimation from './LoadingAnimation.css';
 import { useMsal } from '@azure/msal-react';
 import Swal from 'sweetalert2';
 
