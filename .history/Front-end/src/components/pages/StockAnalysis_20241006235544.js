@@ -139,11 +139,11 @@ function StockAnalysis() {
             addFavouritetoDatabase(companyTitle); // Call function to add to database
         } else {
             // If the stock already exists in local state, show a warning using Swal
-            Swal.fire({
-                icon: 'warning',
-                title: 'Duplicate Stock',
-                text: 'This stock is already in your favourites.',
-            });
+        Swal.fire({
+            icon: 'warning',
+            title: 'Duplicate Stock',
+            text: 'This stock is already in your favourites.',
+        });
         }
     };    
 
@@ -261,10 +261,10 @@ function StockAnalysis() {
                     responseDepth={responseDepth}
                     onToggleChange={handleToggleChange}
                 />
-                <div id="chatbox-area-div" className="scroll-container">
+                <div>
                       {/* Chat Messages */}
                     {/* need to chnage the positioning for this, styling for this is temp */}
-                    <div className="content">
+                    <div className="content" style={{ marginTop: "130px" }}>
                         <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
                     </div>
                     {/* Placeholder text for user-bot chat*/}
@@ -318,7 +318,7 @@ function StockAnalysis() {
                             </div>
                         )}
                         {/* A reference div to keep the chat view scrolled to the latest message */}
-                        <div ref={chatEndRef} />
+                         {/* <div ref={chatEndRef} />  */}
                     </div>
                 </div>
                 <Container className="query-bar-container">

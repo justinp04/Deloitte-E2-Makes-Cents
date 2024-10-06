@@ -15,7 +15,6 @@ import { useMsal } from '@azure/msal-react';
 import { useNavigate } from 'react-router-dom';
 import RangeQuestion from './RangeQuestion';
 import SelectQuestion from './SelectQuestion';
-import './ProfileInsightsForm.css';
 import Swal from 'sweetalert2';
 
 
@@ -238,6 +237,10 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
       <div className="center-button mt-3">
         <button type="submit" className="btn btn-primary green-btn mb-3">Update</button>
       </div>
+
+      <p className="text-center mb-5">
+        Have an account? <a href="/signin">Sign In Here.</a>
+      </p>
     </form>
 
   );

@@ -15,11 +15,8 @@ import { useMsal } from '@azure/msal-react';
 import { useNavigate } from 'react-router-dom';
 import RangeQuestion from './RangeQuestion';
 import SelectQuestion from './SelectQuestion';
-import './ProfileInsightsForm.css';
-import Swal from 'sweetalert2';
 
-
-const ProfileInsightsForm = ({ isUpdating = false }) => {
+const ProfileInsightsForm = ({isUpdating = false}) => {
   const { accounts } = useMsal();
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -31,24 +28,24 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
   const [investmentType, setInvestmentType] = useState(1);
 
 
-  // income options
-  const incomeOptions = [
-    "Less than $18,000",
-    "$18,000 - $45,000",
-    "$45,000 - $135,000",
-    "$135,000 - $190,000",
-    "More than $190,000"
-  ];
+	// income options
+	const incomeOptions = [
+		"Less than $18,000",
+		"$18,000 - $45,000",
+		"$45,000 - $135,000",
+		"$135,000 - $190,000",
+		"More than $190,000"
+	];
 
-  // range options
-  const rangeLabelsQ1 = ["Novice", "Beginner", "Intermediate", "Advanced", "Expert"];
-  const rangeLabelsQ3 = ["Less than 3 years", "3-10 years", "10+ years"];
-  const rangeLabelsQ4 = ["No Risk", "Slightly Uncomfortable", "Neutral", "Comfortable", "Very Comfortable"];
-  const rangeLabelsQ5 = ["Can't Afford", "Can Barely Afford", "Can Somewhat Afford", "Can Comfortably Afford", "Can Easily Afford"];
-  const rangeLabelsQ6 = ["Lump Sum", "Mix of Both", "Recurring Investments"];
+	// range options
+	const rangeLabelsQ1 = ["Novice", "Beginner", "Intermediate", "Advanced", "Expert"];
+	const rangeLabelsQ3 = ["Less than 3 years", "3-10 years", "10+ years"];
+	const rangeLabelsQ4 = ["No Risk", "Slightly Uncomfortable", "Neutral", "Comfortable", "Very Comfortable"];
+	const rangeLabelsQ5 = ["Can't Afford", "Can Barely Afford", "Can Somewhat Afford", "Can Comfortably Afford", "Can Easily Afford"];
+	const rangeLabelsQ6 = ["Lump Sum", "Mix of Both", "Recurring Investments"];
 
-  // Fetch email from logged-in user's account information and populate data if updating
-  useEffect(() => {
+ // Fetch email from logged-in user's account information and populate data if updating
+ useEffect(() => {
     if (accounts.length > 0) {
       const userEmail = accounts[0].username;
       setEmail(userEmail);
@@ -93,20 +90,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
     };
 
     if (isUpdating) {
-      // Show a confirmation alert before updating
-      Swal.fire({
-        title: 'Are you sure?',
-        text: "Do you want to update your profile insights?",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, update it!'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          handleUpdate(formData);
-        }
-      });
+      handleUpdate(formData);
     } else {
       handleCreate(formData);
     }
@@ -153,94 +137,91 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
       })
       .then(data => {
         console.log(data);
-        Swal.fire({
-          icon: 'success',
-          title: 'Profile Updated',
-          text: 'Your profile has been updated successfully!',
-        });
+        alert('Profile updated successfully!');
+        // navigate('/about');
       })
       .catch(error => {
         console.error('Error:', error);
-        Swal.fire({
-          icon: 'error',
-          title: 'Update Failed',
-          text: 'Failed to update profile. Please try again later.',
-        });
+        alert('Failed to update profile. Please check the console for more details.');
       });
   };
 
   return (
-    <form onSubmit={handleSubmit} className='w-100' style={{ maxWidth: '800px' }}>
-      {/* Question One */}
-      <div style={{ marginBottom: '70px' }}>
-        <RangeQuestion
-          label="Q1. How experienced are you with stock investing?"
-          min="1"
-          max="5"
-          value={experience}
-          onChange={setExperience}
-          labels={rangeLabelsQ1}
-        />
-      </div>
-      {/* Question Two */}
-      <div style={{ marginBottom: '20px' }}>
-        <SelectQuestion
-          label="Q2. What is your annual income range?"
-          options={incomeOptions}
-          value={income}
-          onChange={setIncome}
-        />
-      </div>
-      {/* Question Three */}
-      <div style={{ marginBottom: '70px' }}>
-        <RangeQuestion
-          label="Q3. How long do you plan to hold your investments?"
-          min="1"
-          max="3"
-          value={investmentDuration}
-          onChange={setInvestmentDuration}
-          labels={rangeLabelsQ3}
-        />
-      </div>
-      {/* Question Four */}
-      <div style={{ marginBottom: '70px' }}>
-        <RangeQuestion
-          label="Q4. How much risk are you willing to take for higher returns?"
-          min="1"
-          max="5"
-          value={riskLevel}
-          onChange={setRiskLevel}
-          labels={rangeLabelsQ4}
-        />
-      </div>
-      {/* Question Five */}
-      <div style={{ marginBottom: '70px' }}>
-        <RangeQuestion
-          label="Q5. How much short-term decline can you handle financially?"
-          min="1"
-          max="5"
-          value={declineTolerance}
-          onChange={setDeclineTolerance}
-          labels={rangeLabelsQ5}
-        />
-      </div>
-      {/* Question Six */}
-      <div style={{ marginBottom: '70px' }}>
-        <RangeQuestion
-          label="Q6. Do you prefer investing a lump sum or recurring investments?"
-          min="1"
-          max="3"
-          value={investmentType}
-          onChange={setInvestmentType}
-          labels={rangeLabelsQ6}
-        />
-      </div>
-      <div className="center-button mt-3">
-        <button type="submit" className="btn btn-primary green-btn mb-3">Update</button>
-      </div>
-    </form>
+		<form onSubmit={handleSubmit} className='w-100' style={{ maxWidth: '800px' }}>
+		{/* Question One */}
+		<div style={{ marginBottom: '70px' }}>
+			<RangeQuestion
+			label="Q1. How experienced are you with stock investing?"
+			min="1"
+			max="5"
+			value={experience}
+			onChange={setExperience}
+			labels={rangeLabelsQ1}
+			/>
+		</div>
+		{/* Question Two */}
+		<div style={{ marginBottom: '20px' }}>
+			<SelectQuestion
+			label="Q2. What is your annual income range?"
+			options={incomeOptions}
+			value={income}
+			onChange={setIncome}
+			/>
+		</div>
+		{/* Question Three */}
+		<div style={{ marginBottom: '70px' }}>
+			<RangeQuestion
+			label="Q3. How long do you plan to hold your investments?"
+			min="1"
+			max="3"
+			value={investmentDuration}
+			onChange={setInvestmentDuration}
+			labels={rangeLabelsQ3}
+			/>
+		</div>
+		{/* Question Four */}
+		<div style={{ marginBottom: '70px' }}>
+			<RangeQuestion
+			label="Q4. How much risk are you willing to take for higher returns?"
+			min="1"
+			max="5"
+			value={riskLevel}
+			onChange={setRiskLevel}
+			labels={rangeLabelsQ4}
+			/>
+		</div>
+		{/* Question Five */}
+		<div style={{ marginBottom: '70px' }}>
+			<RangeQuestion
+			label="Q5. How much short-term decline can you handle financially?"
+			min="1"
+			max="5"
+			value={declineTolerance}
+			onChange={setDeclineTolerance}
+			labels={rangeLabelsQ5}
+			/>
+		</div>
+		{/* Question Six */}
+		<div style={{ marginBottom: '70px' }}>
+			<RangeQuestion
+			label="Q6. Do you prefer investing a lump sum or recurring investments?"
+			min="1"
+			max="3"
+			value={investmentType}
+			onChange={setInvestmentType}
+			labels={rangeLabelsQ6}
+			/>
+		</div>
+		<div className="center-button mt-3">
+                    <button type="submit" className="btn btn-primary green-btn mb-3">Update</button>
+                </div>
 
-  );
+                <p className="text-center mb-5">
+                    Have an account? <a href="/signin">Sign In Here.</a>
+                </p>
+		</form>
+		
+	);
 };
 
 export default ProfileInsightsForm;

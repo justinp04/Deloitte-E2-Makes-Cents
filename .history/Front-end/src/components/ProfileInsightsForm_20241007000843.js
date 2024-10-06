@@ -15,7 +15,7 @@ import { useMsal } from '@azure/msal-react';
 import { useNavigate } from 'react-router-dom';
 import RangeQuestion from './RangeQuestion';
 import SelectQuestion from './SelectQuestion';
-import './ProfileInsightsForm.css';
+import './Pro'
 import Swal from 'sweetalert2';
 
 
