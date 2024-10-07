@@ -30,8 +30,8 @@ function StockAnalysis() {
     const [stockName, setStockName] = useState('');
     const [suggestions, setSuggestions] = useState([]);
     const [sidebarOpen, setSidebarOpen] = useState(false); // Tracks if the sidebar is open or closed
-    const [loading, setLoading] = useState(false); 
-    const [stockTicker, setStockTicker] = useState('');
+    const [loadingSidebar, setLoadingSidebar] = useState(true);
+    const [loadingSummary, setLoadingSummary] = useState(true);
 
 
     // State to manage typing indicator
@@ -59,7 +59,6 @@ function StockAnalysis() {
         setQuickSummary(data.quick_summary);
         setDetailedSummary(data.detailed_summary);
         setReferences(data.references); // Update references state
-        setStockTicker(data.stock_ticker);
     };
 
     // Send query here ~~
@@ -112,7 +111,8 @@ function StockAnalysis() {
             return;
         }
 
-        setLoading(true);
+        setLoadingSidebar(true); 
+        setLoadingSummary(true);
 
         try {
             // Set the stock name in the state (this can be used for UI display purposes)
@@ -143,7 +143,8 @@ function StockAnalysis() {
         } catch (error) {
             console.error('Error fetching stock data:', error);
         } finally {
-            setLoading(false);
+            setLoadingSidebar(false);
+            setLoadingSummary(false);
         }
     };
 
@@ -154,16 +155,16 @@ function StockAnalysis() {
 
     const addFavourite = (companyTitle) => {
 
-        if (stockTicker === "Unknown" || !stockTicker) {
+        if (companyTitle === "Unknown") {
             console.log("Not a valid stock. Cannot add to favorites.");
-            return;
+            return; // Prevent adding if the stock name is "Unknown"
         }
 
         // Check if the stock already exists
-        if (!favouriteStocks.some(stock => stock.title === stockTicker)) {
-            const newFavourite = { id: favouriteStocks.length + 1, title: stockTicker, status: "Favourite" };
+        if (!favouriteStocks.some(stock => stock.title === companyTitle)) {
+            const newFavourite = { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" };
             setFavouriteStocks(prevFavourites => [...prevFavourites, newFavourite]);
-            addFavouritetoDatabase(stockTicker); // Call function to add to database
+            addFavouritetoDatabase(companyTitle); // Call function to add to database
         } else {
             // If the stock already exists in local state, show a warning using Swal
             Swal.fire({
@@ -174,13 +175,16 @@ function StockAnalysis() {
         }
     };
 
-    const removeFavourite = async (stockTicker) => {
-        setFavouriteStocks(prevFavourites => prevFavourites.filter(stock => stock.title !== stockTicker));
-        await removeFavouriteFromDatabase(stockTicker);
+    const removeFavourite = async (companyTitle) => {
+        // Remove from local state
+        setFavouriteStocks(prevFavourites => prevFavourites.filter(stock => stock.title !== companyTitle));
+
+        // Now call the database function to remove
+        await removeFavouriteFromDatabase(companyTitle);
     };
 
     // Function to add a stock to the list of favourites
-    const addFavouritetoDatabase = async (stockTicker) => {
+    const addFavouritetoDatabase = async (companyTitle) => {
         try {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
@@ -193,11 +197,12 @@ function StockAnalysis() {
                 },
                 body: JSON.stringify({
                     userId,
-                    stockSymbol: stockTicker,
+                    stockSymbol: companyTitle,
                 }),
             });
 
             if (response.status === 409) {
+                // If the stock already exists in the database, show a pop-up alert
                 Swal.fire({
                     icon: 'warning',
                     title: 'Duplicate Stock',
@@ -207,7 +212,7 @@ function StockAnalysis() {
                 Swal.fire({
                     icon: 'success',
                     title: 'Success',
-                    text: `${stockTicker} has been added to your favourites.`,
+                    text: `${companyTitle} has been added to your favourites.`,
                 });
             } else {
                 throw new Error('Failed to add the stock to your favourites.');
@@ -218,7 +223,7 @@ function StockAnalysis() {
         }
     };
 
-    const removeFavouriteFromDatabase = async (stockTicker) => {
+    const removeFavouriteFromDatabase = async (companyTitle) => {
         try {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
@@ -231,13 +236,13 @@ function StockAnalysis() {
                 },
                 body: JSON.stringify({
                     userId,
-                    stockSymbol: stockTicker,
+                    stockSymbol: companyTitle,
                 }),
             });
 
             if (response.ok) {
                 setFavouriteStocks(prevFavourites =>
-                    prevFavourites.filter(stock => stock.title !== stockTicker)
+                    prevFavourites.filter(stock => stock.title !== companyTitle)
                 );
             } else {
                 alert("Failed to remove favourite stock.");
@@ -260,85 +265,88 @@ function StockAnalysis() {
 
     return (
         <div className="page-container">
-            {loading ? (
-                <LoadingAnimation />
-            ) : (
-                <>
-                    <div className="mt80" style={{ zIndex: 1000 }}>
-                        <SASidebar
-                            favouriteStocks={favouriteStocks}
-                            addFavourite={addFavourite}
-                            addFavouriteToDatabase={addFavouritetoDatabase}
-                            removeFavourite={removeFavourite}
-                            onSearch={handleSearch}
-                            email={email}
-                            toggleSidebar={toggleSidebar}
-                        />
+            {/* Sidebar */}
+            <div className="mt80" style={{ zIndex: 1000 }}>
+                {loadingSidebar ? (
+                    <LoadingAnimation />
+                ) : (
+                    <SASidebar
+                        favouriteStocks={favouriteStocks}
+                        addFavourite={addFavourite}
+                        addFavouriteToDatabase={addFavouritetoDatabase}
+                        removeFavourite={removeFavourite}
+                        onSearch={handleSearch}
+                        email={email}
+                        toggleSidebar={toggleSidebar}
+                    />
+                )}
+            </div>
+            <div className="content content-margining pt-0" style={{ marginTop: '80px' }}>
+                {loadingSummary ? (
+                    <LoadingAnimation />
+                ) : (
+                    <StockSummary
+                        accordionOpen={accordionOpen}
+                        setAccordionOpen={setAccordionOpen}
+                        addFavourite={addFavourite}
+                        removeFavourite={removeFavourite}
+                        favouriteStocks={favouriteStocks}
+                        summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
+                        references={references}
+                        stockName={stockName}
+                        email={email || null}
+                        responseDepth={responseDepth}
+                        onToggleChange={handleToggleChange}
+                    />
+                )}
+                <div id="chatbox-area-div" className="scroll-container">
+                    <div className="content">
+                        <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
                     </div>
-                    <div className="content content-margining pt-0" style={{ marginTop: '80px' }}>
-                        <StockSummary
-                            accordionOpen={accordionOpen}
-                            setAccordionOpen={setAccordionOpen}
-                            addFavourite={addFavourite}
-                            removeFavourite={removeFavourite}
-                            favouriteStocks={favouriteStocks}
-                            summary={responseDepth === 'quick' ? quickSummary : detailedSummary}
-                            references={references}
-                            stockName={stockName}
-                            email={email || null}
-                            responseDepth={responseDepth}
-                            onToggleChange={handleToggleChange}
-                        />
-                        <div id="chatbox-area-div" className="scroll-container">
-                            <div className="content">
-                                <QuestionSuggestions onQuestionClick={handleSuggestedQuestionClick} />
-                            </div>
-                            <div style={{ marginTop: accordionOpen ? '10px' : '10px', paddingBottom: '120px' }}>
-                                {messages.map((msg, index) => (
-                                    <ChatBox
-                                        key={index}
-                                        message={msg.message}
-                                        sender={msg.sender}
-                                        senderName={msg.sender === 'user' ? 'You' : 'Gerry'}
-                                        avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'}
-                                    />
-                                ))}
-                                {typing && (
-                                    <ChatBox
-                                        message={
-                                            <div className="typing-indicator">
-                                                <div className="dot"></div>
-                                                <div className="dot"></div>
-                                                <div className="dot"></div>
-                                            </div>
-                                        }
-                                        sender="bot"
-                                        senderName="Gerry"
-                                        avatar="./images/GerryProfile.jpg"
-                                    />
-                                )}
-                                {suggestions.length > 0 && (
-                                    <div className="suggestions-box">
-                                        {suggestions.map((suggestion, index) => (
-                                            <button
-                                                key={index}
-                                                className="suggested-question-chip"
-                                                onClick={() => handleSuggestedQuestionClick(suggestion)}
-                                            >
-                                                {suggestion}
-                                            </button>
-                                        ))}
+                    <div style={{ marginTop: accordionOpen ? '10px' : '10px', paddingBottom: '120px' }}>
+                        {messages.map((msg, index) => (
+                            <ChatBox
+                                key={index}
+                                message={msg.message}
+                                sender={msg.sender}
+                                senderName={msg.sender === 'user' ? 'You' : 'Gerry'}
+                                avatar={msg.sender === 'user' ? './images/UserProfile.jpg' : './images/GerryProfile.jpg'}
+                            />
+                        ))}
+                        {typing && (
+                            <ChatBox
+                                message={
+                                    <div className="typing-indicator">
+                                        <div className="dot"></div>
+                                        <div className="dot"></div>
+                                        <div className="dot"></div>
                                     </div>
-                                )}
-                                <div ref={chatEndRef} />
+                                }
+                                sender="bot"
+                                senderName="Gerry"
+                                avatar="./images/GerryProfile.jpg"
+                            />
+                        )}
+                        {suggestions.length > 0 && (
+                            <div className="suggestions-box">
+                                {suggestions.map((suggestion, index) => (
+                                    <button
+                                        key={index}
+                                        className="suggested-question-chip"
+                                        onClick={() => handleSuggestedQuestionClick(suggestion)}
+                                    >
+                                        {suggestion}
+                                    </button>
+                                ))}
                             </div>
-                        </div>
-                        <Container className="query-bar-container">
-                            <QueryInputBar onSendMessage={handleSendMessage} />
-                        </Container>
+                        )}
+                        <div ref={chatEndRef} />
                     </div>
-                </>
-            )}
+                </div>
+                <Container className="query-bar-container">
+                    <QueryInputBar onSendMessage={handleSendMessage} />
+                </Container>
+            </div>
         </div>
     );
 }

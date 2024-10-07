@@ -85,7 +85,7 @@ const StockSummary = ({
           <h5 className="me-2 page-subtitle1-text" style={{ margin: 0 }}>
             {companyTitle}
           </h5>
-          {!loading && companyDetails.name && companyDetails.ticker && (
+          {!loading && (
             <FavouriteButton
               companyTitle={companyTitle}
               isFavourited={isFavourited}

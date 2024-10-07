@@ -83,9 +83,15 @@ const StockSummary = ({
       <div className="me-5 d-flex justify-content-between flex-wrap align-items-center">
         <div className="d-flex flex-row align-items-center">
           <h5 className="me-2 page-subtitle1-text" style={{ margin: 0 }}>
-            {companyTitle}
+            {loading ? (
+              <Spinner animation="border" role="status" size="sm">
+                <span className="visually-hidden">Loading...</span>
+              </Spinner>
+            ) : (
+              companyTitle
+            )}
           </h5>
-          {!loading && companyDetails.name && companyDetails.ticker && (
+          {!loading && (
             <FavouriteButton
               companyTitle={companyTitle}
               isFavourited={isFavourited}
@@ -121,7 +127,13 @@ const StockSummary = ({
             <div className="fw-bold">Summary</div>
           </Accordion.Header>
           <Accordion.Body className="px-4">
-            {summary ? (
+            {summaryLoading ? (
+              <div className="text-center">
+                <Spinner animation="border" role="status">
+                  <span className="visually-hidden">Loading Summary...</span>
+                </Spinner>
+              </div>
+            ) : summary ? (
               <SummaryTable summary={summary} responseDepth={responseDepth} />
             ) : (
               'No summary available.'

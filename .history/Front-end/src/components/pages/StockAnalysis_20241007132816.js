@@ -30,7 +30,7 @@ function StockAnalysis() {
     const [stockName, setStockName] = useState('');
     const [suggestions, setSuggestions] = useState([]);
     const [sidebarOpen, setSidebarOpen] = useState(false); // Tracks if the sidebar is open or closed
-    const [loading, setLoading] = useState(false); 
+    const [loading, setLoading] = useState(false); // State to manage loading
     const [stockTicker, setStockTicker] = useState('');
 
 
@@ -59,7 +59,6 @@ function StockAnalysis() {
         setQuickSummary(data.quick_summary);
         setDetailedSummary(data.detailed_summary);
         setReferences(data.references); // Update references state
-        setStockTicker(data.stock_ticker);
     };
 
     // Send query here ~~
@@ -154,16 +153,16 @@ function StockAnalysis() {
 
     const addFavourite = (companyTitle) => {
 
-        if (stockTicker === "Unknown" || !stockTicker) {
+        if (companyTitle === "Unknown") {
             console.log("Not a valid stock. Cannot add to favorites.");
-            return;
+            return; // Prevent adding if the stock name is "Unknown"
         }
 
         // Check if the stock already exists
-        if (!favouriteStocks.some(stock => stock.title === stockTicker)) {
-            const newFavourite = { id: favouriteStocks.length + 1, title: stockTicker, status: "Favourite" };
+        if (!favouriteStocks.some(stock => stock.title === companyTitle)) {
+            const newFavourite = { id: favouriteStocks.length + 1, title: companyTitle, status: "Favourite" };
             setFavouriteStocks(prevFavourites => [...prevFavourites, newFavourite]);
-            addFavouritetoDatabase(stockTicker); // Call function to add to database
+            addFavouritetoDatabase(companyTitle); // Call function to add to database
         } else {
             // If the stock already exists in local state, show a warning using Swal
             Swal.fire({
@@ -174,13 +173,16 @@ function StockAnalysis() {
         }
     };
 
-    const removeFavourite = async (stockTicker) => {
-        setFavouriteStocks(prevFavourites => prevFavourites.filter(stock => stock.title !== stockTicker));
-        await removeFavouriteFromDatabase(stockTicker);
+    const removeFavourite = async (companyTitle) => {
+        // Remove from local state
+        setFavouriteStocks(prevFavourites => prevFavourites.filter(stock => stock.title !== companyTitle));
+
+        // Now call the database function to remove
+        await removeFavouriteFromDatabase(companyTitle);
     };
 
     // Function to add a stock to the list of favourites
-    const addFavouritetoDatabase = async (stockTicker) => {
+    const addFavouritetoDatabase = async (companyTitle) => {
         try {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
@@ -193,11 +195,12 @@ function StockAnalysis() {
                 },
                 body: JSON.stringify({
                     userId,
-                    stockSymbol: stockTicker,
+                    stockSymbol: companyTitle,
                 }),
             });
 
             if (response.status === 409) {
+                // If the stock already exists in the database, show a pop-up alert
                 Swal.fire({
                     icon: 'warning',
                     title: 'Duplicate Stock',
@@ -207,7 +210,7 @@ function StockAnalysis() {
                 Swal.fire({
                     icon: 'success',
                     title: 'Success',
-                    text: `${stockTicker} has been added to your favourites.`,
+                    text: `${companyTitle} has been added to your favourites.`,
                 });
             } else {
                 throw new Error('Failed to add the stock to your favourites.');
@@ -218,7 +221,7 @@ function StockAnalysis() {
         }
     };
 
-    const removeFavouriteFromDatabase = async (stockTicker) => {
+    const removeFavouriteFromDatabase = async (companyTitle) => {
         try {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
@@ -231,13 +234,13 @@ function StockAnalysis() {
                 },
                 body: JSON.stringify({
                     userId,
-                    stockSymbol: stockTicker,
+                    stockSymbol: companyTitle,
                 }),
             });
 
             if (response.ok) {
                 setFavouriteStocks(prevFavourites =>
-                    prevFavourites.filter(stock => stock.title !== stockTicker)
+                    prevFavourites.filter(stock => stock.title !== companyTitle)
                 );
             } else {
                 alert("Failed to remove favourite stock.");

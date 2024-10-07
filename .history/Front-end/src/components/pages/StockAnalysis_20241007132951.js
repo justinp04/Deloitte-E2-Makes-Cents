@@ -180,7 +180,7 @@ function StockAnalysis() {
     };
 
     // Function to add a stock to the list of favourites
-    const addFavouritetoDatabase = async (stockTicker) => {
+    const addFavouritetoDatabase = async (companyTitle) => {
         try {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
@@ -193,11 +193,12 @@ function StockAnalysis() {
                 },
                 body: JSON.stringify({
                     userId,
-                    stockSymbol: stockTicker,
+                    stockSymbol: companyTitle,
                 }),
             });
 
             if (response.status === 409) {
+                // If the stock already exists in the database, show a pop-up alert
                 Swal.fire({
                     icon: 'warning',
                     title: 'Duplicate Stock',
@@ -207,7 +208,7 @@ function StockAnalysis() {
                 Swal.fire({
                     icon: 'success',
                     title: 'Success',
-                    text: `${stockTicker} has been added to your favourites.`,
+                    text: `${companyTitle} has been added to your favourites.`,
                 });
             } else {
                 throw new Error('Failed to add the stock to your favourites.');
@@ -218,7 +219,7 @@ function StockAnalysis() {
         }
     };
 
-    const removeFavouriteFromDatabase = async (stockTicker) => {
+    const removeFavouriteFromDatabase = async (companyTitle) => {
         try {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
@@ -231,13 +232,13 @@ function StockAnalysis() {
                 },
                 body: JSON.stringify({
                     userId,
-                    stockSymbol: stockTicker,
+                    stockSymbol: companyTitle,
                 }),
             });
 
             if (response.ok) {
                 setFavouriteStocks(prevFavourites =>
-                    prevFavourites.filter(stock => stock.title !== stockTicker)
+                    prevFavourites.filter(stock => stock.title !== companyTitle)
                 );
             } else {
                 alert("Failed to remove favourite stock.");

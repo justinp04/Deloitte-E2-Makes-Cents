@@ -26,52 +26,51 @@ const StockSummary = ({
 }) => {
   const [referencesOpen, setReferencesOpen] = useState(false); // To control the nested accordion
   const [companyDetails, setCompanyDetails] = useState({ name: stockName, ticker: '' });
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false); // Loading state specific to company details only
 
   useEffect(() => {
     const fetchStockData = async () => {
-        if (!email || !stockName) {
-            console.warn("Attempted to fetch data before email or stock name was set.");
-            setLoading(false);
-            return;
-        }
+      if (!email || !stockName) {
+        console.warn("Attempted to fetch data before email or stock name was set.");
+        setLoading(false);
+        return;
+      }
 
-        try {
-            setLoading(true);
-            const res = await fetch('http://localhost:4000/summary/stock-summary', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ stockName, user_email: email, response_depth: responseDepth })
-            });
+      try {
+        setLoading(true); // Start loading animation
+        const res = await fetch('http://localhost:4000/summary/stock-summary', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ stockName, user_email: email, response_depth: responseDepth }),
+        });
 
-            const data = await res.json();
-            if (data.company_name && data.stock_ticker) {
-                setCompanyDetails({ name: data.company_name, ticker: data.stock_ticker });
-            }
-            setLoading(false);
-        } catch (error) {
-            console.error('Error fetching stock data:', error);
-            setLoading(false);
+        const data = await res.json();
+        if (data.company_name && data.stock_ticker) {
+          setCompanyDetails({ name: data.company_name, ticker: data.stock_ticker });
         }
+      } catch (error) {
+        console.error('Error fetching stock data:', error);
+      } finally {
+        setLoading(false); // Stop loading after fetch is done
+      }
     };
 
     // Only fetch data if stockName is valid
     if (stockName && stockName !== 'Unknown') {
-        fetchStockData();
+      fetchStockData();
     } else {
-        setLoading(false);
+      setLoading(false);
     }
-}, [stockName, email, responseDepth]);
-
+  }, [stockName, email, responseDepth]);
 
   // Construct the company title from fetched data
   const companyTitle =
-    companyDetails.name && companyDetails.ticker
-      ? `${companyDetails.name} (${companyDetails.ticker})`
-      : loading
+    loading
       ? 'Loading...'
+      : companyDetails.name && companyDetails.ticker
+      ? `${companyDetails.name} (${companyDetails.ticker})`
       : 'No stock name provided';
 
   const isFavourited = favouriteStocks.some(stock => stock.title === companyTitle);
@@ -79,7 +78,8 @@ const StockSummary = ({
   return (
     <div id="stock-summary-div" className="position-sticky">
       <h1 className="page-title-text">Stock Analysis</h1>
-      {/* Data */}
+
+      {/* Company Title and Favourite Button */}
       <div className="me-5 d-flex justify-content-between flex-wrap align-items-center">
         <div className="d-flex flex-row align-items-center">
           <h5 className="me-2 page-subtitle1-text" style={{ margin: 0 }}>
@@ -105,6 +105,7 @@ const StockSummary = ({
         </div>
       </div>
 
+      {/* Accordion for Summary and References */}
       <Accordion className="" defaultActiveKey="0">
         <Accordion.Item eventKey="0" style={{ border: 'none' }}>
           <Accordion.Header
@@ -121,7 +122,9 @@ const StockSummary = ({
             <div className="fw-bold">Summary</div>
           </Accordion.Header>
           <Accordion.Body className="px-4">
-            {summary ? (
+            {loading ? (
+              <p>Loading summary...</p> // Display loading message specifically for summary
+            ) : summary ? (
               <SummaryTable summary={summary} responseDepth={responseDepth} />
             ) : (
               'No summary available.'

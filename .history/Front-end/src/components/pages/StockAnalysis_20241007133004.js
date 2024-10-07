@@ -218,7 +218,7 @@ function StockAnalysis() {
         }
     };
 
-    const removeFavouriteFromDatabase = async (stockTicker) => {
+    const removeFavouriteFromDatabase = async (companyTitle) => {
         try {
             const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
@@ -231,13 +231,13 @@ function StockAnalysis() {
                 },
                 body: JSON.stringify({
                     userId,
-                    stockSymbol: stockTicker,
+                    stockSymbol: companyTitle,
                 }),
             });
 
             if (response.ok) {
                 setFavouriteStocks(prevFavourites =>
-                    prevFavourites.filter(stock => stock.title !== stockTicker)
+                    prevFavourites.filter(stock => stock.title !== companyTitle)
                 );
             } else {
                 alert("Failed to remove favourite stock.");

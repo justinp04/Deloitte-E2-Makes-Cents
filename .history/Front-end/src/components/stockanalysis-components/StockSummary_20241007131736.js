@@ -1,7 +1,3 @@
-/************************************************************************************************
- * Purpose: Summary portion on the top of content page for stock in 'Stock Analysis' page
- * Fix: 
- ************************************************************************************************/
 import React, { useState, useEffect } from 'react';
 import { Accordion, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,6 +6,7 @@ import FavouriteButton from './FavouriteButton';
 import '../Components.css';
 import ToggleSwitch from '../ToggleSwitch';
 import SummaryTable from './SummaryTable';
+import LoadingAnimation from './pages/LoadingAnimation';
 
 const StockSummary = ({
   summary,
@@ -30,41 +27,40 @@ const StockSummary = ({
 
   useEffect(() => {
     const fetchStockData = async () => {
-        if (!email || !stockName) {
-            console.warn("Attempted to fetch data before email or stock name was set.");
-            setLoading(false);
-            return;
-        }
+      if (!email || !stockName) {
+        console.warn("Attempted to fetch data before email or stock name was set.");
+        setLoading(false);
+        return;
+      }
 
-        try {
-            setLoading(true);
-            const res = await fetch('http://localhost:4000/summary/stock-summary', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ stockName, user_email: email, response_depth: responseDepth })
-            });
+      try {
+        setLoading(true);
+        const res = await fetch('http://localhost:4000/summary/stock-summary', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ stockName, user_email: email, response_depth: responseDepth }),
+        });
 
-            const data = await res.json();
-            if (data.company_name && data.stock_ticker) {
-                setCompanyDetails({ name: data.company_name, ticker: data.stock_ticker });
-            }
-            setLoading(false);
-        } catch (error) {
-            console.error('Error fetching stock data:', error);
-            setLoading(false);
+        const data = await res.json();
+        if (data.company_name && data.stock_ticker) {
+          setCompanyDetails({ name: data.company_name, ticker: data.stock_ticker });
         }
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching stock data:', error);
+        setLoading(false);
+      }
     };
 
     // Only fetch data if stockName is valid
     if (stockName && stockName !== 'Unknown') {
-        fetchStockData();
+      fetchStockData();
     } else {
-        setLoading(false);
+      setLoading(false);
     }
-}, [stockName, email, responseDepth]);
-
+  }, [stockName, email, responseDepth]);
 
   // Construct the company title from fetched data
   const companyTitle =
@@ -85,7 +81,7 @@ const StockSummary = ({
           <h5 className="me-2 page-subtitle1-text" style={{ margin: 0 }}>
             {companyTitle}
           </h5>
-          {!loading && companyDetails.name && companyDetails.ticker && (
+          {!loading && (
             <FavouriteButton
               companyTitle={companyTitle}
               isFavourited={isFavourited}
@@ -105,6 +101,7 @@ const StockSummary = ({
         </div>
       </div>
 
+      {/* Show loading animation or the summary content */}
       <Accordion className="" defaultActiveKey="0">
         <Accordion.Item eventKey="0" style={{ border: 'none' }}>
           <Accordion.Header
@@ -121,7 +118,9 @@ const StockSummary = ({
             <div className="fw-bold">Summary</div>
           </Accordion.Header>
           <Accordion.Body className="px-4">
-            {summary ? (
+            {loading ? (
+              <LoadingAnimation /> // Show loading animation only for this part
+            ) : summary ? (
               <SummaryTable summary={summary} responseDepth={responseDepth} />
             ) : (
               'No summary available.'

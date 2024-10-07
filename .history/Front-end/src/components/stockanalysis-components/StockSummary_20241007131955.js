@@ -1,6 +1,6 @@
 /************************************************************************************************
  * Purpose: Summary portion on the top of content page for stock in 'Stock Analysis' page
- * Fix: 
+ * Fix: A
  ************************************************************************************************/
 import React, { useState, useEffect } from 'react';
 import { Accordion, Row, Col } from 'react-bootstrap';

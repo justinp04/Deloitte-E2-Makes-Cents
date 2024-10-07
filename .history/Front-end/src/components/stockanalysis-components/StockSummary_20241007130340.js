@@ -83,9 +83,110 @@ const StockSummary = ({
       <div className="me-5 d-flex justify-content-between flex-wrap align-items-center">
         <div className="d-flex flex-row align-items-center">
           <h5 className="me-2 page-subtitle1-text" style={{ margin: 0 }}>
+            {loading ? (
+              <Spinner animation="border" role="status" size="sm">
+                <span className="visually-hidden">Loading...</span>
+              </Spinner>
+            ) : (
+              companyTitle
+            )}
+          </h5>
+          {!loading && (
+            <FavouriteButton
+              companyTitle={companyTitle}
+              isFavourited={isFavourited}
+              onFavourite={addFavourite}
+              onRemoveFavourite={removeFavourite}
+            />
+          )}
+        </div>
+        <div className="d-flex flex-row align-items-center toggle-button">
+          <ToggleSwitch
+            checked={responseDepth === 'detailed'}
+            onChange={onToggleChange}
+            id="detailedSummarySwitch"
+            style={{ paddingBottom: '20px' }}
+          />
+          <span className="toggle-switch-text ms-2">Detailed Summary</span>
+        </div>
+      </div>
+
+      <Accordion className="" defaultActiveKey="0">
+        <Accordion.Item eventKey="0" style={{ border: 'none' }}>
+          <Accordion.Header
+            onClick={() => {
+              setAccordionOpen(!accordionOpen); // Toggle the state
+              setReferencesOpen(false); // Close references when summary closes
+            }}
+            className="accordion-header"
+          >
+            <FontAwesomeIcon
+              icon={accordionOpen ? faChevronRight : faChevronDown}
+              className="me-2"
+            />
+            <div className="fw-bold">Summary</div>
+          </Accordion.Header>
+          <Accordion.Body className="px-4">
+            {summaryLoading ? (
+              <div className="text-center">
+                <Spinner animation="border" role="status">
+                  <span className="visually-hidden">Loading Summary...</span>
+                </Spinner>
+              </div>
+            ) : summary ? (
+              <SummaryTable summary={summary} responseDepth={responseDepth} />
+            ) : (
+              'No summary available.'
+            )}
+
+            {/* Nested Accordion for References */}
+            <Accordion activeKey={referencesOpen ? '0' : null}>
+              <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
+                <Accordion.Header
+                  onClick={() => setReferencesOpen(!referencesOpen)}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    width: '100%',
+                    paddingRight: '0',
+                    border: 'none',
+                    fontSize: '0.8rem',
+                  }}
+                >
+                  <FontAwesomeIcon icon={referencesOpen ? faChevronDown : faChevronRight} className="me-2" />
+                  <div className="fw-bold">References</div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <ol style={{ paddingLeft: '3.8rem', fontSize: '0.8rem' }}>
+                    {Array.isArray(references) && references.length > 0 ? (
+                      references.map((ref, index) => (
+                        <li key={index}>
+                          <a href={ref} target="_blank" rel="noopener noreferrer">
+                            {ref}
+                          </a>
+                        </li>
+                      ))
+                    ) : (
+                      <p>No references available</p>
+                    )}
+                  </ol>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      <hr className="m-0" />
+    </div>
+    <div id="stock-summary-div" className="position-sticky">
+      <h1 className="page-title-text">Stock Analysis</h1>
+      {/* Data */}
+      <div className="me-5 d-flex justify-content-between flex-wrap align-items-center">
+        <div className="d-flex flex-row align-items-center">
+          <h5 className="me-2 page-subtitle1-text" style={{ margin: 0 }}>
             {companyTitle}
           </h5>
-          {!loading && companyDetails.name && companyDetails.ticker && (
+          {!loading && (
             <FavouriteButton
               companyTitle={companyTitle}
               isFavourited={isFavourited}
