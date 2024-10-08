@@ -160,7 +160,7 @@ def generate_response(documents, user_query, user_profile):
     }
     ]
 
-    max_response_tokens = 450  # set the max number of tokens to be used for responses
+    max_response_tokens = 500  # set the max number of tokens to be used for responses
     response = get_llm_response(messages, max_response_tokens)
     
     # Clean up the detailed response to ensure proper formatting
@@ -184,7 +184,7 @@ def response_length(answer, response_depth):
             {
                 "role": "system",
                 "content": (
-                    "You are an assistant that helps summarize information. Take the provided text and provide a brief and to-the-point summary in 100 words or less. Make sure to include a clear yes or no conclusion in the summary."
+                    "You are an assistant that helps summarize information. Take the provided text and provide a brief and to-the-point summary in approximately 100 words. Make sure to include a clear yes or no conclusion in the summary."
                 )
             },
             {
