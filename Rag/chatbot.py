@@ -64,6 +64,10 @@ def main():
         del conversation[1]  # delete older user messages to keep under token limit
         conv_history_tokens = num_tokens_from_messages(conversation)
 
+    print("\n\n")
+    print("DEBUG: conversation variable (check output): ", conversation)
+    print("\n\n")
+
     # Get the response from the LLM (language model)
     response = get_llm_response(conversation, max_response_tokens)
     assistant_reply = response.choices[0].message.content
