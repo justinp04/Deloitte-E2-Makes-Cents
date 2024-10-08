@@ -192,7 +192,7 @@ def response_length(answer, response_depth):
                 "content": f"Context:\n{answer}"
             }
         ]
-        quick_answer = get_llm_response(system_message, max_response_tokens=100)
+        quick_answer = get_llm_response(system_message, max_response_tokens=200)
         
         # Check if the response is valid
         if quick_answer and quick_answer.choices:
