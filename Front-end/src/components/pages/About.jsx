@@ -13,6 +13,8 @@ import { faNewspaper, faWandMagicSparkles, faPerson } from '@fortawesome/free-so
 
 import './About.css';
 
+import Cookies from 'js-cookie';
+
 function About() {
     const boxes = [
         { id: 1, title: 'Column 3', content: 'Providing tailored recommendations just for you', icon: faPerson },
@@ -27,6 +29,22 @@ function About() {
             console.log(e);
         });
     };
+
+    function checkFirstVisit() {
+        // Check if the 'visited' cookie exists
+        const visited = Cookies.get('visited');
+      
+        if (!visited) {      
+          // Set a localStorage flag to show the tutorial when they go to stock analysis
+          localStorage.setItem('showTutorial', 'true');
+      
+          // Set a 'visited' cookie so we know they've been here before
+          Cookies.set('visited', 'true');
+        }
+      }
+      
+      // Call the function to check the visit status
+      checkFirstVisit();
 
     return (
         <div className="container text-center mb-3">

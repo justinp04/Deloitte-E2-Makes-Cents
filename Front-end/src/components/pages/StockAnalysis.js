@@ -15,6 +15,8 @@ import ChatBox from '../stockanalysis-components/ChatBox';
 import QueryInputBar from '../stockanalysis-components/QueryInputBar';
 import QuestionSuggestions from '../stockanalysis-components/QuestionSuggestions';
 
+import TutorialOverlay from '../stockanalysis-components/TutorialOverlay';
+
 function StockAnalysis() {
     const [messages, setMessages] = useState([]);
     const [accordionOpen, setAccordionOpen] = useState(false); // State to control whether an accordion (presumably in the UI) is open or closed
@@ -27,9 +29,23 @@ function StockAnalysis() {
     const [suggestions, setSuggestions] = useState([]);
     const [sidebarOpen, setSidebarOpen] = useState(false); // Tracks if the sidebar is open or closed
 
+    // for tutorial
+    const [tutorialActive, setTutorialActive] = useState(false);
+    const [tutorialStep, setTutorialStep] = useState(1);
+
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
+
+    // Check localStorage for the tutorial flag
+    useEffect(() => {
+        const showTutorial = localStorage.getItem('showTutorial');
+        if (showTutorial === 'true') {
+            setTutorialActive(true);
+            // opens the components on the left so that the tutorial can show stuff
+            setAccordionOpen(true);
+        }
+    }, []);
 
     const handleToggleChange = () => {
         setResponseDepth(responseDepth === 'quick' ? 'detailed' : 'quick'); // Toggle between quick and detailed
@@ -132,6 +148,19 @@ function StockAnalysis() {
         );
     };
 
+    const handleNextTutorialStep = () => {
+        if (tutorialStep < 10) { 
+            setTutorialStep(tutorialStep + 1);
+        } else {
+            setTutorialActive(false);
+        }
+    };
+
+    const handleCloseTutorial = () => {
+        setTutorialActive(false);
+    };
+
+
     // Scroll to the latest message when new messages are added
     useEffect(() => {
         chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -151,12 +180,13 @@ function StockAnalysis() {
                     addFavourite={addFavourite}
                     removeFavourite={removeFavourite}
                     onSearch={handleSearch}
+                    tutorialActive={tutorialActive} 
                     toggleSidebar={toggleSidebar}
                 />
             </div>
             <div className={`content p-0 ${sidebarOpen ? 'shift-content' : ''}`}  >
                 <div
-                    className="position-sticky stock-summary-container"
+                    className="stock-summary-container"
                     style={{ top: '0', width: '100%', backgroundColor: 'none' }}>
                     <h1 className="page-header ms-4 mb-2 me-5" style={{ marginRight: '62%' }}>STOCK ANALYSIS</h1>
                     <StockSummary
@@ -231,6 +261,15 @@ function StockAnalysis() {
                     <QueryInputBar onSendMessage={handleSendMessage} />
                 </Container>
             </div>
+
+            {tutorialActive && (
+                <TutorialOverlay 
+                    step={tutorialStep} 
+                    onNext={handleNextTutorialStep} 
+                    onClose={handleCloseTutorial} 
+                />
+            )}
+
         </div>
     );
 }

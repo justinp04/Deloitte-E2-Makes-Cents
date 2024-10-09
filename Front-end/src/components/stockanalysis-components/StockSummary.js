@@ -45,17 +45,18 @@ const StockSummary = ({ summary, references, accordionOpen, setAccordionOpen, ad
     return (
         <div className="toggle-list-container">
             {/* Data */}
-            <div className="me-5 d-flex justify-content-between flex-wrap align-items-center">
+            <div className="me-5 d-flex justify-content-between align-items-center flex-wrap">
                 <div className='d-flex flex-row align-items-center'>
                     <h5 className='ms-4 me-2 ps-3 fw-bold' style={{ margin: 0 }}>{stockName || "No stock name provided"}</h5>
                     <FavouriteButton
                         companyTitle={stockName || "Unknown"}
                         isFavourited={favouriteStocks.some(stock => stock.title === companyTitle)}
+                        id = "favorites-button"
                         onFavourite={addFavourite}
                         onRemoveFavourite={removeFavourite}
                     />
                 </div>
-                <div className='d-flex flex-row align-items-center toggle-button'>
+                <div id = "detailed-summary-switch" className='d-flex flex-row align-items-center toggle-button'>
                     <ToggleSwitch
                         checked={responseDepth === 'detailed'}
                         onChange={onToggleChange}

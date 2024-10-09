@@ -58,6 +58,7 @@ function NavbarComponent() {
                                 <Nav.Link
                                     as={Link}
                                     to="/stock-analysis"
+                                    id = "stock-analysis-button"
                                     className={`fw-bold me-3 ms-3 ${isActive("/stock-analysis") ? "active-link" : ""}`}
                                 >
                                     Stock Analysis
@@ -66,13 +67,14 @@ function NavbarComponent() {
                                 <Nav.Link
                                     as={Link}
                                     to="/news-feed"
+                                    id = "news-feed-button"
                                     className={`fw-bold me-3 ms-3 ${isActive("/news-feed") ? "active-link" : ""}`}
                                 >
                                     News Feed
                                 </Nav.Link>
 
                                 <Dropdown align="end" className="me-3 ms-3">
-                                    <Dropdown.Toggle as={Nav.Link} className="fw-bold p-0 no-caret" style={{ border: 'none', backgroundColor: 'transparent' }}>
+                                    <Dropdown.Toggle as={Nav.Link} className="fw-bold p-0 no-caret" id = "settings-button" style={{ border: 'none', backgroundColor: 'transparent' }}>
                                         <img src="../images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="55" height="55" />
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import './Components.css';
 
-const SearchBar = ({ placeholder, onSearch }) => {
+const SearchBar = ({ id, placeholder, onSearch }) => {
     const [searchTerm, setSearchTerm] = useState(''); // State to hold the search term
 
     // Handle the search button click
@@ -25,7 +25,7 @@ const SearchBar = ({ placeholder, onSearch }) => {
 
     return (
         <div className="searchbar-container mx-3 mb-0">
-            <InputGroup className="rounded-input-group" style={{ border: '1px solid grey', borderRadius: '30px' }}>
+            <InputGroup id = {id} className="rounded-input-group" style={{ border: '1px solid grey', borderRadius: '30px' }}>
                 <Form.Control
                     placeholder={placeholder}
                     aria-label={placeholder}

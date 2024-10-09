@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import NewsCompanyTitle from '../newsfeed-components/NewsCompanyTitle';
 import NewsHeroSection from '../newsfeed-components/NewsHeroSection';
@@ -7,6 +7,8 @@ import NewsSidebar from '../newsfeed-components/NewsSidebar';
 import FilterButton from '../newsfeed-components/FilterButton';
 import { useMsal } from '@azure/msal-react';
 import './NewsFeed.css';
+import TutorialOverlay from '../stockanalysis-components/TutorialOverlay'; 
+
 
 function NewsFeed() {
     const { accounts } = useMsal();
@@ -16,6 +18,52 @@ function NewsFeed() {
     });
     const [searchTerm, setSearchTerm] = useState('CBA'); // Default company symbol
     const [email, setEmail] = useState('');
+
+    // for tutorial
+    const [tutorialActive, setTutorialActive] = useState(false);
+    const [tutorialStep, setTutorialStep] = useState(1);
+    const [expandedItems, setExpandedItems] = useState([]);
+
+
+    // reference for accordion
+    const stockRecommendationsRef = useRef(null);
+
+    // check local storage for the show tutorial flag
+    useEffect(() => {
+        const showTutorial = localStorage.getItem('showTutorial');
+        const storedStep = localStorage.getItem('tutorialStep');
+        if (showTutorial === 'true' && storedStep) {
+            // open accordions here (there's 2 of them)
+            setExpandedItems(['currentInvestments', 'followedCompanies']);
+
+            
+            setTutorialActive(true);
+            setTutorialStep(9);
+            
+            localStorage.removeItem('showTutorial');
+            localStorage.removeItem('tutorialStep');
+        }
+    }, []);
+
+    const handleNextTutorialStep = () => {
+        if (tutorialStep < 10) { 
+            setTutorialStep(tutorialStep + 1);
+        } else {
+            setTutorialActive(false);
+        }
+    };
+
+    const handleCloseTutorial = () => {
+        setTutorialActive(false);
+    };
+
+    const handleAccordionToggle = (eventKey) => {
+        if (expandedItems.includes(eventKey)) {
+            setExpandedItems(expandedItems.filter(key => key !== eventKey));
+        } else {
+            setExpandedItems([...expandedItems, eventKey]);
+        }
+    };
 
     // State for current investment companies
     const [currentInvestmentCompanies, setCurrentInvestmentCompanies] = useState([
@@ -125,6 +173,10 @@ function NewsFeed() {
                     onSearch={handleSearch}
                     currentInvestmentCompanies={currentInvestmentCompanies}
                     followedCompanies={followedCompanies}
+
+                    expandedItems={expandedItems} 
+                    onToggle={handleAccordionToggle} 
+                    ref={stockRecommendationsRef} 
                 />
             </div>
             <div className="content newsfeed-container pt-0">
@@ -148,6 +200,15 @@ function NewsFeed() {
                 </div>
                 <NewsList articles={newsData.articles} />
             </div>
+
+            {tutorialActive && (
+                <TutorialOverlay 
+                    step={tutorialStep} 
+                    onNext={handleNextTutorialStep} 
+                    onClose={handleCloseTutorial} 
+                />
+            )}
+
         </div>
     );
 }
