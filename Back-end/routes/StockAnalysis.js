@@ -7,6 +7,7 @@ import express from 'express';
 import { spawn } from 'child_process';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import sql from 'mssql'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -64,6 +65,8 @@ router.post('/chat', (req, res) => {
                 response: parsedData.response,               // Main chatbot response
                 followUpSuggestions: parsedData.followUpSuggestions // Follow-up suggestions
             });
+
+            // Store the response in the mySQL database
         } catch (err) {
             console.error('Error parsing Python output:', err);
             res.status(500).json({ error: 'Failed to parse Python output.' });

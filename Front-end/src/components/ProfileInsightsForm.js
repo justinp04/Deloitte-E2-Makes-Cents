@@ -16,6 +16,7 @@ import { useNavigate } from 'react-router-dom';
 import RangeQuestion from './RangeQuestion';
 import SelectQuestion from './SelectQuestion';
 import './ProfileInsightsForm.css';
+import './pages/UserQuestionaire.css';
 import Swal from 'sweetalert2';
 
 
@@ -180,9 +181,9 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='w-100' style={{ maxWidth: '800px' }}>
+    <form onSubmit={handleSubmit} className='w-100'>
       {/* Question One */}
-      <div style={{ marginBottom: '70px' }}>
+      <div className="range-question-container">
         <RangeQuestion
           label="Q1. How experienced are you with stock investing?"
           min="1"
@@ -193,7 +194,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
         />
       </div>
       {/* Question Two */}
-      <div style={{ marginBottom: '20px' }}>
+      <div className="select-question-container">
         <SelectQuestion
           label="Q2. What is your annual income range?"
           options={incomeOptions}
@@ -202,7 +203,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
         />
       </div>
       {/* Question Three */}
-      <div style={{ marginBottom: '70px' }}>
+      <div className="range-question-container">
         <RangeQuestion
           label="Q3. How long do you plan to hold your investments?"
           min="1"
@@ -213,7 +214,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
         />
       </div>
       {/* Question Four */}
-      <div style={{ marginBottom: '70px' }}>
+      <div className="range-question-container">
         <RangeQuestion
           label="Q4. How much risk are you willing to take for higher returns?"
           min="1"
@@ -224,7 +225,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
         />
       </div>
       {/* Question Five */}
-      <div style={{ marginBottom: '70px' }}>
+      <div className="range-question-container">
         <RangeQuestion
           label="Q5. How much short-term decline can you handle financially?"
           min="1"
@@ -235,7 +236,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
         />
       </div>
       {/* Question Six */}
-      <div style={{ marginBottom: '70px' }}>
+      <div className="range-question-container">
         <RangeQuestion
           label="Q6. Do you prefer investing a lump sum or recurring investments?"
           min="1"
@@ -246,7 +247,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
         />
       </div>
       <div className="center-button mt-3">
-        <button type="submit" className="btn btn-primary green-btn mb-3">Update</button>
+        <button type="submit" className="btn btn-primary green-btn mb-3">Submit</button>
       </div>
     </form>
 

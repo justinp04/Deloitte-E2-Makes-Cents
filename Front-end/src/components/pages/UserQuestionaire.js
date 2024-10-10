@@ -24,14 +24,14 @@ function UserQuestionaire() {
     });
     
     return (
-        <div className='container'>
-            <div style={{ marginBottom: '50px' }}>
-                <h1 className="text-center mb-0 page-title">REGISTER</h1>
+        <div id="questionnaire-container" className='container questionnaire-width'>
+            <div className="mb-4">
+                <h1 className="text-center mb-0 page-title fw-bold">REGISTER</h1>
                 <h2 className='fw-bold'>Profile Insights</h2>
                 <p>To provide you with the most relevant stock recommendations, please fill out the 'Profile Insights' section.
                     This information will help us tailor our suggestions to match your investment experience, financial goals, and risk tolerance.</p>
             </div>
-
+            <hr/>
             <div className="d-flex flex-column justify-content-center align-items-center" style={{ minHeight: '7vh' }}>
                 <ProfileInsightsForm />
                 {/* <div className="center-button mt-3">
