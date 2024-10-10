@@ -3,7 +3,7 @@
  * Fix: 
  ************************************************************************************************/
 import React, { useState, useEffect } from 'react';
-import { Accordion, Row, Col } from 'react-bootstrap';
+import { Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import FavouriteButton from './FavouriteButton';
