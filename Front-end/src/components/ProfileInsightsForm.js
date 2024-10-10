@@ -246,7 +246,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
           labels={rangeLabelsQ6}
         />
       </div>
-      <div className="center-button mt-3">
+      <div className="center-button mt-3 pt-1">
         <button type="submit" className="btn btn-primary green-btn mb-3">Submit</button>
       </div>
     </form>
