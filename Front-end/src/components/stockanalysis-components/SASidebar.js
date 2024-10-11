@@ -14,7 +14,6 @@ import SearchCard from './SearchCard';
 import { useMsal } from '@azure/msal-react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
-import { parsedStocksArray } from './asxStocks.js';
 
 import SearchBarTwo from '../SearchBarTwo';
 import SearchResultsList from '../SearchResultsList';
@@ -191,7 +190,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                             />
                                                         ))
                                                     ) : (
-                                                        <p>No results found.</p>
+                                                        <p class="text-center py-2">{filteredStocks.length > 0 ? 'No results found.' : ''}</p>
                                                     )}
                                                 </>
                                             )}

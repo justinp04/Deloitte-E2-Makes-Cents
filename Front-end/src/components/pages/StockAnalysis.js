@@ -17,7 +17,6 @@ import QuestionSuggestions from '../stockanalysis-components/QuestionSuggestions
 import LoadingAnimation from './LoadingAnimation.js';
 import { useMsal } from '@azure/msal-react';
 import Swal from 'sweetalert2';
-import { parsedStocksArray } from '../stockanalysis-components/asxStocks.js'; 
 
 function StockAnalysis() {
     const [messages, setMessages] = useState([]);
@@ -33,7 +32,7 @@ function StockAnalysis() {
     const [loading, setLoading] = useState(false); 
     const [stockTicker, setStockTicker] = useState('');
     const [searchTerm, setSearchTerm] = useState('');
-    const [filteredStocks, setFilteredStocks] = useState(parsedStocksArray);
+    const [filteredStocks, setFilteredStocks] = useState([]);
 
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
