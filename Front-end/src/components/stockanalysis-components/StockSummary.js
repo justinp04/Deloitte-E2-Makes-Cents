@@ -80,9 +80,9 @@ const StockSummary = ({
     <div id="stock-summary-div" className="position-sticky">
       <h1 className="page-title-text">Stock Analysis</h1>
       {/* Data */}
-      <div className="me-5 d-flex justify-content-between flex-wrap align-items-center">
+      <div id='summary-buttons-div'>
         <div className="d-flex flex-row align-items-center">
-          <h5 className="me-2 page-subtitle1-text" style={{ margin: 0 }}>
+          <h5 className="me-2 page-subtitle1-text summary-company-title" style={{ margin: 0 }}>
             {companyTitle}
           </h5>
           {!loading && companyDetails.name && companyDetails.ticker && (
@@ -94,7 +94,7 @@ const StockSummary = ({
             />
           )}
         </div>
-        <div className="d-flex flex-row align-items-center toggle-button">
+        <div ToggleSwitch="summary-toggle" className="summary-toggle-div">
           <ToggleSwitch
             checked={responseDepth === 'detailed'}
             onChange={onToggleChange}

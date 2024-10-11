@@ -23,14 +23,24 @@ code {
 }
 
 /* Font Sizes */
+.about-page-title{
+  font-size: clamp(45px, 5vw, 90px);
+  font-weight: bold;
+  padding-top: 10px;
+}
+.about-page-subtitle{
+  font-size: clamp(19px, 5vw, 23px);
+  color: var(--mc-blue);
+}
 .page-title-text{
-  font-size: clamp(30px, 5vw, 50px);
+  font-size: clamp(26px, 5vw, 50px);
   text-transform: uppercase;
   font-weight: bold;
+  white-space: nowrap;
 }
 .page-subtitle1-text
 {
-  font-size: clamp(18px, 5vw, 23px);
+  font-size: clamp(15px, 5vw, 23px);
   font-weight: bold;
 }
 .page-subtitle2-text
