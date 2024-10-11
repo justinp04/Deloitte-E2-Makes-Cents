@@ -33,14 +33,15 @@ function NavbarComponent() {
 
     return (
         <Navbar expand="lg" fixed="top" className="navbar-light pt-3">
-            <Container fluid className="me-2 ms-3">
+            <Container fluid className="ms-3">
                 <Navbar.Brand as={Link} to="/" className="site-title fw-bold" hidden={showTitleState}>
                     <img src="../images/MCLogo.png" width="25" height="25" className='mb-2 me-2'/>
                     Makes Cents
                 </Navbar.Brand>
 
-                <Navbar.Toggle className="ms-auto" style={{ border: "none" }}>
-                    <FontAwesomeIcon icon={faBars} />
+                <Navbar.Toggle className="ms-auto ms-5 ps-3" style={{ border: "none" }}>
+                    <img src="../images/UserProfile.jpg" alt="Profile" className="rounded-circle" width="50" height="50" />
+                    {/* <FontAwesomeIcon icon={faBars} /> */}
                 </Navbar.Toggle>
 
                 <Navbar.Collapse id="navbarNav ma-3" style={{ backgroundColor: "white" }}>

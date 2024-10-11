@@ -64,6 +64,9 @@ code {
 }
 
 /* Set Margining */
+.mt60{
+  margin-top: 60px;
+}
 .mt70{
   margin-top: 70px;
 }
@@ -124,6 +127,10 @@ code {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.sidebar-button{
+  margin-top: 80px;
 }
 
 /* Chevron Styling*/
@@ -224,6 +231,9 @@ code {
   .content-margining{
     margin-left: 30px;
   }
+  .sidebar-button{
+    margin-top: 75px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -235,6 +245,9 @@ code {
 @media (max-width: 576px) {
   .content-margining{
     margin-left: 20px;
+  }
+  .sidebar-button{
+    margin-top: 70px;
   }
   
 }

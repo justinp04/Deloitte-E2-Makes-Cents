@@ -304,7 +304,7 @@ function StockAnalysis() {
                 <LoadingAnimation />
             ) : ( */}
                 <>
-                    <div className="mt80" style={{ zIndex: 1000 }}>
+                    <div className="sidebar-button" style={{ zIndex: 1000 }}>
                         <SASidebar
                             favouriteStocks={favouriteStocks}
                             addFavourite={addFavourite}
