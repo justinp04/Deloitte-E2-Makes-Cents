@@ -19,8 +19,6 @@ import { useMsal } from '@azure/msal-react';
 import Swal from 'sweetalert2';
 import { parsedStocksArray } from '../stockanalysis-components/asxStocks.js'; 
 
-
-
 function StockAnalysis() {
     const [messages, setMessages] = useState([]);
     const [accordionOpen, setAccordionOpen] = useState(false); // State to control whether an accordion (presumably in the UI) is open or closed
@@ -36,8 +34,6 @@ function StockAnalysis() {
     const [stockTicker, setStockTicker] = useState('');
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredStocks, setFilteredStocks] = useState(parsedStocksArray);
-
-
 
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
@@ -55,14 +51,41 @@ function StockAnalysis() {
         }
     }, [accounts]);
 
+    // Function to fetch the filtered stocks from the back-end
+    const fetchFilteredStocks = async () => {
+        try {
+            const response = await fetch('http://localhost:4000/chatbot/search', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ searchTerm: searchTerm })
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            console.log('Searching for stocks');
+
+            const data = await response.json(); // Extract JSON data
+            setFilteredStocks(data.response); // Set the filtered stocks
+
+        } catch (error) {
+            console.error('Error:', error);
+            setMessages(prevMessages => [
+                ...prevMessages,
+                { sender: 'bot', message: 'An error occurred while searching for a stock' }
+            ]);
+        }
+    };
+
     // Update filtered stocks whenever searchTerm changes
-    useEffect(() => {
-        const filtered = parsedStocksArray.filter(stock =>
-            stock.stock_name.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-        setFilteredStocks(filtered);
-        console.log('Filtered Stocks:', filtered);
+    useEffect(() => {    
+        // async function called
+        if( searchTerm ) {
+            fetchFilteredStocks();
+        }
     }, [searchTerm]);
+    
 
     const handleToggleChange = () => {
         setResponseDepth(responseDepth === 'quick' ? 'detailed' : 'quick'); // Toggle between quick and detailed
@@ -86,6 +109,8 @@ function StockAnalysis() {
         setTyping(true);
 
         try {
+            console.log("About to make HTTP req");
+
             const response = await fetch('http://localhost:4000/chatbot/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -117,6 +142,7 @@ function StockAnalysis() {
 
     // Function to handle stock search and update summary/references
     const handleSearch = async (searchTerm) => {
+        console.log("handleSearch() called");
         setSearchTerm(searchTerm);
         if (!email) {
             Swal.fire({
@@ -285,7 +311,7 @@ function StockAnalysis() {
                             addFavourite={addFavourite}
                             addFavouriteToDatabase={addFavouritetoDatabase}
                             removeFavourite={removeFavourite}
-                            onSearch={(term) => handleSearch(term)}
+                            onSearch={(term) => setSearchTerm(term)}
                             onNavigate={(stock) => { setStockName(stock); handleSearch(stock); }}
                             filteredStocks={filteredStocks}
                             email={email}

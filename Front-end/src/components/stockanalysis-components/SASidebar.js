@@ -19,7 +19,7 @@ import { parsedStocksArray } from './asxStocks.js';
 import SearchBarTwo from '../SearchBarTwo';
 import SearchResultsList from '../SearchResultsList';
 
-const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase, onSearch, filteredStocks, onNavigate = () => { } }) => {
+const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase, onSearch, filteredStocks, performSearch, onNavigate = () => { } }) => {
     const [expandedItems, setExpandedItems] = useState({ "0": true, "1": true, "2": true }); // Tracks the open/close state of each accordion item
     const [showSidebar, setShowSidebar] = useState(false); // Offcanvas visibility
 
@@ -79,8 +79,15 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
 
     const handleSearchChange = (e) => {
         const term = e.target.value; 
+
+
+        // This needs to be changed to a common function in the common parent component
         setSearchTerm(term);
-        onSearch(term);
+        
+        
+        // Need to escalate this to StockAnalysis.js somehow, can pass in a new method
+        performSearch(searchTerm);
+        // onSearch(term);
     };
 
     const handleCloseSidebar = () => setShowSidebar(false); // Close the Offcanvas sidebar
@@ -173,13 +180,14 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                 <>
                                                     <SearchBar placeholder="Search for a stock" 
                                                                 value={searchTerm}
-                                                                onSearch={(term) => handleSearchChange({ target: { value: term } })} />
+                                                                onSearch={(term) => (onSearch(term))} />
                                                     {filteredStocks.length > 0 ? (
                                                         filteredStocks.map((stock, idx) => (
                                                             <SASidebarCard
                                                                 key={idx}
                                                                 companyTitle={stock.stock_name}
-                                                                onClick={() => onNavigate(stock.stock_name)}
+                                                                onClick={() => onNavigate(stock.ticker)}
+                                                                // onClick={() => onSearch(stock.ticker)}
                                                             />
                                                         ))
                                                     ) : (

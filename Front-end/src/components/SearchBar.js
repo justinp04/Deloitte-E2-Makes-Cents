@@ -3,6 +3,7 @@ import { Form, InputGroup, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import './Components.css';
+import '../index.css';
 
 const SearchBar = ({ placeholder, onSearch }) => {
     const [searchTerm, setSearchTerm] = useState(''); // State to hold the search term
@@ -27,7 +28,6 @@ const SearchBar = ({ placeholder, onSearch }) => {
     const handleInputChange = (e) => {
         const newTerm = e.target.value;
         setSearchTerm(newTerm); // Update the local state
-        onSearch(newTerm); // Call onSearch immediately to update filtered results in real-time
     };
 
     return (
@@ -45,7 +45,7 @@ const SearchBar = ({ placeholder, onSearch }) => {
                 <Button 
                     className="searchbar-icon" 
                     style={{ borderRadius: "0 30px 30px 0", backgroundColor: "white", border: "none" }}
-                    onClick={handleSearch} // Trigger search on button click
+                    onClick={handleKeyPress} // Trigger search on button click
                 >
                     <FontAwesomeIcon icon={faSearch} style={{ color: "grey" }} />
                 </Button>
