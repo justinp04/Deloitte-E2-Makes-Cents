@@ -48,18 +48,18 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                 style={{ width: '300px' }}>
 
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>News Feed</Offcanvas.Title>
+                    <Offcanvas.Title className='fw-bold'>News Feed</Offcanvas.Title>
                 </Offcanvas.Header>
 
                 <Offcanvas.Body className="p-0 sidebar-background-colour">
-                    <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar sidebar-background-colour">
+                    <Container fluid id="sidebarContainer" className="p-0 sidebar-background-colour">
                         {/* Search bar for searching stocks */}
                         <div className="fixed-searchbar py-2" style={{backgroundColor:"white"}}>
                             <SearchBar placeholder="Search a stock" onSearch={onSearch} className="mb-0"/>
                         </div>
 
                         {/* Accordion with individual open/close state for each item */}
-                        <Accordion defaultActiveKey={["0", "1"]} alwaysOpen className='mb-3 sidebar-background-colour'>
+                        <Accordion defaultActiveKey={["0", "1"]} alwaysOpen className='sidebar-background-colour'>
                             {["0", "1"].map((key, index) => (
                                 <Accordion.Item eventKey={key} key={key} className='sidebar-background-colour'>
                                     <Accordion.Header

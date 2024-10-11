@@ -113,11 +113,11 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                 style={{ width: '300px' }}>
 
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Stock Analysis</Offcanvas.Title>
+                    <Offcanvas.Title className='fw-bold'>Stock Analysis</Offcanvas.Title>
                 </Offcanvas.Header>
 
                 <Offcanvas.Body className="p-0 sidebar-background-colour">
-                    <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar sidebar-background-colour">
+                    <Container fluid id="sidebarContainer" className="p-0 sidebar-background-colour">
 
                         <Accordion defaultActiveKey={["0", "1", "2"]} alwaysOpen className="mb-3 sidebar-background-colour">
                             {["0", "1", "2"].map((key, index) => (
