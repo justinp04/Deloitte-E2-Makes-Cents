@@ -1,6 +1,3 @@
-// asxStocks.js
-
-export const asxStocks = `
 stock_name,ticker
 BHP ,BHP
 Commonwealth Bank of Australia,CBA
@@ -2351,21 +2348,3 @@ Russell Sust Global Opportunities Complex ETF,RGOS
 Carlton Investments ,CINPA
 Sietel ,SSLPA
 Whitefield Industrials ,WHFPA
-`;
-
-// Function to convert CSV to a JSON-like array of objects
-export const parseCsvToArray = (csv) => {
-    const lines = csv.trim().split('\n');
-    const headers = lines[0].split(',');
-
-    return lines.slice(1).map(line => {
-        const values = line.split(',');
-        const obj = {};
-        headers.forEach((header, index) => {
-            obj[header] = values[index];
-        });
-        return obj;
-    });
-};
-
-export const parsedStocksArray = parseCsvToArray(asxStocks);
