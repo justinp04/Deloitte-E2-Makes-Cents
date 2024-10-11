@@ -77,13 +77,13 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
 
 
     const handleSearchChange = (e) => {
-        const term = e.target.value; 
+        const term = e.target.value;
 
 
         // This needs to be changed to a common function in the common parent component
         setSearchTerm(term);
-        
-        
+
+
         // Need to escalate this to StockAnalysis.js somehow, can pass in a new method
         performSearch(searchTerm);
         // onSearch(term);
@@ -177,20 +177,22 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                             )}
                                             {index === 2 && (
                                                 <>
-                                                    <SearchBar placeholder="Search for a stock" 
-                                                                value={searchTerm}
-                                                                onSearch={(term) => (onSearch(term))} />
+                                                    <SearchBar placeholder="Search for a stock"
+                                                        value={searchTerm}
+                                                        onSearch={(term) => (onSearch(term))} />
                                                     {filteredStocks.length > 0 ? (
                                                         filteredStocks.map((stock, idx) => (
                                                             <SASidebarCard
                                                                 key={idx}
                                                                 companyTitle={stock.stock_name}
                                                                 onClick={() => onNavigate(stock.ticker)}
-                                                                // onClick={() => onSearch(stock.ticker)}
+                                                            // onClick={() => onSearch(stock.ticker)}
                                                             />
                                                         ))
                                                     ) : (
-                                                        <p class="text-center py-2">{filteredStocks.length > 0 ? 'No results found.' : ''}</p>
+                                                        <p className="text-center py-2">
+                                                            No results.
+                                                        </p>
                                                     )}
                                                 </>
                                             )}
