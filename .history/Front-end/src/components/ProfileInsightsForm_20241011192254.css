@@ -1,11 +1,11 @@
 .green-btn {
     background-color: #BAF43E !important; 
     border-color: #BAF43E !important;     
-    color: black !important;                
+    color: #fff !important;                
 }
 
 .green-btn:hover {
-    background-color: #8bc019 !important;  
+    background-color: #BAF43E !important;  
     border-color: #BAF43E !important;     
 }
 
