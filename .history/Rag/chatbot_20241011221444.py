@@ -70,7 +70,7 @@ def main():
 
     # Get the response from the LLM (language model)
     response = get_llm_response(conversation, max_response_tokens)
-    assistant_reply = response.choices[0].message.content
+    assistant_reply = response.choices[0i].message.content
     conversation.append({"role": "assistant", "content": assistant_reply})
 
     # Generate a follow-up question based on user input and the assistant's reply
