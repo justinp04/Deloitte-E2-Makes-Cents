@@ -1,0 +1,274 @@
+/* StockAnalysis.js */
+.fixed-position {
+    position: fixed;
+    background-color: white;
+}
+
+.blue-line {
+    width: 100%;
+    height: 1px;
+    background-color: #0085FF;
+    border-radius: 5px;
+}
+
+.toggle-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-button-container {
+    display: flex;
+    align-items: center;
+}
+
+/* FavouriteButton.css */
+.fav-icon {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.fav-icon-enter {
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+.fav-icon-leave {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+/* Chat Box Styling */
+.chat-box {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.user {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.bot {
+    justify-content: flex-start;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.sender-name {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.message-card {
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+}
+
+.user .message-card {
+    background-color: #d1e7ff;
+    text-align: left;
+}
+
+.chat-message {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+/* QueryInputBar.js */
+.query-input-bar {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    width: calc(100% - 330px);
+    /* Subtract the width of the sidebar from the total width */
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    border: none;
+    background-color: white;
+}
+
+.input-field {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+}
+
+.send-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #9747FF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #7134c1;
+}
+
+.warning {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    max-width: calc(100% - 300px);
+    height: 20px;
+    background-color: white;
+    text-align: center;
+    font-size: 60%;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.warning p {
+    margin: 0 10px;
+}
+
+/* SASidebar.js */
+.sa-sidebar {
+    position: fixed;
+    /* Fixes the sidebar to the left*/
+    top: 80px;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    /* Set the width of the sidebar */
+    background-color: var(--sidebar-background);
+}
+
+/* General accordion header styles */
+.accordion .accordion-item .accordion-header {
+    background-color: #f8f9fa;
+    /* Set background color to #f8f9fa */
+    color: inherit !important;
+    /* Keep the original text color */
+    border: none !important;
+    /* Remove the border */
+    box-shadow: none !important;
+    /* Remove any shadow */
+}
+
+/* Remove the default Bootstrap accordion arrow */
+.custom-accordion-header .accordion-button::after {
+    display: none;
+    border: none;
+    background: none;
+}
+
+/* Hide the default Bootstrap accordion arrow */
+.accordion-button::after {
+    display: none;
+}
+
+/* Remove background color, border, and shadow when the accordion is open */
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    color: inherit !important;
+    /* Keep the text color instead of making it transparent */
+    border: none !important;
+    box-shadow: none !important;
+    /* Ensure no shadow is applied */
+}
+
+/* Ensure no shadow appears when the button is focused */
+button.accordion-button:focus {
+    box-shadow: none !important;
+    border: none !important;
+    /* Ensure no border is added when focused */
+    outline: none !important;
+    /* Remove any outline that might appear */
+}
+
+/* Remove borders and shadows from accordion items */
+.accordion-item {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Specifically remove bottom border from the accordion body */
+.accordion-body {
+    border-top: none !important;
+    border-bottom: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Adding texting animation */
+
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.typing-indicator .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 4px;
+    animation: typing 1.5s infinite;
+}
+
+.typing-indicator .dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.typing-indicator .dot:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.content {
+    padding-top: 200px;
+}
+
+.divider {
+
+    height: 5px;
+    background-color: blue;
+    cursor: ns-resize;
+    position: relative;
+    zI
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

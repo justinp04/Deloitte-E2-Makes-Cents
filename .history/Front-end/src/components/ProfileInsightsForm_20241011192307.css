@@ -1,0 +1,18 @@
+.green-btn {
+    background-color: #BAF43E !important; 
+    border-color: #BAF43E !important;     
+    color: #fff !important;                
+}
+
+.green-btn:hover {
+    background-color: #73a20d !important;  
+    border-color: #BAF43E !important;     
+}
+
+.range-question-container {
+    margin-bottom: 70px;
+}
+
+.select-question-container {
+    margin-bottom: 20px;
+}
