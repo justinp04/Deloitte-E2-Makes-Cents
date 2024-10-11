@@ -257,14 +257,6 @@
     right: 75px !important;
 }
 
-.toggle-switch-text {
-    margin-left: 2px;
-    user-select: none;
-    width: 20px;
-    font-weight: bold;
-    font-size: 10px;
-}
-
 /****************************
 Sidebad component styling
 ****************************/

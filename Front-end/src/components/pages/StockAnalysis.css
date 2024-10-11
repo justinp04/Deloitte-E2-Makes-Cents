@@ -45,7 +45,7 @@
     opacity: 0;
 }
 
-/* Chat Box Styling */
+/* ChatBox.js */
 .chat-box {
     display: flex;
     align-items: flex-start;
@@ -268,6 +268,32 @@ button.accordion-button:focus {
     }
 }
 
+/* StockSummary.js */
+#summary-buttons-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 2rem; 
+  }  
+
+  .summary-toggle-div {
+    display: flex;           
+    flex-direction: row;       
+    align-items: center;        
+  }
+
+  .toggle-switch-text {
+    margin-left: 2px;
+    width: 20px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  .summary-company-title {
+
+  }
+
 /* Media queries */
 @media (max-width: 992px) {
     .query-bar-container {
@@ -286,16 +312,34 @@ button.accordion-button:focus {
     .content-margin{
         margin-left: 50px;
     }
+
 }
 
 @media (max-width: 768px) {
     .content-margin{
         margin-left: 30px;
     }
+    #summary-buttons-div {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start for better layout */
+    }
+    .summary-toggle-div {
+        margin-top: 10px;    
+      }
+    
+      .toggle-switch-text {
+        font-size: 10px;  /* Reduce font size for smaller screens */
+        width: auto;     /* Let the width adjust automatically */
+        white-space: nowrap;  /* Prevent text from wrapping to a new line */
+    }
 }
 
 @media (max-width: 576px) {
     .content-margin{
         margin-left: 30px;
+    }
+    #summary-buttons-div {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start for better layout */
     }
 }

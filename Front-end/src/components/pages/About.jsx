@@ -29,21 +29,21 @@ function About() {
     };
 
     return (
-        <div className="text-center mb-3" style={{marginTop:"100px"}}>
+        <div id="about-div" className="about-div">
             {/* <div className=" d-flex justify-content-center align-items-center">
                 <img src="../images/MCLogo.png" width="100rem" height="100rem" className='me-4 mb-3'/>
                 <h1 className="main-title">Makes Cents</h1>
             </div> */}
-            <h1 className="main-title">Makes Cents</h1>
-            <h4 className="text-primary mb-3">Invest with Clarity, Confidence and Conviction</h4>
-            <h6 className="my-5 mx-5 px-5">
+            <h1 className="about-page-title">Makes Cents</h1>
+            <h4 className="about-page-subtitle px-3">Invest with Clarity, Confidence and Conviction</h4>
+            <h6 className="app-blurb">
                 Investing can feel overwhelming, but it doesn't have to be. <br />
                 Our AI-powered solution delivers personalised investment recommendations tailored to your goals. Say goodbye to guesswork and gain clarity with our platform. <br />
                 <br />
                 Join us and start investing with confidence!
             </h6>
 
-            <div className="container mt-5">
+            <div className="container px-3">
                 {/* Dynamically render the boxes */}
                 <div className="row">
                     {boxes.map((box) => (
