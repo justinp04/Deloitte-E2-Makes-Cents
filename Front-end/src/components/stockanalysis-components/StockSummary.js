@@ -105,7 +105,7 @@ const StockSummary = ({
         </div>
       </div>
 
-      <Accordion className="" defaultActiveKey="0">
+      <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0" style={{ border: 'none' }}>
           <Accordion.Header
             onClick={() => {
@@ -120,7 +120,7 @@ const StockSummary = ({
             />
             <div className="fw-bold">Summary</div>
           </Accordion.Header>
-          <Accordion.Body className="px-4">
+          <Accordion.Body className="ps-2">
             {summary ? (
               <SummaryTable summary={summary} responseDepth={responseDepth} />
             ) : (
@@ -128,24 +128,24 @@ const StockSummary = ({
             )}
 
             {/* Nested Accordion for References */}
-            <Accordion activeKey={referencesOpen ? '0' : null}>
+            <Accordion activeKey={referencesOpen ? '0' : ''}>
               <Accordion.Item eventKey="0" style={{ border: 'none', background: 'transparent' }}>
                 <Accordion.Header
                   onClick={() => setReferencesOpen(!referencesOpen)}
                   style={{
-                    display: 'flex',
-                    alignItems: 'center',
+                    // alignItems: 'center',
                     width: '100%',
                     paddingRight: '0',
                     border: 'none',
                     fontSize: '0.8rem',
+                    overflow: 'wrap'
                   }}
                 >
                   <FontAwesomeIcon icon={referencesOpen ? faChevronDown : faChevronRight} className="me-2" />
                   <div className="fw-bold">References</div>
                 </Accordion.Header>
                 <Accordion.Body>
-                  <ol style={{ paddingLeft: '3.8rem', fontSize: '0.8rem' }}>
+                  <ol style={{ paddingLeft: '2.0rem', fontSize: '0.8rem', width:"" }}>
                     {Array.isArray(references) && references.length > 0 ? (
                       references.map((ref, index) => (
                         <li key={index}>
