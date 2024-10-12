@@ -136,7 +136,9 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                     </Accordion.Header>
                                     {/* Only show Accordion.Body if expanded */}
                                     {expandedItems[key] && (
-                                        <Accordion.Body>
+                                        
+                                        <Accordion.Body>     
+                                            {/* Stock recommendations */}                                   
                                             {index === 0 && (
                                                 <>
                                                     {stockSuggestions.length > 0 ? (
@@ -159,6 +161,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                     )}
                                                 </>
                                             )}
+                                            {/* Favourite stocks */}
                                             {index === 1 && (
                                                 <>
                                                     {/* <SearchBar placeholder="Search your saved stocks" /> */}
@@ -175,18 +178,23 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                     ))}
                                                 </>
                                             )}
+                                            {/* Search bar and search result stocks */}
                                             {index === 2 && (
                                                 <>
+                                                    {/* Search bar itself */}
                                                     <SearchBar placeholder="Search for a stock"
                                                         value={searchTerm}
                                                         onSearch={(term) => (onSearch(term))} />
+                                                    {/* Stocks from search result */}
                                                     {filteredStocks.length > 0 ? (
                                                         filteredStocks.map((stock, idx) => (
                                                             <SASidebarCard
                                                                 key={idx}
                                                                 companyTitle={stock.stock_name}
-                                                                onClick={() => onNavigate(stock.ticker)}
-                                                            // onClick={() => onSearch(stock.ticker)}
+                                                                onClick={() => {
+                                                                    const rawTicker = stock["ticker\r"]; // remove the \r from the json data                                                          
+                                                                    onNavigate(rawTicker.trim()); // trim the rawTicker
+                                                                  }}
                                                             />
                                                         ))
                                                     ) : (
