@@ -2,7 +2,7 @@
  * Authors: Alyssha Kwok
  * Purpose: Sidebar on news feed page
  ************************************************************************************************/
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 import { Accordion, Container, Button, Offcanvas } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +10,7 @@ import SearchBar from '../SearchBar';
 import '../pages/NewsFeed.css';
 import NewsSidebarCard from './NewsSidebarCard';
 
-const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }) => {
+const NewsSidebar = forwardRef (({ onSearch, currentInvestmentCompanies, followedCompanies }, ref) => {
     const [expandedItems, setExpandedItems] = useState({"0": true, "1": true}); // Tracks the open/close state of each accordion item
     const [showSidebar, setShowSidebar] = useState(false); // Controls Offcanvas visibility
 
@@ -61,7 +61,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                         {/* Accordion with individual open/close state for each item */}
                         <Accordion defaultActiveKey={["0", "1"]} alwaysOpen className='mb-3 sidebar-background-colour'>
                             {["0", "1"].map((key, index) => (
-                                <Accordion.Item eventKey={key} key={key} className='sidebar-background-colour'>
+                                <Accordion.Item eventKey={key} id = "curInvestments" ref = {ref} key={key} className='sidebar-background-colour'>
                                     <Accordion.Header
                                         className=" sidebar-background-colour pb-0 d-inline-flex justify-content-between align-items-center w-100"
                                         onClick={() => handleToggleAccordion(key)}
@@ -111,6 +111,6 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
             </Offcanvas>
         </div>
     );
-};
+});
 
 export default NewsSidebar;

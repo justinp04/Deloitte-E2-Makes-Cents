@@ -87,6 +87,7 @@ const StockSummary = ({
           </h5>
           {!loading && companyDetails.name && companyDetails.ticker && (
             <FavouriteButton
+              id = "favorites-button"
               companyTitle={companyTitle}
               isFavourited={isFavourited}
               onFavourite={addFavourite}
@@ -94,7 +95,7 @@ const StockSummary = ({
             />
           )}
         </div>
-        <div className="d-flex flex-row align-items-center toggle-button">
+        <div id = "detailed-summary-switch" className="d-flex flex-row align-items-center toggle-button">
           <ToggleSwitch
             checked={responseDepth === 'detailed'}
             onChange={onToggleChange}

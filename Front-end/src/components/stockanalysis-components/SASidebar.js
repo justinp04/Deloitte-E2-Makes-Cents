@@ -19,7 +19,7 @@ import { parsedStocksArray } from './asxStocks.js';
 import SearchBarTwo from '../SearchBarTwo';
 import SearchResultsList from '../SearchResultsList';
 
-const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase, onSearch, filteredStocks, onNavigate = () => { } }) => {
+const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase, onSearch, filteredStocks, onNavigate = () => { }, tutorialActive }) => {
     const [expandedItems, setExpandedItems] = useState({ "0": true, "1": true, "2": true }); // Tracks the open/close state of each accordion item
     const [showSidebar, setShowSidebar] = useState(false); // Offcanvas visibility
 
@@ -31,6 +31,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
 
     const { accounts } = useMsal();
     const userEmail = accounts.length > 0 ? accounts[0].username : ''; // to get current user email
+
 
     // Fetch stock suggestions based on user email
     const fetchStockSuggestions = async () => {
@@ -172,6 +173,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                             {index === 2 && (
                                                 <>
                                                     <SearchBar placeholder="Search for a stock" 
+                                                                id = "stock-search-bar"
                                                                 value={searchTerm}
                                                                 onSearch={(term) => handleSearchChange({ target: { value: term } })} />
                                                     {filteredStocks.length > 0 ? (

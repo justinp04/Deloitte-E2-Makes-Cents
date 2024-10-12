@@ -1,3 +1,122 @@
+/*Tutorial stuff*/
+
+/* Dimming effect */
+.dimmed-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1999;
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Spotlight circle */
+  .spotlight-circle {
+    position: absolute;
+    background: transparent;
+    box-shadow:
+      0 0 0 9999px rgba(0, 0, 0, 0.5),
+      0 0 0 3px rgba(255, 255, 255, 1);
+    z-index: 2000;
+    animation: pulse 2s infinite;
+  }
+  
+  /* Tutorial box */
+  .tutorial-box {
+    position: absolute;
+    background-color: rgba(201, 229, 255, 1);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2001;
+    width: 250px;
+    font-size: 14px;
+    text-align: left;
+    opacity: 1;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Fade-out animation */
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  /* Spotlight pulsing animation */
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5), 0 0 0 3px rgba(255, 255, 255, 1); }
+    50% { box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5), 0 0 0 6px rgba(255, 255, 255, 1); }
+  }
+  
+  /* Slide-in animation for tutorial box */
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-out effect when closing */
+  .tutorial-overlay-container.fade-out .dimmed-background,
+  .tutorial-overlay-container.fade-out .tutorial-box,
+  .tutorial-overlay-container.fade-out .spotlight-circle {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+  
+  /* Button styles */
+  .tutorial-box button {
+    font-weight: bold;
+    color: black;
+    border: none;
+    padding: 3px 10px;
+    margin-left: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .tutorial-box button:first-of-type {
+    background-color: #baf43e;
+    float: right;
+  }
+  
+  .tutorial-box button:last-of-type {
+    background-color: #ededed;
+    float: right;
+  }
+  
+  .tutorial-box button:hover {
+    background-color: #45a049;
+  }
+  
+  .tutorial-box button:last-of-type:hover {
+    background-color: darkgrey;
+  }
+  
+  /* Step title and description */
+  .step-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .step-description {
+    font-size: 14px;
+  }
+
+
 /* NewsCompanyTitle.js */
 .company-title-div {
     margin-left: 0px;

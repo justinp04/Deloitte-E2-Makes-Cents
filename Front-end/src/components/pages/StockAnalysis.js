@@ -19,6 +19,7 @@ import { useMsal } from '@azure/msal-react';
 import Swal from 'sweetalert2';
 import { parsedStocksArray } from '../stockanalysis-components/asxStocks.js'; 
 
+import TutorialOverlay from '../stockanalysis-components/TutorialOverlay';
 
 
 function StockAnalysis() {
@@ -37,7 +38,9 @@ function StockAnalysis() {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredStocks, setFilteredStocks] = useState(parsedStocksArray);
 
-
+    // for tutorial
+    const [tutorialActive, setTutorialActive] = useState(false);
+    const [tutorialStep, setTutorialStep] = useState(1);
 
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
@@ -47,6 +50,16 @@ function StockAnalysis() {
     const { accounts } = useMsal();
     const [email, setEmail] = useState('');
 
+    // Check localStorage for the tutorial flag
+    useEffect(() => {
+        const showTutorial = localStorage.getItem('showTutorial');
+        if (showTutorial === 'true') {
+            setTutorialActive(true);
+            // opens the components on the left so that the tutorial can show stuff
+            setAccordionOpen(true);
+        }
+    }, []);
+    
     // Fetch email from logged-in user's account information
     useEffect(() => {
         if (accounts.length > 0) {
@@ -160,6 +173,18 @@ function StockAnalysis() {
         } finally {
             setLoading(false);
         }
+    };
+
+    const handleNextTutorialStep = () => {
+        if (tutorialStep < 10) { 
+            setTutorialStep(tutorialStep + 1);
+        } else {
+            setTutorialActive(false);
+        }
+    };
+
+    const handleCloseTutorial = () => {
+        setTutorialActive(false);
     };
 
 
@@ -289,6 +314,7 @@ function StockAnalysis() {
                             onNavigate={(stock) => { setStockName(stock); handleSearch(stock); }}
                             filteredStocks={filteredStocks}
                             email={email}
+                            tutorialActive = {tutorialActive}
                             toggleSidebar={toggleSidebar}
                         />
                     </div>
@@ -356,6 +382,14 @@ function StockAnalysis() {
                     </div>
                 </>
             {/* )} */}
+
+            {tutorialActive && (
+                <TutorialOverlay 
+                    step={tutorialStep} 
+                    onNext={handleNextTutorialStep} 
+                    onClose={handleCloseTutorial} 
+                />
+            )}
         </div>
     );
 }
