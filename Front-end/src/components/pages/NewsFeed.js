@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Spinner from 'react-bootstrap/Spinner';
 import axios from 'axios';
 import NewsCompanyTitle from '../newsfeed-components/NewsCompanyTitle';
 import NewsHeroSection from '../newsfeed-components/NewsHeroSection';
@@ -16,6 +17,7 @@ function NewsFeed() {
     });
     const [searchTerm, setSearchTerm] = useState('CBA'); // Default company symbol
     const [email, setEmail] = useState('');
+    const [loaded, setLoaded] = useState(false);
 
     // State for current investment companies
     const [currentInvestmentCompanies, setCurrentInvestmentCompanies] = useState([
@@ -58,26 +60,35 @@ function NewsFeed() {
                 const response = await axios.get(`http://localhost:4000/news`, { params: { symbol: searchTerm, email: email } });
                 const news = response.data.data.news || []; // Ensure news is an array
 
-                // Check if news has data
-                if (news.length > 0) {
-                    const heroArticle = news[0]; // First article for hero section
-                    setNewsData({
-                        hero: {
-                            title: heroArticle.article_title || 'No title available',
-                            subtitle: heroArticle.article_summary || 'No summary available',
-                            image: heroArticle.article_photo_url || ''
-                        },
-                        articles: news
-                    });
-                } else {
-                    setNewsData({
-                        hero: {
-                            title: 'No news available now',
-                            subtitle: '',
-                            image: ''
-                        },
-                        articles: []
-                    });
+                if (response.statusText != "OK") {
+                    // Throw message relevant message
+                    setLoaded(true);
+                    alert("Something has gone wrong.");
+                    console.log(response);
+                }
+                else {
+                    setLoaded(true);
+                    // Check if news has data
+                    if (news.length > 0) {
+                        const heroArticle = news[0]; // First article for hero section
+                        setNewsData({
+                            hero: {
+                                title: heroArticle.article_title || 'No title available',
+                                subtitle: heroArticle.article_summary || 'No summary available',
+                                image: heroArticle.article_photo_url || ''
+                            },
+                            articles: news
+                        });
+                    } else {
+                        setNewsData({
+                            hero: {
+                                title: 'No news available now',
+                                subtitle: '',
+                                image: ''
+                            },
+                            articles: []
+                        });
+                    }
                 }
             } catch (error) {
                 console.error('Error fetching news:', error);
@@ -121,7 +132,7 @@ function NewsFeed() {
         <div className="page-container">
             <div className="mt80" style={{ zIndex: 1000 }}>
                 {/* Passing currentInvestmentCompanies and followedCompanies to NewsSidebar */}
-                <NewsSidebar 
+                <NewsSidebar
                     onSearch={handleSearch}
                     currentInvestmentCompanies={currentInvestmentCompanies}
                     followedCompanies={followedCompanies}
@@ -133,18 +144,23 @@ function NewsFeed() {
                     onAddNewInvestment={handleAddNewInvestment}
                     onAddNewFollowing={handleAddNewFollowing}
                 />
-                <NewsHeroSection
-                    title={newsData.hero.title}
-                    subtitle={newsData.hero.subtitle}
-                    image={newsData.hero.image}
-                    articles={newsData.articles}
-                />
+                        <NewsHeroSection
+                            title={newsData.hero.title}
+                            subtitle={newsData.hero.subtitle}
+                            image={newsData.hero.image}
+                            articles={newsData.articles}
+                            showSpinner={loaded}
+                        />
+
                 <hr />
                 <div className="d-flex align-items-center justify-content-between me-3 mb-4">
                     <h4 className='page-subtitle2-text'>Most Recent</h4>
                     <FilterButton />
                 </div>
-                <NewsList articles={newsData.articles}/>
+                <div className="d-flex justify-content-center">
+                    <Spinner animation="border" variant="success" hidden={loaded} />
+                    <NewsList articles={newsData.articles} />
+                </div>
             </div>
         </div>
     );

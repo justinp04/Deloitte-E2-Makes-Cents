@@ -1,49 +1,57 @@
 import React from "react";
-import { Image, Carousel } from "react-bootstrap";
+import Spinner from 'react-bootstrap/Spinner';
+import { Image, Carousel, Container } from "react-bootstrap";
 import PropTypes from "prop-types";
 import '../pages/NewsFeed.css';
 
-const NewsHeroSection = ({ title, subtitle, image, articles }) => {
+const NewsHeroSection = ({ title, subtitle, image, articles, showSpinner }) => {
     return (
         <div className="mt-0">
-            <Carousel className="hero-section mx-auto">
-                {articles.length > 0 ? (
-                    articles.map((article, index) => (
-                        <Carousel.Item key={index}>
-                            <Image 
-                                src={article.article_photo_url}
-                                loading="lazy" 
-                                className="d-block hero-image" 
-                                fluid 
-                            />
-                            <div className="hero-text-container">
-                                <div className="hero-title">
-                                    {article.article_title || "No Title"}
+            {
+                !showSpinner ?
+                    <Container className="d-flex justify-content-center">
+                        <Spinner animation="border" variant="success" hidden={showSpinner} />
+                    </Container>
+                    :
+                    <Carousel className="hero-section mx-auto">
+                        {articles.length > 0 ? (
+                            articles.map((article, index) => (
+                                <Carousel.Item key={index}>
+                                    <Image
+                                        src={article.article_photo_url}
+                                        loading="lazy"
+                                        className="d-block hero-image"
+                                        fluid
+                                    />
+                                    <div className="hero-text-container">
+                                        <div className="hero-title">
+                                            {article.article_title || "No Title"}
+                                        </div>
+                                        <div className="hero-subtitle">
+                                            {article.source || "No Source"}
+                                        </div>
+                                    </div>
+                                </Carousel.Item>
+                            ))
+                        ) : (
+                            <Carousel.Item>
+                                <Image
+                                    src="./images/placeholder_img.jpeg"
+                                    className="d-block hero-image"
+                                    fluid
+                                />
+                                <div className="hero-text-container">
+                                    <div className="hero-title">
+                                        No news available
+                                    </div>
+                                    <div className="hero-subtitle">
+                                        Please try again later.
+                                    </div>
                                 </div>
-                                <div className="hero-subtitle">
-                                    {article.source || "No Source"}
-                                </div>
-                            </div>
-                        </Carousel.Item>
-                    ))
-                ) : (
-                    <Carousel.Item>
-                        <Image 
-                            src="./images/placeholder_img.jpeg" 
-                            className="d-block hero-image" 
-                            fluid 
-                        />
-                        <div className="hero-text-container">
-                            <div className="hero-title">
-                                No news available
-                            </div>
-                            <div className="hero-subtitle">
-                                Please try again later.
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                )}
-            </Carousel>
+                            </Carousel.Item>
+                        )}
+                    </Carousel>
+            }
         </div>
     );
 }
