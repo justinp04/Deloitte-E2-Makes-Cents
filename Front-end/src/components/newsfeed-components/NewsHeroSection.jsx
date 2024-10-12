@@ -10,7 +10,9 @@ const NewsHeroSection = ({ title, subtitle, image, articles, showSpinner }) => {
             {
                 !showSpinner ?
                     <Container className="d-flex justify-content-center">
-                        <Spinner animation="border" variant="success" hidden={showSpinner} />
+                        <Spinner animation="border" variant="success" role="status" hidden={showSpinner} >
+                            <span className="visually-hidden">Loading...</span>
+                        </Spinner>
                     </Container>
                     :
                     <Carousel className="hero-section mx-auto">
