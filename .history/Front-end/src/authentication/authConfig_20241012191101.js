@@ -31,7 +31,7 @@ export const msalConfig = {
         clientId: "427e950f-e3bf-44ad-899e-b4d0d26f6cd1",
         authority: b2cPolicies.authorities.signUpSignIn.authority,
         knownAuthorities: [b2cPolicies.authorityDomain],
-        redirectUri: "https://gray-water-0d8d28700.5.azurestaticapps.net",
+        redirectUri: "http://localhost:3000",
     },
     cache: {
         cacheLocation: "sessionStorage", // This configures where your cache will be stored
