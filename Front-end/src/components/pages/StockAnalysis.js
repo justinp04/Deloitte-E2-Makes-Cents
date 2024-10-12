@@ -51,6 +51,7 @@ function StockAnalysis() {
     }, [accounts]);
 
     // Function to fetch the filtered stocks from the back-end
+    // Used to get stock search results with stock search bar
     const fetchFilteredStocks = async () => {
         try {
             const response = await fetch('http://localhost:4000/chatbot/search', {
@@ -140,9 +141,9 @@ function StockAnalysis() {
     };
 
     // Function to handle stock search and update summary/references
+    // When pressing on a stock in the side bar, this function is called to display the summary 
     const handleSearch = async (searchTerm) => {
         console.log("handleSearch() called");
-        setSearchTerm(searchTerm);
         if (!email) {
             Swal.fire({
                 icon: 'error',
