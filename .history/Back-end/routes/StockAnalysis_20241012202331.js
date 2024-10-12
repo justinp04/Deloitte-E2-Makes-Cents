@@ -56,7 +56,7 @@ router.post('/chat', (req, res) => {
 
     // Call the Python script and pass the user message
     const pythonExecutable = 'python3';
-    const pythonScriptPath = path.join(__dirname, '../Rag/chatbot.py');
+    const pythonScriptPath = path.join(__dirname, '../../Rag/chatbot.py');
     const pythonProcess = spawn(pythonExecutable, [pythonScriptPath, userMessage, stockName]);
 
     // Collect the Python script output
