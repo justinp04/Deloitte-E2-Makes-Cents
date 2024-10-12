@@ -86,7 +86,7 @@ const StockSummary = ({
             {companyTitle}
           </h5>
           {!loading && companyDetails.name && companyDetails.ticker && (
-            <FavouriteButton
+            <FavouriteButton              
               companyTitle={companyTitle}
               isFavourited={isFavourited}
               onFavourite={addFavourite}

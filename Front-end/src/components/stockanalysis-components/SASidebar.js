@@ -152,7 +152,8 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                                     key={idx}
                                                                     companyTitle={stock}
                                                                     onClick={() => onNavigate(stock)}
-                                                                    onFavourite={() => addFavourite(symbol)} // Use the extracted stock symbol here
+                                                                    //onFavourite={() => addFavourite(symbol)} // Use the extracted stock symbol here
+                                                                    addFavourite={addFavourite}
                                                                 />
                                                             );
                                                         })
@@ -195,6 +196,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                                     const rawTicker = stock["ticker\r"]; // remove the \r from the json data                                                          
                                                                     onNavigate(rawTicker.trim()); // trim the rawTicker
                                                                   }}
+                                                                addFavourite={addFavourite}
                                                             />
                                                         ))
                                                     ) : (
