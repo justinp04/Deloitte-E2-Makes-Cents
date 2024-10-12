@@ -39,12 +39,12 @@ const SettingsSidebar = ({ toggleSidebar }) => {
                 style={{ width: '300px' }}
             >
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Settings</Offcanvas.Title>
+                    <Offcanvas.Title className='fw-bold'>Settings</Offcanvas.Title>
                 </Offcanvas.Header>
 
                 {/* Adjust the margin-top based on the collapsed state */}
-                <Offcanvas.Body className="p-0 scrollable-sidebar sidebar-background-colour">
-                    <Container className="p-0 scrollable-sidebar sidebar-background-colour">
+                <Offcanvas.Body className="p-0 sidebar-background-colour">
+                    <Container className="p-0 sidebar-background-colour">
                         <div className="fixed-searchbar pt-2 pb-3" style={{backgroundColor:"white"}}>
                             <SearchBar placeholder="Search Settings" className="mb-0"/>
                         </div>

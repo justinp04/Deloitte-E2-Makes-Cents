@@ -24,7 +24,7 @@ code {
 
 /* Font Sizes */
 .about-page-title{
-  font-size: clamp(45px, 5vw, 90px);
+  font-size: clamp(45px, 10vw, 90px);
   font-weight: bold;
   padding-top: 10px;
 }
@@ -64,6 +64,9 @@ code {
 }
 
 /* Set Margining */
+.mt60{
+  margin-top: 60px;
+}
 .mt70{
   margin-top: 70px;
 }
@@ -124,6 +127,10 @@ code {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.sidebar-button{
+  margin-top: 80px;
 }
 
 /* Chevron Styling*/
@@ -196,11 +203,6 @@ code {
   opacity: 0;
 }
 
-/* Hide scrollbar when not hovered */
-.scroll-container {
-  overflow: auto; /* Enable scrolling */
-}
-
 .scroll-container::-webkit-scrollbar {
   opacity: 0 !important; /* Hide scrollbar */
   transition: opacity 0.3s ease; /* Smooth transition */
@@ -214,6 +216,7 @@ code {
 .scroll-container {
   scrollbar-width: thin; /* Thin scrollbar for Firefox */
   scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Color of scrollbar and background */
+  overflow: auto; /* Enable scrolling */
 }
 
 .scroll-container:hover {
@@ -228,6 +231,9 @@ code {
   .content-margining{
     margin-left: 30px;
   }
+  .sidebar-button{
+    margin-top: 75px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -239,6 +245,9 @@ code {
 @media (max-width: 576px) {
   .content-margining{
     margin-left: 20px;
+  }
+  .sidebar-button{
+    margin-top: 70px;
   }
   
 }

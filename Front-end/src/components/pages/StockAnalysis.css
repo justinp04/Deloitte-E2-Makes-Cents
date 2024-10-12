@@ -25,7 +25,7 @@
 }
 
 #chatbox-area-div {
-    padding-top: 130px;
+    padding-top: 90px;
     height: 65vh;
     overflow-y: scroll;
 }
@@ -117,7 +117,9 @@
     border-top: 1px solid #ccc;
     display: flex;
     align-items: center;
-    padding: 10px 50px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
     border: none;
     background-color: white;
 }
@@ -280,7 +282,7 @@ button.accordion-button:focus {
   .summary-toggle-div {
     display: flex;           
     flex-direction: row;       
-    align-items: center;        
+    align-items: center;    
   }
 
   .toggle-switch-text {
@@ -313,6 +315,10 @@ button.accordion-button:focus {
         margin-left: 50px;
     }
 
+    #chatbox-area-div {
+        padding-top: 30px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -320,17 +326,27 @@ button.accordion-button:focus {
         margin-left: 30px;
     }
     #summary-buttons-div {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: flex-start; /* Align items to the start for better layout */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
     .summary-toggle-div {
-        margin-top: 10px;    
+        margin-top: 15px;    
+        margin-bottom: 20px;
       }
     
-      .toggle-switch-text {
-        font-size: 10px;  /* Reduce font size for smaller screens */
-        width: auto;     /* Let the width adjust automatically */
-        white-space: nowrap;  /* Prevent text from wrapping to a new line */
+    .toggle-switch-text {
+        font-size: 10px;  
+        width: auto;   
+        white-space: nowrap;  
+    }
+
+    #chatbox-area-div {
+        padding-top: 10px;
+    }
+
+    .query-input-bar {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -339,7 +355,16 @@ button.accordion-button:focus {
         margin-left: 30px;
     }
     #summary-buttons-div {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: flex-start; /* Align items to the start for better layout */
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    #chatbox-area-div {
+        padding-top: 5px;
+    }
+
+    .query-input-bar {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

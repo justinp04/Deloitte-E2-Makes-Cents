@@ -46,7 +46,7 @@ function Settings() {
 
     return (
         <div className="page-container">
-            <div className="mt80" style={{ zIndex: 1000 }}>
+            <div className="sidebar-button" style={{ zIndex: 1000 }}>
                 <SettingsSidebar/>
             </div>
             <div className="content content-margining pt-0">

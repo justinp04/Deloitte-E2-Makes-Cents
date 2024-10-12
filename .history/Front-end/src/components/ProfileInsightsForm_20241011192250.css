@@ -1,12 +1,12 @@
 .green-btn {
     background-color: #BAF43E !important; 
     border-color: #BAF43E !important;     
-    color: black !important;                
+    color: #fff !important;                
 }
 
 .green-btn:hover {
-    background-color: #8bc019 !important;  
-    border-color: #BAF43E !important;     
+    background-color: #BAF43E !important;  
+    border-color: #1e7e34 !important;     
 }
 
 .range-question-container {
