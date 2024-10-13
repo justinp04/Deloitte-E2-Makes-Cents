@@ -19,7 +19,7 @@ Date:       18/08/24
 Collab: Anna Duong
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 # Add user response URL endpoint to fetch user profile
-USER_RESPONSE_URL = 'http://localhost:4000/next/user-responses'
+USER_RESPONSE_URL = 'https://makecentsbackend.azurewebsites.net/next/user-responses'
 
 def fetch_user_profile(user_email):
 
