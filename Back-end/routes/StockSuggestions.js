@@ -25,7 +25,7 @@ router.post('/stock-suggestions', async (req, res) => {
 
     try {
         // Fetch user responses from the specified endpoint
-        const userResponse = await axios.get(`http://localhost:4000/next/user-responses?email=${email}`);
+        const userResponse = await axios.get(`https://makecentsbackend.azurewebsites.net/next/user-responses?email=${email}`);
         const userData = userResponse.data.response;
 
         const responseComplexity = userData[0];
