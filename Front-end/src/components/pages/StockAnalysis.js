@@ -53,7 +53,7 @@ function StockAnalysis() {
     // Function to fetch the filtered stocks from the back-end
     const fetchFilteredStocks = async () => {
         try {
-            const response = await fetch('http://localhost:4000/chatbot/search', {
+            const response = await fetch('https://makecentsbackend.azurewebsites.net/chatbot/search', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ searchTerm: searchTerm })
@@ -110,7 +110,7 @@ function StockAnalysis() {
         try {
             console.log("About to make HTTP req");
 
-            const response = await fetch('http://localhost:4000/chatbot/chat', {
+            const response = await fetch('https://makecentsbackend.azurewebsites.net/chatbot/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: newMessage, stockName: stockName })
@@ -160,7 +160,7 @@ function StockAnalysis() {
             console.log("Stock name set to:", searchTerm);
 
             // Use the searchTerm directly in the fetch request to ensure we have the latest value
-            const res = await fetch('http://localhost:4000/summary/stock-summary', {
+            const res = await fetch('https://makecentsbackend.azurewebsites.net/summary/stock-summary', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -222,11 +222,11 @@ function StockAnalysis() {
     // Function to add a stock to the list of favourites
     const addFavouritetoDatabase = async (stockTicker) => {
         try {
-            const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
+            const userIdResponse = await fetch(`https://makecentsbackend.azurewebsites.net/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
             const userId = userIdData.userId;
 
-            const response = await fetch('http://localhost:4000/favorite-stocks/add', {
+            const response = await fetch('https://makecentsbackend.azurewebsites.net/favorite-stocks/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -260,11 +260,11 @@ function StockAnalysis() {
 
     const removeFavouriteFromDatabase = async (stockTicker) => {
         try {
-            const userIdResponse = await fetch(`http://localhost:4000/favorite-stocks/get-userid?email=${email}`);
+            const userIdResponse = await fetch(`https://makecentsbackend.azurewebsites.net/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
             const userId = userIdData.userId;
 
-            const response = await fetch('http://localhost:4000/favorite-stocks/remove', {
+            const response = await fetch('https://makecentsbackend.azurewebsites.net/favorite-stocks/remove', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

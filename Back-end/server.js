@@ -16,7 +16,7 @@ import NewsFeed from './routes/NewsFeed.js'
 import FavouriteStocks from './routes/FavouriteStocks.js';
 import StockSuggestions from './routes/StockSuggestions.js';
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 8080;
 const app = express();
 
 

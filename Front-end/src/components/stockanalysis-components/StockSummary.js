@@ -38,7 +38,7 @@ const StockSummary = ({
 
         try {
             setLoading(true);
-            const res = await fetch('http://localhost:4000/summary/stock-summary', {
+            const res = await fetch('https://makecentsbackend.azurewebsites.net/summary/stock-summary', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

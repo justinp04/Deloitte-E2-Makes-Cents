@@ -55,7 +55,7 @@ function NewsFeed() {
             if (!searchTerm || !email) return;
 
             try {
-                const response = await axios.get(`http://localhost:4000/news`, { params: { symbol: searchTerm, email: email } });
+                const response = await axios.get(`https://makecentsbackend.azurewebsites.net/news`, { params: { symbol: searchTerm, email: email } });
                 const news = response.data.data.news || []; // Ensure news is an array
 
                 // Check if news has data

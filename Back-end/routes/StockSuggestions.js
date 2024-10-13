@@ -14,6 +14,8 @@ const __dirname = path.dirname(__filename);
 
 const router = express.Router();
 
+
+
 router.post('/stock-suggestions', async (req, res) => {
     const email = req.body.email;
 

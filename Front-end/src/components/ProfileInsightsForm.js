@@ -56,7 +56,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
 
       if (isUpdating) {
         // Fetch existing data for the user
-        fetch(`http://localhost:4000/next/user-responses?email=${userEmail}`)
+        fetch(`https://makecentsbackend.azurewebsites.net/next/user-responses?email=${userEmail}`)
           .then(response => {
             if (!response.ok) {
               throw new Error('Failed to fetch user data');
@@ -114,7 +114,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
   };
 
   const handleCreate = (formData) => {
-    fetch('http://localhost:4000/next/register', {
+    fetch('https://makecentsbackend.azurewebsites.net/next/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -149,7 +149,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
   };
 
   const handleUpdate = (formData) => {
-    fetch('http://localhost:4000/next/update-responses', {
+    fetch('https://makecentsbackend.azurewebsites.net/next/update-responses', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
