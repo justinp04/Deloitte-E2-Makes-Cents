@@ -17,10 +17,10 @@ npm run dev
 ## For Docker file
 Command to build the docker image (specified within the dockerfile) \
 ```
-docker build -t makes-cents-back-end-image:latest .
+docker build --platform=linux/amd64 -t makes-cents-back-end-image:latest .
 ```
 
 The command to build and run a docker container using this image is: \
 ```
-docker run -it --rm -v $(pwd):/app -p 4000:4000 makes-cents-back-end-image:latest
+docker run -it --rm -v $(pwd):/app -p 8080:8080 makes-cents-back-end-image:latest
 ```

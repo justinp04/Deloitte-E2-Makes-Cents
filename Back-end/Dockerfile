@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.12.2
+ARG PYTHON_VERSION=3.11.3
 FROM python:${PYTHON_VERSION}-slim AS base
 
 RUN python -m venv /venv
@@ -47,6 +47,6 @@ COPY . .
 # Switch to the non-privileged user to run the application.
 USER appuser
 
-EXPOSE 4000
+EXPOSE 8080
 
 CMD ["npm", "run", "dev"]

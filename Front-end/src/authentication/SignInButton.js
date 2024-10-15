@@ -14,7 +14,7 @@ export const SignInButton = () => {
 			const email = response.account.username;
 	
 			// Check if the user is new or existing
-			const res = await fetch(`https://makecentsbackend.azurewebsites.net/next/check-user?email=${email}`);
+			const res = await fetch(`https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/next/check-user?email=${email}`);
 	
 			// Using `res.ok` for better readability, checking for `404` explicitly
 			if (res.status === 200) {
