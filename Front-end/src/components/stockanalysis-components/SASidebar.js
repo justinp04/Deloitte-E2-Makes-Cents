@@ -35,8 +35,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
     const fetchStockSuggestions = async () => {
         try {
             const response = await axios.post('https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/stock-suggestions',
-                { email: userEmail },
-                { withCredentials: true } 
+                { email: userEmail }
             );
 
             if (response.data && response.data.stocks) {
