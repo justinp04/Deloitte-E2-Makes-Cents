@@ -28,9 +28,10 @@ router.post('/stock-suggestions', async (req, res) => {
         // Add CORS headers here explicitly
         res.setHeader('Access-Control-Allow-Origin', 'https://gray-water-0d8d28700.5.azurestaticapps.net');
         res.setHeader('Access-Control-Allow-Credentials', 'true');  // Allow credentials
-
+        console.log(`Fetching stock suggestions for: ${email}`);
         // Fetch user responses from the specified endpoint
         const userResponse = await axios.get(`https://makecentsbackend.azurewebsites.net/next/user-responses?email=${email}`);
+        // const userResponse = await axios.get(`http://localhost:8080/next/user-responses?email=${email}`);
         const userData = userResponse.data.response;
 
         const responseComplexity = userData[0];

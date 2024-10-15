@@ -16,21 +16,16 @@ const app = express();
 // Configure CORS middleware properly
 const allowedOrigins = ['https://gray-water-0d8d28700.5.azurestaticapps.net'];
 
-app.use(cors({
-    origin: function (origin, callback) {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);  // Allow the request
-        } else {
-            callback(new Error('CORS policy error: Not allowed by CORS'));
-        }
-    },
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,  // Allow cookies or authentication headers
-}));
+const corsOptions = {
+  origin: '*', // For testing purpose
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+  allowedHeaders: 'Content-Type, Authorization',
+};
+
+
 
 // Handle preflight requests
-app.options('*', cors()); 
+app.use(cors(corsOptions));
 
 // Middleware to parse request body
 app.use(express.json());
