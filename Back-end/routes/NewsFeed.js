@@ -19,7 +19,7 @@ const generateSummaryForArticle = (userEmail, stock, article) => {
     return new Promise((resolve, reject) => {
         // Path to your Python script
         // const pythonScriptPath = path.join(__dirname, '../../Rag/news_feed_summary.py');
-        const pythonScriptPath = path.join(__dirname, '../../Rag/news_feed_summary.py');
+        const pythonScriptPath = path.join(__dirname, '../Rag/news_feed_summary.py');
         console.log(`Python script path: ${pythonScriptPath}`);
         
         // Command to execute the Python script with necessary arguments
