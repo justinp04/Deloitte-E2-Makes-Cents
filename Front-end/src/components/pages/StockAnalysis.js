@@ -158,7 +158,6 @@ function StockAnalysis() {
         try {
             // Set the stock name in the state (this can be used for UI display purposes)
             setStockName(searchTerm);
-            console.log("Stock name set to:", searchTerm);
 
             // Use the searchTerm directly in the fetch request to ensure we have the latest value
             const res = await fetch('http://localhost:4000/summary/stock-summary', {
@@ -194,12 +193,13 @@ function StockAnalysis() {
     };
 
     const addFavourite = (companyTitle) => {
+        const stockTicker = companyTitle;
 
         if (stockTicker === "Unknown" || !stockTicker) {
             console.log("Not a valid stock. Cannot add to favorites.");
             return;
         }
-
+ 
         // Check if the stock already exists
         if (!favouriteStocks.some(stock => stock.title === stockTicker)) {
             const newFavourite = { id: favouriteStocks.length + 1, title: stockTicker, status: "Favourite" };
@@ -256,6 +256,7 @@ function StockAnalysis() {
         } catch (error) {
             console.error('Error adding favourite stock:', error);
             alert("Error occurred while adding favourite stock.");
+            alert(`stockTicker is: ${stockTicker}`);
         }
     };
 
@@ -309,10 +310,12 @@ function StockAnalysis() {
                         <SASidebar
                             favouriteStocks={favouriteStocks}
                             addFavourite={addFavourite}
-                            addFavouriteToDatabase={addFavouritetoDatabase}
                             removeFavourite={removeFavourite}
                             onSearch={(term) => setSearchTerm(term)}
-                            onNavigate={(stock) => { setStockName(stock); handleSearch(stock); }}
+                            onNavigate={(stock) => { 
+                                setStockName(stock); 
+                                handleSearch(stock); 
+                            }}
                             filteredStocks={filteredStocks}
                             email={email}
                             toggleSidebar={toggleSidebar}

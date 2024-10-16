@@ -7,13 +7,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faCheck } from '@fortawesome/free-solid-svg-icons';
 import '../pages/StockAnalysis.css';
 
-function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavourited }) {
+function FavouriteButton({ stockTicker, companyTitle, onFavourite, onRemoveFavourite, isFavourited }) {
     const [isFav, setIsFav] = useState(isFavourited);
     const [iconClass, setIconClass] = useState('fav-icon');
 
     useEffect(() => {
         setIsFav(isFavourited);
     }, [isFavourited]);
+    
 
     // Change icon and also adds transition
     const toggleFavourite = () => {
@@ -26,7 +27,12 @@ function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavou
                 }
             } else {
                 if (onFavourite) {
-                    onFavourite(companyTitle);
+                    if (stockTicker != null) {
+                        onFavourite(stockTicker);
+                    } else {
+                        onFavourite(companyTitle);
+                    }
+                    
                 }
             }
             setIsFav(prev => !prev);

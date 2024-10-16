@@ -25,6 +25,9 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [stockSuggestions, setStockSuggestions] = useState([]);
+
+    const [stockSuggestionsTicker, setStockSuggestionsTicker] = useState([]);
+
     const [allStocks, setAllStocks] = useState([]);
     const [results, setResults] = useState([]);
 
@@ -39,7 +42,22 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
             });
 
             if (response.data && response.data.stocks) {
-                setStockSuggestions(response.data.stocks);
+                // data comes in with the stock name and ticker, so this code
+                // just separates out the stock name and ticker
+                const stockNames = [];
+                const stockTickers = [];
+
+                for (let i = 0; i < response.data.stocks.length; i++) {
+                    if (i % 2 === 0) {
+                        // Even indices (0, 2, 4...) are stock names
+                        stockNames.push(response.data.stocks[i]);
+                    } else {
+                        // Odd indices (1, 3, 5...) are stock tickers
+                        stockTickers.push(response.data.stocks[i]);
+                    }
+                }
+                setStockSuggestions(stockNames);
+                setStockSuggestionsTicker(stockTickers);
             }
         } catch (error) {
             console.error('Error fetching stock suggestions:', error);
@@ -143,15 +161,18 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                 <>
                                                     {stockSuggestions.length > 0 ? (
                                                         stockSuggestions.map((stock, idx) => {
-                                                            // Extract the stock symbol from the stock name
-                                                            const stockSymbol = stock.match(/\((.*?)\)/); // This regex will match the content inside parentheses
-                                                            const symbol = stockSymbol ? stockSymbol[1] : stock; // Fallback to full name if no match is found
 
                                                             return (
                                                                 <SASidebarCard
                                                                     key={idx}
                                                                     companyTitle={stock}
-                                                                    onClick={() => onNavigate(stock)}
+
+                                                                    onClick={() => {
+                                                                        onNavigate(stock);
+                                                                    }}
+                                                                    
+                                                                    stockTicker={stockSuggestionsTicker[idx]}
+
                                                                     //onFavourite={() => addFavourite(symbol)} // Use the extracted stock symbol here
                                                                     addFavourite={addFavourite}
                                                                 />
