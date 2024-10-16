@@ -1,0 +1,38 @@
+pip install langchain
+pip install langchain_community
+
+pip install openai
+
+pip install python-dotenv
+
+#docker pull qdrant/qdrant
+
+pip install qdrant-client
+
+docker run -p 6333:6333 qdrant/qdrant
+
+pip install tiktoken 
+
+pip install pandas
+
+#pip install unstructured
+
+pip install --upgrade --quiet  "unstructured[all-docs]"
+
+brew install libmagic
+
+brew install poppler
+
+brew install tesseract
+
+pip install langchain-openai
+
+pip install langchain-qdrant
+
+pip install azure-storage-blob azure-identity
+
+pip install mysql-connector-python
+
+pip install azure-functions
+
+

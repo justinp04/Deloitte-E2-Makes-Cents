@@ -33,7 +33,7 @@ router.post('/stock-summary', (req, res) => {
 
     // Call the Python script and pass the stock name
     const pythonExecutable = 'python3';
-    const pythonScriptPath = path.join(__dirname, '../../Rag/summary.py');
+    const pythonScriptPath = path.join(__dirname, '../Rag/summary.py');
 
     const userEmail = req.body.userEmail;
 
