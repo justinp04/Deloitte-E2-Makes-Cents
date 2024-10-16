@@ -222,7 +222,7 @@ function StockAnalysis() {
     // Function to add a stock to the list of favourites
     const addFavouritetoDatabase = async (stockTicker) => {
         try {
-            const userIdResponse = await fetch(`hhttps://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/favorite-stocks/get-userid?email=${email}`);
+            const userIdResponse = await fetch(`https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/favorite-stocks/get-userid?email=${email}`);
             const userIdData = await userIdResponse.json();
             const userId = userIdData.userId;
 
