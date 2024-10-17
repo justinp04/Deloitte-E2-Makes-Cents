@@ -56,7 +56,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
 
       if (isUpdating) {
         // Fetch existing data for the user
-        fetch(`https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/next/user-responses?email=${userEmail}`)
+        fetch(`http://localhost:8080/next/user-responses?email=${userEmail}`)
           .then(response => {
             if (!response.ok) {
               throw new Error('Failed to fetch user data');
@@ -114,7 +114,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
   };
 
   const handleCreate = (formData) => {
-    fetch('https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/next/register', {
+    fetch('hhttp://localhost:8080/next/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -149,7 +149,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
   };
 
   const handleUpdate = (formData) => {
-    fetch('https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/next/update-responses', {
+    fetch('http://localhost:8080/next/update-responses', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
