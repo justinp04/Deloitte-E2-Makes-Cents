@@ -10,7 +10,7 @@ import SearchBar from '../SearchBar';
 import '../pages/NewsFeed.css';
 import NewsSidebarCard from './NewsSidebarCard';
 
-const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }) => {
+const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies, onClick }) => {
     const [expandedItems, setExpandedItems] = useState({"0": true, "1": true}); // Tracks the open/close state of each accordion item
     const [showSidebar, setShowSidebar] = useState(false); // Controls Offcanvas visibility
 
@@ -27,6 +27,12 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
 
     // Handle opening the sidebar
     const handleShowSidebar = () => setShowSidebar(true);
+
+    // Extract the stock symbol (part inside parentheses) ignore the stock name for now
+    const extractStockSymbol = (companyTitle) => {
+        const match = companyTitle.match(/\((.*?)\)/);
+        return match ? match[1] : companyTitle;
+    };
 
     return (
         <div className="position-fixed">
@@ -55,7 +61,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                     <Container fluid id="sidebarContainer" className="p-0 scrollable-sidebar sidebar-background-colour">
                         {/* Search bar for searching stocks */}
                         <div className="fixed-searchbar py-2" style={{backgroundColor:"white"}}>
-                            <SearchBar placeholder="Search a stock" onSearch={onSearch} className="mb-0"/>
+                            <SearchBar placeholder="Search a stock" onSearch={onSearch} onClick={onClick} className="mb-0"/>
                         </div>
 
                         {/* Accordion with individual open/close state for each item */}
@@ -86,7 +92,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                                                 currentInvestmentCompanies.map((company) => (
                                                     <NewsSidebarCard
                                                         key={company.id}
-                                                        companyTitle={company.companyTitle}
+                                                        companyTitle={extractStockSymbol(company.companyTitle)}
                                                         onClick={() => onSearch(company.companyTitle)}
                                                         className="news-sidebar-card"/>
                                                 ))

@@ -9,6 +9,7 @@ import StockSummary from './routes/StockSummary.js';
 import NewsFeed from './routes/NewsFeed.js';
 import FavouriteStocks from './routes/FavouriteStocks.js';
 import StockSuggestions from './routes/StockSuggestions.js';
+import CurrentInvestments from './routes/CurrentInvestmentsRoutes.js';
 
 const port = process.env.PORT || 8080;
 const app = express();
@@ -38,6 +39,7 @@ app.use('/summary', StockSummary);
 app.use('/news', NewsFeed);
 app.use('/favorite-stocks', FavouriteStocks);
 app.use('/', StockSuggestions);
+app.use('/investment', CurrentInvestments);
 
 // Start the server
 app.listen(port, () => console.log(`Server is running on port ${port}`));

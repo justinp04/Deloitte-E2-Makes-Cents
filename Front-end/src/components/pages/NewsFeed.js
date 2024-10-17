@@ -7,6 +7,7 @@ import NewsSidebar from '../newsfeed-components/NewsSidebar';
 import FilterButton from '../newsfeed-components/FilterButton';
 import TutorialOverlay from '../stockanalysis-components/TutorialOverlay'; 
 import { useMsal } from '@azure/msal-react';
+import Swal from 'sweetalert2';
 import './NewsFeed.css';
 
 function NewsFeed() {
@@ -20,6 +21,9 @@ function NewsFeed() {
     const [followedCompanies, setFollowedCompanies] = useState([]);  // Followed companies will be fetched
     const [loadingFollowedCompanies, setLoadingFollowedCompanies] = useState(true);
     const [errorFollowedCompanies, setErrorFollowedCompanies] = useState(null);
+    const [currentInvestmentCompanies, setCurrentInvestmentCompanies] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
 
      // for tutorial
@@ -57,21 +61,6 @@ function NewsFeed() {
          setTutorialActive(false);
      };
 
-    // State for current investment companies
-    const [currentInvestmentCompanies, setCurrentInvestmentCompanies] = useState([
-        { id: 1, companyTitle: 'WOOLWORTHS GROUP LIMITED (WOW)' },
-        { id: 2, companyTitle: 'BHP Group Ltd (BHP)' },
-        { id: 3, companyTitle: 'Adairs (ADH)' },
-        { id: 4, companyTitle: 'COLES GROUP LIMITED (COL)' },
-        { id: 5, companyTitle: 'APPLE (APL)' },
-        { id: 6, companyTitle: 'BHP Group Ltd (BHP)' },
-        { id: 7, companyTitle: 'Adairs (ADH)' },
-        { id: 8, companyTitle: 'COLES GROUP LIMITED (COL)' },
-        { id: 9, companyTitle: 'APPLE (APL)' },
-    ]);
-
-    
-
     // Fetch email from the logged-in user using MSAL
     useEffect(() => {
         if (accounts.length > 0) {
@@ -79,6 +68,25 @@ function NewsFeed() {
             setEmail(userEmail);
         }
     }, [accounts]);
+
+    // Fetch the current investments from the backend
+    useEffect(() => {
+        const fetchCurrentInvestments = async () => {
+            if (!email) return;
+
+            try {
+                const response = await axios.get('http://localhost:8080/investment/current-investments', { params: { email } });
+                setCurrentInvestmentCompanies(response.data.currentInvestments);
+            } catch (error) {
+                setError('Failed to fetch current investments');
+                console.error(error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchCurrentInvestments();
+    }, [email]);
 
     // Fetch favorite stocks for followed companies
     useEffect(() => {
@@ -152,27 +160,133 @@ function NewsFeed() {
         fetchNews();
     }, [searchTerm, email]);
 
+    // Function to add a stock to current investments
+    const handleAddNewInvestment = async () => {
+        try {
+            const stockSymbol = searchTerm; // Use the current search term
+            const response = await axios.post('http://localhost:8080/investment/add-current-investment', {
+                email,
+                stock_symbol: stockSymbol,
+            });
+
+            if (response.status === 200) {
+                // Add the new stock to the sidebar instantly after a successful response
+                setCurrentInvestmentCompanies([
+                    ...currentInvestmentCompanies,
+                    { companyTitle: `Unknown Company (${stockSymbol})` }
+                ]);
+
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Stock added to current investments!',
+                    icon: 'success',
+                    confirmButtonText: 'Cool',
+                });
+            }
+        } catch (error) {
+            Swal.fire({
+                title: 'Error',
+                text: 'Failed to add stock to current investments',
+                icon: 'error',
+                confirmButtonText: 'Try Again',
+            });
+        }
+    };
+
+
+
+    
     const handleSearch = (term) => {
         setSearchTerm(term);
     };
 
-    // Add a new current investment
-    const handleAddNewInvestment = () => {
-        const newInvestment = {
-            id: currentInvestmentCompanies.length + 1,
-            companyTitle: `New Investment ${currentInvestmentCompanies.length + 1}`
-        };
-        setCurrentInvestmentCompanies([...currentInvestmentCompanies, newInvestment]);
+    // Fetch news for a specific stock when clicked
+    const handleClickSearch = async (companyTitle) => {
+        const stockSymbol = companyTitle.match(/\((.*?)\)/)[1]; // Extract stock symbol from "Company Name (SYMBOL)"
+        setSearchTerm(stockSymbol);
+
+        try {
+            const response = await axios.get(`http://localhost:8080/news`, { params: { symbol: stockSymbol, email } });
+            const news = response.data.data.news || [];
+
+            if (news.length > 0) {
+                const heroArticle = news[0]; // First article for the hero section
+                setNewsData({
+                    hero: {
+                        title: heroArticle.article_title || 'No title available',
+                        subtitle: heroArticle.article_summary || 'No summary available',
+                        image: heroArticle.article_photo_url || ''
+                    },
+                    articles: news
+                });
+            } else {
+                setNewsData({
+                    hero: {
+                        title: 'No news available now',
+                        subtitle: '',
+                        image: ''
+                    },
+                    articles: []
+                });
+            }
+        } catch (error) {
+            console.error('Error fetching news:', error);
+            setNewsData({
+                hero: {
+                    title: 'No news available now',
+                    subtitle: '',
+                    image: ''
+                },
+                articles: []
+            });
+        }
     };
 
-    // Add a new followed company
-    const handleAddNewFollowing = () => {
-        const newFollowing = {
-            id: followedCompanies.length + 1,
-            companyTitle: `New Following ${followedCompanies.length + 1}`
-        };
-        setFollowedCompanies([...followedCompanies, newFollowing]);
-    };
+    // // Add a new current investment
+    // const handleAddNewInvestment = () => {
+    //     const newInvestment = {
+    //         id: currentInvestmentCompanies.length + 1,
+    //         companyTitle: `New Investment ${currentInvestmentCompanies.length + 1}`
+    //     };
+    //     setCurrentInvestmentCompanies([...currentInvestmentCompanies, newInvestment]);
+    // };
+
+    const handleAddNewFollowing = async () => {
+        try {
+            const stockSymbol = searchTerm;
+    
+            // First, fetch the user ID based on the email
+            const userResponse = await axios.get('http://localhost:8080/favorite-stocks/get-userid', { params: { email } });
+            const userId = userResponse.data.userId;
+    
+            // Make the request to add the stock to followed companies
+            const response = await axios.post('http://localhost:8080/favorite-stocks/add', {
+                userId, 
+                stockSymbol
+            });
+    
+            if (response.status === 200) {
+                // Show success message with a cute pop-up
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Stock added to followed companies!',
+                    icon: 'success',
+                    confirmButtonText: 'Cool',
+                });
+            } else {
+                throw new Error('Failed to add stock to followed companies');
+            }
+        } catch (error) {
+            console.error('Error adding to followed companies:', error);
+            Swal.fire({
+                title: 'Error',
+                text: 'Failed to add stock to followed companies',
+                icon: 'error',
+                confirmButtonText: 'Try Again',
+            });
+        }
+    };    
+    
 
     return (
         <div className="page-container">
@@ -180,6 +294,7 @@ function NewsFeed() {
                 {/* Passing currentInvestmentCompanies and followedCompanies to NewsSidebar */}
                 <NewsSidebar 
                     onSearch={handleSearch}
+                    onClick={handleClickSearch}
                     currentInvestmentCompanies={currentInvestmentCompanies}
                     followedCompanies={followedCompanies}
                     ref = {stockRecommendationsRef}
