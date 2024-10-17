@@ -171,9 +171,9 @@ function NewsFeed() {
 
             if (response.status === 200) {
                 // Add the new stock to the sidebar instantly after a successful response
-                setCurrentInvestmentCompanies([
-                    ...currentInvestmentCompanies,
-                    { companyTitle: `Unknown Company (${stockSymbol})` }
+                setCurrentInvestmentCompanies(prevCompanies => [
+                    ...prevCompanies,
+                    { companyTitle: `(${stockSymbol})` }
                 ]);
 
                 Swal.fire({
@@ -267,6 +267,11 @@ function NewsFeed() {
     
             if (response.status === 200) {
                 // Show success message with a cute pop-up
+                setFollowedCompanies(prevCompanies => [
+                    ...prevCompanies,
+                    { companyTitle: `${searchTerm}` }
+                ]);
+                
                 Swal.fire({
                     title: 'Success!',
                     text: 'Stock added to followed companies!',
