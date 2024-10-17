@@ -18,7 +18,7 @@ import Swal from 'sweetalert2';
 import SearchBarTwo from '../SearchBarTwo';
 import SearchResultsList from '../SearchResultsList';
 
-const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase, onSearch, filteredStocks, performSearch, onNavigate = () => { } }) => {
+const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavouriteToDatabase, onSearch, filteredStocks, performSearch, onNavigate = () => { }, tutorialActive  }) => {
     const [expandedItems, setExpandedItems] = useState({ "0": true, "1": true, "2": true }); // Tracks the open/close state of each accordion item
     const [showSidebar, setShowSidebar] = useState(false); // Offcanvas visibility
 

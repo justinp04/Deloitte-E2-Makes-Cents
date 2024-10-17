@@ -34,6 +34,10 @@ function StockAnalysis() {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredStocks, setFilteredStocks] = useState([]);
 
+    // for tutorial
+    const [tutorialActive, setTutorialActive] = useState(false);
+    const [tutorialStep, setTutorialStep] = useState(1);
+
     // State to manage typing indicator
     const [typing, setTyping] = useState(false);
     const chatEndRef = useRef(null);
@@ -41,6 +45,16 @@ function StockAnalysis() {
     // Get current login user
     const { accounts } = useMsal();
     const [email, setEmail] = useState('');
+
+     // Check localStorage for the tutorial flag
+     useEffect(() => {
+        const showTutorial = localStorage.getItem('showTutorial');
+        if (showTutorial === 'true') {
+            setTutorialActive(true);
+            // opens the components on the left so that the tutorial can show stuff
+            setAccordionOpen(true);
+        }
+    }, []);
 
     // Fetch email from logged-in user's account information
     useEffect(() => {
@@ -187,6 +201,17 @@ function StockAnalysis() {
         }
     };
 
+    const handleNextTutorialStep = () => {
+        if (tutorialStep < 10) { 
+            setTutorialStep(tutorialStep + 1);
+        } else {
+            setTutorialActive(false);
+        }
+    };
+
+    const handleCloseTutorial = () => {
+        setTutorialActive(false);
+    };
 
     const handleSuggestedQuestionClick = (question) => {
         handleSendMessage(question);
@@ -315,6 +340,7 @@ function StockAnalysis() {
                             onNavigate={(stock) => { setStockName(stock); handleSearch(stock); }}
                             filteredStocks={filteredStocks}
                             email={email}
+                            tutorialActive = {tutorialActive}
                             toggleSidebar={toggleSidebar}
                         />
                     </div>
@@ -382,6 +408,13 @@ function StockAnalysis() {
                     </div>
                 </>
             {/* )} */}
+            {tutorialActive && (
+                <TutorialOverlay 
+                    step={tutorialStep} 
+                    onNext={handleNextTutorialStep} 
+                    onClose={handleCloseTutorial} 
+                />
+            )}
         </div>
     );
 }
