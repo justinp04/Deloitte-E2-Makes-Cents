@@ -95,7 +95,7 @@ const StockSummary = ({
             />
           )}
         </div>
-        <div ToggleSwitch="summary-toggle" className="summary-toggle-div">
+        <div id = "detailed-summary-switch" ToggleSwitch="summary-toggle" className="summary-toggle-div">
           <ToggleSwitch
             checked={responseDepth === 'detailed'}
             onChange={onToggleChange}

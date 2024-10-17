@@ -4,7 +4,7 @@ import { faPlus, faCheck } from '@fortawesome/free-solid-svg-icons';
 import Swal from 'sweetalert2';
 import '../pages/StockAnalysis.css';
 
-function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavourited }) {
+function FavouriteButton({id, companyTitle, onFavourite, onRemoveFavourite, isFavourited }) {
     const [isFavouritedState, setIsFavouritedState] = useState(isFavourited);
     const [iconClass, setIconClass] = useState('fav-icon');
 
@@ -62,6 +62,7 @@ function FavouriteButton({ companyTitle, onFavourite, onRemoveFavourite, isFavou
 
     return (
         <button 
+            id = {id}
             className='border-no-outline' 
             onClick={toggleFavourite}
             style={{ background: 'none', border: 'none', padding: 0, height:"26px" }}
