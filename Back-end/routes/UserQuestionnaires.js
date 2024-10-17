@@ -44,9 +44,9 @@ router.post('/register', async (req, res) => {
     } = req.body;
 
     // Check if all required fields are present
-    if (!email || question_response_1 < 1 || question_response_3 < 1 || question_response_4 < 1 || question_response_5 < 1 || question_response_6 < 1) {
+    if (!email || question_response_1 < 1 || question_response_2 < 1 || question_response_3 < 1 || question_response_4 < 1 || question_response_5 < 1 || question_response_6 < 1) {
         return res.status(400).json({ error: 'All fields are required and must have valid values' });
-    }
+    }    
 
     try {
         const pool = await sql.connect(sqlConfig);

@@ -114,7 +114,7 @@ const ProfileInsightsForm = ({ isUpdating = false }) => {
   };
 
   const handleCreate = (formData) => {
-    fetch('hhttp://localhost:8080/next/register', {
+    fetch('http://localhost:8080/next/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
