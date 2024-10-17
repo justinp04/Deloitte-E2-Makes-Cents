@@ -192,24 +192,25 @@ function StockAnalysis() {
         handleSendMessage(question);
     };
 
-    const addFavourite = (companyTitle) => {
-
-        if (stockTicker === "Unknown" || !stockTicker) {
-            console.log("Not a valid stock. Cannot add to favorites.");
-            return;
-        }
-
-        // Check if the stock already exists
+    const addFavourite = async (stockTicker) => {
         if (!favouriteStocks.some(stock => stock.title === stockTicker)) {
             const newFavourite = { id: favouriteStocks.length + 1, title: stockTicker, status: "Favourite" };
-            setFavouriteStocks(prevFavourites => [...prevFavourites, newFavourite]);
-            addFavouritetoDatabase(stockTicker); // Call function to add to database
+            setFavouriteStocks([...favouriteStocks, newFavourite]);
+            await addFavouritetoDatabase(stockTicker); // Add to the database
         } else {
-            // If the stock already exists in local state, show a warning using Swal
+            // If stock is already in favourites, ask for removal confirmation
             Swal.fire({
+                title: 'Are you sure?',
+                text: `Do you want to remove ${stockTicker} from your favourites?`,
                 icon: 'warning',
-                title: 'Duplicate Stock',
-                text: 'This stock is already in your favourites.',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, remove it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    removeFavourite(stockTicker); // Remove from both state and database
+                }
             });
         }
     };
