@@ -87,7 +87,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                                                     <NewsSidebarCard
                                                         key={company.id}
                                                         companyTitle={company.companyTitle}
-                                                        onClick={() => console.log(`Clicked on ${company.companyTitle}`)}
+                                                        onClick={() => onSearch(company.companyTitle)}
                                                         className="news-sidebar-card"/>
                                                 ))
                                             ) : index === 1 ? (
@@ -96,7 +96,7 @@ const NewsSidebar = ({ onSearch, currentInvestmentCompanies, followedCompanies }
                                                     <NewsSidebarCard
                                                         key={company.id}
                                                         companyTitle={company.companyTitle}
-                                                        onClick={() => console.log(`Clicked on ${company.companyTitle}`)}
+                                                        onClick={() => onSearch(company.companyTitle)}
                                                         className="news-sidebar-card"
                                                     />
                                                 ))

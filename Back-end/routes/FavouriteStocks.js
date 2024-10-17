@@ -113,5 +113,41 @@ router.get('/get-userid', async (req, res) => {
     }
 });
 
+// NEW Route to fetch all favorite stocks for a user by email
+router.get('/favorites', async (req, res) => {
+    const { email } = req.query;
+
+    if (!email) {
+        return res.status(400).json({ error: 'Email is required' });
+    }
+
+    try {
+        const pool = await sql.connect(sqlConfig);
+
+        // Fetch user id based on email
+        const userResult = await pool.request()
+            .input('email', sql.VarChar, email)
+            .query('SELECT id FROM [dbo].[Users] WHERE email = @email');
+
+        if (userResult.recordset.length === 0) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+
+        const userId = userResult.recordset[0].id;
+
+        // Fetch favorite stocks for the user
+        const stocksResult = await pool.request()
+            .input('userId', sql.Int, userId)
+            .query('SELECT stock_symbol FROM FavoriteStocks WHERE user_id = @userId');
+
+        const favoriteStocks = stocksResult.recordset.map(record => record.stock_symbol);
+
+        res.status(200).json({ favoriteStocks });
+    } catch (error) {
+        console.error('Error fetching favorite stocks:', error);
+        res.status(500).json({ error: 'Failed to fetch favorite stocks' });
+    }
+});
+
 
 export default router;

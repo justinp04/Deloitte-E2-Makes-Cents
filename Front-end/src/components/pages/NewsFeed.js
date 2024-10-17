@@ -17,6 +17,10 @@ function NewsFeed() {
     });
     const [searchTerm, setSearchTerm] = useState('CBA'); // Default company symbol
     const [email, setEmail] = useState('');
+    const [followedCompanies, setFollowedCompanies] = useState([]);  // Followed companies will be fetched
+    const [loadingFollowedCompanies, setLoadingFollowedCompanies] = useState(true);
+    const [errorFollowedCompanies, setErrorFollowedCompanies] = useState(null);
+
 
      // for tutorial
      const [tutorialActive, setTutorialActive] = useState(false);
@@ -66,17 +70,7 @@ function NewsFeed() {
         { id: 9, companyTitle: 'APPLE (APL)' },
     ]);
 
-    // State for followed companies
-    const [followedCompanies, setFollowedCompanies] = useState([
-        { id: 1, companyTitle: 'WOOLWORTHS GROUP LIMITED (WOW)' },
-        { id: 2, companyTitle: 'BHP Group Ltd (BHP)' },
-        { id: 3, companyTitle: 'Adairs (ADH)' },
-        { id: 4, companyTitle: 'COLES GROUP LIMITED (COL)' },
-        { id: 5, companyTitle: 'WOOLWORTHS GROUP LIMITED (WOW)' },
-        { id: 6, companyTitle: 'BHP Group Ltd (BHP)' },
-        { id: 7, companyTitle: 'Adairs (ADH)' },
-        { id: 8, companyTitle: 'COLES GROUP LIMITED (COL)' },
-    ]);
+    
 
     // Fetch email from the logged-in user using MSAL
     useEffect(() => {
@@ -85,6 +79,33 @@ function NewsFeed() {
             setEmail(userEmail);
         }
     }, [accounts]);
+
+    // Fetch favorite stocks for followed companies
+    useEffect(() => {
+        const fetchFollowedCompanies = async () => {
+            if (!email) return;
+
+            try {
+                setLoadingFollowedCompanies(true);
+                const response = await axios.get('http://localhost:8080/favorite-stocks/favorites', { params: { email } });
+                const favoriteStocks = response.data.favoriteStocks || [];
+
+                const companies = favoriteStocks.map((stock, index) => ({
+                    id: index + 1,
+                    companyTitle: stock  // Assuming you want to display stock symbols
+                }));
+
+                setFollowedCompanies(companies);
+                setLoadingFollowedCompanies(false);
+            } catch (error) {
+                setErrorFollowedCompanies('Failed to fetch followed companies');
+                console.error(error);
+                setLoadingFollowedCompanies(false);
+            }
+        };
+
+        fetchFollowedCompanies();
+    }, [email]);
 
     useEffect(() => {
         const fetchNews = async () => {
@@ -162,11 +183,13 @@ function NewsFeed() {
                     currentInvestmentCompanies={currentInvestmentCompanies}
                     followedCompanies={followedCompanies}
                     ref = {stockRecommendationsRef}
+                    loading={loadingFollowedCompanies}
+                    error={errorFollowedCompanies}
                 />
             </div>
             <div className="content content-margining pt-0">
                 <NewsCompanyTitle
-                    textContent={`Commonwealth Bank of Australia (${searchTerm})`}
+                    textContent={`${searchTerm}`}
                     onAddNewInvestment={handleAddNewInvestment}
                     onAddNewFollowing={handleAddNewFollowing}
                 />
