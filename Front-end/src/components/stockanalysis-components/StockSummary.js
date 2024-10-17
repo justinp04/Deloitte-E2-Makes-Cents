@@ -1,7 +1,3 @@
-/************************************************************************************************
- * Purpose: Summary portion on the top of content page for stock in 'Stock Analysis' page
- * Fix: 
- ************************************************************************************************/
 import React, { useState, useEffect } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -27,9 +23,13 @@ const StockSummary = ({
   const [referencesOpen, setReferencesOpen] = useState(false); // To control the nested accordion
   const [companyDetails, setCompanyDetails] = useState({ name: stockName, ticker: '' });
   const [loading, setLoading] = useState(true);
+  
+  // Store both quick and detailed summaries separately
+  const [quickSummary, setQuickSummary] = useState('');
+  const [detailedSummary, setDetailedSummary] = useState('');
 
   useEffect(() => {
-    const fetchStockData = async () => {
+    const fetchStockData = async (depth) => {
         if (!email || !stockName) {
             console.warn("Attempted to fetch data before email or stock name was set.");
             setLoading(false);
@@ -43,12 +43,17 @@ const StockSummary = ({
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ stockName, user_email: email, response_depth: responseDepth })
+                body: JSON.stringify({ stockName, user_email: email, response_depth: depth })  // Send depth as parameter
             });
 
             const data = await res.json();
             if (data.company_name && data.stock_ticker) {
                 setCompanyDetails({ name: data.company_name, ticker: data.stock_ticker });
+            }
+            if (depth === 'quick') {
+                setQuickSummary(data.quick_summary);  // Store the quick summary
+            } else if (depth === 'detailed') {
+                setDetailedSummary(data.detailed_summary);  // Store the detailed summary
             }
             setLoading(false);
         } catch (error) {
@@ -57,14 +62,13 @@ const StockSummary = ({
         }
     };
 
-    // Only fetch data if stockName is valid
+    // Fetch data based on response depth
     if (stockName && stockName !== 'Unknown') {
-        fetchStockData();
+        fetchStockData(responseDepth);
     } else {
         setLoading(false);
     }
-}, [stockName, email, responseDepth]);
-
+  }, [stockName, email, responseDepth]);
 
   // Construct the company title from fetched data
   const companyTitle =
@@ -75,6 +79,10 @@ const StockSummary = ({
       : 'No stock name provided';
 
   const isFavourited = favouriteStocks.some(stock => stock.title === companyTitle);
+  const stockTicker = companyDetails.ticker;  // Extract ticker for database operations
+
+  // Display the correct summary based on the response depth toggle
+  const currentSummary = responseDepth === 'quick' ? quickSummary : detailedSummary;
 
   return (
     <div id="stock-summary-div" className="position-sticky">
@@ -87,15 +95,15 @@ const StockSummary = ({
           </h5>
           {!loading && companyDetails.name && companyDetails.ticker && (
             <FavouriteButton
-              id = "favorites-button"
+              id="favorites-button"
               companyTitle={companyTitle}
               isFavourited={isFavourited}
-              onFavourite={addFavourite}
-              onRemoveFavourite={removeFavourite}
+              onFavourite={() => addFavourite(stockTicker)}  
+              onRemoveFavourite={() => removeFavourite(stockTicker)} 
             />
           )}
         </div>
-        <div id = "detailed-summary-switch" ToggleSwitch="summary-toggle" className="summary-toggle-div">
+        <div id="detailed-summary-switch" ToggleSwitch="summary-toggle" className="summary-toggle-div">
           <ToggleSwitch
             checked={responseDepth === 'detailed'}
             onChange={onToggleChange}
@@ -122,8 +130,8 @@ const StockSummary = ({
             <div className="fw-bold">Summary</div>
           </Accordion.Header>
           <Accordion.Body className="ps-2">
-            {summary ? (
-              <SummaryTable summary={summary} responseDepth={responseDepth} />
+            {currentSummary ? (   // Display based on the selected response depth
+              <SummaryTable summary={currentSummary} responseDepth={responseDepth} />
             ) : (
               'No summary available.'
             )}
@@ -134,7 +142,6 @@ const StockSummary = ({
                 <Accordion.Header
                   onClick={() => setReferencesOpen(!referencesOpen)}
                   style={{
-                    // alignItems: 'center',
                     width: '100%',
                     paddingRight: '0',
                     border: 'none',
@@ -146,7 +153,7 @@ const StockSummary = ({
                   <div className="fw-bold">References</div>
                 </Accordion.Header>
                 <Accordion.Body>
-                  <ol style={{ paddingLeft: '2.0rem', fontSize: '0.8rem', width:"" }}>
+                  <ol style={{ paddingLeft: '2.0rem', fontSize: '0.8rem' }}>
                     {Array.isArray(references) && references.length > 0 ? (
                       references.map((ref, index) => (
                         <li key={index}>
