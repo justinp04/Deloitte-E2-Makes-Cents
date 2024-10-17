@@ -178,6 +178,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                             {index === 2 && (
                                                 <>
                                                     <SearchBar placeholder="Search for a stock"
+                                                        id = "stock-search-bar"
                                                         value={searchTerm}
                                                         onSearch={(term) => (onSearch(term))} />
                                                     {filteredStocks.length > 0 ? (
