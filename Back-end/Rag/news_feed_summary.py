@@ -11,8 +11,8 @@ from user_queries import get_llm_response
 from prompt_engineering import chatbot_experience, chatbot_income, chatbot_invest_length, chatbot_risk, chatbot_loss, chatbot_invest_type
 
 
-API_URL = 'https://makecentsbackend.azurewebsites.net/news'
-USER_RESPONSE_URL = 'https://makecentsbackend.azurewebsites.net/next/user-responses'
+API_URL = 'http://localhost:8080/news'
+USER_RESPONSE_URL = 'http://localhost:8080/next/user-responses'
 
 # Function to fetch user profile from the /next/user-responses endpoint using email
 def fetch_user_profile(user_email):

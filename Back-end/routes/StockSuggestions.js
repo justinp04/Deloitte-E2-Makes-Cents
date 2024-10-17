@@ -30,7 +30,7 @@ router.post('/stock-suggestions', async (req, res) => {
         res.setHeader('Access-Control-Allow-Credentials', 'true');  // Allow credentials
         console.log(`Fetching stock suggestions for: ${email}`);
         // Fetch user responses from the specified endpoint
-        const userResponse = await axios.get(`https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/next/user-responses?email=${email}`);
+        const userResponse = await axios.get(`http://localhost:8080/next/user-responses?email=${email}`);
         // const userResponse = await axios.get(`http://localhost:8080/next/user-responses?email=${email}`);
         const userData = userResponse.data.response;
 
