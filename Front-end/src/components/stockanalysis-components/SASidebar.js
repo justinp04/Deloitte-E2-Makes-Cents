@@ -92,6 +92,16 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
     const handleCloseSidebar = () => setShowSidebar(false); // Close the Offcanvas sidebar
     const handleShowSidebar = () => setShowSidebar(true);   // Open the Offcanvas sidebar
 
+    // Toggle favourite for a stock
+    const toggleFavourite = (stockSymbol) => {
+        const isFavourite = favouriteStocks.some(stock => stock.title === stockSymbol);
+        if (isFavourite) {
+            removeFavourite(stockSymbol); // Remove from favourites
+        } else {
+            addFavourite(stockSymbol); // Add to favourites
+        }
+    };
+
     return (
         <div className="position-fixed">
             {/* <div className="sidebar-container-styling position-fixed"> */}
@@ -144,13 +154,15 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
                                                             // Extract the stock symbol from the stock name
                                                             const stockSymbol = stock.match(/\((.*?)\)/); // This regex will match the content inside parentheses
                                                             const symbol = stockSymbol ? stockSymbol[1] : stock; // Fallback to full name if no match is found
+                                                            const isFavourited = favouriteStocks.some(fav => fav.title === symbol);
 
                                                             return (
                                                                 <SASidebarCard
                                                                     key={idx}
                                                                     companyTitle={stock}
                                                                     onClick={() => onNavigate(stock)}
-                                                                    onFavourite={() => addFavourite(symbol)} // Use the extracted stock symbol here
+                                                                    onFavourite={() => toggleFavourite(symbol)}
+                                                                    isFavourited={isFavourited}
                                                                 />
                                                             );
                                                         })
