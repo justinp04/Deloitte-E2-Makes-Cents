@@ -95,8 +95,8 @@ Author: Anna
 Purpose: Integrated the ability to fetch user profile and generate personalized responses
 '''''''''''''''''''''''''''''''''''''''''''''''''''
 
-API_URL = 'http://localhost:8080/news'
-USER_RESPONSE_URL = 'http://localhost:8080/next/user-responses'
+API_URL = 'https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/news'
+USER_RESPONSE_URL = 'https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/next/user-responses'
 
 # Function to fetch user profile from the /next/user-responses endpoint using email
 def fetch_user_profile(user_email):

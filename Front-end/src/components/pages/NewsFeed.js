@@ -75,7 +75,7 @@ function NewsFeed() {
             if (!email) return;
 
             try {
-                const response = await axios.get('http://localhost:8080/investment/current-investments', { params: { email } });
+                const response = await axios.get('https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/investment/current-investments', { params: { email } });
                 setCurrentInvestmentCompanies(response.data.currentInvestments);
             } catch (error) {
                 setError('Failed to fetch current investments');
@@ -95,7 +95,7 @@ function NewsFeed() {
 
             try {
                 setLoadingFollowedCompanies(true);
-                const response = await axios.get('http://localhost:8080/favorite-stocks/favorites', { params: { email } });
+                const response = await axios.get('https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/favorite-stocks/favorites', { params: { email } });
                 const favoriteStocks = response.data.favoriteStocks || [];
 
                 const companies = favoriteStocks.map((stock, index) => ({
@@ -120,7 +120,7 @@ function NewsFeed() {
             if (!searchTerm || !email) return;
 
             try {
-                const response = await axios.get(`http://localhost:8080/news`, { params: { symbol: searchTerm, email: email } });
+                const response = await axios.get(`https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/news`, { params: { symbol: searchTerm, email: email } });
                 const news = response.data.data.news || []; // Ensure news is an array
 
                 // Check if news has data
@@ -164,7 +164,7 @@ function NewsFeed() {
     const handleAddNewInvestment = async () => {
         try {
             const stockSymbol = searchTerm; // Use the current search term
-            const response = await axios.post('http://localhost:8080/investment/add-current-investment', {
+            const response = await axios.post('https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/investment/add-current-investment', {
                 email,
                 stock_symbol: stockSymbol,
             });
@@ -206,7 +206,7 @@ function NewsFeed() {
         setSearchTerm(stockSymbol);
 
         try {
-            const response = await axios.get(`http://localhost:8080/news`, { params: { symbol: stockSymbol, email } });
+            const response = await axios.get(`https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/news`, { params: { symbol: stockSymbol, email } });
             const news = response.data.data.news || [];
 
             if (news.length > 0) {
@@ -256,11 +256,11 @@ function NewsFeed() {
             const stockSymbol = searchTerm;
     
             // First, fetch the user ID based on the email
-            const userResponse = await axios.get('http://localhost:8080/favorite-stocks/get-userid', { params: { email } });
+            const userResponse = await axios.get('https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/favorite-stocks/get-userid', { params: { email } });
             const userId = userResponse.data.userId;
     
             // Make the request to add the stock to followed companies
-            const response = await axios.post('http://localhost:8080/favorite-stocks/add', {
+            const response = await axios.post('https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/favorite-stocks/add', {
                 userId, 
                 stockSymbol
             });

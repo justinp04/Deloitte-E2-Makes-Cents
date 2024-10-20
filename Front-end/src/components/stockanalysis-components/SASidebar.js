@@ -34,7 +34,7 @@ const SASidebar = ({ favouriteStocks, addFavourite, removeFavourite, addFavourit
     // Fetch stock suggestions based on user email
     const fetchStockSuggestions = async () => {
         try {
-            const response = await axios.post('http://localhost:8080/stock-suggestions',
+            const response = await axios.post('https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/stock-suggestions',
                 { email: userEmail }
             );
 
