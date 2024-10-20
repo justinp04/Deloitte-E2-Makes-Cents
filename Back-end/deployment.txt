@@ -1,0 +1,4 @@
+docker login makecentsdocker.azurecr.io --username MakeCentsDocker
+docker build --platform=linux/amd64 -t makes-cents-back-end-image:latest . 
+docker tag makes-cents-back-end-image:latest makecentsdocker.azurecr.io/back-end:latest
+docker push makecentsdocker.azurecr.io/back-end:latest
