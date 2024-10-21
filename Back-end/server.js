@@ -15,7 +15,7 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 // Configure CORS middleware properly
-const allowedOrigins = ['https://ashy-beach-0b9678500.5.azurestaticapps.net/news-feed'];
+const allowedOrigins = ['https://ashy-beach-0b9678500.5.azurestaticapps.net'];
 
 const corsOptions = {
   origin: '*', // For testing purpose
