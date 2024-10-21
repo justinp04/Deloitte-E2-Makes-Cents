@@ -207,8 +207,8 @@ def get_llm_response(messages, max_response_tokens):
             model=load_deployment_name(),  
             messages=messages,
             max_tokens=max_response_tokens, #set a limit on the number of tokens per model response
-            temperature=0.7, #controls randomness. Lowering = produce more repetitive and deterministic responses. Increasing = more unexpected or creative responses. Try adjusting temperature or Top P but not both.
-            top_p=0.9, #also controls randomness. Lowering = narrow token selection to likelier tokens. Increasing = model choose from tokens with both high and low likelihood.
+            temperature=0.1, #controls randomness. Lowering = produce more repetitive and deterministic responses. Increasing = more unexpected or creative responses. Try adjusting temperature or Top P but not both.
+            top_p=0.3, #also controls randomness. Lowering = narrow token selection to likelier tokens. Increasing = model choose from tokens with both high and low likelihood.
             frequency_penalty=0, #decreases the likelihood of repeating the exact same text in a response.
             presence_penalty=0, #increases the likelihood of introducing new topics in a response.
             stop=None #Make the model end its response at a desired point. 
