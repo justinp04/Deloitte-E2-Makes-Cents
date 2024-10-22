@@ -154,6 +154,8 @@ function StockAnalysis() {
         }
     };
 
+    // Const to track if stock summary is loaded
+    const [summaryLoaded, setSummaryLoaded] = useState(false);
     // Function to handle stock search and update summary/references
     const handleSearch = async (searchTerm) => {
         console.log("handleSearch() called");
@@ -168,6 +170,7 @@ function StockAnalysis() {
         }
 
         setLoading(true);
+        setSummaryLoaded(false);
 
         try {
             // Set the stock name in the state (this can be used for UI display purposes)
@@ -187,6 +190,7 @@ function StockAnalysis() {
 
             if (res.ok) {
                 // Update the summary and references state with the fetched data
+                setSummaryLoaded(true);
                 setStockData(data);
             } else {
                 Swal.fire({
@@ -358,6 +362,7 @@ function StockAnalysis() {
                             email={email || null}
                             responseDepth={responseDepth}
                             onToggleChange={handleToggleChange}
+                            summaryLoaded={summaryLoaded}
                         />
                         <div id="chatbox-area-div" className="scroll-container">
                             <div className="content">

@@ -1,4 +1,3 @@
 npx swa init
-
 npx swa build  
 npx swa deploy --deployment-token=938fb668ce718582156bf0d98310763a46bcb5f28dec8012a5252bf0f9fa294605-874f62e1-6db7-4285-83fa-5eda84c5bd0100003250d8d28700 --env=production
