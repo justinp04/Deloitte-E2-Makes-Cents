@@ -52,7 +52,7 @@ router.get('/', async (req, res) => {
         const response = await axios.get('https://real-time-finance-data.p.rapidapi.com/stock-news', {
             params: { symbol: symbol, language: 'en' },
             headers: {
-                'x-rapidapi-key': '06e26d37bdmsh7bddb2782b29718p1a87fbjsn4fb23acfde14',
+                'x-rapidapi-key': 'a95dadb796msh3bc0b4e21707471p1ebf53jsnc258cb3d03b0',
                 'x-rapidapi-host': 'real-time-finance-data.p.rapidapi.com'
             }
         });
