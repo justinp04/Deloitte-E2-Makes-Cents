@@ -131,3 +131,5 @@ __azurite_db*__.json
 node_modules
 .history
 .vscode
+
+.env
