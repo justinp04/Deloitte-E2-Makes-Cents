@@ -6,6 +6,20 @@
       "outputLocation": "build",
       "appBuildCommand": "npm run build",
       "run": "npm start",
+      "appDevserverUrl": "https://ashy-beach-0b9678500.5.azurestaticapps.net"
+    },
+    "make-cents": {
+      "appLocation": ".",
+      "outputLocation": "build",
+      "appBuildCommand": "npm run build",
+      "run": "npm start",
+      "appDevserverUrl": "https://ashy-beach-0b9678500.5.azurestaticapps.net"
+    },
+    "frontend": {
+      "appLocation": ".",
+      "outputLocation": "build",
+      "appBuildCommand": "npm run build",
+      "run": "npm start",
       "appDevserverUrl": "http://localhost:3000"
     },
     "frotnend": {

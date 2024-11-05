@@ -2,7 +2,7 @@ from user_queries import query_qdrant, get_llm_response, generate_references
 from prompt_engineering import chatbot_experience, chatbot_income, chatbot_invest_length, chatbot_risk, chatbot_loss, chatbot_invest_type
 import datetime
 
-API_URL ='http://localhost:8080/news'
+API_URL ='https://makecentsbackenddocker-eve2hec3bmhvf5bk.australiaeast-01.azurewebsites.net/news'
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Authors:    Gwyneth Gardiner, 
