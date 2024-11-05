@@ -4,10 +4,10 @@ import './QuestionSuggestions.css';
 
 const QuestionSuggestions = ({ onQuestionClick }) => {
     const suggestedQuestions = [
-        { text: "What are some upcoming ASX stock trends to keep an eye on?", icon: <FaChartLine /> },
-        { text: "What sectors are growing in the ASX market?", icon: <FaChartPie /> },
-        { text: "Which ASX companies have strong profit margins?", icon: <FaDollarSign /> },
-        { text: "What are key metrics to evaluate ASX stocks?", icon: <FaEye /> }
+        { text: "What is the 52-week high for this stock?", icon: <FaChartLine /> },
+        { text: "What is the current price of this stock?", icon: <FaChartPie /> },
+        { text: "What are some key economic indicators that can impact stock prices?", icon: <FaDollarSign /> },
+        { text: "What are the current trends in this stock I should be aware of?", icon: <FaEye /> }
     ];
 
     return (

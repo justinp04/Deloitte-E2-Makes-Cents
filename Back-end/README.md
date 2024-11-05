@@ -17,7 +17,7 @@ npm run dev
 ## For Docker file
 Command to build the docker image (specified within the dockerfile) \
 ```
-docker build --platform=linux/amd64 -t makes-cents-back-end-image:latest . (for mac m2)
+docker build --platform=linux/amd64 -t makes-cents-back-end-image:latest .
 
 ```
 
